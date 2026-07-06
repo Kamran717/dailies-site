@@ -591,6 +591,37 @@
   // frozen so cards keep matching already-published videos.
   var LEGACY_TAG_VALUES = { "Slow Dolly In": true, "Handheld Push": true };
 
+  // Style pairings are shuffled per collection so each category's visible 10
+  // feel distinct. Crane Rise is pinned to 0: its videos were generated with
+  // the unshifted pairings.
+  var STYLE_OFFSET_PINS = { "Crane Rise": 0 };
+  function tagHash(s){ var h = 0; for (var i = 0; i < s.length; i++){ h = (h * 31 + s.charCodeAt(i)) >>> 0; } return h; }
+
+  // Display titles for tag-collection cards: original evocative names,
+  // assigned deterministically so each collection draws a different set.
+  var TAG_TITLES = [
+    "Last Train Home","The Balloon Thief","Static Bloom","Paper Lanterns","Salt on the Lens",
+    "Midnight Inventory","The Quiet Floor","Neon Confession","Half a Uniform","Marble Hours",
+    "Rooftop Vespers","The Late Shift","Dust and Chrome","Slow Curtain","The Rehearsal",
+    "Glass Weather","Second Snowfall","The Understudy","Vending Machine Light","Copper Afternoon",
+    "The Long Aisle","Fifteen Floors","A Smaller Ocean","The Borrowed Coat","Night Market Bride",
+    "Exit Music","The Fare","Low Tide Signal","Persimmon Season","The Waiting Room",
+    "Ferris Dark","Signal Fade","The Loose Thread","Ash Garden","Curtain Call",
+    "The Skater's Oath","Pocket Change","Amber Standby","The Night Auditor","Wet Cement",
+    "Sunday Encore","The Fifth Take","Ghost Light","Terminal Bloom","The Slow Yes",
+    "Corner Booth","Vapor Trails","The Kind Stranger","Milk Glass Morning","Overtime",
+    "The Last Aisle Open","Spare Key","Blue Hour Census","The Unsent Letter","Carousel Off",
+    "Fresh Paint","The Small Parade","Lantern Arithmetic","Quiet Machinery","The Longest Lobby",
+    "Stairwell Serenade","Peeling Gold","The Off Season","Coin Laundry Opera","Sleepless Harbor",
+    "The Gentle Heist","Platform Nine","Winter Vending","The Apology Tour","Static Prayer",
+    "Ninety Seconds of Rain","The Volunteer","Backlot Snow","Closing Time Waltz","The Archivist",
+    "Bruised Peaches","Open Sign Flicker","The Slow Applause","Harbor Arithmetic","Dressing Room Echo",
+    "The Paper Anchor","Fluorescent Hymn","Nobody's Umbrella","The Freight Elevator","Sugar and Rust",
+    "One Bulb Burning","The Practice Goodbye","Vacancy Light","Museum of Small Hours","The Standby Choir",
+    "Gravel Lullaby","Fifth Floor Garden","The Borrowed Dog","Ticket Stub Summer","Night Bus Cartography",
+    "The Merciful Draft","Balcony Weather","The Slow Reveal","Ink and Ozone","Curfew Bloom"
+  ];
+
   // Style worlds rotated across each theme's 10 clips. null = live-action,
   // which keeps the rotating camera format; stylized worlds carry their own medium.
   var allStyles = [
@@ -637,7 +668,8 @@
           displayAction = subjectPhrase;
         }
 
-        var styleObj = isLegacy ? null : allStyles[(k + g) % allStyles.length];
+        var styleShift = STYLE_OFFSET_PINS.hasOwnProperty(tagValue) ? STYLE_OFFSET_PINS[tagValue] : tagHash(tagValue) % allStyles.length;
+        var styleObj = isLegacy ? null : allStyles[(k + g + styleShift) % allStyles.length];
         var styleName = styleObj ? styleObj.name : "Live Action";
         var mediumSentence = styleObj ? styleObj.medium : ("Shot on " + formatVal + ".");
         var tailSentence = styleObj ? styleObj.tail : "Natural motion, cinematic detail, subtle film grain, 24fps.";
@@ -655,6 +687,7 @@
           frameId: frameId, cameraMove: cameraMoveVal, shotType: shotType, emotion: displayEmotion,
           lighting: lightingVal, format: formatVal, action: displayAction, setting: subjectPhrase,
           theme: theme.name, style: styleName,
+          title: TAG_TITLES[(tagHash(tagValue) + idx * 7) % TAG_TITLES.length],
           c1: palette[0], c2: palette[1], prompt: prompt
         });
       }
@@ -1004,7 +1037,77 @@
     "tag-cameramove-crane-rise-46": "https://videos.aidirectorme.com/crane-rise/tag-cameramove-crane-rise-46.mp4",
     "tag-cameramove-crane-rise-47": "https://videos.aidirectorme.com/crane-rise/tag-cameramove-crane-rise-47.mp4",
     "tag-cameramove-crane-rise-48": "https://videos.aidirectorme.com/crane-rise/tag-cameramove-crane-rise-48.mp4",
-    "tag-cameramove-crane-rise-49": "https://videos.aidirectorme.com/crane-rise/tag-cameramove-crane-rise-49.mp4"
+    "tag-cameramove-crane-rise-49": "https://videos.aidirectorme.com/crane-rise/tag-cameramove-crane-rise-49.mp4",
+    "tag-cameramove-whip-pan-0": "https://videos.aidirectorme.com/whip-pan/tag-cameramove-whip-pan-0.mp4",
+    "tag-cameramove-whip-pan-1": "https://videos.aidirectorme.com/whip-pan/tag-cameramove-whip-pan-1.mp4",
+    "tag-cameramove-whip-pan-2": "https://videos.aidirectorme.com/whip-pan/tag-cameramove-whip-pan-2.mp4",
+    "tag-cameramove-whip-pan-3": "https://videos.aidirectorme.com/whip-pan/tag-cameramove-whip-pan-3.mp4",
+    "tag-cameramove-whip-pan-4": "https://videos.aidirectorme.com/whip-pan/tag-cameramove-whip-pan-4.mp4",
+    "tag-cameramove-whip-pan-5": "https://videos.aidirectorme.com/whip-pan/tag-cameramove-whip-pan-5.mp4",
+    "tag-cameramove-whip-pan-6": "https://videos.aidirectorme.com/whip-pan/tag-cameramove-whip-pan-6.mp4",
+    "tag-cameramove-whip-pan-7": "https://videos.aidirectorme.com/whip-pan/tag-cameramove-whip-pan-7.mp4",
+    "tag-cameramove-whip-pan-8": "https://videos.aidirectorme.com/whip-pan/tag-cameramove-whip-pan-8.mp4",
+    "tag-cameramove-whip-pan-9": "https://videos.aidirectorme.com/whip-pan/tag-cameramove-whip-pan-9.mp4",
+    "tag-cameramove-static-wide-0": "https://videos.aidirectorme.com/static-wide/tag-cameramove-static-wide-0.mp4",
+    "tag-cameramove-static-wide-1": "https://videos.aidirectorme.com/static-wide/tag-cameramove-static-wide-1.mp4",
+    "tag-cameramove-static-wide-2": "https://videos.aidirectorme.com/static-wide/tag-cameramove-static-wide-2.mp4",
+    "tag-cameramove-static-wide-3": "https://videos.aidirectorme.com/static-wide/tag-cameramove-static-wide-3.mp4",
+    "tag-cameramove-static-wide-4": "https://videos.aidirectorme.com/static-wide/tag-cameramove-static-wide-4.mp4",
+    "tag-cameramove-static-wide-5": "https://videos.aidirectorme.com/static-wide/tag-cameramove-static-wide-5.mp4",
+    "tag-cameramove-static-wide-6": "https://videos.aidirectorme.com/static-wide/tag-cameramove-static-wide-6.mp4",
+    "tag-cameramove-static-wide-7": "https://videos.aidirectorme.com/static-wide/tag-cameramove-static-wide-7.mp4",
+    "tag-cameramove-static-wide-8": "https://videos.aidirectorme.com/static-wide/tag-cameramove-static-wide-8.mp4",
+    "tag-cameramove-static-wide-9": "https://videos.aidirectorme.com/static-wide/tag-cameramove-static-wide-9.mp4",
+    "tag-cameramove-orbit-left-0": "https://videos.aidirectorme.com/orbit-left/tag-cameramove-orbit-left-0.mp4",
+    "tag-cameramove-orbit-left-1": "https://videos.aidirectorme.com/orbit-left/tag-cameramove-orbit-left-1.mp4",
+    "tag-cameramove-orbit-left-2": "https://videos.aidirectorme.com/orbit-left/tag-cameramove-orbit-left-2.mp4",
+    "tag-cameramove-orbit-left-3": "https://videos.aidirectorme.com/orbit-left/tag-cameramove-orbit-left-3.mp4",
+    "tag-cameramove-orbit-left-4": "https://videos.aidirectorme.com/orbit-left/tag-cameramove-orbit-left-4.mp4",
+    "tag-cameramove-orbit-left-5": "https://videos.aidirectorme.com/orbit-left/tag-cameramove-orbit-left-5.mp4",
+    "tag-cameramove-orbit-left-6": "https://videos.aidirectorme.com/orbit-left/tag-cameramove-orbit-left-6.mp4",
+    "tag-cameramove-orbit-left-7": "https://videos.aidirectorme.com/orbit-left/tag-cameramove-orbit-left-7.mp4",
+    "tag-cameramove-orbit-left-8": "https://videos.aidirectorme.com/orbit-left/tag-cameramove-orbit-left-8.mp4",
+    "tag-cameramove-orbit-left-9": "https://videos.aidirectorme.com/orbit-left/tag-cameramove-orbit-left-9.mp4",
+    "tag-cameramove-rack-focus-0": "https://videos.aidirectorme.com/rack-focus/tag-cameramove-rack-focus-0.mp4",
+    "tag-cameramove-rack-focus-1": "https://videos.aidirectorme.com/rack-focus/tag-cameramove-rack-focus-1.mp4",
+    "tag-cameramove-rack-focus-2": "https://videos.aidirectorme.com/rack-focus/tag-cameramove-rack-focus-2.mp4",
+    "tag-cameramove-rack-focus-3": "https://videos.aidirectorme.com/rack-focus/tag-cameramove-rack-focus-3.mp4",
+    "tag-cameramove-rack-focus-4": "https://videos.aidirectorme.com/rack-focus/tag-cameramove-rack-focus-4.mp4",
+    "tag-cameramove-rack-focus-5": "https://videos.aidirectorme.com/rack-focus/tag-cameramove-rack-focus-5.mp4",
+    "tag-cameramove-rack-focus-6": "https://videos.aidirectorme.com/rack-focus/tag-cameramove-rack-focus-6.mp4",
+    "tag-cameramove-rack-focus-7": "https://videos.aidirectorme.com/rack-focus/tag-cameramove-rack-focus-7.mp4",
+    "tag-cameramove-rack-focus-8": "https://videos.aidirectorme.com/rack-focus/tag-cameramove-rack-focus-8.mp4",
+    "tag-cameramove-rack-focus-9": "https://videos.aidirectorme.com/rack-focus/tag-cameramove-rack-focus-9.mp4",
+    "tag-cameramove-low-angle-tilt-up-0": "https://videos.aidirectorme.com/low-angle-tilt-up/tag-cameramove-low-angle-tilt-up-0.mp4",
+    "tag-cameramove-low-angle-tilt-up-1": "https://videos.aidirectorme.com/low-angle-tilt-up/tag-cameramove-low-angle-tilt-up-1.mp4",
+    "tag-cameramove-low-angle-tilt-up-2": "https://videos.aidirectorme.com/low-angle-tilt-up/tag-cameramove-low-angle-tilt-up-2.mp4",
+    "tag-cameramove-low-angle-tilt-up-3": "https://videos.aidirectorme.com/low-angle-tilt-up/tag-cameramove-low-angle-tilt-up-3.mp4",
+    "tag-cameramove-low-angle-tilt-up-4": "https://videos.aidirectorme.com/low-angle-tilt-up/tag-cameramove-low-angle-tilt-up-4.mp4",
+    "tag-cameramove-low-angle-tilt-up-5": "https://videos.aidirectorme.com/low-angle-tilt-up/tag-cameramove-low-angle-tilt-up-5.mp4",
+    "tag-cameramove-low-angle-tilt-up-6": "https://videos.aidirectorme.com/low-angle-tilt-up/tag-cameramove-low-angle-tilt-up-6.mp4",
+    "tag-cameramove-low-angle-tilt-up-7": "https://videos.aidirectorme.com/low-angle-tilt-up/tag-cameramove-low-angle-tilt-up-7.mp4",
+    "tag-cameramove-low-angle-tilt-up-8": "https://videos.aidirectorme.com/low-angle-tilt-up/tag-cameramove-low-angle-tilt-up-8.mp4",
+    "tag-cameramove-low-angle-tilt-up-9": "https://videos.aidirectorme.com/low-angle-tilt-up/tag-cameramove-low-angle-tilt-up-9.mp4",
+    "tag-cameramove-overhead-drop-0": "https://videos.aidirectorme.com/overhead-drop/tag-cameramove-overhead-drop-0.mp4",
+    "tag-cameramove-overhead-drop-1": "https://videos.aidirectorme.com/overhead-drop/tag-cameramove-overhead-drop-1.mp4",
+    "tag-cameramove-overhead-drop-2": "https://videos.aidirectorme.com/overhead-drop/tag-cameramove-overhead-drop-2.mp4",
+    "tag-cameramove-overhead-drop-3": "https://videos.aidirectorme.com/overhead-drop/tag-cameramove-overhead-drop-3.mp4",
+    "tag-cameramove-overhead-drop-4": "https://videos.aidirectorme.com/overhead-drop/tag-cameramove-overhead-drop-4.mp4",
+    "tag-cameramove-overhead-drop-5": "https://videos.aidirectorme.com/overhead-drop/tag-cameramove-overhead-drop-5.mp4",
+    "tag-cameramove-overhead-drop-6": "https://videos.aidirectorme.com/overhead-drop/tag-cameramove-overhead-drop-6.mp4",
+    "tag-cameramove-overhead-drop-7": "https://videos.aidirectorme.com/overhead-drop/tag-cameramove-overhead-drop-7.mp4",
+    "tag-cameramove-overhead-drop-8": "https://videos.aidirectorme.com/overhead-drop/tag-cameramove-overhead-drop-8.mp4",
+    "tag-cameramove-overhead-drop-9": "https://videos.aidirectorme.com/overhead-drop/tag-cameramove-overhead-drop-9.mp4",
+    "tag-cameramove-tracking-side-0": "https://videos.aidirectorme.com/tracking-side/tag-cameramove-tracking-side-0.mp4",
+    "tag-cameramove-tracking-side-1": "https://videos.aidirectorme.com/tracking-side/tag-cameramove-tracking-side-1.mp4",
+    "tag-cameramove-tracking-side-2": "https://videos.aidirectorme.com/tracking-side/tag-cameramove-tracking-side-2.mp4",
+    "tag-cameramove-tracking-side-3": "https://videos.aidirectorme.com/tracking-side/tag-cameramove-tracking-side-3.mp4",
+    "tag-cameramove-tracking-side-4": "https://videos.aidirectorme.com/tracking-side/tag-cameramove-tracking-side-4.mp4",
+    "tag-cameramove-tracking-side-5": "https://videos.aidirectorme.com/tracking-side/tag-cameramove-tracking-side-5.mp4",
+    "tag-cameramove-tracking-side-6": "https://videos.aidirectorme.com/tracking-side/tag-cameramove-tracking-side-6.mp4",
+    "tag-cameramove-tracking-side-7": "https://videos.aidirectorme.com/tracking-side/tag-cameramove-tracking-side-7.mp4",
+    "tag-cameramove-tracking-side-8": "https://videos.aidirectorme.com/tracking-side/tag-cameramove-tracking-side-8.mp4",
+    "tag-cameramove-tracking-side-9": "https://videos.aidirectorme.com/tracking-side/tag-cameramove-tracking-side-9.mp4"
   };
 
   var state = { search: "", cameraMove: new Set(), shotType: new Set(), emotion: new Set(), lighting: new Set(), format: new Set() };
@@ -1060,7 +1163,7 @@
     }
     if (state.search){
       var hay = (clip.prompt + " " + clip.cameraMove + " " + clip.shotType + " " +
-                 clip.emotion + " " + clip.action + " " + clip.lighting + " " + clip.setting + " " + (clip.format || "")).toLowerCase();
+                 clip.emotion + " " + (clip.title || "") + " " + clip.action + " " + clip.lighting + " " + clip.setting + " " + (clip.format || "")).toLowerCase();
       if (hay.indexOf(state.search.toLowerCase()) === -1) return false;
     }
     return true;
@@ -1170,7 +1273,7 @@
         '<div class="sprocket"></div>' + frameMediaHTML(clip) + '<div class="sprocket"></div>' +
         '<div class="frame-caption">' +
           '<div class="cap-tags"><span>' + clip.shotType + '</span><span>' + clip.cameraMove + '</span></div>' +
-          '<div class="cap-line"><b>' + clip.emotion + '</b> \u00b7 ' + clip.action + '</div>' +
+          '<div class="cap-line"><b>' + (clip.title || clip.emotion) + '</b> \u00b7 ' + clip.action + '</div>' +
         '</div></article>';
     });
     grid.innerHTML = html;
@@ -1248,7 +1351,7 @@
     currentClip = pool.filter(function(c){ return c.id === id; })[0];
     if (!currentClip) return;
     document.getElementById('modalFrameId').textContent = currentClip.frameId;
-    document.getElementById('modalTitle').textContent = currentClip.emotion + ' \u2014 ' + currentClip.setting;
+    document.getElementById('modalTitle').textContent = (currentClip.title || currentClip.emotion) + ' \u2014 ' + currentClip.setting;
     document.getElementById('modalPrompt').textContent = currentClip.prompt;
     document.getElementById('modalTags').innerHTML =
       ['shotType','cameraMove','lighting'].map(function(k){ return '<span>' + currentClip[k] + '</span>'; }).join('');
