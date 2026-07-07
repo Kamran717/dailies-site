@@ -585,6 +585,191 @@
     ]}
   ];
 
+  // Format collections: the format IS the star, so each gets bespoke scenarios
+  // native to what that format uniquely captures, plus its signature look.
+  var FORMAT_WORLDS = {
+    "35mm Anamorphic Film": { look: "Shot on 35mm anamorphic film, oval bokeh, horizontal lens flares, epic widescreen grandeur.", finish: "Rich film grain, deliberate cinematic motion, 24fps.", scenes: [
+      "a lone astronaut dragging a parachute across a wheat field at golden hour, crashed capsule smoking behind",
+      "a woman in a red dress standing motionless in a train station as commuters blur past her",
+      "two silhouetted duelists facing off on a salt flat under a bruised storm sky",
+      "a child releasing a paper boat into a flooded cathedral aisle",
+      "an old boxer wrapping his hands alone in a cone of arena light",
+      "a convoy of headlights crossing a desert ridge at blue hour",
+      "a violinist playing on a rooftop as the city power grid fails block by block",
+      "a horse galloping riderless through an abandoned shopping mall",
+      "a lighthouse keeper watching a wall of fog swallow the coastline",
+      "two lovers parting on an airfield as propellers throw rain sideways"
+    ]},
+    "Spherical 50mm Digital Cinema": { look: "Shot on a spherical 50mm digital cinema camera, natural perspective, crisp clean imagery.", finish: "Precise controlled motion, contemporary drama, pristine detail.", scenes: [
+      "a surgeon peeling off gloves in an empty scrub room, staring at her reflection",
+      "a chess prodigy resigning a match and shaking his own trembling hand",
+      "a chef plating a single scallop in a silent kitchen after service",
+      "a diplomat rehearsing an apology into a hotel mirror",
+      "a swimmer floating motionless in a lap pool at midnight",
+      "an architect walking through her unfinished concrete atrium at dawn",
+      "a father teaching his daughter to tie a tie in a hospital corridor",
+      "a pianist's hands hovering over keys, never quite landing",
+      "a juror turning a verdict slip over and over in her fingers",
+      "a barista locking eyes with the last customer as the lights shut off row by row"
+    ]},
+    "16mm Grainy Film": { look: "Shot on grainy 16mm film, heavy texture, muted indie palette, imperfect focus breathing.", finish: "Raw honest motion, verite soul, flickering exposure.", scenes: [
+      "teenagers pushing a dead car down a rural road at dusk, laughing",
+      "a union organizer chain-smoking outside a shuttered mill",
+      "two sisters splitting a cigarette on a fire escape in the rain",
+      "a garage band's drummer breaking a stick mid-song and playing on",
+      "an old farmer counting seed money at a kitchen table by lamplight",
+      "kids jumping from a rope swing into a brown river, one hesitating",
+      "a night-shift waitress dancing alone between empty booths",
+      "a protest sign abandoned on wet cobblestones as boots march past",
+      "a boy teaching his little brother to shave with no water running",
+      "a tattoo artist inking her own ankle in a closed parlor"
+    ]},
+    "Vintage VHS Camcorder": { look: "Vintage VHS camcorder footage, tracking lines, timestamp overlay, washed analog color bleed.", finish: "Wobbly handheld zooms, tape warble, rewound-memory feel.", scenes: [
+      "a birthday party where the lights go out and only the candles remain",
+      "a backyard wrestling match interrupted by a sprinkler system",
+      "a garage sale at dawn, a stranger buying the family piano",
+      "kids filming a homemade horror movie with a bedsheet ghost",
+      "a prom couple slow dancing in a gymnasium as confetti guns misfire",
+      "a first driving lesson ending in a mailbox and hysterical laughter",
+      "a static-filled campfire confession that cuts out mid-sentence",
+      "a snow day snowball ambush filmed from behind a fogged window",
+      "a wedding toast where the best man forgets every name",
+      "an empty living room, the tape still recording after everyone left"
+    ]},
+    "Selfie Vlogger Front Camera": { look: "Front-facing vlogger selfie camera, arm's-length framing, face-lit and confessional.", finish: "Walking-and-talking energy, direct eye contact, jump-cut rhythm.", scenes: [
+      "a hiker realizing on camera she has taken the wrong summit trail",
+      "a street-food reviewer's face journey through the world's spiciest skewer",
+      "a musician announcing his band's breakup, then his solo album, in one breath",
+      "a bride vlogging from the getaway car, veil whipping in the wind",
+      "a storm chaser narrating calmly while hail cracks his windshield",
+      "a marathon runner at mile 20 negotiating with her own legs",
+      "an apartment-tour vlog interrupted by the ceiling starting to drip",
+      "a night-market walk where every vendor photobombs the frame",
+      "a language learner ordering coffee abroad and getting a marriage proposal",
+      "a rooftop sunrise timelapse ruined and then saved by a curious pigeon"
+    ]},
+    "GoPro Action POV": { look: "GoPro action POV, ultra-wide fisheye, mounted first-person perspective.", finish: "Kinetic speed, wind roar, white-knuckle immersive motion.", scenes: [
+      "dropping into a half-pipe carved from a frozen reservoir",
+      "a wingsuit line threading a granite crack in morning mist",
+      "mountain-biking a staircase descent through a hillside favela",
+      "kayak-plunging off a waterfall into churning white water",
+      "free-climbing the last ten meters of a desert spire at sunset",
+      "sprinting a parkour route across rain-slick rooftops",
+      "cave-diving through a keyhole passage as the flashlight flickers",
+      "motocross-whipping over dunes straight into a sandstorm wall",
+      "skiing a couloir as sluff avalanche chases the camera",
+      "a bull-run sprint through narrow streets, hooves inches behind"
+    ]},
+    "Drone Aerial Camera": { look: "Aerial drone camera, sweeping godlike perspective, smooth gimbal glide.", finish: "Vast scale, floating momentum, horizon-bending reveals.", scenes: [
+      "a single red umbrella crossing a plaza of ten thousand grey ones",
+      "orca shadows escorting a fishing boat through emerald fjords",
+      "a wildfire's edge meeting a vineyard's irrigation line at dusk",
+      "a marching band forming a spinning spiral on a stadium field",
+      "an iceberg calving as kayakers scatter like seeds",
+      "a desert highway split by a sandstorm frontier, half clear half chaos",
+      "monks raking a sand mandala visible only from above",
+      "a lighthouse beam sweeping across migrating flamingo flocks",
+      "a container ship threading a canal with meters to spare",
+      "a midnight city grid going dark neighborhood by neighborhood"
+    ]},
+    "DSLR Cinematic": { look: "DSLR cinematic look, creamy shallow depth of field, dreamy bokeh backgrounds.", finish: "Intimate focus pulls, soft romantic light, indie-film warmth.", scenes: [
+      "a florist assembling a bouquet of flowers that don't match, for someone who will love it",
+      "rain beading on a cafe window between two almost-touching hands",
+      "a grandmother teaching dumpling folds, flour drifting like snow",
+      "a busker's open guitar case slowly filling as dusk turns the street gold",
+      "a first apartment key turning, the door opening onto empty sunlight",
+      "a couple reading the same book, trading it page by page on a park bench",
+      "candles being lit one by one on a cake with too many to count",
+      "a potter's hands losing and finding the center of the clay",
+      "a love letter fed into a typewriter, one hesitant keystroke at a time",
+      "two coffee cups steaming on a windowsill above a waking city"
+    ]},
+    "iPhone Handheld": { look: "Handheld iPhone footage, spontaneous vertical-native energy, true-to-life color.", finish: "Casual immediacy, real-moment feel, unplanned and alive.", scenes: [
+      "a subway car spontaneously singing along when someone's speaker unmutes",
+      "a dog realizing its owner came home a week early",
+      "strangers forming a human chain to rescue a kite from a fountain",
+      "a street vendor flipping a flaming pan as the crowd counts down",
+      "a toddler's first steps caught between two panicking grandparents",
+      "a flash downpour turning a plaza into a barefoot dance floor",
+      "a proposal fumbled, the ring rolling toward a storm drain and stopped by a stranger's shoe",
+      "a power outage revealing a city rooftop full of stargazers",
+      "a food-truck line breaking into applause for the last taco going to a firefighter",
+      "an office lobby fish tank getting a new fish, and the fish getting a standing ovation"
+    ]},
+    "Polaroid Instant Film": { look: "Polaroid instant-film aesthetic, soft square frame, faded chemical colors, vignetted dream haze.", finish: "Slow drifting motion, like a memory developing in real time.", scenes: [
+      "a picnic blanket abandoned mid-feast as a summer storm rolls in",
+      "a ferris wheel at closing time, one gondola still gently swinging",
+      "two kids in paper crowns ruling an empty backyard kingdom",
+      "a wedding dress on a clothesline, sleeves dancing in the wind",
+      "a road-trip car hood covered in maps no one is reading",
+      "a porch swing moving on its own in late-afternoon light",
+      "sparklers spelling half a name before burning out",
+      "a diner milkshake with two straws and one empty seat",
+      "a garden sprinkler making a rainbow no one is watching",
+      "a stack of summer novels sun-bleaching on a windowsill"
+    ]},
+    "Super 8 Home Movie": { look: "Super 8 home movie film, warm amber cast, gate weave, dust and scratches.", finish: "Silent-era jitter, family-archive nostalgia, light-leak flares.", scenes: [
+      "a father teaching a wobbling bicycle to fly down a driveway",
+      "sprinkler-jumping children in a yard that no longer exists",
+      "a mother waving from a porch, over-exposed by afternoon sun",
+      "a station wagon being packed for a lake trip, dog claiming the best seat",
+      "a first day of school, oversized backpack and undersized courage",
+      "grandpa's magic trick failing wonderfully at a picnic table",
+      "a birthday cake carried through a dark kitchen, faces lit like saints",
+      "a tree fort under construction by unqualified but determined engineers",
+      "a snow fort siege ending in hot chocolate armistice",
+      "a home movie of someone filming a home movie, both laughing"
+    ]},
+    "Dashcam": { look: "Dashcam footage, fixed windshield perspective, timestamp corner overlay, wide roadway view.", finish: "Unblinking witness stillness, wiper rhythm, headlight glare.", scenes: [
+      "a moose family taking the crosswalk with absolute authority",
+      "a runaway shopping cart weaving traffic like a slalom champion",
+      "a meteor streaking over a gridlocked interstate at 3am",
+      "a mattress escaping a pickup truck and becoming everyone's problem",
+      "a tumbleweed convoy crossing a desert highway in formation",
+      "a couch on a hill street, sledding downhill with no passengers",
+      "a rainbow landing directly on a toll booth",
+      "a police horse refusing to let a sports car merge",
+      "a flock of sheep flooding a mountain road, shepherd waving apologetically",
+      "lightning splitting a billboard as the traffic light turns green"
+    ]},
+    "Security CCTV Camera": { look: "Security CCTV footage, fixed high-angle corner view, timecode burn-in, harsh monochrome.", finish: "Liminal stillness, motionless framing, something about to happen.", scenes: [
+      "a janitor's mop bucket rolling itself across an empty food court",
+      "an office chair pirouetting alone in a dark cubicle farm",
+      "a cat patrolling a jewelry store after hours like it owns the inventory",
+      "an elevator opening and closing on nobody, floor after floor",
+      "a vending machine surrendering every snack at once to one lucky kick",
+      "a lost balloon drifting through a parking garage at 4am",
+      "a raccoon methodically defeating a locked dumpster",
+      "two night guards having a chair race down a hospital corridor",
+      "a revolving door spinning from wind, mannequin watching from a display",
+      "snow drifting through a broken skylight onto a museum dinosaur"
+    ]},
+    "Body Cam": { look: "Body cam footage, chest-mounted POV, fisheye edge distortion, motion-triggered urgency.", finish: "Breathing rhythm, radio chatter texture, unfolding-now immediacy.", scenes: [
+      "a firefighter carrying a birdcage down a smoke-filled stairwell, parrot narrating",
+      "a paramedic delivering a baby in an elevator between floors 3 and 4",
+      "a park ranger negotiating a standoff between a bear and a cooler",
+      "a rescue swimmer reaching a capsized kayaker as the chopper hovers",
+      "an animal control officer versus an emu with strong opinions",
+      "a rookie's first ride-along interrupted by a marriage proposal flash mob",
+      "a search dog finding the missing hiker asleep and annoyed",
+      "a utility worker restoring power as a whole block cheers from windows",
+      "a coast guard boarding at dawn finding only a boat full of rescued sea turtles",
+      "a lifeguard sprint through beach umbrellas toward a swimmer who found a sandbar"
+    ]},
+    "Webcam": { look: "Webcam footage, fixed desk-level framing, screen-glow lighting, low-fi intimacy.", finish: "Late-night confessional stillness, keyboard clatter, single-room world.", scenes: [
+      "a novelist deleting the same first sentence for the hundredth time at 3am",
+      "a remote worker's cat commandeering the keyboard mid-presentation",
+      "a chess streamer realizing his opponent is his own father's account",
+      "a language tutor and student laughing too hard to finish the lesson",
+      "an astronaut's video call home, floating pen drifting through frame",
+      "a gamer's victory scream waking the whole house, lights snapping on",
+      "an online juror falling asleep mid-deliberation, gavel audio playing",
+      "a musician premiering a song to twelve viewers, one of them crying",
+      "a grandfather figuring out the unmute button after his whole toast",
+      "a coder's rubber duck getting a formal apology at sunrise"
+    ]}
+  };
+
   function slugify(s){ return String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-"); }
 
   // Collections generated before the style system; their prompts must stay
@@ -674,9 +859,21 @@
         var mediumSentence = styleObj ? styleObj.medium : ("Shot on " + formatVal + ".");
         var tailSentence = styleObj ? styleObj.tail : "Natural motion, cinematic detail, subtle film grain, 24fps.";
 
-        var prompt = shotType + ", " + cameraMoveVal.toLowerCase() + ". " + mediumSentence + " " +
-          lightingVal + " lighting. " + subjectPhrase + moodPhrase +
-          ". " + tailSentence;
+        var prompt;
+        var formatWorld = facetKey === "format" ? FORMAT_WORLDS[tagValue] : null;
+        if (formatWorld){
+          // Format collections: the format is the star. Bespoke scenarios in
+          // the format's native habitat; no style substitution ever hides it.
+          var scene = formatWorld.scenes[idx % formatWorld.scenes.length];
+          styleName = "Live Action";
+          subjectPhrase = scene;
+          displayAction = scene;
+          prompt = formatWorld.look + " " + scene.charAt(0).toUpperCase() + scene.slice(1) + ". " + formatWorld.finish;
+        } else {
+          prompt = shotType + ", " + cameraMoveVal.toLowerCase() + ". " + mediumSentence + " " +
+            lightingVal + " lighting. " + subjectPhrase + moodPhrase +
+            ". " + tailSentence;
+        }
 
         var roll = String.fromCharCode(65 + g);
         var frameId = roll + pad((k + 1) * 10, 3) + "\u2022T01";
@@ -1107,7 +1304,87 @@
     "tag-cameramove-tracking-side-6": "https://videos.aidirectorme.com/tracking-side/tag-cameramove-tracking-side-6.mp4",
     "tag-cameramove-tracking-side-7": "https://videos.aidirectorme.com/tracking-side/tag-cameramove-tracking-side-7.mp4",
     "tag-cameramove-tracking-side-8": "https://videos.aidirectorme.com/tracking-side/tag-cameramove-tracking-side-8.mp4",
-    "tag-cameramove-tracking-side-9": "https://videos.aidirectorme.com/tracking-side/tag-cameramove-tracking-side-9.mp4"
+    "tag-cameramove-tracking-side-9": "https://videos.aidirectorme.com/tracking-side/tag-cameramove-tracking-side-9.mp4",
+    "tag-format-35mm-anamorphic-film-0": "https://videos.aidirectorme.com/35mm-anamorphic-film/tag-format-35mm-anamorphic-film-0.mp4",
+    "tag-format-35mm-anamorphic-film-1": "https://videos.aidirectorme.com/35mm-anamorphic-film/tag-format-35mm-anamorphic-film-1.mp4",
+    "tag-format-35mm-anamorphic-film-2": "https://videos.aidirectorme.com/35mm-anamorphic-film/tag-format-35mm-anamorphic-film-2.mp4",
+    "tag-format-35mm-anamorphic-film-3": "https://videos.aidirectorme.com/35mm-anamorphic-film/tag-format-35mm-anamorphic-film-3.mp4",
+    "tag-format-35mm-anamorphic-film-4": "https://videos.aidirectorme.com/35mm-anamorphic-film/tag-format-35mm-anamorphic-film-4.mp4",
+    "tag-format-35mm-anamorphic-film-5": "https://videos.aidirectorme.com/35mm-anamorphic-film/tag-format-35mm-anamorphic-film-5.mp4",
+    "tag-format-35mm-anamorphic-film-6": "https://videos.aidirectorme.com/35mm-anamorphic-film/tag-format-35mm-anamorphic-film-6.mp4",
+    "tag-format-35mm-anamorphic-film-7": "https://videos.aidirectorme.com/35mm-anamorphic-film/tag-format-35mm-anamorphic-film-7.mp4",
+    "tag-format-35mm-anamorphic-film-8": "https://videos.aidirectorme.com/35mm-anamorphic-film/tag-format-35mm-anamorphic-film-8.mp4",
+    "tag-format-35mm-anamorphic-film-9": "https://videos.aidirectorme.com/35mm-anamorphic-film/tag-format-35mm-anamorphic-film-9.mp4",
+    "tag-format-vintage-vhs-camcorder-0": "https://videos.aidirectorme.com/vintage-vhs-camcorder/tag-format-vintage-vhs-camcorder-0.mp4",
+    "tag-format-vintage-vhs-camcorder-1": "https://videos.aidirectorme.com/vintage-vhs-camcorder/tag-format-vintage-vhs-camcorder-1.mp4",
+    "tag-format-vintage-vhs-camcorder-2": "https://videos.aidirectorme.com/vintage-vhs-camcorder/tag-format-vintage-vhs-camcorder-2.mp4",
+    "tag-format-vintage-vhs-camcorder-3": "https://videos.aidirectorme.com/vintage-vhs-camcorder/tag-format-vintage-vhs-camcorder-3.mp4",
+    "tag-format-vintage-vhs-camcorder-4": "https://videos.aidirectorme.com/vintage-vhs-camcorder/tag-format-vintage-vhs-camcorder-4.mp4",
+    "tag-format-vintage-vhs-camcorder-5": "https://videos.aidirectorme.com/vintage-vhs-camcorder/tag-format-vintage-vhs-camcorder-5.mp4",
+    "tag-format-vintage-vhs-camcorder-6": "https://videos.aidirectorme.com/vintage-vhs-camcorder/tag-format-vintage-vhs-camcorder-6.mp4",
+    "tag-format-vintage-vhs-camcorder-7": "https://videos.aidirectorme.com/vintage-vhs-camcorder/tag-format-vintage-vhs-camcorder-7.mp4",
+    "tag-format-vintage-vhs-camcorder-8": "https://videos.aidirectorme.com/vintage-vhs-camcorder/tag-format-vintage-vhs-camcorder-8.mp4",
+    "tag-format-vintage-vhs-camcorder-9": "https://videos.aidirectorme.com/vintage-vhs-camcorder/tag-format-vintage-vhs-camcorder-9.mp4",
+    "tag-format-gopro-action-pov-0": "https://videos.aidirectorme.com/gopro-action-pov/tag-format-gopro-action-pov-0.mp4",
+    "tag-format-gopro-action-pov-1": "https://videos.aidirectorme.com/gopro-action-pov/tag-format-gopro-action-pov-1.mp4",
+    "tag-format-gopro-action-pov-2": "https://videos.aidirectorme.com/gopro-action-pov/tag-format-gopro-action-pov-2.mp4",
+    "tag-format-gopro-action-pov-3": "https://videos.aidirectorme.com/gopro-action-pov/tag-format-gopro-action-pov-3.mp4",
+    "tag-format-gopro-action-pov-4": "https://videos.aidirectorme.com/gopro-action-pov/tag-format-gopro-action-pov-4.mp4",
+    "tag-format-gopro-action-pov-5": "https://videos.aidirectorme.com/gopro-action-pov/tag-format-gopro-action-pov-5.mp4",
+    "tag-format-gopro-action-pov-6": "https://videos.aidirectorme.com/gopro-action-pov/tag-format-gopro-action-pov-6.mp4",
+    "tag-format-gopro-action-pov-7": "https://videos.aidirectorme.com/gopro-action-pov/tag-format-gopro-action-pov-7.mp4",
+    "tag-format-gopro-action-pov-8": "https://videos.aidirectorme.com/gopro-action-pov/tag-format-gopro-action-pov-8.mp4",
+    "tag-format-gopro-action-pov-9": "https://videos.aidirectorme.com/gopro-action-pov/tag-format-gopro-action-pov-9.mp4",
+    "tag-format-drone-aerial-camera-0": "https://videos.aidirectorme.com/drone-aerial-camera/tag-format-drone-aerial-camera-0.mp4",
+    "tag-format-drone-aerial-camera-1": "https://videos.aidirectorme.com/drone-aerial-camera/tag-format-drone-aerial-camera-1.mp4",
+    "tag-format-drone-aerial-camera-2": "https://videos.aidirectorme.com/drone-aerial-camera/tag-format-drone-aerial-camera-2.mp4",
+    "tag-format-drone-aerial-camera-3": "https://videos.aidirectorme.com/drone-aerial-camera/tag-format-drone-aerial-camera-3.mp4",
+    "tag-format-drone-aerial-camera-4": "https://videos.aidirectorme.com/drone-aerial-camera/tag-format-drone-aerial-camera-4.mp4",
+    "tag-format-drone-aerial-camera-5": "https://videos.aidirectorme.com/drone-aerial-camera/tag-format-drone-aerial-camera-5.mp4",
+    "tag-format-drone-aerial-camera-6": "https://videos.aidirectorme.com/drone-aerial-camera/tag-format-drone-aerial-camera-6.mp4",
+    "tag-format-drone-aerial-camera-7": "https://videos.aidirectorme.com/drone-aerial-camera/tag-format-drone-aerial-camera-7.mp4",
+    "tag-format-drone-aerial-camera-8": "https://videos.aidirectorme.com/drone-aerial-camera/tag-format-drone-aerial-camera-8.mp4",
+    "tag-format-drone-aerial-camera-9": "https://videos.aidirectorme.com/drone-aerial-camera/tag-format-drone-aerial-camera-9.mp4",
+    "tag-format-super-8-home-movie-0": "https://videos.aidirectorme.com/super-8-home-movie/tag-format-super-8-home-movie-0.mp4",
+    "tag-format-super-8-home-movie-1": "https://videos.aidirectorme.com/super-8-home-movie/tag-format-super-8-home-movie-1.mp4",
+    "tag-format-super-8-home-movie-2": "https://videos.aidirectorme.com/super-8-home-movie/tag-format-super-8-home-movie-2.mp4",
+    "tag-format-super-8-home-movie-3": "https://videos.aidirectorme.com/super-8-home-movie/tag-format-super-8-home-movie-3.mp4",
+    "tag-format-super-8-home-movie-4": "https://videos.aidirectorme.com/super-8-home-movie/tag-format-super-8-home-movie-4.mp4",
+    "tag-format-super-8-home-movie-5": "https://videos.aidirectorme.com/super-8-home-movie/tag-format-super-8-home-movie-5.mp4",
+    "tag-format-super-8-home-movie-6": "https://videos.aidirectorme.com/super-8-home-movie/tag-format-super-8-home-movie-6.mp4",
+    "tag-format-super-8-home-movie-7": "https://videos.aidirectorme.com/super-8-home-movie/tag-format-super-8-home-movie-7.mp4",
+    "tag-format-super-8-home-movie-8": "https://videos.aidirectorme.com/super-8-home-movie/tag-format-super-8-home-movie-8.mp4",
+    "tag-format-super-8-home-movie-9": "https://videos.aidirectorme.com/super-8-home-movie/tag-format-super-8-home-movie-9.mp4",
+    "tag-format-dashcam-0": "https://videos.aidirectorme.com/dashcam/tag-format-dashcam-0.mp4",
+    "tag-format-dashcam-1": "https://videos.aidirectorme.com/dashcam/tag-format-dashcam-1.mp4",
+    "tag-format-dashcam-2": "https://videos.aidirectorme.com/dashcam/tag-format-dashcam-2.mp4",
+    "tag-format-dashcam-3": "https://videos.aidirectorme.com/dashcam/tag-format-dashcam-3.mp4",
+    "tag-format-dashcam-4": "https://videos.aidirectorme.com/dashcam/tag-format-dashcam-4.mp4",
+    "tag-format-dashcam-5": "https://videos.aidirectorme.com/dashcam/tag-format-dashcam-5.mp4",
+    "tag-format-dashcam-6": "https://videos.aidirectorme.com/dashcam/tag-format-dashcam-6.mp4",
+    "tag-format-dashcam-7": "https://videos.aidirectorme.com/dashcam/tag-format-dashcam-7.mp4",
+    "tag-format-dashcam-8": "https://videos.aidirectorme.com/dashcam/tag-format-dashcam-8.mp4",
+    "tag-format-dashcam-9": "https://videos.aidirectorme.com/dashcam/tag-format-dashcam-9.mp4",
+    "tag-format-security-cctv-camera-0": "https://videos.aidirectorme.com/security-cctv-camera/tag-format-security-cctv-camera-0.mp4",
+    "tag-format-security-cctv-camera-1": "https://videos.aidirectorme.com/security-cctv-camera/tag-format-security-cctv-camera-1.mp4",
+    "tag-format-security-cctv-camera-2": "https://videos.aidirectorme.com/security-cctv-camera/tag-format-security-cctv-camera-2.mp4",
+    "tag-format-security-cctv-camera-3": "https://videos.aidirectorme.com/security-cctv-camera/tag-format-security-cctv-camera-3.mp4",
+    "tag-format-security-cctv-camera-4": "https://videos.aidirectorme.com/security-cctv-camera/tag-format-security-cctv-camera-4.mp4",
+    "tag-format-security-cctv-camera-5": "https://videos.aidirectorme.com/security-cctv-camera/tag-format-security-cctv-camera-5.mp4",
+    "tag-format-security-cctv-camera-6": "https://videos.aidirectorme.com/security-cctv-camera/tag-format-security-cctv-camera-6.mp4",
+    "tag-format-security-cctv-camera-7": "https://videos.aidirectorme.com/security-cctv-camera/tag-format-security-cctv-camera-7.mp4",
+    "tag-format-security-cctv-camera-8": "https://videos.aidirectorme.com/security-cctv-camera/tag-format-security-cctv-camera-8.mp4",
+    "tag-format-security-cctv-camera-9": "https://videos.aidirectorme.com/security-cctv-camera/tag-format-security-cctv-camera-9.mp4",
+    "tag-format-webcam-0": "https://videos.aidirectorme.com/webcam/tag-format-webcam-0.mp4",
+    "tag-format-webcam-1": "https://videos.aidirectorme.com/webcam/tag-format-webcam-1.mp4",
+    "tag-format-webcam-2": "https://videos.aidirectorme.com/webcam/tag-format-webcam-2.mp4",
+    "tag-format-webcam-3": "https://videos.aidirectorme.com/webcam/tag-format-webcam-3.mp4",
+    "tag-format-webcam-4": "https://videos.aidirectorme.com/webcam/tag-format-webcam-4.mp4",
+    "tag-format-webcam-5": "https://videos.aidirectorme.com/webcam/tag-format-webcam-5.mp4",
+    "tag-format-webcam-6": "https://videos.aidirectorme.com/webcam/tag-format-webcam-6.mp4",
+    "tag-format-webcam-7": "https://videos.aidirectorme.com/webcam/tag-format-webcam-7.mp4",
+    "tag-format-webcam-8": "https://videos.aidirectorme.com/webcam/tag-format-webcam-8.mp4",
+    "tag-format-webcam-9": "https://videos.aidirectorme.com/webcam/tag-format-webcam-9.mp4"
   };
 
   var state = { search: "", cameraMove: new Set(), shotType: new Set(), emotion: new Set(), lighting: new Set(), format: new Set() };
