@@ -101,6 +101,20 @@
   .facet-rail{ max-width:1400px; margin:0 auto; padding:0 24px 14px; display:flex; flex-direction:column; gap:9px; }
   .facet-row{ display:flex; align-items:center; gap:10px; overflow-x:auto; scrollbar-width:none; }
   .facet-row::-webkit-scrollbar{ display:none; }
+  .facet-row.fade-right{ -webkit-mask-image:linear-gradient(to right, black calc(100% - 48px), transparent); mask-image:linear-gradient(to right, black calc(100% - 48px), transparent); }
+  .facet-row.fade-left{ -webkit-mask-image:linear-gradient(to right, transparent, black 48px); mask-image:linear-gradient(to right, transparent, black 48px); }
+  .facet-row.fade-left.fade-right{ -webkit-mask-image:linear-gradient(to right, transparent, black 48px, black calc(100% - 48px), transparent); mask-image:linear-gradient(to right, transparent, black 48px, black calc(100% - 48px), transparent); }
+  .facet-row-wrap{ position:relative; }
+  .row-arrow{
+    position:absolute; top:50%; transform:translateY(-50%); z-index:3;
+    width:26px; height:26px; padding:0; display:none; align-items:center; justify-content:center;
+    background:var(--bg-panel, #191817); border:1px solid var(--line); border-radius:50%;
+    color:var(--ink-dim, #b7b0a4); font-size:16px; line-height:1; cursor:pointer;
+  }
+  .row-arrow.visible{ display:flex; }
+  .row-arrow:hover{ border-color:var(--amber); color:var(--amber); }
+  .row-arrow-left{ left:-6px; }
+  .row-arrow-right{ right:-6px; }
   .facet-label{
     font-family:var(--ff-mono); font-size:10px; letter-spacing:.1em; color:var(--ink-faint);
     width:78px; flex-shrink:0; text-transform:uppercase;
@@ -1756,6 +1770,40 @@
   renderGrid();
   tickCounter();
   tickTimecode();
+
+  // Chip rows: arrow buttons page through hidden chips; edge fades hint at more
+  Array.prototype.forEach.call(document.querySelectorAll('.facet-row'), function(row){
+    var wrap = document.createElement('div');
+    wrap.className = 'facet-row-wrap';
+    row.parentNode.insertBefore(wrap, row);
+    wrap.appendChild(row);
+
+    var btnL = document.createElement('button');
+    btnL.className = 'row-arrow row-arrow-left';
+    btnL.setAttribute('aria-label', 'Scroll left');
+    btnL.innerHTML = '&#8249;';
+    var btnR = document.createElement('button');
+    btnR.className = 'row-arrow row-arrow-right';
+    btnR.setAttribute('aria-label', 'Scroll right');
+    btnR.innerHTML = '&#8250;';
+    wrap.appendChild(btnL);
+    wrap.appendChild(btnR);
+
+    function update(){
+      var max = row.scrollWidth - row.clientWidth;
+      var canL = row.scrollLeft > 4;
+      var canR = row.scrollLeft < max - 4;
+      row.classList.toggle('fade-left', canL);
+      row.classList.toggle('fade-right', canR);
+      btnL.classList.toggle('visible', canL);
+      btnR.classList.toggle('visible', canR);
+    }
+    btnL.addEventListener('click', function(){ row.scrollBy({ left: -row.clientWidth * 0.7, behavior: 'smooth' }); });
+    btnR.addEventListener('click', function(){ row.scrollBy({ left: row.clientWidth * 0.7, behavior: 'smooth' }); });
+    row.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  });
   generateHeroVideo();
 })();
 </script>
