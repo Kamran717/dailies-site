@@ -2124,6 +2124,10 @@
     <div id="aidm-result">
       <video id="aidm-video" controls autoplay loop playsinline muted></video>
       <img id="aidm-scene" alt="scene still" style="display:none;">
+      <div id="aidm-dl" style="display:flex; gap:10px; margin-top:12px;">
+        <button class="aidm-btn" id="aidm-dl-video">Download clip</button>
+        <button class="aidm-btn" id="aidm-dl-image" style="display:none;">Download still image</button>
+      </div>
     </div>
 
     <div id="aidm-actions">
@@ -2252,6 +2256,18 @@
     });
   }
 
+  // Force a real download; falls back to opening the file if the host blocks it.
+  function downloadFile(url, filename){
+    fetch(url).then(function(res){ return res.blob(); }).then(function(blob){
+      var a = document.createElement('a');
+      var obj = URL.createObjectURL(blob);
+      a.href = obj; a.download = filename;
+      document.body.appendChild(a); a.click();
+      document.body.removeChild(a);
+      setTimeout(function(){ URL.revokeObjectURL(obj); }, 4000);
+    }).catch(function(){ window.open(url, '_blank'); });
+  }
+
   function fail(msg){
     stopTimer();
     $('aidm-casting').style.display = 'none';
@@ -2275,7 +2291,14 @@
         $('aidm-title').textContent = "You're the star";
         $('aidm-status').textContent = 'Remaining free casts: ' + (r.data.remaining != null ? r.data.remaining : '\u2014');
         var v = $('aidm-video'); v.src = r.data.videoUrl;
-        if (r.data.sceneUrl){ var s = $('aidm-scene'); s.src = r.data.sceneUrl; s.style.display = 'block'; }
+        $('aidm-dl-video').onclick = function(){ downloadFile(r.data.videoUrl, 'aidirectorme-cast.mp4'); };
+        if (r.data.sceneUrl){
+          var s = $('aidm-scene'); s.src = r.data.sceneUrl; s.style.display = 'block';
+          var di = $('aidm-dl-image'); di.style.display = 'inline-block';
+          di.onclick = function(){ downloadFile(r.data.sceneUrl, 'aidirectorme-still.jpg'); };
+        } else {
+          $('aidm-dl-image').style.display = 'none';
+        }
         $('aidm-result').style.display = 'block';
       } else if (r.status === 402){
         $('aidm-status').textContent = 'You\u2019ve used your free casts. (Subscribe flow goes here.)';
