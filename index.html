@@ -1974,6 +1974,7 @@
     document.getElementById('modalFrameId').textContent = currentClip.frameId;
     document.getElementById('modalTitle').textContent = (currentClip.title || currentClip.emotion) + ' \u2014 ' + currentClip.setting;
     document.getElementById('modalPrompt').textContent = currentClip.prompt;
+    if (window.AIDM_track) window.AIDM_track('clip_open', { clip_id: currentClip.id, title: currentClip.title || currentClip.emotion, camera_move: currentClip.cameraMove, shot_type: currentClip.shotType });
     document.getElementById('modalTags').innerHTML =
       ['shotType','cameraMove','lighting'].map(function(k){ return '<span>' + currentClip[k] + '</span>'; }).join('');
     modalMedia.innerHTML = '<div class="frame-sweep"></div>';
@@ -1997,7 +1998,7 @@
   document.getElementById('modalCloseBtn').addEventListener('click', closeModal);
   modal.addEventListener('click', function(e){ if (e.target === modal) closeModal(); });
   document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeModal(); });
-  document.getElementById('modalCopyBtn').addEventListener('click', function(){ if (currentClip) copyText(currentClip.prompt, this); });
+  document.getElementById('modalCopyBtn').addEventListener('click', function(){ if (currentClip){ copyText(currentClip.prompt, this); if (window.AIDM_track) window.AIDM_track('copy_prompt', { clip_id: currentClip.id, title: currentClip.title || currentClip.emotion }); } });
 
   function copyText(text, btn){
     var original = btn.textContent;
@@ -2284,30 +2285,35 @@
     runTimer('Generating the shot (~1 min)\u2026 ');
 
     var castUid = (window.AIDM_getUserId ? window.AIDM_getUserId() : uid);
+    var t_start = Date.now();
+    if (window.AIDM_track) window.AIDM_track('cast_start', { prompt: scenePrompt.slice(0,200) });
     postJSON('/api/star', { userId: castUid, scenePrompt: scenePrompt, faceImageBase64: face.dataUrl })
     .then(function(r){
       stopTimer();
       $('aidm-casting').style.display = 'none';
       if (r.status === 200 && r.data && r.data.videoUrl){
+        if (window.AIDM_track) window.AIDM_track('cast_done', { seconds: Math.round((Date.now()-t_start)/1000), remaining: r.data.remaining });
         $('aidm-title').textContent = "You're the star";
         $('aidm-status').textContent = 'Remaining free casts: ' + (r.data.remaining != null ? r.data.remaining : '\u2014');
         var v = $('aidm-video'); v.src = r.data.videoUrl;
-        $('aidm-dl-video').onclick = function(){ downloadFile(r.data.videoUrl, 'aidirectorme-cast.mp4'); };
+        $('aidm-dl-video').onclick = function(){ if (window.AIDM_track) window.AIDM_track('download_video', {}); downloadFile(r.data.videoUrl, 'aidirectorme-cast.mp4'); };
         if (r.data.sceneUrl){
           var s = $('aidm-scene'); s.src = r.data.sceneUrl; s.style.display = 'block';
           var di = $('aidm-dl-image'); di.style.display = 'inline-block';
-          di.onclick = function(){ downloadFile(r.data.sceneUrl, 'aidirectorme-still.jpg'); };
+          di.onclick = function(){ if (window.AIDM_track) window.AIDM_track('download_image', {}); downloadFile(r.data.sceneUrl, 'aidirectorme-still.jpg'); };
         } else {
           $('aidm-dl-image').style.display = 'none';
         }
         $('aidm-result').style.display = 'block';
       } else if (r.status === 402){
+        if (window.AIDM_track) window.AIDM_track('paywall_hit', {});
         $('aidm-status').textContent = 'You\u2019ve used your free casts. (Subscribe flow goes here.)';
       } else {
+        if (window.AIDM_track) window.AIDM_track('cast_error', { status: r.status });
         fail('Error ' + r.status + ':\n' + r.text);
       }
     })
-    .catch(function(err){ fail('Request failed: ' + err.message); });
+    .catch(function(err){ if (window.AIDM_track) window.AIDM_track('cast_error', { message: String(err && err.message) }); fail('Request failed: ' + err.message); });
   }
 })();
 </script>
@@ -2439,7 +2445,12 @@
     };
 
     sb.auth.getSession().then(function(r){ currentUser = r.data.session ? r.data.session.user : null; renderHeader(); });
-    sb.auth.onAuthStateChange(function(_e, session){ currentUser = session ? session.user : null; renderHeader(); });
+    sb.auth.onAuthStateChange(function(_e, session){
+      var wasSignedIn = !!currentUser;
+      currentUser = session ? session.user : null;
+      if (!wasSignedIn && currentUser && window.AIDM_track) window.AIDM_track('signin', {});
+      renderHeader();
+    });
 
     renderHeader();
   }
@@ -2447,6 +2458,68 @@
 })();
 </script>
 <!-- ===== END SUPABASE AUTH ===== -->
+
+
+<!-- ===== ANALYTICS TRACKING ===== -->
+<script>
+(function(){
+  // Fire-and-forget event logging into Supabase.
+  // Never blocks the UI; failures are silent by design.
+  var URL_ = 'https://mrgcjzmtszmtsqgalfwq.supabase.co';
+  var KEY_ = 'sb_publishable_b2UBIEMmcP2jy4iC2HehXg_T-OiKa4b';
+
+  var anonId = localStorage.getItem('aidm_uid');
+  if(!anonId){ anonId = 'anon_'+(crypto.randomUUID?crypto.randomUUID():(Date.now()+'_'+Math.random())); localStorage.setItem('aidm_uid', anonId); }
+
+  function currentUserId(){
+    var u = window.AIDM_getUser && window.AIDM_getUser();
+    return u ? u.id : null;
+  }
+
+  window.AIDM_track = function(eventType, props){
+    try{
+      var body = JSON.stringify({
+        user_id: currentUserId(),
+        anon_id: anonId,
+        event_type: eventType,
+        props: props || {}
+      });
+      // keepalive lets the request survive page navigation
+      fetch(URL_ + '/rest/v1/events', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'apikey': KEY_,
+          'Authorization': 'Bearer ' + KEY_,
+          'Prefer': 'return=minimal'
+        },
+        body: body,
+        keepalive: true
+      }).catch(function(){});
+    }catch(e){}
+  };
+
+  // Page view on load.
+  window.AIDM_track('page_view', { path: location.pathname, ref: document.referrer || null });
+
+  // Debounced search tracking — only log what a person actually settled on.
+  var searchTimer = null, lastLogged = '';
+  var si = document.getElementById('searchInput');
+  if (si){
+    si.addEventListener('input', function(){
+      clearTimeout(searchTimer);
+      var q = si.value.trim();
+      searchTimer = setTimeout(function(){
+        if (q.length >= 2 && q !== lastLogged){
+          lastLogged = q;
+          window.AIDM_track('search', { query: q });
+        }
+      }, 900);
+    });
+  }
+})();
+</script>
+<!-- ===== END ANALYTICS TRACKING ===== -->
 
 </body>
 </html>
