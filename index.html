@@ -784,6 +784,132 @@
     ]}
   };
 
+  // New shot-type collections: the framing IS the star. Each gets bespoke
+  // scenarios built around what that shot uniquely does. Original 8 shot
+  // types keep the standard rotation.
+  var SHOT_WORLDS = {
+    "Dutch Angle": { look: "Dutch angle framing, horizon tilted hard, unease built into the geometry.", finish: "Cinematic tension, deliberate off-balance composition, 24fps.", scenes: [
+      "a hotel hallway at 3am, every door identical, one slightly open",
+      "a man reading a letter at a kitchen table as the faucet drips",
+      "an empty carousel starting up by itself at dusk",
+      "a job interview where the interviewer's chair is slowly rising",
+      "a pharmacist counting pills under a buzzing fluorescent tube",
+      "a wedding cake being wheeled down a corridor that never ends",
+      "a subway car with every passenger facing the wrong way",
+      "a child's birthday clown checking his watch in the rain",
+      "an elevator panel with a button for a floor that shouldn't exist",
+      "a chess board mid-game in an abandoned park, pieces still warm"
+    ]},
+    "Bird's-Eye View": { look: "Perfect bird's-eye view, camera looking straight down, the world as diagram.", finish: "Geometric composition, god's-eye clarity, patterns humans can't see from the ground.", scenes: [
+      "a spiral staircase with one person climbing and one descending",
+      "synchronized swimmers blooming open like a flower in turquoise water",
+      "a farmers market of umbrellas rearranging as rain begins",
+      "a poker table mid-hand, chips and secrets fanned out",
+      "a marching band scattering and reforming into a new word",
+      "an operating theater, gloved hands orbiting a patient like planets",
+      "a shipping yard of containers being stacked into a color gradient",
+      "two beds pushed apart in a room split by morning light",
+      "a ramen chef's station, every bowl a small solar system",
+      "a crosswalk scramble releasing a hundred trajectories at once"
+    ]},
+    "Worm's-Eye View": { look: "Extreme worm's-eye view from ground level looking straight up, subjects towering.", finish: "Monumental scale, sky-framed silhouettes, ground-level awe.", scenes: [
+      "skyscrapers converging into a kaleidoscope of glass overhead",
+      "a basketball player rising for a dunk that blots out the sun",
+      "redwood canopies swaying like cathedral vaults",
+      "a giraffe investigating the lens with prehistoric patience",
+      "firework shells blooming directly overhead in layered rings",
+      "a ballet dancer leaping over the camera through falling confetti",
+      "cathedral bells swinging against stained-glass light",
+      "a crane lifting a grand piano across a slot of blue sky",
+      "monsoon rain falling toward the lens in silver needles",
+      "a kite battle tangling directly above, strings crossing like swords"
+    ]},
+    "Cowboy Shot": { look: "Classic cowboy shot, framed mid-thigh up, holster-line tension in the composition.", finish: "Western standoff energy, weight on the hips, 24fps grit.", scenes: [
+      "a gunslinger's hand hovering over a holster full of paintbrushes",
+      "a chef untying her apron like a duelist at high noon",
+      "a traffic warden facing down a double-parked sports car",
+      "a janitor drawing two spray bottles in a gleaming corridor",
+      "a bride hiking her dress to reveal cowboy boots at the altar",
+      "a barista slinging two portafilters into their slots at dawn",
+      "a mechanic wiping hands on a rag as the garage door rises",
+      "an umpire and a manager squaring off over home plate",
+      "a locksmith at a stubborn door, tool belt catching the light",
+      "a crossing guard halting a school bus with one raised palm"
+    ]},
+    "Silhouette Shot": { look: "Pure silhouette photography, subjects as black shapes against luminous backgrounds.", finish: "Shape-driven storytelling, rim light edges, everything said without a face.", scenes: [
+      "a boxer skipping rope against a wall of golden gym dust",
+      "two lovers arguing behind a backlit curtain, hands telling the story",
+      "a cellist on a rooftop against a bruised orange sunset",
+      "a fisherman casting at dawn, the line drawing calligraphy in the air",
+      "a mother lifting a child against a ferris wheel of light",
+      "a stag pausing on a ridge as fog glows behind it",
+      "a welder inside a doorway of sparks",
+      "dancers rehearsing behind frosted studio glass",
+      "a pilot walking toward a plane swallowed by hangar light",
+      "a chess player's profile against a rain-streaked neon window"
+    ]},
+    "Reflection Shot": { look: "The scene captured entirely in a reflection, reality doubled and framed by its mirror.", finish: "Layered composition, the reflection sharper than the world, quiet visual poetry.", scenes: [
+      "a ballerina practicing in a puddle outside the stage door",
+      "a skyline inverted in the window of a moving train",
+      "a barber's client seen only in the mirror between scissor flashes",
+      "a wedding ring exchange caught in a champagne glass",
+      "storm clouds crossing a skyscraper's mirrored face",
+      "a diner conversation reflected in a chrome napkin dispenser",
+      "a child's face in a Christmas ornament, tree lights orbiting",
+      "a motorcycle passing through a row of parked car mirrors",
+      "an artist studying her portrait in a gallery's dark glass",
+      "the moon shattering and reassembling in a koi pond"
+    ]},
+    "Frame Within a Frame": { look: "Frame-within-a-frame composition, the subject held inside a doorway, window, or arch.", finish: "Nested geometry, the world cropped by the world, painterly depth.", scenes: [
+      "a farewell seen through a train window within a station arch",
+      "a chef plating dinner framed by the kitchen pass",
+      "a violinist practicing inside a warehouse doorway of golden light",
+      "lovers dancing framed by a hole in a festival tent",
+      "a lighthouse keeper reading, framed by a porthole within a doorway",
+      "a boxing match glimpsed through a chain-link diamond",
+      "a mother waving from a kitchen window framed by garden trellis",
+      "a painter at work seen through her own stretched canvas frame",
+      "a night train conductor framed by carriage doors aligning",
+      "a desert traveler framed by a canyon slot within a cave mouth"
+    ]},
+    "Snorricam": { look: "Snorricam rig shot, camera mounted to the actor's body facing them, face locked center while the world lurches behind.", finish: "Disorienting locked-face energy, background swimming with motion, subjective vertigo.", scenes: [
+      "a groom sprinting late to his own wedding through a farmers market",
+      "a night-shift nurse pacing a corridor as gurneys blur past",
+      "a boxer walking the tunnel to the ring, crowd smearing into noise",
+      "a pickpocket weaving a festival crowd with a stolen watch",
+      "a student marching to the exam hall as hallways whirl",
+      "a chef storming the dining room after a critic's review",
+      "a marathoner hitting the wall at mile 22, city tilting",
+      "a new employee's first walk across an endless open office",
+      "a protester carried by a surging crowd, face defiant and still",
+      "a father pacing a maternity ward at 4am, doors strobing past"
+    ]},
+    "Split Diopter": { look: "Split diopter shot, foreground and background both razor sharp, a seam of blur dividing two worlds.", finish: "Dual-plane tension, two stories in one frame, De Palma geometry.", scenes: [
+      "a phone ringing in sharp foreground while its owner sleeps sharp in the distance",
+      "a resignation letter on a desk, the boss laughing at the far end of the office",
+      "a chess clock in close focus, the opponent's eyes sharp across the table",
+      "a wedding ring on a nightstand, the packed suitcase sharp by the door",
+      "a detective's coffee going cold up front, the suspect pacing sharp behind glass",
+      "a smoke detector blinking in foreground, the unattended stove sharp beyond",
+      "an actress's cue card up close, the live audience sharp past the curtain gap",
+      "a winning lottery ticket on the counter, the customer walking away sharp outside",
+      "a surgeon's steady hand in focus, the flatlining monitor sharp across the room",
+      "a love note taped to a locker, its author sharp and watching down the hall"
+    ]},
+    "Through the Keyhole": { look: "Voyeuristic keyhole framing, the scene glimpsed through a small aperture, edges vignetted to black.", finish: "Stolen-glance intimacy, forbidden framing, breath-held stillness.", scenes: [
+      "a magician rehearsing a trick he's never shown anyone",
+      "a retired dancer performing for an audience of houseplants",
+      "two clockmakers arguing over a watch the size of a coin",
+      "a child teaching the family dog to shake hands, both failing",
+      "a banker counting money into two very different envelopes",
+      "an astronaut's widow lighting a candle by a model rocket",
+      "a playwright acting out both sides of a love scene alone",
+      "a jewel appraiser's eye widening behind a loupe",
+      "a night guard waltzing with a museum mannequin",
+      "a forger comparing two identical paintings by candlelight"
+    ]}
+  };
+
   function slugify(s){ return String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-"); }
 
   // Collections generated before the style system; their prompts must stay
@@ -875,7 +1001,14 @@
 
         var prompt;
         var formatWorld = facetKey === "format" ? FORMAT_WORLDS[tagValue] : null;
-        if (formatWorld){
+        var shotWorld = facetKey === "shotType" ? SHOT_WORLDS[tagValue] : null;
+        if (shotWorld){
+          var sscene = shotWorld.scenes[idx % shotWorld.scenes.length];
+          styleName = "Live Action";
+          subjectPhrase = sscene;
+          displayAction = sscene;
+          prompt = shotWorld.look + " " + sscene.charAt(0).toUpperCase() + sscene.slice(1) + ". " + shotWorld.finish;
+        } else if (formatWorld){
           // Format collections: the format is the star. Bespoke scenarios in
           // the format's native habitat; no style substitution ever hides it.
           var scene = formatWorld.scenes[idx % formatWorld.scenes.length];
@@ -1468,7 +1601,107 @@
     "tag-format-body-cam-6": "https://videos.aidirectorme.com/body-cam/tag-format-body-cam-6.mp4",
     "tag-format-body-cam-7": "https://videos.aidirectorme.com/body-cam/tag-format-body-cam-7.mp4",
     "tag-format-body-cam-8": "https://videos.aidirectorme.com/body-cam/tag-format-body-cam-8.mp4",
-    "tag-format-body-cam-9": "https://videos.aidirectorme.com/body-cam/tag-format-body-cam-9.mp4"
+    "tag-format-body-cam-9": "https://videos.aidirectorme.com/body-cam/tag-format-body-cam-9.mp4",
+    "tag-shottype-dutch-angle-0": "https://videos.aidirectorme.com/dutch-angle/tag-shottype-dutch-angle-0.mp4",
+    "tag-shottype-dutch-angle-1": "https://videos.aidirectorme.com/dutch-angle/tag-shottype-dutch-angle-1.mp4",
+    "tag-shottype-dutch-angle-2": "https://videos.aidirectorme.com/dutch-angle/tag-shottype-dutch-angle-2.mp4",
+    "tag-shottype-dutch-angle-3": "https://videos.aidirectorme.com/dutch-angle/tag-shottype-dutch-angle-3.mp4",
+    "tag-shottype-dutch-angle-4": "https://videos.aidirectorme.com/dutch-angle/tag-shottype-dutch-angle-4.mp4",
+    "tag-shottype-dutch-angle-5": "https://videos.aidirectorme.com/dutch-angle/tag-shottype-dutch-angle-5.mp4",
+    "tag-shottype-dutch-angle-6": "https://videos.aidirectorme.com/dutch-angle/tag-shottype-dutch-angle-6.mp4",
+    "tag-shottype-dutch-angle-7": "https://videos.aidirectorme.com/dutch-angle/tag-shottype-dutch-angle-7.mp4",
+    "tag-shottype-dutch-angle-8": "https://videos.aidirectorme.com/dutch-angle/tag-shottype-dutch-angle-8.mp4",
+    "tag-shottype-dutch-angle-9": "https://videos.aidirectorme.com/dutch-angle/tag-shottype-dutch-angle-9.mp4",
+    "tag-shottype-bird-s-eye-view-0": "https://videos.aidirectorme.com/bird-s-eye-view/tag-shottype-bird-s-eye-view-0.mp4",
+    "tag-shottype-bird-s-eye-view-1": "https://videos.aidirectorme.com/bird-s-eye-view/tag-shottype-bird-s-eye-view-1.mp4",
+    "tag-shottype-bird-s-eye-view-2": "https://videos.aidirectorme.com/bird-s-eye-view/tag-shottype-bird-s-eye-view-2.mp4",
+    "tag-shottype-bird-s-eye-view-3": "https://videos.aidirectorme.com/bird-s-eye-view/tag-shottype-bird-s-eye-view-3.mp4",
+    "tag-shottype-bird-s-eye-view-4": "https://videos.aidirectorme.com/bird-s-eye-view/tag-shottype-bird-s-eye-view-4.mp4",
+    "tag-shottype-bird-s-eye-view-5": "https://videos.aidirectorme.com/bird-s-eye-view/tag-shottype-bird-s-eye-view-5.mp4",
+    "tag-shottype-bird-s-eye-view-6": "https://videos.aidirectorme.com/bird-s-eye-view/tag-shottype-bird-s-eye-view-6.mp4",
+    "tag-shottype-bird-s-eye-view-7": "https://videos.aidirectorme.com/bird-s-eye-view/tag-shottype-bird-s-eye-view-7.mp4",
+    "tag-shottype-bird-s-eye-view-8": "https://videos.aidirectorme.com/bird-s-eye-view/tag-shottype-bird-s-eye-view-8.mp4",
+    "tag-shottype-bird-s-eye-view-9": "https://videos.aidirectorme.com/bird-s-eye-view/tag-shottype-bird-s-eye-view-9.mp4",
+    "tag-shottype-worm-s-eye-view-0": "https://videos.aidirectorme.com/worm-s-eye-view/tag-shottype-worm-s-eye-view-0.mp4",
+    "tag-shottype-worm-s-eye-view-1": "https://videos.aidirectorme.com/worm-s-eye-view/tag-shottype-worm-s-eye-view-1.mp4",
+    "tag-shottype-worm-s-eye-view-2": "https://videos.aidirectorme.com/worm-s-eye-view/tag-shottype-worm-s-eye-view-2.mp4",
+    "tag-shottype-worm-s-eye-view-3": "https://videos.aidirectorme.com/worm-s-eye-view/tag-shottype-worm-s-eye-view-3.mp4",
+    "tag-shottype-worm-s-eye-view-4": "https://videos.aidirectorme.com/worm-s-eye-view/tag-shottype-worm-s-eye-view-4.mp4",
+    "tag-shottype-worm-s-eye-view-5": "https://videos.aidirectorme.com/worm-s-eye-view/tag-shottype-worm-s-eye-view-5.mp4",
+    "tag-shottype-worm-s-eye-view-6": "https://videos.aidirectorme.com/worm-s-eye-view/tag-shottype-worm-s-eye-view-6.mp4",
+    "tag-shottype-worm-s-eye-view-7": "https://videos.aidirectorme.com/worm-s-eye-view/tag-shottype-worm-s-eye-view-7.mp4",
+    "tag-shottype-worm-s-eye-view-8": "https://videos.aidirectorme.com/worm-s-eye-view/tag-shottype-worm-s-eye-view-8.mp4",
+    "tag-shottype-worm-s-eye-view-9": "https://videos.aidirectorme.com/worm-s-eye-view/tag-shottype-worm-s-eye-view-9.mp4",
+    "tag-shottype-cowboy-shot-0": "https://videos.aidirectorme.com/cowboy-shot/tag-shottype-cowboy-shot-0.mp4",
+    "tag-shottype-cowboy-shot-1": "https://videos.aidirectorme.com/cowboy-shot/tag-shottype-cowboy-shot-1.mp4",
+    "tag-shottype-cowboy-shot-2": "https://videos.aidirectorme.com/cowboy-shot/tag-shottype-cowboy-shot-2.mp4",
+    "tag-shottype-cowboy-shot-3": "https://videos.aidirectorme.com/cowboy-shot/tag-shottype-cowboy-shot-3.mp4",
+    "tag-shottype-cowboy-shot-4": "https://videos.aidirectorme.com/cowboy-shot/tag-shottype-cowboy-shot-4.mp4",
+    "tag-shottype-cowboy-shot-5": "https://videos.aidirectorme.com/cowboy-shot/tag-shottype-cowboy-shot-5.mp4",
+    "tag-shottype-cowboy-shot-6": "https://videos.aidirectorme.com/cowboy-shot/tag-shottype-cowboy-shot-6.mp4",
+    "tag-shottype-cowboy-shot-7": "https://videos.aidirectorme.com/cowboy-shot/tag-shottype-cowboy-shot-7.mp4",
+    "tag-shottype-cowboy-shot-8": "https://videos.aidirectorme.com/cowboy-shot/tag-shottype-cowboy-shot-8.mp4",
+    "tag-shottype-cowboy-shot-9": "https://videos.aidirectorme.com/cowboy-shot/tag-shottype-cowboy-shot-9.mp4",
+    "tag-shottype-silhouette-shot-0": "https://videos.aidirectorme.com/silhouette-shot/tag-shottype-silhouette-shot-0.mp4",
+    "tag-shottype-silhouette-shot-1": "https://videos.aidirectorme.com/silhouette-shot/tag-shottype-silhouette-shot-1.mp4",
+    "tag-shottype-silhouette-shot-2": "https://videos.aidirectorme.com/silhouette-shot/tag-shottype-silhouette-shot-2.mp4",
+    "tag-shottype-silhouette-shot-3": "https://videos.aidirectorme.com/silhouette-shot/tag-shottype-silhouette-shot-3.mp4",
+    "tag-shottype-silhouette-shot-4": "https://videos.aidirectorme.com/silhouette-shot/tag-shottype-silhouette-shot-4.mp4",
+    "tag-shottype-silhouette-shot-5": "https://videos.aidirectorme.com/silhouette-shot/tag-shottype-silhouette-shot-5.mp4",
+    "tag-shottype-silhouette-shot-6": "https://videos.aidirectorme.com/silhouette-shot/tag-shottype-silhouette-shot-6.mp4",
+    "tag-shottype-silhouette-shot-7": "https://videos.aidirectorme.com/silhouette-shot/tag-shottype-silhouette-shot-7.mp4",
+    "tag-shottype-silhouette-shot-8": "https://videos.aidirectorme.com/silhouette-shot/tag-shottype-silhouette-shot-8.mp4",
+    "tag-shottype-silhouette-shot-9": "https://videos.aidirectorme.com/silhouette-shot/tag-shottype-silhouette-shot-9.mp4",
+    "tag-shottype-reflection-shot-0": "https://videos.aidirectorme.com/reflection-shot/tag-shottype-reflection-shot-0.mp4",
+    "tag-shottype-reflection-shot-1": "https://videos.aidirectorme.com/reflection-shot/tag-shottype-reflection-shot-1.mp4",
+    "tag-shottype-reflection-shot-2": "https://videos.aidirectorme.com/reflection-shot/tag-shottype-reflection-shot-2.mp4",
+    "tag-shottype-reflection-shot-3": "https://videos.aidirectorme.com/reflection-shot/tag-shottype-reflection-shot-3.mp4",
+    "tag-shottype-reflection-shot-4": "https://videos.aidirectorme.com/reflection-shot/tag-shottype-reflection-shot-4.mp4",
+    "tag-shottype-reflection-shot-5": "https://videos.aidirectorme.com/reflection-shot/tag-shottype-reflection-shot-5.mp4",
+    "tag-shottype-reflection-shot-6": "https://videos.aidirectorme.com/reflection-shot/tag-shottype-reflection-shot-6.mp4",
+    "tag-shottype-reflection-shot-7": "https://videos.aidirectorme.com/reflection-shot/tag-shottype-reflection-shot-7.mp4",
+    "tag-shottype-reflection-shot-8": "https://videos.aidirectorme.com/reflection-shot/tag-shottype-reflection-shot-8.mp4",
+    "tag-shottype-reflection-shot-9": "https://videos.aidirectorme.com/reflection-shot/tag-shottype-reflection-shot-9.mp4",
+    "tag-shottype-frame-within-a-frame-0": "https://videos.aidirectorme.com/frame-within-a-frame/tag-shottype-frame-within-a-frame-0.mp4",
+    "tag-shottype-frame-within-a-frame-1": "https://videos.aidirectorme.com/frame-within-a-frame/tag-shottype-frame-within-a-frame-1.mp4",
+    "tag-shottype-frame-within-a-frame-2": "https://videos.aidirectorme.com/frame-within-a-frame/tag-shottype-frame-within-a-frame-2.mp4",
+    "tag-shottype-frame-within-a-frame-3": "https://videos.aidirectorme.com/frame-within-a-frame/tag-shottype-frame-within-a-frame-3.mp4",
+    "tag-shottype-frame-within-a-frame-4": "https://videos.aidirectorme.com/frame-within-a-frame/tag-shottype-frame-within-a-frame-4.mp4",
+    "tag-shottype-frame-within-a-frame-5": "https://videos.aidirectorme.com/frame-within-a-frame/tag-shottype-frame-within-a-frame-5.mp4",
+    "tag-shottype-frame-within-a-frame-6": "https://videos.aidirectorme.com/frame-within-a-frame/tag-shottype-frame-within-a-frame-6.mp4",
+    "tag-shottype-frame-within-a-frame-7": "https://videos.aidirectorme.com/frame-within-a-frame/tag-shottype-frame-within-a-frame-7.mp4",
+    "tag-shottype-frame-within-a-frame-8": "https://videos.aidirectorme.com/frame-within-a-frame/tag-shottype-frame-within-a-frame-8.mp4",
+    "tag-shottype-frame-within-a-frame-9": "https://videos.aidirectorme.com/frame-within-a-frame/tag-shottype-frame-within-a-frame-9.mp4",
+    "tag-shottype-snorricam-0": "https://videos.aidirectorme.com/snorricam/tag-shottype-snorricam-0.mp4",
+    "tag-shottype-snorricam-1": "https://videos.aidirectorme.com/snorricam/tag-shottype-snorricam-1.mp4",
+    "tag-shottype-snorricam-2": "https://videos.aidirectorme.com/snorricam/tag-shottype-snorricam-2.mp4",
+    "tag-shottype-snorricam-3": "https://videos.aidirectorme.com/snorricam/tag-shottype-snorricam-3.mp4",
+    "tag-shottype-snorricam-4": "https://videos.aidirectorme.com/snorricam/tag-shottype-snorricam-4.mp4",
+    "tag-shottype-snorricam-5": "https://videos.aidirectorme.com/snorricam/tag-shottype-snorricam-5.mp4",
+    "tag-shottype-snorricam-6": "https://videos.aidirectorme.com/snorricam/tag-shottype-snorricam-6.mp4",
+    "tag-shottype-snorricam-7": "https://videos.aidirectorme.com/snorricam/tag-shottype-snorricam-7.mp4",
+    "tag-shottype-snorricam-8": "https://videos.aidirectorme.com/snorricam/tag-shottype-snorricam-8.mp4",
+    "tag-shottype-snorricam-9": "https://videos.aidirectorme.com/snorricam/tag-shottype-snorricam-9.mp4",
+    "tag-shottype-split-diopter-0": "https://videos.aidirectorme.com/split-diopter/tag-shottype-split-diopter-0.mp4",
+    "tag-shottype-split-diopter-1": "https://videos.aidirectorme.com/split-diopter/tag-shottype-split-diopter-1.mp4",
+    "tag-shottype-split-diopter-2": "https://videos.aidirectorme.com/split-diopter/tag-shottype-split-diopter-2.mp4",
+    "tag-shottype-split-diopter-3": "https://videos.aidirectorme.com/split-diopter/tag-shottype-split-diopter-3.mp4",
+    "tag-shottype-split-diopter-4": "https://videos.aidirectorme.com/split-diopter/tag-shottype-split-diopter-4.mp4",
+    "tag-shottype-split-diopter-5": "https://videos.aidirectorme.com/split-diopter/tag-shottype-split-diopter-5.mp4",
+    "tag-shottype-split-diopter-6": "https://videos.aidirectorme.com/split-diopter/tag-shottype-split-diopter-6.mp4",
+    "tag-shottype-split-diopter-7": "https://videos.aidirectorme.com/split-diopter/tag-shottype-split-diopter-7.mp4",
+    "tag-shottype-split-diopter-8": "https://videos.aidirectorme.com/split-diopter/tag-shottype-split-diopter-8.mp4",
+    "tag-shottype-split-diopter-9": "https://videos.aidirectorme.com/split-diopter/tag-shottype-split-diopter-9.mp4",
+    "tag-shottype-through-the-keyhole-0": "https://videos.aidirectorme.com/through-the-keyhole/tag-shottype-through-the-keyhole-0.mp4",
+    "tag-shottype-through-the-keyhole-1": "https://videos.aidirectorme.com/through-the-keyhole/tag-shottype-through-the-keyhole-1.mp4",
+    "tag-shottype-through-the-keyhole-2": "https://videos.aidirectorme.com/through-the-keyhole/tag-shottype-through-the-keyhole-2.mp4",
+    "tag-shottype-through-the-keyhole-3": "https://videos.aidirectorme.com/through-the-keyhole/tag-shottype-through-the-keyhole-3.mp4",
+    "tag-shottype-through-the-keyhole-4": "https://videos.aidirectorme.com/through-the-keyhole/tag-shottype-through-the-keyhole-4.mp4",
+    "tag-shottype-through-the-keyhole-5": "https://videos.aidirectorme.com/through-the-keyhole/tag-shottype-through-the-keyhole-5.mp4",
+    "tag-shottype-through-the-keyhole-6": "https://videos.aidirectorme.com/through-the-keyhole/tag-shottype-through-the-keyhole-6.mp4",
+    "tag-shottype-through-the-keyhole-7": "https://videos.aidirectorme.com/through-the-keyhole/tag-shottype-through-the-keyhole-7.mp4",
+    "tag-shottype-through-the-keyhole-8": "https://videos.aidirectorme.com/through-the-keyhole/tag-shottype-through-the-keyhole-8.mp4",
+    "tag-shottype-through-the-keyhole-9": "https://videos.aidirectorme.com/through-the-keyhole/tag-shottype-through-the-keyhole-9.mp4"
   };
 
   var state = { search: "", cameraMove: new Set(), shotType: new Set(), emotion: new Set(), lighting: new Set(), format: new Set() };
