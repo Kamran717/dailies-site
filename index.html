@@ -962,7 +962,26 @@
     { name: "Claymation", medium: "Playful claymation, molded clay characters, visible fingerprint textures.", tail: "Squash-and-stretch motion, warm handmade charm." }
   ];
 
+  // Camera-move collections whose clips have real videos and whose prompts
+  // genuinely express their shot type. Source pool for shot-type filters.
+  var PRODUCED_MOVES = ["Slow Dolly In","Handheld Push","Crane Rise","Whip Pan","Static Wide","Orbit Left","Rack Focus","Low Angle Tilt Up","Overhead Drop","Tracking Side"];
+
   function generateTagCollection(facetKey, tagValue){
+    // Original shot types (no bespoke world): show real clips from produced
+    // collections whose framing matches, instead of placeholder cards.
+    if (facetKey === "shotType" && !SHOT_WORLDS[tagValue]){
+      var pool = [];
+      PRODUCED_MOVES.forEach(function(mv){
+        generateTagCollection("cameraMove", mv).forEach(function(c){
+          if (c.shotType === tagValue && REAL_VIDEOS[c.id]){
+            pool.push(Object.assign({}, c, { theme: "From the Library" }));
+          }
+        });
+      });
+      var even = Math.floor(pool.length / 5) * 5;
+      return even > 0 ? pool.slice(0, even) : pool;
+    }
+
     var results = [];
     for (var g = 0; g < THEMES.length; g++){
       var theme = THEMES[g];
