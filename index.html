@@ -1504,9 +1504,17 @@
     renderGrid();
   }
 
+  // Extra shot-type collections shown as chips. Kept separate from
+  // allShotTypes so the prompt rotation for produced collections never shifts.
+  var EXTRA_SHOT_CHIPS = [
+    "Dutch Angle","Bird's-Eye View","Worm's-Eye View","Cowboy Shot","Silhouette Shot",
+    "Reflection Shot","Frame Within a Frame","Snorricam","Split Diopter","Through the Keyhole"
+  ];
+
   function buildFacetRow(facetKey){
     var row = document.querySelector('.facet-row[data-facet="' + facetKey + '"]');
     var values = unique(facetKey);
+    if (facetKey === 'shotType'){ values = values.concat(EXTRA_SHOT_CHIPS); }
     values.forEach(function(val){
       var btn = document.createElement('button');
       btn.className = 'chip'; btn.type = 'button'; btn.textContent = val;
