@@ -2283,7 +2283,8 @@
     $('aidm-title').textContent = 'Casting you into the scene';
     runTimer('Generating the shot (~1 min)\u2026 ');
 
-    postJSON('/api/star', { userId: uid, scenePrompt: scenePrompt, faceImageBase64: face.dataUrl })
+    var castUid = (window.AIDM_getUserId ? window.AIDM_getUserId() : uid);
+    postJSON('/api/star', { userId: castUid, scenePrompt: scenePrompt, faceImageBase64: face.dataUrl })
     .then(function(r){
       stopTimer();
       $('aidm-casting').style.display = 'none';
@@ -2312,6 +2313,140 @@
 </script>
 <!-- ============ END STAR IN THIS SCENE ============ -->
 
+
+
+<!-- ===== SUPABASE AUTH (email) ===== -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<style>
+  #aidm-auth{ margin-left:auto; display:flex; align-items:center; gap:10px; flex-shrink:0; }
+  .aidm-auth-btn{ font-family:var(--ff-mono); font-size:12px; font-weight:600; letter-spacing:.03em; text-transform:uppercase; background:var(--amber); color:#1a1408; border:none; padding:9px 16px; cursor:pointer; }
+  .aidm-auth-btn:hover{ background:#f5b657; }
+  .aidm-auth-email{ font-family:var(--ff-mono); font-size:11px; color:var(--ink-dim); max-width:160px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .aidm-auth-out{ font-family:var(--ff-mono); font-size:11px; color:var(--ink-dim); background:none; border:1px solid var(--line); padding:7px 12px; cursor:pointer; text-transform:uppercase; }
+  .aidm-auth-out:hover{ color:var(--ink); border-color:var(--ink-dim); }
+
+  #aidm-auth-ov{ position:fixed; inset:0; z-index:10001; background:rgba(8,8,8,.82); backdrop-filter:blur(6px); display:none; align-items:center; justify-content:center; padding:16px; }
+  #aidm-auth-ov.open{ display:flex; }
+  #aidm-auth-panel{ width:min(400px,100%); background:var(--bg); color:var(--ink); border:1px solid var(--line); border-radius:6px; padding:26px; font-family:system-ui,sans-serif; }
+  #aidm-auth-panel h3{ margin:0 0 4px; font-size:19px; }
+  #aidm-auth-panel p.sub{ margin:0 0 18px; font-size:13px; color:var(--ink-dim); }
+  #aidm-auth-panel input{ width:100%; box-sizing:border-box; background:#0f0f10; color:var(--ink); border:1px solid var(--line); border-radius:6px; padding:11px 12px; font-size:14px; margin-bottom:10px; }
+  #aidm-auth-panel input:focus{ outline:none; border-color:var(--amber); }
+  #aidm-auth-go{ width:100%; font-family:var(--ff-mono); font-size:13px; font-weight:700; text-transform:uppercase; background:var(--amber); color:#1a1408; border:none; padding:12px; cursor:pointer; margin-top:4px; }
+  #aidm-auth-go:disabled{ opacity:.5; cursor:not-allowed; }
+  #aidm-auth-toggle{ margin-top:14px; font-size:13px; color:var(--ink-dim); text-align:center; }
+  #aidm-auth-toggle a{ color:var(--amber); cursor:pointer; text-decoration:underline; }
+  #aidm-auth-msg{ font-size:13px; margin-top:12px; min-height:18px; word-break:break-word; }
+  #aidm-auth-close{ float:right; background:none; border:none; color:var(--ink-dim); font-size:16px; cursor:pointer; margin-top:-6px; }
+</style>
+
+<div id="aidm-auth-ov">
+  <div id="aidm-auth-panel">
+    <button id="aidm-auth-close">&#10005;</button>
+    <h3 id="aidm-auth-title">Sign in</h3>
+    <p class="sub" id="aidm-auth-sub">Sign in to save your casts and membership.</p>
+    <input id="aidm-auth-email" type="email" placeholder="Email" autocomplete="email">
+    <input id="aidm-auth-pass" type="password" placeholder="Password" autocomplete="current-password">
+    <button id="aidm-auth-go">Sign in</button>
+    <div id="aidm-auth-msg"></div>
+    <div id="aidm-auth-toggle">New here? <a id="aidm-auth-switch">Create an account</a></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var SUPABASE_URL = 'https://mrgcjzmtszmtsqgalfwq.supabase.co';
+  var SUPABASE_KEY = 'sb_publishable_b2UBIEMmcP2jy4iC2HehXg_T-OiKa4b';
+
+  var anonId = localStorage.getItem('aidm_uid');
+  if(!anonId){ anonId = 'anon_'+(crypto.randomUUID?crypto.randomUUID():(Date.now()+'_'+Math.random())); localStorage.setItem('aidm_uid', anonId); }
+  var currentUser = null;
+  // Available to the cast widget so a logged-in user's real id is used.
+  window.AIDM_getUserId = function(){ return (currentUser && currentUser.id) || anonId; };
+  window.AIDM_getUser = function(){ return currentUser; };
+
+  function boot(){
+    if(!window.supabase){ setTimeout(boot, 200); return; }
+    var sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+    window.AIDM_SB = sb;
+
+    var $ = function(id){ return document.getElementById(id); };
+    var mode = 'signin';
+
+    var slate = document.querySelector('.slate-top');
+    var authWrap = document.createElement('div'); authWrap.id = 'aidm-auth';
+    if(slate){ slate.appendChild(authWrap); }
+
+    function renderHeader(){
+      if(currentUser){
+        authWrap.innerHTML = '<span class="aidm-auth-email"></span><button class="aidm-auth-out">Sign out</button>';
+        authWrap.querySelector('.aidm-auth-email').textContent = currentUser.email || 'Account';
+        authWrap.querySelector('.aidm-auth-out').onclick = function(){ sb.auth.signOut(); };
+      } else {
+        authWrap.innerHTML = '<button class="aidm-auth-btn">Sign in</button>';
+        authWrap.querySelector('.aidm-auth-btn').onclick = openModal;
+      }
+    }
+
+    var ov = $('aidm-auth-ov');
+    function openModal(){ mode='signin'; applyMode(); $('aidm-auth-msg').textContent=''; ov.classList.add('open'); }
+    function closeModal(){ ov.classList.remove('open'); }
+    $('aidm-auth-close').onclick = closeModal;
+    ov.onclick = function(e){ if(e.target===ov) closeModal(); };
+
+    function bindSwitch(){
+      var sw = $('aidm-auth-switch');
+      if(sw) sw.onclick = function(){ mode = (mode==='signin'?'signup':'signin'); applyMode(); };
+    }
+    function applyMode(){
+      if(mode==='signin'){
+        $('aidm-auth-title').textContent='Sign in';
+        $('aidm-auth-sub').textContent='Sign in to save your casts and membership.';
+        $('aidm-auth-go').textContent='Sign in';
+        $('aidm-auth-toggle').innerHTML='New here? <a id="aidm-auth-switch">Create an account</a>';
+      } else {
+        $('aidm-auth-title').textContent='Create account';
+        $('aidm-auth-sub').textContent='Create an account to save casts and unlock membership.';
+        $('aidm-auth-go').textContent='Create account';
+        $('aidm-auth-toggle').innerHTML='Have an account? <a id="aidm-auth-switch">Sign in</a>';
+      }
+      bindSwitch();
+    }
+    bindSwitch();
+
+    $('aidm-auth-go').onclick = async function(){
+      var email = $('aidm-auth-email').value.trim();
+      var pass = $('aidm-auth-pass').value;
+      var msg = $('aidm-auth-msg');
+      if(!email || !pass){ msg.style.color='var(--amber)'; msg.textContent='Enter your email and password.'; return; }
+      $('aidm-auth-go').disabled = true; msg.style.color='var(--ink-dim)'; msg.textContent='Working\u2026';
+      try{
+        if(mode==='signin'){
+          var r = await sb.auth.signInWithPassword({ email:email, password:pass });
+          if(r.error) throw r.error;
+          closeModal();
+        } else {
+          var r2 = await sb.auth.signUp({ email:email, password:pass });
+          if(r2.error) throw r2.error;
+          if(r2.data && r2.data.session){ closeModal(); }
+          else { msg.style.color='var(--amber)'; msg.textContent='Check your email to confirm your account, then sign in.'; }
+        }
+      }catch(err){
+        msg.style.color='#e0473c'; msg.textContent = (err && err.message) || 'Something went wrong.';
+      }finally{
+        $('aidm-auth-go').disabled = false;
+      }
+    };
+
+    sb.auth.getSession().then(function(r){ currentUser = r.data.session ? r.data.session.user : null; renderHeader(); });
+    sb.auth.onAuthStateChange(function(_e, session){ currentUser = session ? session.user : null; renderHeader(); });
+
+    renderHeader();
+  }
+  boot();
+})();
+</script>
+<!-- ===== END SUPABASE AUTH ===== -->
 
 </body>
 </html>
