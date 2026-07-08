@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    "@higgsfield/client": "latest",
+    "@fal-ai/client": "latest",
     "@upstash/redis": "latest",
     "stripe": "latest"
   }

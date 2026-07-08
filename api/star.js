@@ -1,69 +1,40 @@
-// api/star.js  —  Vercel serverless function
-// The Generate button POSTs here. It gates the request, reuses (or builds)
-// the user's identity, casts them into the scene, and returns the finished
-// ~5-second clip in one response.
-//
-// Body: { userId, scenePrompt, faceImageBase64, motionPrompt?, motionId? }
+// api/star.js  —  the cast. One request: gate, then generate.
+// Body: { userId, scenePrompt, faceImageBase64 }
 
-import { Redis } from "@upstash/redis";
 import { checkAndConsumeQuota } from "../lib/gate.js";
-import { createIdentity, castVideo } from "../lib/higgsfield.js";
-
-const redis = Redis.fromEnv();
+import { castVideo } from "../lib/higgsfield.js";
 
 export const config = {
   api: { bodyParser: { sizeLimit: "8mb" } },
-  maxDuration: 300, // room for identity + image + video (needs a Vercel plan that allows it)
+  maxDuration: 300,
 };
 
 export default async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).json({ error: "Use POST" });
 
-  const { userId, scenePrompt, faceImageBase64, faceId, motionPrompt, motionId } =
-    req.body || {};
+  const { userId, scenePrompt, faceImageBase64 } = req.body || {};
   if (!userId || !scenePrompt || !faceImageBase64) {
-    return res
-      .status(400)
-      .json({ error: "Missing userId, scenePrompt, or faceImageBase64" });
+    return res.status(400).json({ error: "Missing userId, scenePrompt, or faceImageBase64" });
   }
 
   try {
-    // 1 — Gate. Free users get a set number of casts, then must subscribe.
     const gate = await checkAndConsumeQuota(userId);
     if (!gate.allowed) {
       return res.status(402).json({
         error: "limit_reached",
-        message: "You've used your free casts. Subscribe for unlimited 5-second casts.",
+        message: "You've used your free casts. Subscribe for unlimited casts.",
         remaining: 0,
       });
     }
 
-    // 2 — Identity. Reuse the SoulId for THIS face if we've built it before,
-    //     so each saved face gets its own identity and repeat casts are fast
-    //     (the first cast of a face pays to build it once).
-    const soulKey = faceId ? `soul:${userId}:${faceId}` : `soul:${userId}`;
-    let soulId = await redis.get(soulKey);
-    if (!soulId) {
-      soulId = await createIdentity({
-        faceBase64: faceImageBase64,
-        name: `user-${userId}`,
-      });
-      await redis.set(soulKey, soulId);
-    }
-
-    // 3 — Cast into the scene and animate.
     const { videoUrl, sceneUrl } = await castVideo({
-      soulId,
+      faceBase64: faceImageBase64,
       scenePrompt,
-      motionPrompt: motionPrompt || "Slow cinematic dolly-in, subtle ambient motion.",
-      motionId, // optional camera-move preset from your library's tags
     });
 
     return res.status(200).json({ videoUrl, sceneUrl, remaining: gate.remaining });
   } catch (err) {
     console.error("[star] failed:", err);
-    return res
-      .status(500)
-      .json({ error: "generation_failed", message: err.message });
+    return res.status(500).json({ error: "generation_failed", message: err.message });
   }
 }

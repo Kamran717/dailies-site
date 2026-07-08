@@ -2229,46 +2229,61 @@
     img.src = dataUrl;
   }
 
+  var castTimer = null;
+  function runTimer(prefix){
+    var t0 = Date.now();
+    if (castTimer) clearInterval(castTimer);
+    castTimer = setInterval(function(){
+      $('aidm-status').textContent = prefix + Math.floor((Date.now()-t0)/1000) + 's';
+    }, 1000);
+  }
+  function stopTimer(){ if (castTimer){ clearInterval(castTimer); castTimer = null; } }
+
+  function postJSON(url, body){
+    return fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body)
+    }).then(function(res){
+      return res.text().then(function(t){
+        var data = null; try { data = JSON.parse(t); } catch(e){}
+        return { status: res.status, text: t, data: data };
+      });
+    });
+  }
+
+  function fail(msg){
+    stopTimer();
+    $('aidm-casting').style.display = 'none';
+    $('aidm-title').textContent = 'Something went wrong';
+    $('aidm-status').textContent = msg;
+  }
+
   function cast(face){
     $('aidm-picker').style.display = 'none';
     $('aidm-result').style.display = 'none';
     $('aidm-desc').style.display = 'none';
     $('aidm-casting').style.display = 'block';
     $('aidm-title').textContent = 'Casting you into the scene';
+    runTimer('Generating the shot (~1 min)\u2026 ');
 
-    var t0 = Date.now();
-    var timer = setInterval(function(){
-      $('aidm-status').textContent = Math.floor((Date.now()-t0)/1000) + 's — building identity, generating the shot, then animating…';
-    }, 1000);
-
-    fetch(API, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ userId: uid, faceId: face.id, scenePrompt: scenePrompt, faceImageBase64: face.dataUrl })
-    })
-    .then(function(res){ return res.text().then(function(t){ return { status: res.status, text: t }; }); })
+    postJSON('/api/star', { userId: uid, scenePrompt: scenePrompt, faceImageBase64: face.dataUrl })
     .then(function(r){
-      clearInterval(timer);
+      stopTimer();
       $('aidm-casting').style.display = 'none';
-      var data = null; try { data = JSON.parse(r.text); } catch(e){}
-      if (r.status === 200 && data && data.videoUrl){
+      if (r.status === 200 && r.data && r.data.videoUrl){
         $('aidm-title').textContent = "You're the star";
-        $('aidm-status').textContent = 'Remaining free casts: ' + (data.remaining != null ? data.remaining : '—');
-        var v = $('aidm-video'); v.src = data.videoUrl;
-        if (data.sceneUrl){ var s = $('aidm-scene'); s.src = data.sceneUrl; s.style.display = 'block'; }
+        $('aidm-status').textContent = 'Remaining free casts: ' + (r.data.remaining != null ? r.data.remaining : '\u2014');
+        var v = $('aidm-video'); v.src = r.data.videoUrl;
+        if (r.data.sceneUrl){ var s = $('aidm-scene'); s.src = r.data.sceneUrl; s.style.display = 'block'; }
         $('aidm-result').style.display = 'block';
       } else if (r.status === 402){
         $('aidm-status').textContent = 'You\u2019ve used your free casts. (Subscribe flow goes here.)';
       } else {
-        $('aidm-title').textContent = 'Something went wrong';
-        $('aidm-status').textContent = 'Error ' + r.status + ':\n' + r.text;
+        fail('Error ' + r.status + ':\n' + r.text);
       }
     })
-    .catch(function(err){
-      clearInterval(timer);
-      $('aidm-casting').style.display = 'none';
-      $('aidm-status').textContent = 'Request failed: ' + err.message;
-    });
+    .catch(function(err){ fail('Request failed: ' + err.message); });
   }
 })();
 </script>
