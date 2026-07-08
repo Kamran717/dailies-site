@@ -19,7 +19,7 @@ export const config = {
 export default async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).json({ error: "Use POST" });
 
-  const { userId, scenePrompt, faceImageBase64, motionPrompt, motionId } =
+  const { userId, scenePrompt, faceImageBase64, faceId, motionPrompt, motionId } =
     req.body || {};
   if (!userId || !scenePrompt || !faceImageBase64) {
     return res
@@ -38,15 +38,17 @@ export default async function handler(req, res) {
       });
     }
 
-    // 2 — Identity. Reuse the user's SoulId if we've built it before; this is
-    //     what makes repeat casts fast and cheap (first cast pays for it once).
-    let soulId = await redis.get(`soul:${userId}`);
+    // 2 — Identity. Reuse the SoulId for THIS face if we've built it before,
+    //     so each saved face gets its own identity and repeat casts are fast
+    //     (the first cast of a face pays to build it once).
+    const soulKey = faceId ? `soul:${userId}:${faceId}` : `soul:${userId}`;
+    let soulId = await redis.get(soulKey);
     if (!soulId) {
       soulId = await createIdentity({
         faceBase64: faceImageBase64,
         name: `user-${userId}`,
       });
-      await redis.set(`soul:${userId}`, soulId);
+      await redis.set(soulKey, soulId);
     }
 
     // 3 — Cast into the scene and animate.
