@@ -2067,6 +2067,131 @@
   generateHeroVideo();
 })();
 </script>
+<!-- ============================================================
+     STAR IN THIS SCENE — drop-in test widget
+     Paste this ENTIRE block into index.html, just before </body>.
+     It adds a floating button, an upload modal, and result display,
+     and calls your live /api/star function. Uses an anonymous
+     per-browser id for now (real sign-in comes later).
+     ============================================================ -->
+<style>
+  #sits-fab{position:fixed;right:20px;bottom:20px;z-index:9998;background:#E8B04B;color:#1a1408;border:none;border-radius:999px;padding:14px 20px;font:700 15px system-ui,sans-serif;cursor:pointer;box-shadow:0 8px 30px rgba(232,176,75,.35)}
+  #sits-overlay{position:fixed;inset:0;z-index:9999;background:rgba(4,4,5,.8);backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;padding:16px}
+  #sits-overlay.open{display:flex}
+  #sits-modal{width:min(520px,100%);max-height:90vh;overflow:auto;background:#141416;color:#f3f3f5;border:1px solid #26262a;border-radius:16px;padding:22px;font-family:system-ui,sans-serif}
+  #sits-modal h3{margin:0 0 4px;font-size:19px}
+  #sits-modal p.sub{margin:0 0 16px;font-size:13px;color:#8a8a92}
+  #sits-modal label{display:block;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#8a8a92;margin:14px 0 6px}
+  #sits-file{width:100%;font-size:13px;color:#c4c4ca}
+  #sits-preview{margin-top:10px;max-width:120px;border-radius:10px;display:none}
+  #sits-prompt{width:100%;box-sizing:border-box;background:#0f0f10;color:#e9e9ee;border:1px solid #26262a;border-radius:10px;padding:10px;font:13px/1.5 system-ui,sans-serif;min-height:72px;resize:vertical}
+  #sits-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:18px}
+  .sits-btn{border:none;border-radius:9px;padding:10px 16px;font:600 13px system-ui,sans-serif;cursor:pointer}
+  .sits-btn.ghost{background:transparent;color:#d6d6da;border:1px solid #26262a}
+  .sits-btn.go{background:#E8B04B;color:#1a1408;font-weight:700}
+  .sits-btn:disabled{opacity:.5;cursor:not-allowed}
+  #sits-status{margin-top:16px;font-size:13px;color:#c4c4ca;white-space:pre-wrap;word-break:break-word}
+  #sits-result{margin-top:14px;display:none}
+  #sits-result video{width:100%;border-radius:12px}
+  #sits-scene{width:100%;border-radius:10px;margin-top:10px;display:none}
+</style>
+
+<button id="sits-fab">★ Star in this Scene</button>
+
+<div id="sits-overlay">
+  <div id="sits-modal">
+    <h3>Star in this Scene</h3>
+    <p class="sub">Upload a photo and we'll cast you into the shot. First cast takes a minute or two.</p>
+
+    <label>Your photo</label>
+    <input id="sits-file" type="file" accept="image/*">
+    <img id="sits-preview" alt="preview">
+
+    <label>Scene prompt</label>
+    <textarea id="sits-prompt">A composed, confident businessman in a tailored navy suit, walking across a private jet terminal at golden hour toward a waiting private jet, shallow depth of field, warm tungsten light, cinematic luxury commercial.</textarea>
+
+    <div id="sits-actions">
+      <button class="sits-btn ghost" id="sits-close">Close</button>
+      <button class="sits-btn go" id="sits-go">★ Generate</button>
+    </div>
+
+    <div id="sits-status"></div>
+    <div id="sits-result">
+      <video id="sits-video" controls autoplay loop playsinline></video>
+      <img id="sits-scene" alt="scene still">
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  // anonymous per-browser id so the free-cast gate can count
+  var uid = localStorage.getItem('aidm_uid');
+  if(!uid){ uid = 'anon_' + (crypto.randomUUID ? crypto.randomUUID() : Date.now()+'_'+Math.random()); localStorage.setItem('aidm_uid', uid); }
+
+  var $ = function(id){ return document.getElementById(id); };
+  var fileData = null;
+
+  $('sits-fab').onclick = function(){ $('sits-overlay').classList.add('open'); };
+  $('sits-close').onclick = function(){ $('sits-overlay').classList.remove('open'); };
+  $('sits-overlay').onclick = function(e){ if(e.target === this) this.classList.remove('open'); };
+
+  $('sits-file').onchange = function(e){
+    var f = e.target.files[0]; if(!f) return;
+    var reader = new FileReader();
+    reader.onload = function(){
+      fileData = reader.result; // full data URL; the server strips the prefix
+      var p = $('sits-preview'); p.src = fileData; p.style.display = 'block';
+    };
+    reader.readAsDataURL(f);
+  };
+
+  $('sits-go').onclick = async function(){
+    if(!fileData){ $('sits-status').textContent = 'Pick a photo first.'; return; }
+    var scenePrompt = $('sits-prompt').value.trim();
+    if(!scenePrompt){ $('sits-status').textContent = 'Add a scene prompt.'; return; }
+
+    var go = $('sits-go'); go.disabled = true;
+    $('sits-result').style.display = 'none';
+    $('sits-video').removeAttribute('src');
+    $('sits-scene').style.display = 'none';
+
+    var t0 = Date.now();
+    var timer = setInterval(function(){
+      var s = Math.floor((Date.now()-t0)/1000);
+      $('sits-status').textContent = 'Casting you into the scene… ' + s + 's\n(building identity, generating the shot, then animating)';
+    }, 1000);
+
+    try{
+      var res = await fetch('/api/star', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ userId: uid, scenePrompt: scenePrompt, faceImageBase64: fileData })
+      });
+      clearInterval(timer);
+      var text = await res.text();
+      var data; try { data = JSON.parse(text); } catch(_) { data = null; }
+
+      if(res.status === 200 && data && data.videoUrl){
+        $('sits-status').textContent = 'Done. Remaining free casts: ' + (data.remaining ?? '—');
+        var v = $('sits-video'); v.src = data.videoUrl;
+        if(data.sceneUrl){ var img = $('sits-scene'); img.src = data.sceneUrl; img.style.display = 'block'; }
+        $('sits-result').style.display = 'block';
+      } else if(res.status === 402){
+        $('sits-status').textContent = 'Free casts used up. (This is where the subscribe flow goes.)';
+      } else {
+        $('sits-status').textContent = 'Error ' + res.status + ':\n' + text;
+      }
+    } catch(err){
+      clearInterval(timer);
+      $('sits-status').textContent = 'Request failed: ' + err.message;
+    } finally {
+      go.disabled = false;
+    }
+  };
+})();
+</script>
+<!-- ============ END STAR IN THIS SCENE WIDGET ============ -->
 
 </body>
 </html>
