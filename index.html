@@ -2104,6 +2104,27 @@
   #aidm-actions{ display:flex; gap:10px; justify-content:flex-end; margin-top:18px; }
   .aidm-btn{ font-family:var(--ff-mono); font-size:12px; border:1px solid var(--line); color:var(--ink-dim); background:none; padding:10px 18px; cursor:pointer; text-transform:uppercase; }
   .aidm-btn:hover{ border-color:var(--ink); color:var(--ink); }
+
+  /* ---- paywall ---- */
+  #aidm-paywall{ display:none; }
+  #aidm-paywall .pw-lede{ font-size:14px; line-height:1.6; color:var(--ink-dim); margin:0 0 20px; }
+  #aidm-paywall .pw-lede strong{ color:var(--ink); font-weight:600; }
+  #aidm-paywall .pw-list{ list-style:none; margin:0 0 22px; padding:0; border-top:1px solid var(--line); }
+  #aidm-paywall .pw-list li{
+    display:flex; gap:12px; align-items:baseline;
+    padding:11px 0; border-bottom:1px solid var(--line);
+    font-size:13px; line-height:1.5; color:var(--ink);
+  }
+  #aidm-paywall .pw-list .pw-n{ font-family:var(--ff-mono); font-size:10px; color:var(--amber); letter-spacing:.14em; flex-shrink:0; }
+  #aidm-paywall .pw-list .pw-soon{ font-family:var(--ff-mono); font-size:9px; letter-spacing:.14em; text-transform:uppercase; color:var(--amber-dim); border:1px solid var(--amber-dim); padding:1px 5px; margin-left:6px; white-space:nowrap; }
+  #aidm-paywall .pw-cta{
+    font-family:var(--ff-mono); font-size:12px; font-weight:600; letter-spacing:.03em;
+    background:var(--amber); color:#1a1408; border:none; padding:13px 22px;
+    cursor:pointer; text-transform:uppercase; width:100%;
+  }
+  #aidm-paywall .pw-cta:hover:not(:disabled){ background:#f5b657; }
+  #aidm-paywall .pw-cta:disabled{ background:none; border:1px solid var(--line); color:var(--ink-dim); cursor:default; }
+  #aidm-paywall .pw-fine{ font-size:11px; line-height:1.5; color:var(--ink-dim); margin:12px 0 0; text-align:center; }
 </style>
 
 <div id="aidm-ov">
@@ -2122,6 +2143,18 @@
     </div>
 
     <div id="aidm-status"></div>
+
+    <div id="aidm-paywall">
+      <p class="pw-lede">Five shots, directed by you. <strong>The library has hundreds more</strong> &mdash; every camera move, every lens, every grade, waiting for a face.</p>
+      <ul class="pw-list">
+        <li><span class="pw-n">01</span><span>Cast without counting. Every shot in the library, as many takes as it takes.</span></li>
+        <li><span class="pw-n">02</span><span>Ten-second clips, not five.<span class="pw-soon">Soon</span></span></li>
+        <li><span class="pw-n">03</span><span>Every cast kept and hosted, permanently, under your own share links.</span></li>
+        <li><span class="pw-n">04</span><span>First access to the AI Filmmaking Masterclass.<span class="pw-soon">Soon</span></span></li>
+      </ul>
+      <button class="pw-cta" id="aidm-pw-cta">Tell me when it opens</button>
+      <p class="pw-fine">Membership isn&rsquo;t live yet. Leave your name and you&rsquo;ll hear first &mdash; no charge, no card.</p>
+    </div>
 
     <div id="aidm-result">
       <video id="aidm-video" controls autoplay loop playsinline muted></video>
@@ -2215,6 +2248,7 @@
   else window.addEventListener('load', function(){ setTimeout(restoreLastCast, 60); });
 
   function showPicker(){
+    $('aidm-paywall').style.display = 'none';
     $('aidm-picker').style.display = 'block';
     $('aidm-casting').style.display = 'none';
     $('aidm-result').style.display = 'none';
@@ -2322,6 +2356,7 @@
 
   function cast(face){
     try{ sessionStorage.removeItem('aidm_last_cast'); }catch(e){}
+    $('aidm-paywall').style.display = 'none';
     $('aidm-picker').style.display = 'none';
     $('aidm-result').style.display = 'none';
     $('aidm-desc').style.display = 'none';
@@ -2387,8 +2422,7 @@
         if (window.AIDM_openAuth) setTimeout(window.AIDM_openAuth, 400);
       } else if (r.status === 402){
         if (window.AIDM_track) window.AIDM_track('paywall_hit', {});
-        $('aidm-title').textContent = 'Free casts used';
-        $('aidm-status').textContent = 'You\u2019ve used your 5 free casts. (Subscribe flow goes here.)';
+        showPaywall();
       } else {
         if (window.AIDM_track) window.AIDM_track('cast_error', { status: r.status });
         fail('Error ' + r.status + ':\n' + r.text);
@@ -2407,6 +2441,29 @@
       fail('Request failed: ' + (err && err.message ? err.message : err));
     });
   }
+
+  // Shown on 402. The person has cast five times — they are the most engaged
+  // user this site has. Do not waste the moment on "(Subscribe flow goes here.)".
+  function showPaywall(){
+    $('aidm-picker').style.display = 'none';
+    $('aidm-casting').style.display = 'none';
+    $('aidm-result').style.display = 'none';
+    $('aidm-desc').style.display = 'none';
+    $('aidm-status').textContent = '';
+    $('aidm-title').textContent = 'That was your fifth take';
+    $('aidm-paywall').style.display = 'block';
+  }
+
+  var pwCta = $('aidm-pw-cta');
+  if (pwCta) pwCta.addEventListener('click', function(){
+    pwCta.disabled = true;
+    pwCta.textContent = 'On the list \u2014 thank you';
+    // Written to the events table. Read it before you price anything.
+    if (window.AIDM_track) window.AIDM_track('membership_interest', {
+      from: 'paywall',
+      prompt: scenePrompt.slice(0,200)
+    });
+  });
 
   // Supabase access token for the signed-in user, or null.
   function getAccessToken(){
