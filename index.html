@@ -2169,7 +2169,7 @@
     var user = window.AIDM_getUser && window.AIDM_getUser();
     if (!user){
       if (window.AIDM_track) window.AIDM_track('signin_prompt', { from: 'star_button' });
-      if (window.AIDM_openAuth) window.AIDM_openAuth();
+      if (window.AIDM_openAuth) window.AIDM_openAuth('cast');
       return;
     }
     showPicker();
@@ -2354,6 +2354,13 @@
   #aidm-auth-go:disabled{ opacity:.5; cursor:not-allowed; }
   #aidm-auth-toggle{ margin-top:14px; font-size:13px; color:var(--ink-dim); text-align:center; }
   #aidm-auth-toggle a{ color:var(--amber); cursor:pointer; text-decoration:underline; }
+  #aidm-auth-forgot{ margin-top:10px; font-size:12px; text-align:center; }
+  #aidm-auth-forgot a{ color:var(--ink-dim); cursor:pointer; text-decoration:underline; }
+  #aidm-auth-forgot a:hover{ color:var(--amber); }
+  #aidm-perks{ background:#0f0f10; border:1px solid var(--line); border-radius:6px; padding:14px 16px; margin-bottom:18px; }
+  .aidm-perk{ display:flex; gap:10px; align-items:flex-start; font-size:13px; color:var(--ink-dim); line-height:1.5; padding:3px 0; }
+  .aidm-perk span{ color:var(--amber); flex-shrink:0; width:14px; }
+  .aidm-perk b{ color:var(--ink); font-weight:600; }
   #aidm-auth-msg{ font-size:13px; margin-top:12px; min-height:18px; word-break:break-word; }
   #aidm-auth-close{ float:right; background:none; border:none; color:var(--ink-dim); font-size:16px; cursor:pointer; margin-top:-6px; }
 </style>
@@ -2363,10 +2370,18 @@
     <button id="aidm-auth-close">&#10005;</button>
     <h3 id="aidm-auth-title">Sign in</h3>
     <p class="sub" id="aidm-auth-sub">Sign in to save your casts and membership.</p>
+
+    <div id="aidm-perks">
+      <div class="aidm-perk"><span>&#9733;</span> <b>5 free casts</b> — star yourself in any shot</div>
+      <div class="aidm-perk"><span>&#8681;</span> Download your clips and stills</div>
+      <div class="aidm-perk"><span>&#9635;</span> Save your faces for one-tap casting</div>
+    </div>
+
     <input id="aidm-auth-email" type="email" placeholder="Email" autocomplete="email">
     <input id="aidm-auth-pass" type="password" placeholder="Password" autocomplete="current-password">
     <button id="aidm-auth-go">Sign in</button>
     <div id="aidm-auth-msg"></div>
+    <div id="aidm-auth-forgot"><a id="aidm-auth-forgot-link">Forgot your password?</a></div>
     <div id="aidm-auth-toggle">New here? <a id="aidm-auth-switch">Create an account</a></div>
   </div>
 </div>
@@ -2407,7 +2422,12 @@
     }
 
     var ov = $('aidm-auth-ov');
-    function openModal(){ mode='signin'; applyMode(); $('aidm-auth-msg').textContent=''; ov.classList.add('open'); }
+    var openContext = null; // 'cast' when opened from the Star button
+    function openModal(ctx){
+      openContext = (typeof ctx === 'string') ? ctx : null;
+      mode = openContext === 'cast' ? 'signup' : 'signin';
+      applyMode(); $('aidm-auth-msg').textContent=''; ov.classList.add('open');
+    }
     window.AIDM_openAuth = openModal;
     function closeModal(){ ov.classList.remove('open'); }
     $('aidm-auth-close').onclick = closeModal;
@@ -2416,18 +2436,42 @@
     function bindSwitch(){
       var sw = $('aidm-auth-switch');
       if(sw) sw.onclick = function(){ mode = (mode==='signin'?'signup':'signin'); applyMode(); };
+      var fg = $('aidm-auth-forgot-link');
+      if(fg) fg.onclick = function(){ mode = 'reset'; applyMode(); };
     }
     function applyMode(){
-      if(mode==='signin'){
-        $('aidm-auth-title').textContent='Sign in';
-        $('aidm-auth-sub').textContent='Sign in to save your casts and membership.';
-        $('aidm-auth-go').textContent='Sign in';
-        $('aidm-auth-toggle').innerHTML='New here? <a id="aidm-auth-switch">Create an account</a>';
+      var perks = $('aidm-perks'), pass = $('aidm-auth-pass'),
+          forgot = $('aidm-auth-forgot'), toggle = $('aidm-auth-toggle');
+      $('aidm-auth-msg').textContent = '';
+
+      if(mode==='signup'){
+        $('aidm-auth-title').textContent = openContext==='cast' ? 'Create an account to cast' : 'Create account';
+        $('aidm-auth-sub').textContent = openContext==='cast'
+          ? 'Free to join. Your first five casts are on us.'
+          : 'Create an account to start casting yourself into shots.';
+        perks.style.display = 'block';
+        pass.style.display = 'block';
+        pass.setAttribute('autocomplete','new-password');
+        $('aidm-auth-go').textContent = 'Create account — 5 free casts';
+        forgot.style.display = 'none';
+        toggle.innerHTML = 'Have an account? <a id="aidm-auth-switch">Sign in</a>';
+      } else if(mode==='reset'){
+        $('aidm-auth-title').textContent = 'Reset your password';
+        $('aidm-auth-sub').textContent = 'Enter your email and we\u2019ll send you a reset link.';
+        perks.style.display = 'none';
+        pass.style.display = 'none';
+        $('aidm-auth-go').textContent = 'Send reset link';
+        forgot.style.display = 'none';
+        toggle.innerHTML = 'Remembered it? <a id="aidm-auth-switch">Sign in</a>';
       } else {
-        $('aidm-auth-title').textContent='Create account';
-        $('aidm-auth-sub').textContent='Create an account to save casts and unlock membership.';
-        $('aidm-auth-go').textContent='Create account';
-        $('aidm-auth-toggle').innerHTML='Have an account? <a id="aidm-auth-switch">Sign in</a>';
+        $('aidm-auth-title').textContent = 'Sign in';
+        $('aidm-auth-sub').textContent = 'Welcome back.';
+        perks.style.display = 'none';
+        pass.style.display = 'block';
+        pass.setAttribute('autocomplete','current-password');
+        $('aidm-auth-go').textContent = 'Sign in';
+        forgot.style.display = 'block';
+        toggle.innerHTML = 'New here? <a id="aidm-auth-switch">Create an account — 5 free casts</a>';
       }
       bindSwitch();
     }
@@ -2437,16 +2481,25 @@
       var email = $('aidm-auth-email').value.trim();
       var pass = $('aidm-auth-pass').value;
       var msg = $('aidm-auth-msg');
-      if(!email || !pass){ msg.style.color='var(--amber)'; msg.textContent='Enter your email and password.'; return; }
+
+      if(!email){ msg.style.color='var(--amber)'; msg.textContent='Enter your email.'; return; }
+      if(mode!=='reset' && !pass){ msg.style.color='var(--amber)'; msg.textContent='Enter your password.'; return; }
+
       $('aidm-auth-go').disabled = true; msg.style.color='var(--ink-dim)'; msg.textContent='Working\u2026';
       try{
-        if(mode==='signin'){
+        if(mode==='reset'){
+          var rr = await sb.auth.resetPasswordForEmail(email, { redirectTo: window.location.origin });
+          if(rr.error) throw rr.error;
+          msg.style.color='var(--amber)';
+          msg.textContent='Check your email for a reset link.';
+        } else if(mode==='signin'){
           var r = await sb.auth.signInWithPassword({ email:email, password:pass });
           if(r.error) throw r.error;
           closeModal();
         } else {
           var r2 = await sb.auth.signUp({ email:email, password:pass });
           if(r2.error) throw r2.error;
+          if(window.AIDM_track) window.AIDM_track('signup', { from: openContext || 'header' });
           if(r2.data && r2.data.session){ closeModal(); }
           else { msg.style.color='var(--amber)'; msg.textContent='Check your email to confirm your account, then sign in.'; }
         }
