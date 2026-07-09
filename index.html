@@ -1971,6 +1971,8 @@
     var pool = viewMode === 'tag' ? currentTagClips : CLIPS;
     currentClip = pool.filter(function(c){ return c.id === id; })[0];
     if (!currentClip) return;
+    // The star modal lives in a separate IIFE and cannot see this closure.
+    window.AIDM_getCurrentClip = function(){ return currentClip; };
     document.getElementById('modalFrameId').textContent = currentClip.frameId;
     document.getElementById('modalTitle').textContent = (currentClip.title || currentClip.emotion) + ' \u2014 ' + currentClip.setting;
     document.getElementById('modalPrompt').textContent = currentClip.prompt;
@@ -2372,7 +2374,7 @@
     getAccessToken()
     .then(function(token){
       if (!token){ throw { noSession: true }; }
-      var cc = (typeof currentClip !== 'undefined' && currentClip) ? currentClip : null;
+      var cc = window.AIDM_getCurrentClip ? window.AIDM_getCurrentClip() : null;
       return postJSON('/api/star', {
         scenePrompt: scenePrompt,
         faceImageBase64: face.dataUrl,
@@ -2407,11 +2409,11 @@
             shareId: r.data.shareId || null,
             assetId: r.data.assetId || null,
             remaining: r.data.remaining,
-            title: (typeof currentClip !== 'undefined' && currentClip) ? (currentClip.title || currentClip.emotion) : null
+            title: clipTitleNow()
           }));
         }catch(e){}
         if (window.AIDM_renderShare){
-          var ct = (typeof currentClip !== 'undefined' && currentClip) ? (currentClip.title || currentClip.emotion) : null;
+          var ct = clipTitleNow();
           window.AIDM_renderShare($('aidm-share'), r.data.videoUrl, ct, {
             compact:false, noNote:true, assetId: r.data.assetId, shareId: r.data.shareId
           });
@@ -2464,6 +2466,11 @@
       prompt: scenePrompt.slice(0,200)
     });
   });
+
+  function clipTitleNow(){
+    var c = window.AIDM_getCurrentClip ? window.AIDM_getCurrentClip() : null;
+    return c ? (c.title || c.emotion) : null;
+  }
 
   // Supabase access token for the signed-in user, or null.
   function getAccessToken(){
