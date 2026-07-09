@@ -2722,11 +2722,16 @@
     }catch(e){ /* non-blocking */ }
   };
 
+  function clearFloatingMenus(){
+    document.querySelectorAll('.aidm-share-menu.floating').forEach(function(m){ m.remove(); });
+  }
+
   var ov = document.getElementById('aidm-as-ov');
-  document.getElementById('aidm-as-close').onclick = function(){ ov.classList.remove('open'); };
-  ov.onclick = function(e){ if(e.target===ov) ov.classList.remove('open'); };
+  document.getElementById('aidm-as-close').onclick = function(){ clearFloatingMenus(); ov.classList.remove('open'); };
+  ov.onclick = function(e){ if(e.target===ov){ clearFloatingMenus(); ov.classList.remove('open'); } };
 
   async function open(){
+    clearFloatingMenus();
     ov.classList.add('open');
     var grid = document.getElementById('aidm-as-grid');
     var empty = document.getElementById('aidm-as-empty');
@@ -2821,8 +2826,7 @@
   #aidm-share-note-out{ font-size:11px; color:var(--ink-dim); margin-top:10px; line-height:1.5; }
   .aidm-share-compact{ font-family:var(--ff-mono); font-size:10px; text-transform:uppercase; padding:6px 9px; margin:0; }
   .aidm-as-actions{ position:relative; }
-  .aidm-as-actions .aidm-share-menu{ right:0; bottom:calc(100% + 8px); margin-top:0; }
-  .aidm-as-card:first-child .aidm-as-actions .aidm-share-menu{ right:auto; left:0; }
+  .aidm-share-menu.floating{ position:fixed; margin:0; z-index:10050; }
   @media (max-width:520px){
     .aidm-share-item{ min-width:64px; padding:6px 8px; }
     .aidm-share-item .badge{ width:42px; height:42px; }
@@ -2987,8 +2991,38 @@
       if(window.AIDM_track) window.AIDM_track('share_cast',{ via:'copy_link' });
     });
 
-    function open(){ menu.classList.add('open'); setTimeout(function(){ document.addEventListener('click', close); },0); }
-    function close(){ menu.classList.remove('open'); document.removeEventListener('click', close); }
+    function place(){
+      if(!opts.compact) return;
+      var r = main.getBoundingClientRect();
+      menu.style.visibility = 'hidden';
+      menu.style.left = '0px'; menu.style.top = '0px';
+      var mw = menu.offsetWidth, mh = menu.offsetHeight;
+      var pad = 10;
+      // below the button by default
+      var top = r.bottom + 8;
+      if (top + mh > window.innerHeight - pad) top = Math.max(pad, r.top - mh - 8);
+      // centre on the button, then clamp inside the viewport
+      var left = r.left + (r.width/2) - (mw/2);
+      left = Math.max(pad, Math.min(left, window.innerWidth - mw - pad));
+      menu.style.left = left + 'px';
+      menu.style.top = top + 'px';
+      menu.style.visibility = 'visible';
+    }
+
+    function open(){
+      if(opts.compact){ document.body.appendChild(menu); menu.classList.add('floating'); }
+      menu.classList.add('open');
+      place();
+      setTimeout(function(){ document.addEventListener('click', close); },0);
+      window.addEventListener('resize', place);
+      window.addEventListener('scroll', place, true);
+    }
+    function close(){
+      menu.classList.remove('open');
+      document.removeEventListener('click', close);
+      window.removeEventListener('resize', place);
+      window.removeEventListener('scroll', place, true);
+    }
     main.onclick = function(e){
       e.stopPropagation();
       menu.classList.contains('open') ? close() : open();
@@ -2996,7 +3030,7 @@
     menu.onclick = function(e){ e.stopPropagation(); };
 
     container.appendChild(main);
-    container.appendChild(menu);
+    if(!opts.compact) container.appendChild(menu);
 
     if(!opts.compact && !opts.noNote){
       var note = document.createElement('div');
