@@ -1,14 +1,17 @@
 // api/stripe-webhook.js  —  Vercel serverless function
-// Stripe calls this after events. It's the piece that makes the gate real:
-// on payment it sets sub:<userId> = "1" (unlimited casts); on cancellation
-// it deletes that flag (back to the free limit). This is the ONLY thing
-// that should ever set a subscription flag — never trust the browser for it.
+// Stripe calls this after events. It's the ONLY thing that may set
+// is_member — never trust the browser for that. Writes to Supabase
+// `profiles` with the secret key.
 
 import Stripe from "stripe";
-import { Redis } from "@upstash/redis";
+import { createClient } from "@supabase/supabase-js";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
-const redis = Redis.fromEnv();
+const supabase = createClient(
+  process.env.SUPABASE_URL,
+  process.env.SUPABASE_SECRET_KEY,
+  { auth: { persistSession: false } }
+);
 
 // Stripe signature verification needs the raw, unparsed body.
 export const config = { api: { bodyParser: false } };
@@ -36,24 +39,32 @@ export default async function handler(req, res) {
 
   try {
     switch (event.type) {
-      // Someone subscribed → unlock unlimited casts.
+      // Someone subscribed → unlock membership.
       case "checkout.session.completed": {
         const s = event.data.object;
-        const userId = s.client_reference_id;
+        const userId = s.client_reference_id; // the Supabase user id
         if (userId) {
-          await redis.set(`sub:${userId}`, "1");
-          // remember which Stripe customer maps to this user, so we can
-          // turn it back off if they cancel later.
-          if (s.customer) await redis.set(`cust:${s.customer}`, userId);
+          await supabase
+            .from("profiles")
+            .update({
+              is_member: true,
+              member_since: new Date().toISOString(),
+              stripe_customer_id: s.customer || null,
+              casts_this_period: 0,
+              period_started_at: new Date().toISOString(),
+            })
+            .eq("id", userId);
         }
         break;
       }
 
-      // Subscription ended → back to the free limit.
+      // Subscription ended → back to the free tier.
       case "customer.subscription.deleted": {
         const sub = event.data.object;
-        const userId = await redis.get(`cust:${sub.customer}`);
-        if (userId) await redis.del(`sub:${userId}`);
+        await supabase
+          .from("profiles")
+          .update({ is_member: false })
+          .eq("stripe_customer_id", sub.customer);
         break;
       }
     }

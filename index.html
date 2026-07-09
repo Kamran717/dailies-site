@@ -2165,6 +2165,13 @@
     var el = document.getElementById('modalPrompt');
     scenePrompt = el ? (el.textContent || '').trim() : '';
     if (!scenePrompt){ return; }
+    // Casting requires an account.
+    var user = window.AIDM_getUser && window.AIDM_getUser();
+    if (!user){
+      if (window.AIDM_track) window.AIDM_track('signin_prompt', { from: 'star_button' });
+      if (window.AIDM_openAuth) window.AIDM_openAuth();
+      return;
+    }
     showPicker();
     ov.classList.add('open');
   });
@@ -2305,9 +2312,14 @@
           $('aidm-dl-image').style.display = 'none';
         }
         $('aidm-result').style.display = 'block';
+      } else if (r.status === 401){
+        $('aidm-title').textContent = 'Sign in to cast';
+        $('aidm-status').textContent = 'Casting requires an account. Sign in and try again.';
+        if (window.AIDM_openAuth) setTimeout(window.AIDM_openAuth, 400);
       } else if (r.status === 402){
         if (window.AIDM_track) window.AIDM_track('paywall_hit', {});
-        $('aidm-status').textContent = 'You\u2019ve used your free casts. (Subscribe flow goes here.)';
+        $('aidm-title').textContent = 'Free casts used';
+        $('aidm-status').textContent = 'You\u2019ve used your 5 free casts. (Subscribe flow goes here.)';
       } else {
         if (window.AIDM_track) window.AIDM_track('cast_error', { status: r.status });
         fail('Error ' + r.status + ':\n' + r.text);
@@ -2396,6 +2408,7 @@
 
     var ov = $('aidm-auth-ov');
     function openModal(){ mode='signin'; applyMode(); $('aidm-auth-msg').textContent=''; ov.classList.add('open'); }
+    window.AIDM_openAuth = openModal;
     function closeModal(){ ov.classList.remove('open'); }
     $('aidm-auth-close').onclick = closeModal;
     ov.onclick = function(e){ if(e.target===ov) closeModal(); };

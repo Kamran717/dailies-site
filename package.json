@@ -5,7 +5,7 @@
   "type": "module",
   "dependencies": {
     "@fal-ai/client": "latest",
-    "@upstash/redis": "latest",
+    "@supabase/supabase-js": "latest",
     "stripe": "latest"
   }
 }
