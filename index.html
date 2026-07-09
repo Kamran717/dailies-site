@@ -2806,12 +2806,25 @@
   #aidm-share{ position:relative; }
   .aidm-share-main{ font-family:var(--ff-mono); font-size:11px; text-transform:uppercase; background:none; border:1px solid var(--line); color:var(--ink-dim); padding:9px 14px; cursor:pointer; margin-top:12px; display:inline-flex; align-items:center; gap:8px; }
   .aidm-share-main:hover{ color:var(--ink); border-color:var(--ink-dim); }
-  .aidm-share-menu{ position:absolute; z-index:5; margin-top:6px; background:var(--bg); border:1px solid var(--line); border-radius:6px; padding:6px; min-width:170px; display:none; box-shadow:0 12px 40px rgba(0,0,0,.55); }
+  .aidm-share-menu{ position:absolute; z-index:5; margin-top:8px; background:var(--bg); border:1px solid var(--line); border-radius:10px; padding:14px 10px; display:none; box-shadow:0 16px 50px rgba(0,0,0,.6); }
   .aidm-share-menu.open{ display:block; }
-  .aidm-share-menu button{ display:flex; align-items:center; gap:10px; width:100%; text-align:left; font-family:system-ui,sans-serif; font-size:13px; background:none; border:none; color:var(--ink-dim); padding:9px 10px; cursor:pointer; border-radius:4px; }
-  .aidm-share-menu button:hover{ background:#1b1b1e; color:var(--ink); }
-  .aidm-share-menu .ico{ width:16px; text-align:center; flex-shrink:0; }
+  .aidm-share-row{ display:flex; gap:6px; align-items:flex-start; }
+  .aidm-share-item{ display:flex; flex-direction:column; align-items:center; gap:9px; background:none; border:none; cursor:pointer; padding:8px 14px; border-radius:8px; min-width:78px; }
+  .aidm-share-item:hover{ background:#1b1b1e; }
+  .aidm-share-item .badge{ width:46px; height:46px; border-radius:50%; display:flex; align-items:center; justify-content:center; transition:transform .16s ease; }
+  .aidm-share-item:hover .badge{ transform:translateY(-2px) scale(1.05); }
+  .aidm-share-item .badge svg{ width:24px; height:24px; display:block; }
+  .aidm-share-item .lbl{ font-family:system-ui,sans-serif; font-size:12px; color:var(--ink-dim); white-space:nowrap; }
+  .aidm-share-item:hover .lbl{ color:var(--ink); }
+  .badge-x{ background:#000; border:1px solid #2a2a2a; }
+  .badge-wa{ background:#25D366; }
+  .badge-ig{ background:radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+  .badge-link{ background:#2a2a2e; border:1px solid var(--line); }
   #aidm-share-note{ font-size:11px; color:var(--ink-dim); margin-top:8px; line-height:1.5; }
+  @media (max-width:520px){
+    .aidm-share-item{ min-width:64px; padding:6px 8px; }
+    .aidm-share-item .badge{ width:42px; height:42px; }
+  }
 </style>
 
 <script>
@@ -2912,62 +2925,72 @@
 
     var text = 'I cast myself into "' + (clipTitle || 'a scene') + '" on AiDirectorMe';
 
+    var SVG = {
+      x:  '<svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>',
+      wa: '<svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 0 1 6.988 2.898 9.83 9.83 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.8 11.8 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.9 11.9 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.8 11.8 0 0 0 20.464 3.488"/></svg>',
+      ig: '<svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849s-.012 3.584-.069 4.849c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.849-.07c-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849s.013-3.583.07-4.849c.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069M12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12s.014 3.668.072 4.948c.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24s3.668-.014 4.948-.072c4.354-.2 6.782-2.618 6.979-6.98C23.986 15.668 24 15.259 24 12s-.014-3.667-.072-4.947C23.732 2.699 21.31.273 16.949.073 15.668.014 15.259 0 12 0m0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324M12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8m6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881"/></svg>',
+      link:'<svg viewBox="0 0 24 24" fill="none" stroke="#d6d6da" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>'
+    };
+
     var main = document.createElement('button');
     main.type='button'; main.className='aidm-share-main';
     main.innerHTML = '<span>\u21AA</span> Share';
 
     var menu = document.createElement('div');
     menu.className = 'aidm-share-menu';
+    var row = document.createElement('div');
+    row.className = 'aidm-share-row';
+    menu.appendChild(row);
 
-    function item(icon, label, fn){
-      var b=document.createElement('button'); b.type='button';
-      b.innerHTML='<span class="ico">'+icon+'</span><span class="lbl">'+label+'</span>';
+    function item(badgeClass, svg, label, fn){
+      var b=document.createElement('button'); b.type='button'; b.className='aidm-share-item';
+      b.setAttribute('aria-label','Share on '+label);
+      b.innerHTML='<span class="badge '+badgeClass+'">'+svg+'</span><span class="lbl">'+label+'</span>';
       b.onclick=function(e){ e.stopPropagation(); fn(b); };
+      row.appendChild(b);
       return b;
     }
 
-    function copyLink(btn){
-      navigator.clipboard.writeText(videoUrl).then(function(){
-        var l=btn.querySelector('.lbl'); var old=l.textContent;
-        l.textContent='Link copied'; setTimeout(function(){ l.textContent=old; close(); },1100);
-      }).catch(function(){ close(); });
-      if(window.AIDM_track) window.AIDM_track('share_cast',{ via:'copy_link' });
-    }
-
-    menu.appendChild(item('\uD835\uDD69','X', function(){
+    item('badge-x', SVG.x, 'X', function(){
       window.open('https://twitter.com/intent/tweet?text='+encodeURIComponent(text)+'&url='+encodeURIComponent(videoUrl),'_blank','noopener');
       if(window.AIDM_track) window.AIDM_track('share_cast',{ via:'x' }); close();
-    }));
+    });
 
-    menu.appendChild(item('\u25CF','WhatsApp', function(){
+    item('badge-wa', SVG.wa, 'WhatsApp', function(){
       window.open('https://wa.me/?text='+encodeURIComponent(text+' '+videoUrl),'_blank','noopener');
       if(window.AIDM_track) window.AIDM_track('share_cast',{ via:'whatsapp' }); close();
-    }));
+    });
 
-    // Instagram has no web share endpoint. On mobile the native sheet lists it;
-    // elsewhere the honest fallback is copy-the-link.
-    menu.appendChild(item('\u25A3','Instagram', function(btn){
+    // Instagram has no web share endpoint. Mobile: native sheet (Instagram appears).
+    // Desktop: copy the link so they can paste it in the app.
+    item('badge-ig', SVG.ig, 'Instagram', function(btn){
       if(navigator.share){
         navigator.share({ title:'AiDirectorMe', text:text, url:videoUrl }).catch(function(){});
         if(window.AIDM_track) window.AIDM_track('share_cast',{ via:'instagram_native' });
         close();
       } else {
         navigator.clipboard.writeText(videoUrl).catch(function(){});
-        var l=btn.querySelector('.lbl');
-        l.textContent='Link copied — paste in Instagram';
+        var l=btn.querySelector('.lbl'); l.textContent='Link copied';
         if(window.AIDM_track) window.AIDM_track('share_cast',{ via:'instagram_copy' });
-        setTimeout(function(){ l.textContent='Instagram'; close(); },1600);
+        setTimeout(function(){ l.textContent='Instagram'; close(); },1500);
       }
-    }));
+    });
 
-    menu.appendChild(item('\u29C9','Copy link', copyLink));
+    item('badge-link', SVG.link, 'Copy link', function(btn){
+      navigator.clipboard.writeText(videoUrl).then(function(){
+        var l=btn.querySelector('.lbl'); l.textContent='Copied';
+        setTimeout(function(){ l.textContent='Copy link'; close(); },1200);
+      }).catch(function(){ close(); });
+      if(window.AIDM_track) window.AIDM_track('share_cast',{ via:'copy_link' });
+    });
 
-    function open(){ menu.classList.add('open'); document.addEventListener('click', close); }
+    function open(){ menu.classList.add('open'); setTimeout(function(){ document.addEventListener('click', close); },0); }
     function close(){ menu.classList.remove('open'); document.removeEventListener('click', close); }
     main.onclick = function(e){
       e.stopPropagation();
       menu.classList.contains('open') ? close() : open();
     };
+    menu.onclick = function(e){ e.stopPropagation(); };
 
     container.appendChild(main);
     container.appendChild(menu);
