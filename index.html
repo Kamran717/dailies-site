@@ -2300,6 +2300,17 @@
       $('aidm-casting').style.display = 'none';
       if (r.status === 200 && r.data && r.data.videoUrl){
         if (window.AIDM_track) window.AIDM_track('cast_done', { seconds: Math.round((Date.now()-t_start)/1000), remaining: r.data.remaining });
+        // Save to the user's account automatically.
+        if (window.AIDM_saveAsset){
+          var cc = (typeof currentClip !== 'undefined' && currentClip) ? currentClip : null;
+          window.AIDM_saveAsset({
+            videoUrl: r.data.videoUrl,
+            imageUrl: r.data.sceneUrl,
+            prompt: scenePrompt,
+            clipId: cc ? cc.id : null,
+            clipTitle: cc ? (cc.title || cc.emotion) : null
+          });
+        }
         $('aidm-title').textContent = "You're the star";
         $('aidm-status').textContent = 'Remaining free casts: ' + (r.data.remaining != null ? r.data.remaining : '\u2014');
         var v = $('aidm-video'); v.src = r.data.videoUrl;
@@ -2379,6 +2390,7 @@
 
     <input id="aidm-auth-email" type="email" placeholder="Email" autocomplete="email">
     <input id="aidm-auth-pass" type="password" placeholder="Password" autocomplete="current-password">
+    <input id="aidm-auth-pass2" type="password" placeholder="Confirm new password" autocomplete="new-password" style="display:none;">
     <button id="aidm-auth-go">Sign in</button>
     <div id="aidm-auth-msg"></div>
     <div id="aidm-auth-forgot"><a id="aidm-auth-forgot-link">Forgot your password?</a></div>
@@ -2412,9 +2424,13 @@
 
     function renderHeader(){
       if(currentUser){
-        authWrap.innerHTML = '<span class="aidm-auth-email"></span><button class="aidm-auth-out">Sign out</button>';
+        authWrap.innerHTML = '<button class="aidm-assets-btn">My assets</button><span class="aidm-auth-email"></span><button class="aidm-auth-out">Sign out</button>';
         authWrap.querySelector('.aidm-auth-email').textContent = currentUser.email || 'Account';
         authWrap.querySelector('.aidm-auth-out').onclick = function(){ sb.auth.signOut(); };
+        authWrap.querySelector('.aidm-assets-btn').onclick = function(){
+          if (window.AIDM_track) window.AIDM_track('open_assets', {});
+          if (window.AIDM_openAssets) window.AIDM_openAssets();
+        };
       } else {
         authWrap.innerHTML = '<button class="aidm-auth-btn">Sign in</button>';
         authWrap.querySelector('.aidm-auth-btn').onclick = openModal;
@@ -2440,17 +2456,33 @@
       if(fg) fg.onclick = function(){ mode = 'reset'; applyMode(); };
     }
     function applyMode(){
-      var perks = $('aidm-perks'), pass = $('aidm-auth-pass'),
+      var perks = $('aidm-perks'), pass = $('aidm-auth-pass'), pass2 = $('aidm-auth-pass2'),
+          email = $('aidm-auth-email'),
           forgot = $('aidm-auth-forgot'), toggle = $('aidm-auth-toggle');
       $('aidm-auth-msg').textContent = '';
+      pass2.style.display = 'none';
+      email.style.display = 'block';
 
-      if(mode==='signup'){
+      if(mode==='newpass'){
+        $('aidm-auth-title').textContent = 'Set a new password';
+        $('aidm-auth-sub').textContent = 'Choose a new password for your account.';
+        perks.style.display = 'none';
+        email.style.display = 'none';
+        pass.style.display = 'block';
+        pass.setAttribute('autocomplete','new-password');
+        pass.placeholder = 'New password';
+        pass2.style.display = 'block';
+        $('aidm-auth-go').textContent = 'Update password';
+        forgot.style.display = 'none';
+        toggle.innerHTML = '';
+      } else if(mode==='signup'){
         $('aidm-auth-title').textContent = openContext==='cast' ? 'Create an account to cast' : 'Create account';
         $('aidm-auth-sub').textContent = openContext==='cast'
           ? 'Free to join. Your first five casts are on us.'
           : 'Create an account to start casting yourself into shots.';
         perks.style.display = 'block';
         pass.style.display = 'block';
+        pass.placeholder = 'Password';
         pass.setAttribute('autocomplete','new-password');
         $('aidm-auth-go').textContent = 'Create account — 5 free casts';
         forgot.style.display = 'none';
@@ -2468,6 +2500,7 @@
         $('aidm-auth-sub').textContent = 'Welcome back.';
         perks.style.display = 'none';
         pass.style.display = 'block';
+        pass.placeholder = 'Password';
         pass.setAttribute('autocomplete','current-password');
         $('aidm-auth-go').textContent = 'Sign in';
         forgot.style.display = 'block';
@@ -2481,6 +2514,22 @@
       var email = $('aidm-auth-email').value.trim();
       var pass = $('aidm-auth-pass').value;
       var msg = $('aidm-auth-msg');
+
+      if(mode==='newpass'){
+        var p2 = $('aidm-auth-pass2').value;
+        if(!pass || pass.length < 6){ msg.style.color='var(--amber)'; msg.textContent='Password must be at least 6 characters.'; return; }
+        if(pass !== p2){ msg.style.color='var(--amber)'; msg.textContent='Passwords don\u2019t match.'; return; }
+        $('aidm-auth-go').disabled = true; msg.style.color='var(--ink-dim)'; msg.textContent='Working\u2026';
+        try{
+          var up = await sb.auth.updateUser({ password: pass });
+          if(up.error) throw up.error;
+          msg.style.color='var(--amber)'; msg.textContent='Password updated. You\u2019re signed in.';
+          setTimeout(closeModal, 1200);
+        }catch(err){
+          msg.style.color='#e0473c'; msg.textContent = (err && err.message) || 'Could not update password.';
+        }finally{ $('aidm-auth-go').disabled = false; }
+        return;
+      }
 
       if(!email){ msg.style.color='var(--amber)'; msg.textContent='Enter your email.'; return; }
       if(mode!=='reset' && !pass){ msg.style.color='var(--amber)'; msg.textContent='Enter your password.'; return; }
@@ -2511,12 +2560,21 @@
     };
 
     sb.auth.getSession().then(function(r){ currentUser = r.data.session ? r.data.session.user : null; renderHeader(); });
-    sb.auth.onAuthStateChange(function(_e, session){
+    sb.auth.onAuthStateChange(function(evt, session){
       var wasSignedIn = !!currentUser;
       currentUser = session ? session.user : null;
-      if (!wasSignedIn && currentUser && window.AIDM_track) window.AIDM_track('signin', {});
+      if (evt === 'PASSWORD_RECOVERY'){
+        // Arrived from a reset link — make them set a new password.
+        mode = 'newpass'; applyMode(); ov.classList.add('open');
+      } else if (!wasSignedIn && currentUser && window.AIDM_track){
+        window.AIDM_track('signin', {});
+      }
       renderHeader();
     });
+    // Fallback: some browsers fire recovery before the listener attaches.
+    if (location.hash && location.hash.indexOf('type=recovery') !== -1){
+      mode = 'newpass'; applyMode(); ov.classList.add('open');
+    }
 
     renderHeader();
   }
@@ -2586,6 +2644,112 @@
 })();
 </script>
 <!-- ===== END ANALYTICS TRACKING ===== -->
+
+
+<!-- ===== MY ASSETS ===== -->
+<style>
+  .aidm-assets-btn{ font-family:var(--ff-mono); font-size:12px; font-weight:600; letter-spacing:.03em; text-transform:uppercase; background:none; color:var(--ink-dim); border:1px solid var(--line); padding:9px 14px; cursor:pointer; }
+  .aidm-assets-btn:hover{ color:var(--ink); border-color:var(--ink-dim); }
+  #aidm-as-ov{ position:fixed; inset:0; z-index:10002; background:rgba(8,8,8,.85); backdrop-filter:blur(6px); display:none; align-items:flex-start; justify-content:center; padding:40px 16px; overflow:auto; }
+  #aidm-as-ov.open{ display:flex; }
+  #aidm-as-panel{ width:min(900px,100%); background:var(--bg); color:var(--ink); border:1px solid var(--line); border-radius:6px; padding:26px; font-family:system-ui,sans-serif; }
+  #aidm-as-panel h3{ margin:0 0 4px; font-size:20px; }
+  #aidm-as-panel .sub{ margin:0 0 20px; font-size:13px; color:var(--ink-dim); }
+  #aidm-as-close{ float:right; background:none; border:none; color:var(--ink-dim); font-size:16px; cursor:pointer; }
+  #aidm-as-grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:16px; }
+  .aidm-as-card{ border:1px solid var(--line); border-radius:6px; overflow:hidden; background:#0f0f10; }
+  .aidm-as-card video, .aidm-as-card img{ width:100%; display:block; aspect-ratio:16/9; object-fit:cover; background:#000; }
+  .aidm-as-meta{ padding:10px 12px; }
+  .aidm-as-title{ font-size:13px; font-weight:600; margin-bottom:3px; }
+  .aidm-as-date{ font-family:var(--ff-mono); font-size:10px; color:var(--ink-dim); letter-spacing:.06em; }
+  .aidm-as-actions{ display:flex; gap:6px; padding:0 12px 12px; }
+  .aidm-as-actions button{ font-family:var(--ff-mono); font-size:10px; text-transform:uppercase; background:none; border:1px solid var(--line); color:var(--ink-dim); padding:6px 9px; cursor:pointer; }
+  .aidm-as-actions button:hover{ color:var(--ink); border-color:var(--ink-dim); }
+  #aidm-as-empty{ color:var(--ink-dim); font-size:14px; padding:30px 0; text-align:center; }
+</style>
+
+<div id="aidm-as-ov">
+  <div id="aidm-as-panel">
+    <button id="aidm-as-close">&#10005;</button>
+    <h3>My assets</h3>
+    <p class="sub">Every scene you've cast yourself into.</p>
+    <div id="aidm-as-grid"></div>
+    <div id="aidm-as-empty" style="display:none;">No casts yet. Open any shot and hit &#9733; Star in this Scene.</div>
+  </div>
+</div>
+
+<script>
+(function(){
+  function sb(){ return window.AIDM_SB; }
+  function user(){ return window.AIDM_getUser && window.AIDM_getUser(); }
+
+  // Save a completed cast to the user's account.
+  window.AIDM_saveAsset = async function(asset){
+    var u = user(); if(!u || !sb()) return;
+    try{
+      await sb().from('assets').insert({
+        user_id: u.id,
+        video_url: asset.videoUrl || null,
+        image_url: asset.imageUrl || null,
+        prompt: (asset.prompt || '').slice(0,1000),
+        clip_id: asset.clipId || null,
+        clip_title: asset.clipTitle || null
+      });
+    }catch(e){ /* non-blocking */ }
+  };
+
+  var ov = document.getElementById('aidm-as-ov');
+  document.getElementById('aidm-as-close').onclick = function(){ ov.classList.remove('open'); };
+  ov.onclick = function(e){ if(e.target===ov) ov.classList.remove('open'); };
+
+  async function open(){
+    ov.classList.add('open');
+    var grid = document.getElementById('aidm-as-grid');
+    var empty = document.getElementById('aidm-as-empty');
+    grid.innerHTML = '<div style="color:var(--ink-dim);font-size:13px;">Loading\u2026</div>';
+    empty.style.display = 'none';
+    var u = user(); if(!u || !sb()){ grid.innerHTML=''; empty.style.display='block'; return; }
+
+    var res = await sb().from('assets')
+      .select('*').eq('user_id', u.id).eq('deleted', false)
+      .order('created_at', { ascending:false }).limit(60);
+
+    grid.innerHTML = '';
+    var rows = (res && res.data) || [];
+    if(!rows.length){ empty.style.display='block'; return; }
+
+    rows.forEach(function(a){
+      var card = document.createElement('div');
+      card.className = 'aidm-as-card';
+      var media = a.video_url
+        ? '<video src="'+a.video_url+'" muted loop playsinline controls></video>'
+        : (a.image_url ? '<img src="'+a.image_url+'" alt="">' : '');
+      var when = new Date(a.created_at).toLocaleDateString();
+      card.innerHTML = media +
+        '<div class="aidm-as-meta"><div class="aidm-as-title">'+ (a.clip_title || 'Cast') +'</div>'+
+        '<div class="aidm-as-date">'+ when +'</div></div>'+
+        '<div class="aidm-as-actions"></div>';
+      var acts = card.querySelector('.aidm-as-actions');
+      if(a.video_url){ var bv=document.createElement('button'); bv.textContent='Clip'; bv.onclick=function(){ dl(a.video_url,'cast.mp4'); }; acts.appendChild(bv); }
+      if(a.image_url){ var bi=document.createElement('button'); bi.textContent='Still'; bi.onclick=function(){ dl(a.image_url,'still.jpg'); }; acts.appendChild(bi); }
+      var bd=document.createElement('button'); bd.textContent='Remove';
+      bd.onclick=async function(){ await sb().from('assets').update({deleted:true}).eq('id',a.id); open(); };
+      acts.appendChild(bd);
+      grid.appendChild(card);
+    });
+  }
+  window.AIDM_openAssets = open;
+
+  function dl(url, name){
+    fetch(url).then(function(r){ return r.blob(); }).then(function(b){
+      var a=document.createElement('a'); var o=URL.createObjectURL(b);
+      a.href=o; a.download=name; document.body.appendChild(a); a.click(); document.body.removeChild(a);
+      setTimeout(function(){ URL.revokeObjectURL(o); },4000);
+    }).catch(function(){ window.open(url,'_blank'); });
+  }
+})();
+</script>
+<!-- ===== END MY ASSETS ===== -->
 
 </body>
 </html>
