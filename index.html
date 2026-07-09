@@ -2770,15 +2770,30 @@
 
 <!-- ===== LIKES + SHARE ===== -->
 <style>
-  .aidm-like-btn{ font-family:var(--ff-mono); font-size:12px; color:var(--ink-dim); background:none; border:1px solid var(--line); padding:11px 16px; cursor:pointer; text-transform:uppercase; display:inline-flex; align-items:center; gap:7px; }
+  .aidm-like-btn{ font-family:var(--ff-mono); font-size:12px; color:var(--ink-dim); background:none; border:1px solid var(--line); padding:9px 16px; cursor:pointer; display:inline-flex; align-items:center; justify-content:center; line-height:1; }
   .aidm-like-btn:hover{ border-color:var(--ink-faint); color:var(--ink); }
-  .aidm-like-btn.liked{ color:var(--amber); border-color:var(--amber); }
-  .aidm-like-btn .heart{ font-size:13px; }
-  .aidm-like-count{ font-variant-numeric:tabular-nums; }
+  .aidm-like-btn .heart{ font-size:20px; line-height:1; display:block; transition:transform .18s ease; }
+  .aidm-like-btn:hover .heart{ transform:scale(1.12); }
+  .aidm-like-btn.liked{ border-color:#e0473c; }
+  .aidm-like-btn.liked .heart{ color:#e0473c; }
+  .aidm-like-btn.pop .heart{ animation:aidm-pop .42s cubic-bezier(.2,.9,.3,1.4); }
+  @keyframes aidm-pop{
+    0%{ transform:scale(1); }
+    35%{ transform:scale(1.45); }
+    60%{ transform:scale(.92); }
+    100%{ transform:scale(1); }
+  }
+  @media (prefers-reduced-motion: reduce){ .aidm-like-btn.pop .heart{ animation:none; } }
 
-  #aidm-share-row{ display:flex; gap:8px; margin-top:12px; flex-wrap:wrap; }
-  .aidm-share-btn{ font-family:var(--ff-mono); font-size:10px; text-transform:uppercase; background:none; border:1px solid var(--line); color:var(--ink-dim); padding:8px 12px; cursor:pointer; }
-  .aidm-share-btn:hover{ color:var(--ink); border-color:var(--ink-dim); }
+  /* share dropdown */
+  #aidm-share{ position:relative; }
+  .aidm-share-main{ font-family:var(--ff-mono); font-size:11px; text-transform:uppercase; background:none; border:1px solid var(--line); color:var(--ink-dim); padding:9px 14px; cursor:pointer; margin-top:12px; display:inline-flex; align-items:center; gap:8px; }
+  .aidm-share-main:hover{ color:var(--ink); border-color:var(--ink-dim); }
+  .aidm-share-menu{ position:absolute; z-index:5; margin-top:6px; background:var(--bg); border:1px solid var(--line); border-radius:6px; padding:6px; min-width:170px; display:none; box-shadow:0 12px 40px rgba(0,0,0,.55); }
+  .aidm-share-menu.open{ display:block; }
+  .aidm-share-menu button{ display:flex; align-items:center; gap:10px; width:100%; text-align:left; font-family:system-ui,sans-serif; font-size:13px; background:none; border:none; color:var(--ink-dim); padding:9px 10px; cursor:pointer; border-radius:4px; }
+  .aidm-share-menu button:hover{ background:#1b1b1e; color:var(--ink); }
+  .aidm-share-menu .ico{ width:16px; text-align:center; flex-shrink:0; }
   #aidm-share-note{ font-size:11px; color:var(--ink-dim); margin-top:8px; line-height:1.5; }
 </style>
 
@@ -2797,7 +2812,9 @@
     likeBtn = document.createElement('button');
     likeBtn.type = 'button';
     likeBtn.className = 'aidm-like-btn';
-    likeBtn.innerHTML = '<span class="heart">\u2661</span><span class="aidm-like-count">0</span>';
+    likeBtn.innerHTML = '<span class="heart">\u2661</span>';
+    likeBtn.setAttribute('aria-label','Like this shot');
+    likeBtn.title = 'Like this shot';
     copyBtn.parentNode.insertBefore(likeBtn, copyBtn);
     likeBtn.addEventListener('click', toggleLike);
     return likeBtn;
@@ -2825,7 +2842,7 @@
     var liked = likedSet && likedSet.has(clipId);
     likeBtn.classList.toggle('liked', !!liked);
     likeBtn.querySelector('.heart').textContent = liked ? '\u2665' : '\u2661';
-    likeBtn.querySelector('.aidm-like-count').textContent = countCache[clipId] || 0;
+    likeBtn.title = liked ? 'Liked' : 'Like this shot';
   }
 
   async function toggleLike(){
@@ -2838,7 +2855,8 @@
     var liked = likedSet.has(clipId);
     // optimistic
     if(liked){ likedSet.delete(clipId); countCache[clipId] = Math.max(0,(countCache[clipId]||1)-1); }
-    else     { likedSet.add(clipId);    countCache[clipId] = (countCache[clipId]||0)+1; }
+    else     { likedSet.add(clipId);    countCache[clipId] = (countCache[clipId]||0)+1;
+               likeBtn.classList.remove('pop'); void likeBtn.offsetWidth; likeBtn.classList.add('pop'); }
     paint(clipId);
 
     try{
@@ -2870,42 +2888,69 @@
   window.AIDM_renderShare = function(container, videoUrl, clipTitle){
     if(!container) return;
     container.innerHTML = '';
-    var row = document.createElement('div'); row.id = 'aidm-share-row';
-
-    function btn(label, fn){
-      var b = document.createElement('button');
-      b.className='aidm-share-btn'; b.type='button'; b.textContent=label; b.onclick=fn;
-      return b;
-    }
 
     var text = 'I cast myself into "' + (clipTitle || 'a scene') + '" on AiDirectorMe';
 
-    row.appendChild(btn('Copy link', function(){
-      navigator.clipboard.writeText(videoUrl).then(function(){
-        this.textContent='Copied'; var self=this;
-        setTimeout(function(){ self.textContent='Copy link'; },1600);
-      }.bind(this)).catch(function(){});
-      if(window.AIDM_track) window.AIDM_track('share_cast',{ via:'copy_link' });
-    }));
+    var main = document.createElement('button');
+    main.type='button'; main.className='aidm-share-main';
+    main.innerHTML = '<span>\u21AA</span> Share';
 
-    row.appendChild(btn('X', function(){
-      window.open('https://twitter.com/intent/tweet?text='+encodeURIComponent(text)+'&url='+encodeURIComponent(videoUrl),'_blank','noopener');
-      if(window.AIDM_track) window.AIDM_track('share_cast',{ via:'x' });
-    }));
+    var menu = document.createElement('div');
+    menu.className = 'aidm-share-menu';
 
-    row.appendChild(btn('WhatsApp', function(){
-      window.open('https://wa.me/?text='+encodeURIComponent(text+' '+videoUrl),'_blank','noopener');
-      if(window.AIDM_track) window.AIDM_track('share_cast',{ via:'whatsapp' });
-    }));
-
-    if(navigator.share){
-      row.appendChild(btn('More\u2026', function(){
-        navigator.share({ title:'AiDirectorMe', text:text, url:videoUrl }).catch(function(){});
-        if(window.AIDM_track) window.AIDM_track('share_cast',{ via:'native' });
-      }));
+    function item(icon, label, fn){
+      var b=document.createElement('button'); b.type='button';
+      b.innerHTML='<span class="ico">'+icon+'</span><span class="lbl">'+label+'</span>';
+      b.onclick=function(e){ e.stopPropagation(); fn(b); };
+      return b;
     }
 
-    container.appendChild(row);
+    function copyLink(btn){
+      navigator.clipboard.writeText(videoUrl).then(function(){
+        var l=btn.querySelector('.lbl'); var old=l.textContent;
+        l.textContent='Link copied'; setTimeout(function(){ l.textContent=old; close(); },1100);
+      }).catch(function(){ close(); });
+      if(window.AIDM_track) window.AIDM_track('share_cast',{ via:'copy_link' });
+    }
+
+    menu.appendChild(item('\uD835\uDD69','X', function(){
+      window.open('https://twitter.com/intent/tweet?text='+encodeURIComponent(text)+'&url='+encodeURIComponent(videoUrl),'_blank','noopener');
+      if(window.AIDM_track) window.AIDM_track('share_cast',{ via:'x' }); close();
+    }));
+
+    menu.appendChild(item('\u25CF','WhatsApp', function(){
+      window.open('https://wa.me/?text='+encodeURIComponent(text+' '+videoUrl),'_blank','noopener');
+      if(window.AIDM_track) window.AIDM_track('share_cast',{ via:'whatsapp' }); close();
+    }));
+
+    // Instagram has no web share endpoint. On mobile the native sheet lists it;
+    // elsewhere the honest fallback is copy-the-link.
+    menu.appendChild(item('\u25A3','Instagram', function(btn){
+      if(navigator.share){
+        navigator.share({ title:'AiDirectorMe', text:text, url:videoUrl }).catch(function(){});
+        if(window.AIDM_track) window.AIDM_track('share_cast',{ via:'instagram_native' });
+        close();
+      } else {
+        navigator.clipboard.writeText(videoUrl).catch(function(){});
+        var l=btn.querySelector('.lbl');
+        l.textContent='Link copied — paste in Instagram';
+        if(window.AIDM_track) window.AIDM_track('share_cast',{ via:'instagram_copy' });
+        setTimeout(function(){ l.textContent='Instagram'; close(); },1600);
+      }
+    }));
+
+    menu.appendChild(item('\u29C9','Copy link', copyLink));
+
+    function open(){ menu.classList.add('open'); document.addEventListener('click', close); }
+    function close(){ menu.classList.remove('open'); document.removeEventListener('click', close); }
+    main.onclick = function(e){
+      e.stopPropagation();
+      menu.classList.contains('open') ? close() : open();
+    };
+
+    container.appendChild(main);
+    container.appendChild(menu);
+
     var note = document.createElement('div');
     note.id='aidm-share-note';
     note.textContent='Anyone with this link can view the clip. Only share casts of people who agreed to appear.';
