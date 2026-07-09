@@ -2104,8 +2104,9 @@
   #aidm-result video{ width:100%; border-radius:4px; }
   #aidm-result img{ width:100%; border-radius:4px; margin-top:10px; }
   #aidm-actions{ display:flex; gap:10px; justify-content:flex-end; margin-top:18px; }
-  .aidm-btn{ font-family:var(--ff-mono); font-size:12px; border:1px solid var(--line); color:var(--ink-dim); background:none; padding:10px 18px; cursor:pointer; text-transform:uppercase; }
-  .aidm-btn:hover{ border-color:var(--ink); color:var(--ink); }
+  .aidm-btn{ font-family:var(--ff-mono); font-size:12px; border:1px solid var(--amber); color:var(--amber); background:none; padding:10px 18px; cursor:pointer; text-transform:uppercase; transition:background .16s ease, color .16s ease; }
+  .aidm-btn:hover{ background:var(--amber); color:#1a1408; }
+  .aidm-btn:focus-visible{ outline:2px solid var(--amber); outline-offset:2px; }
 
   /* ---- paywall ---- */
   #aidm-paywall{ display:none; }
@@ -2337,16 +2338,21 @@
     });
   }
 
-  // Force a real download; falls back to opening the file if the host blocks it.
+  // Download through our own origin. A cross-origin fetch()->blob() fails CORS
+  // on videos.aidirectorme.com, and <a download> is ignored cross-origin — both
+  // used to end in window.open() and a new tab. /api/download sends
+  // Content-Disposition: attachment, so the browser saves without navigating.
   function downloadFile(url, filename){
-    fetch(url).then(function(res){ return res.blob(); }).then(function(blob){
-      var a = document.createElement('a');
-      var obj = URL.createObjectURL(blob);
-      a.href = obj; a.download = filename;
-      document.body.appendChild(a); a.click();
-      document.body.removeChild(a);
-      setTimeout(function(){ URL.revokeObjectURL(obj); }, 4000);
-    }).catch(function(){ window.open(url, '_blank'); });
+    if (!url) return;
+    var href = '/api/download?url=' + encodeURIComponent(url) +
+               '&name=' + encodeURIComponent(filename);
+    var a = document.createElement('a');
+    a.href = href;
+    a.download = filename;   // same-origin now, so this is honoured
+    a.rel = 'noopener';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
   }
 
   function fail(msg){
@@ -2935,11 +2941,19 @@
 
   /* share dropdown */
   #aidm-share{ position:relative; }
-  .aidm-share-main{ font-family:var(--ff-mono); font-size:12px; text-transform:uppercase; background:none; border:1px solid var(--line); color:var(--ink-dim); padding:10px 18px; cursor:pointer; display:inline-flex; align-items:center; gap:8px; }
-  .aidm-share-main:hover{ color:var(--ink); border-color:var(--ink-dim); }
+  .aidm-share-main{ font-family:var(--ff-mono); font-size:12px; text-transform:uppercase; background:none; border:1px solid var(--amber); color:var(--amber); padding:10px 18px; cursor:pointer; display:inline-flex; align-items:center; gap:8px; transition:background .16s ease, color .16s ease; }
+  .aidm-share-main:hover:not(:disabled){ background:var(--amber); color:#1a1408; }
+  .aidm-share-main:disabled{ border-color:var(--line); color:var(--ink-dim); cursor:default; }
+  /* The compact variant lives on asset cards, where amber would shout. */
+  .aidm-share-compact{ border-color:var(--line); color:var(--ink-dim); }
+  .aidm-share-compact:hover:not(:disabled){ background:none; color:var(--ink); border-color:var(--ink-dim); }
   .aidm-share-menu{ position:absolute; z-index:5; margin-top:8px; background:var(--bg); border:1px solid var(--line); border-radius:10px; padding:14px 10px; display:none; box-shadow:0 16px 50px rgba(0,0,0,.6); }
   .aidm-share-menu.open{ display:block; }
-  .aidm-share-row{ display:flex; gap:6px; align-items:flex-start; }
+  /* In the cast modal the menu sits in normal flow, full width, centred. An
+     absolutely-positioned menu was clipped by #aidm-panel's overflow:auto and
+     forced the user to scroll to reach WhatsApp and Copy link. */
+  .aidm-share-menu.inline{ position:static; flex:1 1 100%; width:100%; margin:14px 0 0; box-shadow:none; }
+  .aidm-share-row{ display:flex; gap:6px; align-items:flex-start; justify-content:center; flex-wrap:wrap; }
   .aidm-share-item{ display:flex; flex-direction:column; align-items:center; gap:9px; background:none; border:none; cursor:pointer; padding:8px 14px; border-radius:8px; min-width:78px; }
   .aidm-share-item:hover{ background:#1b1b1e; }
   .aidm-share-item .badge{ width:46px; height:46px; border-radius:50%; display:flex; align-items:center; justify-content:center; transition:transform .16s ease; }
@@ -3177,6 +3191,7 @@
       if(opts.compact){ document.body.appendChild(menu); menu.classList.add('floating'); }
       menu.classList.add('open');
       place();
+      if(!opts.compact) menu.scrollIntoView({ block:'nearest', behavior:'smooth' });
       setTimeout(function(){ document.addEventListener('click', close); },0);
       window.addEventListener('resize', place);
       window.addEventListener('scroll', place, true);
@@ -3204,7 +3219,11 @@
     menu.onclick = function(e){ e.stopPropagation(); };
 
     container.appendChild(main);
-    if(!opts.compact) container.appendChild(menu);
+    if(!opts.compact){
+      // Full-width row under the download buttons, so nothing is cut off.
+      menu.classList.add('inline');
+      (container.parentNode || container).appendChild(menu);
+    }
 
     if(!opts.compact && !opts.noNote){
       var note = document.createElement('div');
