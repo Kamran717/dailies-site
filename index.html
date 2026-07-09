@@ -1975,6 +1975,7 @@
     document.getElementById('modalTitle').textContent = (currentClip.title || currentClip.emotion) + ' \u2014 ' + currentClip.setting;
     document.getElementById('modalPrompt').textContent = currentClip.prompt;
     if (window.AIDM_track) window.AIDM_track('clip_open', { clip_id: currentClip.id, title: currentClip.title || currentClip.emotion, camera_move: currentClip.cameraMove, shot_type: currentClip.shotType });
+    if (window.AIDM_onClipOpen) window.AIDM_onClipOpen(currentClip.id);
     document.getElementById('modalTags').innerHTML =
       ['shotType','cameraMove','lighting'].map(function(k){ return '<span>' + currentClip[k] + '</span>'; }).join('');
     modalMedia.innerHTML = '<div class="frame-sweep"></div>';
@@ -2129,6 +2130,7 @@
         <button class="aidm-btn" id="aidm-dl-video">Download clip</button>
         <button class="aidm-btn" id="aidm-dl-image" style="display:none;">Download still image</button>
       </div>
+      <div id="aidm-share"></div>
     </div>
 
     <div id="aidm-actions">
@@ -2323,6 +2325,10 @@
           $('aidm-dl-image').style.display = 'none';
         }
         $('aidm-result').style.display = 'block';
+        if (window.AIDM_renderShare){
+          var ct = (typeof currentClip !== 'undefined' && currentClip) ? (currentClip.title || currentClip.emotion) : null;
+          window.AIDM_renderShare($('aidm-share'), r.data.videoUrl, ct);
+        }
       } else if (r.status === 401){
         $('aidm-title').textContent = 'Sign in to cast';
         $('aidm-status').textContent = 'Casting requires an account. Sign in and try again.';
@@ -2732,6 +2738,16 @@
       var acts = card.querySelector('.aidm-as-actions');
       if(a.video_url){ var bv=document.createElement('button'); bv.textContent='Clip'; bv.onclick=function(){ dl(a.video_url,'cast.mp4'); }; acts.appendChild(bv); }
       if(a.image_url){ var bi=document.createElement('button'); bi.textContent='Still'; bi.onclick=function(){ dl(a.image_url,'still.jpg'); }; acts.appendChild(bi); }
+      if(a.video_url){
+        var bs=document.createElement('button'); bs.textContent='Share';
+        bs.onclick=function(){
+          navigator.clipboard.writeText(a.video_url).then(function(){
+            bs.textContent='Link copied'; setTimeout(function(){ bs.textContent='Share'; },1600);
+          }).catch(function(){});
+          if(window.AIDM_track) window.AIDM_track('share_cast',{ via:'assets_copy' });
+        };
+        acts.appendChild(bs);
+      }
       var bd=document.createElement('button'); bd.textContent='Remove';
       bd.onclick=async function(){ await sb().from('assets').update({deleted:true}).eq('id',a.id); open(); };
       acts.appendChild(bd);
@@ -2750,6 +2766,154 @@
 })();
 </script>
 <!-- ===== END MY ASSETS ===== -->
+
+
+<!-- ===== LIKES + SHARE ===== -->
+<style>
+  .aidm-like-btn{ font-family:var(--ff-mono); font-size:12px; color:var(--ink-dim); background:none; border:1px solid var(--line); padding:11px 16px; cursor:pointer; text-transform:uppercase; display:inline-flex; align-items:center; gap:7px; }
+  .aidm-like-btn:hover{ border-color:var(--ink-faint); color:var(--ink); }
+  .aidm-like-btn.liked{ color:var(--amber); border-color:var(--amber); }
+  .aidm-like-btn .heart{ font-size:13px; }
+  .aidm-like-count{ font-variant-numeric:tabular-nums; }
+
+  #aidm-share-row{ display:flex; gap:8px; margin-top:12px; flex-wrap:wrap; }
+  .aidm-share-btn{ font-family:var(--ff-mono); font-size:10px; text-transform:uppercase; background:none; border:1px solid var(--line); color:var(--ink-dim); padding:8px 12px; cursor:pointer; }
+  .aidm-share-btn:hover{ color:var(--ink); border-color:var(--ink-dim); }
+  #aidm-share-note{ font-size:11px; color:var(--ink-dim); margin-top:8px; line-height:1.5; }
+</style>
+
+<script>
+(function(){
+  function sb(){ return window.AIDM_SB; }
+  function user(){ return window.AIDM_getUser && window.AIDM_getUser(); }
+
+  // ---------- LIKES on library clips ----------
+  var likeBtn = null, likedSet = null, countCache = {};
+
+  function ensureButton(){
+    if (likeBtn) return likeBtn;
+    var copyBtn = document.getElementById('modalCopyBtn');
+    if (!copyBtn || !copyBtn.parentNode) return null;
+    likeBtn = document.createElement('button');
+    likeBtn.type = 'button';
+    likeBtn.className = 'aidm-like-btn';
+    likeBtn.innerHTML = '<span class="heart">\u2661</span><span class="aidm-like-count">0</span>';
+    copyBtn.parentNode.insertBefore(likeBtn, copyBtn);
+    likeBtn.addEventListener('click', toggleLike);
+    return likeBtn;
+  }
+
+  async function loadMyLikes(){
+    var u = user(); if(!u || !sb()){ likedSet = new Set(); return; }
+    try{
+      var r = await sb().from('clip_likes').select('clip_id').eq('user_id', u.id);
+      likedSet = new Set(((r && r.data) || []).map(function(x){ return x.clip_id; }));
+    }catch(e){ likedSet = new Set(); }
+  }
+
+  async function countFor(clipId){
+    if (countCache[clipId] != null) return countCache[clipId];
+    try{
+      var r = await sb().from('v_clip_like_counts').select('likes').eq('clip_id', clipId).maybeSingle();
+      countCache[clipId] = (r && r.data && r.data.likes) || 0;
+    }catch(e){ countCache[clipId] = 0; }
+    return countCache[clipId];
+  }
+
+  function paint(clipId){
+    if(!likeBtn) return;
+    var liked = likedSet && likedSet.has(clipId);
+    likeBtn.classList.toggle('liked', !!liked);
+    likeBtn.querySelector('.heart').textContent = liked ? '\u2665' : '\u2661';
+    likeBtn.querySelector('.aidm-like-count').textContent = countCache[clipId] || 0;
+  }
+
+  async function toggleLike(){
+    var clipId = likeBtn && likeBtn.dataset.clipId;
+    if(!clipId) return;
+    var u = user();
+    if(!u){ if(window.AIDM_openAuth) window.AIDM_openAuth(); return; }
+    if(!likedSet) await loadMyLikes();
+
+    var liked = likedSet.has(clipId);
+    // optimistic
+    if(liked){ likedSet.delete(clipId); countCache[clipId] = Math.max(0,(countCache[clipId]||1)-1); }
+    else     { likedSet.add(clipId);    countCache[clipId] = (countCache[clipId]||0)+1; }
+    paint(clipId);
+
+    try{
+      if(liked){
+        await sb().from('clip_likes').delete().eq('user_id',u.id).eq('clip_id',clipId);
+        if(window.AIDM_track) window.AIDM_track('unlike_clip',{ clip_id: clipId });
+      } else {
+        await sb().from('clip_likes').insert({ user_id:u.id, clip_id:clipId });
+        if(window.AIDM_track) window.AIDM_track('like_clip',{ clip_id: clipId });
+      }
+    }catch(e){ /* revert on failure */
+      if(liked){ likedSet.add(clipId); countCache[clipId]=(countCache[clipId]||0)+1; }
+      else     { likedSet.delete(clipId); countCache[clipId]=Math.max(0,(countCache[clipId]||1)-1); }
+      paint(clipId);
+    }
+  }
+
+  // Called by openModal each time a clip opens.
+  window.AIDM_onClipOpen = async function(clipId){
+    if(!sb()) return;
+    var b = ensureButton(); if(!b) return;
+    b.dataset.clipId = clipId;
+    if(!likedSet) await loadMyLikes();
+    await countFor(clipId);
+    paint(clipId);
+  };
+
+  // ---------- SHARE a cast ----------
+  window.AIDM_renderShare = function(container, videoUrl, clipTitle){
+    if(!container) return;
+    container.innerHTML = '';
+    var row = document.createElement('div'); row.id = 'aidm-share-row';
+
+    function btn(label, fn){
+      var b = document.createElement('button');
+      b.className='aidm-share-btn'; b.type='button'; b.textContent=label; b.onclick=fn;
+      return b;
+    }
+
+    var text = 'I cast myself into "' + (clipTitle || 'a scene') + '" on AiDirectorMe';
+
+    row.appendChild(btn('Copy link', function(){
+      navigator.clipboard.writeText(videoUrl).then(function(){
+        this.textContent='Copied'; var self=this;
+        setTimeout(function(){ self.textContent='Copy link'; },1600);
+      }.bind(this)).catch(function(){});
+      if(window.AIDM_track) window.AIDM_track('share_cast',{ via:'copy_link' });
+    }));
+
+    row.appendChild(btn('X', function(){
+      window.open('https://twitter.com/intent/tweet?text='+encodeURIComponent(text)+'&url='+encodeURIComponent(videoUrl),'_blank','noopener');
+      if(window.AIDM_track) window.AIDM_track('share_cast',{ via:'x' });
+    }));
+
+    row.appendChild(btn('WhatsApp', function(){
+      window.open('https://wa.me/?text='+encodeURIComponent(text+' '+videoUrl),'_blank','noopener');
+      if(window.AIDM_track) window.AIDM_track('share_cast',{ via:'whatsapp' });
+    }));
+
+    if(navigator.share){
+      row.appendChild(btn('More\u2026', function(){
+        navigator.share({ title:'AiDirectorMe', text:text, url:videoUrl }).catch(function(){});
+        if(window.AIDM_track) window.AIDM_track('share_cast',{ via:'native' });
+      }));
+    }
+
+    container.appendChild(row);
+    var note = document.createElement('div');
+    note.id='aidm-share-note';
+    note.textContent='Anyone with this link can view the clip. Only share casts of people who agreed to appear.';
+    container.appendChild(note);
+  };
+})();
+</script>
+<!-- ===== END LIKES + SHARE ===== -->
 
 </body>
 </html>
