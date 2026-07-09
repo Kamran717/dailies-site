@@ -2389,9 +2389,9 @@
     <p class="sub" id="aidm-auth-sub">Sign in to save your casts and membership.</p>
 
     <div id="aidm-perks">
-      <div class="aidm-perk"><span>&#9733;</span> <b>5 free casts</b> — star yourself in any shot</div>
-      <div class="aidm-perk"><span>&#8681;</span> Download your clips and stills</div>
-      <div class="aidm-perk"><span>&#9635;</span> Save your faces for one-tap casting</div>
+      <div class="aidm-perk" id="aidm-perk-1"><span>&#9733;</span> <b>5 free casts</b> — star yourself in any shot</div>
+      <div class="aidm-perk" id="aidm-perk-2"><span>&#8681;</span> Download your clips and stills</div>
+      <div class="aidm-perk" id="aidm-perk-3"><span>&#9635;</span> Save your faces for one-tap casting</div>
     </div>
 
     <input id="aidm-auth-email" type="email" placeholder="Email" autocomplete="email">
@@ -2482,15 +2482,32 @@
         forgot.style.display = 'none';
         toggle.innerHTML = '';
       } else if(mode==='signup'){
-        $('aidm-auth-title').textContent = openContext==='cast' ? 'Create an account to cast' : 'Create account';
-        $('aidm-auth-sub').textContent = openContext==='cast'
-          ? 'Free to join. Your first five casts are on us.'
-          : 'Create an account to start casting yourself into shots.';
+        if(openContext==='like'){
+          $('aidm-auth-title').textContent = 'Save the shots you love';
+          $('aidm-auth-sub').textContent = 'Create a free account to keep your liked shots — and start casting.';
+        } else if(openContext==='cast'){
+          $('aidm-auth-title').textContent = 'Create an account to cast';
+          $('aidm-auth-sub').textContent = 'Free to join. Your first five casts are on us.';
+        } else {
+          $('aidm-auth-title').textContent = 'Create account';
+          $('aidm-auth-sub').textContent = 'Create an account to start casting yourself into shots.';
+        }
         perks.style.display = 'block';
+        if(openContext==='like'){
+          $('aidm-perk-1').innerHTML = '<span>\u2665</span> <b>Save every shot you like</b> \u2014 build your collection';
+          $('aidm-perk-2').innerHTML = '<span>\u2605</span> <b>5 free casts</b> \u2014 star yourself in any shot';
+          $('aidm-perk-3').innerHTML = '<span>\u2193</span> Download your clips and stills';
+        } else {
+          $('aidm-perk-1').innerHTML = '<span>\u2605</span> <b>5 free casts</b> \u2014 star yourself in any shot';
+          $('aidm-perk-2').innerHTML = '<span>\u2193</span> Download your clips and stills';
+          $('aidm-perk-3').innerHTML = '<span>\u25A3</span> Save your faces for one-tap casting';
+        }
         pass.style.display = 'block';
         pass.placeholder = 'Password';
         pass.setAttribute('autocomplete','new-password');
-        $('aidm-auth-go').textContent = 'Create account — 5 free casts';
+        $('aidm-auth-go').textContent = openContext==='like'
+          ? 'Create free account'
+          : 'Create account — 5 free casts';
         forgot.style.display = 'none';
         toggle.innerHTML = 'Have an account? <a id="aidm-auth-switch">Sign in</a>';
       } else if(mode==='reset'){
@@ -2849,7 +2866,11 @@
     var clipId = likeBtn && likeBtn.dataset.clipId;
     if(!clipId) return;
     var u = user();
-    if(!u){ if(window.AIDM_openAuth) window.AIDM_openAuth(); return; }
+    if(!u){
+      if(window.AIDM_track) window.AIDM_track('signin_prompt', { from:'like_button', clip_id: clipId });
+      if(window.AIDM_openAuth) window.AIDM_openAuth('like');
+      return;
+    }
     if(!likedSet) await loadMyLikes();
 
     var liked = likedSet.has(clipId);
