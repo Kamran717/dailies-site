@@ -1756,6 +1756,27 @@
     renderGrid();
   }
 
+  // The signup pitch promises "Save every shot you like — build your
+  // collection". This is the collection. Same grid, filtered to clip_likes.
+  window.AIDM_openLiked = async function(){
+    var ids = [];
+    try { ids = (window.AIDM_getLikedIds ? await window.AIDM_getLikedIds() : []) || []; }
+    catch(err){ ids = []; }
+
+    var set = {};
+    ids.forEach(function(id){ set[id] = true; });
+
+    currentTagClips = CLIPS.filter(function(c){ return set[c.id]; });
+    currentTagLabel = 'Shots you liked';
+    currentTagFacet = '';
+    viewMode = 'liked';
+    if (activeChipEl){ activeChipEl.classList.remove('active'); activeChipEl = null; }
+    renderGrid();
+    if (window.AIDM_track) window.AIDM_track('open_liked', { count: currentTagClips.length });
+    var sheetEl = document.querySelector('.sheet');
+    if (sheetEl) window.scrollTo({ top: sheetEl.offsetTop - 90, behavior: 'smooth' });
+  };
+
   // Extra shot-type collections shown as chips. Kept separate from
   // allShotTypes so the prompt rotation for produced collections never shifts.
   var EXTRA_SHOT_CHIPS = [
@@ -1855,8 +1876,29 @@
 
   function renderGrid(){
     var grid = document.getElementById('grid');
-    grid.classList.toggle('tag-view', viewMode === 'tag');
+    grid.classList.toggle('tag-view', viewMode === 'tag' || viewMode === 'liked');
     var titleEl = document.getElementById('sheetTitle');
+
+    if (viewMode === 'liked'){
+      var likedList = currentTagClips.filter(function(c){
+        if (!state.search) return true;
+        return c.prompt.toLowerCase().indexOf(state.search.toLowerCase()) !== -1;
+      });
+      titleEl.innerHTML = '<button class="back-to-library" id="backToLibraryBtn">\u2190 Back to library</button>Your collection \u2014 <span class="tag-collection-label">Liked shots</span>';
+      document.getElementById('sheetCount').textContent =
+        currentTagClips.length ? (likedList.length + ' / ' + currentTagClips.length + ' shots') : '';
+      document.getElementById('backToLibraryBtn').addEventListener('click', backToLibrary);
+
+      if (!currentTagClips.length){
+        grid.innerHTML = '<div class="empty-state">' +
+          '<p>Nothing here yet. Tap the heart on any shot and it lands in your collection \u2014 the camera move, the lens, the grade, kept for when you need it.</p>' +
+          '<button id="emptyClear">Browse the library</button></div>';
+        document.getElementById('emptyClear').addEventListener('click', backToLibrary);
+        return;
+      }
+      renderCards(grid, likedList);
+      return;
+    }
 
     if (viewMode === 'tag'){
       var tagList = currentTagClips.filter(function(c){
@@ -1911,7 +1953,9 @@
     document.getElementById('searchInput').value = '';
     state.search = '';
     Array.prototype.forEach.call(document.querySelectorAll('.chip.active'), function(c){ c.classList.remove('active'); });
-    if (viewMode !== 'library') backToLibrary(); else renderGrid();
+    if (viewMode === 'liked') renderGrid();
+    else if (viewMode !== 'library') backToLibrary();
+    else renderGrid();
   }
   document.getElementById('clearAll').addEventListener('click', clearAllFilters);
 
@@ -2571,10 +2615,13 @@
 
     function renderHeader(){
       if(currentUser){
-        authWrap.innerHTML = '<button class="aidm-assets-btn">My assets</button><span class="aidm-auth-email"></span><button class="aidm-auth-out">Sign out</button>';
+        authWrap.innerHTML = '<button class="aidm-assets-btn aidm-liked-btn">Liked</button><button class="aidm-assets-btn">My assets</button><span class="aidm-auth-email"></span><button class="aidm-auth-out">Sign out</button>';
         authWrap.querySelector('.aidm-auth-email').textContent = currentUser.email || 'Account';
         authWrap.querySelector('.aidm-auth-out').onclick = function(){ sb.auth.signOut(); };
-        authWrap.querySelector('.aidm-assets-btn').onclick = function(){
+        authWrap.querySelector('.aidm-liked-btn').onclick = function(){
+          if (window.AIDM_openLiked) window.AIDM_openLiked();
+        };
+        authWrap.querySelectorAll('.aidm-assets-btn')[1].onclick = function(){
           if (window.AIDM_track) window.AIDM_track('open_assets', {});
           if (window.AIDM_openAssets) window.AIDM_openAssets();
         };
@@ -2818,6 +2865,7 @@
 <style>
   .aidm-assets-btn{ font-family:var(--ff-mono); font-size:12px; font-weight:600; letter-spacing:.03em; text-transform:uppercase; background:none; color:var(--ink-dim); border:1px solid var(--line); padding:9px 14px; cursor:pointer; }
   .aidm-assets-btn:hover{ color:var(--ink); border-color:var(--ink-dim); }
+  .aidm-liked-btn::before{ content:'\2665'; margin-right:6px; color:#e5484d; }
   #aidm-as-ov{ position:fixed; inset:0; z-index:10002; background:rgba(8,8,8,.85); backdrop-filter:blur(6px); display:none; align-items:flex-start; justify-content:center; padding:40px 16px; overflow:auto; }
   #aidm-as-ov.open{ display:flex; }
   #aidm-as-panel{ width:min(900px,100%); background:var(--bg); color:var(--ink); border:1px solid var(--line); border-radius:6px; padding:26px; font-family:system-ui,sans-serif; }
@@ -2998,6 +3046,13 @@
     likeBtn.addEventListener('click', toggleLike);
     return likeBtn;
   }
+
+  // The library IIFE needs these to build the Liked view. It cannot see
+  // likedSet, which is a closure variable in here.
+  window.AIDM_getLikedIds = async function(){
+    if(!likedSet) await loadMyLikes();
+    return Array.from(likedSet);
+  };
 
   async function loadMyLikes(){
     var u = user(); if(!u || !sb()){ likedSet = new Set(); return; }
