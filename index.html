@@ -2206,7 +2206,9 @@
       di.onclick = function(){ downloadFile(d.sceneUrl, 'aidirectorme-still.jpg'); };
     }
     $('aidm-result').style.display = 'block';
-    if(window.AIDM_renderShare) window.AIDM_renderShare($('aidm-share'), d.videoUrl, d.title, { noNote:true });
+    if(window.AIDM_renderShare) window.AIDM_renderShare($('aidm-share'), d.videoUrl, d.title, {
+      noNote:true, assetId: d.assetId || null, shareId: d.shareId || null
+    });
     ov.classList.add('open');
   }
   if (document.readyState === 'complete') setTimeout(restoreLastCast, 60);
@@ -2284,10 +2286,12 @@
   }
   function stopTimer(){ if (castTimer){ clearInterval(castTimer); castTimer = null; } }
 
-  function postJSON(url, body){
+  function postJSON(url, body, extraHeaders){
+    var headers = { 'Content-Type': 'application/json' };
+    if (extraHeaders) { for (var k in extraHeaders) headers[k] = extraHeaders[k]; }
     return fetch(url, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: headers,
       body: JSON.stringify(body)
     }).then(function(res){
       return res.text().then(function(t){
@@ -2325,26 +2329,29 @@
     $('aidm-title').textContent = 'Casting you into the scene';
     runTimer('Generating the shot (~1 min)\u2026 ');
 
-    var castUid = (window.AIDM_getUserId ? window.AIDM_getUserId() : uid);
     var t_start = Date.now();
     if (window.AIDM_track) window.AIDM_track('cast_start', { prompt: scenePrompt.slice(0,200) });
-    postJSON('/api/star', { userId: castUid, scenePrompt: scenePrompt, faceImageBase64: face.dataUrl })
+
+    // Identity travels in the token, never in the body. /api/star ignores any
+    // userId sent in the body and derives it from this header.
+    getAccessToken()
+    .then(function(token){
+      if (!token){ throw { noSession: true }; }
+      var cc = (typeof currentClip !== 'undefined' && currentClip) ? currentClip : null;
+      return postJSON('/api/star', {
+        scenePrompt: scenePrompt,
+        faceImageBase64: face.dataUrl,
+        clipId: cc ? cc.id : null,
+        clipTitle: cc ? (cc.title || cc.emotion) : null
+      }, { Authorization: 'Bearer ' + token });
+    })
     .then(function(r){
       stopTimer();
       $('aidm-casting').style.display = 'none';
       if (r.status === 200 && r.data && r.data.videoUrl){
         if (window.AIDM_track) window.AIDM_track('cast_done', { seconds: Math.round((Date.now()-t_start)/1000), remaining: r.data.remaining });
-        // Save to the user's account automatically.
-        if (window.AIDM_saveAsset){
-          var cc = (typeof currentClip !== 'undefined' && currentClip) ? currentClip : null;
-          window.AIDM_saveAsset({
-            videoUrl: r.data.videoUrl,
-            imageUrl: r.data.sceneUrl,
-            prompt: scenePrompt,
-            clipId: cc ? cc.id : null,
-            clipTitle: cc ? (cc.title || cc.emotion) : null
-          });
-        }
+        // The asset row is inserted server-side by /api/star. That is where
+        // share_id comes from. Do not insert it again from the browser.
         $('aidm-title').textContent = "You're the star";
         $('aidm-status').textContent = 'Remaining free casts: ' + (r.data.remaining != null ? r.data.remaining : '\u2014');
         var v = $('aidm-video'); v.src = r.data.videoUrl;
@@ -2362,13 +2369,17 @@
           sessionStorage.setItem('aidm_last_cast', JSON.stringify({
             videoUrl: r.data.videoUrl,
             sceneUrl: r.data.sceneUrl || null,
+            shareId: r.data.shareId || null,
+            assetId: r.data.assetId || null,
             remaining: r.data.remaining,
             title: (typeof currentClip !== 'undefined' && currentClip) ? (currentClip.title || currentClip.emotion) : null
           }));
         }catch(e){}
         if (window.AIDM_renderShare){
           var ct = (typeof currentClip !== 'undefined' && currentClip) ? (currentClip.title || currentClip.emotion) : null;
-          window.AIDM_renderShare($('aidm-share'), r.data.videoUrl, ct, { compact:false, noNote:true });
+          window.AIDM_renderShare($('aidm-share'), r.data.videoUrl, ct, {
+            compact:false, noNote:true, assetId: r.data.assetId, shareId: r.data.shareId
+          });
         }
       } else if (r.status === 401){
         $('aidm-title').textContent = 'Sign in to cast';
@@ -2383,7 +2394,26 @@
         fail('Error ' + r.status + ':\n' + r.text);
       }
     })
-    .catch(function(err){ if (window.AIDM_track) window.AIDM_track('cast_error', { message: String(err && err.message) }); fail('Request failed: ' + err.message); });
+    .catch(function(err){
+      if (err && err.noSession){
+        stopTimer();
+        $('aidm-casting').style.display = 'none';
+        $('aidm-title').textContent = 'Sign in to cast';
+        $('aidm-status').textContent = 'Your session expired. Sign in and try again.';
+        if (window.AIDM_openAuth) setTimeout(function(){ window.AIDM_openAuth('cast'); }, 400);
+        return;
+      }
+      if (window.AIDM_track) window.AIDM_track('cast_error', { message: String(err && err.message) });
+      fail('Request failed: ' + (err && err.message ? err.message : err));
+    });
+  }
+
+  // Supabase access token for the signed-in user, or null.
+  function getAccessToken(){
+    if (!window.AIDM_SB) return Promise.resolve(null);
+    return window.AIDM_SB.auth.getSession()
+      .then(function(r){ return (r && r.data && r.data.session) ? r.data.session.access_token : null; })
+      .catch(function(){ return null; });
   }
 })();
 </script>
@@ -2751,20 +2781,9 @@
   function sb(){ return window.AIDM_SB; }
   function user(){ return window.AIDM_getUser && window.AIDM_getUser(); }
 
-  // Save a completed cast to the user's account.
-  window.AIDM_saveAsset = async function(asset){
-    var u = user(); if(!u || !sb()) return;
-    try{
-      await sb().from('assets').insert({
-        user_id: u.id,
-        video_url: asset.videoUrl || null,
-        image_url: asset.imageUrl || null,
-        prompt: (asset.prompt || '').slice(0,1000),
-        clip_id: asset.clipId || null,
-        clip_title: asset.clipTitle || null
-      });
-    }catch(e){ /* non-blocking */ }
-  };
+  // AIDM_saveAsset was removed. /api/star inserts the asset row server-side,
+  // which is where share_id is generated. A second insert from the browser
+  // would create duplicate rows with no share_id.
 
   function clearFloatingMenus(){
     document.querySelectorAll('.aidm-share-menu.floating').forEach(function(m){ m.remove(); });
@@ -2809,7 +2828,9 @@
         var shareWrap=document.createElement('div');
         shareWrap.style.position='relative'; shareWrap.style.display='inline-block';
         acts.appendChild(shareWrap);
-        window.AIDM_renderShare(shareWrap, a.video_url, a.clip_title, { compact:true });
+        window.AIDM_renderShare(shareWrap, a.video_url, a.clip_title, {
+          compact:true, assetId: a.id, shareId: a.share_id, isPublic: a.public === true
+        });
       }
       var bd=document.createElement('button'); bd.textContent='Remove';
       bd.onclick=async function(){ await sb().from('assets').update({deleted:true}).eq('id',a.id); open(); };
@@ -2976,6 +2997,41 @@
 
     var text = 'I cast myself into "' + (clipTitle || 'a scene') + '" on AiDirectorMe';
 
+    // What actually gets posted. Starts as the raw media URL (correct for
+    // library clips, which have no asset). For a cast, publishing swaps it
+    // for aidirectorme.com/cast/<share_id>, which carries our Open Graph
+    // tags instead of advertising fal.media.
+    var shareUrl = videoUrl;
+    var published = !opts.assetId || opts.isPublic === true;
+    if (opts.assetId && opts.shareId && opts.isPublic === true){
+      shareUrl = location.origin + '/cast/' + opts.shareId;
+    }
+
+    // Resolved once, when the menu opens — not per item. window.open() after
+    // an await is treated as an unrequested popup and gets blocked.
+    function publish(){
+      if (published) return Promise.resolve(true);
+      if (!window.confirm('Sharing makes this cast viewable by anyone with the link.\n\nOnly share casts of people who agreed to appear.')) return Promise.resolve(false);
+      if (!window.AIDM_SB) return Promise.resolve(false);
+
+      return window.AIDM_SB.auth.getSession().then(function(r){
+        var session = r && r.data && r.data.session;
+        if (!session){ if (window.AIDM_openAuth) window.AIDM_openAuth('share'); return false; }
+        return fetch('/api/share', {
+          method: 'POST',
+          headers: { 'Content-Type':'application/json', Authorization: 'Bearer ' + session.access_token },
+          body: JSON.stringify({ assetId: opts.assetId })
+        }).then(function(res){ return res.ok ? res.json() : null; })
+        .then(function(d){
+          if (!d || !d.url) return false;
+          shareUrl = d.url;
+          published = true;
+          if (window.AIDM_track) window.AIDM_track('cast_published', { share_id: d.shareId });
+          return true;
+        });
+      }).catch(function(){ return false; });
+    }
+
     var SVG = {
       x:  '<svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>',
       wa: '<svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 0 1 6.988 2.898 9.83 9.83 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.8 11.8 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.9 11.9 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.8 11.8 0 0 0 20.464 3.488"/></svg>',
@@ -3003,12 +3059,12 @@
     }
 
     item('badge-x', SVG.x, 'X', function(){
-      window.open('https://twitter.com/intent/tweet?text='+encodeURIComponent(text)+'&url='+encodeURIComponent(videoUrl),'_blank','noopener');
+      window.open('https://twitter.com/intent/tweet?text='+encodeURIComponent(text)+'&url='+encodeURIComponent(shareUrl),'_blank','noopener');
       if(window.AIDM_track) window.AIDM_track('share_cast',{ via:'x' }); close();
     });
 
     item('badge-wa', SVG.wa, 'WhatsApp', function(){
-      window.open('https://wa.me/?text='+encodeURIComponent(text+' '+videoUrl),'_blank','noopener');
+      window.open('https://wa.me/?text='+encodeURIComponent(text+' '+shareUrl),'_blank','noopener');
       if(window.AIDM_track) window.AIDM_track('share_cast',{ via:'whatsapp' }); close();
     });
 
@@ -3016,11 +3072,11 @@
     // Desktop: copy the link so they can paste it in the app.
     item('badge-ig', SVG.ig, 'Instagram', function(btn){
       if(navigator.share){
-        navigator.share({ title:'AiDirectorMe', text:text, url:videoUrl }).catch(function(){});
+        navigator.share({ title:'AiDirectorMe', text:text, url:shareUrl }).catch(function(){});
         if(window.AIDM_track) window.AIDM_track('share_cast',{ via:'instagram_native' });
         close();
       } else {
-        navigator.clipboard.writeText(videoUrl).catch(function(){});
+        navigator.clipboard.writeText(shareUrl).catch(function(){});
         var l=btn.querySelector('.lbl'); l.textContent='Link copied';
         if(window.AIDM_track) window.AIDM_track('share_cast',{ via:'instagram_copy' });
         setTimeout(function(){ l.textContent='Instagram'; close(); },1500);
@@ -3028,7 +3084,7 @@
     });
 
     item('badge-link', SVG.link, 'Copy link', function(btn){
-      navigator.clipboard.writeText(videoUrl).then(function(){
+      navigator.clipboard.writeText(shareUrl).then(function(){
         var l=btn.querySelector('.lbl'); l.textContent='Copied';
         setTimeout(function(){ l.textContent='Copy link'; close(); },1200);
       }).catch(function(){ close(); });
@@ -3069,7 +3125,17 @@
     }
     main.onclick = function(e){
       e.stopPropagation();
-      menu.classList.contains('open') ? close() : open();
+      if (menu.classList.contains('open')){ close(); return; }
+      if (published){ open(); return; }
+
+      var label = main.innerHTML;
+      main.disabled = true;
+      main.innerHTML = '<span>\u21AA</span> Preparing\u2026';
+      publish().then(function(ok){
+        main.disabled = false;
+        main.innerHTML = label;
+        if (ok) open();
+      });
     };
     menu.onclick = function(e){ e.stopPropagation(); };
 

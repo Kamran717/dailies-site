@@ -1,9 +1,9 @@
 {
-  "name": "aidirectorme",
-  "version": "1.0.0",
+  "name": "dailies-site",
   "private": true,
   "type": "module",
   "dependencies": {
+    "@aws-sdk/client-s3": "latest",
     "@fal-ai/client": "latest",
     "@supabase/supabase-js": "latest",
     "stripe": "latest"

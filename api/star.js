@@ -1,14 +1,19 @@
 // api/star.js — the cast endpoint.
 //
-// POST { userId, scenePrompt, faceImageBase64 }
+// POST { scenePrompt, faceImageBase64 }
+//   + Authorization: Bearer <supabase access token>
 //  ->  { videoUrl, sceneUrl, shareId, assetId, remaining, isMember }
 //
 // Changed from the previous version:
+//  - BREAKING: userId is no longer read from the request body. It is derived
+//    from the caller's access token. The old signature let anyone POST a
+//    random UUID and get a fresh 5-cast quota, at ~$0.32 and 75s of function
+//    time per call, on an unauthenticated public endpoint. If a `userId` is
+//    still sent in the body it is ignored.
 //  - The finished video and still are copied into R2 before we respond, so
 //    every URL we hand back is one we own and that never expires.
 //  - The asset row is now inserted HERE, server-side, not from the browser.
-//    That's what makes share_id exist. See the note at the bottom of the
-//    handoff about removing the AIDM_saveAsset() call from index.html.
+//    That's what makes share_id exist.
 
 import { createClient } from '@supabase/supabase-js';
 import { castVideo } from '../lib/higgsfield.js';
@@ -40,9 +45,21 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const { userId, scenePrompt, faceImageBase64, clipId, clipTitle } = req.body || {};
+  // ---- Identity ----------------------------------------------------------
+  // Derived from the token, never from the body. The body cannot be trusted:
+  // it is whatever the caller typed. Every paid action below hangs off this
+  // line, so it comes first and it fails closed.
+  const token = (req.headers.authorization || '').replace(/^Bearer\s+/i, '');
+  if (!token) return res.status(401).json({ error: 'Sign in to cast a scene.' });
 
-  if (!userId) return res.status(401).json({ error: 'Sign in to cast a scene.' });
+  const { data: userData, error: authErr } = await admin.auth.getUser(token);
+  const user = userData?.user;
+  if (authErr || !user) return res.status(401).json({ error: 'Sign in to cast a scene.' });
+
+  const userId = user.id;
+
+  const { scenePrompt, faceImageBase64, clipId, clipTitle } = req.body || {};
+
   if (!scenePrompt) return res.status(400).json({ error: 'Missing scene prompt.' });
   if (!faceImageBase64) return res.status(400).json({ error: 'Missing face image.' });
 

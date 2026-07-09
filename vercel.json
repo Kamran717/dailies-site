@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/cast/:id", "destination": "/api/cast?id=:id" }
+  ],
+  "functions": {
+    "api/star.js": { "maxDuration": 300 }
+  }
+}
