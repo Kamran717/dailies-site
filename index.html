@@ -2179,8 +2179,38 @@
     ov.classList.add('open');
   });
 
-  $('aidm-close').addEventListener('click', function(){ ov.classList.remove('open'); });
+  $('aidm-close').addEventListener('click', function(){
+    try{ sessionStorage.removeItem('aidm_last_cast'); }catch(e){}
+    ov.classList.remove('open');
+  });
   ov.addEventListener('click', function(e){ if (e.target === ov) ov.classList.remove('open'); });
+
+  // If a cast was generated this session, bring it back after a reload.
+  function restoreLastCast(){
+    var raw = null;
+    try{ raw = sessionStorage.getItem('aidm_last_cast'); }catch(e){}
+    if(!raw) return;
+    var d; try{ d = JSON.parse(raw); }catch(e){ return; }
+    if(!d || !d.videoUrl) return;
+
+    $('aidm-picker').style.display = 'none';
+    $('aidm-casting').style.display = 'none';
+    $('aidm-desc').style.display = 'none';
+    $('aidm-title').textContent = "You're the star";
+    $('aidm-status').textContent = 'Remaining free casts: ' + (d.remaining != null ? d.remaining : '\u2014');
+    $('aidm-video').src = d.videoUrl;
+    $('aidm-dl-video').onclick = function(){ downloadFile(d.videoUrl, 'aidirectorme-cast.mp4'); };
+    if(d.sceneUrl){
+      var s = $('aidm-scene'); s.src = d.sceneUrl; s.style.display = 'block';
+      var di = $('aidm-dl-image'); di.style.display = 'inline-block';
+      di.onclick = function(){ downloadFile(d.sceneUrl, 'aidirectorme-still.jpg'); };
+    }
+    $('aidm-result').style.display = 'block';
+    if(window.AIDM_renderShare) window.AIDM_renderShare($('aidm-share'), d.videoUrl, d.title, { noNote:true });
+    ov.classList.add('open');
+  }
+  if (document.readyState === 'complete') setTimeout(restoreLastCast, 60);
+  else window.addEventListener('load', function(){ setTimeout(restoreLastCast, 60); });
 
   function showPicker(){
     $('aidm-picker').style.display = 'block';
@@ -2287,6 +2317,7 @@
   }
 
   function cast(face){
+    try{ sessionStorage.removeItem('aidm_last_cast'); }catch(e){}
     $('aidm-picker').style.display = 'none';
     $('aidm-result').style.display = 'none';
     $('aidm-desc').style.display = 'none';
@@ -2326,6 +2357,15 @@
           $('aidm-dl-image').style.display = 'none';
         }
         $('aidm-result').style.display = 'block';
+        // Remember this cast so tabbing away (or a reload) doesn't lose it.
+        try{
+          sessionStorage.setItem('aidm_last_cast', JSON.stringify({
+            videoUrl: r.data.videoUrl,
+            sceneUrl: r.data.sceneUrl || null,
+            remaining: r.data.remaining,
+            title: (typeof currentClip !== 'undefined' && currentClip) ? (currentClip.title || currentClip.emotion) : null
+          }));
+        }catch(e){}
         if (window.AIDM_renderShare){
           var ct = (typeof currentClip !== 'undefined' && currentClip) ? (currentClip.title || currentClip.emotion) : null;
           window.AIDM_renderShare($('aidm-share'), r.data.videoUrl, ct, { compact:false, noNote:true });
@@ -2585,15 +2625,19 @@
 
     sb.auth.getSession().then(function(r){ currentUser = r.data.session ? r.data.session.user : null; renderHeader(); });
     sb.auth.onAuthStateChange(function(evt, session){
+      var prevId = currentUser ? currentUser.id : null;
       var wasSignedIn = !!currentUser;
       currentUser = session ? session.user : null;
+      var nextId = currentUser ? currentUser.id : null;
+
       if (evt === 'PASSWORD_RECOVERY'){
-        // Arrived from a reset link — make them set a new password.
         mode = 'newpass'; applyMode(); ov.classList.add('open');
       } else if (!wasSignedIn && currentUser && window.AIDM_track){
         window.AIDM_track('signin', {});
       }
-      renderHeader();
+      // TOKEN_REFRESHED / focus events fire with the same user — don't touch
+      // the DOM then, or open modals get disturbed.
+      if (prevId !== nextId) renderHeader();
     });
     // Fallback: some browsers fire recovery before the listener attaches.
     if (location.hash && location.hash.indexOf('type=recovery') !== -1){
