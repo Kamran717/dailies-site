@@ -301,6 +301,10 @@
     .frame-sweep, .hero-sweep-full{ animation:none !important; display:none; }
     .hero-status .dot{ animation:none !important; }
   }
+
+  .load-more-wrap{ display:flex; justify-content:center; padding:32px 0 8px; }
+  .load-more{ font-family:var(--ff-mono,'IBM Plex Mono',monospace); font-size:12px; letter-spacing:.08em; text-transform:uppercase; background:none; border:1px solid var(--amber,#e5a34a); color:var(--amber,#e5a34a); padding:12px 26px; cursor:pointer; border-radius:2px; transition:background .16s ease,color .16s ease; }
+  .load-more:hover{ background:var(--amber,#e5a34a); color:#1a1408; }
 </style>
 </head>
 <body>
@@ -1938,11 +1942,20 @@
     return true;
   }
 
+  // Grid serves a 640px ~90KB encode and a poster still; the modal serves the
+  // full-quality original. Derived assets live under grid/ and posters/ in the
+  // same bucket, built by scripts/make-web-assets.mjs. If a derived file is
+  // missing the browser falls back (poster -> nothing, grid video -> onerror).
+  function gridSrc(id){ var u = REAL_VIDEOS[id]; return u ? u.replace('videos.aidirectorme.com/', 'videos.aidirectorme.com/grid/') : ''; }
+  function posterSrc(id){ var u = REAL_VIDEOS[id]; return u ? u.replace('videos.aidirectorme.com/', 'videos.aidirectorme.com/posters/').replace(/\.mp4$/, '.jpg') : ''; }
+
   function frameMediaHTML(clip){
-    var realSrc = REAL_VIDEOS[clip.id];
+    var realSrc = gridSrc(clip.id);
+    var poster = posterSrc(clip.id);
     var mediaInner = realSrc
-      ? '<video data-src="' + realSrc + '" muted loop playsinline></video>'
+      ? '<video data-src="' + realSrc + '" poster="' + poster + '" preload="none" muted loop playsinline></video>'
       : '';
+    // With a poster present the gradient is only a pre-image-load fallback.
     var bgStyle = realSrc ? '' : ' style="background-image:linear-gradient(135deg,' + clip.c1 + ',' + clip.c2 + ');"';
     return '<div class="frame-media' + (realSrc ? ' has-video' : '') + '"' + bgStyle + ' data-fallback-c1="' + clip.c1 + '" data-fallback-c2="' + clip.c2 + '">' +
       mediaInner +
@@ -2045,34 +2058,74 @@
     renderCards(grid, filtered);
   }
 
+  var PAGE = 24;               // cards per page — nobody scrolls to 124 at once
+  var _renderState = null;     // { grid, list, shown, lastTheme }
+
+  function cardHTML(clip, lastTheme){
+    var html = '';
+    if (clip.theme && clip.theme !== lastTheme.v){
+      html += '<div class="theme-header">' + clip.theme + '</div>';
+      lastTheme.v = clip.theme;
+    }
+    return html + '<article class="frame" data-id="' + clip.id + '" tabindex="0">' +
+      '<div class="sprocket"></div>' + frameMediaHTML(clip) + '<div class="sprocket"></div>' +
+      '<div class="frame-caption">' +
+        '<div class="cap-tags"><span>' + clip.shotType + '</span><span>' + clip.cameraMove + '</span></div>' +
+        '<div class="cap-line"><b>' + (clip.title || clip.emotion) + '</b> \u00b7 ' + clip.action + '</div>' +
+      '</div></article>';
+  }
+
+  function wireCards(nodes){
+    Array.prototype.forEach.call(nodes, function(el){
+      el.addEventListener('click', function(){ openModal(el.getAttribute('data-id')); });
+      el.addEventListener('keydown', function(e){ if(e.key === 'Enter') openModal(el.getAttribute('data-id')); });
+    });
+  }
+
+  function renderMoreBtn(){
+    var st = _renderState;
+    var old = document.getElementById('loadMoreWrap');
+    if (old) old.parentNode.removeChild(old);
+    if (st.shown >= st.list.length) return;
+    var remaining = st.list.length - st.shown;
+    var wrap = document.createElement('div');
+    wrap.id = 'loadMoreWrap';
+    wrap.className = 'load-more-wrap';
+    wrap.innerHTML = '<button id="loadMoreBtn" class="load-more">Load ' +
+      Math.min(PAGE, remaining) + ' more \u00b7 ' + remaining + ' left</button>';
+    st.grid.parentNode.insertBefore(wrap, st.grid.nextSibling);
+    document.getElementById('loadMoreBtn').addEventListener('click', appendPage);
+  }
+
+  function appendPage(){
+    var st = _renderState;
+    var slice = st.list.slice(st.shown, st.shown + PAGE);
+    var lt = { v: st.lastTheme };
+    var frag = document.createElement('div');
+    frag.innerHTML = slice.map(function(c){ return cardHTML(c, lt); }).join('');
+    var added = Array.prototype.slice.call(frag.children);
+    added.forEach(function(node){ st.grid.appendChild(node); });
+    st.lastTheme = lt.v;
+    st.shown += slice.length;
+    wireCards(st.grid.querySelectorAll('.frame:not([data-wired])'));
+    Array.prototype.forEach.call(st.grid.querySelectorAll('.frame'), function(el){ el.setAttribute('data-wired','1'); });
+    lazyLoadVideos(st.grid);
+    renderMoreBtn();
+  }
+
   function renderCards(grid, list){
+    var stale = document.getElementById('loadMoreWrap');
+    if (stale) stale.parentNode.removeChild(stale);
+
     if (list.length === 0){
       grid.innerHTML = '<div class="empty-state"><p>No dailies match this combination. Clear filters and try another take.</p><button id="emptyClear">Clear filters</button></div>';
       document.getElementById('emptyClear').addEventListener('click', clearAllFilters);
       return;
     }
 
-    var html = '';
-    var lastTheme = null;
-    list.forEach(function(clip){
-      if (clip.theme && clip.theme !== lastTheme){
-        html += '<div class="theme-header">' + clip.theme + '</div>';
-        lastTheme = clip.theme;
-      }
-      html += '<article class="frame" data-id="' + clip.id + '" tabindex="0">' +
-        '<div class="sprocket"></div>' + frameMediaHTML(clip) + '<div class="sprocket"></div>' +
-        '<div class="frame-caption">' +
-          '<div class="cap-tags"><span>' + clip.shotType + '</span><span>' + clip.cameraMove + '</span></div>' +
-          '<div class="cap-line"><b>' + (clip.title || clip.emotion) + '</b> \u00b7 ' + clip.action + '</div>' +
-        '</div></article>';
-    });
-    grid.innerHTML = html;
-    lazyLoadVideos(grid);
-
-    Array.prototype.forEach.call(grid.querySelectorAll('.frame'), function(el){
-      el.addEventListener('click', function(){ openModal(el.getAttribute('data-id')); });
-      el.addEventListener('keydown', function(e){ if(e.key === 'Enter') openModal(el.getAttribute('data-id')); });
-    });
+    grid.innerHTML = '';
+    _renderState = { grid: grid, list: list, shown: 0, lastTheme: null };
+    appendPage();
   }
 
   function clearAllFilters(){
@@ -2123,6 +2176,9 @@
   function generateHeroVideo(){
     var statusEl = document.getElementById('heroStatus');
     var video = document.createElement('video');
+    // Poster paints instantly (~40KB); the 9.8MB video streams in behind it.
+    video.poster = HERO_VIDEO_URL.replace('videos.aidirectorme.com/', 'videos.aidirectorme.com/posters/').replace(/\.mp4$/, '.jpg');
+    video.preload = 'none';
     video.src = HERO_VIDEO_URL;
     video.autoplay = true; video.muted = true; video.loop = true; video.playsInline = true;
     video.addEventListener('canplay', function(){ video.classList.add('loaded'); });
