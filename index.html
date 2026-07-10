@@ -456,7 +456,7 @@
     // moves appear, and every row is a shot the named camera could actually
     // take. Edit a row, don't reintroduce the arithmetic.
     var RIG = [
-    ["35mm Anamorphic Film","Slow Push In","Extreme Close-Up"],
+["35mm Anamorphic Film","Slow Push In","Extreme Close-Up"],
     ["Spherical 50mm Digital Cinema","Static Lock-Off","Close-Up"],
     ["16mm Grainy Film","Handheld Drift","Close-Up"],
     ["Super 8 Home Movie","Handheld Drift","Medium Shot"],
@@ -479,24 +479,42 @@
     ["Selfie Vlogger Front Camera","Handheld Drift","Close-Up"],
     ["GoPro Action POV","Worm's Eye Push","Medium Shot"],
     ["Drone Aerial Camera","FPV Drone Dive","Medium Shot"],
-    ["Dashcam","Static Lock-Off","Medium Shot"],
+    ["Dashcam","Static Lock-Off","Close-Up"],
     ["Security CCTV Camera","Bird's Eye Descent","Medium Shot"],
     ["Polaroid Instant Film","Static Lock-Off","Close-Up"],
     ["DSLR Cinematic","Through-Object Reveal","Extreme Close-Up"],
-    ["iPhone Handheld","Snorricam Character Mount","Medium Shot"],
-    ["Body Cam","Snorricam Character Mount","Medium Shot"],
+    ["iPhone Handheld","Snorricam Character Mount","Close-Up"],
+    ["Body Cam","Handheld Drift","Close-Up"],
     ["Webcam","Static Lock-Off","Close-Up"],
     ["35mm Anamorphic Film","Slow Rack Focus","Extreme Close-Up"],
     ["Spherical 50mm Digital Cinema","360 Degree Spin","Close-Up"],
     ["16mm Grainy Film","Dutch Angle Tilt","Close-Up"],
-    ["Super 8 Home Movie","Handheld Drift","Medium Shot"],
+    ["Super 8 Home Movie","Handheld Drift","Close-Up"],
     ["Vintage VHS Camcorder","Slow Push In","Close-Up"],
     ["Selfie Vlogger Front Camera","Handheld Drift","Close-Up"],
     ["GoPro Action POV","Worm's Eye Push","Close-Up"],
     ["Drone Aerial Camera","Drone Pull-Back Reveal","Wide Shot"],
-    ["Dashcam","Static Lock-Off","Medium Shot"],
+    ["Dashcam","Static Lock-Off","Close-Up"],
     ["Security CCTV Camera","Bird's Eye Descent","Wide Shot"]
     ];
+
+
+    // Four clips are locked to distance by physics: two drones, two CCTV
+    // cameras. A squint or a sneer is invisible at that range. Only these
+    // expressions read from spine, shoulders and gesture, so they get those
+    // slots; the micro-expressions they displace move to close-ups.
+    var EMOTION_AT_DISTANCE = {
+      22: "Full Sob",          // clip-106, drone, medium
+      24: "Silent Tears",      // clip-108, CCTV, medium
+      37: "Exhausted Sigh",    // clip-121, drone, wide
+      39: "Embarrassed Blush"  // clip-123, CCTV, wide
+    };
+    var EMOTION_DISPLACED = {
+      29: "Suspicious Squint",      // was Full Sob        -> webcam close-up
+      28: "Wrinkled-Nose Disgust",  // was Silent Tears    -> body cam close-up
+      38: "Bittersweet Smile",      // was Exhausted Sigh  -> dashcam close-up
+      33: "Sultry Look"             // unchanged, now a close-up
+    };
 
     var out = [];
     for (var j = 0; j < count; j++){
@@ -509,7 +527,7 @@
       var rig = RIG[j % RIG.length];
       var format = rig[0], cameraMove = rig[1], shotType = rig[2];
 
-      var expression = expressions[j % expressions.length];
+      var expression = EMOTION_AT_DISTANCE[j] || EMOTION_DISPLACED[j] || expressions[j % expressions.length];
       var lighting = expressionLightings[(j*5 + 2) % expressionLightings.length];
       var actionPhrase = expressionActionPhrases[j % expressionActionPhrases.length];
       var palette = palettes[j % palettes.length];
@@ -1236,23 +1254,6 @@
     "clip-81": "https://videos.aidirectorme.com/clip-81.mp4",
     "clip-82": "https://videos.aidirectorme.com/clip-82.mp4",
     "clip-83": "https://videos.aidirectorme.com/clip-83.mp4",
-    "clip-84": "https://videos.aidirectorme.com/clip-84.mp4",
-    "clip-85": "https://videos.aidirectorme.com/clip-85.mp4",
-    "clip-86": "https://videos.aidirectorme.com/clip-86.mp4",
-    "clip-87": "https://videos.aidirectorme.com/clip-87.mp4",
-    "clip-88": "https://videos.aidirectorme.com/clip-88.mp4",
-    "clip-91": "https://videos.aidirectorme.com/clip-91.mp4",
-    "clip-93": "https://videos.aidirectorme.com/clip-93.mp4",
-    "clip-89": "https://videos.aidirectorme.com/clip-89.mp4",
-    "clip-90": "https://videos.aidirectorme.com/clip-90.mp4",
-    "clip-92": "https://videos.aidirectorme.com/clip-92.mp4",
-    "clip-94": "https://videos.aidirectorme.com/clip-94.mp4",
-    "clip-95": "https://videos.aidirectorme.com/clip-95.mp4",
-    "clip-96": "https://videos.aidirectorme.com/clip-96.mp4",
-    "clip-97": "https://videos.aidirectorme.com/clip-97.mp4",
-    "clip-98": "https://videos.aidirectorme.com/clip-98.mp4",
-    "clip-99": "https://videos.aidirectorme.com/clip-99.mp4",
-    "clip-100": "https://videos.aidirectorme.com/clip-100.mp4",
     "tag-cameramove-slow-dolly-in-0": "https://videos.aidirectorme.com/tag-cameramove-slow-dolly-in-0.mp4",
     "tag-cameramove-slow-dolly-in-1": "https://videos.aidirectorme.com/tag-cameramove-slow-dolly-in-1.mp4",
     "tag-cameramove-slow-dolly-in-2": "https://videos.aidirectorme.com/tag-cameramove-slow-dolly-in-2.mp4",
