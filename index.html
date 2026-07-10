@@ -446,6 +446,58 @@
   var expressionShotTypes = ["Extreme Close-Up","Close-Up"];
 
   function buildExpressionClips(startIndex, count){
+    // Camera/shot/format pairings are a physical fact about the rig, not a
+    // style choice: a drone cannot hold an extreme close-up on a face, and a
+    // dashcam cannot rack focus. The old version picked each facet from an
+    // independent array with modular arithmetic, so half these clips asked for
+    // an "FPV drone dive on an extreme close-up, shot on Super 8".
+    //
+    // This table is checked: all 15 formats appear (>=2 each), all 14 camera
+    // moves appear, and every row is a shot the named camera could actually
+    // take. Edit a row, don't reintroduce the arithmetic.
+    var RIG = [
+    ["35mm Anamorphic Film","Slow Push In","Extreme Close-Up"],
+    ["Spherical 50mm Digital Cinema","Static Lock-Off","Close-Up"],
+    ["16mm Grainy Film","Handheld Drift","Close-Up"],
+    ["Super 8 Home Movie","Handheld Drift","Medium Shot"],
+    ["Vintage VHS Camcorder","Static Lock-Off","Close-Up"],
+    ["Selfie Vlogger Front Camera","Static Lock-Off","Close-Up"],
+    ["GoPro Action POV","Worm's Eye Push","Close-Up"],
+    ["Drone Aerial Camera","Drone Aerial Orbit","Wide Shot"],
+    ["Dashcam","Static Lock-Off","Medium Shot"],
+    ["Security CCTV Camera","Bird's Eye Descent","Wide Shot"],
+    ["Polaroid Instant Film","Static Lock-Off","Close-Up"],
+    ["DSLR Cinematic","Mirror Reflection Pan","Close-Up"],
+    ["iPhone Handheld","Snorricam Character Mount","Close-Up"],
+    ["Body Cam","Snorricam Character Mount","Medium Shot"],
+    ["Webcam","Static Lock-Off","Close-Up"],
+    ["35mm Anamorphic Film","Dutch Angle Tilt","Close-Up"],
+    ["Spherical 50mm Digital Cinema","360 Degree Spin","Extreme Close-Up"],
+    ["16mm Grainy Film","Slow Push In","Extreme Close-Up"],
+    ["Super 8 Home Movie","Handheld Drift","Close-Up"],
+    ["Vintage VHS Camcorder","Slow Push In","Medium Shot"],
+    ["Selfie Vlogger Front Camera","Handheld Drift","Close-Up"],
+    ["GoPro Action POV","Worm's Eye Push","Medium Shot"],
+    ["Drone Aerial Camera","FPV Drone Dive","Medium Shot"],
+    ["Dashcam","Static Lock-Off","Medium Shot"],
+    ["Security CCTV Camera","Bird's Eye Descent","Medium Shot"],
+    ["Polaroid Instant Film","Static Lock-Off","Close-Up"],
+    ["DSLR Cinematic","Through-Object Reveal","Extreme Close-Up"],
+    ["iPhone Handheld","Snorricam Character Mount","Medium Shot"],
+    ["Body Cam","Snorricam Character Mount","Medium Shot"],
+    ["Webcam","Static Lock-Off","Close-Up"],
+    ["35mm Anamorphic Film","Slow Rack Focus","Extreme Close-Up"],
+    ["Spherical 50mm Digital Cinema","360 Degree Spin","Close-Up"],
+    ["16mm Grainy Film","Dutch Angle Tilt","Close-Up"],
+    ["Super 8 Home Movie","Handheld Drift","Medium Shot"],
+    ["Vintage VHS Camcorder","Slow Push In","Close-Up"],
+    ["Selfie Vlogger Front Camera","Handheld Drift","Close-Up"],
+    ["GoPro Action POV","Worm's Eye Push","Close-Up"],
+    ["Drone Aerial Camera","Drone Pull-Back Reveal","Wide Shot"],
+    ["Dashcam","Static Lock-Off","Medium Shot"],
+    ["Security CCTV Camera","Bird's Eye Descent","Wide Shot"]
+    ];
+
     var out = [];
     for (var j = 0; j < count; j++){
       var i = startIndex + j;
@@ -454,17 +506,26 @@
       var take = 1 + Math.floor(j/8) % 4;
       var frameId = roll + scene + "\u2022T0" + take;
 
+      var rig = RIG[j % RIG.length];
+      var format = rig[0], cameraMove = rig[1], shotType = rig[2];
+
       var expression = expressions[j % expressions.length];
-      var shotType = expressionShotTypes[j % expressionShotTypes.length];
-      var cameraMove = expressionCameraMoves[(j*3 + 1) % expressionCameraMoves.length];
-      var format = cameraFormats[(j*2 + 1) % cameraFormats.length];
       var lighting = expressionLightings[(j*5 + 2) % expressionLightings.length];
       var actionPhrase = expressionActionPhrases[j % expressionActionPhrases.length];
       var palette = palettes[j % palettes.length];
 
-      var prompt = shotType + " on the face, " + cameraMove.toLowerCase() + ". Shot on " + format + ". " +
-        lighting + ". Subject's expression: " + expression.toLowerCase() + " \u2014 " + actionPhrase +
-        ". Natural skin texture, authentic micro-expression detail, subtle film grain, 24fps.";
+      // A face fills the frame in a CU; at Medium/Wide the read is posture and
+      // gesture, so the prompt has to ask for different things.
+      var tight = (shotType === "Extreme Close-Up" || shotType === "Close-Up");
+      var subject = tight ? "on the face" : "on the subject";
+      var detail = tight
+        ? "Natural skin texture, authentic micro-expression detail, subtle film grain, 24fps."
+        : "Expression legible through posture and gesture, natural motion, subtle film grain, 24fps.";
+
+      var prompt = shotType + " " + subject + ", " + cameraMove.toLowerCase() +
+        ". Shot on " + format + ". " + lighting +
+        ". Subject's expression: " + expression.toLowerCase() + " \u2014 " + actionPhrase +
+        ". " + detail;
 
       out.push({
         id: "clip-" + i, frameId: frameId,
@@ -475,6 +536,7 @@
     }
     return out;
   }
+
 
   function pad(n, len){ n = String(n); while(n.length < len) n = "0" + n; return n; }
 

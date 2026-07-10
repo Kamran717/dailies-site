@@ -4,3 +4,5 @@ node_modules/
 hf_*
 archive*
 *.ps1
+.env
+scripts/clips.json
