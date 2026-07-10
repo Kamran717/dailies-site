@@ -1044,9 +1044,27 @@
       return even > 0 ? pool.slice(0, even) : pool;
     }
 
+    // Which themes lead depends on what you clicked. Emotion is a facet of its
+    // own; it has no business being the lens on every other facet. Clicking
+    // "Drone Aerial Camera" should open onto what a drone shoots, not onto ten
+    // faces. The character theme moves to the back for every facet but emotion.
+    var orderedThemes;
+    if (facetKey === "emotion"){
+      orderedThemes = THEMES;                          // the character IS the subject
+    } else {
+      orderedThemes = THEMES.slice(1).concat([THEMES[0]]);
+    }
+
+    // Format and shot-type collections are already bespoke (FORMAT_WORLDS /
+    // SHOT_WORLDS supply the scene). Name the band after the thing itself
+    // rather than borrowing a theme label the prompts no longer follow.
+    var bandLabel = null;
+    if (facetKey === "format" && FORMAT_WORLDS[tagValue]) bandLabel = tagValue;
+    if (facetKey === "shotType" && SHOT_WORLDS[tagValue]) bandLabel = tagValue;
+
     var results = [];
-    for (var g = 0; g < THEMES.length; g++){
-      var theme = THEMES[g];
+    for (var g = 0; g < orderedThemes.length; g++){
+      var theme = orderedThemes[g];
       for (var k = 0; k < 10; k++){
         var idx = g * 10 + k;
 
@@ -1058,7 +1076,8 @@
         var lightingVal = facetKey === "lighting" ? tagValue : allLightings[idx % allLightings.length];
 
         var subjectPhrase, moodPhrase, displayEmotion, displayAction;
-        if (theme.isCharacter){
+        var emphasiseSubject = (facetKey !== "emotion");
+        if (theme.isCharacter && !emphasiseSubject){
           var character = characters[k % characters.length];
           var location = locations[k % locations.length];
           var emotionVal = facetKey === "emotion" ? tagValue : allEmotions[idx % allEmotions.length];
@@ -1067,7 +1086,11 @@
           displayEmotion = emotionVal;
           displayAction = subjectPhrase;
         } else {
-          subjectPhrase = theme.subjects[k % theme.subjects.length];
+          // theme.subjects is absent on the character theme; fall back to a
+          // person doing something, described as a subject rather than a mood.
+          subjectPhrase = theme.subjects
+            ? theme.subjects[k % theme.subjects.length]
+            : (characters[k % characters.length] + " in " + locations[k % locations.length]);
           var moodVal = facetKey === "emotion" ? tagValue : moods[(idx + g) % moods.length];
           moodPhrase = "; the atmosphere carries " + moodVal.toLowerCase();
           displayEmotion = moodVal;
@@ -1111,7 +1134,7 @@
           id: "tag-" + slugify(facetKey) + "-" + slugify(tagValue) + "-" + idx,
           frameId: frameId, cameraMove: cameraMoveVal, shotType: shotType, emotion: displayEmotion,
           lighting: lightingVal, format: formatVal, action: displayAction, setting: subjectPhrase,
-          theme: theme.name, style: styleName,
+          theme: bandLabel || theme.name, style: styleName,
           title: TAG_TITLES[(tagHash(tagValue) + idx * 7) % TAG_TITLES.length],
           c1: palette[0], c2: palette[1], prompt: prompt
         });
@@ -1213,10 +1236,6 @@
     "clip-81": "https://videos.aidirectorme.com/clip-81.mp4",
     "clip-82": "https://videos.aidirectorme.com/clip-82.mp4",
     "clip-83": "https://videos.aidirectorme.com/clip-83.mp4",
-    "clip-85": "https://videos.aidirectorme.com/clip-85.mp4",
-    "clip-86": "https://videos.aidirectorme.com/clip-86.mp4",
-    "clip-87": "https://videos.aidirectorme.com/clip-87.mp4",
-    "clip-88": "https://videos.aidirectorme.com/clip-88.mp4",
     "tag-cameramove-slow-dolly-in-0": "https://videos.aidirectorme.com/tag-cameramove-slow-dolly-in-0.mp4",
     "tag-cameramove-slow-dolly-in-1": "https://videos.aidirectorme.com/tag-cameramove-slow-dolly-in-1.mp4",
     "tag-cameramove-slow-dolly-in-2": "https://videos.aidirectorme.com/tag-cameramove-slow-dolly-in-2.mp4",
