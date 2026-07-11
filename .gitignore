@@ -7,3 +7,8 @@ archive*
 .env
 scripts/clips.json
 grid/ 
+posters/
+realkeys.txt
+scripts/real-keys.json
+scripts/remap-manifest.json
+scripts/clip-jobs.json
