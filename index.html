@@ -345,7 +345,7 @@
   <span class="hero-vf-corner hero-vf-tr"></span>
   <span class="hero-vf-corner hero-vf-bl"></span>
   <span class="hero-vf-corner hero-vf-br"></span>
-  <div class="hero-status" id="heroStatus"><span class="dot"></span> Shot on Higgsfield</div>
+  <div class="hero-status" id="heroStatus"><span class="dot"></span> Shot on AiDirectorMe</div>
   <div class="hero-timecode" id="heroTimecode">00:00:00:00 &middot; LOOP</div>
   <div class="hero-prompt-card">
     <div class="label">Prompt behind this background</div>
@@ -2165,7 +2165,7 @@
       statusEl.innerHTML = '<span class="dot"></span> AI motion background';
     });
     document.getElementById('heroBg').appendChild(video);
-    statusEl.innerHTML = '<span class="dot"></span> Shot on Higgsfield';
+    statusEl.innerHTML = '<span class="dot"></span> Shot on AiDirectorMe';
   }
 
   /* ---------- modal ---------- */
@@ -2614,6 +2614,7 @@
       $('aidm-casting').style.display = 'none';
       if (r.status === 200 && r.data && r.data.videoUrl){
         if (window.AIDM_track) window.AIDM_track('cast_done', { seconds: Math.round((Date.now()-t_start)/1000), remaining: r.data.remaining });
+        if(window.AIDM_refreshBalance) window.AIDM_refreshBalance();
         // The asset row is inserted server-side by /api/star. That is where
         // share_id comes from. Do not insert it again from the browser.
         $('aidm-title').textContent = "You're the star";
@@ -2751,6 +2752,13 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <style>
   #aidm-auth{ margin-left:auto; display:flex; align-items:center; gap:10px; flex-shrink:0; }
+  .aidm-balance{ font-family:var(--ff-mono); font-size:11px; color:#1a1408; background:var(--amber); padding:5px 10px; border-radius:20px; white-space:nowrap; margin-right:6px; }
+  #aidm-thanks-ov{ display:none; position:fixed; inset:0; z-index:9999; background:rgba(0,0,0,.72); align-items:center; justify-content:center; }
+  #aidm-thanks-ov.open{ display:flex; }
+  #aidm-thanks-card{ background:#141414; border:1px solid var(--line); border-radius:12px; padding:28px 30px; max-width:420px; width:90%; text-align:center; }
+  #aidm-thanks-card h3{ margin:0 0 10px; font-size:20px; color:var(--ink); }
+  #aidm-thanks-card p{ margin:0 0 20px; font-size:14px; line-height:1.6; color:var(--ink-dim); }
+  #aidm-thanks-card .pw-cta{ width:100%; }
   .aidm-auth-btn{ font-family:var(--ff-mono); font-size:12px; font-weight:600; letter-spacing:.03em; text-transform:uppercase; background:var(--amber); color:#1a1408; border:none; padding:9px 16px; cursor:pointer; }
   .aidm-auth-btn:hover{ background:#f5b657; }
   .aidm-auth-email{ font-family:var(--ff-mono); font-size:11px; color:var(--ink-dim); max-width:160px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
@@ -2827,8 +2835,9 @@
 
     function renderHeader(){
       if(currentUser){
-        authWrap.innerHTML = '<button class="aidm-assets-btn aidm-liked-btn">Liked</button><button class="aidm-assets-btn">My assets</button><span class="aidm-auth-email"></span><button class="aidm-auth-out">Sign out</button>';
+        authWrap.innerHTML = '<span class="aidm-balance" id="aidm-balance" title="Casts available"></span><button class="aidm-assets-btn aidm-liked-btn">Liked</button><button class="aidm-assets-btn">My assets</button><span class="aidm-auth-email"></span><button class="aidm-auth-out">Sign out</button>';
         authWrap.querySelector('.aidm-auth-email').textContent = currentUser.email || 'Account';
+        if(window.AIDM_refreshBalance) window.AIDM_refreshBalance();
         authWrap.querySelector('.aidm-auth-out').onclick = function(){ sb.auth.signOut(); };
         authWrap.querySelector('.aidm-liked-btn').onclick = function(){
           if (window.AIDM_openLiked) window.AIDM_openLiked();
@@ -2982,7 +2991,29 @@
       }
     };
 
-    sb.auth.getSession().then(function(r){ currentUser = r.data.session ? r.data.session.user : null; renderHeader(); });
+    function aidmRenderBalance(txt){ var el=document.getElementById('aidm-balance'); if(el) el.textContent=txt; }
+    window.AIDM_refreshBalance = function(){
+      if(!currentUser || !window.AIDM_SB){ aidmRenderBalance(''); return Promise.resolve(null); }
+      return window.AIDM_SB.from('profiles').select('is_member,casts_used,cast_credits').eq('id', currentUser.id).single()
+        .then(function(r){ var p=r&&r.data; if(!p){ aidmRenderBalance(''); return null; }
+          if(p.is_member){ aidmRenderBalance('\u2605 Member'); return { member:true, total:null }; }
+          var free=Math.max(0,5-(p.casts_used||0)); var total=free+(p.cast_credits||0);
+          aidmRenderBalance(total+(total===1?' cast':' casts')); return { free:free, credits:(p.cast_credits||0), total:total }; })
+        .catch(function(){ aidmRenderBalance(''); return null; });
+    };
+    function aidmMaybeThanks(){
+      try{ var params=new URLSearchParams(window.location.search);
+        if(params.get('purchased')!=='1') return;
+        var ov=document.getElementById('aidm-thanks-ov'), go=document.getElementById('aidm-thanks-go'), msg=document.getElementById('aidm-thanks-msg');
+        function show(){ if(ov) ov.classList.add('open'); }
+        if(window.AIDM_refreshBalance){ window.AIDM_refreshBalance().then(function(b){
+          if(msg&&b&&b.total!=null){ msg.textContent='You\u2019ve got '+b.total+' cast'+(b.total===1?'':'s')+' ready \u2014 keep casting.'; }
+          show(); }); } else { show(); }
+        if(go) go.onclick=function(){ if(ov) ov.classList.remove('open'); };
+        history.replaceState({}, '', window.location.pathname);
+      }catch(e){}
+    }
+    sb.auth.getSession().then(function(r){ currentUser = r.data.session ? r.data.session.user : null; renderHeader(); aidmMaybeThanks(); });
     sb.auth.onAuthStateChange(function(evt, session){
       var prevId = currentUser ? currentUser.id : null;
       var wasSignedIn = !!currentUser;
@@ -3503,5 +3534,10 @@
 </script>
 <!-- ===== END LIKES + SHARE ===== -->
 
+<div id="aidm-thanks-ov"><div id="aidm-thanks-card">
+  <h3>Payment complete</h3>
+  <p id="aidm-thanks-msg">Your casts are ready — keep casting.</p>
+  <button id="aidm-thanks-go" class="pw-cta">Keep casting</button>
+</div></div>
 </body>
 </html>
