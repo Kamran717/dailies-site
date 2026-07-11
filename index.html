@@ -2344,6 +2344,10 @@
     font-size:8px; letter-spacing:.12em; text-transform:uppercase; color:#1a1408; background:var(--amber); padding:1px 5px; border-radius:8px; }
   #aidm-paywall .pw-pack-best{ border-color:var(--amber-dim); }
   #aidm-paywall .pw-pack:disabled{ opacity:.5; cursor:default; }
+  #aidm-paywall .pw-pack span i{ font-style:normal; color:var(--ink-dim); font-size:11px; }
+  #aidm-paywall .pw-pack.pw-sel{ border-color:var(--amber); background:rgba(232,163,61,.14); box-shadow:inset 0 0 0 1px var(--amber); }
+  #aidm-paywall #aidm-pw-proceed{ width:100%; margin:2px 0 10px; }
+  #aidm-paywall #aidm-pw-proceed:disabled{ opacity:.5; }
   #aidm-paywall .pw-fine{ font-size:11px; line-height:1.5; color:var(--ink-dim); margin:12px 0 0; text-align:center; }
 </style>
 
@@ -2367,12 +2371,13 @@
     <div id="aidm-paywall">
       <p class="pw-lede">Five shots, directed by you. <strong>The library has hundreds more</strong> &mdash; every camera move, every lens, every grade, waiting for a face.</p>
       <div class="pw-packs">
-        <button class="pw-pack" data-pack="starter"><b>5 casts</b><span>$3.25</span></button>
-        <button class="pw-pack" data-pack="standard"><b>10 casts</b><span>$6.40</span></button>
-        <button class="pw-pack" data-pack="value"><b>20 casts</b><span>$12.25</span></button>
-        <button class="pw-pack pw-pack-best" data-pack="best"><b>50 casts</b><span>$29.99</span><em>Best value</em></button>
+        <button class="pw-pack" data-pack="starter"><b>5 casts</b><span>$3.25 <i>($0.65/cast)</i></span></button>
+        <button class="pw-pack" data-pack="standard"><b>10 casts</b><span>$6.40 <i>($0.64/cast)</i></span></button>
+        <button class="pw-pack" data-pack="value"><b>20 casts</b><span>$12.25 <i>($0.61/cast)</i></span></button>
+        <button class="pw-pack pw-pack-best" data-pack="best"><b>50 casts</b><span>$29.99 <i>($0.60/cast)</i></span><em>Best value</em></button>
       </div>
-      <p class="pw-fine" id="aidm-pw-note">Secure checkout via Stripe &mdash; casts never expire. Unlimited monthly &amp; 10-second clips coming soon.</p>
+      <button class="pw-cta" id="aidm-pw-proceed" disabled>Select a pack</button>
+      <p class="pw-fine" id="aidm-pw-note">All sales final &mdash; casts are non-refundable. Secure checkout via Stripe; casts never expire.</p>
     </div>
 
     <div id="aidm-result">
@@ -2708,10 +2713,20 @@
         });
     });
   }
+  var pwSelected = null;
   var pwPacks = document.querySelector('#aidm-paywall .pw-packs');
+  var pwProceed = $('aidm-pw-proceed');
   if (pwPacks) pwPacks.addEventListener('click', function(e){
     var b = e.target.closest ? e.target.closest('.pw-pack') : null;
-    if (b && b.getAttribute('data-pack')) aidmBuyPack(b.getAttribute('data-pack'), b);
+    if (!b || !b.getAttribute('data-pack')) return;
+    var all = pwPacks.querySelectorAll('.pw-pack');
+    for (var i=0;i<all.length;i++) all[i].classList.remove('pw-sel');
+    b.classList.add('pw-sel');
+    pwSelected = b.getAttribute('data-pack');
+    if (pwProceed){ pwProceed.disabled = false; pwProceed.textContent = 'Proceed to payment'; }
+  });
+  if (pwProceed) pwProceed.addEventListener('click', function(){
+    if (pwSelected) aidmBuyPack(pwSelected, pwProceed);
   });
 
   function clipTitleNow(){
