@@ -3004,7 +3004,7 @@
     function aidmMaybeThanks(){
       try{ var params=new URLSearchParams(window.location.search);
         if(params.get('purchased')!=='1') return;
-        var ov=document.getElementById('aidm-thanks-ov'), go=document.getElementById('aidm-thanks-go'), msg=document.getElementById('aidm-thanks-msg');
+        var ov=document.getElementById('aidm-thanks-ov'), go=document.getElementById('aidm-thanks-go'), msg=document.getElementById('aidm-thanks-msg'); if(ov) ov.classList.add('open'); if(go) go.onclick=function(){ if(ov) ov.classList.remove('open'); };
         function show(){ if(ov) ov.classList.add('open'); }
         if(window.AIDM_refreshBalance){ window.AIDM_refreshBalance().then(function(b){
           if(msg&&b&&b.total!=null){ msg.textContent='You\u2019ve got '+b.total+' cast'+(b.total===1?'':'s')+' ready \u2014 keep casting.'; }
