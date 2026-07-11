@@ -2468,8 +2468,8 @@
     });
     ov.classList.add('open');
   }
-  if (document.readyState === 'complete') setTimeout(restoreLastCast, 60);
-  else window.addEventListener('load', function(){ setTimeout(restoreLastCast, 60); });
+  if (document.readyState === 'complete') void 0;
+  else window.addEventListener('load', function(){ void 0; });
 
   function showPicker(){
     $('aidm-paywall').style.display = 'none';
