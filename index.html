@@ -1272,6 +1272,7 @@
     { id: "clip-146", frameId: "Skyward", title: "Skyward", cameraMove: "Crane Rise", shotType: "Wide Shot", emotion: "Manic Elation", action: "moves", lighting: "Harsh Noon Sun", setting: "scene", c1: "#7dc8ff", c2: "#ffb85d", prompt: "Whimsical 3D animation. A colorful hot-air balloon drifts over rolling pastel mountains at sunrise." },
     { id: "clip-147", frameId: "Reef Drift", title: "Reef Drift", cameraMove: "Slow Dolly In", shotType: "Wide Shot", emotion: "Tender Relief", action: "moves", lighting: "Overcast Soft", setting: "scene", c1: "#2db8d4", c2: "#1a6b7a", prompt: "Underwater fantasy. A giant sea turtle glides through a vibrant coral reef as sunlight pierces the water." },
   ];
+  GENRE_CLIPS.forEach(function(c){ c.__meta=true; });
   var CLIPS = buildClips(84).concat(buildExpressionClips(84, 40)).concat(GENRE_CLIPS);
 
   // Deterministic, seeded shuffle for the default library ("Contact Sheet")
@@ -2262,6 +2263,7 @@
   });
 
   /* ---------- hero stats + fallback backdrop ---------- */
+  function aidmPrompt(c){ if(!c) return ''; if(c.__meta && c.prompt) return c.prompt; var sh=c.shotType||'Cinematic shot'; var cm=(c.cameraMove||'static').toLowerCase(); var lt=c.lighting||'natural light'; return sh + ', ' + cm + '. ' + lt + ' lighting. Cinematic, shallow depth of field, natural motion blur, 24fps.'; }
   var HERO_PROMPT = "Slow dolly push through a rain-soaked neon-lit alley at night. Wet asphalt reflecting amber streetlamps and teal signage, thin fog drifting through frame, a lone figure walking away into the light. 35mm anamorphic lens, shallow depth of field, tungsten-and-neon color contrast, cinematic film grain, subtle motion blur, loopable six second clip.";
 
   function renderHeroChrome(){
@@ -2318,7 +2320,7 @@
     window.AIDM_getCurrentClip = function(){ return currentClip; };
     document.getElementById('modalFrameId').textContent = currentClip.frameId;
     document.getElementById('modalTitle').textContent = (currentClip.title || currentClip.emotion) + (currentClip.__meta ? '' : ' \u2014 ' + currentClip.setting);
-    document.getElementById('modalPrompt').textContent = currentClip.prompt;
+    document.getElementById('modalPrompt').textContent = aidmPrompt(currentClip);
     if (window.AIDM_track) window.AIDM_track('clip_open', { clip_id: currentClip.id, title: currentClip.title || currentClip.emotion, camera_move: currentClip.cameraMove, shot_type: currentClip.shotType });
     if (window.AIDM_onClipOpen) window.AIDM_onClipOpen(currentClip.id);
     document.getElementById('modalTags').innerHTML =
@@ -2344,7 +2346,7 @@
   document.getElementById('modalCloseBtn').addEventListener('click', closeModal);
   modal.addEventListener('click', function(e){ if (e.target === modal) closeModal(); });
   document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeModal(); });
-  document.getElementById('modalCopyBtn').addEventListener('click', function(){ if (currentClip){ copyText(currentClip.prompt, this); if (window.AIDM_track) window.AIDM_track('copy_prompt', { clip_id: currentClip.id, title: currentClip.title || currentClip.emotion }); } });
+  document.getElementById('modalCopyBtn').addEventListener('click', function(){ if (currentClip){ copyText(aidmPrompt(currentClip), this); if (window.AIDM_track) window.AIDM_track('copy_prompt', { clip_id: currentClip.id, title: currentClip.title || currentClip.emotion }); } });
 
   function copyText(text, btn){
     var original = btn.textContent;
