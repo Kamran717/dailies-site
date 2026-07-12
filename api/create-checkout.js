@@ -42,7 +42,7 @@ export default async function handler(req, res) {
       }],
       client_reference_id: user.id,
       metadata: { user_id: user.id, casts: String(cfg.casts), pack: (req.body || {}).pack },
-      success_url: `${process.env.SITE_URL}/?purchased=1`,
+      success_url: `${process.env.SITE_URL}/success.html`,
       cancel_url: `${process.env.SITE_URL}/?canceled=1`,
     });
     return res.status(200).json({ url: session.url });
