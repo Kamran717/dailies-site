@@ -415,7 +415,7 @@
     ["#2e1a1d","#8a3d4a"], ["#17281c","#3f7a4a"]
   ];
 
-  var TOTAL = 124;
+  var TOTAL = 136;
 
   /* ---------- Expressions / Format / Unique-camera expansion (new clips only, additive) ---------- */
   var expressions = [
@@ -1171,7 +1171,21 @@
     return results.slice(0, visibleLimit);
   }
 
-  var CLIPS = buildClips(84).concat(buildExpressionClips(84, 40));
+  var GENRE_CLIPS = [
+    { id: "clip-136", frameId: "Dragon's Edge", title: "Dragon's Edge", cameraMove: "Crane Rise", shotType: "Wide Shot", emotion: "Defiant Joy", action: "moves", lighting: "Harsh Noon Sun", setting: "scene", c1: "#6b2d0e", c2: "#d4820a", prompt: "Epic fantasy. A lone armored warrior on a windswept cliff as an enormous dragon soars across a stormy sky." },
+    { id: "clip-137", frameId: "Rooftop Wind", title: "Rooftop Wind", cameraMove: "Static Wide", shotType: "Wide Shot", emotion: "Aching Nostalgia", action: "moves", lighting: "Moonlit Blue", setting: "scene", c1: "#ff9e7d", c2: "#b5477d", prompt: "Japanese cel-shaded anime. A girl with flowing hair on a rooftop at sunset, city sprawling below." },
+    { id: "clip-138", frameId: "Meadow Bot", title: "Meadow Bot", cameraMove: "Slow Dolly In", shotType: "Medium Shot", emotion: "Manic Elation", action: "moves", lighting: "Harsh Noon Sun", setting: "scene", c1: "#7ec850", c2: "#2a9d5c", prompt: "Stylized 3D animation. A small round friendly robot rolls through a bright wildflower meadow." },
+    { id: "clip-139", frameId: "The Portal", title: "The Portal", cameraMove: "Slow Dolly In", shotType: "Wide Shot", emotion: "Quiet Dread", action: "moves", lighting: "Neon Wash", setting: "scene", c1: "#2a4dff", c2: "#7d3dff", prompt: "Real-world fantasy. A glowing arcane portal tears open on a rain-slicked city street at night." },
+    { id: "clip-140", frameId: "Savanna King", title: "Savanna King", cameraMove: "Static Wide", shotType: "Wide Shot", emotion: "Cold Fury", action: "moves", lighting: "Harsh Noon Sun", setting: "scene", c1: "#d99a2b", c2: "#7a4a15", prompt: "Wildlife. A majestic male lion on a rocky outcrop on the savanna at golden hour, mane in the wind." },
+    { id: "clip-141", frameId: "Two Moons", title: "Two Moons", cameraMove: "Static Wide", shotType: "Wide Shot", emotion: "Quiet Dread", action: "moves", lighting: "Moonlit Blue", setting: "scene", c1: "#3d2d6b", c2: "#7d5dff", prompt: "Sci-fi. A lone astronaut crossing a vast alien desert of red dunes under two moons in a violet sky." },
+    { id: "clip-142", frameId: "Blade & Blossom", title: "Blade & Blossom", cameraMove: "Whip Pan", shotType: "Medium Shot", emotion: "Cold Fury", action: "moves", lighting: "Candlelight Flicker", setting: "scene", c1: "#b52d2d", c2: "#2a1a1a", prompt: "Anime action. A samurai in a dramatic mid-slash, katana trailing light, cherry blossoms swirling." },
+    { id: "clip-143", frameId: "Fae Wood", title: "Fae Wood", cameraMove: "Slow Dolly In", shotType: "Wide Shot", emotion: "Tender Relief", action: "moves", lighting: "Moonlit Blue", setting: "scene", c1: "#2d6b4d", c2: "#5dff9d", prompt: "Enchanted forest. Deep woods glowing with bioluminescent mushrooms and drifting fireflies at twilight." },
+    { id: "clip-144", frameId: "Snow Pack", title: "Snow Pack", cameraMove: "Static Wide", shotType: "Wide Shot", emotion: "Cold Fury", action: "moves", lighting: "Overcast Soft", setting: "scene", c1: "#a0b8d0", c2: "#4a6580", prompt: "Wildlife. A pack of grey wolves bounds through deep fresh snow in a pine forest, breath fogging." },
+    { id: "clip-145", frameId: "Neon Alley", title: "Neon Alley", cameraMove: "Slow Dolly In", shotType: "Medium Shot", emotion: "Quiet Dread", action: "moves", lighting: "Neon Wash", setting: "scene", c1: "#ff2d9d", c2: "#2dd4ff", prompt: "Cyberpunk. A hooded figure walks a neon-lit rainy alley, holographic signs glowing pink and cyan." },
+    { id: "clip-146", frameId: "Skyward", title: "Skyward", cameraMove: "Crane Rise", shotType: "Wide Shot", emotion: "Manic Elation", action: "moves", lighting: "Harsh Noon Sun", setting: "scene", c1: "#7dc8ff", c2: "#ffb85d", prompt: "Whimsical 3D animation. A colorful hot-air balloon drifts over rolling pastel mountains at sunrise." },
+    { id: "clip-147", frameId: "Reef Drift", title: "Reef Drift", cameraMove: "Slow Dolly In", shotType: "Wide Shot", emotion: "Tender Relief", action: "moves", lighting: "Overcast Soft", setting: "scene", c1: "#2db8d4", c2: "#1a6b7a", prompt: "Underwater fantasy. A giant sea turtle glides through a vibrant coral reef as sunlight pierces the water." },
+  ];
+  var CLIPS = buildClips(84).concat(buildExpressionClips(84, 40)).concat(GENRE_CLIPS);
 
   // Deterministic, seeded shuffle for the default library ("Contact Sheet")
   // ordering only. CLIPS stays in build order (scene clips 0-83, then
@@ -1196,6 +1210,18 @@
   var LIBRARY_ORDER = seededShuffle(CLIPS, 0x5eed1e);
 
   var REAL_VIDEOS = {
+    "clip-136": "https://videos.aidirectorme.com/clip-136.mp4",
+    "clip-137": "https://videos.aidirectorme.com/clip-137.mp4",
+    "clip-138": "https://videos.aidirectorme.com/clip-138.mp4",
+    "clip-139": "https://videos.aidirectorme.com/clip-139.mp4",
+    "clip-140": "https://videos.aidirectorme.com/clip-140.mp4",
+    "clip-141": "https://videos.aidirectorme.com/clip-141.mp4",
+    "clip-142": "https://videos.aidirectorme.com/clip-142.mp4",
+    "clip-143": "https://videos.aidirectorme.com/clip-143.mp4",
+    "clip-144": "https://videos.aidirectorme.com/clip-144.mp4",
+    "clip-145": "https://videos.aidirectorme.com/clip-145.mp4",
+    "clip-146": "https://videos.aidirectorme.com/clip-146.mp4",
+    "clip-147": "https://videos.aidirectorme.com/clip-147.mp4",
     "clip-0": "https://videos.aidirectorme.com/clip-0.mp4",
     "clip-1": "https://videos.aidirectorme.com/clip-1.mp4",
     "clip-2": "https://videos.aidirectorme.com/clip-2.mp4",
