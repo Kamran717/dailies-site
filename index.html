@@ -3593,5 +3593,28 @@
   if(document.readyState !== 'loading') hook(); else document.addEventListener('DOMContentLoaded', hook);
 })();
 </script>
+<script>
+(function(){
+  function onReturn(){
+    try{
+      var params = new URLSearchParams(window.location.search);
+      if(params.get('purchased') !== '1') return;
+      var tries = 0;
+      var iv = setInterval(function(){
+        tries++;
+        var box = document.getElementById('aidm-balance');
+        var ready = box && box.getBoundingClientRect().width > 0;
+        if(ready){
+          clearInterval(iv);
+          if(window.AIDM_refreshBalance){ try{ window.AIDM_refreshBalance(); }catch(e){} }
+          setTimeout(function(){ if(window.AIDM_celebrate) window.AIDM_celebrate(); }, 500);
+        } else if(tries > 40){ clearInterval(iv); }
+      }, 150);
+    }catch(e){}
+  }
+  window.AIDM_purchaseCelebrate = onReturn;
+  if(document.readyState !== 'loading') onReturn(); else document.addEventListener('DOMContentLoaded', onReturn);
+})();
+</script>
 </body>
 </html>
