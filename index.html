@@ -2756,7 +2756,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <style>
   #aidm-auth{ margin-left:auto; display:flex; align-items:center; gap:10px; flex-shrink:0; }
-  .aidm-balance{ font-family:var(--ff-mono); font-size:11px; color:#1a1408; background:var(--amber); padding:5px 10px; border-radius:20px; white-space:nowrap; margin-right:6px; }
+  .aidm-balance{ font-family:var(--ff-mono); font-size:11px; color:#1746c4; background:var(--amber); padding:5px 10px; border-radius:20px; white-space:nowrap; margin-right:6px; }
   #aidm-thanks-ov{ display:none; position:fixed; top:0; left:0; right:0; bottom:0; width:100vw; height:100vh; z-index:99999; background:rgba(0,0,0,.72); align-items:center; justify-content:center; }
   #aidm-thanks-ov.open{ display:flex; }
   #aidm-thanks-card{ background:#141414; border:1px solid var(--line); border-radius:12px; padding:28px 30px; max-width:420px; width:90%; text-align:center; }
@@ -2839,14 +2839,11 @@
 
     function renderHeader(){
       if(currentUser){
-        authWrap.innerHTML = '<span class="aidm-balance" id="aidm-balance" title="Casts available"></span><button class="aidm-assets-btn aidm-liked-btn">Liked</button><button class="aidm-assets-btn">My assets</button><span class="aidm-auth-email"></span><button class="aidm-auth-out">Sign out</button>';
+        authWrap.innerHTML = '<span class="aidm-balance" id="aidm-balance" title="Casts available"></span><button class="aidm-assets-btn">My assets</button><span class="aidm-auth-email"></span><button class="aidm-auth-out">Sign out</button>';
         authWrap.querySelector('.aidm-auth-email').textContent = currentUser.email || 'Account';
         if(window.AIDM_refreshBalance) window.AIDM_refreshBalance();
         authWrap.querySelector('.aidm-auth-out').onclick = function(){ sb.auth.signOut(); };
-        authWrap.querySelector('.aidm-liked-btn').onclick = function(){
-          if (window.AIDM_openLiked) window.AIDM_openLiked();
-        };
-        authWrap.querySelectorAll('.aidm-assets-btn')[1].onclick = function(){
+        authWrap.querySelector('.aidm-assets-btn').onclick = function(){
           if (window.AIDM_track) window.AIDM_track('open_assets', {});
           if (window.AIDM_openAssets) window.AIDM_openAssets();
         };
@@ -3136,6 +3133,7 @@
     <button id="aidm-as-close">&#10005;</button>
     <h3>My assets</h3>
     <p class="sub">Every scene you've cast yourself into.</p>
+    <button id="aidm-as-liked" class="aidm-assets-btn aidm-liked-btn" style="margin:0 0 14px;" onclick="document.getElementById('aidm-as-close').click(); if(window.AIDM_openLiked) window.AIDM_openLiked();">Liked</button>
     <div id="aidm-as-grid"></div>
     <div id="aidm-as-empty" style="display:none;">No casts yet. Open any shot and hit &#9733; Star in this Scene.</div>
   </div>
