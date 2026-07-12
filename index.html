@@ -2188,7 +2188,7 @@
       '<div class="sprocket"></div>' + frameMediaHTML(clip) + '<div class="sprocket"></div>' +
       '<div class="frame-caption">' +
         '<div class="cap-tags"><span>' + clip.shotType + '</span><span>' + clip.cameraMove + '</span></div>' +
-        '<div class="cap-line"><b>' + (clip.title || clip.emotion) + '</b>' + (clip.__meta ? '' : ' \u00b7 ' + clip.action) + '</div>' +
+        '<div class="cap-line"><b>' + aidmTitle(clip) + '</b></div>' +
       '</div></article>';
   }
 
@@ -2263,6 +2263,7 @@
   });
 
   /* ---------- hero stats + fallback backdrop ---------- */
+  function aidmTitle(c){ if(!c) return ''; if(c.__meta && c.title) return c.title; return (c.shotType||'Cinematic shot') + ' \u00b7 ' + (c.lighting||'natural light'); }
   function aidmPrompt(c){ if(!c) return ''; if(c.__meta && c.prompt) return c.prompt; var sh=c.shotType||'Cinematic shot'; var cm=(c.cameraMove||'static').toLowerCase(); var lt=c.lighting||'natural light'; return sh + ', ' + cm + '. ' + lt + ' lighting. Cinematic, shallow depth of field, natural motion blur, 24fps.'; }
   var HERO_PROMPT = "Slow dolly push through a rain-soaked neon-lit alley at night. Wet asphalt reflecting amber streetlamps and teal signage, thin fog drifting through frame, a lone figure walking away into the light. 35mm anamorphic lens, shallow depth of field, tungsten-and-neon color contrast, cinematic film grain, subtle motion blur, loopable six second clip.";
 
@@ -2319,7 +2320,7 @@
     // The star modal lives in a separate IIFE and cannot see this closure.
     window.AIDM_getCurrentClip = function(){ return currentClip; };
     document.getElementById('modalFrameId').textContent = currentClip.frameId;
-    document.getElementById('modalTitle').textContent = (currentClip.title || currentClip.emotion) + (currentClip.__meta ? '' : ' \u2014 ' + currentClip.setting);
+    document.getElementById('modalTitle').textContent = aidmTitle(currentClip);
     document.getElementById('modalPrompt').textContent = aidmPrompt(currentClip);
     if (window.AIDM_track) window.AIDM_track('clip_open', { clip_id: currentClip.id, title: currentClip.title || currentClip.emotion, camera_move: currentClip.cameraMove, shot_type: currentClip.shotType });
     if (window.AIDM_onClipOpen) window.AIDM_onClipOpen(currentClip.id);
