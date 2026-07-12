@@ -2187,7 +2187,7 @@
       '<div class="sprocket"></div>' + frameMediaHTML(clip) + '<div class="sprocket"></div>' +
       '<div class="frame-caption">' +
         '<div class="cap-tags"><span>' + clip.shotType + '</span><span>' + clip.cameraMove + '</span></div>' +
-        '<div class="cap-line"><b>' + (clip.title || clip.emotion) + '</b> \u00b7 ' + clip.action + '</div>' +
+        '<div class="cap-line"><b>' + (clip.title || clip.emotion) + '</b>' + (clip.__meta ? '' : ' \u00b7 ' + clip.action) + '</div>' +
       '</div></article>';
   }
 
