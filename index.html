@@ -1050,6 +1050,80 @@
   // genuinely express their shot type. Source pool for shot-type filters.
   var PRODUCED_MOVES = ["Slow Dolly In","Handheld Push","Crane Rise","Whip Pan","Static Wide","Orbit Left","Rack Focus","Low Angle Tilt Up","Overhead Drop","Tracking Side"];
 
+  var REAL_TAG_META = {
+  "tag-lighting-golden-hour-rim-0": {
+    "title": "Ridge Line",
+    "shotType": "Wide Shot",
+    "cameraMove": "Static Wide",
+    "prompt": "A lone hiker on a mountain ridge at sunset, warm sunlight rimming their silhouette and the grass. Golden hour rim light, backlit, shallow depth of field."
+  },
+  "tag-lighting-golden-hour-rim-1": {
+    "title": "Mane & Meadow",
+    "shotType": "Wide Shot",
+    "cameraMove": "Static Wide",
+    "prompt": "A wild horse gallops through tall grass at sunset, warm backlight glowing through its mane and the grass tips. Golden hour rim light, dust in the air."
+  },
+  "tag-lighting-golden-hour-rim-2": {
+    "title": "Mane & Meadow",
+    "shotType": "Wide Shot",
+    "cameraMove": "Static Wide",
+    "prompt": "A wild horse gallops through tall grass at sunset, warm backlight glowing through its mane and the grass tips. Golden hour rim light, dust in the air."
+  },
+  "tag-lighting-golden-hour-rim-3": {
+    "title": "Mane & Meadow",
+    "shotType": "Wide Shot",
+    "cameraMove": "Static Wide",
+    "prompt": "A wild horse gallops through tall grass at sunset, warm backlight glowing through its mane and the grass tips. Golden hour rim light, dust in the air."
+  },
+  "tag-lighting-golden-hour-rim-4": {
+    "title": "Morning Gold",
+    "shotType": "Close-Up",
+    "cameraMove": "Slow Dolly In",
+    "prompt": "A steaming coffee cup on a wooden windowsill, low sun streaming through and rimming the rising steam in gold. Golden hour rim light, cozy, shallow focus."
+  },
+  "tag-lighting-golden-hour-rim-5": {
+    "title": "Morning Gold",
+    "shotType": "Close-Up",
+    "cameraMove": "Slow Dolly In",
+    "prompt": "A steaming coffee cup on a wooden windowsill, low sun streaming through and rimming the rising steam in gold. Golden hour rim light, cozy, shallow focus."
+  },
+  "tag-lighting-golden-hour-rim-6": {
+    "title": "Morning Gold",
+    "shotType": "Close-Up",
+    "cameraMove": "Slow Dolly In",
+    "prompt": "A steaming coffee cup on a wooden windowsill, low sun streaming through and rimming the rising steam in gold. Golden hour rim light, cozy, shallow focus."
+  },
+  "tag-lighting-golden-hour-rim-7": {
+    "title": "Morning Gold",
+    "shotType": "Close-Up",
+    "cameraMove": "Slow Dolly In",
+    "prompt": "A steaming coffee cup on a wooden windowsill, low sun streaming through and rimming the rising steam in gold. Golden hour rim light, cozy, shallow focus."
+  },
+  "tag-lighting-golden-hour-rim-8": {
+    "title": "Last Light Sail",
+    "shotType": "Wide Shot",
+    "cameraMove": "Static Wide",
+    "prompt": "A sailboat glides across calm water at sunset, the low sun rimming the sail and the ripples in warm gold. Golden hour rim light, serene, wide shot."
+  },
+  "tag-lighting-golden-hour-rim-9": {
+    "title": "Last Light Sail",
+    "shotType": "Wide Shot",
+    "cameraMove": "Static Wide",
+    "prompt": "A sailboat glides across calm water at sunset, the low sun rimming the sail and the ripples in warm gold. Golden hour rim light, serene, wide shot."
+  },
+  "tag-lighting-golden-hour-rim-10": {
+    "title": "Last Light Sail",
+    "shotType": "Wide Shot",
+    "cameraMove": "Static Wide",
+    "prompt": "A sailboat glides across calm water at sunset, the low sun rimming the sail and the ripples in warm gold. Golden hour rim light, serene, wide shot."
+  },
+  "tag-lighting-golden-hour-rim-11": {
+    "title": "Last Light Sail",
+    "shotType": "Wide Shot",
+    "cameraMove": "Static Wide",
+    "prompt": "A sailboat glides across calm water at sunset, the low sun rimming the sail and the ripples in warm gold. Golden hour rim light, serene, wide shot."
+  }
+};
   function generateTagCollection(facetKey, tagValue){
     // Original shot types (no bespoke world): show real clips from produced
     // collections whose framing matches, instead of placeholder cards.
@@ -1166,6 +1240,7 @@
     // Default for new collections is 10 (theme 1); the remaining 90 stay
     // hidden until their videos are produced. IDs remain stable, so raising
     // a limit later simply reveals the next clips with correct numbering.
+    results.forEach(function(r){ var m = REAL_TAG_META[r.id]; if(m){ for(var k in m) r[k]=m[k]; } });
     var TAG_VISIBLE_LIMITS = { "Slow Dolly In": 100, "Handheld Push": 46, "Crane Rise": 33, "Whip Pan": 10, "Golden Hour Rim": 12 };
     var visibleLimit = TAG_VISIBLE_LIMITS[tagValue] || 10;
     return results.slice(0, visibleLimit);
