@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Payment complete — AiDirectorMe</title>
+<style>
+  :root{ --amber:#e8a33d; --ink:#ececec; --ink-dim:#a3a3a3; --line:#2a2a2a; --bg:#0b0b0a; }
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; height:100%; }
+  body{ background:var(--bg); color:var(--ink); font-family:ui-sans-serif,system-ui,sans-serif;
+        display:flex; align-items:center; justify-content:center; padding:24px; overflow:hidden; }
+  .card{ position:relative; z-index:2; width:min(460px,100%); background:#141414; border:1px solid #262626;
+         border-radius:12px; padding:0; overflow:hidden; text-align:center; }
+  .bar{ height:4px; background:linear-gradient(90deg,#3d9bff,#8b5cf6,#ec4899); }
+  .inner{ padding:34px 30px 30px; }
+  .mono{ font-family:ui-monospace,'JetBrains Mono',Menlo,monospace; }
+  .tick{ width:52px; height:52px; border-radius:50%; border:2px solid var(--amber); display:flex;
+         align-items:center; justify-content:center; margin:0 auto 18px; color:var(--amber); font-size:26px; }
+  h1{ font-size:22px; margin:0 0 8px; color:#f5f5f5; }
+  p{ font-size:14px; line-height:1.6; color:var(--ink-dim); margin:0 0 24px; }
+  a.cta{ display:inline-block; background:var(--amber); color:#1a1408; text-decoration:none;
+         font-family:ui-monospace,'JetBrains Mono',Menlo,monospace; font-size:13px; font-weight:600;
+         letter-spacing:.04em; text-transform:uppercase; padding:13px 26px; border-radius:6px; }
+  .fine{ margin:18px 0 0; font-size:10px; color:#7a7a7a; }
+  canvas{ position:fixed; inset:0; z-index:1; pointer-events:none; }
+</style>
+</head>
+<body>
+<canvas id="fx"></canvas>
+<div class="card">
+  <div class="bar"></div>
+  <div class="inner">
+    <div class="tick">&#10003;</div>
+    <h1>Payment complete</h1>
+    <p>Your casts are ready. Head back and keep directing &mdash; your new balance is waiting.</p>
+    <a class="cta" href="/?purchased=1">Keep casting</a>
+    <p class="fine mono">A receipt has been emailed to you by Stripe.</p>
+  </div>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('fx'),x=c.getContext('2d');
+  function size(){ c.width=innerWidth; c.height=innerHeight; } size(); addEventListener('resize',size);
+  var cols=['#ff4d4d','#ffa534','#ffe14d','#4dd964','#3d9bff','#8b5cf6','#ec4899'],ps=[];
+  function burst(px,py){ for(var i=0;i<16;i++){var a=(Math.PI*2*i)/16+Math.random()*.3,s=1.8+Math.random()*3;
+    ps.push({x:px,y:py,vx:Math.cos(a)*s,vy:Math.sin(a)*s,l:1,c:cols[(Math.random()*cols.length)|0]});} }
+  var cx=innerWidth/2, cy=innerHeight*0.42, n=0;
+  burst(cx,cy);
+  var iv=setInterval(function(){ burst(cx+(Math.random()-.5)*260, cy+(Math.random()-.5)*120); if(++n>=6)clearInterval(iv); },230);
+  (function f(){ x.clearRect(0,0,c.width,c.height);
+    for(var i=0;i<ps.length;i++){var p=ps[i]; if(p.l<=0)continue;
+      p.x+=p.vx;p.y+=p.vy;p.vy+=.05;p.vx*=.985;p.vy*=.985;p.l-=.012;
+      x.globalAlpha=Math.max(0,p.l);x.fillStyle=p.c;x.beginPath();x.arc(p.x,p.y,2.4,0,7);x.fill();}
+    requestAnimationFrame(f); })();
+})();
+</script>
+</body>
+</html>
