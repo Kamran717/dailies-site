@@ -2348,6 +2348,10 @@
   #aidm-paywall .pw-pack.pw-sel{ border-color:var(--amber); background:rgba(232,163,61,.14); box-shadow:inset 0 0 0 1px var(--amber); }
   #aidm-paywall #aidm-pw-proceed{ width:100%; margin:2px 0 10px; }
   #aidm-paywall #aidm-pw-proceed:disabled{ opacity:.5; }
+  #aidm-paywall .pw-topbar{ height:3px; margin:0 -24px 18px; background:linear-gradient(90deg,#3d9bff,#8b5cf6,#ec4899); border-radius:2px; }
+  #aidm-paywall .pw-pack{ border-color:#3a3a3a; }
+  #aidm-paywall .pw-pack.pw-sel{ border-color:#8b5cf6; background:linear-gradient(180deg,rgba(139,92,246,.16),rgba(61,155,255,.06)); box-shadow:inset 0 0 0 1px #8b5cf6, 0 0 18px rgba(139,92,246,.20); }
+  #aidm-paywall .pw-pack em{ background:linear-gradient(90deg,#3d9bff,#8b5cf6,#ec4899); color:#fff; }
   #aidm-paywall .pw-fine{ font-size:11px; line-height:1.5; color:var(--ink-dim); margin:12px 0 0; text-align:center; }
 </style>
 
@@ -2368,7 +2372,7 @@
 
     <div id="aidm-status"></div>
 
-    <div id="aidm-paywall">
+    <div id="aidm-paywall"><div class="pw-topbar"></div>
       <p class="pw-lede">Five shots, directed by you. <strong>The library has hundreds more</strong> &mdash; every camera move, every lens, every grade, waiting for a face.</p>
       <div class="pw-packs">
         <button class="pw-pack" data-pack="starter"><b>5 casts</b><span>$3.25 <i>($0.65/cast)</i></span></button>
