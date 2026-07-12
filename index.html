@@ -1051,6 +1051,18 @@
   var PRODUCED_MOVES = ["Slow Dolly In","Handheld Push","Crane Rise","Whip Pan","Static Wide","Orbit Left","Rack Focus","Low Angle Tilt Up","Overhead Drop","Tracking Side"];
 
   var REAL_TAG_META = {
+  "tag-lighting-neon-wash-0": {"title":"Rain & Neon","shotType":"Wide Shot","cameraMove":"Static Wide","prompt":"A rain-slicked city street at night glowing with pink and blue neon signs, reflections shimmering on the wet pavement. Neon wash lighting, moody, saturated color."},
+  "tag-lighting-neon-wash-1": {"title":"Rain & Neon","shotType":"Wide Shot","cameraMove":"Static Wide","prompt":"A rain-slicked city street at night glowing with pink and blue neon signs, reflections shimmering on the wet pavement. Neon wash lighting, moody, saturated color."},
+  "tag-lighting-neon-wash-2": {"title":"Rain & Neon","shotType":"Wide Shot","cameraMove":"Static Wide","prompt":"A rain-slicked city street at night glowing with pink and blue neon signs, reflections shimmering on the wet pavement. Neon wash lighting, moody, saturated color."},
+  "tag-lighting-neon-wash-3": {"title":"Chrome & Cyan","shotType":"Wide Shot","cameraMove":"Slow Dolly In","prompt":"An empty retro diner at night, pink and cyan neon tubes reflecting off chrome counters and vinyl booths. Neon wash lighting, moody, saturated color."},
+  "tag-lighting-neon-wash-4": {"title":"Chrome & Cyan","shotType":"Wide Shot","cameraMove":"Slow Dolly In","prompt":"An empty retro diner at night, pink and cyan neon tubes reflecting off chrome counters and vinyl booths. Neon wash lighting, moody, saturated color."},
+  "tag-lighting-neon-wash-5": {"title":"Chrome & Cyan","shotType":"Wide Shot","cameraMove":"Slow Dolly In","prompt":"An empty retro diner at night, pink and cyan neon tubes reflecting off chrome counters and vinyl booths. Neon wash lighting, moody, saturated color."},
+  "tag-lighting-neon-wash-6": {"title":"Arcade Glow","shotType":"Wide Shot","cameraMove":"Tracking Side","prompt":"A retro arcade at night, rows of glowing neon game cabinets casting pink and blue light across the floor. Neon wash lighting, moody, saturated color."},
+  "tag-lighting-neon-wash-7": {"title":"Arcade Glow","shotType":"Wide Shot","cameraMove":"Tracking Side","prompt":"A retro arcade at night, rows of glowing neon game cabinets casting pink and blue light across the floor. Neon wash lighting, moody, saturated color."},
+  "tag-lighting-neon-wash-8": {"title":"Arcade Glow","shotType":"Wide Shot","cameraMove":"Tracking Side","prompt":"A retro arcade at night, rows of glowing neon game cabinets casting pink and blue light across the floor. Neon wash lighting, moody, saturated color."},
+  "tag-lighting-neon-wash-9": {"title":"Puddle Sign","shotType":"Close-Up","cameraMove":"Slow Dolly In","prompt":"A neon storefront sign glowing pink and blue reflected in a rain puddle on the sidewalk, ripples distorting the light. Neon wash lighting, moody, saturated color."},
+  "tag-lighting-neon-wash-10": {"title":"Puddle Sign","shotType":"Close-Up","cameraMove":"Slow Dolly In","prompt":"A neon storefront sign glowing pink and blue reflected in a rain puddle on the sidewalk, ripples distorting the light. Neon wash lighting, moody, saturated color."},
+  "tag-lighting-neon-wash-11": {"title":"Puddle Sign","shotType":"Close-Up","cameraMove":"Slow Dolly In","prompt":"A neon storefront sign glowing pink and blue reflected in a rain puddle on the sidewalk, ripples distorting the light. Neon wash lighting, moody, saturated color."},
   "tag-lighting-golden-hour-rim-0": {
     "title": "Ridge Line",
     "shotType": "Wide Shot",
@@ -1241,7 +1253,7 @@
     // hidden until their videos are produced. IDs remain stable, so raising
     // a limit later simply reveals the next clips with correct numbering.
     results.forEach(function(r){ var m = REAL_TAG_META[r.id]; if(m){ for(var k in m) r[k]=m[k]; } });
-    var TAG_VISIBLE_LIMITS = { "Slow Dolly In": 100, "Handheld Push": 46, "Crane Rise": 33, "Whip Pan": 10, "Golden Hour Rim": 12 };
+    var TAG_VISIBLE_LIMITS = { "Slow Dolly In": 100, "Handheld Push": 46, "Crane Rise": 33, "Whip Pan": 10, "Golden Hour Rim": 12, "Neon Wash": 12 };
     var visibleLimit = TAG_VISIBLE_LIMITS[tagValue] || 10;
     return results.slice(0, visibleLimit);
   }
@@ -1285,6 +1297,18 @@
   var LIBRARY_ORDER = seededShuffle(CLIPS, 0x5eed1e);
 
   var REAL_VIDEOS = {
+    "tag-lighting-neon-wash-0": "https://videos.aidirectorme.com/tag-lighting-neon-wash-0.mp4",
+    "tag-lighting-neon-wash-1": "https://videos.aidirectorme.com/tag-lighting-neon-wash-1.mp4",
+    "tag-lighting-neon-wash-2": "https://videos.aidirectorme.com/tag-lighting-neon-wash-2.mp4",
+    "tag-lighting-neon-wash-3": "https://videos.aidirectorme.com/tag-lighting-neon-wash-3.mp4",
+    "tag-lighting-neon-wash-4": "https://videos.aidirectorme.com/tag-lighting-neon-wash-4.mp4",
+    "tag-lighting-neon-wash-5": "https://videos.aidirectorme.com/tag-lighting-neon-wash-5.mp4",
+    "tag-lighting-neon-wash-6": "https://videos.aidirectorme.com/tag-lighting-neon-wash-6.mp4",
+    "tag-lighting-neon-wash-7": "https://videos.aidirectorme.com/tag-lighting-neon-wash-7.mp4",
+    "tag-lighting-neon-wash-8": "https://videos.aidirectorme.com/tag-lighting-neon-wash-8.mp4",
+    "tag-lighting-neon-wash-9": "https://videos.aidirectorme.com/tag-lighting-neon-wash-9.mp4",
+    "tag-lighting-neon-wash-10": "https://videos.aidirectorme.com/tag-lighting-neon-wash-10.mp4",
+    "tag-lighting-neon-wash-11": "https://videos.aidirectorme.com/tag-lighting-neon-wash-11.mp4",
     "tag-lighting-golden-hour-rim-0": "https://videos.aidirectorme.com/tag-lighting-golden-hour-rim-0.mp4",
     "tag-lighting-golden-hour-rim-1": "https://videos.aidirectorme.com/tag-lighting-golden-hour-rim-1.mp4",
     "tag-lighting-golden-hour-rim-2": "https://videos.aidirectorme.com/tag-lighting-golden-hour-rim-2.mp4",
