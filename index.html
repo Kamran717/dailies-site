@@ -2341,13 +2341,33 @@
     document.getElementById('modalTags').innerHTML =
       ['shotType','cameraMove','lighting'].map(function(k){ return '<span>' + currentClip[k] + '</span>'; }).join('');
     modalMedia.innerHTML = '<div class="frame-sweep"></div>';
-    var realSrc = REAL_VIDEOS[currentClip.id];
-    if (realSrc){
+    var raw = REAL_VIDEOS[currentClip.id];
+    if (raw){
       modalMedia.style.backgroundImage = 'none';
       modalMedia.style.animation = 'none';
+      // Full-res base URLs are inconsistent: some collections are flat, some carry a
+      // per-collection subfolder the file may not actually live under. The modal used
+      // the stored URL directly with no error handling, so a 404 left it blank. Try the
+      // stored URL, then the flattened one, then the always-flat/always-present grid
+      // encode, and only then fall back to a gradient.
+      var origin = raw.slice(0, raw.indexOf('/', 8) + 1);
+      var file = raw.slice(raw.lastIndexOf('/') + 1);
+      var sources = [raw, origin + file, gridSrc(currentClip.id)]
+        .filter(function(u, i, a){ return u && a.indexOf(u) === i; });
+      var si = 0;
       var mvid = document.createElement('video');
-      mvid.src = realSrc; mvid.autoplay = true; mvid.muted = true; mvid.loop = true; mvid.playsInline = true;
+      mvid.autoplay = true; mvid.muted = true; mvid.loop = true; mvid.playsInline = true;
       mvid.style.position = 'absolute'; mvid.style.inset = '0'; mvid.style.width = '100%'; mvid.style.height = '100%'; mvid.style.objectFit = 'cover';
+      mvid.addEventListener('error', function(){
+        si++;
+        if (si < sources.length){ mvid.src = sources[si]; mvid.load(); mvid.play().catch(function(){}); }
+        else {
+          mvid.remove();
+          modalMedia.style.animation = '';
+          modalMedia.style.backgroundImage = 'linear-gradient(135deg,' + currentClip.c1 + ',' + currentClip.c2 + ')';
+        }
+      });
+      mvid.src = sources[0];
       modalMedia.appendChild(mvid);
     } else {
       modalMedia.style.animation = '';
