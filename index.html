@@ -99,11 +99,12 @@
   }
 
   .facet-rail{ max-width:1400px; margin:0 auto; padding:0 24px 14px; display:flex; flex-direction:column; gap:9px; }
-  .facet-row{ display:flex; align-items:center; gap:10px; overflow-x:auto; scrollbar-width:none; }
-  .facet-row::-webkit-scrollbar{ display:none; }
-  .facet-row.fade-right{ -webkit-mask-image:linear-gradient(to right, black calc(100% - 48px), transparent); mask-image:linear-gradient(to right, black calc(100% - 48px), transparent); }
-  .facet-row.fade-left{ -webkit-mask-image:none; mask-image:none; }
-  .facet-row.fade-left.fade-right{ -webkit-mask-image:linear-gradient(to right, black calc(100% - 48px), transparent); mask-image:linear-gradient(to right, black calc(100% - 48px), transparent); }
+  .facet-row{ display:flex; align-items:stretch; gap:10px; }
+  .facet-scroll{ flex:1; min-width:0; display:flex; align-items:center; gap:10px; overflow-x:auto; scrollbar-width:none; }
+  .facet-scroll::-webkit-scrollbar{ display:none; }
+  .facet-scroll.fade-right{ -webkit-mask-image:linear-gradient(to right, black calc(100% - 40px), transparent); mask-image:linear-gradient(to right, black calc(100% - 40px), transparent); }
+  .facet-scroll.fade-left{ -webkit-mask-image:linear-gradient(to right, transparent, black 32px); mask-image:linear-gradient(to right, transparent, black 32px); }
+  .facet-scroll.fade-left.fade-right{ -webkit-mask-image:linear-gradient(to right, transparent, black 32px, black calc(100% - 40px), transparent); mask-image:linear-gradient(to right, transparent, black 32px, black calc(100% - 40px), transparent); }
   .facet-row-wrap{ position:relative; }
   .row-arrow{
     position:absolute; top:50%; transform:translateY(-50%); z-index:3;
@@ -118,10 +119,7 @@
   .facet-label{
     font-family:var(--ff-mono); font-size:10px; letter-spacing:.1em; color:var(--amber);
     width:78px; flex-shrink:0; text-transform:uppercase;
-    position:sticky; left:0; z-index:2; align-self:stretch;
     display:flex; align-items:center;
-    background:var(--bg-panel); padding-right:10px;
-    box-shadow:8px 0 8px -6px var(--bg-panel);
   }
   .chip{
     flex-shrink:0; font-family:var(--ff-mono); font-size:12px; color:var(--ink-dim);
@@ -2062,13 +2060,15 @@
 
   function buildFacetRow(facetKey){
     var row = document.querySelector('.facet-row[data-facet="' + facetKey + '"]');
+    var scroll = row.querySelector('.facet-scroll');
+    if(!scroll){ scroll = document.createElement('div'); scroll.className = 'facet-scroll'; row.appendChild(scroll); }
     var values = unique(facetKey);
     if (facetKey === 'shotType'){ values = values.concat(EXTRA_SHOT_CHIPS); }
     values.forEach(function(val){
       var btn = document.createElement('button');
       btn.className = 'chip'; btn.type = 'button'; btn.textContent = val;
       btn.addEventListener('click', function(){ openTagCollection(facetKey, val, btn); });
-      row.appendChild(btn);
+      scroll.appendChild(btn);
     });
   }
   ['cameraMove','shotType','emotion','lighting','format'].forEach(buildFacetRow);
@@ -2462,6 +2462,8 @@
     row.parentNode.insertBefore(wrap, row);
     wrap.appendChild(row);
 
+    var sc = row.querySelector('.facet-scroll') || row;
+
     var btnL = document.createElement('button');
     btnL.className = 'row-arrow row-arrow-left';
     btnL.setAttribute('aria-label', 'Scroll left');
@@ -2474,17 +2476,17 @@
     wrap.appendChild(btnR);
 
     function update(){
-      var max = row.scrollWidth - row.clientWidth;
-      var canL = row.scrollLeft > 4;
-      var canR = row.scrollLeft < max - 4;
-      row.classList.toggle('fade-left', canL);
-      row.classList.toggle('fade-right', canR);
+      var max = sc.scrollWidth - sc.clientWidth;
+      var canL = sc.scrollLeft > 4;
+      var canR = sc.scrollLeft < max - 4;
+      sc.classList.toggle('fade-left', canL);
+      sc.classList.toggle('fade-right', canR);
       btnL.classList.toggle('visible', canL);
       btnR.classList.toggle('visible', canR);
     }
-    btnL.addEventListener('click', function(){ row.scrollBy({ left: -row.clientWidth * 0.7, behavior: 'smooth' }); });
-    btnR.addEventListener('click', function(){ row.scrollBy({ left: row.clientWidth * 0.7, behavior: 'smooth' }); });
-    row.addEventListener('scroll', update, { passive: true });
+    btnL.addEventListener('click', function(){ sc.scrollBy({ left: -sc.clientWidth * 0.7, behavior: 'smooth' }); });
+    btnR.addEventListener('click', function(){ sc.scrollBy({ left: sc.clientWidth * 0.7, behavior: 'smooth' }); });
+    sc.addEventListener('scroll', update, { passive: true });
     window.addEventListener('resize', update);
     update();
   });
