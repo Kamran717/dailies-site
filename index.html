@@ -3650,6 +3650,9 @@
         pass.style.display = 'block';
         pass.placeholder = 'Password';
         pass.setAttribute('autocomplete','new-password');
+        pass2.style.display = 'block';
+        pass2.placeholder = 'Confirm password';
+        pass2.setAttribute('autocomplete','new-password');
         $('aidm-auth-go').textContent = openContext==='like'
           ? 'Create free account'
           : 'Create account — 5 free casts';
@@ -3714,7 +3717,7 @@
         if(!/^\d{6}$/.test(otpCode)){ msg.style.color='var(--amber)'; msg.textContent='Enter the 6-digit code from your email.'; return; }
         $('aidm-auth-go').disabled = true; msg.style.color='var(--ink-dim)'; msg.textContent='Verifying\u2026';
         try{
-          var vr = await sb.auth.verifyOtp({ email: pendingEmail, token: otpCode, type: 'signup' });
+          var vr = await sb.auth.verifyOtp({ email: pendingEmail, token: otpCode, type: 'email' });
           if(vr.error) throw vr.error;
           if(window.AIDM_track) window.AIDM_track('signup_verified', { from: openContext || 'header' });
           closeModal();
@@ -3726,6 +3729,11 @@
 
       if(!email){ msg.style.color='var(--amber)'; msg.textContent='Enter your email.'; return; }
       if(mode!=='reset' && !pass){ msg.style.color='var(--amber)'; msg.textContent='Enter your password.'; return; }
+      if(mode==='signup'){
+        var sp2 = $('aidm-auth-pass2').value;
+        if(pass.length < 6){ msg.style.color='var(--amber)'; msg.textContent='Password must be at least 6 characters.'; return; }
+        if(pass !== sp2){ msg.style.color='var(--amber)'; msg.textContent='Passwords don\u2019t match.'; return; }
+      }
 
       $('aidm-auth-go').disabled = true; msg.style.color='var(--ink-dim)'; msg.textContent='Working\u2026';
       try{
