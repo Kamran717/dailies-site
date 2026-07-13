@@ -326,6 +326,7 @@
     <span class="brand-counter" id="brandCounter">0000 CLIPS LOGGED</span>
   </div>
   <div class="facet-rail">
+    <div class="facet-row" data-facet="style"><span class="facet-label">Styles</span></div>
     <div class="facet-row" data-facet="cameraMove"><span class="facet-label">Camera</span></div>
     <div class="facet-row" data-facet="shotType"><span class="facet-label">Shot</span></div>
     <div class="facet-row" data-facet="emotion"><span class="facet-label">Emotion</span></div>
@@ -2058,11 +2059,17 @@
     "Reflection Shot","Frame Within a Frame","Snorricam","Split Diopter","Through the Keyhole"
   ];
 
+  var STYLE_CHIPS = [
+    "Cinematic","Realistic","Hyperrealistic","Anime","Cartoon","Pixar-style","3D CGI",
+    "Sci-Fi","Cyberpunk","Fantasy","Ghibli-inspired","Comic Book","Digital Painting",
+    "Watercolor","Sketch","Clay Animation","Pixel Art","Luxury Commercial","Minimalist","Documentary"
+  ];
+
   function buildFacetRow(facetKey){
     var row = document.querySelector('.facet-row[data-facet="' + facetKey + '"]');
     var scroll = row.querySelector('.facet-scroll');
     if(!scroll){ scroll = document.createElement('div'); scroll.className = 'facet-scroll'; row.appendChild(scroll); }
-    var values = unique(facetKey);
+    var values = (facetKey === 'style') ? STYLE_CHIPS.slice() : unique(facetKey);
     if (facetKey === 'shotType'){ values = values.concat(EXTRA_SHOT_CHIPS); }
     values.forEach(function(val){
       var btn = document.createElement('button');
@@ -2071,7 +2078,7 @@
       scroll.appendChild(btn);
     });
   }
-  ['cameraMove','shotType','emotion','lighting','format'].forEach(buildFacetRow);
+  ['style','cameraMove','shotType','emotion','lighting','format'].forEach(buildFacetRow);
 
   function matches(clip){
     var facets = ['cameraMove','shotType','emotion','lighting','format'];
