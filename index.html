@@ -3481,8 +3481,8 @@
   #aidm-auth-panel input:focus{ outline:none; border-color:var(--amber); }
   #aidm-auth-go{ width:100%; font-family:var(--ff-mono); font-size:13px; font-weight:700; text-transform:uppercase; background:var(--amber); color:#1a1408; border:none; padding:12px; cursor:pointer; margin-top:4px; }
   #aidm-auth-go:disabled{ opacity:.5; cursor:not-allowed; }
-  #aidm-auth-toggle{ margin-top:14px; font-size:13px; color:var(--ink-dim); text-align:center; }
-  #aidm-auth-toggle a{ color:var(--amber); cursor:pointer; text-decoration:underline; }
+  #aidm-auth-toggle{ margin-top:16px; font-size:15px; color:var(--ink-dim); text-align:center; }
+  #aidm-auth-toggle a{ color:var(--amber); font-weight:700; cursor:pointer; text-decoration:underline; }
   #aidm-auth-forgot{ margin-top:10px; font-size:12px; text-align:center; }
   #aidm-auth-forgot a{ color:var(--ink-dim); cursor:pointer; text-decoration:underline; }
   #aidm-auth-forgot a:hover{ color:var(--amber); }
@@ -3714,7 +3714,7 @@
         if(!/^\d{6}$/.test(otpCode)){ msg.style.color='var(--amber)'; msg.textContent='Enter the 6-digit code from your email.'; return; }
         $('aidm-auth-go').disabled = true; msg.style.color='var(--ink-dim)'; msg.textContent='Verifying\u2026';
         try{
-          var vr = await sb.auth.verifyOtp({ email: pendingEmail, token: otpCode, type: 'email' });
+          var vr = await sb.auth.verifyOtp({ email: pendingEmail, token: otpCode, type: 'signup' });
           if(vr.error) throw vr.error;
           if(window.AIDM_track) window.AIDM_track('signup_verified', { from: openContext || 'header' });
           closeModal();
