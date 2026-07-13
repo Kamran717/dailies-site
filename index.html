@@ -2051,8 +2051,22 @@
   // full-quality original. Derived assets live under grid/ and posters/ in the
   // same bucket, built by scripts/make-web-assets.mjs. If a derived file is
   // missing the browser falls back (poster -> nothing, grid video -> onerror).
-  function gridSrc(id){ var u = REAL_VIDEOS[id]; return u ? u.replace('videos.aidirectorme.com/', 'videos.aidirectorme.com/grid/') : ''; }
-  function posterSrc(id){ var u = REAL_VIDEOS[id]; return u ? u.replace('videos.aidirectorme.com/', 'videos.aidirectorme.com/posters/').replace(/\.mp4$/, '.jpg') : ''; }
+  // Grid/poster derivatives are flat by filename in R2 (grid/<file>, posters/<file>),
+  // whether the source base URL is flat ("clip-0.mp4") or sits under a per-collection
+  // subfolder ("iphone-handheld/tag-format-iphone-handheld-0.mp4"). The old
+  // "insert grid/ right after the domain" trick produced grid/<subfolder>/<file> for
+  // every subfoldered collection (all formats + shot types + the newer camera moves),
+  // which 404s and left those cards blank. Build from origin + filename so both layouts
+  // resolve to the flat derivative.
+  function assetSrc(id, kind, ext){
+    var u = REAL_VIDEOS[id]; if (!u) return '';
+    var origin = u.slice(0, u.indexOf('/', 8) + 1);   // "https://videos.aidirectorme.com/"
+    var file = u.slice(u.lastIndexOf('/') + 1);        // "tag-...-0.mp4"
+    if (ext) file = file.replace(/\.mp4$/, ext);
+    return origin + kind + '/' + file;
+  }
+  function gridSrc(id){ return assetSrc(id, 'grid'); }
+  function posterSrc(id){ return assetSrc(id, 'posters', '.jpg'); }
 
   function frameMediaHTML(clip){
     var realSrc = gridSrc(clip.id);
