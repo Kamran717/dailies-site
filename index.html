@@ -4904,5 +4904,142 @@
   if(document.readyState !== 'loading') onReturn(); else document.addEventListener('DOMContentLoaded', onReturn);
 })();
 </script>
+<!-- ===== FEEDBACK WIDGET =====
+     Writes to the existing 'events' table via window.AIDM_track('feedback', {...}).
+     No new keys, no new endpoint, no new table. Fire-and-forget like all other events. -->
+<style>
+  #aidmFbBtn{
+    position:fixed; right:18px; bottom:18px; z-index:9998;
+    background:#111; color:#fff; border:1px solid rgba(255,255,255,.18);
+    padding:10px 16px; border-radius:999px; font:600 13px/1 system-ui,-apple-system,sans-serif;
+    letter-spacing:.02em; cursor:pointer; box-shadow:0 4px 20px rgba(0,0,0,.35);
+    transition:transform .15s ease, background .15s ease;
+  }
+  #aidmFbBtn:hover{ transform:translateY(-1px); background:#1c1c1c; }
+  #aidmFbOverlay{
+    position:fixed; inset:0; z-index:9999; display:none;
+    background:rgba(0,0,0,.6); backdrop-filter:blur(3px);
+    align-items:center; justify-content:center; padding:20px;
+  }
+  #aidmFbOverlay.open{ display:flex; }
+  #aidmFbCard{
+    width:100%; max-width:440px; background:#141414; color:#eee;
+    border:1px solid rgba(255,255,255,.12); border-radius:16px; padding:22px 22px 18px;
+    font:14px/1.5 system-ui,-apple-system,sans-serif; box-shadow:0 20px 60px rgba(0,0,0,.5);
+    max-height:90vh; overflow:auto;
+  }
+  #aidmFbCard h3{ margin:0 0 4px; font-size:18px; }
+  #aidmFbCard p.sub{ margin:0 0 16px; color:#9a9a9a; font-size:13px; }
+  .aidmFbGroup{ margin:0 0 15px; }
+  .aidmFbGroup label{ display:block; margin:0 0 7px; font-weight:600; font-size:13px; }
+  .aidmFbChips{ display:flex; flex-wrap:wrap; gap:7px; }
+  .aidmFbChip{
+    border:1px solid rgba(255,255,255,.16); background:#1d1d1d; color:#ddd;
+    padding:7px 13px; border-radius:999px; cursor:pointer; font-size:13px; user-select:none;
+  }
+  .aidmFbChip.sel{ background:#3b6ef6; border-color:#3b6ef6; color:#fff; }
+  #aidmFbCard textarea{
+    width:100%; box-sizing:border-box; min-height:72px; resize:vertical;
+    background:#1d1d1d; color:#eee; border:1px solid rgba(255,255,255,.16);
+    border-radius:10px; padding:10px 12px; font:inherit;
+  }
+  #aidmFbActions{ display:flex; gap:10px; margin-top:6px; }
+  #aidmFbSend{
+    flex:1; background:#3b6ef6; color:#fff; border:0; border-radius:10px;
+    padding:11px; font:600 14px system-ui; cursor:pointer;
+  }
+  #aidmFbSend:disabled{ opacity:.5; cursor:default; }
+  #aidmFbClose{
+    background:transparent; color:#9a9a9a; border:1px solid rgba(255,255,255,.16);
+    border-radius:10px; padding:11px 16px; cursor:pointer; font:600 14px system-ui;
+  }
+  #aidmFbThanks{ display:none; text-align:center; padding:14px 4px 6px; }
+  #aidmFbThanks .big{ font-size:34px; }
+</style>
+
+<button id="aidmFbBtn" onclick="AIDM_openFeedback()">💬 Feedback</button>
+
+<div id="aidmFbOverlay" onclick="if(event.target===this)AIDM_closeFeedback()">
+  <div id="aidmFbCard">
+    <div id="aidmFbForm">
+      <h3>Quick feedback</h3>
+      <p class="sub">30 seconds — it genuinely shapes what we build next.</p>
+
+      <div class="aidmFbGroup">
+        <label>Did casting yourself work?</label>
+        <div class="aidmFbChips" data-single="worked">
+          <span class="aidmFbChip" data-v="worked_great">Worked great</span>
+          <span class="aidmFbChip" data-v="worked_ok">Worked, but rough</span>
+          <span class="aidmFbChip" data-v="failed">Didn't work</span>
+          <span class="aidmFbChip" data-v="didnt_try">Didn't try it</span>
+        </div>
+      </div>
+
+      <div class="aidmFbGroup">
+        <label>Would you pay for this?</label>
+        <div class="aidmFbChips" data-single="pay">
+          <span class="aidmFbChip" data-v="yes">Yes</span>
+          <span class="aidmFbChip" data-v="maybe">Maybe</span>
+          <span class="aidmFbChip" data-v="no">No</span>
+        </div>
+      </div>
+
+      <div class="aidmFbGroup">
+        <label>What was confusing or missing? (optional)</label>
+        <textarea id="aidmFbText" placeholder="Anything that tripped you up, or that you loved…"></textarea>
+      </div>
+
+      <div id="aidmFbActions">
+        <button id="aidmFbSend" onclick="AIDM_sendFeedback()">Send feedback</button>
+        <button id="aidmFbClose" onclick="AIDM_closeFeedback()">Close</button>
+      </div>
+    </div>
+
+    <div id="aidmFbThanks">
+      <div class="big">🙏</div>
+      <h3>Thank you!</h3>
+      <p class="sub">That's exactly the kind of input we need.</p>
+      <button id="aidmFbClose" onclick="AIDM_closeFeedback()">Done</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var picks = { worked:null, pay:null };
+  document.querySelectorAll('#aidmFbForm .aidmFbChips').forEach(function(group){
+    var key = group.getAttribute('data-single');
+    group.querySelectorAll('.aidmFbChip').forEach(function(chip){
+      chip.addEventListener('click', function(){
+        group.querySelectorAll('.aidmFbChip').forEach(function(c){ c.classList.remove('sel'); });
+        chip.classList.add('sel');
+        picks[key] = chip.getAttribute('data-v');
+      });
+    });
+  });
+
+  window.AIDM_openFeedback = function(){
+    document.getElementById('aidmFbOverlay').classList.add('open');
+    if (window.AIDM_track) window.AIDM_track('feedback_open', {});
+  };
+  window.AIDM_closeFeedback = function(){
+    document.getElementById('aidmFbOverlay').classList.remove('open');
+  };
+  window.AIDM_sendFeedback = function(){
+    var text = (document.getElementById('aidmFbText')||{}).value || '';
+    var payload = {
+      worked: picks.worked,
+      would_pay: picks.pay,
+      comment: text.trim().slice(0, 2000),
+      path: location.pathname
+    };
+    if (window.AIDM_track) window.AIDM_track('feedback', payload);
+    document.getElementById('aidmFbForm').style.display = 'none';
+    document.getElementById('aidmFbThanks').style.display = 'block';
+  };
+})();
+</script>
+<!-- ===== END FEEDBACK WIDGET ===== -->
+
 </body>
 </html>
