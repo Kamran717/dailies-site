@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AiDirectorMe — You're Cast</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0b0b0d;           /* near-black film base */
+    --char:#141317;          /* card charcoal */
+    --cream:#f3ecdd;         /* aged-film cream */
+    --cream-dim:#b7ad98;     /* muted cream */
+    --amber:#e7b24a;         /* projector amber/gold */
+    --amber-soft:#f0c766;
+    --oxblood:#9c3b30;       /* ticket-stub red */
+    --line:rgba(243,236,221,.14);
+  }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html,body{ height:100%; }
+  body{
+    background:
+      radial-gradient(120% 80% at 50% -10%, #23201c 0%, var(--ink) 55%, #050506 100%);
+    min-height:100vh;
+    display:flex; align-items:center; justify-content:center;
+    padding:36px 18px;
+    font-family:'Cormorant Garamond', Georgia, serif;
+    color:var(--cream);
+    -webkit-font-smoothing:antialiased;
+  }
+
+  /* ---- the card ---- */
+  .ticket{
+    position:relative;
+    width:100%; max-width:452px;
+    background:
+      linear-gradient(180deg, #17161a 0%, #100f13 100%);
+    border:1px solid var(--line);
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 30px 80px rgba(0,0,0,.6), 0 2px 0 rgba(255,255,255,.03) inset;
+  }
+
+  /* spotlight glow behind headline */
+  .ticket::before{
+    content:""; position:absolute; inset:0;
+    background:radial-gradient(80% 46% at 50% 30%, rgba(231,178,74,.18), transparent 70%);
+    pointer-events:none;
+  }
+  /* film grain */
+  .ticket::after{
+    content:""; position:absolute; inset:0; pointer-events:none; opacity:.05; mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* sprocket perforation strips */
+  .sprocket{
+    position:absolute; top:0; bottom:0; width:18px; z-index:3;
+    background:#0a090c;
+    display:flex; flex-direction:column; align-items:center; justify-content:space-around;
+    padding:14px 0;
+  }
+  .sprocket.left{ left:0; border-right:1px solid rgba(0,0,0,.6); }
+  .sprocket.right{ right:0; border-left:1px solid rgba(0,0,0,.6); }
+  .sprocket i{ width:8px; height:11px; border-radius:2px; background:#000;
+    box-shadow:0 0 0 1px rgba(255,255,255,.05) inset; }
+
+  .inner{ position:relative; z-index:2; padding:38px 40px 0; text-align:center; }
+
+  .eyebrow{
+    font-family:'Space Mono', monospace; font-size:10.5px; letter-spacing:.34em;
+    text-transform:uppercase; color:var(--amber); margin-bottom:22px;
+  }
+  .eyebrow .dot{ color:var(--cream-dim); margin:0 7px; }
+
+  .kicker{
+    font-family:'Space Mono', monospace; font-size:11px; letter-spacing:.3em;
+    text-transform:uppercase; color:var(--cream-dim); margin-bottom:6px;
+  }
+  h1{
+    font-family:'Anton', sans-serif; font-weight:400;
+    font-size:clamp(52px, 15vw, 74px); line-height:.9; letter-spacing:.01em;
+    text-transform:uppercase; color:var(--cream);
+    text-shadow:0 2px 30px rgba(231,178,74,.25);
+  }
+  h1 .you{
+    display:block; color:var(--amber);
+    -webkit-text-stroke:0; margin-top:2px;
+    text-shadow:0 2px 34px rgba(231,178,74,.55);
+  }
+
+  .rule{
+    display:flex; align-items:center; justify-content:center; gap:12px;
+    margin:22px 0 18px; color:var(--cream-dim);
+  }
+  .rule::before, .rule::after{ content:""; height:1px; width:52px; background:var(--line); }
+  .rule span{ font-family:'Space Mono',monospace; font-size:10px; letter-spacing:.3em; text-transform:uppercase; }
+
+  .lede{
+    font-size:21px; line-height:1.42; font-style:italic; color:var(--cream);
+    max-width:30ch; margin:0 auto 8px;
+  }
+  .body{
+    font-size:16.5px; line-height:1.5; color:var(--cream-dim);
+    max-width:32ch; margin:12px auto 26px;
+  }
+
+  .cta{
+    display:inline-block; text-decoration:none;
+    font-family:'Space Mono', monospace; font-weight:700;
+    font-size:13px; letter-spacing:.16em; text-transform:uppercase;
+    color:#17140c; background:linear-gradient(180deg,var(--amber-soft),var(--amber));
+    padding:15px 30px; border-radius:8px;
+    box-shadow:0 8px 24px rgba(231,178,74,.28);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .cta:hover{ transform:translateY(-2px); box-shadow:0 12px 30px rgba(231,178,74,.4); }
+  .cta .arrow{ margin-left:8px; }
+
+  .link{
+    font-family:'Space Mono', monospace; font-size:12px; letter-spacing:.12em;
+    color:var(--cream); margin-top:14px; opacity:.85;
+  }
+
+  /* tear-off stub */
+  .perf{
+    position:relative; height:26px; margin:32px 18px 0;
+  }
+  .perf::before{
+    content:""; position:absolute; top:50%; left:0; right:0; transform:translateY(-50%);
+    border-top:2px dashed rgba(243,236,221,.2);
+  }
+  .perf .notch{ position:absolute; top:50%; width:26px; height:26px; border-radius:50%;
+    background:var(--ink); transform:translateY(-50%); z-index:4; }
+  .perf .notch.l{ left:-31px; }
+  .perf .notch.r{ right:-31px; }
+
+  .stub{
+    position:relative; z-index:2;
+    display:flex; align-items:center; justify-content:space-between;
+    gap:14px; padding:16px 40px 30px;
+  }
+  .stub .lot{ text-align:left; }
+  .stub .lot b{
+    display:block; font-family:'Anton',sans-serif; font-weight:400;
+    font-size:19px; letter-spacing:.06em; color:var(--cream); text-transform:uppercase;
+  }
+  .stub .lot small{
+    font-family:'Space Mono',monospace; font-size:9.5px; letter-spacing:.24em;
+    text-transform:uppercase; color:var(--cream-dim);
+  }
+  .stub .admit{
+    font-family:'Space Mono',monospace; font-size:10px; letter-spacing:.22em;
+    text-transform:uppercase; color:var(--cream);
+    border:1px solid var(--oxblood); color:var(--amber);
+    padding:8px 12px; border-radius:6px; white-space:nowrap;
+    background:rgba(156,59,48,.14);
+  }
+
+  /* subtle marquee shimmer on the top edge */
+  .marquee{
+    position:absolute; top:0; left:0; right:0; height:3px; z-index:3;
+    background:linear-gradient(90deg, transparent, var(--amber), transparent);
+    background-size:220% 100%;
+    animation:sweep 5.5s linear infinite;
+  }
+  @keyframes sweep{ from{ background-position:220% 0; } to{ background-position:-120% 0; } }
+
+  @media (prefers-reduced-motion: reduce){
+    .marquee{ animation:none; }
+    .cta{ transition:none; }
+  }
+  @media (max-width:420px){
+    .inner{ padding:30px 34px 0; }
+    .sprocket{ width:15px; }
+  }
+</style>
+</head>
+<body>
+  <div class="ticket">
+    <div class="marquee"></div>
+    <div class="sprocket left"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="sprocket right"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+    <div class="inner">
+      <div class="eyebrow">AiDirectorMe <span class="dot">◆</span> Early Access</div>
+
+      <div class="kicker">Now Casting</div>
+      <h1>The Lead<span class="you">Is You</span></h1>
+
+      <div class="rule"><span>The invitation</span></div>
+
+      <p class="lede">Upload one photo. Star in the scene.</p>
+      <p class="body">You're on the short list to try it first — cast yourself into cinematic movie scenes, free during this early preview.</p>
+
+      <!-- EDIT THE LINK BELOW (href and the visible text) -->
+      <a class="cta" href="https://aidirectorme.com">Claim your seat <span class="arrow">→</span></a>
+      <div class="link">aidirectorme.com</div>
+    </div>
+
+    <div class="perf">
+      <span class="notch l"></span>
+      <span class="notch r"></span>
+    </div>
+
+    <div class="stub">
+      <div class="lot">
+        <b>Admit One</b>
+        <small>Free Preview · Limited Cast</small>
+      </div>
+      <div class="admit">Feedback&nbsp;Welcome</div>
+    </div>
+  </div>
+</body>
+</html>
