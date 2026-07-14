@@ -1006,7 +1006,7 @@
   // Style pairings are shuffled per collection so each category's visible 10
   // feel distinct. Crane Rise is pinned to 0: its videos were generated with
   // the unshifted pairings.
-  var STYLE_OFFSET_PINS = { "Crane Rise": 30 };
+  var STYLE_OFFSET_PINS = { "Crane Rise": 0 };
   function tagHash(s){ var h = 0; for (var i = 0; i < s.length; i++){ h = (h * 31 + s.charCodeAt(i)) >>> 0; } return h; }
 
   // Display titles for tag-collection cards: original evocative names,
@@ -1577,7 +1577,7 @@
     // hidden until their videos are produced. IDs remain stable, so raising
     // a limit later simply reveals the next clips with correct numbering.
     results.forEach(function(r){ var m = REAL_TAG_META[r.id]; if(m){ for(var k in m) r[k]=m[k]; r.__meta=true; } });
-    var TAG_VISIBLE_LIMITS = { "Documentary": 12, "Minimalist": 12, "Luxury Commercial": 12, "Pixel Art": 12, "Clay Animation": 12, "Sketch": 12, "Watercolor": 12, "Digital Painting": 12, "Comic Book": 12, "Ghibli-inspired": 12, "Fantasy": 12, "Cyberpunk": 12, "Sci-Fi": 12, "3D CGI": 12, "Pixar-style": 12, "Cartoon": 12, "Anime": 12, "Hyperrealistic": 12, "Realistic": 12, "Cinematic": 12, "Aching Nostalgia": 12, "Slow Dolly In": 100, "Handheld Push": 27, "Crane Rise": 33, "Whip Pan": 10, "Golden Hour Rim": 12, "Neon Wash": 12 };
+    var TAG_VISIBLE_LIMITS = { "Documentary": 12, "Minimalist": 12, "Luxury Commercial": 12, "Pixel Art": 12, "Clay Animation": 12, "Sketch": 12, "Watercolor": 12, "Digital Painting": 12, "Comic Book": 12, "Ghibli-inspired": 12, "Fantasy": 12, "Cyberpunk": 12, "Sci-Fi": 12, "3D CGI": 12, "Pixar-style": 12, "Cartoon": 12, "Anime": 12, "Hyperrealistic": 12, "Realistic": 12, "Cinematic": 12, "Aching Nostalgia": 12, "Slow Dolly In": 100, "Handheld Push": 27, "Crane Rise": 30, "Whip Pan": 10, "Golden Hour Rim": 12, "Neon Wash": 12 };
     var visibleLimit = TAG_VISIBLE_LIMITS[tagValue] || 10;
     return results.slice(0, visibleLimit);
   }
