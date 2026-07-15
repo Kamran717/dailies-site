@@ -279,6 +279,9 @@
   .modal-tags span{ font-family:var(--ff-mono); font-size:11px; color:var(--ink-dim); border:1px solid var(--line); padding:4px 10px; border-radius:20px; }
   .modal-prompt-label{ font-family:var(--ff-mono); font-size:10px; letter-spacing:.1em; color:var(--ink-faint); text-transform:uppercase; margin:18px 0 8px; }
   .modal-prompt{ font-family:var(--ff-mono); font-size:13.5px; line-height:1.7; color:var(--ink); background:var(--bg-raised); border:1px solid var(--line); padding:16px; }
+  .modal-prompt.clamp{ display:-webkit-box; -webkit-line-clamp:3; line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
+  .modal-prompt-toggle{ display:none; margin-top:8px; background:none; border:none; padding:6px 2px; cursor:pointer; font-family:var(--ff-mono); font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--amber); }
+  .modal-prompt-toggle:hover{ text-decoration:underline; }
   .modal-actions{ display:flex; gap:10px; margin-top:14px; }
   .btn-primary{ font-family:var(--ff-mono); font-size:12px; font-weight:600; letter-spacing:.03em; background:var(--amber); color:#1a1408; border:none; padding:11px 20px; cursor:pointer; text-transform:uppercase; }
   .btn-primary:hover{ background:#f5b657; }
@@ -394,6 +397,7 @@
       </div>
       <div class="modal-prompt-label">Prompt</div>
       <div class="modal-prompt" id="modalPrompt"></div>
+      <button class="modal-prompt-toggle" id="modalPromptToggle" type="button">More ▾</button>
       <div class="modal-actions">
         <button class="btn-primary" id="modalCopyBtn">Copy prompt</button>
         <button class="btn-ghost" id="modalCloseBtn">Close</button>
@@ -3367,6 +3371,7 @@
     document.getElementById('modalFrameId').textContent = currentClip.frameId;
     document.getElementById('modalTitle').textContent = aidmTitle(currentClip);
     document.getElementById('modalPrompt').textContent = aidmPrompt(currentClip);
+    if (window.AIDM_setupPromptClamp) window.AIDM_setupPromptClamp();
     if (window.AIDM_track) window.AIDM_track('clip_open', { clip_id: currentClip.id, title: currentClip.title || currentClip.emotion, camera_move: currentClip.cameraMove, shot_type: currentClip.shotType });
     if (window.AIDM_onClipOpen) window.AIDM_onClipOpen(currentClip.id);
     document.getElementById('modalTags').innerHTML =
@@ -5040,6 +5045,35 @@
 })();
 </script>
 <!-- ===== END FEEDBACK WIDGET ===== -->
+
+<!-- ===== MOBILE PROMPT CLAMP (3 lines + More/Less) ===== -->
+<script>
+(function(){
+  function isNarrow(){ return window.matchMedia('(max-width: 768px)').matches; }
+  window.AIDM_setupPromptClamp = function(){
+    var p = document.getElementById('modalPrompt');
+    var t = document.getElementById('modalPromptToggle');
+    if(!p || !t) return;
+    p.classList.remove('clamp'); t.style.display='none'; t.textContent='More ▾';
+    if(!isNarrow()) return;
+    p.classList.add('clamp');
+    requestAnimationFrame(function(){
+      if(p.scrollHeight > p.clientHeight + 4){ t.style.display='inline-block'; }
+      else { p.classList.remove('clamp'); }
+    });
+  };
+  var t = document.getElementById('modalPromptToggle');
+  if(t && !t._wired){
+    t._wired = true;
+    t.addEventListener('click', function(){
+      var p = document.getElementById('modalPrompt'); if(!p) return;
+      if(p.classList.contains('clamp')){ p.classList.remove('clamp'); t.textContent='Less ▴'; }
+      else { p.classList.add('clamp'); t.textContent='More ▾'; }
+    });
+  }
+})();
+</script>
+<!-- ===== END MOBILE PROMPT CLAMP ===== -->
 
 </body>
 </html>
