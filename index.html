@@ -387,6 +387,7 @@
 </main>
 
 <footer>
+  <div class="footer-links"><button type="button" class="footer-link" onclick="AIDM_openContact()">Contact</button></div>
   DAILIES — prototype build · grid clips are generated placeholders, not real footage · hero background is a real AI video generated with Higgsfield
 </footer>
 
@@ -5301,6 +5302,89 @@
 })();
 </script>
 <!-- ===== END MOBILE PROMPT CLAMP ===== -->
+
+
+<!-- ===== CONTACT ===== -->
+<style>
+  .footer-links{ margin-bottom:10px; }
+  .footer-link{ background:none; border:none; color:var(--amber,#e8a33d); font-family:var(--ff-mono,monospace); font-size:inherit; cursor:pointer; padding:0; text-decoration:underline; letter-spacing:.04em; }
+  .aidm-contact-overlay{ position:fixed; inset:0; z-index:600; background:rgba(9,9,8,.86); display:none; align-items:center; justify-content:center; padding:24px; }
+  .aidm-contact-overlay.open{ display:flex; }
+  .aidm-contact-card{ background:var(--bg-panel,#1a1a1b); border:1px solid var(--line,#332f29); max-width:460px; width:100%; padding:26px 26px 28px; position:relative; box-shadow:0 24px 70px rgba(0,0,0,.6); }
+  .aidm-contact-card h3{ font-family:var(--ff-display,'Bebas Neue'),sans-serif; font-size:27px; letter-spacing:.02em; color:var(--ink,#f2ede4); margin:0 0 6px; }
+  .aidm-contact-card p.sub{ font-family:var(--ff-mono,monospace); font-size:12.5px; color:var(--ink-dim,#9a968c); margin:0 0 4px; line-height:1.55; }
+  .aidm-contact-card label{ display:block; font-family:var(--ff-mono,monospace); font-size:11px; text-transform:uppercase; letter-spacing:.08em; color:var(--ink-dim,#9a968c); margin:14px 0 6px; }
+  .aidm-contact-card input, .aidm-contact-card textarea{ width:100%; background:var(--bg-raised,#111); border:1px solid var(--line,#332f29); color:var(--ink,#f2ede4); font-family:var(--ff-mono,monospace); font-size:13px; padding:10px 12px; box-sizing:border-box; }
+  .aidm-contact-card textarea{ min-height:110px; resize:vertical; }
+  .aidm-contact-card input:focus, .aidm-contact-card textarea:focus{ outline:none; border-color:var(--amber,#e8a33d); }
+  .aidm-contact-send{ margin-top:18px; width:100%; background:linear-gradient(180deg,#f2ba52,#e8a33d); color:#1a1408; border:none; font-family:var(--ff-mono,monospace); font-weight:700; font-size:14px; text-transform:uppercase; letter-spacing:.08em; padding:12px; cursor:pointer; }
+  .aidm-contact-send:disabled{ opacity:.6; cursor:default; }
+  .aidm-contact-alt{ margin-top:14px; font-family:var(--ff-mono,monospace); font-size:12px; color:var(--ink-dim,#9a968c); text-align:center; }
+  .aidm-contact-alt a{ color:var(--amber,#e8a33d); text-decoration:none; }
+  .aidm-contact-x{ position:absolute; top:12px; right:12px; background:var(--bg,#0e0e0d); border:1px solid var(--line,#332f29); color:var(--ink,#f2ede4); width:30px; height:30px; cursor:pointer; font-size:15px; }
+  .aidm-contact-err{ display:none; color:#e88a7a; font-family:var(--ff-mono,monospace); font-size:12px; margin-top:10px; }
+  .aidm-contact-thanks{ display:none; text-align:center; padding:6px 0 2px; }
+  .aidm-contact-thanks.show{ display:block; }
+</style>
+<div class="aidm-contact-overlay" id="aidmContactOverlay">
+  <div class="aidm-contact-card">
+    <button class="aidm-contact-x" onclick="AIDM_closeContact()" aria-label="Close">&#10005;</button>
+    <div id="aidmContactForm">
+      <h3>Get in touch</h3>
+      <p class="sub">Questions, feedback, or business inquiries &mdash; send us a message and we'll get back to you.</p>
+      <label>Name</label>
+      <input id="aidmContactName" type="text" placeholder="Your name" maxlength="120" autocomplete="name">
+      <label>Email</label>
+      <input id="aidmContactEmail" type="email" placeholder="you@example.com" maxlength="200" autocomplete="email">
+      <label>Message</label>
+      <textarea id="aidmContactMsg" placeholder="How can we help?" maxlength="4000"></textarea>
+      <div class="aidm-contact-err" id="aidmContactErr">Please add your email and a message.</div>
+      <button class="aidm-contact-send" id="aidmContactSend" onclick="AIDM_sendContact()">Send message</button>
+      <div class="aidm-contact-alt">or email <a href="mailto:support@aidirectorme.com">support@aidirectorme.com</a></div>
+    </div>
+    <div class="aidm-contact-thanks" id="aidmContactThanks">
+      <h3>Thanks &mdash; message sent</h3>
+      <p class="sub">We'll get back to you at the email you provided.</p>
+      <button class="aidm-contact-send" onclick="AIDM_closeContact()">Close</button>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  function g(id){ return document.getElementById(id); }
+  window.AIDM_openContact = function(){
+    var o=g('aidmContactOverlay'); if(!o) return;
+    g('aidmContactForm').style.display='block';
+    g('aidmContactThanks').classList.remove('show');
+    g('aidmContactErr').style.display='none';
+    o.classList.add('open');
+    if(window.AIDM_track) window.AIDM_track('contact_open', {});
+  };
+  window.AIDM_closeContact = function(){ var o=g('aidmContactOverlay'); if(o) o.classList.remove('open'); };
+  window.AIDM_sendContact = function(){
+    var name=(g('aidmContactName').value||'').trim();
+    var email=(g('aidmContactEmail').value||'').trim();
+    var msg=(g('aidmContactMsg').value||'').trim();
+    if(!email || !msg){ g('aidmContactErr').style.display='block'; return; }
+    g('aidmContactErr').style.display='none';
+    var btn=g('aidmContactSend'); btn.disabled=true; btn.textContent='Sending...';
+    if(window.AIDM_track) window.AIDM_track('contact', { name:name, email:email, message:msg });
+    setTimeout(function(){
+      g('aidmContactForm').style.display='none';
+      g('aidmContactThanks').classList.add('show');
+      btn.disabled=false; btn.textContent='Send message';
+      g('aidmContactName').value=''; g('aidmContactEmail').value=''; g('aidmContactMsg').value='';
+    }, 400);
+  };
+  document.addEventListener('click', function(e){
+    var o=document.getElementById('aidmContactOverlay');
+    if(o && e.target===o) o.classList.remove('open');
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key==='Escape'){ var o=document.getElementById('aidmContactOverlay'); if(o&&o.classList.contains('open')) o.classList.remove('open'); }
+  });
+})();
+</script>
 
 </body>
 </html>
