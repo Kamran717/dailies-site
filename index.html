@@ -3239,6 +3239,15 @@
     "Reflection Shot","Frame Within a Frame","Snorricam","Split Diopter","Through the Keyhole"
   ];
 
+  // New camera-move subcategories. Chips only appear once a move has real clips
+  // (the empty-collection filter in buildFacetRow hides the rest).
+  var EXTRA_CAMERA_CHIPS = [
+    "Dolly Out","Push In","Dolly Zoom","Crane Down","Pedestal Up","Slow Pan",
+    "Tilt Up","Tilt Down","Dutch Roll","Orbit Left","Orbit Right","Tracking Side",
+    "Overhead Drop","Steadicam Follow","Snorricam","Drone Ascend","Drone Fly-Through",
+    "Zoom In","Zoom Out","Static Locked-off"
+  ];
+
   var STYLE_CHIPS = [
     "Cinematic","Realistic","Hyperrealistic","Anime","Cartoon","Pixar-style","3D CGI",
     "Sci-Fi","Cyberpunk","Fantasy","Ghibli-inspired","Comic Book","Digital Painting",
@@ -3258,6 +3267,8 @@
     if(!scroll){ scroll = document.createElement('div'); scroll.className = 'facet-scroll'; row.appendChild(scroll); }
     var values = (facetKey === 'style') ? STYLE_CHIPS.slice() : (facetKey === 'emotion') ? EMOTION_CHIPS.slice() : unique(facetKey);
     if (facetKey === 'shotType'){ values = values.concat(EXTRA_SHOT_CHIPS); }
+    if (facetKey === 'cameraMove'){ values = values.concat(EXTRA_CAMERA_CHIPS); }
+    values = values.filter(function(v,i){ return values.indexOf(v) === i; });
     values = values.filter(function(v){ try { return generateTagCollection(facetKey, v).length > 0; } catch(e){ return true; } });
     values.forEach(function(val){
       var btn = document.createElement('button');
