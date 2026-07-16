@@ -1926,6 +1926,7 @@
     results.forEach(function(r){ var m = REAL_TAG_META[r.id]; if(m){ for(var k in m) r[k]=m[k]; r.__meta=true; } });
     var TAG_VISIBLE_LIMITS = { "Angry": 15, "Happy": 15, "Sad": 15, "Romantic": 15, "Confident": 15, "Intense": 15, "Triumphant": 15, "Documentary": 12, "Minimalist": 12, "Luxury Commercial": 12, "Pixel Art": 12, "Clay Animation": 12, "Sketch": 12, "Watercolor": 12, "Digital Painting": 12, "Comic Book": 12, "Ghibli-inspired": 12, "Fantasy": 12, "Cyberpunk": 12, "Sci-Fi": 12, "3D CGI": 12, "Pixar-style": 12, "Cartoon": 12, "Anime": 12, "Hyperrealistic": 12, "Realistic": 12, "Cinematic": 12, "Aching Nostalgia": 12, "Slow Dolly In": 100, "Handheld Push": 27, "Crane Rise": 30, "Whip Pan": 30, "Golden Hour Rim": 12, "Neon Wash": 12, "35mm Anamorphic Film": 30, "Spherical 50mm Digital Cinema": 30, "16mm Grainy Film": 30, "Super 8 Home Movie": 30, "Vintage VHS Camcorder": 50, "Selfie Vlogger Front Camera": 30 };
     var visibleLimit = TAG_VISIBLE_LIMITS[tagValue] || 10;
+    results = results.filter(function(r){ return r.__meta; });
     return results.slice(0, visibleLimit);
   }
 
@@ -1966,7 +1967,7 @@
     }
     return a;
   }
-  var LIBRARY_ORDER = seededShuffle(CLIPS, 0x5eed1e);
+  var LIBRARY_ORDER;  /* curated library built after REAL_VIDEOS (see below) */
 
   var REAL_VIDEOS = {
   "tag-emotion-angry-0": "https://videos.aidirectorme.com/tag-emotion-angry-0-v1.mp4",
@@ -2952,26 +2953,6 @@
     "tag-cameramove-tracking-side-7": "https://videos.aidirectorme.com/tracking-side/tag-cameramove-tracking-side-7.mp4",
     "tag-cameramove-tracking-side-8": "https://videos.aidirectorme.com/tracking-side/tag-cameramove-tracking-side-8.mp4",
     "tag-cameramove-tracking-side-9": "https://videos.aidirectorme.com/tracking-side/tag-cameramove-tracking-side-9.mp4",
-    "tag-format-35mm-anamorphic-film-0": "https://videos.aidirectorme.com/35mm-anamorphic-film/tag-format-35mm-anamorphic-film-0.mp4",
-    "tag-format-35mm-anamorphic-film-1": "https://videos.aidirectorme.com/35mm-anamorphic-film/tag-format-35mm-anamorphic-film-1.mp4",
-    "tag-format-35mm-anamorphic-film-2": "https://videos.aidirectorme.com/35mm-anamorphic-film/tag-format-35mm-anamorphic-film-2.mp4",
-    "tag-format-35mm-anamorphic-film-3": "https://videos.aidirectorme.com/35mm-anamorphic-film/tag-format-35mm-anamorphic-film-3.mp4",
-    "tag-format-35mm-anamorphic-film-4": "https://videos.aidirectorme.com/35mm-anamorphic-film/tag-format-35mm-anamorphic-film-4.mp4",
-    "tag-format-35mm-anamorphic-film-5": "https://videos.aidirectorme.com/35mm-anamorphic-film/tag-format-35mm-anamorphic-film-5.mp4",
-    "tag-format-35mm-anamorphic-film-6": "https://videos.aidirectorme.com/35mm-anamorphic-film/tag-format-35mm-anamorphic-film-6.mp4",
-    "tag-format-35mm-anamorphic-film-7": "https://videos.aidirectorme.com/35mm-anamorphic-film/tag-format-35mm-anamorphic-film-7.mp4",
-    "tag-format-35mm-anamorphic-film-8": "https://videos.aidirectorme.com/35mm-anamorphic-film/tag-format-35mm-anamorphic-film-8.mp4",
-    "tag-format-35mm-anamorphic-film-9": "https://videos.aidirectorme.com/35mm-anamorphic-film/tag-format-35mm-anamorphic-film-9.mp4",
-    "tag-format-vintage-vhs-camcorder-0": "https://videos.aidirectorme.com/vintage-vhs-camcorder/tag-format-vintage-vhs-camcorder-0.mp4",
-    "tag-format-vintage-vhs-camcorder-1": "https://videos.aidirectorme.com/vintage-vhs-camcorder/tag-format-vintage-vhs-camcorder-1.mp4",
-    "tag-format-vintage-vhs-camcorder-2": "https://videos.aidirectorme.com/vintage-vhs-camcorder/tag-format-vintage-vhs-camcorder-2.mp4",
-    "tag-format-vintage-vhs-camcorder-3": "https://videos.aidirectorme.com/vintage-vhs-camcorder/tag-format-vintage-vhs-camcorder-3.mp4",
-    "tag-format-vintage-vhs-camcorder-4": "https://videos.aidirectorme.com/vintage-vhs-camcorder/tag-format-vintage-vhs-camcorder-4.mp4",
-    "tag-format-vintage-vhs-camcorder-5": "https://videos.aidirectorme.com/vintage-vhs-camcorder/tag-format-vintage-vhs-camcorder-5.mp4",
-    "tag-format-vintage-vhs-camcorder-6": "https://videos.aidirectorme.com/vintage-vhs-camcorder/tag-format-vintage-vhs-camcorder-6.mp4",
-    "tag-format-vintage-vhs-camcorder-7": "https://videos.aidirectorme.com/vintage-vhs-camcorder/tag-format-vintage-vhs-camcorder-7.mp4",
-    "tag-format-vintage-vhs-camcorder-8": "https://videos.aidirectorme.com/vintage-vhs-camcorder/tag-format-vintage-vhs-camcorder-8.mp4",
-    "tag-format-vintage-vhs-camcorder-9": "https://videos.aidirectorme.com/vintage-vhs-camcorder/tag-format-vintage-vhs-camcorder-9.mp4",
     "tag-format-gopro-action-pov-0": "https://videos.aidirectorme.com/gopro-action-pov/tag-format-gopro-action-pov-0.mp4",
     "tag-format-gopro-action-pov-1": "https://videos.aidirectorme.com/gopro-action-pov/tag-format-gopro-action-pov-1.mp4",
     "tag-format-gopro-action-pov-2": "https://videos.aidirectorme.com/gopro-action-pov/tag-format-gopro-action-pov-2.mp4",
@@ -2992,16 +2973,6 @@
     "tag-format-drone-aerial-camera-7": "https://videos.aidirectorme.com/drone-aerial-camera/tag-format-drone-aerial-camera-7.mp4",
     "tag-format-drone-aerial-camera-8": "https://videos.aidirectorme.com/drone-aerial-camera/tag-format-drone-aerial-camera-8.mp4",
     "tag-format-drone-aerial-camera-9": "https://videos.aidirectorme.com/drone-aerial-camera/tag-format-drone-aerial-camera-9.mp4",
-    "tag-format-super-8-home-movie-0": "https://videos.aidirectorme.com/super-8-home-movie/tag-format-super-8-home-movie-0.mp4",
-    "tag-format-super-8-home-movie-1": "https://videos.aidirectorme.com/super-8-home-movie/tag-format-super-8-home-movie-1.mp4",
-    "tag-format-super-8-home-movie-2": "https://videos.aidirectorme.com/super-8-home-movie/tag-format-super-8-home-movie-2.mp4",
-    "tag-format-super-8-home-movie-3": "https://videos.aidirectorme.com/super-8-home-movie/tag-format-super-8-home-movie-3.mp4",
-    "tag-format-super-8-home-movie-4": "https://videos.aidirectorme.com/super-8-home-movie/tag-format-super-8-home-movie-4.mp4",
-    "tag-format-super-8-home-movie-5": "https://videos.aidirectorme.com/super-8-home-movie/tag-format-super-8-home-movie-5.mp4",
-    "tag-format-super-8-home-movie-6": "https://videos.aidirectorme.com/super-8-home-movie/tag-format-super-8-home-movie-6.mp4",
-    "tag-format-super-8-home-movie-7": "https://videos.aidirectorme.com/super-8-home-movie/tag-format-super-8-home-movie-7.mp4",
-    "tag-format-super-8-home-movie-8": "https://videos.aidirectorme.com/super-8-home-movie/tag-format-super-8-home-movie-8.mp4",
-    "tag-format-super-8-home-movie-9": "https://videos.aidirectorme.com/super-8-home-movie/tag-format-super-8-home-movie-9.mp4",
     "tag-format-dashcam-0": "https://videos.aidirectorme.com/dashcam/tag-format-dashcam-0.mp4",
     "tag-format-dashcam-1": "https://videos.aidirectorme.com/dashcam/tag-format-dashcam-1.mp4",
     "tag-format-dashcam-2": "https://videos.aidirectorme.com/dashcam/tag-format-dashcam-2.mp4",
@@ -3032,36 +3003,6 @@
     "tag-format-webcam-7": "https://videos.aidirectorme.com/webcam/tag-format-webcam-7.mp4",
     "tag-format-webcam-8": "https://videos.aidirectorme.com/webcam/tag-format-webcam-8.mp4",
     "tag-format-webcam-9": "https://videos.aidirectorme.com/webcam/tag-format-webcam-9.mp4",
-    "tag-format-spherical-50mm-digital-cinema-0": "https://videos.aidirectorme.com/spherical-50mm-digital-cinema/tag-format-spherical-50mm-digital-cinema-0.mp4",
-    "tag-format-spherical-50mm-digital-cinema-1": "https://videos.aidirectorme.com/spherical-50mm-digital-cinema/tag-format-spherical-50mm-digital-cinema-1.mp4",
-    "tag-format-spherical-50mm-digital-cinema-2": "https://videos.aidirectorme.com/spherical-50mm-digital-cinema/tag-format-spherical-50mm-digital-cinema-2.mp4",
-    "tag-format-spherical-50mm-digital-cinema-3": "https://videos.aidirectorme.com/spherical-50mm-digital-cinema/tag-format-spherical-50mm-digital-cinema-3.mp4",
-    "tag-format-spherical-50mm-digital-cinema-4": "https://videos.aidirectorme.com/spherical-50mm-digital-cinema/tag-format-spherical-50mm-digital-cinema-4.mp4",
-    "tag-format-spherical-50mm-digital-cinema-5": "https://videos.aidirectorme.com/spherical-50mm-digital-cinema/tag-format-spherical-50mm-digital-cinema-5.mp4",
-    "tag-format-spherical-50mm-digital-cinema-6": "https://videos.aidirectorme.com/spherical-50mm-digital-cinema/tag-format-spherical-50mm-digital-cinema-6.mp4",
-    "tag-format-spherical-50mm-digital-cinema-7": "https://videos.aidirectorme.com/spherical-50mm-digital-cinema/tag-format-spherical-50mm-digital-cinema-7.mp4",
-    "tag-format-spherical-50mm-digital-cinema-8": "https://videos.aidirectorme.com/spherical-50mm-digital-cinema/tag-format-spherical-50mm-digital-cinema-8.mp4",
-    "tag-format-spherical-50mm-digital-cinema-9": "https://videos.aidirectorme.com/spherical-50mm-digital-cinema/tag-format-spherical-50mm-digital-cinema-9.mp4",
-    "tag-format-16mm-grainy-film-0": "https://videos.aidirectorme.com/16mm-grainy-film/tag-format-16mm-grainy-film-0.mp4",
-    "tag-format-16mm-grainy-film-1": "https://videos.aidirectorme.com/16mm-grainy-film/tag-format-16mm-grainy-film-1.mp4",
-    "tag-format-16mm-grainy-film-2": "https://videos.aidirectorme.com/16mm-grainy-film/tag-format-16mm-grainy-film-2.mp4",
-    "tag-format-16mm-grainy-film-3": "https://videos.aidirectorme.com/16mm-grainy-film/tag-format-16mm-grainy-film-3.mp4",
-    "tag-format-16mm-grainy-film-4": "https://videos.aidirectorme.com/16mm-grainy-film/tag-format-16mm-grainy-film-4.mp4",
-    "tag-format-16mm-grainy-film-5": "https://videos.aidirectorme.com/16mm-grainy-film/tag-format-16mm-grainy-film-5.mp4",
-    "tag-format-16mm-grainy-film-6": "https://videos.aidirectorme.com/16mm-grainy-film/tag-format-16mm-grainy-film-6.mp4",
-    "tag-format-16mm-grainy-film-7": "https://videos.aidirectorme.com/16mm-grainy-film/tag-format-16mm-grainy-film-7.mp4",
-    "tag-format-16mm-grainy-film-8": "https://videos.aidirectorme.com/16mm-grainy-film/tag-format-16mm-grainy-film-8.mp4",
-    "tag-format-16mm-grainy-film-9": "https://videos.aidirectorme.com/16mm-grainy-film/tag-format-16mm-grainy-film-9.mp4",
-    "tag-format-selfie-vlogger-front-camera-0": "https://videos.aidirectorme.com/selfie-vlogger-front-camera/tag-format-selfie-vlogger-front-camera-0.mp4",
-    "tag-format-selfie-vlogger-front-camera-1": "https://videos.aidirectorme.com/selfie-vlogger-front-camera/tag-format-selfie-vlogger-front-camera-1.mp4",
-    "tag-format-selfie-vlogger-front-camera-2": "https://videos.aidirectorme.com/selfie-vlogger-front-camera/tag-format-selfie-vlogger-front-camera-2.mp4",
-    "tag-format-selfie-vlogger-front-camera-3": "https://videos.aidirectorme.com/selfie-vlogger-front-camera/tag-format-selfie-vlogger-front-camera-3.mp4",
-    "tag-format-selfie-vlogger-front-camera-4": "https://videos.aidirectorme.com/selfie-vlogger-front-camera/tag-format-selfie-vlogger-front-camera-4.mp4",
-    "tag-format-selfie-vlogger-front-camera-5": "https://videos.aidirectorme.com/selfie-vlogger-front-camera/tag-format-selfie-vlogger-front-camera-5.mp4",
-    "tag-format-selfie-vlogger-front-camera-6": "https://videos.aidirectorme.com/selfie-vlogger-front-camera/tag-format-selfie-vlogger-front-camera-6.mp4",
-    "tag-format-selfie-vlogger-front-camera-7": "https://videos.aidirectorme.com/selfie-vlogger-front-camera/tag-format-selfie-vlogger-front-camera-7.mp4",
-    "tag-format-selfie-vlogger-front-camera-8": "https://videos.aidirectorme.com/selfie-vlogger-front-camera/tag-format-selfie-vlogger-front-camera-8.mp4",
-    "tag-format-selfie-vlogger-front-camera-9": "https://videos.aidirectorme.com/selfie-vlogger-front-camera/tag-format-selfie-vlogger-front-camera-9.mp4",
     "tag-format-dslr-cinematic-0": "https://videos.aidirectorme.com/dslr-cinematic/tag-format-dslr-cinematic-0.mp4",
     "tag-format-dslr-cinematic-1": "https://videos.aidirectorme.com/dslr-cinematic/tag-format-dslr-cinematic-1.mp4",
     "tag-format-dslr-cinematic-2": "https://videos.aidirectorme.com/dslr-cinematic/tag-format-dslr-cinematic-2.mp4",
@@ -3204,6 +3145,27 @@
     "tag-shottype-through-the-keyhole-9": "https://videos.aidirectorme.com/through-the-keyhole/tag-shottype-through-the-keyhole-9.mp4"
   };
 
+  /* ---- Curated library: only clips whose prompt matches their video ----
+     A clip qualifies only if it has BOTH a real video (REAL_VIDEOS) and a real
+     prompt/title (REAL_TAG_META). Procedural placeholder clips are excluded so
+     no card ever shows a prompt that doesn't describe its footage. */
+  var CURATED = [];
+  (function(){
+    Object.keys(REAL_TAG_META).forEach(function(id){
+      if (!REAL_VIDEOS[id]) return;
+      var m = REAL_TAG_META[id];
+      var c = { id: id, __meta: true, frameId: "", theme: "",
+                shotType: m.shotType || "Cinematic Shot",
+                cameraMove: m.cameraMove || "Static",
+                emotion: "", lighting: "", format: "", action: "", setting: "",
+                c1: "#20242c", c2: "#12141a" };
+      for (var k in m){ c[k] = m[k]; }
+      CURATED.push(c);
+    });
+  })();
+  LIBRARY_ORDER = seededShuffle(CURATED.length ? CURATED : CLIPS, 0x5eed1e);
+  TOTAL = LIBRARY_ORDER.length;
+
   var state = { search: "", cameraMove: new Set(), shotType: new Set(), emotion: new Set(), lighting: new Set(), format: new Set() };
 
   function unique(key){
@@ -3284,6 +3246,7 @@
     if(!scroll){ scroll = document.createElement('div'); scroll.className = 'facet-scroll'; row.appendChild(scroll); }
     var values = (facetKey === 'style') ? STYLE_CHIPS.slice() : (facetKey === 'emotion') ? EMOTION_CHIPS.slice() : unique(facetKey);
     if (facetKey === 'shotType'){ values = values.concat(EXTRA_SHOT_CHIPS); }
+    values = values.filter(function(v){ try { return generateTagCollection(facetKey, v).length > 0; } catch(e){ return true; } });
     values.forEach(function(val){
       var btn = document.createElement('button');
       btn.className = 'chip'; btn.type = 'button'; btn.textContent = val;
