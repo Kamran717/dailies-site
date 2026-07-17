@@ -4224,8 +4224,15 @@
   var currentClip = null;
 
   function openModal(id){
-    var pool = viewMode === 'tag' ? currentTagClips : CLIPS;
+    var pool = viewMode === 'tag' ? currentTagClips : LIBRARY_ORDER;
     currentClip = pool.filter(function(c){ return c.id === id; })[0];
+    // Fallbacks: on-screen list is source of truth, then CLIPS. The landing grid
+    // renders LIBRARY_ORDER (curated); those ids are not in CLIPS, so searching
+    // CLIPS alone silently failed every front-page click.
+    if (!currentClip && typeof _renderState !== 'undefined' && _renderState && _renderState.list){
+      currentClip = _renderState.list.filter(function(c){ return c.id === id; })[0];
+    }
+    if (!currentClip){ currentClip = CLIPS.filter(function(c){ return c.id === id; })[0]; }
     if (!currentClip) return;
     // The star modal lives in a separate IIFE and cannot see this closure.
     window.AIDM_getCurrentClip = function(){ return currentClip; };
