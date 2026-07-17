@@ -1066,6 +1066,24 @@
   var PRODUCED_MOVES = ["Slow Dolly In","Handheld Push","Crane Rise","Whip Pan","Static Wide","Orbit Left","Rack Focus","Low Angle Tilt Up","Overhead Drop","Tracking Side"];
 
   var REAL_TAG_META = {
+  "tag-lighting-chiaroscuro-0": {"title":"The Portrait","shotType":"Close-Up","cameraMove":"Static","prompt":"Live-action photoreal, present day. A dark bare room. Dramatic chiaroscuro lighting: a single hard key light rakes across the person from one side, carving half the face in bright light and dropping the other half into deep black shadow, the background nearly pure black. A person in a plain dark shirt. Hard single-source key, inky shadow, Rembrandt style, 85mm. Shallow depth of field, fine grain, 24fps."},
+  "tag-lighting-chiaroscuro-1": {"title":"The Study","shotType":"Medium Shot","cameraMove":"Static","prompt":"Live-action photoreal, present day. A dim study at night. Dramatic chiaroscuro lighting: a single candle-like hard source lights the person from the side against a near-black background, deep shadows swallowing the rest of the room. A person in a waistcoat sits at a desk. Hard single-source light, inky shadow, old-master style, 50mm. Shallow depth of field, fine grain, 24fps."},
+  "tag-lighting-chiaroscuro-2": {"title":"The Musician","shotType":"Medium Shot","cameraMove":"Static","prompt":"Live-action photoreal, present day. A black void stage. Dramatic chiaroscuro lighting: a single hard beam picks out the person and their instrument from the darkness, bright highlights against total black, the rest lost in shadow. A person in dark performance attire holds an instrument. Hard single beam, total black surround, 50mm. Shallow depth of field, fine grain, 24fps."},
+  "tag-lighting-chiaroscuro-3": {"title":"The Interrogation","shotType":"Medium Shot","cameraMove":"Static","prompt":"Live-action photoreal, present day. A bare dark room. Dramatic chiaroscuro lighting: a single hard overhead lamp pools harsh light on the person, deep black shadows all around, high contrast. A person in a plain shirt sits at a metal table. Hard overhead key, deep black shadow, noir style, 40mm. Shallow depth of field, grain, 24fps."},
+  "tag-lighting-chiaroscuro-4": {"title":"The Sculptor","shotType":"Medium Shot","cameraMove":"Static","prompt":"Live-action photoreal, present day. A dark studio. Dramatic chiaroscuro lighting: a single hard side light sculpts the person and a clay bust with bright highlights and deep falloff into black, dramatic contrast. A person in a smock works the clay. Hard side key, deep black falloff, 50mm. Shallow depth of field, fine grain, 24fps."},
+  "tag-lighting-chiaroscuro-5": {"title":"The Letter","shotType":"Close-Up","cameraMove":"Static","prompt":"Live-action photoreal, present day. A dark room. Dramatic chiaroscuro lighting: a single hard shaft of light falls across the person's face and hands holding a letter, the rest of the frame in deep black shadow, extreme contrast. A person in a dark coat reads. Hard shaft key, inky black, 85mm. Shallow depth of field, fine grain, 24fps."},
+  "tag-lighting-golden-hour-0": {"title":"The Field","shotType":"Medium Shot","cameraMove":"Static","prompt":"Live-action photoreal, present day. A golden wheat field at sunset, warm haze in the air. The scene is lit by rich golden-hour light, the low sun casting a warm glow and a bright rim of light around the person, long shadows. A person in a light linen shirt stands in the wheat, backlit by the sun. Warm golden-hour light, glowing rim, lens haze, 50mm. Shallow depth of field, subtle grain, 24fps."},
+  "tag-lighting-golden-hour-1": {"title":"City Rooftop","shotType":"Medium Shot","cameraMove":"Static","prompt":"Live-action photoreal, present day. A city rooftop at sunset, skyline glowing behind. The scene is lit by warm golden-hour light, the low sun rimming the person with gold, soft warm haze. A person in a smart jacket stands at the edge, backlit by the setting sun. Warm golden-hour light, glowing rim, city haze, 50mm. Shallow depth of field, subtle grain, 24fps."},
+  "tag-lighting-golden-hour-2": {"title":"The Shore","shotType":"Medium Shot","cameraMove":"Static","prompt":"Live-action photoreal, present day. A beach at golden hour, gentle surf, warm sky. The scene is lit by rich golden-hour light, the low sun glowing behind the person and rimming them with warm light, sparkles on the water. A person in rolled linen trousers stands at the waterline, backlit. Warm golden-hour light, glowing rim, sea sparkle, 50mm. Shallow depth of field, subtle grain, 24fps."},
+  "tag-lighting-golden-hour-3": {"title":"The Vineyard","shotType":"Medium Shot","cameraMove":"Static","prompt":"Live-action photoreal, present day. A vineyard at sunset, rows of vines glowing. The scene is lit by warm golden-hour light, the low sun casting long shadows and a golden rim around the person. A person in rustic workwear stands among the vines, backlit by the sun. Warm golden-hour light, glowing rim, dust haze, 50mm. Shallow depth of field, subtle grain, 24fps."},
+  "tag-lighting-golden-hour-4": {"title":"The Meadow","shotType":"Medium Shot","cameraMove":"Static","prompt":"Live-action photoreal, present day. A wildflower meadow at sunset, warm glowing haze. The scene is lit by rich golden-hour light, the low sun backlighting the person with a bright warm rim, flowers glowing. A person in a summer dress stands in the flowers, backlit. Warm golden-hour light, glowing rim, floating pollen, 50mm. Shallow depth of field, subtle grain, 24fps."},
+  "tag-lighting-golden-hour-5": {"title":"The Overlook","shotType":"Medium Shot","cameraMove":"Static","prompt":"Live-action photoreal, present day. A mountain overlook at sunset, layered ridges in warm haze. The scene is lit by warm golden-hour light, the low sun rimming the person in gold, valleys glowing below. A person in a hiking jacket stands at the overlook, backlit by the sun. Warm golden-hour light, glowing rim, atmospheric haze, 50mm. Shallow depth of field, subtle grain, 24fps."},
+  "tag-lighting-neon-wash-0": {"title":"The Arcade","shotType":"Medium Shot","cameraMove":"Static","prompt":"Cyberpunk style, present day. A retro arcade at night, banks of glowing cabinets, haze in the air. The scene is bathed in a saturated neon wash of electric cyan and magenta light, colored glow spilling across every surface and the person's face. A person in a sleek jacket stands among the machines, lit entirely by the neon. Intense cyan-magenta neon wash, volumetric haze, 35mm. Shallow depth of field, subtle grain, 24fps."},
+  "tag-lighting-neon-wash-1": {"title":"Rain Alley","shotType":"Medium Shot","cameraMove":"Static","prompt":"Cyberpunk style, present day. A rain-soaked back alley at night, glowing signage overhead, wet pavement. The scene is bathed in a saturated neon wash of pink and blue light, colored reflections shimmering on the wet ground and the person. A person in a hooded techwear jacket stands under the signs, washed in neon. Intense pink-blue neon wash, wet reflections, 35mm. Shallow depth of field, subtle grain, 24fps."},
+  "tag-lighting-neon-wash-2": {"title":"The Booth","shotType":"Medium Shot","cameraMove":"Static","prompt":"Cyberpunk style, present day. A nightclub DJ booth, glowing decks and strip lights. The scene is bathed in a saturated neon wash of purple and teal light, the color pulsing across the person and equipment. A person in a stylish outfit stands at the booth, entirely lit by the neon glow. Intense purple-teal neon wash, haze, 35mm. Shallow depth of field, grain, 24fps."},
+  "tag-lighting-neon-wash-3": {"title":"Diner Glow","shotType":"Medium Shot","cameraMove":"Static","prompt":"Cyberpunk style, present day. A late-night diner, a big neon sign in the window. The scene is bathed in a saturated neon wash of red and blue light through the glass, the color washing over the person and booth. A person in a casual jacket sits in the booth, lit by the neon. Intense red-blue neon wash, soft haze, 35mm. Shallow depth of field, subtle grain, 24fps."},
+  "tag-lighting-neon-wash-4": {"title":"Underpass","shotType":"Medium Shot","cameraMove":"Static","prompt":"Cyberpunk style, present day. A concrete underpass at night, neon tube lights lining the walls. The scene is bathed in a saturated neon wash of green and magenta light, glowing across the tunnel and the person. A person in a bomber jacket stands in the passage, washed entirely in neon. Intense green-magenta neon wash, 35mm. Shallow depth of field, grain, 24fps."},
+  "tag-lighting-neon-wash-5": {"title":"Sign Shop","shotType":"Medium Shot","cameraMove":"Static","prompt":"Cyberpunk style, present day. A neon-sign workshop at night, dozens of glowing tubes on the walls. The scene is bathed in a saturated neon wash of multicolored light, vivid color spilling across the person and room. A person in a work shirt stands among the signs, lit entirely by the neon. Intense multicolor neon wash, glowing haze, 35mm. Shallow depth of field, subtle grain, 24fps."},
   "tag-shottype-through-the-keyhole-0": {"title":"The Room","shotType":"Through the Keyhole","cameraMove":"Static","prompt":"Live-action photoreal, present day, voyeuristic grade. The frame is masked by a keyhole-shaped vignette, black surround, peering through the keyhole into a warmly lamplit room beyond. Through the aperture, a person sits in an armchair reading. A person in a cardigan. Warm interior glow, dark keyhole mask, through-the-keyhole framing, 40mm. Subtle grain, 24fps."},
   "tag-shottype-through-the-keyhole-1": {"title":"The Study","shotType":"Through the Keyhole","cameraMove":"Static","prompt":"Live-action photoreal, present day, mysterious grade. The frame is masked by a keyhole-shaped vignette, black surround, peering through into a dim study lit by a desk lamp. Through the aperture, a person sits at a desk writing by lamplight. A person in a waistcoat. Warm lamp glow, dark keyhole mask, through-the-keyhole framing, 40mm. Subtle grain, 24fps."},
   "tag-shottype-through-the-keyhole-2": {"title":"The Ballroom","shotType":"Through the Keyhole","cameraMove":"Static","prompt":"Live-action photoreal, present day, elegant grade. The frame is masked by a keyhole-shaped vignette, black surround, peering through into a grand ballroom glowing with chandeliers. Through the aperture, a person in formal wear turns in a slow dance. A person in an elegant gown or suit. Warm sparkling light, dark keyhole mask, through-the-keyhole framing, 40mm. Subtle grain, 24fps."},
@@ -1944,90 +1962,6 @@
   "tag-emotion-aching-nostalgia-9": {"title":"Porch in October","shotType":"Wide Shot","cameraMove":"Slow Dolly In","prompt":"Live-action photoreal, present day. The wooden porch of an old house in autumn, fallen leaves on the steps, a porch swing, the yard going gold. Evening, crisp, still. A person in a chunky sweater sits on the steps, elbows on knees, watching the street. An unlit jack-o'-lantern, a rake against the rail, a mug beside them. Warm golden-hour side light, long amber shadows. 50mm, slow dolly in. Shallow depth of field, soft grain, drifting leaves, 24fps."},
   "tag-emotion-aching-nostalgia-10": {"title":"The Lookout","shotType":"Wide Shot","cameraMove":"Slow Dolly In","prompt":"Live-action photoreal, present day. An old parked car at a hilltop lookout over a hazy town at dusk, windshield catching the last light. Dusk, calm. A person in a flannel shirt sits on the car hood, knees up, watching the town lights flicker on below. A thermos, a folded map, the car's chrome trim. Fading warm horizon into cool blue, soft rim light. 35mm, slow push in. Shallow depth of field, lens flare, fine grain, 24fps."},
   "tag-emotion-aching-nostalgia-11": {"title":"End of Term","shotType":"Wide Shot","cameraMove":"Tracking Side","prompt":"Live-action photoreal, present day. An empty school hallway at end of term, open lockers, a stripped bulletin board, low sun through the far doors. Late afternoon, silent. A person in a hoodie and backpack walks slowly down the center, trailing one hand along the lockers. A dropped flyer, a forgotten sneaker, taped outlines where posters were. Warm low sun flaring down the hall, long shadows. 35mm, slow tracking dolly behind. Shallow depth of field, grain, gentle motion blur, 24fps."},
-  "tag-lighting-neon-wash-0": {"title":"Rain & Neon","shotType":"Wide Shot","cameraMove":"Static Wide","prompt":"A rain-slicked city street at night glowing with pink and blue neon signs, reflections shimmering on the wet pavement. Neon wash lighting, moody, saturated color."},
-  "tag-lighting-neon-wash-1": {"title":"Sign Alley","shotType":"Wide Shot","cameraMove":"Slow Dolly In","prompt":"A narrow alley at night lined with glowing hanging neon signs in pink, blue and green, steam rising from vents. Neon wash lighting, moody, saturated color."},
-  "tag-lighting-neon-wash-2": {"title":"Last Call","shotType":"Close-Up","cameraMove":"Slow Dolly In","prompt":"A glowing neon bar sign buzzing above a doorway at night, moths circling, brick wall washed in pink and blue light. Neon wash lighting, moody, saturated color."},
-  "tag-lighting-neon-wash-3": {"title":"Chrome & Cyan","shotType":"Wide Shot","cameraMove":"Slow Dolly In","prompt":"An empty retro diner at night, pink and cyan neon tubes reflecting off chrome counters and vinyl booths. Neon wash lighting, moody, saturated color."},
-  "tag-lighting-neon-wash-4": {"title":"Hood Glow","shotType":"Close-Up","cameraMove":"Slow Dolly In","prompt":"Glowing pink and cyan neon reflections rippling across the wet hood of a parked car at night. Neon wash lighting, moody, saturated color."},
-  "tag-lighting-neon-wash-5": {"title":"Midnight Ramen","shotType":"Wide Shot","cameraMove":"Static Wide","prompt":"A small ramen shop glowing at night with red and blue neon signage, steam drifting from the counter. Neon wash lighting, moody, saturated color."},
-  "tag-lighting-neon-wash-6": {"title":"Arcade Glow","shotType":"Wide Shot","cameraMove":"Tracking Side","prompt":"A retro arcade at night, rows of glowing neon game cabinets casting pink and blue light across the floor. Neon wash lighting, moody, saturated color."},
-  "tag-lighting-neon-wash-7": {"title":"Level P3","shotType":"Wide Shot","cameraMove":"Tracking Side","prompt":"An underground parking garage at night lit by rows of pink and blue neon tubes, reflections on the concrete floor. Neon wash lighting, moody, saturated color."},
-  "tag-lighting-neon-wash-8": {"title":"Vacancy","shotType":"Wide Shot","cameraMove":"Static Wide","prompt":"A roadside motel VACANCY sign glowing in pink and blue neon against the night sky, palm trees silhouetted. Neon wash lighting, moody, saturated color."},
-  "tag-lighting-neon-wash-9": {"title":"Puddle Sign","shotType":"Close-Up","cameraMove":"Slow Dolly In","prompt":"A neon storefront sign glowing pink and blue reflected in a rain puddle on the sidewalk, ripples distorting the light. Neon wash lighting, moody, saturated color."},
-  "tag-lighting-neon-wash-10": {"title":"The Bender's Shop","shotType":"Wide Shot","cameraMove":"Static Wide","prompt":"A sign-makers workshop at night filled with glowing bent neon tubes in many colors hanging on the wall. Neon wash lighting, moody, saturated color."},
-  "tag-lighting-neon-wash-11": {"title":"Night Market","shotType":"Wide Shot","cameraMove":"Tracking Side","prompt":"A night market stall glowing with pink and blue neon, hanging lanterns and signs, misty air. Neon wash lighting, moody, saturated color."},
-  "tag-lighting-golden-hour-rim-0": {
-    "title": "Ridge Line",
-    "shotType": "Wide Shot",
-    "cameraMove": "Static Wide",
-    "prompt": "A lone hiker on a mountain ridge at sunset, warm sunlight rimming their silhouette and the grass. Golden hour rim light, backlit, shallow depth of field."
-  },
-  "tag-lighting-golden-hour-rim-1": {
-    "title": "Mane & Meadow",
-    "shotType": "Wide Shot",
-    "cameraMove": "Static Wide",
-    "prompt": "A wild horse gallops through tall grass at sunset, warm backlight glowing through its mane and the grass tips. Golden hour rim light, dust in the air."
-  },
-  "tag-lighting-golden-hour-rim-2": {
-    "title": "Mane & Meadow",
-    "shotType": "Wide Shot",
-    "cameraMove": "Static Wide",
-    "prompt": "A wild horse gallops through tall grass at sunset, warm backlight glowing through its mane and the grass tips. Golden hour rim light, dust in the air."
-  },
-  "tag-lighting-golden-hour-rim-3": {
-    "title": "Mane & Meadow",
-    "shotType": "Wide Shot",
-    "cameraMove": "Static Wide",
-    "prompt": "A wild horse gallops through tall grass at sunset, warm backlight glowing through its mane and the grass tips. Golden hour rim light, dust in the air."
-  },
-  "tag-lighting-golden-hour-rim-4": {
-    "title": "Morning Gold",
-    "shotType": "Close-Up",
-    "cameraMove": "Slow Dolly In",
-    "prompt": "A steaming coffee cup on a wooden windowsill, low sun streaming through and rimming the rising steam in gold. Golden hour rim light, cozy, shallow focus."
-  },
-  "tag-lighting-golden-hour-rim-5": {
-    "title": "Morning Gold",
-    "shotType": "Close-Up",
-    "cameraMove": "Slow Dolly In",
-    "prompt": "A steaming coffee cup on a wooden windowsill, low sun streaming through and rimming the rising steam in gold. Golden hour rim light, cozy, shallow focus."
-  },
-  "tag-lighting-golden-hour-rim-6": {
-    "title": "Morning Gold",
-    "shotType": "Close-Up",
-    "cameraMove": "Slow Dolly In",
-    "prompt": "A steaming coffee cup on a wooden windowsill, low sun streaming through and rimming the rising steam in gold. Golden hour rim light, cozy, shallow focus."
-  },
-  "tag-lighting-golden-hour-rim-7": {
-    "title": "Morning Gold",
-    "shotType": "Close-Up",
-    "cameraMove": "Slow Dolly In",
-    "prompt": "A steaming coffee cup on a wooden windowsill, low sun streaming through and rimming the rising steam in gold. Golden hour rim light, cozy, shallow focus."
-  },
-  "tag-lighting-golden-hour-rim-8": {
-    "title": "Last Light Sail",
-    "shotType": "Wide Shot",
-    "cameraMove": "Static Wide",
-    "prompt": "A sailboat glides across calm water at sunset, the low sun rimming the sail and the ripples in warm gold. Golden hour rim light, serene, wide shot."
-  },
-  "tag-lighting-golden-hour-rim-9": {
-    "title": "Last Light Sail",
-    "shotType": "Wide Shot",
-    "cameraMove": "Static Wide",
-    "prompt": "A sailboat glides across calm water at sunset, the low sun rimming the sail and the ripples in warm gold. Golden hour rim light, serene, wide shot."
-  },
-  "tag-lighting-golden-hour-rim-10": {
-    "title": "Last Light Sail",
-    "shotType": "Wide Shot",
-    "cameraMove": "Static Wide",
-    "prompt": "A sailboat glides across calm water at sunset, the low sun rimming the sail and the ripples in warm gold. Golden hour rim light, serene, wide shot."
-  },
-  "tag-lighting-golden-hour-rim-11": {
-    "title": "Last Light Sail",
-    "shotType": "Wide Shot",
-    "cameraMove": "Static Wide",
-    "prompt": "A sailboat glides across calm water at sunset, the low sun rimming the sail and the ripples in warm gold. Golden hour rim light, serene, wide shot."
-  }
 };
   function generateTagCollection(facetKey, tagValue){
     // Original shot types (no bespoke world): show real clips from produced
@@ -2146,7 +2080,7 @@
     // hidden until their videos are produced. IDs remain stable, so raising
     // a limit later simply reveals the next clips with correct numbering.
     results.forEach(function(r){ var m = REAL_TAG_META[r.id]; if(m){ for(var k in m) r[k]=m[k]; r.__meta=true; } });
-    var TAG_VISIBLE_LIMITS = { "POV": 6, "Establishing Shot": 6, "Two-Shot": 6, "Over-the-Shoulder": 6, "Wide Shot": 6, "Medium Shot": 6, "Close-Up": 6, "Extreme Close-Up": 6, "Static Locked-off": 6, "Zoom Out": 6, "Zoom In": 6, "Drone Fly-Through": 6, "Drone Ascend": 6, "Steadicam Follow": 6, "Orbit Right": 6, "Orbit Left": 6, "Dutch Roll": 6, "Tilt Down": 6, "Tilt Up": 6, "Slow Pan": 6, "Overhead Drop": 6, "Pedestal Up": 6, "Tracking Side": 6, "Crane Down": 6, "Dolly Zoom": 6, "Push In": 6, "Dolly Out": 6, "Angry": 15, "Happy": 15, "Sad": 15, "Romantic": 15, "Confident": 15, "Intense": 15, "Triumphant": 15, "Documentary": 12, "Minimalist": 12, "Luxury Commercial": 12, "Pixel Art": 12, "Clay Animation": 12, "Sketch": 12, "Watercolor": 12, "Digital Painting": 12, "Comic Book": 12, "Ghibli-inspired": 12, "Fantasy": 12, "Cyberpunk": 12, "Sci-Fi": 12, "3D CGI": 12, "Pixar-style": 12, "Cartoon": 12, "Anime": 12, "Hyperrealistic": 12, "Realistic": 12, "Cinematic": 12, "Aching Nostalgia": 12, "Slow Dolly In": 100, "Handheld Push": 27, "Crane Rise": 30, "Whip Pan": 30, "Golden Hour Rim": 12, "Neon Wash": 12, "35mm Anamorphic Film": 30, "Spherical 50mm Digital Cinema": 30, "16mm Grainy Film": 30, "Super 8 Home Movie": 30, "Vintage VHS Camcorder": 50, "Selfie Vlogger Front Camera": 30, "Snorricam": 6, "Dutch Angle": 6, "Bird's-Eye View": 6, "Worm's-Eye View": 6, "Cowboy Shot": 6, "Silhouette Shot": 6, "Reflection Shot": 6, "Frame Within a Frame": 6, "Split Diopter": 6, "Through the Keyhole": 6 };
+    var TAG_VISIBLE_LIMITS = { "Chiaroscuro": 6, "Golden Hour": 6, "POV": 6, "Establishing Shot": 6, "Two-Shot": 6, "Over-the-Shoulder": 6, "Wide Shot": 6, "Medium Shot": 6, "Close-Up": 6, "Extreme Close-Up": 6, "Static Locked-off": 6, "Zoom Out": 6, "Zoom In": 6, "Drone Fly-Through": 6, "Drone Ascend": 6, "Steadicam Follow": 6, "Orbit Right": 6, "Orbit Left": 6, "Dutch Roll": 6, "Tilt Down": 6, "Tilt Up": 6, "Slow Pan": 6, "Overhead Drop": 6, "Pedestal Up": 6, "Tracking Side": 6, "Crane Down": 6, "Dolly Zoom": 6, "Push In": 6, "Dolly Out": 6, "Angry": 15, "Happy": 15, "Sad": 15, "Romantic": 15, "Confident": 15, "Intense": 15, "Triumphant": 15, "Documentary": 12, "Minimalist": 12, "Luxury Commercial": 12, "Pixel Art": 12, "Clay Animation": 12, "Sketch": 12, "Watercolor": 12, "Digital Painting": 12, "Comic Book": 12, "Ghibli-inspired": 12, "Fantasy": 12, "Cyberpunk": 12, "Sci-Fi": 12, "3D CGI": 12, "Pixar-style": 12, "Cartoon": 12, "Anime": 12, "Hyperrealistic": 12, "Realistic": 12, "Cinematic": 12, "Aching Nostalgia": 12, "Slow Dolly In": 100, "Handheld Push": 27, "Crane Rise": 30, "Whip Pan": 30, "Golden Hour Rim": 12, "Neon Wash": 6, "35mm Anamorphic Film": 30, "Spherical 50mm Digital Cinema": 30, "16mm Grainy Film": 30, "Super 8 Home Movie": 30, "Vintage VHS Camcorder": 50, "Selfie Vlogger Front Camera": 30, "Snorricam": 6, "Dutch Angle": 6, "Bird's-Eye View": 6, "Worm's-Eye View": 6, "Cowboy Shot": 6, "Silhouette Shot": 6, "Reflection Shot": 6, "Frame Within a Frame": 6, "Split Diopter": 6, "Through the Keyhole": 6 };
     var visibleLimit = TAG_VISIBLE_LIMITS[tagValue] || 10;
     results = results.filter(function(r){ return r.__meta; });
     return results.slice(0, visibleLimit);
@@ -2192,6 +2126,24 @@
   var LIBRARY_ORDER;  /* curated library built after REAL_VIDEOS (see below) */
 
   var REAL_VIDEOS = {
+  "tag-lighting-chiaroscuro-0": "https://videos.aidirectorme.com/tag-lighting-chiaroscuro-0-v1.mp4",
+  "tag-lighting-chiaroscuro-1": "https://videos.aidirectorme.com/tag-lighting-chiaroscuro-1-v1.mp4",
+  "tag-lighting-chiaroscuro-2": "https://videos.aidirectorme.com/tag-lighting-chiaroscuro-2-v1.mp4",
+  "tag-lighting-chiaroscuro-3": "https://videos.aidirectorme.com/tag-lighting-chiaroscuro-3-v1.mp4",
+  "tag-lighting-chiaroscuro-4": "https://videos.aidirectorme.com/tag-lighting-chiaroscuro-4-v1.mp4",
+  "tag-lighting-chiaroscuro-5": "https://videos.aidirectorme.com/tag-lighting-chiaroscuro-5-v1.mp4",
+  "tag-lighting-golden-hour-0": "https://videos.aidirectorme.com/tag-lighting-golden-hour-0-v1.mp4",
+  "tag-lighting-golden-hour-1": "https://videos.aidirectorme.com/tag-lighting-golden-hour-1-v1.mp4",
+  "tag-lighting-golden-hour-2": "https://videos.aidirectorme.com/tag-lighting-golden-hour-2-v1.mp4",
+  "tag-lighting-golden-hour-3": "https://videos.aidirectorme.com/tag-lighting-golden-hour-3-v1.mp4",
+  "tag-lighting-golden-hour-4": "https://videos.aidirectorme.com/tag-lighting-golden-hour-4-v1.mp4",
+  "tag-lighting-golden-hour-5": "https://videos.aidirectorme.com/tag-lighting-golden-hour-5-v1.mp4",
+  "tag-lighting-neon-wash-0": "https://videos.aidirectorme.com/tag-lighting-neon-wash-0-v1.mp4",
+  "tag-lighting-neon-wash-1": "https://videos.aidirectorme.com/tag-lighting-neon-wash-1-v1.mp4",
+  "tag-lighting-neon-wash-2": "https://videos.aidirectorme.com/tag-lighting-neon-wash-2-v1.mp4",
+  "tag-lighting-neon-wash-3": "https://videos.aidirectorme.com/tag-lighting-neon-wash-3-v1.mp4",
+  "tag-lighting-neon-wash-4": "https://videos.aidirectorme.com/tag-lighting-neon-wash-4-v1.mp4",
+  "tag-lighting-neon-wash-5": "https://videos.aidirectorme.com/tag-lighting-neon-wash-5-v1.mp4",
   "tag-shottype-through-the-keyhole-0": "https://videos.aidirectorme.com/tag-shottype-through-the-keyhole-0-v1.mp4",
   "tag-shottype-through-the-keyhole-1": "https://videos.aidirectorme.com/tag-shottype-through-the-keyhole-1-v1.mp4",
   "tag-shottype-through-the-keyhole-2": "https://videos.aidirectorme.com/tag-shottype-through-the-keyhole-2-v1.mp4",
@@ -3058,30 +3010,6 @@
   "tag-emotion-aching-nostalgia-9": "https://videos.aidirectorme.com/tag-emotion-aching-nostalgia-9.mp4",
   "tag-emotion-aching-nostalgia-10": "https://videos.aidirectorme.com/tag-emotion-aching-nostalgia-10.mp4",
   "tag-emotion-aching-nostalgia-11": "https://videos.aidirectorme.com/tag-emotion-aching-nostalgia-11.mp4",
-    "tag-lighting-neon-wash-0": "https://videos.aidirectorme.com/tag-lighting-neon-wash-0.mp4",
-    "tag-lighting-neon-wash-1": "https://videos.aidirectorme.com/tag-lighting-neon-wash-1.mp4",
-    "tag-lighting-neon-wash-2": "https://videos.aidirectorme.com/tag-lighting-neon-wash-2.mp4",
-    "tag-lighting-neon-wash-3": "https://videos.aidirectorme.com/tag-lighting-neon-wash-3.mp4",
-    "tag-lighting-neon-wash-4": "https://videos.aidirectorme.com/tag-lighting-neon-wash-4.mp4",
-    "tag-lighting-neon-wash-5": "https://videos.aidirectorme.com/tag-lighting-neon-wash-5.mp4",
-    "tag-lighting-neon-wash-6": "https://videos.aidirectorme.com/tag-lighting-neon-wash-6.mp4",
-    "tag-lighting-neon-wash-7": "https://videos.aidirectorme.com/tag-lighting-neon-wash-7.mp4",
-    "tag-lighting-neon-wash-8": "https://videos.aidirectorme.com/tag-lighting-neon-wash-8.mp4",
-    "tag-lighting-neon-wash-9": "https://videos.aidirectorme.com/tag-lighting-neon-wash-9.mp4",
-    "tag-lighting-neon-wash-10": "https://videos.aidirectorme.com/tag-lighting-neon-wash-10.mp4",
-    "tag-lighting-neon-wash-11": "https://videos.aidirectorme.com/tag-lighting-neon-wash-11.mp4",
-    "tag-lighting-golden-hour-rim-0": "https://videos.aidirectorme.com/tag-lighting-golden-hour-rim-0.mp4",
-    "tag-lighting-golden-hour-rim-1": "https://videos.aidirectorme.com/tag-lighting-golden-hour-rim-1.mp4",
-    "tag-lighting-golden-hour-rim-2": "https://videos.aidirectorme.com/tag-lighting-golden-hour-rim-2.mp4",
-    "tag-lighting-golden-hour-rim-3": "https://videos.aidirectorme.com/tag-lighting-golden-hour-rim-3.mp4",
-    "tag-lighting-golden-hour-rim-4": "https://videos.aidirectorme.com/tag-lighting-golden-hour-rim-4.mp4",
-    "tag-lighting-golden-hour-rim-5": "https://videos.aidirectorme.com/tag-lighting-golden-hour-rim-5.mp4",
-    "tag-lighting-golden-hour-rim-6": "https://videos.aidirectorme.com/tag-lighting-golden-hour-rim-6.mp4",
-    "tag-lighting-golden-hour-rim-7": "https://videos.aidirectorme.com/tag-lighting-golden-hour-rim-7.mp4",
-    "tag-lighting-golden-hour-rim-8": "https://videos.aidirectorme.com/tag-lighting-golden-hour-rim-8.mp4",
-    "tag-lighting-golden-hour-rim-9": "https://videos.aidirectorme.com/tag-lighting-golden-hour-rim-9.mp4",
-    "tag-lighting-golden-hour-rim-10": "https://videos.aidirectorme.com/tag-lighting-golden-hour-rim-10.mp4",
-    "tag-lighting-golden-hour-rim-11": "https://videos.aidirectorme.com/tag-lighting-golden-hour-rim-11.mp4",
     "clip-136": "https://videos.aidirectorme.com/clip-136.mp4",
     "clip-137": "https://videos.aidirectorme.com/clip-137.mp4",
     "clip-138": "https://videos.aidirectorme.com/clip-138.mp4",
@@ -3638,6 +3566,12 @@
     "Zoom In","Zoom Out","Static Locked-off"
   ];
 
+  // Cinematic lighting looks. Chips appear once a look has real clips.
+  var EXTRA_LIGHTING_CHIPS = [
+    "Neon Wash","Golden Hour","Chiaroscuro","Candlelight","Moonlight",
+    "Teal & Orange","Hard Sun","Soft Window Light","Spotlight","Firelight"
+  ];
+
   var STYLE_CHIPS = [
     "Cinematic","Realistic","Hyperrealistic","Anime","Cartoon","Pixar-style","3D CGI",
     "Sci-Fi","Cyberpunk","Fantasy","Ghibli-inspired","Comic Book","Digital Painting",
@@ -3658,6 +3592,7 @@
     var values = (facetKey === 'style') ? STYLE_CHIPS.slice() : (facetKey === 'emotion') ? EMOTION_CHIPS.slice() : unique(facetKey);
     if (facetKey === 'shotType'){ values = values.concat(EXTRA_SHOT_CHIPS); }
     if (facetKey === 'cameraMove'){ values = values.concat(EXTRA_CAMERA_CHIPS); }
+    if (facetKey === 'lighting'){ values = values.concat(EXTRA_LIGHTING_CHIPS); }
     values = values.filter(function(v,i){ return values.indexOf(v) === i; });
     values = values.filter(function(v){ try { return generateTagCollection(facetKey, v).length > 0; } catch(e){ return true; } });
     values.forEach(function(val){
