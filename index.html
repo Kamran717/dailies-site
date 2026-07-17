@@ -341,6 +341,7 @@
     <div class="facet-row" data-facet="shotType"><span class="facet-label">Shot</span></div>
     <div class="facet-row" data-facet="emotion"><span class="facet-label">Emotion</span></div>
     <div class="facet-row" data-facet="lighting"><span class="facet-label">Light</span></div>
+    <div class="facet-row" data-facet="impossible"><span class="facet-label">Impossible</span></div>
     <div class="facet-row" data-facet="format">
       <span class="facet-label">Format</span>
       <button class="clear-btn" id="clearAll">back to library</button>
@@ -3777,11 +3778,22 @@
     "Hopeful","Determined","Chaotic","Epic","Intimate","Inspirational","Heroic","Lonely","Luxurious"
   ];
 
+  // Impossible: physics-defying VFX camera moves & transitions. Chips appear once wired.
+  var IMPOSSIBLE_CHIPS = [
+    "Eye-to-Universe Zoom","Galaxy-to-DNA Transition","Bullet-Time Flythrough",
+    "Through-the-Wall Chase","Through-the-Mirror Portal","Inside-the-Human-Body Journey",
+    "Infinite Hallway Loop","World Rotation Around Subject","Time Freeze Orbit",
+    "Building Morph Flythrough","Inside-the-Mind Sequence","Black Hole Dive",
+    "Tiny-to-Giant Scale Shift","One-Shot Planet-to-Microbe","Non-Euclidean Reality Walk",
+    "Reality Fold Transition","Liquid Camera Dive","Portal Chain Journey",
+    "Memory Walkthrough","Dream-to-Reality Seamless Transition"
+  ];
+
   function buildFacetRow(facetKey){
     var row = document.querySelector('.facet-row[data-facet="' + facetKey + '"]');
     var scroll = row.querySelector('.facet-scroll');
     if(!scroll){ scroll = document.createElement('div'); scroll.className = 'facet-scroll'; row.appendChild(scroll); }
-    var values = (facetKey === 'style') ? STYLE_CHIPS.slice() : (facetKey === 'emotion') ? EMOTION_CHIPS.slice() : unique(facetKey);
+    var values = (facetKey === 'style') ? STYLE_CHIPS.slice() : (facetKey === 'emotion') ? EMOTION_CHIPS.slice() : (facetKey === 'impossible') ? IMPOSSIBLE_CHIPS.slice() : unique(facetKey);
     if (facetKey === 'shotType'){ values = values.concat(EXTRA_SHOT_CHIPS); }
     if (facetKey === 'cameraMove'){ values = values.concat(EXTRA_CAMERA_CHIPS); }
     if (facetKey === 'lighting'){ values = values.concat(EXTRA_LIGHTING_CHIPS); }
@@ -3794,7 +3806,7 @@
       scroll.appendChild(btn);
     });
   }
-  ['style','cameraMove','shotType','emotion','lighting','format'].forEach(buildFacetRow);
+  ['style','cameraMove','shotType','emotion','lighting','impossible','format'].forEach(buildFacetRow);
 
   function matches(clip){
     var facets = ['cameraMove','shotType','emotion','lighting','format'];
