@@ -4153,6 +4153,19 @@
   }
   document.getElementById('clearAll').addEventListener('click', clearAllFilters);
 
+  // Delegated fallback: one listener on the grid catches clicks on any .frame,
+  // immune to per-card wiring/re-render timing. Belt-and-suspenders with wireCards.
+  (function(){
+    var g = document.getElementById('grid');
+    if (g && !g.__aidmDelegated){
+      g.__aidmDelegated = true;
+      g.addEventListener('click', function(e){
+        var card = e.target && e.target.closest ? e.target.closest('.frame') : null;
+        if (card && card.getAttribute('data-id')) openModal(card.getAttribute('data-id'));
+      });
+    }
+  })();
+
   var searchInput = document.getElementById('searchInput');
   searchInput.addEventListener('input', function(){ state.search = searchInput.value; renderGrid(); });
   document.addEventListener('keydown', function(e){
