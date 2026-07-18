@@ -4709,7 +4709,8 @@
         scenePrompt: scenePrompt,
         faceImageBase64: face.dataUrl,
         clipId: cc ? cc.id : null,
-        clipTitle: cc ? (cc.title || cc.emotion) : null
+        clipTitle: cc ? (cc.title || cc.emotion) : null,
+        cameraMove: cc ? (cc.cameraMove || null) : null
       }, { Authorization: 'Bearer ' + token });
     })
     .then(function(r){

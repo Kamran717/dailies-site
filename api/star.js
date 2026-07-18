@@ -58,7 +58,7 @@ export default async function handler(req, res) {
 
   const userId = user.id;
 
-  const { scenePrompt, faceImageBase64, clipId, clipTitle } = req.body || {};
+  const { scenePrompt, faceImageBase64, clipId, clipTitle, cameraMove } = req.body || {};
 
   if (!scenePrompt) return res.status(400).json({ error: 'Missing scene prompt.' });
   if (!faceImageBase64) return res.status(400).json({ error: 'Missing face image.' });
@@ -86,6 +86,8 @@ export default async function handler(req, res) {
     ({ videoUrl: falVideoUrl, sceneUrl: falSceneUrl } = await castVideo({
       faceBase64: faceImageBase64,
       scenePrompt,
+      clipId,
+      cameraMove,
     }));
   } catch (err) {
     console.error('[star] generation failed', err);
