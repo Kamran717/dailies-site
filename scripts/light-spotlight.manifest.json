@@ -1,0 +1,77 @@
+{
+  "collection": "lighting / Spotlight",
+  "id_prefix": "tag-lighting-spotlight",
+  "visible_limit": 6,
+  "limit_key": "Spotlight",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "lighting": "Spotlight",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-lighting-spotlight-0",
+      "r2_key": "tag-lighting-spotlight-0-v1.mp4",
+      "job_id": "789631fc-ac7e-4960-be34-f8e5c7fbe893",
+      "title": "The Singer",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A black stage in total darkness. The scene is lit by a single hard theatrical spotlight from above, a sharp pool of light isolating the person at a vintage microphone, everything else pure black. A person in stage attire sings into the mic. Single hard spotlight, pool of light, total black surround, 50mm. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_043739_789631fc-ac7e-4960-be34-f8e5c7fbe893.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-lighting-spotlight-1",
+      "r2_key": "tag-lighting-spotlight-1-v1.mp4",
+      "job_id": "ea910df4-6920-4710-8e5a-31598e21f0ac",
+      "title": "The Stage",
+      "shotType": "Wide Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. An empty theater stage in darkness. The scene is lit by a single spotlight from above, a bright circular pool of light on the person standing center stage, the vast dark stage around them pure black. A person in simple clothes stands in the light. Single spotlight, circular pool, black void, 35mm. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_043745_ea910df4-6920-4710-8e5a-31598e21f0ac.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-lighting-spotlight-2",
+      "r2_key": "tag-lighting-spotlight-2-v1.mp4",
+      "job_id": "961248c1-2c5b-4e91-8658-2a911e34d199",
+      "title": "The Ring",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A boxing ring in a darkened arena. The scene is lit by a single hard overhead spotlight, a stark pool of light on the person in the ring, the crowd and arena lost in black. A person in boxing gear stands in the ring. Single hard spotlight, stark pool, black surround, 50mm. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_043750_961248c1-2c5b-4e91-8658-2a911e34d199.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-lighting-spotlight-3",
+      "r2_key": "tag-lighting-spotlight-3-v1.mp4",
+      "job_id": "7699ced0-98ed-4099-9576-141c6e21e6d5",
+      "title": "The Solo",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A dark dance stage. The scene is lit by a single spotlight from above, a clean pool of light on the person mid-pose, the rest of the stage pure black. A person in dancewear holds a dramatic pose in the light. Single spotlight, clean pool, black void, 50mm. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_043755_7699ced0-98ed-4099-9576-141c6e21e6d5.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-lighting-spotlight-4",
+      "r2_key": "tag-lighting-spotlight-4-v1.mp4",
+      "job_id": "123c046e-953d-4b54-a38f-2298772bd2c9",
+      "title": "The Address",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A dark auditorium. The scene is lit by a single spotlight, a pool of light on the person standing at a podium, the audience and hall in total black. A person in formal attire stands at the podium. Single spotlight, pool of light, black surround, 50mm. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_043800_123c046e-953d-4b54-a38f-2298772bd2c9.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-lighting-spotlight-5",
+      "r2_key": "tag-lighting-spotlight-5-v1.mp4",
+      "job_id": "945cb45d-170c-4fdb-9f11-abe92ca283be",
+      "title": "The Reveal",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A black void space. The scene is lit by a single dramatic spotlight from above, a tight pool of light picking out the person from total darkness, hard falloff to pure black all around. A person in a sharp outfit stands in the beam. Single dramatic spotlight, tight pool, hard black falloff, 50mm. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_043806_945cb45d-170c-4fdb-9f11-abe92ca283be.mp4"
+    }
+  ]
+}

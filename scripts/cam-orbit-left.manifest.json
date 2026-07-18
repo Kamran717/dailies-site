@@ -1,0 +1,77 @@
+{
+  "collection": "cameraMove / Orbit Left",
+  "id_prefix": "tag-cameramove-orbit-left",
+  "visible_limit": 6,
+  "limit_key": "Orbit Left",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "camera_move": "Orbit Left",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-cameramove-orbit-left-0",
+      "r2_key": "tag-cameramove-orbit-left-0-v1.mp4",
+      "job_id": "5084af4f-39c1-4291-bb07-aae7b1c51f5e",
+      "title": "The Arena",
+      "shotType": "Medium Shot",
+      "cameraMove": "Orbit Left",
+      "prompt": "Live-action photoreal, historical epic, dusty grade. A vast sand gladiatorial arena ringed by stone tiers, sunlit dust hanging in the air. Midday, tense hush. A person in leather-and-bronze arena armor stands ready at the center, weapon lowered, braced. The camera orbits smoothly around them counter-clockwise, circling to reveal the arena on all sides. Hard warm sunlight, drifting dust, 35mm, orbit left. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_081741_5084af4f-39c1-4291-bb07-aae7b1c51f5e.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-cameramove-orbit-left-1",
+      "r2_key": "tag-cameramove-orbit-left-1-v1.mp4",
+      "job_id": "76d669c2-8545-43d2-b42d-320d6223ad2a",
+      "title": "The Craftsman",
+      "shotType": "Medium Shot",
+      "cameraMove": "Orbit Left",
+      "prompt": "Live-action photoreal, present day, warm workshop grade. A cluttered woodworking workshop, tools on pegboards, sawdust in shafts of light, a workbench. Afternoon, warm. A person in a canvas apron leans over the bench, carefully planing a piece of wood. The camera orbits smoothly around them counter-clockwise, circling the bench. Warm window light, floating dust, 40mm, orbit left. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_081747_76d669c2-8545-43d2-b42d-320d6223ad2a.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-cameramove-orbit-left-2",
+      "r2_key": "tag-cameramove-orbit-left-2-v1.mp4",
+      "job_id": "8f89e764-d9a8-43a7-82c8-ddacddd83225",
+      "title": "The Dancer",
+      "shotType": "Wide Shot",
+      "cameraMove": "Orbit Left",
+      "prompt": "Live-action photoreal, present day, elegant grade. A sunlit dance studio, mirrored walls, a barre, pale wood floor. Morning, soft light. A person in dancewear holds a poised arabesque, arms extended. The camera orbits smoothly around them counter-clockwise, circling the pose, reflections sweeping the mirrors. Soft warm daylight, clean tones, 35mm, orbit left. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_081753_8f89e764-d9a8-43a7-82c8-ddacddd83225.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-cameramove-orbit-left-3",
+      "r2_key": "tag-cameramove-orbit-left-3-v1.mp4",
+      "job_id": "d86d0f57-ab31-4c22-b418-2418b2ea83d2",
+      "title": "Flambe",
+      "shotType": "Medium Shot",
+      "cameraMove": "Orbit Left",
+      "prompt": "Live-action photoreal, present day, dramatic culinary grade. A professional kitchen station at night, stainless steel, a burst of flame from a pan. Evening service, energy. A person in a white chef's jacket tilts a pan into a dramatic flambe, flames leaping. The camera orbits smoothly around them counter-clockwise, circling the fiery moment. Warm firelight against cool steel, 40mm, orbit left. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_081800_d86d0f57-ab31-4c22-b418-2418b2ea83d2.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-cameramove-orbit-left-4",
+      "r2_key": "tag-cameramove-orbit-left-4-v1.mp4",
+      "job_id": "33fee8b5-23fa-4787-9e5b-3accbd4bfe93",
+      "title": "The Build",
+      "shotType": "Medium Shot",
+      "cameraMove": "Orbit Left",
+      "prompt": "Live-action photoreal, present day, industrial grade. A garage workshop, a sports car up on a lift, tools and cables, hard work-lights. Night. A person in mechanic's coveralls stands wiping their hands, inspecting the car. The camera orbits smoothly around them counter-clockwise, circling person and car. Hard work-light, deep shadow, 35mm, orbit left. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_081807_33fee8b5-23fa-4787-9e5b-3accbd4bfe93.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-cameramove-orbit-left-5",
+      "r2_key": "tag-cameramove-orbit-left-5-v1.mp4",
+      "job_id": "d7d4deaa-8c53-4b1a-b889-bfd166d6320c",
+      "title": "The Summit",
+      "shotType": "Wide Shot",
+      "cameraMove": "Orbit Left",
+      "prompt": "Live-action photoreal, present day, epic grade. A rocky mountain summit above a sea of clouds, jagged peaks, brilliant sky. Sunrise, cold and warm. A person in mountaineering gear stands triumphant at the peak, arms slightly raised. The camera orbits smoothly around them counter-clockwise, circling to reveal the panorama. Warm sunrise, cold air, 24mm, orbit left. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_081814_d7d4deaa-8c53-4b1a-b889-bfd166d6320c.mp4"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "collection": "cameraMove / Pedestal Up",
+  "id_prefix": "tag-cameramove-pedestal-up",
+  "visible_limit": 6,
+  "limit_key": "Pedestal Up",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "camera_move": "Pedestal Up",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-cameramove-pedestal-up-0",
+      "r2_key": "tag-cameramove-pedestal-up-0-v1.mp4",
+      "job_id": "f1e99c83-e9db-447e-88c5-15d15d2f3208",
+      "title": "The Giant",
+      "shotType": "Wide Shot",
+      "cameraMove": "Pedestal Up",
+      "prompt": "Live-action photoreal, present day, lush forest grade. The base of an immense ancient redwood in a misty old-growth forest, ferns and shafts of light. Morning, cool mist. A person in an outdoor hiking jacket stands at the foot of the trunk, head tilted up in awe, one hand on the bark. The camera pedestals straight up the towering trunk, rising vertically to reveal its full height into the canopy. Cool green light with warm shafts, 24mm, pedestal up. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_073636_f1e99c83-e9db-447e-88c5-15d15d2f3208.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-cameramove-pedestal-up-1",
+      "r2_key": "tag-cameramove-pedestal-up-1-v1.mp4",
+      "job_id": "44e2b6ec-604e-4a9b-9c78-e84ca092334d",
+      "title": "The Falls",
+      "shotType": "Wide Shot",
+      "cameraMove": "Pedestal Up",
+      "prompt": "Live-action photoreal, present day, misty grade. The pool at the base of a tall jungle waterfall, spray and rainbows, wet black rock. Day, humid haze. A person in a light rain shell stands at the water's edge looking up, mist on their face. The camera pedestals straight up the face of the waterfall, rising vertically to reveal its full towering drop. Bright diffused light, drifting spray, 24mm, pedestal up. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_073642_44e2b6ec-604e-4a9b-9c78-e84ca092334d.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-cameramove-pedestal-up-2",
+      "r2_key": "tag-cameramove-pedestal-up-2-v1.mp4",
+      "job_id": "d4561265-6908-407f-a4d4-2bc8d8934858",
+      "title": "Launch Day",
+      "shotType": "Wide Shot",
+      "cameraMove": "Pedestal Up",
+      "prompt": "Live-action photoreal, near-future, epic grade. A launchpad at dawn, a towering rocket wreathed in venting vapor, gantry structure. Early morning, cold. A person in a technical flight jacket stands at the pad base, looking up at the rocket. The camera pedestals straight up the length of the rocket, rising vertically to reveal its full height into the pale sky. Cool dawn light, drifting vapor, 24mm, pedestal up. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_073647_d4561265-6908-407f-a4d4-2bc8d8934858.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-cameramove-pedestal-up-3",
+      "r2_key": "tag-cameramove-pedestal-up-3-v1.mp4",
+      "job_id": "91fc0b49-c5a1-4568-b361-e8b00be43cc1",
+      "title": "Ground Up",
+      "shotType": "Wide Shot",
+      "cameraMove": "Pedestal Up",
+      "prompt": "Live-action photoreal, present day, sleek urban grade. The foot of a mirror-glass skyscraper in a downtown plaza, reflections of clouds. Midday, bright. A person in a tailored coat stands at the base looking up, dwarfed by the tower. The camera pedestals straight up the glass facade, rising vertically to reveal the full height into the sky. Bright daylight, crisp reflections, 24mm, pedestal up. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_073654_91fc0b49-c5a1-4568-b361-e8b00be43cc1.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-cameramove-pedestal-up-4",
+      "r2_key": "tag-cameramove-pedestal-up-4-v1.mp4",
+      "job_id": "fe54d291-5aa2-489c-bfdb-dd1351c7a072",
+      "title": "The Stacks",
+      "shotType": "Wide Shot",
+      "cameraMove": "Pedestal Up",
+      "prompt": "Live-action photoreal, present day, warm library grade. The floor of a grand multi-story library atrium, towering bookshelves rising several floors, brass railings. Afternoon, warm light from a skylight. A person in a cardigan stands at the base looking up the stacks. The camera pedestals straight up past the towering shelves, rising vertically to the skylight far above. Warm lamplight and cool skylight, 24mm, pedestal up. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_073659_fe54d291-5aa2-489c-bfdb-dd1351c7a072.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-cameramove-pedestal-up-5",
+      "r2_key": "tag-cameramove-pedestal-up-5-v1.mp4",
+      "job_id": "5a982d2a-8561-4407-ad55-03969ae61b11",
+      "title": "The Monument",
+      "shotType": "Wide Shot",
+      "cameraMove": "Pedestal Up",
+      "prompt": "Live-action photoreal, present day, grand grade. The base of a towering stone monument in a plaza, carved columns, wide steps. Golden hour, warm. A person in a long coat stands at the foot of the steps, gazing up. The camera pedestals straight up the face of the monument, rising vertically to reveal its full towering scale against the sky. Warm golden light, long shadows, 24mm, pedestal up. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_073705_5a982d2a-8561-4407-ad55-03969ae61b11.mp4"
+    }
+  ]
+}

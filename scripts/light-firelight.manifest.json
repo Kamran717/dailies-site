@@ -1,0 +1,77 @@
+{
+  "collection": "lighting / Firelight",
+  "id_prefix": "tag-lighting-firelight",
+  "visible_limit": 6,
+  "limit_key": "Firelight",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "lighting": "Firelight",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-lighting-firelight-0",
+      "r2_key": "tag-lighting-firelight-0-v1.mp4",
+      "job_id": "380146dd-1b4e-4938-8028-afe4d447a2c9",
+      "title": "The Campfire",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A campsite at night in the woods. The scene is lit entirely by a crackling campfire, warm orange firelight flickering on the person's face and the trees, deep night beyond. A person in an outdoor jacket sits by the fire. Warm flickering firelight, dancing orange glow, deep night, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_043811_380146dd-1b4e-4938-8028-afe4d447a2c9.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-lighting-firelight-1",
+      "r2_key": "tag-lighting-firelight-1-v1.mp4",
+      "job_id": "0e6d7ef9-29df-4faa-af34-b123fae818fa",
+      "title": "The Bonfire",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A beach at night with a large bonfire. The scene is lit entirely by the roaring bonfire, warm orange firelight glowing across the person and the sand, dark sea beyond. A person in casual beach clothes stands by the fire. Warm flickering firelight, bright orange glow, dark night, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_043816_0e6d7ef9-29df-4faa-af34-b123fae818fa.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-lighting-firelight-2",
+      "r2_key": "tag-lighting-firelight-2-v1.mp4",
+      "job_id": "965e69fb-7a68-4985-bd85-26ea479747f7",
+      "title": "The Forge",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A dark blacksmith's forge, a glowing bed of coals and flame. The scene is lit entirely by the fierce orange forge fire, hot glowing light on the person, deep shadow around. A person in a leather apron works at the forge. Warm fierce firelight, glowing coals, deep shadow, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_043822_965e69fb-7a68-4985-bd85-26ea479747f7.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-lighting-firelight-3",
+      "r2_key": "tag-lighting-firelight-3-v1.mp4",
+      "job_id": "e39403c7-2bd5-4531-b146-cc4d7caa7fe0",
+      "title": "The Hearth",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A cozy room with a roaring stone fireplace. The scene is lit entirely by the warm fireplace flames, orange firelight dancing on the person, deep cozy shadows in the room. A person in a sweater sits by the hearth. Warm flickering firelight, dancing orange glow, cozy shadow, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_043829_e39403c7-2bd5-4531-b146-cc4d7caa7fe0.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-lighting-firelight-4",
+      "r2_key": "tag-lighting-firelight-4-v1.mp4",
+      "job_id": "d91420ef-11bf-4b73-9c16-d466543280ef",
+      "title": "The Torch",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, historical, adventurous grade. A dark stone cave passage. The scene is lit entirely by a burning torch, warm orange flame light on the person and the rough walls, deep black beyond the torchlight. A person in an explorer's outfit holds the torch aloft. Warm flickering torchlight, orange flame glow, black depth, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_043835_d91420ef-11bf-4b73-9c16-d466543280ef.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-lighting-firelight-5",
+      "r2_key": "tag-lighting-firelight-5-v1.mp4",
+      "job_id": "510d31ae-5117-465d-9592-68860b38770e",
+      "title": "The Firepit",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A backyard at night around a stone fire pit. The scene is lit entirely by the fire pit flames, warm orange firelight glowing on the person, dark yard beyond. A person in a cozy jacket sits by the fire pit. Warm flickering firelight, orange glow, dark night, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_043843_510d31ae-5117-465d-9592-68860b38770e.mp4"
+    }
+  ]
+}

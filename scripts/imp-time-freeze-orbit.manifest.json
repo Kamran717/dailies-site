@@ -1,0 +1,83 @@
+{
+  "collection": "impossible / Time Freeze Orbit",
+  "id_prefix": "tag-impossible-time-freeze-orbit",
+  "visible_limit": 6,
+  "limit_key": "Time Freeze Orbit",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "impossible": "Time Freeze Orbit",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-impossible-time-freeze-orbit-0",
+      "r2_key": "tag-impossible-time-freeze-orbit-0-v1.mp4",
+      "job_id": "1e5f1b11-7d92-4698-ae5a-9fd24557ddae",
+      "title": "The Crowd",
+      "impossible": "Time Freeze Orbit",
+      "shotType": "Medium Shot",
+      "cameraMove": "Orbit Right",
+      "prompt": "Cinematic VFX time freeze. Everything stops — a busy crowd is frozen mid-step around a person who alone is the still center. The camera orbits a full 360 degrees around the fixed figure through the frozen crowd, everyone suspended motionless. A person standing calmly. Frozen time, 360 orbit, suspended crowd, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_070825_1e5f1b11-7d92-4698-ae5a-9fd24557ddae.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-impossible-time-freeze-orbit-1",
+      "r2_key": "tag-impossible-time-freeze-orbit-1-v1.mp4",
+      "job_id": "99cc82bf-8b5a-42f0-8db4-7afd099a3684",
+      "title": "The Club",
+      "impossible": "Time Freeze Orbit",
+      "shotType": "Medium Shot",
+      "cameraMove": "Orbit Right",
+      "prompt": "Cinematic VFX time freeze. A packed dance floor freezes completely, dancers caught mid-motion, confetti suspended in the air, while the camera orbits a full circle around a person standing calm and still at the center. A person in stylish clothes. Frozen time, 360 orbit, suspended dancers and confetti, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_070839_99cc82bf-8b5a-42f0-8db4-7afd099a3684.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-impossible-time-freeze-orbit-2",
+      "r2_key": "tag-impossible-time-freeze-orbit-2-v1.mp4",
+      "job_id": "f9ec0430-f80c-4aad-8101-e5ac17360c24",
+      "title": "The Intersection",
+      "impossible": "Time Freeze Orbit",
+      "shotType": "Wide Shot",
+      "cameraMove": "Orbit Right",
+      "prompt": "Cinematic VFX time freeze. A busy city intersection freezes — cars, cyclists and pedestrians all suspended mid-motion — while the camera orbits a full 360 degrees around a person standing still at the center of it all. A person in a coat. Frozen time, 360 orbit, suspended traffic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_070849_f9ec0430-f80c-4aad-8101-e5ac17360c24.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-impossible-time-freeze-orbit-3",
+      "r2_key": "tag-impossible-time-freeze-orbit-3-v1.mp4",
+      "job_id": "72957be4-e579-4d39-b7de-48de5b787283",
+      "title": "The Park",
+      "impossible": "Time Freeze Orbit",
+      "shotType": "Medium Shot",
+      "cameraMove": "Orbit Right",
+      "prompt": "Cinematic VFX time freeze. A park scene freezes — birds suspended mid-flight, a fountain's water frozen in the air, leaves paused — while the camera orbits a full circle around a person standing calm and still at the center. A person in casual clothes. Frozen time, 360 orbit, suspended birds and water, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_070910_72957be4-e579-4d39-b7de-48de5b787283.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-impossible-time-freeze-orbit-4",
+      "r2_key": "tag-impossible-time-freeze-orbit-4-v1.mp4",
+      "job_id": "e17d02c7-5960-4239-958d-91202a854e39",
+      "title": "The Splash",
+      "impossible": "Time Freeze Orbit",
+      "shotType": "Medium Shot",
+      "cameraMove": "Orbit Right",
+      "prompt": "Cinematic VFX time freeze. A moment freezes as a big splash of water erupts and hangs suspended in the air around a person, every droplet motionless, while the camera orbits a full 360 degrees around the still figure. A person in casual clothes. Frozen time, 360 orbit, suspended water splash, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_070923_e17d02c7-5960-4239-958d-91202a854e39.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-impossible-time-freeze-orbit-5",
+      "r2_key": "tag-impossible-time-freeze-orbit-5-v1.mp4",
+      "job_id": "8f32b44b-0667-4901-bc9b-8aa257178ac9",
+      "title": "The Game",
+      "impossible": "Time Freeze Orbit",
+      "shotType": "Wide Shot",
+      "cameraMove": "Orbit Right",
+      "prompt": "Cinematic VFX time freeze. A sports moment freezes — players and a ball suspended mid-action on the field, dust and spray hanging in the air — while the camera orbits a full circle around a person standing still at the center. A person in athletic wear. Frozen time, 360 orbit, suspended players, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_070936_8f32b44b-0667-4901-bc9b-8aa257178ac9.mp4"
+    }
+  ]
+}

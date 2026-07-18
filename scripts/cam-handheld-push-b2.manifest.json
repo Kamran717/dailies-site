@@ -1,0 +1,175 @@
+{
+  "collection": "cameramove / Handheld Push (mixed styles, batch 2)",
+  "id_prefix": "tag-cameramove-handheld-push",
+  "visible_limit": 27,
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "limit_key": "Handheld Push",
+  "clips": [
+    {
+      "index": 12,
+      "id": "tag-cameramove-handheld-push-12",
+      "r2_key": "tag-cameramove-handheld-push-12-v5.mp4",
+      "job_id": "96f74fe2-44c4-4abe-9cce-9f11024fc931",
+      "title": "Rooftop Ronin",
+      "shotType": "Medium Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Anime style, bold clean linework, cel shading, vibrant saturated color, expressive. Night. A high rooftop above a sprawling city of glowing signs, a water tower and antennae, distant airships. A person in a flowing coat stands at the edge, coat and hair whipping in the wind, as the camera pushes in. Falling rain begins, a glowing skyline behind. Cool blue night with warm sign glow. Handheld push-in, organic movement. Dynamic anime aesthetic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260714_065514_96f74fe2-44c4-4abe-9cce-9f11024fc931.mp4"
+    },
+    {
+      "index": 13,
+      "id": "tag-cameramove-handheld-push-13",
+      "r2_key": "tag-cameramove-handheld-push-13-v5.mp4",
+      "job_id": "5837812f-afcc-4619-b76a-167d0e2ad9ce",
+      "title": "Rain Cafe",
+      "shotType": "Medium Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Soft watercolor painting style, translucent washes, bleeding colors, visible paper texture, loose delicate edges. Evening, rainy. A narrow old-town alley with a small glowing cafe, wet cobblestones reflecting warm light, a striped awning. A person in a light coat pauses under the awning holding a warm cup, watching the rain, as the camera pushes gently in. An umbrella, blurred lantern light, ripples in a puddle. Soft warm glow bleeding into cool rain. Handheld push-in, organic movement. Delicate watercolor aesthetic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260714_065521_5837812f-afcc-4619-b76a-167d0e2ad9ce.mp4"
+    },
+    {
+      "index": 14,
+      "id": "tag-cameramove-handheld-push-14",
+      "r2_key": "tag-cameramove-handheld-push-14-v5.mp4",
+      "job_id": "b6194b24-5369-449e-aa39-529e4e4d2073",
+      "title": "The Airlock",
+      "shotType": "Medium Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Polished 3D CGI animation style, smooth rendered surfaces, soft global illumination, subtle depth of field. A sleek spaceship corridor with glowing panels, ribbed walls, a large round airlock door ahead, floor lighting. A person in a fitted flight suit walks toward the airlock, gloved hand rising to a control, as the camera pushes in behind them. Blinking indicators, drifting vapor, reflective floor. Cool blue with warm accents. Handheld push-in, organic movement. Rendered 3D CGI aesthetic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260714_065527_b6194b24-5369-449e-aa39-529e4e4d2073.mp4"
+    },
+    {
+      "index": 15,
+      "id": "tag-cameramove-handheld-push-15",
+      "r2_key": "tag-cameramove-handheld-push-15-v5.mp4",
+      "job_id": "45724428-eeab-4d12-b2a1-28b4009b6b70",
+      "title": "Neon Alley",
+      "shotType": "Medium Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Cyberpunk style, high-contrast neon, rain-slicked reflections, dense futuristic detail, cinematic. Night. A cramped future-city alley drenched in pink and cyan neon, hanging signs in unknown scripts, steam vents, tangled cables, puddles mirroring the glow. A person in a sleek techwear jacket strides through the alley, collar up, as the camera pushes in. Flickering holograms, a passing drone, drifting steam. Saturated neon against wet dark. Handheld push-in, organic movement. Gritty cyberpunk aesthetic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260714_065535_45724428-eeab-4d12-b2a1-28b4009b6b70.mp4"
+    },
+    {
+      "index": 16,
+      "id": "tag-cameramove-handheld-push-16",
+      "r2_key": "tag-cameramove-handheld-push-16-v5.mp4",
+      "job_id": "3271483b-140c-4911-9b13-274f94ca1a54",
+      "title": "Kitchen Chaos",
+      "shotType": "Medium Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Cartoon style, bold outlines, bright flat colors, squash-and-stretch, playful exaggeration. Day. A wacky cartoon kitchen with a teetering tower of dishes, a bubbling pot, flour clouds in the air, googly-eyed utensils. A person in a big apron and chef's hat frantically stirs a pot as it puffs steam, wide-eyed, as the camera pushes in. Flying bubbles, a wobbling cake, a startled cartoon cat. Bright cheerful light. Handheld push-in, organic movement. Zany cartoon aesthetic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260714_065542_3271483b-140c-4911-9b13-274f94ca1a54.mp4"
+    },
+    {
+      "index": 17,
+      "id": "tag-cameramove-handheld-push-17",
+      "r2_key": "tag-cameramove-handheld-push-17-v5.mp4",
+      "job_id": "c17ad700-7fa4-44c3-b068-e226e57c4326",
+      "title": "The Landing",
+      "shotType": "Wide Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Comic book style, bold ink outlines, halftone shading, dynamic saturated color, action-panel energy. Day. A city street of tall buildings, cracked pavement, scattered newspapers, motion lines in the air. A person in a heroic caped outfit lands in a crouch on the street, one fist down, cape settling, as the camera pushes in. A shockwave of dust, awed bystanders, a glinting skyline. Bright dramatic light. Handheld push-in, organic movement. Explosive comic-book aesthetic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260714_065549_c17ad700-7fa4-44c3-b068-e226e57c4326.mp4"
+    },
+    {
+      "index": 18,
+      "id": "tag-cameramove-handheld-push-18",
+      "r2_key": "tag-cameramove-handheld-push-18-v5.mp4",
+      "job_id": "7a93985a-4799-437b-817c-d6ddaddbbeca",
+      "title": "The Dungeon",
+      "shotType": "Medium Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Retro pixel art style, blocky pixels, limited color palette, 16-bit game aesthetic, dithering, crisp pixel edges. A torchlit pixel dungeon, brick walls, chains, a treasure chest, flickering pixel torches. A person rendered in pixel art raises a torch and steps forward cautiously, as the camera pushes in. Pixel cobwebs, a skull, glowing embers, a rat. Warm torch glow against dark stone. Handheld push-in, organic movement. Moody pixel-art aesthetic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260714_065555_7a93985a-4799-437b-817c-d6ddaddbbeca.mp4"
+    },
+    {
+      "index": 19,
+      "id": "tag-cameramove-handheld-push-19",
+      "r2_key": "tag-cameramove-handheld-push-19-v5.mp4",
+      "job_id": "76a271fd-4e00-4428-b316-09e21afe75c5",
+      "title": "The Tinkerer",
+      "shotType": "Medium Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Stop-motion claymation style, molded clay figures, visible fingerprint texture, handmade plasticine, tactile. Day. A cluttered clay workshop, clay tools on a pegboard, a clay workbench, little clay gears and springs. A person made of clay tightens a bolt on a wobbly clay contraption, tongue out in concentration, as the camera pushes in. A clay wrench, a clay lamp, a clay mouse. Warm soft studio light. Handheld push-in, organic movement. Charming claymation aesthetic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260714_065602_76a271fd-4e00-4428-b316-09e21afe75c5.mp4"
+    },
+    {
+      "index": 20,
+      "id": "tag-cameramove-handheld-push-20",
+      "r2_key": "tag-cameramove-handheld-push-20-v5.mp4",
+      "job_id": "e4af5018-fd2f-4b37-8a8f-5f46dc45001c",
+      "title": "The Meadow",
+      "shotType": "Wide Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Soft hand-painted animation style, lush painterly backgrounds, gentle colors, whimsical and warm. Day. A vast green hillside meadow under a big blue sky with soft clouds, wildflowers swaying, a lone tree, a distant village. A person in a simple dress or shirt runs through the tall grass with arms out, joyful, as the camera pushes in. Drifting seeds, butterflies, a gust bending the grass. Warm golden daylight. Handheld push-in, organic movement. Whimsical hand-painted aesthetic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260714_065609_e4af5018-fd2f-4b37-8a8f-5f46dc45001c.mp4"
+    },
+    {
+      "index": 21,
+      "id": "tag-cameramove-handheld-push-21",
+      "r2_key": "tag-cameramove-handheld-push-21-v5.mp4",
+      "job_id": "58e55d36-9ac8-46b3-98e3-2b34c6d7c52e",
+      "title": "The Study",
+      "shotType": "Medium Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Pencil sketch style, graphite drawing, hand-drawn linework, cross-hatching, loose gestural lines, sketchbook, mostly monochrome. Day. A quiet artist's studio sketched loosely, an easel, a draped cloth, a stool, hatched shadows. A person in casual clothes stands at the easel drawing intently, glancing toward us, as the camera pushes in. Sketched jars of brushes, a plant, paper on the floor. Soft graphite shading, paper-white highlights. Handheld push-in, organic movement. Gestural pencil-sketch aesthetic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260714_065615_58e55d36-9ac8-46b3-98e3-2b34c6d7c52e.mp4"
+    },
+    {
+      "index": 22,
+      "id": "tag-cameramove-handheld-push-22",
+      "r2_key": "tag-cameramove-handheld-push-22-v5.mp4",
+      "job_id": "d12a7973-72a6-4cdb-b832-1e60862cbb1d",
+      "title": "Cliff's Edge",
+      "shotType": "Wide Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Digital painting style, painterly, visible brushstrokes, rich blended color, concept-art illustration. Sunset. A dramatic seaside cliff at golden hour, crashing waves far below, a fiery painted sky, wildflowers on the ledge. A person in a flowing coat stands near the edge facing the sea, coat streaming, then turns as the camera pushes in. Sea spray, distant sails, soaring birds. Warm sunset glow. Handheld push-in, organic movement. Sweeping painted aesthetic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260714_065622_d12a7973-72a6-4cdb-b832-1e60862cbb1d.mp4"
+    },
+    {
+      "index": 23,
+      "id": "tag-cameramove-handheld-push-23",
+      "r2_key": "tag-cameramove-handheld-push-23-v5.mp4",
+      "job_id": "e6d06328-9440-47cb-bb15-04801c0de405",
+      "title": "The Vendor",
+      "shotType": "Medium Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Hyperrealistic style, ultra-sharp detail, lifelike skin and textures, natural light, photographic depth. Day. A bustling covered market, crates of glistening produce, hanging herbs, dust in shafts of light. A person in an apron arranges fruit at a stall, mid-gesture, calling out warmly, as the camera pushes in. Weathered crates, a brass scale, a passing shopper. Warm natural daylight. Handheld push-in, organic movement. Crisp hyperrealistic aesthetic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260714_065632_e6d06328-9440-47cb-bb15-04801c0de405.mp4"
+    },
+    {
+      "index": 24,
+      "id": "tag-cameramove-handheld-push-24",
+      "r2_key": "tag-cameramove-handheld-push-24-v5.mp4",
+      "job_id": "2b1a8bb8-e5eb-418b-9c08-034e046f1f2f",
+      "title": "The Office",
+      "shotType": "Medium Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Film noir style, high-contrast black and white, deep shadows, venetian-blind light, moody. Night. A shadowy detective's office, a desk with a lamp, a spinning ceiling fan, blinds slicing light across the wall, rain on the window. A person in a trench coat and hat leans over the desk studying a photo, brim low, as the camera pushes in. A ringing phone, a glass, smoke curling. Hard chiaroscuro light. Handheld push-in, organic movement. Classic noir aesthetic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260714_065639_2b1a8bb8-e5eb-418b-9c08-034e046f1f2f.mp4"
+    },
+    {
+      "index": 25,
+      "id": "tag-cameramove-handheld-push-25",
+      "r2_key": "tag-cameramove-handheld-push-25-v5.mp4",
+      "job_id": "e418915b-b974-495c-9b54-a73ba66c2d35",
+      "title": "The Incantation",
+      "shotType": "Medium Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Epic fantasy style, painterly cinematic realism, rich color, dramatic magical light. Night. A vast ancient stone hall, towering carved pillars, floating candles, glowing runes on the floor, drifting embers. A person in ornate robes raises a hand as glowing energy gathers in their palm, as the camera pushes in. Swirling magic, tattered banners, a shaft of moonlight. Warm magical glow against cool stone. Handheld push-in, organic movement. Grand fantasy aesthetic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260714_065646_e418915b-b974-495c-9b54-a73ba66c2d35.mp4"
+    },
+    {
+      "index": 26,
+      "id": "tag-cameramove-handheld-push-26",
+      "r2_key": "tag-cameramove-handheld-push-26-v5.mp4",
+      "job_id": "a4e8ba21-f43e-4b99-af30-786ff0578120",
+      "title": "The Bridge",
+      "shotType": "Medium Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Cinematic sci-fi realism, photoreal, sleek production design, atmospheric lighting. A futuristic starship bridge, a wide viewport of stars and a distant planet, glowing consoles, holographic displays. A person in a fitted command uniform stands at the center console watching the viewport, hand on a rail, as the camera pushes in. Blinking readouts, a drifting hologram, crew silhouettes. Cool blue console glow with starlight. Handheld push-in, organic movement. Epic sci-fi aesthetic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260714_065653_a4e8ba21-f43e-4b99-af30-786ff0578120.mp4"
+    }
+  ]
+}

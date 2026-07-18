@@ -1,0 +1,77 @@
+{
+  "collection": "shotType / Split Diopter",
+  "id_prefix": "tag-shottype-split-diopter",
+  "visible_limit": 6,
+  "limit_key": "Split Diopter",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "shot_type": "Split Diopter",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-shottype-split-diopter-0",
+      "r2_key": "tag-shottype-split-diopter-0-v1.mp4",
+      "job_id": "c64ea0a0-ee5e-461b-8803-1638b4cb1958",
+      "title": "The Call",
+      "shotType": "Split Diopter",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, tense grade. A dim apartment. A split-diopter shot keeping both planes in sharp focus at once: a ringing telephone large and crisp in the foreground on a table, and a person standing sharp across the room in the background, staring at it, hesitating. A person in casual home clothes. Warm lamplight, deep shadow, split-diopter dual focus, 35mm. Subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_165944_c64ea0a0-ee5e-461b-8803-1638b4cb1958.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-shottype-split-diopter-1",
+      "r2_key": "tag-shottype-split-diopter-1-v1.mp4",
+      "job_id": "046d60f8-cdc6-4b9b-ae76-ea344a740091",
+      "title": "The Key",
+      "shotType": "Split Diopter",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, suspenseful grade. A shadowy hallway. A split-diopter shot with both planes tack sharp: a hand holding a single brass key crisp and large in the foreground, and a locked door with a person standing before it sharp in the background. A person in a coat. Cool low light, hard shadow, split-diopter dual focus, 35mm. Subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_165950_046d60f8-cdc6-4b9b-ae76-ea344a740091.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-shottype-split-diopter-2",
+      "r2_key": "tag-shottype-split-diopter-2-v1.mp4",
+      "job_id": "e94c6bc7-4d96-434e-b451-891709deec79",
+      "title": "Last Drink",
+      "shotType": "Split Diopter",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, moody bar grade. A dim bar at night. A split-diopter shot keeping both planes sharp: a glass of amber whiskey large and crisp in the foreground on the bar, and a person seated further down the bar sharp in the background, watching. A person in smart evening attire. Warm bar light, bottle bokeh, split-diopter dual focus, 40mm. Subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_165957_e94c6bc7-4d96-434e-b451-891709deec79.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-shottype-split-diopter-3",
+      "r2_key": "tag-shottype-split-diopter-3-v1.mp4",
+      "job_id": "5afed12c-a5f2-4eb0-8f70-c2323e8e68fc",
+      "title": "The Move",
+      "shotType": "Split Diopter",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, focused grade. A quiet study, warm lamp. A split-diopter shot with both planes sharp: a single chess piece large and crisp in the foreground on the board, and a person sitting across the table sharp in the background, contemplating. A person in smart-casual attire. Warm lamplight, deep shadow, split-diopter dual focus, 40mm. Subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_170003_5afed12c-a5f2-4eb0-8f70-c2323e8e68fc.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-shottype-split-diopter-4",
+      "r2_key": "tag-shottype-split-diopter-4-v1.mp4",
+      "job_id": "a57be197-6bee-4409-b60f-e266df6d1c35",
+      "title": "The Memory",
+      "shotType": "Split Diopter",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, emotional grade. A softly lit living room. A split-diopter shot keeping both planes sharp: a framed photograph large and crisp in the foreground on a shelf, and a person sharp in the background standing and gazing toward it. A person in casual clothes. Soft warm light, gentle shadow, split-diopter dual focus, 40mm. Subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_170011_a57be197-6bee-4409-b60f-e266df6d1c35.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-shottype-split-diopter-5",
+      "r2_key": "tag-shottype-split-diopter-5-v1.mp4",
+      "job_id": "97edd94a-0d2b-4032-ad7e-2dd893f0e643",
+      "title": "The Deadline",
+      "shotType": "Split Diopter",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, tense grade. A dim office at night. A split-diopter shot with both planes tack sharp: a ticking desk clock large and crisp in the foreground, and a person sharp in the background at a desk, working against time. A person in business attire. Cool desk light, deep shadow, split-diopter dual focus, 35mm. Subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_170022_97edd94a-0d2b-4032-ad7e-2dd893f0e643.mp4"
+    }
+  ]
+}

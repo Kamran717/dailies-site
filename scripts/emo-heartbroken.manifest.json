@@ -1,0 +1,83 @@
+{
+  "collection": "emotion / Heartbroken",
+  "id_prefix": "tag-emotion-heartbroken",
+  "visible_limit": 6,
+  "limit_key": "Heartbroken",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "emotion": "Heartbroken",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-emotion-heartbroken-0",
+      "r2_key": "tag-emotion-heartbroken-0-v1.mp4",
+      "job_id": "0a43f37b-5350-4ad7-984b-0201cafbf855",
+      "title": "The Rain",
+      "emotion": "Heartbroken",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, melancholic grade. A rain-soaked empty street at dusk, grey light, puddles. A person stands alone in the rain, heartbroken, shoulders slumped, face crumpling with grief, rain mixing with tears. A person in a soaked coat. Cool grey light, falling rain, heartbroken mood, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_054041_0a43f37b-5350-4ad7-984b-0201cafbf855.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-emotion-heartbroken-1",
+      "r2_key": "tag-emotion-heartbroken-1-v1.mp4",
+      "job_id": "d3da1896-e6bc-441e-8150-d13c716ee618",
+      "title": "The Letter",
+      "emotion": "Heartbroken",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, melancholic grade. A dim quiet room, soft grey window light, a person sitting on the floor against a wall. They hold a letter, heartbroken, tears welling, a hand pressed to their mouth, overcome with sorrow. A person in home clothes. Soft cool light, deep shadow, heartbroken mood, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_054047_d3da1896-e6bc-441e-8150-d13c716ee618.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-emotion-heartbroken-2",
+      "r2_key": "tag-emotion-heartbroken-2-v1.mp4",
+      "job_id": "642683ff-5db9-48db-85a1-c3e5f5a891ea",
+      "title": "The Departure",
+      "emotion": "Heartbroken",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, melancholic grade. A train station platform, a train pulling away, grey overcast light, steam. A person stands watching the train leave, heartbroken, hand half-raised, tears in their eyes, unable to speak. A person in a coat. Cool muted light, drifting steam, heartbroken mood, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_054055_642683ff-5db9-48db-85a1-c3e5f5a891ea.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-emotion-heartbroken-3",
+      "r2_key": "tag-emotion-heartbroken-3-v1.mp4",
+      "job_id": "66341188-13ff-4bdd-a47f-30ab1ef30ef2",
+      "title": "The Empty Chair",
+      "emotion": "Heartbroken",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, melancholic grade. A quiet restaurant table set for two, a candle, one chair empty, warm but lonely light. A person sits alone looking at the empty chair, heartbroken, eyes glistening, a hand resting on the untouched place setting. A person in nice clothes. Warm dim light, soft shadow, heartbroken mood, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_054102_66341188-13ff-4bdd-a47f-30ab1ef30ef2.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-emotion-heartbroken-4",
+      "r2_key": "tag-emotion-heartbroken-4-v1.mp4",
+      "job_id": "81212276-3f8f-4ae4-ae84-40a29280abcc",
+      "title": "The Room",
+      "emotion": "Heartbroken",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, melancholic grade. A dim bedroom in the early evening, soft blue light through the curtains. A person sits on the edge of the bed, heartbroken, head bowed into their hands, shoulders shaking gently with quiet grief. A person in casual clothes. Soft cool blue light, deep shadow, heartbroken mood, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_054109_81212276-3f8f-4ae4-ae84-40a29280abcc.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-emotion-heartbroken-5",
+      "r2_key": "tag-emotion-heartbroken-5-v1.mp4",
+      "job_id": "58041ff2-0c56-4bfa-86e6-cf6aa1c4c5d7",
+      "title": "The Shore",
+      "emotion": "Heartbroken",
+      "shotType": "Wide Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, melancholic grade. A grey empty beach at dusk, cold surf, overcast sky. A person stands alone at the waterline, heartbroken, arms wrapped around themselves, staring at the horizon with a grief-stricken face. A person in a coat. Cool muted light, cold surf, heartbroken mood, 35mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_054114_58041ff2-0c56-4bfa-86e6-cf6aa1c4c5d7.mp4"
+    }
+  ]
+}

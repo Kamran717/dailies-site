@@ -1,0 +1,77 @@
+{
+  "collection": "cameraMove / Overhead Drop",
+  "id_prefix": "tag-cameramove-overhead-drop",
+  "visible_limit": 6,
+  "limit_key": "Overhead Drop",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "camera_move": "Overhead Drop",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-cameramove-overhead-drop-0",
+      "r2_key": "tag-cameramove-overhead-drop-0-v1.mp4",
+      "job_id": "cb614f1c-9400-4f3c-87a9-75a1fae2f83c",
+      "title": "Float",
+      "shotType": "Wide Shot",
+      "cameraMove": "Overhead Drop",
+      "prompt": "Live-action photoreal, present day, serene grade. A still turquoise swimming pool seen from directly overhead, sunlight caustics rippling on the floor. Midday, calm. A person in swimwear floats on their back at the center, arms spread, eyes closed. The camera is directly overhead and drops straight down toward them, descending vertically. Bright warm sun, shimmering water caustics, top-down, overhead drop. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_073713_cb614f1c-9400-4f3c-87a9-75a1fae2f83c.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-cameramove-overhead-drop-1",
+      "r2_key": "tag-cameramove-overhead-drop-1-v1.mp4",
+      "job_id": "4e931365-f380-4dec-b879-fc45ebbb3bb3",
+      "title": "Awake",
+      "shotType": "Medium Shot",
+      "cameraMove": "Overhead Drop",
+      "prompt": "Live-action photoreal, present day, soft morning grade. A neatly made bed seen from directly overhead, white linens, morning light across the sheets. Dawn, quiet. A person in comfortable sleepwear lies on their back on the bed, just waking, looking up. The camera is directly overhead and drops straight down toward them. Soft warm window light, gentle shadows, top-down, overhead drop. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_073719_4e931365-f380-4dec-b879-fc45ebbb3bb3.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-cameramove-overhead-drop-2",
+      "r2_key": "tag-cameramove-overhead-drop-2-v1.mp4",
+      "job_id": "3370308d-b437-4d7d-8033-5678a3635d9c",
+      "title": "The Mat",
+      "shotType": "Wide Shot",
+      "cameraMove": "Overhead Drop",
+      "prompt": "Live-action photoreal, present day, calm wellness grade. A wooden studio floor seen from directly overhead, a single yoga mat, a plant and a candle nearby. Morning, soft light. A person in athletic wear lies in a resting pose on the mat, arms at their sides. The camera is directly overhead and drops straight down toward them. Soft diffused daylight, warm wood tones, top-down, overhead drop. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_073729_3370308d-b437-4d7d-8033-5678a3635d9c.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-cameramove-overhead-drop-3",
+      "r2_key": "tag-cameramove-overhead-drop-3-v1.mp4",
+      "job_id": "69c76073-4ba8-438c-987a-da413283b37e",
+      "title": "The Center",
+      "shotType": "Wide Shot",
+      "cameraMove": "Overhead Drop",
+      "prompt": "Live-action photoreal, present day, graphic grade. A grand marble plaza seen from directly overhead, an ornate compass-rose inlay radiating outward. Day, bright. A person in a long coat stands at the exact center of the compass, looking up. The camera is directly overhead and drops straight down toward them, the pattern radiating around them. Bright even daylight, crisp geometry, top-down, overhead drop. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_073735_69c76073-4ba8-438c-987a-da413283b37e.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-cameramove-overhead-drop-4",
+      "r2_key": "tag-cameramove-overhead-drop-4-v1.mp4",
+      "job_id": "279247ba-1fda-48f2-bfa4-e10dd3e98a5b",
+      "title": "Snow Angel",
+      "shotType": "Wide Shot",
+      "cameraMove": "Overhead Drop",
+      "prompt": "Live-action photoreal, present day, crisp winter grade. A pristine field of fresh snow seen from directly overhead, untouched white, faint tracks. Overcast day, soft light. A person in a colorful winter coat lies in the snow making a snow angel, arms sweeping. The camera is directly overhead and drops straight down toward them. Soft flat winter light, cool blue-white, top-down, overhead drop. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_073746_279247ba-1fda-48f2-bfa4-e10dd3e98a5b.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-cameramove-overhead-drop-5",
+      "r2_key": "tag-cameramove-overhead-drop-5-v1.mp4",
+      "job_id": "fcd79799-73d3-4a78-ae8c-53a4e4713a53",
+      "title": "The Feast",
+      "shotType": "Wide Shot",
+      "cameraMove": "Overhead Drop",
+      "prompt": "Live-action photoreal, present day, warm culinary grade. A round dining table seen from directly overhead, laden with a lavish spread of dishes, candles, wine. Evening, warm. A person in smart-casual dinner attire sits at the table, looking up from the feast. The camera is directly overhead and drops straight down toward the table and them. Warm candlelight, rich food tones, top-down, overhead drop. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_073754_fcd79799-73d3-4a78-ae8c-53a4e4713a53.mp4"
+    }
+  ]
+}

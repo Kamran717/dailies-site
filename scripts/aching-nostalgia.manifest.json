@@ -1,0 +1,118 @@
+{
+  "collection": "emotion / Aching Nostalgia",
+  "id_prefix": "tag-emotion-aching-nostalgia",
+  "visible_limit": 12,
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "note": "Single source of truth. The `prompt` string is BOTH what the clip was generated from AND what gets written to REAL_PROMPTS[id]. Generate from this file, record job_id on submit, import job's video to R2 under r2_key, then wire REAL_VIDEOS[id] + REAL_PROMPTS[id] from here. Never retype a prompt — copy from this file so the site prompt always equals the rendered prompt. cloudfront_url added 2026-07-13T04:42Z — expires same day; import to R2 now.",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-emotion-aching-nostalgia-0",
+      "r2_key": "tag-emotion-aching-nostalgia-0.mp4",
+      "job_id": "677a1efe-365f-4240-b651-04425b56d1ea",
+      "title": "Boxes and Bare Walls",
+      "prompt": "Live-action photoreal, present day. An empty childhood bedroom mid-move, cardboard boxes stacked, pale rectangles on the wall where posters used to hang. Late afternoon, dust drifting in the light. A person in a soft oversized cardigan and jeans stands at the window, one hand on the sill, looking out. Packing tape, a bare mattress, a single kept shoebox on the floor. Soft low sun through gauze curtains, warm amber wash, long shadows. 35mm, slow dolly in. Shallow depth of field, subtle grain, gentle motion blur, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260713_042809_677a1efe-365f-4240-b651-04425b56d1ea.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-emotion-aching-nostalgia-1",
+      "r2_key": "tag-emotion-aching-nostalgia-1.mp4",
+      "job_id": "efeb8872-a3bf-4691-a6af-5ea9ea103856",
+      "title": "The Late Bus",
+      "prompt": "Live-action photoreal, present day. The rain-streaked window of a city bus at dusk, blurred streetlights and wet neon sliding past outside, fogged glass. Evening, rain. A person in a damp navy raincoat rests their temple against the glass, gaze drifting, one earbud in. Condensation beads, a folded transit ticket, passing lights reflected on the coat. Cool blue exterior with warm sodium streetlamps streaking through, soft bounce on the shoulder. 50mm, locked-off with faint handheld sway. Shallow depth of field, rain-bokeh, fine grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260713_043525_efeb8872-a3bf-4691-a6af-5ea9ea103856.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-emotion-aching-nostalgia-2",
+      "r2_key": "tag-emotion-aching-nostalgia-2.mp4",
+      "job_id": "aea6bf47-20ad-463c-a56f-01341c4ab072",
+      "title": "Off Season",
+      "prompt": "Live-action photoreal, present day. A seaside boardwalk in the off-season, shuttered candy stalls and a stilled Ferris wheel behind, grey sea, gulls. Overcast late afternoon, wind. A person in a wool coat and scarf sits alone on a weathered bench, hands in pockets, looking at the water. Peeling paint, a lone paper cup rolling, unlit string lights overhead. Flat silver overcast, muted cool palette, shadowless. Wide, 28mm, static. Slight film grain, gentle wind motion, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260713_043541_aea6bf47-20ad-463c-a56f-01341c4ab072.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-emotion-aching-nostalgia-3",
+      "r2_key": "tag-emotion-aching-nostalgia-3.mp4",
+      "job_id": "8473cfa3-134d-4a74-9430-c5f7365cae8a",
+      "title": "The Attic Box",
+      "prompt": "Live-action photoreal, present day. A dusty attic of dust-sheeted furniture and stacked trunks, one hard beam of light from a single skylight. Afternoon, still air thick with floating motes. A person in a faded flannel shirt kneels and lifts the lid of an old cardboard box. An open trunk, a coiled string of fairy lights, a framed photo face-down. One warm shaft, deep surrounding shadow, high contrast. 40mm, slow dolly in. Shallow depth of field, heavy grain, dust bokeh, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260713_043549_8473cfa3-134d-4a74-9430-c5f7365cae8a.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-emotion-aching-nostalgia-4",
+      "r2_key": "tag-emotion-aching-nostalgia-4.mp4",
+      "job_id": "c25faa3c-ca70-4901-bf88-401a6d68bab3",
+      "title": "Cold Coffee",
+      "prompt": "Live-action photoreal, present day. A half-empty late-night diner, chrome and vinyl booths, a rain-blurred neon sign through the window. Night, quiet. A person in a denim jacket sits alone in a booth over a cold coffee, both hands around the mug, staring past it. A jukebox, a half-eaten slice of pie, steam long gone. Warm interior tungsten with cold pink-and-blue neon spill from outside. 50mm, slow dolly in. Shallow depth of field, soft grain, gentle motion blur, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260713_043557_c25faa3c-ca70-4901-bf88-401a6d68bab3.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-emotion-aching-nostalgia-5",
+      "r2_key": "tag-emotion-aching-nostalgia-5.mp4",
+      "job_id": "6d27dd35-42db-466b-bf66-d0c3fe411499",
+      "title": "Last Train",
+      "prompt": "Live-action photoreal, present day. An empty train platform at night, thick fog, a single sodium lamp, wet rails vanishing into dark. Late night, mist. A person in a long overcoat and scarf stands near the yellow line, a small suitcase beside them, watching the empty track. A peeling timetable, a lone bench, breath fogging. One warm lamp pooling in cold blue fog, long silhouette. 35mm, slow push in. Deep shadow, atmospheric haze, fine grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260713_043603_6d27dd35-42db-466b-bf66-d0c3fe411499.mp4"
+    },
+    {
+      "index": 6,
+      "id": "tag-emotion-aching-nostalgia-6",
+      "r2_key": "tag-emotion-aching-nostalgia-6.mp4",
+      "job_id": "d13169ee-591f-48c2-af3c-b748a446100f",
+      "title": "The Kitchen Table",
+      "prompt": "Live-action photoreal, present day. A warm but still old-fashioned kitchen, floral wallpaper, a kettle on the stove, sun on a laid table. Late afternoon, quiet. A person in a soft knit cardigan sits at the table slowly turning over a stack of old photographs. A tin of buttons, a chipped teacup, a ticking wall clock. Warm low sun through lace curtains, honeyed light, soft shadows. 50mm, slow dolly in. Shallow depth of field, gentle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260713_043610_d13169ee-591f-48c2-af3c-b748a446100f.mp4"
+    },
+    {
+      "index": 7,
+      "id": "tag-emotion-aching-nostalgia-7",
+      "r2_key": "tag-emotion-aching-nostalgia-7.mp4",
+      "job_id": "bf42eeab-e69e-438b-985d-02dd931f5dbf",
+      "title": "The Empty Swing",
+      "prompt": "Live-action photoreal, present day. A small suburban playground at dusk, empty swings drifting, a rusted slide, silhouetted trees. Blue hour, still. A person in a light jacket stands with one hand on a swing chain, looking at the empty seat. Wood-chip ground, a forgotten mitten, distant porch lights coming on. Deep blue dusk with a last warm horizon glow. Wide, 28mm, static. Soft grain, faint swing motion, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260713_043616_bf42eeab-e69e-438b-985d-02dd931f5dbf.mp4"
+    },
+    {
+      "index": 8,
+      "id": "tag-emotion-aching-nostalgia-8",
+      "r2_key": "tag-emotion-aching-nostalgia-8.mp4",
+      "job_id": "c2c4e005-3e05-483b-9f36-fd56810740b0",
+      "title": "Crate Digging",
+      "prompt": "Live-action photoreal, present day. A dim independent record shop, crates of vinyl, band posters, dust in a window shaft. Afternoon, hushed. A person in a corduroy jacket flips through a crate, pausing on one sleeve held in both hands. Handwritten genre dividers, a turntable behind the counter, faded posters. Warm tungsten with a cool shaft from the street. 40mm, slow dolly in. Shallow depth of field, grain, gentle motion, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260713_043625_c2c4e005-3e05-483b-9f36-fd56810740b0.mp4"
+    },
+    {
+      "index": 9,
+      "id": "tag-emotion-aching-nostalgia-9",
+      "r2_key": "tag-emotion-aching-nostalgia-9.mp4",
+      "job_id": "ef5c8ec3-496f-436d-b380-6abb43ad57b1",
+      "title": "Porch in October",
+      "prompt": "Live-action photoreal, present day. The wooden porch of an old house in autumn, fallen leaves on the steps, a porch swing, the yard going gold. Evening, crisp, still. A person in a chunky sweater sits on the steps, elbows on knees, watching the street. An unlit jack-o'-lantern, a rake against the rail, a mug beside them. Warm golden-hour side light, long amber shadows. 50mm, slow dolly in. Shallow depth of field, soft grain, drifting leaves, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260713_043630_ef5c8ec3-496f-436d-b380-6abb43ad57b1.mp4"
+    },
+    {
+      "index": 10,
+      "id": "tag-emotion-aching-nostalgia-10",
+      "r2_key": "tag-emotion-aching-nostalgia-10.mp4",
+      "job_id": "7ad4b1f1-e0fe-4849-8adb-7157278b2ea1",
+      "title": "The Lookout",
+      "prompt": "Live-action photoreal, present day. An old parked car at a hilltop lookout over a hazy town at dusk, windshield catching the last light. Dusk, calm. A person in a flannel shirt sits on the car hood, knees up, watching the town lights flicker on below. A thermos, a folded map, the car's chrome trim. Fading warm horizon into cool blue, soft rim light. 35mm, slow push in. Shallow depth of field, lens flare, fine grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260713_043640_7ad4b1f1-e0fe-4849-8adb-7157278b2ea1.mp4"
+    },
+    {
+      "index": 11,
+      "id": "tag-emotion-aching-nostalgia-11",
+      "r2_key": "tag-emotion-aching-nostalgia-11.mp4",
+      "job_id": "e4a4bd47-ca91-416b-8b10-f66cc647223a",
+      "title": "End of Term",
+      "prompt": "Live-action photoreal, present day. An empty school hallway at end of term, open lockers, a stripped bulletin board, low sun through the far doors. Late afternoon, silent. A person in a hoodie and backpack walks slowly down the center, trailing one hand along the lockers. A dropped flyer, a forgotten sneaker, taped outlines where posters were. Warm low sun flaring down the hall, long shadows. 35mm, slow tracking dolly behind. Shallow depth of field, grain, gentle motion blur, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260713_043651_e4a4bd47-ca91-416b-8b10-f66cc647223a.mp4"
+    }
+  ]
+}

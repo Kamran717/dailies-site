@@ -1,0 +1,77 @@
+{
+  "collection": "lighting / Golden Hour",
+  "id_prefix": "tag-lighting-golden-hour",
+  "visible_limit": 6,
+  "limit_key": "Golden Hour",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "lighting": "Golden Hour",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-lighting-golden-hour-0",
+      "r2_key": "tag-lighting-golden-hour-0-v1.mp4",
+      "job_id": "8995559c-07d9-4b70-8018-f15e3f2c7bc7",
+      "title": "The Field",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A golden wheat field at sunset, warm haze in the air. The scene is lit by rich golden-hour light, the low sun casting a warm glow and a bright rim of light around the person, long shadows. A person in a light linen shirt stands in the wheat, backlit by the sun. Warm golden-hour light, glowing rim, lens haze, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_034234_8995559c-07d9-4b70-8018-f15e3f2c7bc7.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-lighting-golden-hour-1",
+      "r2_key": "tag-lighting-golden-hour-1-v1.mp4",
+      "job_id": "53f58233-2816-466a-8be5-180f3917c367",
+      "title": "City Rooftop",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A city rooftop at sunset, skyline glowing behind. The scene is lit by warm golden-hour light, the low sun rimming the person with gold, soft warm haze. A person in a smart jacket stands at the edge, backlit by the setting sun. Warm golden-hour light, glowing rim, city haze, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_034240_53f58233-2816-466a-8be5-180f3917c367.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-lighting-golden-hour-2",
+      "r2_key": "tag-lighting-golden-hour-2-v1.mp4",
+      "job_id": "c9629e54-9cab-4dc6-986e-0e78c87c35b7",
+      "title": "The Shore",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A beach at golden hour, gentle surf, warm sky. The scene is lit by rich golden-hour light, the low sun glowing behind the person and rimming them with warm light, sparkles on the water. A person in rolled linen trousers stands at the waterline, backlit. Warm golden-hour light, glowing rim, sea sparkle, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_034245_c9629e54-9cab-4dc6-986e-0e78c87c35b7.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-lighting-golden-hour-3",
+      "r2_key": "tag-lighting-golden-hour-3-v1.mp4",
+      "job_id": "8dbcbd55-e9c4-4eee-b9b3-a4eb6093761c",
+      "title": "The Vineyard",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A vineyard at sunset, rows of vines glowing. The scene is lit by warm golden-hour light, the low sun casting long shadows and a golden rim around the person. A person in rustic workwear stands among the vines, backlit by the sun. Warm golden-hour light, glowing rim, dust haze, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_034251_8dbcbd55-e9c4-4eee-b9b3-a4eb6093761c.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-lighting-golden-hour-4",
+      "r2_key": "tag-lighting-golden-hour-4-v1.mp4",
+      "job_id": "a8c65b99-59eb-42e8-8923-0eff70f1331e",
+      "title": "The Meadow",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A wildflower meadow at sunset, warm glowing haze. The scene is lit by rich golden-hour light, the low sun backlighting the person with a bright warm rim, flowers glowing. A person in a summer dress stands in the flowers, backlit. Warm golden-hour light, glowing rim, floating pollen, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_034301_a8c65b99-59eb-42e8-8923-0eff70f1331e.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-lighting-golden-hour-5",
+      "r2_key": "tag-lighting-golden-hour-5-v1.mp4",
+      "job_id": "d71b0d06-e162-4b8f-bdde-ad10cbf0dc8f",
+      "title": "The Overlook",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A mountain overlook at sunset, layered ridges in warm haze. The scene is lit by warm golden-hour light, the low sun rimming the person in gold, valleys glowing below. A person in a hiking jacket stands at the overlook, backlit by the sun. Warm golden-hour light, glowing rim, atmospheric haze, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_034312_d71b0d06-e162-4b8f-bdde-ad10cbf0dc8f.mp4"
+    }
+  ]
+}

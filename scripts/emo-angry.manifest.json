@@ -1,0 +1,175 @@
+{
+  "collection": "emotion / Angry",
+  "id_prefix": "tag-emotion-angry",
+  "visible_limit": 15,
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "limit_key": "Angry",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-emotion-angry-0",
+      "r2_key": "tag-emotion-angry-0-v1.mp4",
+      "job_id": "fc86d6ae-bf37-45e6-a93a-589b2bad17dd",
+      "title": "Breaking Point",
+      "shotType": "Medium Shot",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Cinematic photoreal, cold storm grade. A rain-lashed city street at night, neon reflections in puddles. A person in a soaked jacket clenches both fists and roars in furious anger, face taut, rain streaming. Wind-driven rain, hard streetlight, blurred traffic. Slow dolly in, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_105130_fc86d6ae-bf37-45e6-a93a-589b2bad17dd.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-emotion-angry-1",
+      "r2_key": "tag-emotion-angry-1-v1.mp4",
+      "job_id": "3b358ee9-1d9d-48bf-9726-b19b3b0d6841",
+      "title": "Seeing Red",
+      "shotType": "Close-Up",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Anime aesthetic, high-contrast red palette, sharp lines. A charged dramatic backdrop, crackling energy. A person bares their teeth in seething fury, brow furrowed, a red aura flaring around clenched fists. Glowing embers, dramatic rim light, tension. Slow dolly in, intense, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_105136_3b358ee9-1d9d-48bf-9726-b19b3b0d6841.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-emotion-angry-2",
+      "r2_key": "tag-emotion-angry-2-v1.mp4",
+      "job_id": "2d93f003-91af-43ba-9a79-8c2716923012",
+      "title": "The Outburst",
+      "shotType": "Wide Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Comic-book illustrated style, bold ink, hot saturated palette. A cluttered office at day, papers everywhere. A person in work clothes sweeps everything off a desk in a rage, arm flung wide, face contorted in fury, papers flying. Motion lines, hard shadows, impact. Handheld push, dynamic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_105143_2d93f003-91af-43ba-9a79-8c2716923012.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-emotion-angry-3",
+      "r2_key": "tag-emotion-angry-3-v1.mp4",
+      "job_id": "20b237e1-597e-46f7-97d9-4ea848e26434",
+      "title": "Rage in the Ring",
+      "shotType": "Medium Shot",
+      "cameraMove": "Orbit Left",
+      "prompt": "Cinematic photoreal, gritty gym grade. A boxing gym, a heavy bag chained to the ceiling, hard shafts of light. A person in wraps unloads furious hammering blows on the bag, teeth gritted in rage, sweat flying. Dust in the light, hard shadows, raw fury. Orbit left, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_105159_20b237e1-597e-46f7-97d9-4ea848e26434.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-emotion-angry-4",
+      "r2_key": "tag-emotion-angry-4-v1.mp4",
+      "job_id": "aa7a73cd-7c11-4af8-b0d9-35eb44a9adee",
+      "title": "The Confrontation",
+      "shotType": "Medium Shot",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Film-noir style, hard contrast, slatted shadow. A dim apartment doorway, warm lamp behind. A person in a coat jabs a finger forward mid-confrontation, face hard with anger, jaw set, shouting. Slatted light, deep shadow, charged air. Slow dolly in, moody, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_105206_aa7a73cd-7c11-4af8-b0d9-35eb44a9adee.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-emotion-angry-5",
+      "r2_key": "tag-emotion-angry-5-v1.mp4",
+      "job_id": "e23d21db-0f97-4706-8c66-4ba1c30ce816",
+      "title": "Neon Fury",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static Wide",
+      "prompt": "Cyberpunk style, neon blue-magenta wash, rain reflections. A cramped neon alley at night, glowing signs, puddles. A person in a wet jacket slams a fist against a wall in fury, face twisted in rage, neon glaring. Steam, flickering signs, hard reflections. Static wide, intense, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_105212_e23d21db-0f97-4706-8c66-4ba1c30ce816.mp4"
+    },
+    {
+      "index": 6,
+      "id": "tag-emotion-angry-6",
+      "r2_key": "tag-emotion-angry-6-v1.mp4",
+      "job_id": "76331304-9b3f-47df-9a47-f030bfe8de5f",
+      "title": "Road Rage",
+      "shotType": "Close-Up",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Cinematic photoreal, harsh daylight grade. Inside a car in gridlocked traffic, sun glaring off windshields. A person grips the wheel and slams the horn, face red with fury, shouting through the glass. Heat shimmer, blaring chaos, hard light. Slow dolly in, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_105219_76331304-9b3f-47df-9a47-f030bfe8de5f.mp4"
+    },
+    {
+      "index": 7,
+      "id": "tag-emotion-angry-7",
+      "r2_key": "tag-emotion-angry-7-v1.mp4",
+      "job_id": "49a65c92-e620-43f5-bb56-cbad4cc2b105",
+      "title": "Against the Sky",
+      "shotType": "Wide Shot",
+      "cameraMove": "Low Angle Tilt Up",
+      "prompt": "Ghibli-inspired hand-painted style, dramatic stormy palette. A windswept ridge under a dark churning sky, grass whipping. A person shakes a raised fist at the heavens in defiant fury, cloak torn sideways by the gale. Rolling black clouds, lightning glow, driving wind. Low angle tilt up, powerful, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_105225_49a65c92-e620-43f5-bb56-cbad4cc2b105.mp4"
+    },
+    {
+      "index": 8,
+      "id": "tag-emotion-angry-8",
+      "r2_key": "tag-emotion-angry-8-v1.mp4",
+      "job_id": "bd565d7a-a6a7-44eb-83c4-6eb581f9dbe9",
+      "title": "Objection",
+      "shotType": "Medium Shot",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Cinematic photoreal, formal courtroom grade. A wood-paneled courtroom, tall windows, a raised bench. A person in a sharp suit slams both hands on the table and rises in outrage, face hard with anger, mid-shout. Shafts of daylight, polished wood, tense gallery. Slow dolly in, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_105230_bd565d7a-a6a7-44eb-83c4-6eb581f9dbe9.mp4"
+    },
+    {
+      "index": 9,
+      "id": "tag-emotion-angry-9",
+      "r2_key": "tag-emotion-angry-9-v1.mp4",
+      "job_id": "fc838059-6d94-43b6-ac8d-2b36b8143ccc",
+      "title": "The Protest",
+      "shotType": "Wide Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Cinematic photoreal, gritty daylight grade. A crowded city protest, signs and smoke, banners overhead. A person at the front shouts through a megaphone with fierce anger, fist raised, crowd surging behind. Flares, drifting smoke, harsh light. Handheld push, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_105235_fc838059-6d94-43b6-ac8d-2b36b8143ccc.mp4"
+    },
+    {
+      "index": 10,
+      "id": "tag-emotion-angry-10",
+      "r2_key": "tag-emotion-angry-10-v1.mp4",
+      "job_id": "0e957ecc-72d7-49f6-8614-d3822a62d709",
+      "title": "Fuming",
+      "shotType": "Medium Shot",
+      "cameraMove": "Orbit Left",
+      "prompt": "3D animated feature style, glossy rendering, hot palette. A stylized room, exaggerated props. A person stomps and throws their arms down in a furious tantrum, face scrunched in comic rage, steam-like fury. Bold key light, glossy highlights, dynamic pose. Orbit left, expressive, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_105248_0e957ecc-72d7-49f6-8614-d3822a62d709.mp4"
+    },
+    {
+      "index": 11,
+      "id": "tag-emotion-angry-11",
+      "r2_key": "tag-emotion-angry-11-v1.mp4",
+      "job_id": "a4e59cf7-1e03-4066-8606-a95aae91c011",
+      "title": "The Argument",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static Wide",
+      "prompt": "Watercolor illustration style, tense muted palette, loose edges. A small kitchen in evening light, dishes on the counter. A person jabs a pointed finger across the table in a heated argument, face tight with anger, mid-shout. Warm-cold contrast, soft washes, charged air. Static wide, expressive, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_105254_a4e59cf7-1e03-4066-8606-a95aae91c011.mp4"
+    },
+    {
+      "index": 12,
+      "id": "tag-emotion-angry-12",
+      "r2_key": "tag-emotion-angry-12-v1.mp4",
+      "job_id": "8388e8d1-b824-4caa-8f9c-9f3742d65072",
+      "title": "The Ultimatum",
+      "shotType": "Medium Shot",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Cinematic photoreal, harsh locker-room grade. A team locker room, metal lockers, hard overhead light. A person in a coach's jacket leans in and points, face hard with furious intensity, delivering a blistering ultimatum. Cool overhead light, deep shadow, tension. Slow dolly in, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_105301_8388e8d1-b824-4caa-8f9c-9f3742d65072.mp4"
+    },
+    {
+      "index": 13,
+      "id": "tag-emotion-angry-13",
+      "r2_key": "tag-emotion-angry-13-v1.mp4",
+      "job_id": "8f69a505-6827-4ce8-8ec6-744774280c90",
+      "title": "War Cry",
+      "shotType": "Wide Shot",
+      "cameraMove": "Low Angle Tilt Up",
+      "prompt": "Anime aesthetic, bold epic palette, dramatic sky. A battle-scarred field under a stormy sky, banners torn. A person in armor throws their head back in a furious war cry, fists clenched, energy blazing around them. Blowing ash, dramatic rim light, charged air. Low angle tilt up, intense, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_105307_8f69a505-6827-4ce8-8ec6-744774280c90.mp4"
+    },
+    {
+      "index": 14,
+      "id": "tag-emotion-angry-14",
+      "r2_key": "tag-emotion-angry-14-v1.mp4",
+      "job_id": "4147ac23-3a3e-48ee-a3a7-c756bfe13bb0",
+      "title": "The Last Straw",
+      "shotType": "Medium Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Cinematic photoreal, cold tense grade. A dim office at night, a laptop and papers on a desk, blinds behind. A person hurls a stack of papers to the floor in furious frustration, face contorted, mid-throw. Cool light, hard shadow, scattering paper. Handheld push, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_105316_4147ac23-3a3e-48ee-a3a7-c756bfe13bb0.mp4"
+    }
+  ]
+}

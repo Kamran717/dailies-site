@@ -1,0 +1,83 @@
+{
+  "collection": "impossible / Through-the-Mirror Portal",
+  "id_prefix": "tag-impossible-through-the-mirror-portal",
+  "visible_limit": 6,
+  "limit_key": "Through-the-Mirror Portal",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "impossible": "Through-the-Mirror Portal",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-impossible-through-the-mirror-portal-0",
+      "r2_key": "tag-impossible-through-the-mirror-portal-0-v1.mp4",
+      "job_id": "bad2e63d-781f-45e1-9ed5-347fef5a0247",
+      "title": "The Bedroom",
+      "impossible": "Through-the-Mirror Portal",
+      "shotType": "Medium Shot",
+      "cameraMove": "Push In",
+      "prompt": "Cinematic VFX, one continuous impossible move. A person stands before a tall bedroom mirror, and the camera pushes forward with them impossibly through the mirror's surface, which ripples like water, emerging into a mirror-world version of the room beyond. A person in casual clothes. Seamless mirror-portal transition, rippling surface, otherworldly, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_064241_bad2e63d-781f-45e1-9ed5-347fef5a0247.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-impossible-through-the-mirror-portal-1",
+      "r2_key": "tag-impossible-through-the-mirror-portal-1-v1.mp4",
+      "job_id": "ffb50200-728d-4bc8-bd82-6153b66dfabe",
+      "title": "The Antique",
+      "impossible": "Through-the-Mirror Portal",
+      "shotType": "Medium Shot",
+      "cameraMove": "Push In",
+      "prompt": "Cinematic VFX, one continuous impossible move. A person reaches toward an ornate antique mirror and the camera glides with them impossibly through the glass, its surface shimmering, emerging into a fantastical dreamlike realm on the other side. A person in elegant clothes. Seamless mirror-portal transition, shimmering surface, otherworldly, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_064250_ffb50200-728d-4bc8-bd82-6153b66dfabe.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-impossible-through-the-mirror-portal-2",
+      "r2_key": "tag-impossible-through-the-mirror-portal-2-v1.mp4",
+      "job_id": "68511780-32e8-4166-bf29-3343e86d996a",
+      "title": "The Dressing Room",
+      "impossible": "Through-the-Mirror Portal",
+      "shotType": "Medium Shot",
+      "cameraMove": "Push In",
+      "prompt": "Cinematic VFX, one continuous impossible move. A person steps toward a lit dressing-room mirror and the camera moves with them impossibly through its rippling surface, emerging into a completely different glamorous scene on the far side. A person in stylish clothes. Seamless mirror-portal transition, rippling surface, otherworldly, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_064257_68511780-32e8-4166-bf29-3343e86d996a.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-impossible-through-the-mirror-portal-3",
+      "r2_key": "tag-impossible-through-the-mirror-portal-3-v1.mp4",
+      "job_id": "24cd9503-b3a5-41de-ae2e-ce9e2b2073fa",
+      "title": "The Lake",
+      "impossible": "Through-the-Mirror Portal",
+      "shotType": "Medium Shot",
+      "cameraMove": "Push In",
+      "prompt": "Cinematic VFX, one continuous impossible move. A person stands at the edge of a mirror-still lake and the camera dives with them impossibly through the reflective surface as it ripples, emerging into a luminous underwater dream-world below. A person in flowing clothes. Seamless mirror-portal transition, rippling water surface, otherworldly, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_064303_24cd9503-b3a5-41de-ae2e-ce9e2b2073fa.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-impossible-through-the-mirror-portal-4",
+      "r2_key": "tag-impossible-through-the-mirror-portal-4-v1.mp4",
+      "job_id": "76f620e6-46d7-4a21-900b-61b684c51b00",
+      "title": "The Window",
+      "impossible": "Through-the-Mirror Portal",
+      "shotType": "Medium Shot",
+      "cameraMove": "Push In",
+      "prompt": "Cinematic VFX, one continuous impossible move. A person faces a shop window and the camera passes with them impossibly through the reflective glass, its surface rippling, emerging onto a completely different dreamlike street on the other side. A person in a coat. Seamless mirror-portal transition, rippling glass, otherworldly, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_064310_76f620e6-46d7-4a21-900b-61b684c51b00.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-impossible-through-the-mirror-portal-5",
+      "r2_key": "tag-impossible-through-the-mirror-portal-5-v1.mp4",
+      "job_id": "7f9faebb-3a4b-4c6e-9f49-4833c59830ae",
+      "title": "The Hall",
+      "impossible": "Through-the-Mirror Portal",
+      "shotType": "Medium Shot",
+      "cameraMove": "Push In",
+      "prompt": "Cinematic VFX, one continuous impossible move. A person approaches a grand hall of mirrors and the camera glides with them impossibly through one rippling mirror, emerging into an infinite surreal reflection-world beyond. A person in formal clothes. Seamless mirror-portal transition, rippling surface, otherworldly, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_064318_7f9faebb-3a4b-4c6e-9f49-4833c59830ae.mp4"
+    }
+  ]
+}

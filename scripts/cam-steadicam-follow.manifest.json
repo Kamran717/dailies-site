@@ -1,0 +1,77 @@
+{
+  "collection": "cameraMove / Steadicam Follow",
+  "id_prefix": "tag-cameramove-steadicam-follow",
+  "visible_limit": 6,
+  "limit_key": "Steadicam Follow",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "camera_move": "Steadicam Follow",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-cameramove-steadicam-follow-0",
+      "r2_key": "tag-cameramove-steadicam-follow-0-v1.mp4",
+      "job_id": "a6100289-08bb-4243-8779-dce7fbe58392",
+      "title": "Through the Kitchen",
+      "shotType": "Medium Shot",
+      "cameraMove": "Steadicam Follow",
+      "prompt": "Live-action photoreal, present day, warm bustling grade. A busy restaurant kitchen mid-service, cooks working, steam and flames, ticket rail. Evening, energy. A person in a smart jacket walks confidently through the kitchen toward the dining room. The camera follows smoothly behind them on a steadicam, gliding through the space in one continuous move. Warm work-lights, steam, motion, 35mm, steadicam follow. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_081913_a6100289-08bb-4243-8779-dce7fbe58392.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-cameramove-steadicam-follow-1",
+      "r2_key": "tag-cameramove-steadicam-follow-1-v1.mp4",
+      "job_id": "a3fa58df-a7cf-445d-ac7b-2f80684a58a0",
+      "title": "The Rounds",
+      "shotType": "Medium Shot",
+      "cameraMove": "Steadicam Follow",
+      "prompt": "Live-action photoreal, present day, clean clinical grade. A busy hospital corridor, staff and gurneys, bright overhead lights, signage. Day. A person in a white coat with a clipboard strides purposefully down the corridor. The camera follows smoothly behind them on a steadicam, gliding along the hallway in one continuous move. Cool even light, motion, 35mm, steadicam follow. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_081919_a3fa58df-a7cf-445d-ac7b-2f80684a58a0.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-cameramove-steadicam-follow-2",
+      "r2_key": "tag-cameramove-steadicam-follow-2-v1.mp4",
+      "job_id": "1dd25e03-dd1c-4256-9373-66c11da08195",
+      "title": "The Party",
+      "shotType": "Medium Shot",
+      "cameraMove": "Steadicam Follow",
+      "prompt": "Live-action photoreal, present day, glamorous grade. A lavish crowded party, chandeliers, guests in formalwear, waiters with trays. Night, warm buzz. A person in elegant evening attire moves through the crowd, greeting people. The camera follows smoothly behind them on a steadicam, weaving through the party in one continuous move. Warm party light, bokeh, motion, 35mm, steadicam follow. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_081925_1dd25e03-dd1c-4256-9373-66c11da08195.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-cameramove-steadicam-follow-3",
+      "r2_key": "tag-cameramove-steadicam-follow-3-v1.mp4",
+      "job_id": "4ccdca63-00a9-4cfb-aeb3-629ebd9736bf",
+      "title": "The Floor",
+      "shotType": "Wide Shot",
+      "cameraMove": "Steadicam Follow",
+      "prompt": "Live-action photoreal, present day, industrial grade. A vast factory floor, machinery, sparks, overhead cranes, workers. Day, hard light. A person in a hard hat and hi-vis vest walks the floor inspecting the line. The camera follows smoothly behind them on a steadicam, gliding along the production line in one continuous move. Hard industrial light, sparks, motion, 35mm, steadicam follow. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_081932_4ccdca63-00a9-4cfb-aeb3-629ebd9736bf.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-cameramove-steadicam-follow-4",
+      "r2_key": "tag-cameramove-steadicam-follow-4-v1.mp4",
+      "job_id": "dbb6ccf6-2cc8-4a27-acbd-eb2cc59f193b",
+      "title": "Backstage",
+      "shotType": "Medium Shot",
+      "cameraMove": "Steadicam Follow",
+      "prompt": "Live-action photoreal, present day, dramatic grade. A backstage passage of a theater, ropes, crates, crew, glowing stage light at the far end. Night, anticipation. A person in a stage costume walks briskly toward the stage entrance. The camera follows smoothly behind them on a steadicam, gliding through the backstage toward the light in one continuous move. Warm stage glow ahead, dim wings, motion, 35mm, steadicam follow. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_081939_dbb6ccf6-2cc8-4a27-acbd-eb2cc59f193b.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-cameramove-steadicam-follow-5",
+      "r2_key": "tag-cameramove-steadicam-follow-5-v1.mp4",
+      "job_id": "4c09863f-6e45-4f12-87b6-28a2d20a98b1",
+      "title": "The Trek",
+      "shotType": "Wide Shot",
+      "cameraMove": "Steadicam Follow",
+      "prompt": "Live-action photoreal, present day, natural grade. A lush forest trail, dappled light, ferns and moss, a winding path ahead. Morning, warm. A person in hiking gear with a backpack walks steadily along the trail. The camera follows smoothly behind them on a steadicam, gliding along the path in one continuous move. Warm dappled light, green depth, motion, 35mm, steadicam follow. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_081945_4c09863f-6e45-4f12-87b6-28a2d20a98b1.mp4"
+    }
+  ]
+}

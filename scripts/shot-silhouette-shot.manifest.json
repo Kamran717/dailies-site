@@ -1,0 +1,77 @@
+{
+  "collection": "shotType / Silhouette Shot",
+  "id_prefix": "tag-shottype-silhouette-shot",
+  "visible_limit": 6,
+  "limit_key": "Silhouette Shot",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "shot_type": "Silhouette Shot",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-shottype-silhouette-shot-0",
+      "r2_key": "tag-shottype-silhouette-shot-0-v1.mp4",
+      "job_id": "325d5aed-30fc-4cc8-8e49-600fd0e3e5e0",
+      "title": "Sundown",
+      "shotType": "Silhouette Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, dramatic grade. A blazing orange sunset over the ocean, the sky glowing, the sun low on the water. A silhouette shot: a person stands on the beach fully backlit, rendered as a pure dark silhouette against the fiery sky, features lost to shadow. A person in a flowing dress. Intense backlight, rich sunset color, 50mm, silhouette. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_164327_325d5aed-30fc-4cc8-8e49-600fd0e3e5e0.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-shottype-silhouette-shot-1",
+      "r2_key": "tag-shottype-silhouette-shot-1-v1.mp4",
+      "job_id": "25f66f7d-bf9c-4122-9126-e8ae874f96c1",
+      "title": "The Doorway",
+      "shotType": "Silhouette Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, moody grade. A dark interior facing a doorway blazing with bright light beyond. A silhouette shot: a person stands in the bright doorway, rendered as a stark dark silhouette against the glow, edges rimmed with light. A person in a long coat. Hard backlight, deep black foreground, 50mm, silhouette. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_164333_25f66f7d-bf9c-4122-9126-e8ae874f96c1.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-shottype-silhouette-shot-2",
+      "r2_key": "tag-shottype-silhouette-shot-2-v1.mp4",
+      "job_id": "b8e8d0d7-3c01-477d-a715-1f2b3c86b83d",
+      "title": "The Window",
+      "shotType": "Silhouette Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, atmospheric grade. A dim room with a large window filled with bright misty morning light. A silhouette shot: a person stands at the window backlit, a dark silhouette against the glowing pane, holding a mug. A person in loungewear. Soft bright backlight, hazy glow, 50mm, silhouette. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_164340_b8e8d0d7-3c01-477d-a715-1f2b3c86b83d.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-shottype-silhouette-shot-3",
+      "r2_key": "tag-shottype-silhouette-shot-3-v1.mp4",
+      "job_id": "c2fc71d0-8384-472e-bae3-4dfe32e4a020",
+      "title": "The Ridge",
+      "shotType": "Silhouette Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, epic grade. A mountain ridge at dawn, the sky glowing behind the peaks, mist below. A silhouette shot: a person stands on the ridge fully backlit against the bright dawn sky, a crisp dark silhouette, arms slightly raised. A person in mountaineering gear. Intense dawn backlight, glowing sky, 50mm, silhouette. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_164348_c2fc71d0-8384-472e-bae3-4dfe32e4a020.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-shottype-silhouette-shot-4",
+      "r2_key": "tag-shottype-silhouette-shot-4-v1.mp4",
+      "job_id": "85b5adee-63ea-4dcd-8b94-d93e613a1ff7",
+      "title": "The Stage",
+      "shotType": "Silhouette Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, theatrical grade. A concert stage in fog, a blazing bank of stage lights behind the performer. A silhouette shot: a person stands center stage fully backlit by the lights, a bold dark silhouette in the haze, arm raised. A person in stage attire. Intense colored backlight, volumetric haze, 50mm, silhouette. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_164355_85b5adee-63ea-4dcd-8b94-d93e613a1ff7.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-shottype-silhouette-shot-5",
+      "r2_key": "tag-shottype-silhouette-shot-5-v1.mp4",
+      "job_id": "91d843fe-8816-4c2f-93c1-fc708cc6d062",
+      "title": "The Overpass",
+      "shotType": "Silhouette Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, urban grade. A city overpass at dusk, the glowing orange sky and distant skyline behind. A silhouette shot: a person stands at the railing backlit against the dusk sky, a clean dark silhouette, looking out. A person in a jacket. Warm dusk backlight, city glow, 50mm, silhouette. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_164401_91d843fe-8816-4c2f-93c1-fc708cc6d062.mp4"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "collection": "shotType / Reflection Shot",
+  "id_prefix": "tag-shottype-reflection-shot",
+  "visible_limit": 6,
+  "limit_key": "Reflection Shot",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "shot_type": "Reflection Shot",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-shottype-reflection-shot-0",
+      "r2_key": "tag-shottype-reflection-shot-0-v1.mp4",
+      "job_id": "cbea91ec-dee1-448d-b38a-2aeeabf1d06d",
+      "title": "The Puddle",
+      "shotType": "Reflection Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, moody grade. A rain-slicked city street at night, a large puddle mirroring glowing neon signs above. A reflection shot: the frame centers on the puddle's mirror image of a person standing above it, their reflection sharp in the water amid the neon. A person in a coat. Cool neon reflections, wet sheen, 35mm, reflection shot. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_164417_cbea91ec-dee1-448d-b38a-2aeeabf1d06d.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-shottype-reflection-shot-1",
+      "r2_key": "tag-shottype-reflection-shot-1-v1.mp4",
+      "job_id": "5e1c0bf1-80e7-46e1-99d6-3de16e202826",
+      "title": "The Mirror",
+      "shotType": "Reflection Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, intimate grade. A dim room with an ornate wall mirror, warm lamp nearby. A reflection shot: the frame is composed on the mirror, showing a person's reflection sharply as they stand before it, the real person partly out of frame. A person in elegant attire. Warm lamplight, soft reflection, 50mm, reflection shot. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_164423_5e1c0bf1-80e7-46e1-99d6-3de16e202826.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-shottype-reflection-shot-2",
+      "r2_key": "tag-shottype-reflection-shot-2-v1.mp4",
+      "job_id": "53571365-61d6-429c-b269-22d1db9f81b9",
+      "title": "Still Water",
+      "shotType": "Reflection Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, serene grade. A perfectly still mountain lake at dawn, mirror-flat water reflecting the peaks and sky. A reflection shot: the frame centers on the water's mirror image of a person standing at the shore, their reflection crisp on the surface. A person in a warm coat. Soft dawn light, glassy reflection, 35mm, reflection shot. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_164429_53571365-61d6-429c-b269-22d1db9f81b9.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-shottype-reflection-shot-3",
+      "r2_key": "tag-shottype-reflection-shot-3-v1.mp4",
+      "job_id": "5511ba33-6b12-4994-b38e-f2a6350fed23",
+      "title": "The Glass",
+      "shotType": "Reflection Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, sleek grade. A modern skyscraper window at dusk, the glass reflecting the person while the city glows through it. A reflection shot: the frame captures a person's reflection in the floor-to-ceiling glass, overlaid on the city lights beyond. A person in business attire. Cool glass reflection, city bokeh, 50mm, reflection shot. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_164436_5511ba33-6b12-4994-b38e-f2a6350fed23.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-shottype-reflection-shot-4",
+      "r2_key": "tag-shottype-reflection-shot-4-v1.mp4",
+      "job_id": "e39d4c04-3a15-415f-ad5b-6c50918ae54d",
+      "title": "The Mirror Wall",
+      "shotType": "Reflection Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, stylish grade. A dance studio with a full mirrored wall, pale wood floor, soft light. A reflection shot: the frame is composed on the mirror wall, showing a person's reflection sharply as they hold a pose, doubling the space. A person in dancewear. Soft daylight, clean reflection, 35mm, reflection shot. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_164442_e39d4c04-3a15-415f-ad5b-6c50918ae54d.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-shottype-reflection-shot-5",
+      "r2_key": "tag-shottype-reflection-shot-5-v1.mp4",
+      "job_id": "b7b44f87-fb1a-40cc-b519-1212f420f1ad",
+      "title": "The Sunglasses",
+      "shotType": "Reflection Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, crisp grade. A bright sunny street, vivid and colorful. A reflection shot: a tight frame on a person's mirrored sunglasses, the sunlit street scene reflected clearly in the lenses, the person's face around them. A person in summer style with reflective sunglasses. Bright warm light, sharp lens reflection, 85mm, reflection shot. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_164456_b7b44f87-fb1a-40cc-b519-1212f420f1ad.mp4"
+    }
+  ]
+}

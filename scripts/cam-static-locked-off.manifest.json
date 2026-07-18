@@ -1,0 +1,77 @@
+{
+  "collection": "cameraMove / Static Locked-off",
+  "id_prefix": "tag-cameramove-static-locked-off",
+  "visible_limit": 6,
+  "limit_key": "Static Locked-off",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "camera_move": "Static Locked-off",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-cameramove-static-locked-off-0",
+      "r2_key": "tag-cameramove-static-locked-off-0-v1.mp4",
+      "job_id": "a1104948-a5f1-4e5f-a418-bab6e2f4ac69",
+      "title": "The Doorway",
+      "shotType": "Wide Shot",
+      "cameraMove": "Static Locked-off",
+      "prompt": "Live-action photoreal, present day, composed grade. A dim interior looking toward a bright doorway, a person framed in the lit rectangle beyond, silhouetted edges. Day, contrast. A person in a coat stands in the doorway, then steps forward. The camera is completely static and locked off on a tripod, a fixed composed frame, no movement, while the subject moves within it. Bright doorway against dark interior, 35mm, static locked-off shot. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_093629_a1104948-a5f1-4e5f-a418-bab6e2f4ac69.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-cameramove-static-locked-off-1",
+      "r2_key": "tag-cameramove-static-locked-off-1-v1.mp4",
+      "job_id": "d551093d-d449-4347-b0df-ed3cc282f3f2",
+      "title": "The Window",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static Locked-off",
+      "prompt": "Live-action photoreal, present day, quiet grade. A cozy room with a large window, soft daylight, a plant on the sill. Morning, gentle. A person in a sweater stands at the window with a mug, gazing out, then sips. The camera is completely static and locked off on a tripod, a fixed composed frame, no movement, while the subject shifts within it. Soft window light, warm interior, 40mm, static locked-off shot. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_093635_d551093d-d449-4347-b0df-ed3cc282f3f2.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-cameramove-static-locked-off-2",
+      "r2_key": "tag-cameramove-static-locked-off-2-v1.mp4",
+      "job_id": "53341826-8d1a-43ff-b4d7-ad8d4e1c126c",
+      "title": "The Counter",
+      "shotType": "Wide Shot",
+      "cameraMove": "Static Locked-off",
+      "prompt": "Live-action photoreal, present day, nostalgic grade. A classic diner interior, a long counter, stools, chrome and warm neon. Evening, quiet. A person in a jacket sits at the counter with a coffee, turning a cup slowly. The camera is completely static and locked off on a tripod, a fixed symmetrical frame, no movement, while the subject moves within it. Warm diner light, cool neon, 35mm, static locked-off shot. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_093642_53341826-8d1a-43ff-b4d7-ad8d4e1c126c.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-cameramove-static-locked-off-3",
+      "r2_key": "tag-cameramove-static-locked-off-3-v1.mp4",
+      "job_id": "672f7a87-68fd-4511-8894-9e19a16e7e81",
+      "title": "The Bench",
+      "shotType": "Wide Shot",
+      "cameraMove": "Static Locked-off",
+      "prompt": "Live-action photoreal, present day, gentle grade. A park bench beneath a large tree, dappled light, a path and greenery. Afternoon, warm. A person in casual clothes sits on the bench reading, turning a page. The camera is completely static and locked off on a tripod, a fixed composed frame, no movement, while the subject shifts within it. Warm dappled light, soft green, 40mm, static locked-off shot. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_093648_672f7a87-68fd-4511-8894-9e19a16e7e81.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-cameramove-static-locked-off-4",
+      "r2_key": "tag-cameramove-static-locked-off-4-v1.mp4",
+      "job_id": "313ef38d-3de1-4656-9d3e-55897b8dd11c",
+      "title": "The Platform",
+      "shotType": "Wide Shot",
+      "cameraMove": "Static Locked-off",
+      "prompt": "Live-action photoreal, present day, still grade. An empty train platform, symmetrical tracks and pillars receding, soft overhead light. Day, quiet. A person with a bag stands alone on the platform, checking the time, then looking down the line. The camera is completely static and locked off on a tripod, a fixed symmetrical frame, no movement, while the subject stands within it. Even soft light, clean symmetry, 35mm, static locked-off shot. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_093656_313ef38d-3de1-4656-9d3e-55897b8dd11c.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-cameramove-static-locked-off-5",
+      "r2_key": "tag-cameramove-static-locked-off-5-v1.mp4",
+      "job_id": "47c69373-f49c-45c7-a220-5a966edc4a8f",
+      "title": "Midnight Kitchen",
+      "shotType": "Wide Shot",
+      "cameraMove": "Static Locked-off",
+      "prompt": "Live-action photoreal, present day, moody grade. A quiet home kitchen at night, a single warm pendant light over the counter, dark edges. Night, calm. A person in loungewear stands at the counter making tea, moving unhurriedly. The camera is completely static and locked off on a tripod, a fixed composed frame, no movement, while the subject moves within it. Warm pendant light, soft dark, 40mm, static locked-off shot. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_093704_47c69373-f49c-45c7-a220-5a966edc4a8f.mp4"
+    }
+  ]
+}

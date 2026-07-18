@@ -1,0 +1,175 @@
+{
+  "collection": "emotion / Confident",
+  "id_prefix": "tag-emotion-confident",
+  "visible_limit": 15,
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "limit_key": "Confident",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-emotion-confident-0",
+      "r2_key": "tag-emotion-confident-0-v1.mp4",
+      "job_id": "fe8ae47d-7e77-48f0-bf89-2053279b9260",
+      "title": "The Walk",
+      "shotType": "Wide Shot",
+      "cameraMove": "Tracking Side",
+      "prompt": "Cinematic photoreal, crisp cool grade. A sleek city street in daylight, glass towers, sharp shadows. A person in a tailored suit strides toward camera with calm, unshakable confidence, chin level, coat moving. Passing crowd blurred, bright reflections, strong directional light. Tracking side, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_075735_fe8ae47d-7e77-48f0-bf89-2053279b9260.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-emotion-confident-1",
+      "r2_key": "tag-emotion-confident-1-v1.mp4",
+      "job_id": "be48db7c-e197-44bc-9802-1d005875d3c0",
+      "title": "The Boardroom",
+      "shotType": "Medium Shot",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Film-noir style, cool contrast, blinds casting slats of light. A high-rise boardroom, long table, city skyline behind. A person in a sharp suit leans forward on the table with poised authority, steady commanding gaze. Slatted shadow, glass reflections, tension. Slow dolly in, moody, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_075745_be48db7c-e197-44bc-9802-1d005875d3c0.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-emotion-confident-2",
+      "r2_key": "tag-emotion-confident-2-v1.mp4",
+      "job_id": "f7bba294-51cb-40c2-b16b-a43bc2d91bf9",
+      "title": "Rooftop Stance",
+      "shotType": "Wide Shot",
+      "cameraMove": "Low Angle Tilt Up",
+      "prompt": "Anime aesthetic, bold dynamic palette, dramatic sky. A rooftop high above a city at golden hour, wind rushing. A person in a long coat stands in a powerful stance, coat billowing, radiating fearless confidence. Sweeping clouds, warm rim light, city far below. Low angle tilt up, heroic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_075755_f7bba294-51cb-40c2-b16b-a43bc2d91bf9.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-emotion-confident-3",
+      "r2_key": "tag-emotion-confident-3-v1.mp4",
+      "job_id": "aa9a030e-45c7-4ad2-85f8-d65bc29cd17f",
+      "title": "The Runway",
+      "shotType": "Wide Shot",
+      "cameraMove": "Tracking Side",
+      "prompt": "Cinematic photoreal, high-fashion grade. A glossy fashion runway, spotlights, blurred audience. A person in a striking designer outfit struts down the runway with effortless poise and command, chin high. Flashbulbs, glossy floor reflections, sharp key light. Tracking side, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_075805_aa9a030e-45c7-4ad2-85f8-d65bc29cd17f.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-emotion-confident-4",
+      "r2_key": "tag-emotion-confident-4-v1.mp4",
+      "job_id": "436f2be3-b76d-4ffd-85d8-0b041a224cd4",
+      "title": "Unshakable",
+      "shotType": "Medium Shot",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Comic-book illustrated style, bold ink, dramatic palette. A dramatic urban backdrop, strong light beams. A person in a bold outfit stands with arms crossed and a self-assured smirk, radiating confidence. Motion accents, hard shadows, saturated color. Slow dolly in, powerful, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_075811_436f2be3-b76d-4ffd-85d8-0b041a224cd4.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-emotion-confident-5",
+      "r2_key": "tag-emotion-confident-5-v1.mp4",
+      "job_id": "6124aeab-23f6-4425-9f7c-d4de583aea81",
+      "title": "Neon Stride",
+      "shotType": "Tracking Side",
+      "cameraMove": "Tracking Side",
+      "prompt": "Cyberpunk style, neon corridor, blue-magenta wash. A glowing high-tech corridor at night, reflective floor. A person in a sleek jacket strides confidently down the corridor, unbothered and cool, neon streaking past. Lens flares, haze, glossy reflections. Tracking side, energetic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_075821_6124aeab-23f6-4425-9f7c-d4de583aea81.mp4"
+    },
+    {
+      "index": 6,
+      "id": "tag-emotion-confident-6",
+      "r2_key": "tag-emotion-confident-6-v1.mp4",
+      "job_id": "5fd9e16f-5b58-4543-ad5a-f3b32b9cda42",
+      "title": "The Walkout",
+      "shotType": "Wide Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Cinematic photoreal, dramatic stadium-tunnel grade. A dim athlete tunnel leading to bright stadium light ahead, mist. A person in athletic gear walks out toward the light with fierce, focused confidence, crowd roar implied. Backlit haze, lens flare, strong silhouette. Handheld push, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_075830_5fd9e16f-5b58-4543-ad5a-f3b32b9cda42.mp4"
+    },
+    {
+      "index": 7,
+      "id": "tag-emotion-confident-7",
+      "r2_key": "tag-emotion-confident-7-v1.mp4",
+      "job_id": "5a6ea8b7-44a7-4870-bc7b-e124364ae7dd",
+      "title": "Cufflinks",
+      "shotType": "Close-Up",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Cinematic photoreal, refined warm grade. A stylish dressing area, a mirror, warm practical lights. A person in formal wear adjusts their cufflinks with calm precision, a subtle confident smile at their reflection. Warm bokeh, crisp detail, elegant mood. Slow dolly in, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_075837_5a6ea8b7-44a7-4870-bc7b-e124364ae7dd.mp4"
+    },
+    {
+      "index": 8,
+      "id": "tag-emotion-confident-8",
+      "r2_key": "tag-emotion-confident-8-v1.mp4",
+      "job_id": "9ade2ebb-2d1e-4d02-8321-bf30b63fc5df",
+      "title": "Through the Market",
+      "shotType": "Wide Shot",
+      "cameraMove": "Tracking Side",
+      "prompt": "Ghibli-inspired hand-painted style, warm bustling palette. A lively open-air market, stalls and banners, warm daylight. A person walks through the crowd with an easy assured stride and a confident smile, head up. Fluttering flags, dappled sun, painterly bustle. Tracking side, buoyant, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_075845_9ade2ebb-2d1e-4d02-8321-bf30b63fc5df.mp4"
+    },
+    {
+      "index": 9,
+      "id": "tag-emotion-confident-9",
+      "r2_key": "tag-emotion-confident-9-v1.mp4",
+      "job_id": "1c2c4e4a-1b0a-462e-aa6f-7932652a35e9",
+      "title": "Into the Ring",
+      "shotType": "Wide Shot",
+      "cameraMove": "Low Angle Tilt Up",
+      "prompt": "Cinematic photoreal, dramatic arena grade. A boxing arena, a spotlit ring, haze and crowd in shadow. A person in a robe steps toward the ring with fierce, unwavering confidence, hood up, focused. Spotlight beams, drifting haze, hard rim light. Low angle tilt up, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_075852_1c2c4e4a-1b0a-462e-aa6f-7932652a35e9.mp4"
+    },
+    {
+      "index": 10,
+      "id": "tag-emotion-confident-10",
+      "r2_key": "tag-emotion-confident-10-v1.mp4",
+      "job_id": "492a66d9-3418-434c-8f59-e92e01a75eab",
+      "title": "The Stage",
+      "shotType": "Medium Shot",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Cinematic photoreal, dramatic stage grade. A large stage, a single spotlight, dark auditorium beyond. A person in smart attire stands at the mic in the spotlight, poised and commanding, addressing the unseen crowd with confidence. Beam haze, deep black surround, crisp key light. Slow dolly in, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_075900_492a66d9-3418-434c-8f59-e92e01a75eab.mp4"
+    },
+    {
+      "index": 11,
+      "id": "tag-emotion-confident-11",
+      "r2_key": "tag-emotion-confident-11-v1.mp4",
+      "job_id": "4676889e-62a3-4aa3-baac-ce33586dc640",
+      "title": "Center Stage",
+      "shotType": "Wide Shot",
+      "cameraMove": "Orbit Left",
+      "prompt": "3D animated feature style, glossy stylish rendering, bold palette. A stylized spotlighted stage, geometric set. A person in a chic outfit strikes a confident pose and struts, exuding star-quality self-assurance, playful swagger. Glossy highlights, dramatic key light, clean shadows. Orbit left, dynamic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_075906_4676889e-62a3-4aa3-baac-ce33586dc640.mp4"
+    },
+    {
+      "index": 12,
+      "id": "tag-emotion-confident-12",
+      "r2_key": "tag-emotion-confident-12-v1.mp4",
+      "job_id": "36a7a006-57bb-48c5-b5f6-24ea5b0826c6",
+      "title": "Flashbulbs",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static Wide",
+      "prompt": "Cinematic photoreal, glamorous red-carpet grade. A red carpet at night, step-and-repeat backdrop, popping camera flashes. A person in glamorous attire poses with poised, radiant confidence, chin up, faint smile. Flash bursts, warm carpet glow, bokeh crowd. Static wide, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_075926_36a7a006-57bb-48c5-b5f6-24ea5b0826c6.mp4"
+    },
+    {
+      "index": 13,
+      "id": "tag-emotion-confident-13",
+      "r2_key": "tag-emotion-confident-13-v1.mp4",
+      "job_id": "547a11ce-4e84-430a-a6dc-7791c4a4bb86",
+      "title": "Steady Hand",
+      "shotType": "Close-Up",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Film-noir style, warm-cool contrast, deep shadow. A dim room, a single warm light. A person in a sharp coat strikes and lights a match with a steady hand, calm assured gaze in the flare, unshaken. Flickering flame, curling smoke, hard shadow. Slow dolly in, moody, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_075932_547a11ce-4e84-430a-a6dc-7791c4a4bb86.mp4"
+    },
+    {
+      "index": 14,
+      "id": "tag-emotion-confident-14",
+      "r2_key": "tag-emotion-confident-14-v1.mp4",
+      "job_id": "40981f48-eb4e-4af0-bbe8-b4032872ef58",
+      "title": "The Rider",
+      "shotType": "Medium Shot",
+      "cameraMove": "Orbit Left",
+      "prompt": "Cinematic photoreal, cool urban grade. A city street at dusk, a parked motorcycle, glowing signs. A person in a leather jacket leans on the bike and removes a helmet, shaking out with cool, easy confidence, faint smirk. Neon glow, wet sheen, dusk sky. Orbit left, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_075939_40981f48-eb4e-4af0-bbe8-b4032872ef58.mp4"
+    }
+  ]
+}

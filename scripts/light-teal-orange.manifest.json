@@ -1,0 +1,77 @@
+{
+  "collection": "lighting / Teal & Orange",
+  "id_prefix": "tag-lighting-teal-orange",
+  "visible_limit": 6,
+  "limit_key": "Teal & Orange",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "lighting": "Teal & Orange",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-lighting-teal-orange-0",
+      "r2_key": "tag-lighting-teal-orange-0-v1.mp4",
+      "job_id": "f2883cb2-ad9a-4daa-9d89-e30f55f9e970",
+      "title": "The Hangar",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, blockbuster grade. A large aircraft hangar at night. The scene uses a bold teal-and-orange split-lighting look: cool teal light fills the shadows and background while a warm orange key light hits the person from the side, the classic cinematic color contrast. A person in a flight jacket stands in the hangar. Teal shadows, warm orange key, high production grade, 35mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_040608_f2883cb2-ad9a-4daa-9d89-e30f55f9e970.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-lighting-teal-orange-1",
+      "r2_key": "tag-lighting-teal-orange-1-v1.mp4",
+      "job_id": "031af47a-d83d-43f0-94f0-af53af205b29",
+      "title": "The Street",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, blockbuster grade. A rain-slicked city street at night. The scene uses a bold teal-and-orange split-lighting look: cool teal fills the wet background while warm orange streetlight rims the person, cinematic color contrast on the wet asphalt. A person in a leather jacket stands on the street. Teal shadows, warm orange rim, wet reflections, 35mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_040615_031af47a-d83d-43f0-94f0-af53af205b29.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-lighting-teal-orange-2",
+      "r2_key": "tag-lighting-teal-orange-2-v1.mp4",
+      "job_id": "c168b27e-c7b6-42e0-a7d2-7d97a09cdedd",
+      "title": "The Bridge",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Sci-Fi style, near-future, blockbuster grade. A spaceship control deck. The scene uses a bold teal-and-orange split-lighting look: cool teal glow from the screens fills the background while a warm orange key hits the person, cinematic contrast. A person in a technical flight suit stands at the console. Teal screen glow, warm orange key, 35mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_040625_c168b27e-c7b6-42e0-a7d2-7d97a09cdedd.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-lighting-teal-orange-3",
+      "r2_key": "tag-lighting-teal-orange-3-v1.mp4",
+      "job_id": "9afc5d0e-90a1-4710-87a8-85892a655281",
+      "title": "The Warehouse",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, blockbuster grade. A dim industrial warehouse at night. The scene uses a bold teal-and-orange split-lighting look: cool teal fills the cavernous shadows while a warm orange work-light keys the person, cinematic color contrast. A person in a rugged jacket stands among crates. Teal shadows, warm orange key, 35mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_040631_9afc5d0e-90a1-4710-87a8-85892a655281.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-lighting-teal-orange-4",
+      "r2_key": "tag-lighting-teal-orange-4-v1.mp4",
+      "job_id": "73e56b38-b973-4f88-ab97-a15f4ee8ddf4",
+      "title": "The Drive",
+      "shotType": "Close-Up",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, blockbuster grade. Inside a car at night, city lights passing. The scene uses a bold teal-and-orange split-lighting look: cool teal light from the windows fills the shadows while warm orange streetlights wash the person's face, cinematic contrast. A person in a jacket sits at the wheel. Teal window glow, warm orange wash, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_040637_73e56b38-b973-4f88-ab97-a15f4ee8ddf4.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-lighting-teal-orange-5",
+      "r2_key": "tag-lighting-teal-orange-5-v1.mp4",
+      "job_id": "d3779598-c230-47a0-b9b8-ad7b0d38f3e0",
+      "title": "The Rooftop",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, blockbuster grade. A city rooftop at dusk, skyline behind. The scene uses a bold teal-and-orange split-lighting look: cool teal fills the twilight sky and shadows while a warm orange key rims the person, cinematic color contrast. A person in a coat stands at the edge. Teal twilight, warm orange rim, 35mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_040643_d3779598-c230-47a0-b9b8-ad7b0d38f3e0.mp4"
+    }
+  ]
+}

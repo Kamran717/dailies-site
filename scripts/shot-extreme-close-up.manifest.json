@@ -1,0 +1,77 @@
+{
+  "collection": "shotType / Extreme Close-Up",
+  "id_prefix": "tag-shottype-extreme-close-up",
+  "visible_limit": 6,
+  "limit_key": "Extreme Close-Up",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "shot_type": "Extreme Close-Up",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-shottype-extreme-close-up-0",
+      "r2_key": "tag-shottype-extreme-close-up-0-v1.mp4",
+      "job_id": "ac763d5e-52b1-4b87-80e8-81f07dc5d18a",
+      "title": "The Reflection",
+      "shotType": "Extreme Close-Up",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, intense grade. A dark room lit only by flickering firelight. An extreme close-up that fills the entire frame with a single human eye, the dancing flames reflected in the wet iris, lashes and skin texture razor-sharp. The eye widens slightly. Warm firelight, deep black surround, macro 100mm, extreme close-up. Ultra-shallow focus, fine grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_142905_ac763d5e-52b1-4b87-80e8-81f07dc5d18a.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-shottype-extreme-close-up-1",
+      "r2_key": "tag-shottype-extreme-close-up-1-v1.mp4",
+      "job_id": "0ef95abb-6f2c-48ab-a696-8b465059ecf7",
+      "title": "The Keepsake",
+      "shotType": "Extreme Close-Up",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, tender grade. Soft window light in a quiet room. An extreme close-up filling the frame with a pair of hands cradling an open silver locket, thumbs trembling slightly over a tiny faded photo inside, skin and metal detail crisp. Soft warm light, blurred background, macro 100mm, extreme close-up. Ultra-shallow focus, fine grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_142913_0ef95abb-6f2c-48ab-a696-8b465059ecf7.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-shottype-extreme-close-up-2",
+      "r2_key": "tag-shottype-extreme-close-up-2-v1.mp4",
+      "job_id": "d8db98ab-3cf0-41e4-95f4-ec00f4ed1ba0",
+      "title": "The Secret",
+      "shotType": "Extreme Close-Up",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, intimate grade. Dim warm interior. An extreme close-up filling the frame with a pair of lips parting to whisper, breath just visible, fine detail of skin and teeth, the rest of the face out of frame. Warm low light, soft shadow, macro 100mm, extreme close-up. Ultra-shallow focus, fine grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_142919_d8db98ab-3cf0-41e4-95f4-ec00f4ed1ba0.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-shottype-extreme-close-up-3",
+      "r2_key": "tag-shottype-extreme-close-up-3-v1.mp4",
+      "job_id": "d56730a4-ed7f-49d4-81b1-9a3f86cd289a",
+      "title": "The Countdown",
+      "shotType": "Extreme Close-Up",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, tense grade. Cool interior light. An extreme close-up filling the frame with a vintage wristwatch face on a wrist, the second hand sweeping, tiny reflections on the glass, the numerals and hands crisp. Cool light with a warm glint, macro 100mm, extreme close-up. Ultra-shallow focus, fine grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_142926_d56730a4-ed7f-49d4-81b1-9a3f86cd289a.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-shottype-extreme-close-up-4",
+      "r2_key": "tag-shottype-extreme-close-up-4-v1.mp4",
+      "job_id": "0989ded4-33ec-4533-9ad9-d4b9a7aa057c",
+      "title": "The Tear",
+      "shotType": "Extreme Close-Up",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, emotional grade. Soft grey daylight. An extreme close-up filling the frame with a single tear welling and rolling down a cheek, catching the light, fine skin texture and the glisten of the tear sharp, the rest of the face soft. Soft cool light, macro 100mm, extreme close-up. Ultra-shallow focus, fine grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_142932_0989ded4-33ec-4533-9ad9-d4b9a7aa057c.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-shottype-extreme-close-up-5",
+      "r2_key": "tag-shottype-extreme-close-up-5-v1.mp4",
+      "job_id": "de643fea-57c0-4c58-a9f6-8cf4aba223fa",
+      "title": "The First Note",
+      "shotType": "Extreme Close-Up",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, elegant grade. Warm stage light. An extreme close-up filling the frame with fingertips pressing down on ivory piano keys, the felt and grain of the keys visible, a subtle press and release. Warm focused light, deep dark surround, macro 100mm, extreme close-up. Ultra-shallow focus, fine grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_142938_de643fea-57c0-4c58-a9f6-8cf4aba223fa.mp4"
+    }
+  ]
+}

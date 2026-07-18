@@ -1,0 +1,77 @@
+{
+  "collection": "lighting / Hard Sun",
+  "id_prefix": "tag-lighting-hard-sun",
+  "visible_limit": 6,
+  "limit_key": "Hard Sun",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "lighting": "Hard Sun",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-lighting-hard-sun-0",
+      "r2_key": "tag-lighting-hard-sun-0-v1.mp4",
+      "job_id": "e857326b-6a41-4490-9da1-5b353e515c0a",
+      "title": "The Flats",
+      "shotType": "Wide Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A blinding white salt flat under a clear midday sky. The scene is lit by harsh overhead sun, brutally bright and high-contrast, a hard black shadow pooled directly under the person, no clouds. A person in sunglasses and light desert clothes stands on the cracked salt. Harsh direct noon sun, hard shadow, blown highlights, 35mm. Deep focus, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_043623_e857326b-6a41-4490-9da1-5b353e515c0a.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-lighting-hard-sun-1",
+      "r2_key": "tag-lighting-hard-sun-1-v1.mp4",
+      "job_id": "b2d59427-e455-4c17-bbf6-97f0ddfdf0cb",
+      "title": "Noon",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A sunbaked city sidewalk at noon, glaring concrete. The scene is lit by harsh overhead sun, sharp hard-edged shadows, intense contrast, heat shimmer. A person in a summer shirt and sunglasses stands on the pavement. Harsh direct noon sun, hard-edged shadow, glare, 35mm. Deep focus, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_043628_b2d59427-e455-4c17-bbf6-97f0ddfdf0cb.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-lighting-hard-sun-2",
+      "r2_key": "tag-lighting-hard-sun-2-v1.mp4",
+      "job_id": "6b9c2bcd-00c2-41aa-bad0-937ac5278f38",
+      "title": "The Court",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. An outdoor basketball court at midday, bright asphalt. The scene is lit by harsh overhead sun, crisp hard shadows of the hoop and person on the court, high contrast. A person in athletic wear holds a basketball. Harsh direct noon sun, hard shadow, bright glare, 35mm. Deep focus, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_043634_6b9c2bcd-00c2-41aa-bad0-937ac5278f38.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-lighting-hard-sun-3",
+      "r2_key": "tag-lighting-hard-sun-3-v1.mp4",
+      "job_id": "8713185c-96f0-4229-b099-24bd67b7b76d",
+      "title": "The Shore",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A bright beach at midday, white sand and sparkling sea. The scene is lit by harsh overhead sun, intense glare off the water, hard shadow under the person, high contrast. A person in beachwear and sunglasses stands on the sand. Harsh direct noon sun, hard shadow, sea glare, 35mm. Deep focus, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_043638_8713185c-96f0-4229-b099-24bd67b7b76d.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-lighting-hard-sun-4",
+      "r2_key": "tag-lighting-hard-sun-4-v1.mp4",
+      "job_id": "61e87a21-b0d3-43e3-9cb9-c742387ae490",
+      "title": "The Lot",
+      "shotType": "Wide Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A vast empty parking lot at noon, shimmering asphalt. The scene is lit by harsh overhead sun, a stark hard shadow beneath the person, brutal flat glare across the lot. A person in a jacket and sunglasses stands alone. Harsh direct noon sun, hard shadow, heat shimmer, 35mm. Deep focus, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_043646_61e87a21-b0d3-43e3-9cb9-c742387ae490.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-lighting-hard-sun-5",
+      "r2_key": "tag-lighting-hard-sun-5-v1.mp4",
+      "job_id": "976fe964-8bd2-42c9-8830-82d0e610df96",
+      "title": "The Wall",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A bright white stucco wall in full sun. The scene is lit by harsh overhead sun, the person casting a crisp hard-edged shadow on the white wall, extreme contrast, graphic. A person in bold summer clothes stands against the wall. Harsh direct noon sun, hard-edged shadow, white glare, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_043651_976fe964-8bd2-42c9-8830-82d0e610df96.mp4"
+    }
+  ]
+}

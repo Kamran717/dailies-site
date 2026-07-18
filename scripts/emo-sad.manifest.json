@@ -1,0 +1,175 @@
+{
+  "collection": "emotion / Sad",
+  "id_prefix": "tag-emotion-sad",
+  "visible_limit": 15,
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "limit_key": "Sad",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-emotion-sad-0",
+      "r2_key": "tag-emotion-sad-0-v1.mp4",
+      "job_id": "8736487e-853a-467d-9b2f-365eac067322",
+      "title": "Rain on Glass",
+      "shotType": "Close-Up",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Cinematic photoreal, cool desaturated grade. A dim apartment on a rainy afternoon, a window streaked with rain, grey light. A person in a soft sweater rests their forehead against the glass, gaze distant and downcast, quietly heavy with sadness. Blurred city beyond, droplets, muted reflection. Slow dolly in, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_073831_8736487e-853a-467d-9b2f-365eac067322.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-emotion-sad-1",
+      "r2_key": "tag-emotion-sad-1-v1.mp4",
+      "job_id": "fcaf2ab7-03c0-4e28-9cb8-62ab461182d9",
+      "title": "Cold Coffee",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static Wide",
+      "prompt": "Film-noir style, muted teal-and-amber, deep shadows. A near-empty late-night diner, a lone booth, a cold cup of coffee going untouched. A person in a rumpled coat stares down at the table, shoulders sunk, lost in melancholy. Rain on the window, buzzing sign, empty stools. Static wide, moody, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_073837_fcaf2ab7-03c0-4e28-9cb8-62ab461182d9.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-emotion-sad-2",
+      "r2_key": "tag-emotion-sad-2-v1.mp4",
+      "job_id": "c69cef27-5af4-4301-a4ce-fe744360722e",
+      "title": "The Platform",
+      "shotType": "Wide Shot",
+      "cameraMove": "Static Wide",
+      "prompt": "Anime aesthetic, soft muted palette, gentle grain. A quiet train platform at dusk, a train pulling away, empty tracks. A person in a coat and scarf stands alone watching it go, hand half-raised, face crumpling with quiet grief. Falling leaves, cool blue light, steam. Static wide, still and aching, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_073844_c69cef27-5af4-4301-a4ce-fe744360722e.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-emotion-sad-3",
+      "r2_key": "tag-emotion-sad-3-v1.mp4",
+      "job_id": "771506af-8d96-4c37-a878-af0dcaf4645a",
+      "title": "Empty Rooms",
+      "shotType": "Medium Shot",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Cinematic photoreal, pale washed grade. A half-empty apartment, moving boxes, bare walls, dust in a shaft of grey light. A person in casual clothes sits on the floor among the boxes, holding one item, eyes glistening, overwhelmed by sadness. Cold daylight, faded marks where frames hung. Slow dolly in, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_073853_771506af-8d96-4c37-a878-af0dcaf4645a.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-emotion-sad-4",
+      "r2_key": "tag-emotion-sad-4-v1.mp4",
+      "job_id": "bced5ba4-d4b4-4189-9a0f-5b432bad5e01",
+      "title": "Grey Shore",
+      "shotType": "Wide Shot",
+      "cameraMove": "Static Wide",
+      "prompt": "Ghibli-inspired hand-painted style, muted overcast palette. A lonely grey beach under heavy clouds, cold waves rolling in. A small figure in a long coat stands at the waterline, head bowed, utterly alone with their sorrow. Wind-bent grass, distant gulls, soft rain haze. Static wide, painterly melancholy, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_073900_bced5ba4-d4b4-4189-9a0f-5b432bad5e01.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-emotion-sad-5",
+      "r2_key": "tag-emotion-sad-5-v1.mp4",
+      "job_id": "52a10a9a-b005-4fe0-aeb7-5a43b735e0f4",
+      "title": "The Waiting",
+      "shotType": "Wide Shot",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Cinematic photoreal, cold clinical grade. A quiet hospital corridor at night, rows of empty chairs, fluorescent hush. A person sits alone hunched in a waiting-room chair, head in hands, weighed down by grief. Long shadows, a distant flickering light, sterile blue tone. Slow dolly in, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_073906_52a10a9a-b005-4fe0-aeb7-5a43b735e0f4.mp4"
+    },
+    {
+      "index": 6,
+      "id": "tag-emotion-sad-6",
+      "r2_key": "tag-emotion-sad-6-v1.mp4",
+      "job_id": "0be43abc-9b1c-46dd-8c64-dab38037c934",
+      "title": "Under the Rain",
+      "shotType": "Wide Shot",
+      "cameraMove": "Crane Rise",
+      "prompt": "Watercolor illustration style, grey-blue washes, soft bleeding edges. A rainy day at a quiet cemetery, wet grass, a single black umbrella. A person in dark clothes stands still before a headstone, shoulders low, quietly mourning. Falling rain, bare trees, muted world. Crane rise, tender and somber, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_073920_0be43abc-9b1c-46dd-8c64-dab38037c934.mp4"
+    },
+    {
+      "index": 7,
+      "id": "tag-emotion-sad-7",
+      "r2_key": "tag-emotion-sad-7-v1.mp4",
+      "job_id": "c0bc51a9-34d1-4a3e-ac89-54c19b42ae9a",
+      "title": "On the Floor",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static Wide",
+      "prompt": "Cinematic photoreal, dim low-key grade. A dark bedroom lit only by a bedside lamp, unmade bed, clothes on a chair. A person in loungewear sits on the floor against the bed, knees drawn up, crying quietly. Warm-cold contrast, deep shadow, stillness. Static wide, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_073926_c0bc51a9-34d1-4a3e-ac89-54c19b42ae9a.mp4"
+    },
+    {
+      "index": 8,
+      "id": "tag-emotion-sad-8",
+      "r2_key": "tag-emotion-sad-8-v1.mp4",
+      "job_id": "f54656fd-aa0c-4db2-b9f6-78945f7584ee",
+      "title": "Autumn Bench",
+      "shotType": "Wide Shot",
+      "cameraMove": "Orbit Left",
+      "prompt": "Comic-book illustrated style, muted autumn palette, soft ink. A park bench under bare trees, drifting orange leaves, overcast light. A person in a coat sits alone at one end of the bench, staring at nothing, heavy with loneliness. Empty path, scattered leaves, grey sky. Orbit left, quiet, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_073933_f54656fd-aa0c-4db2-b9f6-78945f7584ee.mp4"
+    },
+    {
+      "index": 9,
+      "id": "tag-emotion-sad-9",
+      "r2_key": "tag-emotion-sad-9-v1.mp4",
+      "job_id": "73921197-98ec-4d8b-96d7-bec32a0ecc71",
+      "title": "Parked in the Rain",
+      "shotType": "Medium Shot",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Cinematic photoreal, cool night grade. A car parked on a rainy street at night, windshield running with water, headlights off. A person sits in the driver's seat gripping the wheel, head lowered, tears in their eyes. Streetlight glow through wet glass, blurred rain, muffled quiet. Slow dolly in, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_073939_73921197-98ec-4d8b-96d7-bec32a0ecc71.mp4"
+    },
+    {
+      "index": 10,
+      "id": "tag-emotion-sad-10",
+      "r2_key": "tag-emotion-sad-10-v1.mp4",
+      "job_id": "5d09be1b-2e17-4d70-a5d4-a74a7f942a72",
+      "title": "Neon Rain",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static Wide",
+      "prompt": "Cyberpunk style, rainy neon reflections, blue-magenta wash. A narrow rain-soaked alley, glowing signs, puddles rippling. A person in a wet jacket slumps against a wet wall, gaze hollow and sorrowful, rain running down. Steam, flickering neon, distant hum. Static wide, moody, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_073946_5d09be1b-2e17-4d70-a5d4-a74a7f942a72.mp4"
+    },
+    {
+      "index": 11,
+      "id": "tag-emotion-sad-11",
+      "r2_key": "tag-emotion-sad-11-v1.mp4",
+      "job_id": "ea0bb11c-6dd7-4863-b34e-0882a8bdb5d7",
+      "title": "After Class",
+      "shotType": "Wide Shot",
+      "cameraMove": "Static Wide",
+      "prompt": "Anime aesthetic, dusky amber palette, soft grain. An empty classroom at dusk, rows of desks, orange light through tall windows. A person sits alone at a desk by the window, chin on hand, gazing out with quiet sadness. Dust motes, long shadows, stillness. Static wide, wistful, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_073953_ea0bb11c-6dd7-4863-b34e-0882a8bdb5d7.mp4"
+    },
+    {
+      "index": 12,
+      "id": "tag-emotion-sad-12",
+      "r2_key": "tag-emotion-sad-12-v1.mp4",
+      "job_id": "523315cc-1baa-4ea8-b779-5a2d5bed2c6b",
+      "title": "One Chair",
+      "shotType": "Medium Shot",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Cinematic photoreal, dim warm-cold grade. A kitchen late at night, one chair pulled out at a table, a single mug, a hanging bulb. A person sits alone at the table, staring into the middle distance, heavy with grief. Soft pooled light, deep surrounding dark, quiet. Slow dolly in, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_074003_523315cc-1baa-4ea8-b779-5a2d5bed2c6b.mp4"
+    },
+    {
+      "index": 13,
+      "id": "tag-emotion-sad-13",
+      "r2_key": "tag-emotion-sad-13-v1.mp4",
+      "job_id": "55adfb4d-d9bc-4226-9983-ad0ce84af042",
+      "title": "The Bridge",
+      "shotType": "Wide Shot",
+      "cameraMove": "Crane Rise",
+      "prompt": "Cinematic photoreal, cold dusk grade. A quiet footbridge over a river at dusk, mist on the water, bare trees. A person in a coat leans on the railing looking down at the current, lost in sorrow. Grey-blue light, drifting fog, still water. Crane rise, contemplative, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_074009_55adfb4d-d9bc-4226-9983-ad0ce84af042.mp4"
+    },
+    {
+      "index": 14,
+      "id": "tag-emotion-sad-14",
+      "r2_key": "tag-emotion-sad-14-v1.mp4",
+      "job_id": "cd6ca159-cddc-45cb-8396-7274dce53d5e",
+      "title": "The Photograph",
+      "shotType": "Close-Up",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Ghibli-inspired hand-painted style, dusty warm palette. A quiet attic full of old boxes, a shaft of afternoon light through a small window. A person kneels holding an old photograph, eyes soft and wet with aching nostalgia and grief. Floating dust, faded keepsakes, hush. Slow dolly in, tender, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_074014_cd6ca159-cddc-45cb-8396-7274dce53d5e.mp4"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "collection": "cameraMove / Dutch Roll",
+  "id_prefix": "tag-cameramove-dutch-roll",
+  "visible_limit": 6,
+  "limit_key": "Dutch Roll",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "camera_move": "Dutch Roll",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-cameramove-dutch-roll-0",
+      "r2_key": "tag-cameramove-dutch-roll-0-v1.mp4",
+      "job_id": "1bc9fabd-0775-4bfd-8c09-00e01c4d3d58",
+      "title": "The Alley",
+      "shotType": "Medium Shot",
+      "cameraMove": "Dutch Roll",
+      "prompt": "Film-noir photoreal, high-contrast grade. A wet backstreet alley at night, a single buzzing streetlight, fire escapes, steam. Night, tense. A person in a trench coat and hat stands mid-alley, collar up, watchful. The camera rolls into a strong canted Dutch angle, tilting the horizon for unease. Hard streetlight, deep shadow, wet reflections, 35mm, dutch tilt roll. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_075418_1bc9fabd-0775-4bfd-8c09-00e01c4d3d58.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-cameramove-dutch-roll-1",
+      "r2_key": "tag-cameramove-dutch-roll-1-v1.mp4",
+      "job_id": "ed901356-a8d4-42bc-8b73-9268a83b3395",
+      "title": "Deadline",
+      "shotType": "Medium Shot",
+      "cameraMove": "Dutch Roll",
+      "prompt": "Live-action photoreal, present day, frantic grade. A chaotic open-plan newsroom, screens and papers everywhere, people rushing, phones ringing. Day, high energy. A person in a rolled-sleeve shirt and tie stands amid the chaos gripping a document. The camera rolls into a canted Dutch angle, tilting to amplify the frenzy. Cool overhead light, busy motion, 35mm, dutch tilt roll. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_075424_ed901356-a8d4-42bc-8b73-9268a83b3395.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-cameramove-dutch-roll-2",
+      "r2_key": "tag-cameramove-dutch-roll-2-v1.mp4",
+      "job_id": "4cfe3f29-a500-43bb-b4da-e3e715e50415",
+      "title": "Neon Lean",
+      "shotType": "Medium Shot",
+      "cameraMove": "Dutch Roll",
+      "prompt": "Cyberpunk style, saturated neon grade. A rain-soaked neon alley at night, glowing signs, puddles, steam. Night. A person in a sleek techwear jacket leans against a wall under the signs. The camera rolls into a bold canted Dutch angle, tilting the neon world sideways. Neon magenta and cyan, wet reflections, 35mm, dutch tilt roll. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_075431_4cfe3f29-a500-43bb-b4da-e3e715e50415.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-cameramove-dutch-roll-3",
+      "r2_key": "tag-cameramove-dutch-roll-3-v1.mp4",
+      "job_id": "adc90d25-c222-4ea0-b6a5-be358b646db8",
+      "title": "Rough Seas",
+      "shotType": "Medium Shot",
+      "cameraMove": "Dutch Roll",
+      "prompt": "Live-action photoreal, present day, stormy grade. The pitching deck of a ship in a heavy storm, spray and rain, ropes and rails, grey churning sea. Day, violent weather. A person in oilskin foul-weather gear grips a rail against the pitch. The camera rolls into a strong canted Dutch angle matching the ship's list. Cold desaturated light, driving rain, 35mm, dutch tilt roll. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_075437_adc90d25-c222-4ea0-b6a5-be358b646db8.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-cameramove-dutch-roll-4",
+      "r2_key": "tag-cameramove-dutch-roll-4-v1.mp4",
+      "job_id": "9cc9a6ea-c1ad-46b5-8d2d-1c886c1d6d56",
+      "title": "The Room",
+      "shotType": "Medium Shot",
+      "cameraMove": "Dutch Roll",
+      "prompt": "Live-action photoreal, present day, tense grade. A bare interrogation room, a metal table, a single hanging bulb, a two-way mirror. Night, oppressive. A person in a plain shirt sits at the table under the lamp, tense. The camera rolls into a canted Dutch angle, tilting the room for unease. Hard overhead bulb, deep shadow, 40mm, dutch tilt roll. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_075444_9cc9a6ea-c1ad-46b5-8d2d-1c886c1d6d56.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-cameramove-dutch-roll-5",
+      "r2_key": "tag-cameramove-dutch-roll-5-v1.mp4",
+      "job_id": "19a3aebc-f1f9-4b38-920b-dd93b493d46d",
+      "title": "The Chase",
+      "shotType": "Wide Shot",
+      "cameraMove": "Dutch Roll",
+      "prompt": "Live-action photoreal, present day, kinetic grade. A subway platform at night, tiled walls, a train blurring past, harsh fluorescents. Night, urgent. A person in a hooded jacket sprints down the platform. The camera rolls into a dynamic canted Dutch angle, tilting to heighten the urgency of the run. Cold fluorescent light, motion blur, 35mm, dutch tilt roll. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_075450_19a3aebc-f1f9-4b38-920b-dd93b493d46d.mp4"
+    }
+  ]
+}

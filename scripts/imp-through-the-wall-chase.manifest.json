@@ -1,0 +1,83 @@
+{
+  "collection": "impossible / Through-the-Wall Chase",
+  "id_prefix": "tag-impossible-through-the-wall-chase",
+  "visible_limit": 6,
+  "limit_key": "Through-the-Wall Chase",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "impossible": "Through-the-Wall Chase",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-impossible-through-the-wall-chase-0",
+      "r2_key": "tag-impossible-through-the-wall-chase-0-v1.mp4",
+      "job_id": "e5756305-7a8f-4d2e-890b-721b61481b8f",
+      "title": "The Apartment",
+      "impossible": "Through-the-Wall Chase",
+      "shotType": "Wide Shot",
+      "cameraMove": "Tracking Side",
+      "prompt": "Cinematic VFX, one continuous impossible chase. The camera races after a person running through an apartment, and instead of stopping at walls it passes impossibly straight through them, phasing through plaster and furniture from room to room in a single unbroken take. A person in casual clothes running. Seamless through-wall camera, impossible continuous tracking, energetic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_064152_e5756305-7a8f-4d2e-890b-721b61481b8f.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-impossible-through-the-wall-chase-1",
+      "r2_key": "tag-impossible-through-the-wall-chase-1-v1.mp4",
+      "job_id": "46eedfd3-426b-4739-93fe-767f87de8da4",
+      "title": "The Office",
+      "impossible": "Through-the-Wall Chase",
+      "shotType": "Wide Shot",
+      "cameraMove": "Tracking Side",
+      "prompt": "Cinematic VFX, one continuous impossible chase. The camera chases a person sprinting through an office, passing impossibly through cubicle partitions and glass walls without slowing, phasing through solid surfaces from space to space in one unbroken take. A person in business attire running. Seamless through-wall camera, impossible continuous tracking, energetic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_064157_46eedfd3-426b-4739-93fe-767f87de8da4.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-impossible-through-the-wall-chase-2",
+      "r2_key": "tag-impossible-through-the-wall-chase-2-v1.mp4",
+      "job_id": "60d13c26-fa14-4ce9-86ff-c219ab93ffa1",
+      "title": "The House",
+      "impossible": "Through-the-Wall Chase",
+      "shotType": "Wide Shot",
+      "cameraMove": "Tracking Side",
+      "prompt": "Cinematic VFX, one continuous impossible chase. The camera pursues a person dashing through a two-story house, phasing impossibly through walls, floors and ceilings to keep up, moving room to room and level to level in a single unbroken take. A person in casual clothes running. Seamless through-wall camera, impossible continuous tracking, energetic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_064202_60d13c26-fa14-4ce9-86ff-c219ab93ffa1.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-impossible-through-the-wall-chase-3",
+      "r2_key": "tag-impossible-through-the-wall-chase-3-v1.mp4",
+      "job_id": "6b2a43d8-9691-499c-934e-16386efe296e",
+      "title": "The Warehouse",
+      "impossible": "Through-the-Wall Chase",
+      "shotType": "Wide Shot",
+      "cameraMove": "Tracking Side",
+      "prompt": "Cinematic VFX, one continuous impossible chase. The camera races after a person running through a warehouse, passing impossibly through stacked crates, shelving and metal walls without stopping, phasing through everything in one unbroken take. A person in rugged clothes running. Seamless through-wall camera, impossible continuous tracking, energetic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_064208_6b2a43d8-9691-499c-934e-16386efe296e.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-impossible-through-the-wall-chase-4",
+      "r2_key": "tag-impossible-through-the-wall-chase-4-v1.mp4",
+      "job_id": "9aa03459-6e5c-42e3-9f66-2d3544d53ad4",
+      "title": "The Mansion",
+      "impossible": "Through-the-Wall Chase",
+      "shotType": "Wide Shot",
+      "cameraMove": "Tracking Side",
+      "prompt": "Cinematic VFX, one continuous impossible chase. The camera chases a person fleeing through a grand mansion, phasing impossibly through ornate doors and walls from opulent room to room without pause, one seamless unbroken take. A person in formal clothes running. Seamless through-wall camera, impossible continuous tracking, energetic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_064220_9aa03459-6e5c-42e3-9f66-2d3544d53ad4.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-impossible-through-the-wall-chase-5",
+      "r2_key": "tag-impossible-through-the-wall-chase-5-v1.mp4",
+      "job_id": "6c4b5dcd-09e9-4e26-8ce6-066bf7419763",
+      "title": "The Garage",
+      "impossible": "Through-the-Wall Chase",
+      "shotType": "Wide Shot",
+      "cameraMove": "Tracking Side",
+      "prompt": "Cinematic VFX, one continuous impossible chase. The camera pursues a person running through a parking garage, passing impossibly through concrete pillars and parked cars without slowing, phasing through solid mass in one unbroken take. A person in a jacket running. Seamless through-wall camera, impossible continuous tracking, energetic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_064229_6c4b5dcd-09e9-4e26-8ce6-066bf7419763.mp4"
+    }
+  ]
+}

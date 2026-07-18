@@ -1,0 +1,77 @@
+{
+  "collection": "lighting / Neon Wash",
+  "id_prefix": "tag-lighting-neon-wash",
+  "visible_limit": 6,
+  "limit_key": "Neon Wash",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "lighting": "Neon Wash",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-lighting-neon-wash-0",
+      "r2_key": "tag-lighting-neon-wash-0-v1.mp4",
+      "job_id": "c3621c0b-8239-4e46-9829-526b42eae26f",
+      "title": "The Arcade",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Cyberpunk style, present day. A retro arcade at night, banks of glowing cabinets, haze in the air. The scene is bathed in a saturated neon wash of electric cyan and magenta light, colored glow spilling across every surface and the person's face. A person in a sleek jacket stands among the machines, lit entirely by the neon. Intense cyan-magenta neon wash, volumetric haze, 35mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_034144_c3621c0b-8239-4e46-9829-526b42eae26f.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-lighting-neon-wash-1",
+      "r2_key": "tag-lighting-neon-wash-1-v1.mp4",
+      "job_id": "7fc7c079-6708-4d13-bc66-8e7dfbc769b5",
+      "title": "Rain Alley",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Cyberpunk style, present day. A rain-soaked back alley at night, glowing signage overhead, wet pavement. The scene is bathed in a saturated neon wash of pink and blue light, colored reflections shimmering on the wet ground and the person. A person in a hooded techwear jacket stands under the signs, washed in neon. Intense pink-blue neon wash, wet reflections, 35mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_034153_7fc7c079-6708-4d13-bc66-8e7dfbc769b5.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-lighting-neon-wash-2",
+      "r2_key": "tag-lighting-neon-wash-2-v1.mp4",
+      "job_id": "0596b322-f33f-4241-86bd-0df72ac62113",
+      "title": "The Booth",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Cyberpunk style, present day. A nightclub DJ booth, glowing decks and strip lights. The scene is bathed in a saturated neon wash of purple and teal light, the color pulsing across the person and equipment. A person in a stylish outfit stands at the booth, entirely lit by the neon glow. Intense purple-teal neon wash, haze, 35mm. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_034202_0596b322-f33f-4241-86bd-0df72ac62113.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-lighting-neon-wash-3",
+      "r2_key": "tag-lighting-neon-wash-3-v1.mp4",
+      "job_id": "e7be5900-1d5b-47a6-a7d0-5e39fe6ad29d",
+      "title": "Diner Glow",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Cyberpunk style, present day. A late-night diner, a big neon sign in the window. The scene is bathed in a saturated neon wash of red and blue light through the glass, the color washing over the person and booth. A person in a casual jacket sits in the booth, lit by the neon. Intense red-blue neon wash, soft haze, 35mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_034208_e7be5900-1d5b-47a6-a7d0-5e39fe6ad29d.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-lighting-neon-wash-4",
+      "r2_key": "tag-lighting-neon-wash-4-v1.mp4",
+      "job_id": "10d508d6-7f85-44ec-b620-d7d89b826573",
+      "title": "Underpass",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Cyberpunk style, present day. A concrete underpass at night, neon tube lights lining the walls. The scene is bathed in a saturated neon wash of green and magenta light, glowing across the tunnel and the person. A person in a bomber jacket stands in the passage, washed entirely in neon. Intense green-magenta neon wash, 35mm. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_034215_10d508d6-7f85-44ec-b620-d7d89b826573.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-lighting-neon-wash-5",
+      "r2_key": "tag-lighting-neon-wash-5-v1.mp4",
+      "job_id": "efa678eb-9294-42d2-99e9-8d604d18d0ea",
+      "title": "Sign Shop",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Cyberpunk style, present day. A neon-sign workshop at night, dozens of glowing tubes on the walls. The scene is bathed in a saturated neon wash of multicolored light, vivid color spilling across the person and room. A person in a work shirt stands among the signs, lit entirely by the neon. Intense multicolor neon wash, glowing haze, 35mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_034222_efa678eb-9294-42d2-99e9-8d604d18d0ea.mp4"
+    }
+  ]
+}

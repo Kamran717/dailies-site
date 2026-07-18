@@ -1,0 +1,77 @@
+{
+  "collection": "shotType / Worm's-Eye View",
+  "id_prefix": "tag-shottype-worm-s-eye-view",
+  "visible_limit": 6,
+  "limit_key": "Worm's-Eye View",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "shot_type": "Worm's-Eye View",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-shottype-worm-s-eye-view-0",
+      "r2_key": "tag-shottype-worm-s-eye-view-0-v1.mp4",
+      "job_id": "b2d6f706-5347-4a72-8a0d-303ef8e44c83",
+      "title": "The Giant",
+      "shotType": "Worm's-Eye View",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, powerful grade. A city street from ground level, tall buildings converging above. A worm's-eye view from the ground looking straight up at a person standing over the camera, towering against the bright sky, looking down. A person in a long coat. Bright sky, dramatic upward perspective, worm's-eye view. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_154820_b2d6f706-5347-4a72-8a0d-303ef8e44c83.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-shottype-worm-s-eye-view-1",
+      "r2_key": "tag-shottype-worm-s-eye-view-1-v1.mp4",
+      "job_id": "66261e37-ef94-4ee3-8e6c-46510ea9ce92",
+      "title": "Under the Canopy",
+      "shotType": "Worm's-Eye View",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, natural grade. A forest floor, towering trees soaring up to a canopy far above, shafts of light. Day, warm. A worm's-eye view from the ground looking straight up past a person standing among the trees, gazing upward, trees converging overhead. A person in outdoor clothes. Warm dappled light, soaring perspective, worm's-eye view. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_154826_66261e37-ef94-4ee3-8e6c-46510ea9ce92.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-shottype-worm-s-eye-view-2",
+      "r2_key": "tag-shottype-worm-s-eye-view-2-v1.mp4",
+      "job_id": "e4139427-a0ec-4a86-85ce-cd1d34b95dba",
+      "title": "Ground Level",
+      "shotType": "Worm's-Eye View",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, urban grade. The base of a glass skyscraper from ground level, the tower soaring up and converging into the sky. A worm's-eye view from the ground looking steeply up at a person standing at the building's base, dwarfed, looking up. A person in business attire. Bright daylight, extreme upward perspective, worm's-eye view. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_154832_e4139427-a0ec-4a86-85ce-cd1d34b95dba.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-shottype-worm-s-eye-view-3",
+      "r2_key": "tag-shottype-worm-s-eye-view-3-v1.mp4",
+      "job_id": "20aa2b08-4d2e-4a12-8c6b-732268ff8fef",
+      "title": "Overhead",
+      "shotType": "Worm's-Eye View",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, sleek grade. Beneath a modern glass walkway, structural beams and bright sky above. A worm's-eye view from below looking straight up through the glass at a person walking across the transparent floor overhead. A person in smart clothes. Cool bright light, striking upward perspective, worm's-eye view. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_154838_20aa2b08-4d2e-4a12-8c6b-732268ff8fef.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-shottype-worm-s-eye-view-4",
+      "r2_key": "tag-shottype-worm-s-eye-view-4-v1.mp4",
+      "job_id": "a2cb05d2-77af-433a-ace8-9f4b287daef0",
+      "title": "The Leap",
+      "shotType": "Worm's-Eye View",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, dynamic grade. A bright open sky above a skate park ramp. A worm's-eye view from the ground looking straight up as a person leaps over the camera mid-jump, silhouetted against the sky, arms out. A person in streetwear. Bright sky, dramatic upward motion, worm's-eye view. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_154845_a2cb05d2-77af-433a-ace8-9f4b287daef0.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-shottype-worm-s-eye-view-5",
+      "r2_key": "tag-shottype-worm-s-eye-view-5-v1.mp4",
+      "job_id": "02640315-df4d-4aec-8356-18bdf592db0b",
+      "title": "The Hero",
+      "shotType": "Worm's-Eye View",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, heroic grade. A dramatic sky with scattered clouds above. A worm's-eye view from the ground looking steeply up at a person standing tall and powerful against the sky, hands on hips, chin up. A person in a windswept coat. Bright dramatic sky, heroic upward angle, worm's-eye view. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_154850_02640315-df4d-4aec-8356-18bdf592db0b.mp4"
+    }
+  ]
+}

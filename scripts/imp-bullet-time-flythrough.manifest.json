@@ -1,0 +1,83 @@
+{
+  "collection": "impossible / Bullet-Time Flythrough",
+  "id_prefix": "tag-impossible-bullet-time-flythrough",
+  "visible_limit": 6,
+  "limit_key": "Bullet-Time Flythrough",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "impossible": "Bullet-Time Flythrough",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-impossible-bullet-time-flythrough-0",
+      "r2_key": "tag-impossible-bullet-time-flythrough-0-v1.mp4",
+      "job_id": "ed4027b5-5773-4a37-8888-41d59c5b3766",
+      "title": "The Rain",
+      "impossible": "Bullet-Time Flythrough",
+      "shotType": "Medium Shot",
+      "cameraMove": "Orbit Right",
+      "prompt": "Cinematic VFX bullet-time. Time freezes completely: a person is caught mid-leap in a rain-soaked alley at night, thousands of raindrops suspended motionless in the air around them, jacket frozen mid-billow. The camera flies smoothly and impossibly through the frozen moment, orbiting around the suspended figure and gliding between the hanging droplets. A person in a jacket. Frozen time, suspended droplets, smooth flythrough orbit, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_061317_ed4027b5-5773-4a37-8888-41d59c5b3766.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-impossible-bullet-time-flythrough-1",
+      "r2_key": "tag-impossible-bullet-time-flythrough-1-v1.mp4",
+      "job_id": "157e9733-9fac-4095-81b2-8c1ba12a903e",
+      "title": "The Warehouse",
+      "impossible": "Bullet-Time Flythrough",
+      "shotType": "Medium Shot",
+      "cameraMove": "Orbit Left",
+      "prompt": "Cinematic VFX bullet-time. Time freezes: a person is caught mid-motion in a dim warehouse, dust and scattered debris hanging suspended in the air, shafts of light frozen. The camera glides impossibly through the frozen scene, sweeping around the still figure and through the suspended particles in one smooth move. A person in rugged clothes. Frozen time, suspended debris, smooth flythrough orbit, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_061323_157e9733-9fac-4095-81b2-8c1ba12a903e.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-impossible-bullet-time-flythrough-2",
+      "r2_key": "tag-impossible-bullet-time-flythrough-2-v1.mp4",
+      "job_id": "a3ec8ebe-1947-4edd-971c-cdb04fa2a3c6",
+      "title": "The Shatter",
+      "impossible": "Bullet-Time Flythrough",
+      "shotType": "Medium Shot",
+      "cameraMove": "Orbit Right",
+      "prompt": "Cinematic VFX bullet-time. Time stops: a person stands frozen as a pane of glass shatters around them, thousands of glass shards suspended glittering mid-air. The camera flies smoothly and impossibly through the frozen burst of glass, orbiting the still figure between the hanging shards. A person in stylish clothes. Frozen time, suspended glass shards, smooth flythrough orbit, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_061334_a3ec8ebe-1947-4edd-971c-cdb04fa2a3c6.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-impossible-bullet-time-flythrough-3",
+      "r2_key": "tag-impossible-bullet-time-flythrough-3-v1.mp4",
+      "job_id": "a06cd7ea-dfd7-403f-a566-d0bbfc79a3a7",
+      "title": "The Leaves",
+      "impossible": "Bullet-Time Flythrough",
+      "shotType": "Medium Shot",
+      "cameraMove": "Orbit Left",
+      "prompt": "Cinematic VFX bullet-time. Time freezes: a person is caught mid-spin in an autumn courtyard, a whirl of fallen leaves suspended motionless in the air around them. The camera glides impossibly through the frozen swirl, sweeping around the still figure and between the hanging leaves in one smooth continuous move. A person in a coat. Frozen time, suspended leaves, smooth flythrough orbit, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_061347_a06cd7ea-dfd7-403f-a566-d0bbfc79a3a7.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-impossible-bullet-time-flythrough-4",
+      "r2_key": "tag-impossible-bullet-time-flythrough-4-v1.mp4",
+      "job_id": "385423ac-8e6f-4e75-a5da-9fb7964bc59c",
+      "title": "The Sparks",
+      "impossible": "Bullet-Time Flythrough",
+      "shotType": "Medium Shot",
+      "cameraMove": "Orbit Right",
+      "prompt": "Cinematic VFX bullet-time. Time stops: a person stands frozen as a shower of bright sparks bursts around them in a dark industrial space, the glowing sparks suspended mid-air. The camera flies smoothly and impossibly through the frozen scene, orbiting the still figure among the hanging embers. A person in workwear. Frozen time, suspended sparks, smooth flythrough orbit, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_061355_385423ac-8e6f-4e75-a5da-9fb7964bc59c.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-impossible-bullet-time-flythrough-5",
+      "r2_key": "tag-impossible-bullet-time-flythrough-5-v1.mp4",
+      "job_id": "31b89d55-c186-4dcc-bd7f-8cb7a43f7b95",
+      "title": "The Splash",
+      "impossible": "Bullet-Time Flythrough",
+      "shotType": "Medium Shot",
+      "cameraMove": "Orbit Left",
+      "prompt": "Cinematic VFX bullet-time. Time freezes: a person is caught mid-stride through a puddle, a crown of water droplets frozen suspended in the air around their feet and body. The camera glides impossibly through the frozen splash, orbiting the still figure between the suspended droplets in one smooth move. A person in casual clothes. Frozen time, suspended water, smooth flythrough orbit, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_061407_31b89d55-c186-4dcc-bd7f-8cb7a43f7b95.mp4"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "collection": "cameraMove / Dolly Out",
+  "id_prefix": "tag-cameramove-dolly-out",
+  "visible_limit": 6,
+  "limit_key": "Dolly Out",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "camera_move": "Dolly Out",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-cameramove-dolly-out-0",
+      "r2_key": "tag-cameramove-dolly-out-0-v1.mp4",
+      "job_id": "2c870bbe-cc5e-487c-abe0-97c54814f4ac",
+      "title": "The Skyline",
+      "shotType": "Wide Shot",
+      "cameraMove": "Dolly Out",
+      "prompt": "Live-action photoreal, present day, cold cinematic grade. A high rooftop at blue-hour dusk, a low safety wall, gravel and vent stacks, a glittering city skyline beyond. Wind, distant traffic glow. A person in a long charcoal wool overcoat and scarf stands at the parapet, back to camera, hands in pockets, looking out over the city. The camera dollies steadily backward, pulling away to reveal the full sweep of skyscrapers and the rooftop around them. Cool blue sky against warm city lights, 35mm, dolly out. Shallow depth of field, subtle grain, gentle motion blur, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_062504_2c870bbe-cc5e-487c-abe0-97c54814f4ac.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-cameramove-dolly-out-1",
+      "r2_key": "tag-cameramove-dolly-out-1-v1.mp4",
+      "job_id": "3f04be6b-1ede-425f-ab37-c6090cbac1d5",
+      "title": "The Hall",
+      "shotType": "Wide Shot",
+      "cameraMove": "Dolly Out",
+      "prompt": "Live-action photoreal, medieval fantasy, torchlit grade. A vast stone throne hall, towering pillars, banners, a raised dais with a carved throne. Night, flickering torches, drifting smoke. A person in ornate royal robes and a fur-trimmed mantle sits upright on the throne, one hand on the armrest, gazing forward. The camera dollies slowly backward down the length of the hall, revealing the endless rows of pillars and the empty court. Warm torch glow against deep stone shadow, 40mm, dolly out. Shallow depth of field, fine grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_062511_3f04be6b-1ede-425f-ab37-c6090cbac1d5.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-cameramove-dolly-out-2",
+      "r2_key": "tag-cameramove-dolly-out-2-v1.mp4",
+      "job_id": "b001c1e1-1bd5-4fcd-bdaa-6471dd4ea18c",
+      "title": "The Dunes",
+      "shotType": "Wide Shot",
+      "cameraMove": "Dolly Out",
+      "prompt": "Live-action photoreal, present day, harsh desert grade. A vast sand desert at midday, endless rolling dunes, heat shimmer on the horizon. Blazing sun, wind lifting sand off the crests. A person in dusty desert survival gear, a wrapped head-scarf and goggles pushed up, stands atop a dune, staring across the wasteland. The camera dollies backward and up slightly, pulling away to reveal the immense scale of the empty dunes. Hard white sunlight, warm sand tones, 35mm, dolly out. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_062517_b001c1e1-1bd5-4fcd-bdaa-6471dd4ea18c.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-cameramove-dolly-out-3",
+      "r2_key": "tag-cameramove-dolly-out-3-v1.mp4",
+      "job_id": "070d1f61-651c-4b12-8769-063004808694",
+      "title": "The Ward",
+      "shotType": "Wide Shot",
+      "cameraMove": "Dolly Out",
+      "prompt": "Live-action photoreal, present day, cold sterile grade. A quiet hospital room at dawn, a single bed, monitors, a tall window with pale light. Early morning, still, faint machine glow. A person in a pale hospital gown sits on the edge of the bed by the window, shoulders low, looking outside. The camera dollies slowly backward through the doorway, revealing the long empty corridor and nurses' station beyond. Cool blue dawn light, soft and clinical, 40mm, dolly out. Shallow depth of field, fine grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_062524_070d1f61-651c-4b12-8769-063004808694.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-cameramove-dolly-out-4",
+      "r2_key": "tag-cameramove-dolly-out-4-v1.mp4",
+      "job_id": "2b545b2a-beaf-4d47-9460-df2598829869",
+      "title": "The Crowd",
+      "shotType": "Wide Shot",
+      "cameraMove": "Dolly Out",
+      "prompt": "Live-action photoreal, present day, concert grade. A huge stage under sweeping lights, haze in the beams, a single mic on a stand. Night, roaring energy. A person in a fitted sequined stage jacket grips the mic, arm raised to the audience. The camera dollies rapidly backward off the stage, pulling away to reveal a vast dark crowd stretching back, phone lights like stars. Hot white stage beams against a sea of tiny lights, 35mm, dolly out. Shallow depth of field, grain, volumetric haze, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_062536_2b545b2a-beaf-4d47-9460-df2598829869.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-cameramove-dolly-out-5",
+      "r2_key": "tag-cameramove-dolly-out-5-v1.mp4",
+      "job_id": "f8d75702-5567-472c-a9a3-217a8f9cb459",
+      "title": "White Silence",
+      "shotType": "Wide Shot",
+      "cameraMove": "Dolly Out",
+      "prompt": "Live-action photoreal, present day, cold winter grade. A snow-buried log cabin in a vast wilderness, smoke curling from the chimney, drifts to the eaves. Overcast afternoon, gently falling snow. A person in a heavy fur-lined parka and mittens stands at the cabin door, looking out at the white expanse. The camera dollies steadily backward, pulling away to reveal the lone cabin dwarfed by an immense snowfield and dark treeline. Flat soft winter light, cold blue-white tones, 35mm, dolly out. Shallow depth of field, subtle grain, drifting snow, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_062543_f8d75702-5567-472c-a9a3-217a8f9cb459.mp4"
+    }
+  ]
+}

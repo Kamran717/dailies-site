@@ -1,0 +1,77 @@
+{
+  "collection": "shotType / Bird's-Eye View",
+  "id_prefix": "tag-shottype-bird-s-eye-view",
+  "visible_limit": 6,
+  "limit_key": "Bird's-Eye View",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "shot_type": "Bird's-Eye View",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-shottype-bird-s-eye-view-0",
+      "r2_key": "tag-shottype-bird-s-eye-view-0-v1.mp4",
+      "job_id": "1bd52f75-f053-4375-bdfc-cd82e0beaf80",
+      "title": "Sunbather",
+      "shotType": "Bird's-Eye View",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, bright grade. A sandy beach seen from directly overhead, a striped towel on golden sand, footprints, a scattering of shells. Midday, brilliant sun. A person in swimwear lies on the towel below, arms relaxed. A bird's-eye view looking straight down from directly above. Warm hard sunlight, top-down, bird's-eye view. Crisp detail, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_154734_1bd52f75-f053-4375-bdfc-cd82e0beaf80.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-shottype-bird-s-eye-view-1",
+      "r2_key": "tag-shottype-bird-s-eye-view-1-v1.mp4",
+      "job_id": "f8aa7227-9b56-4e81-b71e-6384d1e7c98d",
+      "title": "The Spiral",
+      "shotType": "Bird's-Eye View",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, elegant grade. An ornate spiral staircase seen from directly overhead, curving down many floors, marble and iron. Day, soft skylight. A person in a long coat stands at the center of the ground floor far below, looking up. A bird's-eye view looking straight down through the spiral. Soft skylight glow, dramatic geometry, top-down, bird's-eye view. Crisp detail, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_154742_f8aa7227-9b56-4e81-b71e-6384d1e7c98d.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-shottype-bird-s-eye-view-2",
+      "r2_key": "tag-shottype-bird-s-eye-view-2-v1.mp4",
+      "job_id": "252aeac0-ace2-4707-8648-5af5bf6f44c9",
+      "title": "The Crossing",
+      "shotType": "Bird's-Eye View",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, urban grade. A city zebra crosswalk seen from directly overhead, bold white stripes on grey asphalt, road markings. Day, bright. A person in a smart coat walks across the stripes below, mid-stride. A bird's-eye view looking straight down from directly above. Bright even light, graphic top-down, bird's-eye view. Crisp detail, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_154748_252aeac0-ace2-4707-8648-5af5bf6f44c9.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-shottype-bird-s-eye-view-3",
+      "r2_key": "tag-shottype-bird-s-eye-view-3-v1.mp4",
+      "job_id": "83833b97-84e3-412a-aca4-f53a439b1005",
+      "title": "The Rower",
+      "shotType": "Bird's-Eye View",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, serene grade. A still lake seen from directly overhead, a small wooden rowboat, gentle ripples spreading, deep green water. Morning, calm. A person in casual clothes sits in the rowboat below, oars out. A bird's-eye view looking straight down from directly above. Soft morning light, calm top-down, bird's-eye view. Crisp detail, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_154801_83833b97-84e3-412a-aca4-f53a439b1005.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-shottype-bird-s-eye-view-4",
+      "r2_key": "tag-shottype-bird-s-eye-view-4-v1.mp4",
+      "job_id": "2919bfa2-5363-49dc-bc06-70d1b41298ed",
+      "title": "The Rooftop",
+      "shotType": "Bird's-Eye View",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, calm grade. A city rooftop terrace seen from directly overhead, a yoga mat, potted plants, tiled floor. Morning, soft light. A person in athletic wear lies in a resting yoga pose on the mat below. A bird's-eye view looking straight down from directly above. Soft warm light, top-down, bird's-eye view. Crisp detail, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_154807_2919bfa2-5363-49dc-bc06-70d1b41298ed.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-shottype-bird-s-eye-view-5",
+      "r2_key": "tag-shottype-bird-s-eye-view-5-v1.mp4",
+      "job_id": "297de392-9774-41b9-97b8-b9a1d9ae4e9f",
+      "title": "The Maze",
+      "shotType": "Bird's-Eye View",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, lush grade. A manicured garden hedge maze seen from directly overhead, geometric green pathways, a fountain at the center. Afternoon, warm. A person in light clothes walks along one of the maze paths below. A bird's-eye view looking straight down from directly above. Warm daylight, graphic top-down, bird's-eye view. Crisp detail, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_154813_297de392-9774-41b9-97b8-b9a1d9ae4e9f.mp4"
+    }
+  ]
+}

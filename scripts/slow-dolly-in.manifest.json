@@ -1,0 +1,151 @@
+{
+  "collection": "cameraMove / Slow Dolly In",
+  "id_prefix": "tag-cameramove-slow-dolly-in",
+  "replaces_indices": "0-11 (overwrite live clips; import with --force, rebuild grid/posters, purge CDN)",
+  "visible_limit": 100, "collection": "cameraMove / Slow Dolly In",
+  "id_prefix": "tag-cameramove-slow-dolly-in",
+  "replaces_indices": "0-11 (overwrite live clips; import with --force, rebuild grid/posters, purge CDN)",
+  "visible_limit": 100,
+  "limit_key": "Slow Dolly In",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "camera_move": "Slow Dolly In",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "camera_move": "Slow Dolly In",
+  "note": "Single source of truth. `prompt` is what the clip is generated from AND what goes to REAL_TAG_META[id].prompt. REAL_VIDEOS[id] already exists (flat) and is unchanged; we overwrite the .mp4 in R2 and add the REAL_TAG_META entry. Do NOT change TAG_VISIBLE_LIMITS (stays 100).",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-cameramove-slow-dolly-in-0",
+      "r2_key": "tag-cameramove-slow-dolly-in-0.mp4",
+      "job_id": "ccbff546-8cd9-4ff9-8198-099af7bb952b",
+      "title": "The Case File",
+      "shotType": "Medium Shot",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Live-action photoreal, present day. A dim police records archive, floor-to-ceiling shelves of boxed case files, a single desk lamp. Night, still, dust in the beam. A person in a rumpled shirt and loosened tie sits at a cluttered desk, one file open, reading intently. A cold coffee, a pinboard of photos and red string, a brass desk lamp. Warm pooled lamplight against deep blue shadow. 40mm, slow dolly in. Shallow depth of field, subtle grain, gentle motion blur, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260713_052155_ccbff546-8cd9-4ff9-8198-099af7bb952b.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-cameramove-slow-dolly-in-1",
+      "r2_key": "tag-cameramove-slow-dolly-in-1.mp4",
+      "job_id": "0457a4cd-4407-4a30-a21a-6c54d48a938a",
+      "title": "Service",
+      "shotType": "Medium Shot",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Live-action photoreal, present day. A steamy professional restaurant kitchen mid-service, stainless steel, hanging copper pans, a full ticket rail. Evening, heat haze rising. A person in a white chef's jacket and apron leans over a plate, tweezers placing a final garnish. A flaming pass, stacked white plates, a wiped-clean rim. Warm overhead work light catching the steam. 50mm, slow dolly in. Shallow depth of field, fine grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260713_052204_0457a4cd-4407-4a30-a21a-6c54d48a938a.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-cameramove-slow-dolly-in-2",
+      "r2_key": "tag-cameramove-slow-dolly-in-2.mp4",
+      "job_id": "32684611-1c4b-4129-b374-ecfc32a0c5d5",
+      "title": "Departure",
+      "shotType": "Wide Shot",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Live-action photoreal, present day. An airport departure lounge at night, floor-to-ceiling windows, a jet at the gate, runway lights beyond. Late night, quiet terminal. A person in a travel coat with a backpack stands at the glass, one hand on the pane, watching the plane. A rolling suitcase, a boarding pass, reflections of terminal lights. Cool interior fluorescents with warm runway glow outside. 35mm, slow dolly in. Shallow depth of field, soft grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260713_052212_32684611-1c4b-4129-b374-ecfc32a0c5d5.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-cameramove-slow-dolly-in-3",
+      "r2_key": "tag-cameramove-slow-dolly-in-3.mp4",
+      "job_id": "948921f0-39a2-41a2-9be5-97c63b03f181",
+      "title": "Soundcheck",
+      "shotType": "Medium Shot",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Live-action photoreal, present day. An empty concert hall, a single microphone in a hard spotlight, rows of dark seats beyond. Night, the hush before a show. A person in a fitted jacket stands at the mic, head bowed, hand lifting to it. A cable coiled on the floor, a lone stool, a water bottle. One hard white spotlight, deep black surround, volumetric haze. 50mm, slow dolly in. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260713_052221_948921f0-39a2-41a2-9be5-97c63b03f181.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-cameramove-slow-dolly-in-4",
+      "r2_key": "tag-cameramove-slow-dolly-in-4.mp4",
+      "job_id": "4a4b4c2c-61c0-4ae1-b7db-1d759da2d504",
+      "title": "The Aisle",
+      "shotType": "Wide Shot",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Live-action photoreal, near-future. A cold data center aisle, towering server racks pulsing with blue and green LEDs, cabling overhead. Night, the hum of fans. A person in a technical jacket walks the aisle, tablet in hand, glancing up at the racks. Fiber bundles, a status screen, a keycard on a lanyard. Cool blue rack glow with hard edge light. 35mm, slow dolly in. Shallow depth of field, fine grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260713_052227_4a4b4c2c-61c0-4ae1-b7db-1d759da2d504.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-cameramove-slow-dolly-in-5",
+      "r2_key": "tag-cameramove-slow-dolly-in-5.mp4",
+      "job_id": "5ef4d358-94e4-4edb-a7b2-a2ec9120acaa",
+      "title": "The Easel",
+      "shotType": "Medium Shot",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Live-action photoreal, present day. A sunlit artist's loft studio, canvases stacked against exposed brick, a large work on the easel. Morning, dust drifting in warm light. A person in a paint-streaked smock stands before the easel, brush raised, studying the canvas. Jars of brushes, a smeared palette, drop cloths. Soft north-window daylight, warm and clean. 40mm, slow dolly in. Shallow depth of field, gentle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260713_052233_5ef4d358-94e4-4edb-a7b2-a2ec9120acaa.mp4"
+    },
+    {
+      "index": 6,
+      "id": "tag-cameramove-slow-dolly-in-6",
+      "r2_key": "tag-cameramove-slow-dolly-in-6.mp4",
+      "job_id": "2087d8d6-30e2-41b8-a8d7-a0897978e0b4",
+      "title": "Top Floor",
+      "shotType": "Wide Shot",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Live-action photoreal, present day. A high-rise corner office at night, floor-to-ceiling glass, the city grid glittering below. Late night, silent. A person in a tailored suit stands at the window, hands in pockets, looking out over the city. A glass desk, a single lamp, a skyline of lights. Warm interior lamp against cool city glow. 35mm, slow dolly in. Shallow depth of field, soft grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260713_052243_2087d8d6-30e2-41b8-a8d7-a0897978e0b4.mp4"
+    },
+    {
+      "index": 7,
+      "id": "tag-cameramove-slow-dolly-in-7",
+      "r2_key": "tag-cameramove-slow-dolly-in-7.mp4",
+      "job_id": "14ee3fc5-12e9-4c72-9694-8c9b785fb62a",
+      "title": "Dawn Haul",
+      "shotType": "Medium Shot",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Live-action photoreal, present day. A weathered fishing dock at dawn, moored boats, coiled ropes, mist over flat water. Early morning, cold fog. A person in oilskins and a knit cap stands at the dock edge, coiling a line, looking to the horizon. Lobster traps, gulls, a lantern on a piling. Soft pink dawn through mist, cool and low. 35mm, slow dolly in. Shallow depth of field, fine grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260713_052248_14ee3fc5-12e9-4c72-9694-8c9b785fb62a.mp4"
+    },
+    {
+      "index": 8,
+      "id": "tag-cameramove-slow-dolly-in-8",
+      "r2_key": "tag-cameramove-slow-dolly-in-8.mp4",
+      "job_id": "d88cac50-a44d-49f0-83f8-0af7c31bf3d9",
+      "title": "Ghost Light",
+      "shotType": "Wide Shot",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Live-action photoreal, present day. An empty theater stage, worn wooden boards, a ghost light on a stand, red velvet curtains half-drawn. Night, still. A person in simple rehearsal clothes stands center stage, arms beginning to lift, mid-breath. A single bare bulb, chalk marks, a pointe shoe. One warm bulb, long shadows across the boards. 50mm, slow dolly in. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260713_052258_d88cac50-a44d-49f0-83f8-0af7c31bf3d9.mp4"
+    },
+    {
+      "index": 9,
+      "id": "tag-cameramove-slow-dolly-in-9",
+      "r2_key": "tag-cameramove-slow-dolly-in-9.mp4",
+      "job_id": "ee429efb-a7cc-413d-9684-5f2cc45539cf",
+      "title": "Earthrise",
+      "shotType": "Medium Shot",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Live-action photoreal, near-future. The interior of a spacecraft cabin, instrument panels aglow, a round window onto Earth below. Orbit, silent. A person in a flight suit floats at the window, one hand on the frame, gazing at the planet. Switch panels, a floating pen, a mission patch. Cool cabin light with warm Earthglow through the port. 35mm, slow dolly in. Shallow depth of field, fine grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260713_052303_ee429efb-a7cc-413d-9684-5f2cc45539cf.mp4"
+    },
+    {
+      "index": 10,
+      "id": "tag-cameramove-slow-dolly-in-10",
+      "r2_key": "tag-cameramove-slow-dolly-in-10.mp4",
+      "job_id": "4781417c-bc7a-44a5-9857-b8bfaa1e3c87",
+      "title": "Last Round",
+      "shotType": "Medium Shot",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Live-action photoreal, present day. A worn boxing gym at night, a heavy bag, a ring in shadow, fight posters peeling off the wall. Late, empty. A person in a tank top with wrapped hands stands before the heavy bag, breathing hard, about to strike. A speed bag, a stool, a towel over the ropes. Hard single work-light overhead, deep shadow. 40mm, slow dolly in. Shallow depth of field, grain, sweat sheen, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260713_052309_4781417c-bc7a-44a5-9857-b8bfaa1e3c87.mp4"
+    },
+    {
+      "index": 11,
+      "id": "tag-cameramove-slow-dolly-in-11",
+      "r2_key": "tag-cameramove-slow-dolly-in-11.mp4",
+      "job_id": "7be275fc-68e0-4c4b-8cd0-178a00f88178",
+      "title": "The Stacks",
+      "shotType": "Wide Shot",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Live-action photoreal, present day. A grand old library reading room, towering shelves, brass railings, green-shaded lamps. Afternoon, hushed, dust in the shafts. A person in a cardigan holds an open book, looking up at the high stacks. Rolling ladders, stacked tomes, a globe on a stand. Warm lamplight with cool daylight from high windows. 40mm, slow dolly in. Shallow depth of field, gentle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260713_052316_7be275fc-68e0-4c4b-8cd0-178a00f88178.mp4"
+    }
+  ]
+}

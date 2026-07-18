@@ -1,0 +1,77 @@
+{
+  "collection": "cameraMove / Dolly Zoom",
+  "id_prefix": "tag-cameramove-dolly-zoom",
+  "visible_limit": 6,
+  "limit_key": "Dolly Zoom",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "camera_move": "Dolly Zoom",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-cameramove-dolly-zoom-0",
+      "r2_key": "tag-cameramove-dolly-zoom-0-v1.mp4",
+      "job_id": "6ddfb1aa-a1ec-42c7-a9ee-64468ddd1806",
+      "title": "The Edge",
+      "shotType": "Medium Shot",
+      "cameraMove": "Dolly Zoom",
+      "prompt": "Live-action photoreal, present day, dizzying grade. A sheer cliff edge over a vast canyon, wind whipping, a dizzying drop below. Afternoon, vertigo. A person in a hiking jacket and pack stands at the very edge, arms out for balance, staring down as fear hits. A dolly-zoom (Vertigo effect): the camera pulls back while zooming in, so the canyon behind warps and stretches unnervingly. Warm canyon light, 35mm to telephoto warp, dolly zoom. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_070715_6ddfb1aa-a1ec-42c7-a9ee-64468ddd1806.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-cameramove-dolly-zoom-1",
+      "r2_key": "tag-cameramove-dolly-zoom-1-v1.mp4",
+      "job_id": "472c560d-5198-422e-90ad-f7ce48d95959",
+      "title": "The Corridor",
+      "shotType": "Medium Shot",
+      "cameraMove": "Dolly Zoom",
+      "prompt": "Live-action photoreal, present day, unsettling grade. A long hotel corridor, patterned carpet, symmetrical doors, a flickering sconce. Night, eerie stillness. A person in a bathrobe stands frozen mid-corridor, looking down its length. A dolly-zoom (Vertigo effect): the corridor behind them stretches and elongates unnaturally as the camera dollies and counter-zooms. Cold green-tinged light, deep perspective, 40mm warp, dolly zoom. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_070723_472c560d-5198-422e-90ad-f7ce48d95959.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-cameramove-dolly-zoom-2",
+      "r2_key": "tag-cameramove-dolly-zoom-2-v1.mp4",
+      "job_id": "39e47d1c-f89d-495a-b9c8-695cb24b5d80",
+      "title": "The Platform",
+      "shotType": "Medium Shot",
+      "cameraMove": "Dolly Zoom",
+      "prompt": "Live-action photoreal, present day, tense grade. An empty subway platform at night, tiled walls, tracks, a distant train light. Late night. A person in a commuter coat clutching a bag stands at the platform edge as the world lurches. A dolly-zoom (Vertigo effect): the tunnel and platform behind warp and pull as the camera dollies while zooming. Cold fluorescent glow, warm tunnel light, 35mm warp, dolly zoom. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_070729_39e47d1c-f89d-495a-b9c8-695cb24b5d80.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-cameramove-dolly-zoom-3",
+      "r2_key": "tag-cameramove-dolly-zoom-3-v1.mp4",
+      "job_id": "33aec1b7-60e7-49bb-a128-0883df21ad7b",
+      "title": "The Aisle",
+      "shotType": "Medium Shot",
+      "cameraMove": "Dolly Zoom",
+      "prompt": "Live-action photoreal, present day, dramatic grade. A grand wedding chapel, an aisle lined with flowers, guests in soft focus, light through stained glass. Day. A person in formal wedding attire stands at the altar end of the aisle, overwhelmed. A dolly-zoom (Vertigo effect): the long aisle warps and elongates behind them as the camera dollies and counter-zooms. Warm stained-glass light, 40mm warp, dolly zoom. Shallow depth of field, fine grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_070737_33aec1b7-60e7-49bb-a128-0883df21ad7b.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-cameramove-dolly-zoom-4",
+      "r2_key": "tag-cameramove-dolly-zoom-4-v1.mp4",
+      "job_id": "734bc523-b961-4fe1-9ed0-cd8ddcd98a52",
+      "title": "The Field",
+      "shotType": "Medium Shot",
+      "cameraMove": "Dolly Zoom",
+      "prompt": "Live-action photoreal, historical war, bleak grade. A muddy, smoke-hazed battlefield at dawn, scattered debris, a grey sky. Cold morning, distant rumble. A person in period military uniform stands amid the haze, gripping their gear, dread rising. A dolly-zoom (Vertigo effect): the battlefield behind warps and stretches as the camera dollies while zooming. Desaturated cold light, drifting smoke, 35mm warp, dolly zoom. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_070745_734bc523-b961-4fe1-9ed0-cd8ddcd98a52.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-cameramove-dolly-zoom-5",
+      "r2_key": "tag-cameramove-dolly-zoom-5-v1.mp4",
+      "job_id": "dd14cbd1-d25e-4005-a890-6cd80932d7f0",
+      "title": "Vertigo",
+      "shotType": "Medium Shot",
+      "cameraMove": "Dolly Zoom",
+      "prompt": "Live-action photoreal, present day, vertiginous grade. A skyscraper rooftop helipad at golden hour, low rail, the city plunging away below. Evening. A person in business attire steps to the edge and looks straight down as vertigo strikes. A dolly-zoom (Vertigo effect): the city below warps and rushes as the camera dollies and counter-zooms. Warm golden light, dizzying perspective, 35mm warp, dolly zoom. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_070752_dd14cbd1-d25e-4005-a890-6cd80932d7f0.mp4"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "collection": "cameraMove / Orbit Right",
+  "id_prefix": "tag-cameramove-orbit-right",
+  "visible_limit": 6,
+  "limit_key": "Orbit Right",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "camera_move": "Orbit Right",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-cameramove-orbit-right-0",
+      "r2_key": "tag-cameramove-orbit-right-0-v1.mp4",
+      "job_id": "8b30fb4d-efe9-4986-ae2a-2d316992106c",
+      "title": "The Set",
+      "shotType": "Medium Shot",
+      "cameraMove": "Orbit Right",
+      "prompt": "Cyberpunk style, saturated neon grade. A rooftop party at night, a DJ booth, glowing decks, a hazy crowd, city lights beyond. Night, energy. A person in a stylish jacket and headphones works the decks, hands on the mixer. The camera orbits smoothly around them clockwise, circling the booth. Neon magenta and cyan, haze, 35mm, orbit right. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_081821_8b30fb4d-efe9-4986-ae2a-2d316992106c.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-cameramove-orbit-right-1",
+      "r2_key": "tag-cameramove-orbit-right-1-v1.mp4",
+      "job_id": "5c9a3569-1065-4ee7-9635-89d4080fd40a",
+      "title": "The Sculptor",
+      "shotType": "Medium Shot",
+      "cameraMove": "Orbit Right",
+      "prompt": "Live-action photoreal, present day, artful grade. A sunlit sculptor's studio, clay-dusted surfaces, tools, a tall work-in-progress on a stand. Afternoon, warm. A person in a clay-smeared smock shapes the wet clay with both hands. The camera orbits smoothly around them clockwise, circling the sculpture and artist. Warm north light, soft dust, 40mm, orbit right. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_081828_5c9a3569-1065-4ee7-9635-89d4080fd40a.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-cameramove-orbit-right-2",
+      "r2_key": "tag-cameramove-orbit-right-2-v1.mp4",
+      "job_id": "600c46e4-ee48-4455-b194-0e76e479137f",
+      "title": "The Lab",
+      "shotType": "Medium Shot",
+      "cameraMove": "Orbit Right",
+      "prompt": "Live-action photoreal, near-future, sleek grade. A high-tech lab, glowing holographic displays floating in the air, glass surfaces. Night, cool glow. A person in a smart technical coat studies a floating hologram, reaching to rotate it. The camera orbits smoothly around them clockwise, circling person and hologram. Cool blue holo-glow, clean reflections, 35mm, orbit right. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_081840_600c46e4-ee48-4455-b194-0e76e479137f.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-cameramove-orbit-right-3",
+      "r2_key": "tag-cameramove-orbit-right-3-v1.mp4",
+      "job_id": "5383d8dd-71d0-498a-811c-4723bdd2e55f",
+      "title": "The Ring",
+      "shotType": "Medium Shot",
+      "cameraMove": "Orbit Right",
+      "prompt": "Live-action photoreal, present day, gritty grade. A boxing ring under hard overhead lights, ropes and canvas, an empty arena in shadow. Night. A person in boxing gear and wrapped hands stands in a ready stance, gloves up. The camera orbits smoothly around them clockwise, circling the fighter in the ring. Hard top light, deep shadow, 35mm, orbit right. Shallow depth of field, sweat sheen, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_081854_5383d8dd-71d0-498a-811c-4723bdd2e55f.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-cameramove-orbit-right-4",
+      "r2_key": "tag-cameramove-orbit-right-4-v1.mp4",
+      "job_id": "c163dce0-c59d-494b-b7f1-4319c927331b",
+      "title": "Stillness",
+      "shotType": "Medium Shot",
+      "cameraMove": "Orbit Right",
+      "prompt": "Live-action photoreal, present day, serene grade. A tranquil temple interior, wooden pillars, soft light through paper screens, incense smoke curling. Morning, calm. A person in simple robes sits in meditation, cross-legged, hands resting. The camera orbits smoothly around them clockwise, circling the still figure. Soft warm light, drifting incense, 40mm, orbit right. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_081900_c163dce0-c59d-494b-b7f1-4319c927331b.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-cameramove-orbit-right-5",
+      "r2_key": "tag-cameramove-orbit-right-5-v1.mp4",
+      "job_id": "dd01426f-6544-4869-b3ca-2e3676a41e66",
+      "title": "The Curator",
+      "shotType": "Medium Shot",
+      "cameraMove": "Orbit Right",
+      "prompt": "Live-action photoreal, present day, refined grade. A quiet museum gallery at night, a single sculpture on a plinth under a warm spotlight, dark walls. Night, hushed. A person in elegant attire stands studying the sculpture, hand to chin. The camera orbits smoothly around them clockwise, circling person and artwork. Warm spot against deep dark, 40mm, orbit right. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_081906_dd01426f-6544-4869-b3ca-2e3676a41e66.mp4"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "collection": "shotType / Close-Up",
+  "id_prefix": "tag-shottype-close-up",
+  "visible_limit": 6,
+  "limit_key": "Close-Up",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "shot_type": "Close-Up",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-shottype-close-up-0",
+      "r2_key": "tag-shottype-close-up-0-v1.mp4",
+      "job_id": "cb5de9df-c456-4c70-bab5-ec7755a715f4",
+      "title": "The Resolve",
+      "shotType": "Close-Up",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, dramatic grade. A rain-soaked street at night, blurred neon behind. A tight close-up framing a person's face head-on, rain running down their determined features, jaw set, eyes forward and unflinching. A person in a soaked collared coat. Cool wet light, neon bokeh, 85mm, close-up. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_142944_cb5de9df-c456-4c70-bab5-ec7755a715f4.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-shottype-close-up-1",
+      "r2_key": "tag-shottype-close-up-1-v1.mp4",
+      "job_id": "5d214628-a119-4747-84a9-357108a0b0ed",
+      "title": "The Weary",
+      "shotType": "Close-Up",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, historical war, muted grade. A dim trench or bunker, soft grey light. A tight close-up framing a person's face, streaked with dirt and exhaustion, eyes distant, a slow tired blink. A person in period military uniform. Cool muted light, soft shadow, 85mm, close-up. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_142951_5d214628-a119-4747-84a9-357108a0b0ed.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-shottype-close-up-2",
+      "r2_key": "tag-shottype-close-up-2-v1.mp4",
+      "job_id": "ab7a009f-7f88-46a9-8cc3-9e6da99ae9b9",
+      "title": "The Taste",
+      "shotType": "Close-Up",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, warm culinary grade. A steamy professional kitchen, warm light. A tight close-up framing a person's face as they taste from a spoon, eyes fluttering closed in satisfaction, a small nod. A person in a white chef's jacket. Warm kitchen light, soft steam, 85mm, close-up. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_142957_ab7a009f-7f88-46a9-8cc3-9e6da99ae9b9.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-shottype-close-up-3",
+      "r2_key": "tag-shottype-close-up-3-v1.mp4",
+      "job_id": "950bb0a0-5047-42d4-bfd2-635fcd4f98c4",
+      "title": "The Laugh",
+      "shotType": "Close-Up",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, joyful grade. A sunny outdoor cafe, warm bokeh behind. A tight close-up framing a person's face mid-laugh, genuine and bright, eyes crinkling, head tipping slightly back. A person in a light summer shirt. Warm golden light, soft bokeh, 85mm, close-up. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_143002_950bb0a0-5047-42d4-bfd2-635fcd4f98c4.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-shottype-close-up-4",
+      "r2_key": "tag-shottype-close-up-4-v1.mp4",
+      "job_id": "d6eb0687-3ef6-4434-9169-de65942d63bf",
+      "title": "The Message",
+      "shotType": "Close-Up",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, moody grade. A dark room at night. A tight close-up framing a person's face lit from below by the cool glow of a phone screen, eyes scanning, expression shifting to concern. A person in a casual hoodie. Cool screen glow, deep dark, 85mm, close-up. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_143009_d6eb0687-3ef6-4434-9169-de65942d63bf.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-shottype-close-up-5",
+      "r2_key": "tag-shottype-close-up-5-v1.mp4",
+      "job_id": "fa889299-30d5-4d0b-84e4-c43b78fd72c0",
+      "title": "The Realization",
+      "shotType": "Close-Up",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, tense grade. A quiet office, soft daylight. A tight close-up framing a person's face as understanding dawns, eyes widening slightly, lips parting, a held breath. A person in a smart shirt. Soft cool light, clean background, 85mm, close-up. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_143015_fa889299-30d5-4d0b-84e4-c43b78fd72c0.mp4"
+    }
+  ]
+}

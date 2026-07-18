@@ -1,0 +1,77 @@
+{
+  "collection": "cameraMove / Slow Pan",
+  "id_prefix": "tag-cameramove-slow-pan",
+  "visible_limit": 6,
+  "limit_key": "Slow Pan",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "camera_move": "Slow Pan",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-cameramove-slow-pan-0",
+      "r2_key": "tag-cameramove-slow-pan-0-v1.mp4",
+      "job_id": "0800f651-4ad0-4b11-86d1-889a663b1e46",
+      "title": "The Overlook",
+      "shotType": "Wide Shot",
+      "cameraMove": "Slow Pan",
+      "prompt": "Live-action photoreal, present day, sweeping grade. A mountain overlook at golden hour, layered ridgelines fading into haze, a wooden railing. Evening, warm. A person in a hiking jacket stands at the railing taking in the view. The camera pans slowly and smoothly across the vast panorama, sweeping horizontally to arrive on them at the overlook. Warm golden light, atmospheric haze, 35mm, slow pan. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_073807_0800f651-4ad0-4b11-86d1-889a663b1e46.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-cameramove-slow-pan-1",
+      "r2_key": "tag-cameramove-slow-pan-1-v1.mp4",
+      "job_id": "063902c8-2d54-4f54-8d5c-9556efed5414",
+      "title": "The Gallery",
+      "shotType": "Wide Shot",
+      "cameraMove": "Slow Pan",
+      "prompt": "Live-action photoreal, present day, refined grade. A quiet modern art gallery, white walls, framed canvases, polished concrete floor. Day, soft museum light. A person in smart attire stands contemplating a painting. The camera pans slowly and horizontally along the row of artworks, sweeping to arrive on them. Soft even gallery light, clean tones, 40mm, slow pan. Shallow depth of field, fine grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_073813_063902c8-2d54-4f54-8d5c-9556efed5414.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-cameramove-slow-pan-2",
+      "r2_key": "tag-cameramove-slow-pan-2-v1.mp4",
+      "job_id": "d8eea611-c66b-49f6-b10b-c581310b0cd6",
+      "title": "Shoreline",
+      "shotType": "Wide Shot",
+      "cameraMove": "Slow Pan",
+      "prompt": "Live-action photoreal, present day, warm beach grade. A wide sandy beach at sunset, gentle surf, footprints, warm sky. Evening, golden. A person in rolled linen trousers walks barefoot at the waterline. The camera pans slowly and horizontally across the shoreline, sweeping to follow and arrive on them. Warm golden light, soft sea haze, 35mm, slow pan. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_073818_d8eea611-c66b-49f6-b10b-c581310b0cd6.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-cameramove-slow-pan-3",
+      "r2_key": "tag-cameramove-slow-pan-3-v1.mp4",
+      "job_id": "34b8f06a-2a6d-4bcb-89a3-146468a35bae",
+      "title": "Harvest",
+      "shotType": "Wide Shot",
+      "cameraMove": "Slow Pan",
+      "prompt": "Live-action photoreal, present day, rich autumn grade. A sunlit vineyard in early autumn, rows of vines heavy with grapes, rolling hills beyond. Afternoon, warm. A person in rustic workwear stands among the rows inspecting the vines. The camera pans slowly and horizontally across the vineyard rows, sweeping to arrive on them. Warm afternoon light, golden foliage, 35mm, slow pan. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_073826_34b8f06a-2a6d-4bcb-89a3-146468a35bae.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-cameramove-slow-pan-4",
+      "r2_key": "tag-cameramove-slow-pan-4-v1.mp4",
+      "job_id": "1a817ce7-5ece-45f0-afa2-1e13473cc9f1",
+      "title": "Late Diner",
+      "shotType": "Wide Shot",
+      "cameraMove": "Slow Pan",
+      "prompt": "Live-action photoreal, present day, nostalgic grade. A classic American diner late at night, chrome and red vinyl booths, neon glow through the window. Night, quiet. A person in a casual jacket sits alone in a booth with a coffee. The camera pans slowly and horizontally across the empty diner, sweeping to arrive on them. Warm interior light, cool neon spill, 35mm, slow pan. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_073832_1a817ce7-5ece-45f0-afa2-1e13473cc9f1.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-cameramove-slow-pan-5",
+      "r2_key": "tag-cameramove-slow-pan-5-v1.mp4",
+      "job_id": "ada8206a-c398-4c19-86b4-8a53f2b17d29",
+      "title": "The Balcony",
+      "shotType": "Wide Shot",
+      "cameraMove": "Slow Pan",
+      "prompt": "Live-action photoreal, present day, cinematic grade. A high apartment balcony at dusk, potted plants, string lights, a glittering city skyline beyond. Evening, warm. A person in relaxed evening wear leans on the railing looking out. The camera pans slowly and horizontally across the skyline, sweeping to arrive on them at the balcony. Warm dusk light, city bokeh, 35mm, slow pan. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_073841_ada8206a-c398-4c19-86b4-8a53f2b17d29.mp4"
+    }
+  ]
+}

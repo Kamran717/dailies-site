@@ -1,0 +1,77 @@
+{
+  "collection": "cameraMove / Snorricam",
+  "id_prefix": "tag-cameramove-snorricam",
+  "visible_limit": 6,
+  "limit_key": "Snorricam",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "camera_move": "Snorricam",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-cameramove-snorricam-0",
+      "r2_key": "tag-cameramove-snorricam-0-v1.mp4",
+      "job_id": "ffa8047a-e3dc-40b5-a971-6527c77f70c7",
+      "title": "The Panic",
+      "shotType": "Close-Up",
+      "cameraMove": "Snorricam",
+      "prompt": "Live-action photoreal, present day, frantic grade. A crowded train station concourse, rushing commuters, departure boards. Day, chaotic. A person in a commuter coat pushes through the crowd, wide-eyed and breathless. A snorricam rig fixes the camera to their body so they stay locked and steady in frame while the whole station whirls and lurches behind them. Cool station light, blurred motion, 28mm, snorricam. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_084256_ffa8047a-e3dc-40b5-a971-6527c77f70c7.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-cameramove-snorricam-1",
+      "r2_key": "tag-cameramove-snorricam-1-v1.mp4",
+      "job_id": "a837deca-b21a-49c0-9cb7-b752ae0cab38",
+      "title": "The Spin",
+      "shotType": "Close-Up",
+      "cameraMove": "Snorricam",
+      "prompt": "Live-action photoreal, present day, vibrant grade. A colorful street festival, banners and lights, a dancing crowd. Evening, joyful. A person in festive clothes spins and dances with abandon. A snorricam rig fixes the camera to their body so they stay centered and steady while the festival whirls dizzyingly around them. Warm festival light, swirling color, 28mm, snorricam. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_084306_a837deca-b21a-49c0-9cb7-b752ae0cab38.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-cameramove-snorricam-2",
+      "r2_key": "tag-cameramove-snorricam-2-v1.mp4",
+      "job_id": "893a9eaa-67f5-449e-a88b-5e49277a5c48",
+      "title": "The Aftermath",
+      "shotType": "Medium Shot",
+      "cameraMove": "Snorricam",
+      "prompt": "Live-action photoreal, present day, tense grade. A smoke-filled city street after an incident, debris, flashing lights, confusion. Day, disorienting. A person in a rugged jacket walks forward in a daze through the chaos. A snorricam rig fixes the camera to their body so they stay locked and steady while the smoke and street reel wildly behind them. Hard hazy light, drifting smoke, 28mm, snorricam. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_084312_893a9eaa-67f5-449e-a88b-5e49277a5c48.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-cameramove-snorricam-3",
+      "r2_key": "tag-cameramove-snorricam-3-v1.mp4",
+      "job_id": "bc84cfab-f698-4b85-8b01-012cfdd1ea1a",
+      "title": "Last Call",
+      "shotType": "Close-Up",
+      "cameraMove": "Snorricam",
+      "prompt": "Live-action photoreal, present day, woozy grade. A wet city street late at night, neon signs, blurred headlights. Night, unsteady. A person in an untucked shirt stumbles home along the sidewalk, disoriented. A snorricam rig fixes the camera to their body so they stay steady and centered while the neon night sways and tilts around them. Warm neon spill, wet reflections, 28mm, snorricam. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_084320_bc84cfab-f698-4b85-8b01-012cfdd1ea1a.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-cameramove-snorricam-4",
+      "r2_key": "tag-cameramove-snorricam-4-v1.mp4",
+      "job_id": "8bf9f052-01fd-41ed-9a3e-bffde4ed5743",
+      "title": "The Dash",
+      "shotType": "Close-Up",
+      "cameraMove": "Snorricam",
+      "prompt": "Live-action photoreal, present day, athletic grade. An outdoor sprint track under bright sun, lanes and stadium beyond. Day, intense. A person in running kit sprints all-out, face set with effort. A snorricam rig fixes the camera to their body so their face stays locked and steady while the track and stadium streak past in a blur. Hard sunlight, motion streaks, 28mm, snorricam. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_084326_8bf9f052-01fd-41ed-9a3e-bffde4ed5743.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-cameramove-snorricam-5",
+      "r2_key": "tag-cameramove-snorricam-5-v1.mp4",
+      "job_id": "e0c301f9-620b-4ad6-9729-700943da9917",
+      "title": "Vertigo",
+      "shotType": "Close-Up",
+      "cameraMove": "Snorricam",
+      "prompt": "Live-action photoreal, present day, disorienting grade. A tall rooftop edge against a bright sky, the city far below. Day, dizzying. A person in casual clothes reels backward as vertigo overtakes them, arms flailing for balance. A snorricam rig fixes the camera to their body so they stay centered and steady while the sky and city spin wildly around them. Bright daylight, whirling sky, 28mm, snorricam. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_084334_e0c301f9-620b-4ad6-9729-700943da9917.mp4"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "collection": "emotion / Fearful",
+  "id_prefix": "tag-emotion-fearful",
+  "visible_limit": 6,
+  "limit_key": "Fearful",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "emotion": "Fearful",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-emotion-fearful-0",
+      "r2_key": "tag-emotion-fearful-0-v1.mp4",
+      "job_id": "f389f536-8d42-4d9a-acee-72bc2bac0bc5",
+      "title": "The Noise",
+      "emotion": "Fearful",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, tense grade. A dim cluttered basement at night, a single bare bulb, shadows between old furniture. A person freezes at a sudden noise, eyes wide with fear, breath held, shoulders tight, slowly turning toward the dark. A person in home clothes. Cold low light, deep shadow, fearful expression, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_045307_f389f536-8d42-4d9a-acee-72bc2bac0bc5.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-emotion-fearful-1",
+      "r2_key": "tag-emotion-fearful-1-v1.mp4",
+      "job_id": "7f4e6eaa-75f3-4e44-9883-f4366315f8a8",
+      "title": "The Woods",
+      "emotion": "Fearful",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, eerie grade. A foggy forest at night, pale mist between black trees, a weak flashlight beam. A person stands frozen and afraid, clutching the light, eyes darting, backing away from something unseen. A person in an outdoor jacket. Cold moonlight, drifting fog, fearful expression, 50mm. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_045314_7f4e6eaa-75f3-4e44-9883-f4366315f8a8.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-emotion-fearful-2",
+      "r2_key": "tag-emotion-fearful-2-v1.mp4",
+      "job_id": "9d812fb3-4fc0-4264-b69e-95004099d828",
+      "title": "The Hallway",
+      "emotion": "Fearful",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, dread grade. A dim narrow hallway at night, a flickering light at the far end, doors ajar. A person presses back against the wall in fear, hands up, breathing fast, staring down the hall. A person in casual clothes. Cold flickering light, deep shadow, fearful expression, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_045324_9d812fb3-4fc0-4264-b69e-95004099d828.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-emotion-fearful-3",
+      "r2_key": "tag-emotion-fearful-3-v1.mp4",
+      "job_id": "953848a4-18ae-4a32-b3a8-23f428e86cc6",
+      "title": "Trapped",
+      "emotion": "Fearful",
+      "shotType": "Close-Up",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, claustrophobic grade. The interior of a stalled elevator, cold overhead light, the emergency button glowing. A person presses against the wall, clutching a phone, face tight with fear and rising panic. A person in office attire. Cold hard light, tight space, fearful expression, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_045333_953848a4-18ae-4a32-b3a8-23f428e86cc6.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-emotion-fearful-4",
+      "r2_key": "tag-emotion-fearful-4-v1.mp4",
+      "job_id": "747c5e3c-5ce6-4531-953e-1b919d0022b5",
+      "title": "The Corner",
+      "emotion": "Fearful",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, tense grade. A derelict abandoned building, broken windows, dust and debris, grey light. A person peers fearfully around a crumbling corner, wide-eyed, hesitant, ready to flee. A person in a worn jacket. Cold grey light, hard shadow, fearful expression, 50mm. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_045338_747c5e3c-5ce6-4531-953e-1b919d0022b5.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-emotion-fearful-5",
+      "r2_key": "tag-emotion-fearful-5-v1.mp4",
+      "job_id": "1cebb3fb-39dd-4699-8b45-e81e566c915c",
+      "title": "The Mirror",
+      "emotion": "Fearful",
+      "shotType": "Close-Up",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, suspense grade. Inside a car at night on a deserted road, dashboard glow. A person glances fearfully at the rear-view mirror, eyes wide, gripping the wheel, fear dawning on their face. A person in a jacket. Cold dash light, deep night, fearful expression, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_045344_1cebb3fb-39dd-4699-8b45-e81e566c915c.mp4"
+    }
+  ]
+}

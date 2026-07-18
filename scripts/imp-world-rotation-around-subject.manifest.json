@@ -1,0 +1,83 @@
+{
+  "collection": "impossible / World Rotation Around Subject",
+  "id_prefix": "tag-impossible-world-rotation-around-subject",
+  "visible_limit": 6,
+  "limit_key": "World Rotation Around Subject",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "impossible": "World Rotation Around Subject",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-impossible-world-rotation-around-subject-0",
+      "r2_key": "tag-impossible-world-rotation-around-subject-0-v1.mp4",
+      "job_id": "5ef2d026-df58-4e6a-9818-0390dbace037",
+      "title": "The City",
+      "impossible": "World Rotation Around Subject",
+      "shotType": "Medium Shot",
+      "cameraMove": "Orbit Right",
+      "prompt": "Cinematic VFX, impossible world rotation. A person stands perfectly still and centered while the entire city around them rotates impossibly — buildings, streets and sky wheeling around the fixed figure like a spinning diorama. A person in a jacket standing still. Fixed subject, rotating world, impossible physics, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_070735_5ef2d026-df58-4e6a-9818-0390dbace037.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-impossible-world-rotation-around-subject-1",
+      "r2_key": "tag-impossible-world-rotation-around-subject-1-v1.mp4",
+      "job_id": "c8a8a1ae-bd74-4831-aa01-86f1cc24724f",
+      "title": "The Room",
+      "impossible": "World Rotation Around Subject",
+      "shotType": "Medium Shot",
+      "cameraMove": "Orbit Right",
+      "prompt": "Cinematic VFX, impossible world rotation. A person stands motionless and centered while the entire room rotates impossibly around them — walls, furniture and windows wheeling a full turn around the fixed figure, defying gravity. A person in casual clothes standing still. Fixed subject, rotating room, impossible physics, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_070742_c8a8a1ae-bd74-4831-aa01-86f1cc24724f.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-impossible-world-rotation-around-subject-2",
+      "r2_key": "tag-impossible-world-rotation-around-subject-2-v1.mp4",
+      "job_id": "5651cd98-5818-4a0c-acb0-d7aca627d29e",
+      "title": "The Field",
+      "impossible": "World Rotation Around Subject",
+      "shotType": "Medium Shot",
+      "cameraMove": "Orbit Right",
+      "prompt": "Cinematic VFX, impossible world rotation. A person stands perfectly still in an open field while the entire landscape and sky rotate impossibly around them, the horizon wheeling a full circle around the fixed figure. A person in outdoor clothes standing still. Fixed subject, rotating world, impossible physics, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_070750_5651cd98-5818-4a0c-acb0-d7aca627d29e.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-impossible-world-rotation-around-subject-3",
+      "r2_key": "tag-impossible-world-rotation-around-subject-3-v1.mp4",
+      "job_id": "39435cdb-e6ec-4f12-bc96-abfcb52cf1f6",
+      "title": "The Street",
+      "impossible": "World Rotation Around Subject",
+      "shotType": "Medium Shot",
+      "cameraMove": "Orbit Right",
+      "prompt": "Cinematic VFX, impossible world rotation. A person stands motionless on a busy street while the whole street scene rotates impossibly around them — cars, storefronts and pedestrians wheeling around the fixed central figure. A person in a coat standing still. Fixed subject, rotating world, impossible physics, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_070759_39435cdb-e6ec-4f12-bc96-abfcb52cf1f6.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-impossible-world-rotation-around-subject-4",
+      "r2_key": "tag-impossible-world-rotation-around-subject-4-v1.mp4",
+      "job_id": "1775b729-9f82-40e5-afb5-d02856a9a211",
+      "title": "The Forest",
+      "impossible": "World Rotation Around Subject",
+      "shotType": "Medium Shot",
+      "cameraMove": "Orbit Right",
+      "prompt": "Cinematic VFX, impossible world rotation. A person stands perfectly still in a forest while the towering trees and canopy rotate impossibly around them, the whole woodland wheeling around the fixed figure. A person in outdoor clothes standing still. Fixed subject, rotating forest, impossible physics, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_070808_1775b729-9f82-40e5-afb5-d02856a9a211.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-impossible-world-rotation-around-subject-5",
+      "r2_key": "tag-impossible-world-rotation-around-subject-5-v1.mp4",
+      "job_id": "41ff8f42-a9b9-4f03-9f04-c50532aa86a9",
+      "title": "The Stars",
+      "impossible": "World Rotation Around Subject",
+      "shotType": "Medium Shot",
+      "cameraMove": "Orbit Right",
+      "prompt": "Cinematic VFX, impossible world rotation. A person stands motionless on a hilltop at night while the entire star-filled sky and cosmos rotate impossibly around them, constellations wheeling in a full circle around the fixed figure. A person standing still. Fixed subject, rotating cosmos, impossible physics, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_070817_41ff8f42-a9b9-4f03-9f04-c50532aa86a9.mp4"
+    }
+  ]
+}

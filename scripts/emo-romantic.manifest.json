@@ -1,0 +1,175 @@
+{
+  "collection": "emotion / Romantic",
+  "id_prefix": "tag-emotion-romantic",
+  "visible_limit": 15,
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "limit_key": "Romantic",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-emotion-romantic-0",
+      "r2_key": "tag-emotion-romantic-0-v1.mp4",
+      "job_id": "40e39207-c297-4148-86ce-11d82b54e615",
+      "title": "Reaching Hands",
+      "shotType": "Close-Up",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Cinematic photoreal, warm candlelit grade. An intimate candlelit dinner, soft glow, wine glasses, a small table for two. A person in elegant evening wear reaches across the table to take a partner's hand, tender and adoring, a soft smile. Flickering candles, warm bokeh, rose petals. Slow dolly in, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_075525_40e39207-c297-4148-86ce-11d82b54e615.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-emotion-romantic-1",
+      "r2_key": "tag-emotion-romantic-1-v1.mp4",
+      "job_id": "195e2fce-1816-465f-b8a4-6a83abb1fe58",
+      "title": "One Umbrella",
+      "shotType": "Medium Shot",
+      "cameraMove": "Orbit Left",
+      "prompt": "Anime aesthetic, soft rainy palette, gentle glow. A city street in warm rain at night, glowing shopfronts, wet reflections. A person shares a single umbrella with a partner, leaning close and smiling shyly, shoulders touching. Falling rain, warm streetlight, puddle reflections. Orbit left, tender, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_075533_195e2fce-1816-465f-b8a4-6a83abb1fe58.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-emotion-romantic-2",
+      "r2_key": "tag-emotion-romantic-2-v1.mp4",
+      "job_id": "c571fd66-9675-4d68-8c6d-e5c4835d752c",
+      "title": "Living Room Dance",
+      "shotType": "Wide Shot",
+      "cameraMove": "Orbit Left",
+      "prompt": "Cinematic photoreal, warm intimate grade. A cozy living room at night lit by fairy lights, rug, soft couch. A person in comfy clothes slow-dances cheek-to-cheek with a partner, eyes closed, blissful and in love. Warm bokeh, gentle sway, soft shadows. Orbit left, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_075542_c571fd66-9675-4d68-8c6d-e5c4835d752c.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-emotion-romantic-3",
+      "r2_key": "tag-emotion-romantic-3-v1.mp4",
+      "job_id": "2e6c9291-6520-4994-abeb-055cfdc7d86f",
+      "title": "Sunset Picnic",
+      "shotType": "Wide Shot",
+      "cameraMove": "Crane Rise",
+      "prompt": "Ghibli-inspired hand-painted style, golden sunset palette. A grassy hilltop picnic at sunset, a blanket, a basket, wildflowers. A person leans warmly against a partner watching the sun sink, content and adoring. Warm painterly light, drifting seeds, soft clouds. Crane rise, romantic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_075548_2e6c9291-6520-4994-abeb-055cfdc7d86f.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-emotion-romantic-4",
+      "r2_key": "tag-emotion-romantic-4-v1.mp4",
+      "job_id": "b357bd85-d04e-43a8-954a-0bd834e14556",
+      "title": "Two Coffees",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static Wide",
+      "prompt": "Cinematic photoreal, warm Parisian grade. A charming sidewalk cafe in the afternoon, two coffees, a little round table, soft city behind. A person in a chic coat gazes fondly across the table at a partner, laughing softly, smitten. Warm light, passing bicycles, gentle bokeh. Static wide, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_075601_b357bd85-d04e-43a8-954a-0bd834e14556.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-emotion-romantic-5",
+      "r2_key": "tag-emotion-romantic-5-v1.mp4",
+      "job_id": "aa3cc5cb-0d3c-4ea8-a6f8-cc73e8c192fb",
+      "title": "Rooftop Lights",
+      "shotType": "Wide Shot",
+      "cameraMove": "Orbit Left",
+      "prompt": "Comic-book illustrated style, warm night palette, soft ink. A rooftop at night overlooking glittering city lights, string bulbs overhead. A person holds a partner close in a tender embrace, foreheads nearly touching, deeply in love. Bokeh skyline, warm glow, night breeze. Orbit left, romantic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_075608_aa3cc5cb-0d3c-4ea8-a6f8-cc73e8c192fb.mp4"
+    },
+    {
+      "index": 6,
+      "id": "tag-emotion-romantic-6",
+      "r2_key": "tag-emotion-romantic-6-v1.mp4",
+      "job_id": "59b4fb5f-a236-48ca-932c-bbf3df856ae3",
+      "title": "Barefoot Shore",
+      "shotType": "Wide Shot",
+      "cameraMove": "Tracking Side",
+      "prompt": "Watercolor illustration style, soft sunset washes. A quiet beach at sunset, gentle surf, warm gold and pink sky. A person walks barefoot along the water holding a partner's hand, leaning close, serene and in love. Loose painterly edges, soft foam, warm haze. Tracking side, tender, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_075614_59b4fb5f-a236-48ca-932c-bbf3df856ae3.mp4"
+    },
+    {
+      "index": 7,
+      "id": "tag-emotion-romantic-7",
+      "r2_key": "tag-emotion-romantic-7-v1.mp4",
+      "job_id": "a0972055-1f47-4912-96df-caebe328a178",
+      "title": "By the Fire",
+      "shotType": "Medium Shot",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Cinematic photoreal, warm firelit grade. A cabin living room on a winter night, a crackling fireplace, a shared blanket. A person nestles against a partner under the blanket, smiling softly, cozy and adoring. Warm flickering firelight, deep cozy shadows, snow at the window. Slow dolly in, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_075622_a0972055-1f47-4912-96df-caebe328a178.mp4"
+    },
+    {
+      "index": 8,
+      "id": "tag-emotion-romantic-8",
+      "r2_key": "tag-emotion-romantic-8-v1.mp4",
+      "job_id": "15fd74a6-36f9-45c5-9d04-4aa0002a2946",
+      "title": "Neon Bridge",
+      "shotType": "Medium Shot",
+      "cameraMove": "Orbit Left",
+      "prompt": "Cyberpunk style, warm-cool neon wash, glossy reflections. A pedestrian bridge glowing with soft neon at night, city lights beyond. A person leans close to a partner at the railing, sharing a tender look, softly in love. Neon glow, gentle haze, distant hum. Orbit left, intimate, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_075628_15fd74a6-36f9-45c5-9d04-4aa0002a2946.mp4"
+    },
+    {
+      "index": 9,
+      "id": "tag-emotion-romantic-9",
+      "r2_key": "tag-emotion-romantic-9-v1.mp4",
+      "job_id": "ea72eafe-35b5-499a-8aa4-54e147718d51",
+      "title": "First Dance",
+      "shotType": "Wide Shot",
+      "cameraMove": "Orbit Left",
+      "prompt": "Cinematic photoreal, warm celebratory grade. A wedding reception at golden hour, string lights, a wooden dance floor, blurred guests. A person in wedding attire shares a first dance with a partner, foreheads touching, radiant with love. Warm bokeh, drifting petals, soft glow. Orbit left, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_075633_ea72eafe-35b5-499a-8aa4-54e147718d51.mp4"
+    },
+    {
+      "index": 10,
+      "id": "tag-emotion-romantic-10",
+      "r2_key": "tag-emotion-romantic-10-v1.mp4",
+      "job_id": "b69c927c-711b-4fe5-bec6-09584af58e94",
+      "title": "Lanterns",
+      "shotType": "Wide Shot",
+      "cameraMove": "Crane Rise",
+      "prompt": "Anime aesthetic, warm night palette, glowing highlights. A riverside lantern festival at night, paper lanterns rising into the sky, reflections on water. A person releases a glowing lantern beside a partner, leaning together, tender and hopeful in love. Floating lights, warm bokeh, soft night. Crane rise, romantic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_075640_b69c927c-711b-4fe5-bec6-09584af58e94.mp4"
+    },
+    {
+      "index": 11,
+      "id": "tag-emotion-romantic-11",
+      "r2_key": "tag-emotion-romantic-11-v1.mp4",
+      "job_id": "0bb03c4b-d77d-450a-a47c-401095d75370",
+      "title": "Morning Light",
+      "shotType": "Medium Shot",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Cinematic photoreal, soft warm morning grade. A sunlit bedroom in the morning, white linens, breakfast tray, gauzy curtains. A person shares breakfast in bed with a partner, laughing softly, tender and content. Warm window light, floating dust, gentle glow. Slow dolly in, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_075651_0bb03c4b-d77d-450a-a47c-401095d75370.mp4"
+    },
+    {
+      "index": 12,
+      "id": "tag-emotion-romantic-12",
+      "r2_key": "tag-emotion-romantic-12-v1.mp4",
+      "job_id": "c21a0977-5ceb-4470-9019-e620b518c560",
+      "title": "Flower Field",
+      "shotType": "Wide Shot",
+      "cameraMove": "Orbit Left",
+      "prompt": "Ghibli-inspired hand-painted style, bright floral palette. A vast field of wildflowers under a soft blue sky, breeze rolling through. A person walks hand-in-hand with a partner through the blooms, sharing a loving glance, joyful in love. Painterly petals, warm sun, big clouds. Orbit left, romantic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_075657_c21a0977-5ceb-4470-9019-e620b518c560.mp4"
+    },
+    {
+      "index": 13,
+      "id": "tag-emotion-romantic-13",
+      "r2_key": "tag-emotion-romantic-13-v1.mp4",
+      "job_id": "4efe6b29-fa8b-4479-b3ad-6f2e148968cc",
+      "title": "The Reunion",
+      "shotType": "Medium Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Cinematic photoreal, warm station grade. A train station platform, warm light, steam, blurred travelers. A person drops their bag and rushes into a partner's arms in a tearful, joyful embrace, overwhelmed with love. Golden light, drifting steam, soft bokeh. Handheld push, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_075703_4efe6b29-fa8b-4479-b3ad-6f2e148968cc.mp4"
+    },
+    {
+      "index": 14,
+      "id": "tag-emotion-romantic-14",
+      "r2_key": "tag-emotion-romantic-14-v1.mp4",
+      "job_id": "1991538a-a358-4c55-b2a9-8f6341e84811",
+      "title": "Kitchen Sway",
+      "shotType": "Medium Shot",
+      "cameraMove": "Orbit Left",
+      "prompt": "Cinematic photoreal, warm morning grade. A sunlit kitchen, coffee on the counter, soft music implied. A person sways barefoot in a slow dance with a partner between the counters, laughing softly, deeply in love. Warm window light, gentle motion, cozy details. Orbit left, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_075711_1991538a-a358-4c55-b2a9-8f6341e84811.mp4"
+    }
+  ]
+}

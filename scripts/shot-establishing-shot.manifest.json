@@ -1,0 +1,77 @@
+{
+  "collection": "shotType / Establishing Shot",
+  "id_prefix": "tag-shottype-establishing-shot",
+  "visible_limit": 6,
+  "limit_key": "Establishing Shot",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "shot_type": "Establishing Shot",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-shottype-establishing-shot-0",
+      "r2_key": "tag-shottype-establishing-shot-0-v1.mp4",
+      "job_id": "9f4ea86f-c0aa-4195-869c-b3508a2d87dc",
+      "title": "The City",
+      "shotType": "Establishing Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, cinematic grade. A sweeping establishing shot of a glittering city skyline at dusk, skyscrapers stretching to the horizon, warm windows and cool sky, a rooftop in the foreground. Evening. A person in a coat stands small on the foreground rooftop taking in the view, establishing the place. Warm city lights, cool dusk sky, 24mm, establishing shot. Deep focus, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_152155_9f4ea86f-c0aa-4195-869c-b3508a2d87dc.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-shottype-establishing-shot-1",
+      "r2_key": "tag-shottype-establishing-shot-1-v1.mp4",
+      "job_id": "a0c2e1b9-a42a-4e59-a2a7-b06138556274",
+      "title": "The Homestead",
+      "shotType": "Establishing Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, pastoral grade. A wide establishing shot of a lone farmhouse amid vast rolling green fields under a big sky, a dirt track leading to it. Late afternoon, warm. A person in rustic clothes stands small by the farmhouse, establishing the setting. Warm golden light, immense open land, 24mm, establishing shot. Deep focus, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_152201_a0c2e1b9-a42a-4e59-a2a7-b06138556274.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-shottype-establishing-shot-2",
+      "r2_key": "tag-shottype-establishing-shot-2-v1.mp4",
+      "job_id": "3664c571-8ea3-433c-a936-3020c9a6adca",
+      "title": "The Grand",
+      "shotType": "Establishing Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, elegant grade. A wide establishing shot of a grand illuminated hotel facade at night, glowing marquee, columns, a sweeping entrance and steps. Night, warm lights. A person in evening attire stands small at the foot of the steps, establishing the location. Warm facade light, cool night, 24mm, establishing shot. Deep focus, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_152208_3664c571-8ea3-433c-a936-3020c9a6adca.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-shottype-establishing-shot-3",
+      "r2_key": "tag-shottype-establishing-shot-3-v1.mp4",
+      "job_id": "f1cc73ce-2791-476d-aefb-be38b6aceabe",
+      "title": "The Harbor",
+      "shotType": "Establishing Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, warm coastal grade. A wide establishing shot of a colorful coastal fishing village seen from a hillside, terracotta roofs, boats in the harbor, blue sea beyond. Morning, bright. A person in light clothes stands small on the hillside path, establishing the place. Warm morning light, sparkling water, 24mm, establishing shot. Deep focus, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_152220_f1cc73ce-2791-476d-aefb-be38b6aceabe.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-shottype-establishing-shot-4",
+      "r2_key": "tag-shottype-establishing-shot-4-v1.mp4",
+      "job_id": "eebf2906-2e56-4fca-a73f-56028c578982",
+      "title": "The Road",
+      "shotType": "Establishing Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, epic grade. A wide establishing shot of a long empty desert highway stretching dead straight toward distant mountains, scrub and big sky. Midday, harsh clear light. A person in casual clothes stands small beside a parked car on the shoulder, establishing the vast setting. Hard warm light, endless perspective, 24mm, establishing shot. Deep focus, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_152227_eebf2906-2e56-4fca-a73f-56028c578982.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-shottype-establishing-shot-5",
+      "r2_key": "tag-shottype-establishing-shot-5-v1.mp4",
+      "job_id": "652b7f90-e182-4c1e-b692-05e94ef264e6",
+      "title": "The Keep",
+      "shotType": "Establishing Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, historical, dramatic grade. A wide establishing shot of an ancient stone castle perched on a green hill, ramparts and towers, a winding road up to the gate, moody sky. Overcast day. A person in a traveler's cloak stands small on the road below, establishing the location. Cool dramatic light, sweeping scale, 24mm, establishing shot. Deep focus, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_152233_652b7f90-e182-4c1e-b692-05e94ef264e6.mp4"
+    }
+  ]
+}

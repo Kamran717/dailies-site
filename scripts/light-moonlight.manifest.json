@@ -1,0 +1,77 @@
+{
+  "collection": "lighting / Moonlight",
+  "id_prefix": "tag-lighting-moonlight",
+  "visible_limit": 6,
+  "limit_key": "Moonlight",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "lighting": "Moonlight",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-lighting-moonlight-0",
+      "r2_key": "tag-lighting-moonlight-0-v1.mp4",
+      "job_id": "852c4ab0-4950-4e0e-957d-3276bd047e77",
+      "title": "Moonrise",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A balcony at night under a large full moon, city dim below. The scene is lit by cool blue moonlight, silvery light rimming the person against the night, soft blue shadows. A person in a light robe stands at the railing. Cool blue moonlight, silver rim, deep blue night, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_040530_852c4ab0-4950-4e0e-957d-3276bd047e77.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-lighting-moonlight-1",
+      "r2_key": "tag-lighting-moonlight-1-v1.mp4",
+      "job_id": "513a1266-fb64-4e34-b4d6-aa53eb3afaeb",
+      "title": "The Path",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A forest path at night, moonlight filtering through the trees. The scene is lit by cool blue moonlight, dappled silver light on the person and path, deep blue shadows between the trees. A person in a jacket walks the path. Cool blue moonlight, dappled silver, blue shadow, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_040537_513a1266-fb64-4e34-b4d6-aa53eb3afaeb.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-lighting-moonlight-2",
+      "r2_key": "tag-lighting-moonlight-2-v1.mp4",
+      "job_id": "cd506a70-c10c-410d-a7cc-5e5f8c45a755",
+      "title": "The Lake",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A still lake at night, the full moon reflected on the water. The scene is lit by cool blue moonlight, silver light on the person and shimmering across the lake, deep blue night. A person in a coat stands at the shore. Cool blue moonlight, shimmering reflection, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_040546_cd506a70-c10c-410d-a7cc-5e5f8c45a755.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-lighting-moonlight-3",
+      "r2_key": "tag-lighting-moonlight-3-v1.mp4",
+      "job_id": "d9c54319-3c77-4748-b79f-7d9de5396131",
+      "title": "The Window",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A dark bedroom, moonlight streaming through a large window. The scene is lit by cool blue moonlight, a shaft of silver light falling across the person, deep blue shadow in the room. A person in sleepwear stands at the window. Cool blue moonlight, silver shaft, blue shadow, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_040551_d9c54319-3c77-4748-b79f-7d9de5396131.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-lighting-moonlight-4",
+      "r2_key": "tag-lighting-moonlight-4-v1.mp4",
+      "job_id": "d0a02fa8-24a1-4471-933e-22a530eae43a",
+      "title": "The Tide",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A beach at night, moonlight on the surf. The scene is lit by cool blue moonlight, silver light on the person and the breaking waves, deep blue sky and sea. A person in rolled trousers stands at the waterline. Cool blue moonlight, silver surf, blue night, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_040556_d0a02fa8-24a1-4471-933e-22a530eae43a.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-lighting-moonlight-5",
+      "r2_key": "tag-lighting-moonlight-5-v1.mp4",
+      "job_id": "233bde5e-9407-4adc-87c8-262cc8ef325c",
+      "title": "The Watch",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A city rooftop at night under a bright full moon. The scene is lit by cool blue moonlight, silver light rimming the person against the dim skyline, deep blue shadows. A person in a long coat stands looking out. Cool blue moonlight, silver rim, blue night, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_040601_233bde5e-9407-4adc-87c8-262cc8ef325c.mp4"
+    }
+  ]
+}

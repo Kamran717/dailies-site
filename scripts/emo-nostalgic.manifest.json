@@ -1,0 +1,83 @@
+{
+  "collection": "emotion / Nostalgic",
+  "id_prefix": "tag-emotion-nostalgic",
+  "visible_limit": 6,
+  "limit_key": "Nostalgic",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "emotion": "Nostalgic",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-emotion-nostalgic-0",
+      "r2_key": "tag-emotion-nostalgic-0-v1.mp4",
+      "job_id": "d2ea61d9-de8e-4b9f-8eb0-a07a2f3ea00b",
+      "title": "The Album",
+      "emotion": "Nostalgic",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, warm nostalgic grade. A cozy dim living room, warm lamplight, an old photo album open on a lap. A person turns the pages of the album with a wistful, tender smile, lost in memory, eyes soft. A person in a cardigan. Warm amber light, soft haze, nostalgic mood, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_053958_d2ea61d9-de8e-4b9f-8eb0-a07a2f3ea00b.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-emotion-nostalgic-1",
+      "r2_key": "tag-emotion-nostalgic-1-v1.mp4",
+      "job_id": "23829957-cb00-46bd-80c3-ceaa92a26fba",
+      "title": "The Record",
+      "emotion": "Nostalgic",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, warm nostalgic grade. A vintage room with a record player, shelves of vinyl, warm evening light. A person lowers the needle onto a spinning record, eyes closing with a wistful, nostalgic smile as the music starts. A person in retro-style clothes. Warm amber light, soft glow, nostalgic mood, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_054004_23829957-cb00-46bd-80c3-ceaa92a26fba.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-emotion-nostalgic-2",
+      "r2_key": "tag-emotion-nostalgic-2-v1.mp4",
+      "job_id": "e616a149-9c4b-46a2-bb21-2cb203f68de2",
+      "title": "The Bedroom",
+      "emotion": "Nostalgic",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, warm nostalgic grade. A childhood bedroom preserved in time, old posters, faded toys, warm afternoon light through curtains. A person stands looking around wistfully, touching an old keepsake, flooded with memory. A person in casual clothes. Warm nostalgic light, dust motes, nostalgic mood, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_054009_e616a149-9c4b-46a2-bb21-2cb203f68de2.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-emotion-nostalgic-3",
+      "r2_key": "tag-emotion-nostalgic-3-v1.mp4",
+      "job_id": "a5b01cc5-c9c8-41ee-8a01-bd3e09888e58",
+      "title": "The Porch",
+      "emotion": "Nostalgic",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, warm nostalgic grade. An old wooden porch at dusk, a creaking swing, warm golden light, fireflies. A person rocks gently on the porch swing with a wistful, faraway look, remembering. A person in comfortable clothes. Warm golden dusk light, soft glow, nostalgic mood, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_054019_a5b01cc5-c9c8-41ee-8a01-bd3e09888e58.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-emotion-nostalgic-4",
+      "r2_key": "tag-emotion-nostalgic-4-v1.mp4",
+      "job_id": "e87d0393-a128-4709-880a-570fc9f4e02a",
+      "title": "The Window",
+      "emotion": "Nostalgic",
+      "shotType": "Close-Up",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, warm nostalgic grade. A rain-streaked window, soft grey daylight, a cup of tea steaming. A person gazes out at the rain with a wistful, nostalgic expression, cradling the warm cup, memories surfacing. A person in a soft sweater. Soft cool light with warm accents, nostalgic mood, 85mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_054027_e87d0393-a128-4709-880a-570fc9f4e02a.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-emotion-nostalgic-5",
+      "r2_key": "tag-emotion-nostalgic-5-v1.mp4",
+      "job_id": "89549314-d97d-4b1a-92e4-54c5dbc35ded",
+      "title": "The Fair",
+      "emotion": "Nostalgic",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, warm nostalgic grade. A small-town fair at golden dusk, a glowing vintage carousel, string lights. A person stands watching the carousel turn with a wistful, tender smile, remembering simpler days. A person in casual clothes. Warm golden light, glowing bulbs, nostalgic mood, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_054035_89549314-d97d-4b1a-92e4-54c5dbc35ded.mp4"
+    }
+  ]
+}

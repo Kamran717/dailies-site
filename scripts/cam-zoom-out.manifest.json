@@ -1,0 +1,77 @@
+{
+  "collection": "cameraMove / Zoom Out",
+  "id_prefix": "tag-cameramove-zoom-out",
+  "visible_limit": 6,
+  "limit_key": "Zoom Out",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "camera_move": "Zoom Out",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-cameramove-zoom-out-0",
+      "r2_key": "tag-cameramove-zoom-out-0-v1.mp4",
+      "job_id": "215295dd-509e-458b-91a0-9f5d6bf6bf6d",
+      "title": "Alone",
+      "shotType": "Wide Shot",
+      "cameraMove": "Zoom Out",
+      "prompt": "Live-action photoreal, present day, stark grade. A vast empty warehouse, steel columns, shafts of light from high windows, dust. Day. A person in a coat stands small in a pool of light. The camera stays locked in place and zooms out with the lens, pulling wide to reveal the immense emptiness around them. Hard shafts of light, floating dust, 24mm zoom, lens zoom out. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_093502_215295dd-509e-458b-91a0-9f5d6bf6bf6d.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-cameramove-zoom-out-1",
+      "r2_key": "tag-cameramove-zoom-out-1-v1.mp4",
+      "job_id": "6f8e563f-9dac-423c-9d32-1b0447995120",
+      "title": "The Wait",
+      "shotType": "Wide Shot",
+      "cameraMove": "Zoom Out",
+      "prompt": "Live-action photoreal, present day, wistful grade. An empty city park at dusk, bare trees, a single bench, fallen leaves. Evening, cool. A person in a coat sits alone on the bench, hands folded. The camera stays locked in place and zooms out with the lens, pulling wide to reveal the deserted park around them. Cool dusk light, soft leaves, 24mm zoom, lens zoom out. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_093508_6f8e563f-9dac-423c-9d32-1b0447995120.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-cameramove-zoom-out-2",
+      "r2_key": "tag-cameramove-zoom-out-2-v1.mp4",
+      "job_id": "3cb6171a-c1a1-4d65-b717-46499982a512",
+      "title": "The Grind",
+      "shotType": "Wide Shot",
+      "cameraMove": "Zoom Out",
+      "prompt": "Live-action photoreal, present day, corporate grade. A vast open-plan office late at night, rows of empty desks, one lit workstation. Night. A person in business attire works alone at a single desk. The camera stays locked in place and zooms out with the lens, pulling wide to reveal the endless empty office. Cool monitor glow, dim office, 24mm zoom, lens zoom out. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_093520_3cb6171a-c1a1-4d65-b717-46499982a512.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-cameramove-zoom-out-3",
+      "r2_key": "tag-cameramove-zoom-out-3-v1.mp4",
+      "job_id": "ea26de92-905d-44a1-ab9c-21e4cd7e054e",
+      "title": "Small World",
+      "shotType": "Wide Shot",
+      "cameraMove": "Zoom Out",
+      "prompt": "Live-action photoreal, present day, bright pastoral grade. A green hillside dotted with wildflowers, a wooden fence line, grazing sheep in the distance. Midday, sunny and clear. A person in a light jacket stands on the hillside. The camera stays fixed on a tripod and the lens zooms outward, widening the frame to show the rolling countryside around them. Bright warm sunlight, blue sky, 24mm lens, optical zoom out. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_093600_ea26de92-905d-44a1-ab9c-21e4cd7e054e.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-cameramove-zoom-out-4",
+      "r2_key": "tag-cameramove-zoom-out-4-v1.mp4",
+      "job_id": "dc8cbffa-2eda-47fd-9e5c-fd932632ec82",
+      "title": "The Search",
+      "shotType": "Wide Shot",
+      "cameraMove": "Zoom Out",
+      "prompt": "Live-action photoreal, present day, scholarly grade. A grand old library, towering shelves receding into the distance, warm lamps. Afternoon, warm. A person in a cardigan stands among the stacks holding a book. The camera stays locked in place and zooms out with the lens, pulling wide to reveal the vast maze of shelves around them. Warm library light, deep rows, 24mm zoom, lens zoom out. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_093607_dc8cbffa-2eda-47fd-9e5c-fd932632ec82.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-cameramove-zoom-out-5",
+      "r2_key": "tag-cameramove-zoom-out-5-v1.mp4",
+      "job_id": "6e2c9be9-f6f5-4fef-901a-fc0dc41ca3af",
+      "title": "The Shore",
+      "shotType": "Wide Shot",
+      "cameraMove": "Zoom Out",
+      "prompt": "Live-action photoreal, present day, serene grade. A vast empty beach at low tide, wet sand mirror, gentle surf, soft sky. Morning, calm. A person in rolled trousers stands barefoot on the sand. The camera stays locked in place and zooms out with the lens, pulling wide to reveal the endless empty shoreline. Soft morning light, mirror sand, 24mm zoom, lens zoom out. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_093613_6e2c9be9-f6f5-4fef-901a-fc0dc41ca3af.mp4"
+    }
+  ]
+}

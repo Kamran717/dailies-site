@@ -1,0 +1,77 @@
+{
+  "collection": "shotType / Dutch Angle",
+  "id_prefix": "tag-shottype-dutch-angle",
+  "visible_limit": 6,
+  "limit_key": "Dutch Angle",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "shot_type": "Dutch Angle",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-shottype-dutch-angle-0",
+      "r2_key": "tag-shottype-dutch-angle-0-v1.mp4",
+      "job_id": "b7135366-b00d-4d8d-837d-38baf4ebcd26",
+      "title": "The Carousel",
+      "shotType": "Dutch Angle",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, eerie grade. A deserted fairground at dusk, an old carousel beginning to turn by itself, peeling paint, long shadows. Evening, unsettling. A person in a light coat stands beside the carousel, uneasy. The frame is held in a strong static Dutch angle, horizon tilted hard, geometry off-balance. Cool dusk light, faded color, 35mm, Dutch angle. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_152319_b7135366-b00d-4d8d-837d-38baf4ebcd26.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-shottype-dutch-angle-1",
+      "r2_key": "tag-shottype-dutch-angle-1-v1.mp4",
+      "job_id": "a2cacab5-bda1-4904-a458-ad99e32abc84",
+      "title": "Room Service",
+      "shotType": "Dutch Angle",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, unsettling grade. A long hotel corridor at night, endless identical doors, patterned carpet, one door slightly ajar spilling light. Night. A person in a robe stands mid-corridor looking toward the open door. The frame is held in a strong static Dutch angle, horizon tilted, corridor canted. Cold green-tinged light, deep perspective, 35mm, Dutch angle. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_152326_a2cacab5-bda1-4904-a458-ad99e32abc84.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-shottype-dutch-angle-2",
+      "r2_key": "tag-shottype-dutch-angle-2-v1.mp4",
+      "job_id": "e575eaf7-3fb6-45df-aedb-d832b278a4c2",
+      "title": "The Prescription",
+      "shotType": "Dutch Angle",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, tense grade. A late-night pharmacy, shelves of bottles, a buzzing fluorescent tube flickering overhead, a counter. Night. A person in a coat waits at the counter, tense under the harsh light. The frame is held in a strong static Dutch angle, horizon tilted, shelves canted. Cold flickering light, hard shadow, 35mm, Dutch angle. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_152332_e575eaf7-3fb6-45df-aedb-d832b278a4c2.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-shottype-dutch-angle-3",
+      "r2_key": "tag-shottype-dutch-angle-3-v1.mp4",
+      "job_id": "f914689c-d565-4fda-9f99-1201deec72ad",
+      "title": "The Button",
+      "shotType": "Dutch Angle",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, claustrophobic grade. The interior of an old elevator, brushed metal, a panel of glowing floor buttons. A person in office attire stands facing the panel, hand hovering, uneasy. The frame is held in a strong static Dutch angle, horizon tilted hard, the box canted. Cool overhead light, tight space, 35mm, Dutch angle. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_152337_f914689c-d565-4fda-9f99-1201deec72ad.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-shottype-dutch-angle-4",
+      "r2_key": "tag-shottype-dutch-angle-4-v1.mp4",
+      "job_id": "66a5b4f3-79ef-4b3e-b18c-701e0ccfe2bc",
+      "title": "The Endgame",
+      "shotType": "Dutch Angle",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, moody grade. An abandoned park at dusk, an outdoor stone chess table mid-game, overgrown weeds, empty benches. Evening. A person in a coat stands over the chessboard, studying the frozen game. The frame is held in a strong static Dutch angle, horizon tilted, scene off-kilter. Cool fading light, long shadows, 35mm, Dutch angle. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_152345_66a5b4f3-79ef-4b3e-b18c-701e0ccfe2bc.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-shottype-dutch-angle-5",
+      "r2_key": "tag-shottype-dutch-angle-5-v1.mp4",
+      "job_id": "69ae6dac-426f-451f-abd6-df2db709f094",
+      "title": "The Stop",
+      "shotType": "Dutch Angle",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, noir grade. A rainy city bus stop at night, a flickering shelter light, wet pavement reflecting neon, empty street. Night. A person in a coat waits under the shelter, watchful. The frame is held in a strong static Dutch angle, horizon tilted hard, street canted. Cool wet reflections, neon spill, 35mm, Dutch angle. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_152351_69ae6dac-426f-451f-abd6-df2db709f094.mp4"
+    }
+  ]
+}

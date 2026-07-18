@@ -1,0 +1,77 @@
+{
+  "collection": "shotType / Over-the-Shoulder",
+  "id_prefix": "tag-shottype-over-the-shoulder",
+  "visible_limit": 6,
+  "limit_key": "Over-the-Shoulder",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "shot_type": "Over-the-Shoulder",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-shottype-over-the-shoulder-0",
+      "r2_key": "tag-shottype-over-the-shoulder-0-v1.mp4",
+      "job_id": "9d3fbadd-5fc0-4705-9a31-2a33e5e3787a",
+      "title": "The Deal",
+      "shotType": "Over-the-Shoulder",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, tense grade. A dim boardroom at night, a long table, city lights through the window. An over-the-shoulder shot framed from behind one person's shoulder in the foreground (soft, out of focus), looking across the table at a second person sharply in focus who slides a document forward. People in sharp business suits. Warm interior light, cool window glow, 50mm, over-the-shoulder. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_145348_9d3fbadd-5fc0-4705-9a31-2a33e5e3787a.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-shottype-over-the-shoulder-1",
+      "r2_key": "tag-shottype-over-the-shoulder-1-v1.mp4",
+      "job_id": "97b8fc92-53d4-47cb-91f6-0821464a4fd9",
+      "title": "The Viewing",
+      "shotType": "Over-the-Shoulder",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, refined grade. A quiet art gallery, white walls, a large framed painting. An over-the-shoulder shot framed from behind a person's shoulder in the foreground (soft), looking past them at the painting they contemplate, sharp on the artwork. A person in smart attire. Soft gallery light, clean tones, 50mm, over-the-shoulder. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_145400_97b8fc92-53d4-47cb-91f6-0821464a4fd9.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-shottype-over-the-shoulder-2",
+      "r2_key": "tag-shottype-over-the-shoulder-2-v1.mp4",
+      "job_id": "c3122cca-c89f-433c-88a9-524d94acd3b9",
+      "title": "The Mirror",
+      "shotType": "Over-the-Shoulder",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, intimate grade. A dim dressing room, warm bulbs around a mirror. An over-the-shoulder shot framed from behind a person's shoulder in the foreground (soft), looking at their own reflection sharp in the mirror, meeting their own gaze. A person in an elegant outfit. Warm bulb light, soft shadow, 50mm, over-the-shoulder. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_145406_c3122cca-c89f-433c-88a9-524d94acd3b9.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-shottype-over-the-shoulder-3",
+      "r2_key": "tag-shottype-over-the-shoulder-3-v1.mp4",
+      "job_id": "6ca1e09d-b6fb-44f5-8556-dbf7cc9b88c3",
+      "title": "The View",
+      "shotType": "Over-the-Shoulder",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, cinematic grade. A high-rise office at dusk, floor-to-ceiling windows, a glittering city beyond. An over-the-shoulder shot framed from behind a person's shoulder in the foreground (soft), looking past them at the sweeping city skyline sharp beyond the glass. A person in a tailored shirt. Warm interior, cool city glow, 50mm, over-the-shoulder. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_145415_6ca1e09d-b6fb-44f5-8556-dbf7cc9b88c3.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-shottype-over-the-shoulder-4",
+      "r2_key": "tag-shottype-over-the-shoulder-4-v1.mp4",
+      "job_id": "1dabaecc-5b67-4b6a-82d4-44b48731a87f",
+      "title": "The Interview",
+      "shotType": "Over-the-Shoulder",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, clean grade. A bright modern office, a desk between two chairs. An over-the-shoulder shot framed from behind an interviewer's shoulder in the foreground (soft), looking across the desk at a second person sharp in focus, mid-answer. People in smart office attire. Soft daylight, clean tones, 50mm, over-the-shoulder. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_145425_1dabaecc-5b67-4b6a-82d4-44b48731a87f.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-shottype-over-the-shoulder-5",
+      "r2_key": "tag-shottype-over-the-shoulder-5-v1.mp4",
+      "job_id": "8aef1b86-b80e-4c80-81a1-17ab00c60290",
+      "title": "The Match",
+      "shotType": "Over-the-Shoulder",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, focused grade. A quiet study, a chess table between two chairs, warm lamp. An over-the-shoulder shot framed from behind one player's shoulder in the foreground (soft), looking across the chessboard at the opponent sharp in focus, considering a move. People in smart-casual attire. Warm lamplight, deep shadow, 50mm, over-the-shoulder. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_145431_8aef1b86-b80e-4c80-81a1-17ab00c60290.mp4"
+    }
+  ]
+}

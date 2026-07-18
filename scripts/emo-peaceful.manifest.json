@@ -1,0 +1,83 @@
+{
+  "collection": "emotion / Peaceful",
+  "id_prefix": "tag-emotion-peaceful",
+  "visible_limit": 6,
+  "limit_key": "Peaceful",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "emotion": "Peaceful",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-emotion-peaceful-0",
+      "r2_key": "tag-emotion-peaceful-0-v1.mp4",
+      "job_id": "54574d7c-cab3-415b-a910-aef9ba6c32f9",
+      "title": "The Lake",
+      "emotion": "Peaceful",
+      "shotType": "Wide Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, serene grade. A still mountain lake at dawn, mirror-flat water, soft mist, pastel sky, distant pines. A person sits cross-legged on a wooden dock meditating, calm and serene, eyes closed, breathing slow. A person in soft loungewear. Soft dawn light, gentle mist, peaceful mood, 35mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_053909_54574d7c-cab3-415b-a910-aef9ba6c32f9.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-emotion-peaceful-1",
+      "r2_key": "tag-emotion-peaceful-1-v1.mp4",
+      "job_id": "79a45d66-fd95-4664-99a4-59504bba65c5",
+      "title": "The Hammock",
+      "emotion": "Peaceful",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, serene grade. A lush green garden in dappled afternoon light, a hammock strung between two trees, gentle breeze. A person lies in the hammock utterly relaxed and peaceful, eyes half-closed, a soft smile. A person in light summer clothes. Warm dappled light, gentle sway, peaceful mood, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_053921_79a45d66-fd95-4664-99a4-59504bba65c5.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-emotion-peaceful-2",
+      "r2_key": "tag-emotion-peaceful-2-v1.mp4",
+      "job_id": "7605d7fe-e1b2-4ebd-a364-1db38925adee",
+      "title": "The Morning",
+      "emotion": "Peaceful",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, serene grade. A misty park at dawn, soft light through trees, dew on the grass. A person moves slowly through a calm tai chi pose, serene and centered, unhurried and graceful. A person in loose comfortable clothes. Soft misty dawn light, peaceful mood, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_053928_7605d7fe-e1b2-4ebd-a364-1db38925adee.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-emotion-peaceful-3",
+      "r2_key": "tag-emotion-peaceful-3-v1.mp4",
+      "job_id": "9a37e731-565a-46a9-95db-47d4aeb2c531",
+      "title": "The Nook",
+      "emotion": "Peaceful",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, serene grade. A cozy sunlit window nook with cushions and plants, soft afternoon light. A person curls up reading a book, deeply peaceful and content, relaxed shoulders, a gentle expression. A person in a soft sweater. Warm soft window light, peaceful mood, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_053935_9a37e731-565a-46a9-95db-47d4aeb2c531.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-emotion-peaceful-4",
+      "r2_key": "tag-emotion-peaceful-4-v1.mp4",
+      "job_id": "37086ee8-3ef9-4700-8376-15bdbb264532",
+      "title": "The Garden",
+      "emotion": "Peaceful",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, serene grade. A tranquil zen garden, raked sand, mossy stones, a small maple, soft light. A person walks slowly and mindfully along the path, calm and serene, at peace. A person in simple linen clothes. Soft even light, peaceful mood, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_053945_37086ee8-3ef9-4700-8376-15bdbb264532.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-emotion-peaceful-5",
+      "r2_key": "tag-emotion-peaceful-5-v1.mp4",
+      "job_id": "f8063b84-df48-4ec5-bfa3-fc0a4e9cf8c4",
+      "title": "The Float",
+      "emotion": "Peaceful",
+      "shotType": "Wide Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, serene grade. A calm turquoise sea or quiet pool under soft daylight, gentle ripples. A person floats on their back on the calm water, arms out, utterly peaceful and weightless, eyes closed. A person in swimwear. Soft bright light, gentle water, peaceful mood, 35mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_053951_f8063b84-df48-4ec5-bfa3-fc0a4e9cf8c4.mp4"
+    }
+  ]
+}

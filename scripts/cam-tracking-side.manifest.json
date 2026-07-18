@@ -1,0 +1,77 @@
+{
+  "collection": "cameraMove / Tracking Side",
+  "id_prefix": "tag-cameramove-tracking-side",
+  "visible_limit": 6,
+  "limit_key": "Tracking Side",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "camera_move": "Tracking Side",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-cameramove-tracking-side-0",
+      "r2_key": "tag-cameramove-tracking-side-0-v1.mp4",
+      "job_id": "f539a5c0-2711-403d-8c7f-adb45de5c6f6",
+      "title": "The Sprint",
+      "shotType": "Medium Shot",
+      "cameraMove": "Tracking Side",
+      "prompt": "Live-action photoreal, present day, crisp athletic grade. An outdoor running track at golden hour, red lanes, empty stadium seats beyond. Morning, warm low sun. A person in fitted running kit and spikes sprints flat-out down the lane, arms pumping. The camera trucks smoothly sideways, tracking alongside them at full speed, keeping pace. Warm rim light, motion-blurred background, 50mm, side tracking. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_072231_f539a5c0-2711-403d-8c7f-adb45de5c6f6.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-cameramove-tracking-side-1",
+      "r2_key": "tag-cameramove-tracking-side-1-v1.mp4",
+      "job_id": "8f41bf66-3ca9-4060-9bdc-a35a5bd3f803",
+      "title": "Market Walk",
+      "shotType": "Medium Shot",
+      "cameraMove": "Tracking Side",
+      "prompt": "Live-action photoreal, present day, vibrant grade. A bustling open-air street market, stalls of fruit and fabric, hanging lanterns, crowds. Afternoon, dappled sun. A person in a light linen jacket walks purposefully through the market, weaving past stalls. The camera trucks sideways alongside them, tracking their walk, market life streaming past behind. Warm dappled light, lively bokeh, 40mm, side tracking. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_072237_8f41bf66-3ca9-4060-9bdc-a35a5bd3f803.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-cameramove-tracking-side-2",
+      "r2_key": "tag-cameramove-tracking-side-2-v1.mp4",
+      "job_id": "04b6f157-1e9b-4689-9d2a-97cb7ee55137",
+      "title": "Coast Ride",
+      "shotType": "Wide Shot",
+      "cameraMove": "Tracking Side",
+      "prompt": "Live-action photoreal, present day, bright coastal grade. A winding coastal road above the sea, cliffs and blue water, sun sparkling on the waves. Midday, clear. A person in a cycling jersey and helmet rides fast along the road, leaning into the wind. The camera trucks sideways alongside the rider, tracking their motion, ocean streaming behind. Bright natural light, sparkling sea bokeh, 35mm, side tracking. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_072242_04b6f157-1e9b-4689-9d2a-97cb7ee55137.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-cameramove-tracking-side-3",
+      "r2_key": "tag-cameramove-tracking-side-3-v1.mp4",
+      "job_id": "af6ed69b-cb58-48f2-ad39-860874b97409",
+      "title": "The Corridor",
+      "shotType": "Medium Shot",
+      "cameraMove": "Tracking Side",
+      "prompt": "Live-action photoreal, present day, sleek corporate grade. A sleek glass office corridor, floor-to-ceiling windows, city beyond. Day. A person in a tailored suit strides briskly down the corridor, papers in hand, focused. The camera trucks sideways alongside them, tracking the walk-and-talk energy, glass and reflections gliding past. Cool daylight, clean reflections, 40mm, side tracking. Shallow depth of field, fine grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_072249_af6ed69b-cb58-48f2-ad39-860874b97409.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-cameramove-tracking-side-4",
+      "r2_key": "tag-cameramove-tracking-side-4-v1.mp4",
+      "job_id": "b4db6895-bb77-49d8-91e4-a617705f778a",
+      "title": "Rooftop Run",
+      "shotType": "Wide Shot",
+      "cameraMove": "Tracking Side",
+      "prompt": "Anime aesthetic, dynamic action grade. A city rooftop skyline at dusk, water towers and antennae, warm sky. A person in a hooded runner's outfit sprints across the rooftops, leaping a gap. The camera trucks sideways alongside them at speed, tracking the run, skyline blurring past. Warm dusk rim light, motion streaks, side tracking, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_072255_b4db6895-bb77-49d8-91e4-a617705f778a.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-cameramove-tracking-side-5",
+      "r2_key": "tag-cameramove-tracking-side-5-v1.mp4",
+      "job_id": "512fb7fc-03bf-4e61-94cb-9f8ffde559ca",
+      "title": "The Gallop",
+      "shotType": "Wide Shot",
+      "cameraMove": "Tracking Side",
+      "prompt": "Live-action photoreal, present day, sweeping grade. A wide open grassland under a big sky, tall grass rippling, distant hills. Late afternoon, golden. A person in riding gear gallops on horseback across the field, low over the horse's neck. The camera trucks sideways alongside horse and rider, tracking the gallop, grass streaming past. Warm golden light, dust and motion, 35mm, side tracking. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_072305_512fb7fc-03bf-4e61-94cb-9f8ffde559ca.mp4"
+    }
+  ]
+}

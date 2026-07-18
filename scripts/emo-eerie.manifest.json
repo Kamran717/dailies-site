@@ -1,0 +1,83 @@
+{
+  "collection": "emotion / Eerie",
+  "id_prefix": "tag-emotion-eerie",
+  "visible_limit": 6,
+  "limit_key": "Eerie",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "emotion": "Eerie",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-emotion-eerie-0",
+      "r2_key": "tag-emotion-eerie-0-v1.mp4",
+      "job_id": "c2d23926-6e60-43ae-a6d8-47ac84dc7d79",
+      "title": "The Fairground",
+      "emotion": "Eerie",
+      "shotType": "Wide Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, eerie grade. An abandoned amusement park at dusk, a rusted carousel, peeling paint, weeds through the pavement, faint mist. A lone person stands unnervingly still among the dead rides, an uneasy stillness in the air. A person in a plain coat. Cold fading light, sickly haze, eerie mood, 35mm. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_052056_c2d23926-6e60-43ae-a6d8-47ac84dc7d79.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-emotion-eerie-1",
+      "r2_key": "tag-emotion-eerie-1-v1.mp4",
+      "job_id": "95443cde-1e6d-4142-af1d-908cc60ddd8a",
+      "title": "The Graveyard",
+      "emotion": "Eerie",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, eerie grade. A foggy old graveyard at night, leaning headstones, bare trees, pale mist rolling low. A person stands among the graves with an uneasy stillness, the scene deeply unsettling. A person in a dark coat. Cold moonlight, thick fog, eerie mood, 50mm. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_052101_95443cde-1e6d-4142-af1d-908cc60ddd8a.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-emotion-eerie-2",
+      "r2_key": "tag-emotion-eerie-2-v1.mp4",
+      "job_id": "dd136d30-fd95-4350-9940-21c3896e4f3a",
+      "title": "The Ward",
+      "emotion": "Eerie",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, eerie grade. An abandoned hospital corridor, peeling walls, an overturned wheelchair, a fluorescent tube flickering and buzzing. A person stands frozen in the flickering hall, an unnerving emptiness around them. A person in plain clothes. Cold flickering light, sickly green tint, eerie mood, 35mm. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_052110_dd136d30-fd95-4350-9940-21c3896e4f3a.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-emotion-eerie-3",
+      "r2_key": "tag-emotion-eerie-3-v1.mp4",
+      "job_id": "57f745dc-15f5-4eb0-8f7e-69d00444bb30",
+      "title": "The Attic",
+      "emotion": "Eerie",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, eerie grade. A dusty cluttered attic, old porcelain dolls lined on a shelf, cobwebs, a single dim bulb. A person stands amid the dolls with an uneasy stillness, the dolls' gazes unsettling. A person in casual clothes. Warm dim light, deep shadow, eerie mood, 50mm. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_052115_57f745dc-15f5-4eb0-8f7e-69d00444bb30.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-emotion-eerie-4",
+      "r2_key": "tag-emotion-eerie-4-v1.mp4",
+      "job_id": "41ce15e6-de97-4048-b717-7e3becb6d3ed",
+      "title": "The Deep End",
+      "emotion": "Eerie",
+      "shotType": "Wide Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, eerie grade. An empty drained swimming pool at night, cracked tiles, a single flickering deck light, leaves scattered. A lone person stands at the bottom of the empty pool, an unnerving isolation. A person in plain clothes. Cold flickering light, deep shadow, eerie mood, 35mm. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_052121_41ce15e6-de97-4048-b717-7e3becb6d3ed.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-emotion-eerie-5",
+      "r2_key": "tag-emotion-eerie-5-v1.mp4",
+      "job_id": "3555afce-8536-4873-b88b-cd9c3efc3d4a",
+      "title": "The Field",
+      "emotion": "Eerie",
+      "shotType": "Wide Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, eerie grade. A misty cornfield at dusk, tall dry stalks, a lone tattered scarecrow, low fog. A person stands motionless among the corn near the scarecrow, an uneasy dread in the air. A person in a worn jacket. Cold fading light, drifting mist, eerie mood, 35mm. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_052127_3555afce-8536-4873-b88b-cd9c3efc3d4a.mp4"
+    }
+  ]
+}

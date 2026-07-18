@@ -1,0 +1,83 @@
+{
+  "collection": "impossible / Galaxy-to-DNA Transition",
+  "id_prefix": "tag-impossible-galaxy-to-dna-transition",
+  "visible_limit": 6,
+  "limit_key": "Galaxy-to-DNA Transition",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "impossible": "Galaxy-to-DNA Transition",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-impossible-galaxy-to-dna-transition-0",
+      "r2_key": "tag-impossible-galaxy-to-dna-transition-0-v1.mp4",
+      "job_id": "95ec8fa6-8406-4cef-af00-0c9d6f54711c",
+      "title": "The Descent",
+      "impossible": "Galaxy-to-DNA Transition",
+      "shotType": "Wide Shot",
+      "cameraMove": "Push In",
+      "prompt": "Cinematic VFX, one continuous impossible push-in. Begins on a vast spiral galaxy in deep space, then rushes inward seamlessly and impossibly in a single shot: past swirling stars, down toward a blue planet, through clouds, down to a person standing in a field, into their skin, into a glowing cell, and finally resolving on a spiraling DNA double helix. A person in a field. Epic scale transition, seamless continuous push in, macro-to-cosmic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_061230_95ec8fa6-8406-4cef-af00-0c9d6f54711c.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-impossible-galaxy-to-dna-transition-1",
+      "r2_key": "tag-impossible-galaxy-to-dna-transition-1-v1.mp4",
+      "job_id": "70651020-5d54-49d2-b360-510e8c9c13a3",
+      "title": "The Thread",
+      "impossible": "Galaxy-to-DNA Transition",
+      "shotType": "Wide Shot",
+      "cameraMove": "Push In",
+      "prompt": "Cinematic VFX, one continuous impossible push-in. Starts on a glittering galaxy, then dives inward in one seamless impossible move: through star clusters, toward a planet, down through a city, onto a person on a rooftop, into their hand, into the cellular world, and ending on a luminous rotating DNA strand. A person on a rooftop. Epic scale transition, seamless continuous push in, macro-to-cosmic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_061236_70651020-5d54-49d2-b360-510e8c9c13a3.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-impossible-galaxy-to-dna-transition-2",
+      "r2_key": "tag-impossible-galaxy-to-dna-transition-2-v1.mp4",
+      "job_id": "f64366c5-1883-47de-8632-e1f524fea0e5",
+      "title": "The Origin",
+      "impossible": "Galaxy-to-DNA Transition",
+      "shotType": "Wide Shot",
+      "cameraMove": "Push In",
+      "prompt": "Cinematic VFX, one continuous impossible push-in. Opens on a radiant spiral galaxy, then travels inward endlessly in a single seamless shot: past nebulae, down to a planet, through the atmosphere, to a person by the sea, into their eye, deep into cells and molecules, resolving on a glowing DNA helix. A person by the sea. Epic scale transition, seamless continuous push in, macro-to-cosmic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_061242_f64366c5-1883-47de-8632-e1f524fea0e5.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-impossible-galaxy-to-dna-transition-3",
+      "r2_key": "tag-impossible-galaxy-to-dna-transition-3-v1.mp4",
+      "job_id": "1aa0809a-af02-4dec-a882-774668ed5462",
+      "title": "The Weave",
+      "impossible": "Galaxy-to-DNA Transition",
+      "shotType": "Wide Shot",
+      "cameraMove": "Push In",
+      "prompt": "Cinematic VFX, one continuous impossible push-in. Begins on a distant galaxy, then plunges inward in one impossible seamless move: through drifting stars, down to a snowy planet, to a person in a winter landscape, into their skin, into the microscopic world of cells, ending on a shimmering DNA double helix. A person in snow. Epic scale transition, seamless continuous push in, macro-to-cosmic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_061248_1aa0809a-af02-4dec-a882-774668ed5462.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-impossible-galaxy-to-dna-transition-4",
+      "r2_key": "tag-impossible-galaxy-to-dna-transition-4-v1.mp4",
+      "job_id": "580ca408-e4de-42bd-949e-b96062874119",
+      "title": "The Spiral",
+      "impossible": "Galaxy-to-DNA Transition",
+      "shotType": "Wide Shot",
+      "cameraMove": "Push In",
+      "prompt": "Cinematic VFX, one continuous impossible push-in. Starts on the swirling arm of a galaxy, then rushes inward seamlessly: past suns, down toward a planet, through clouds to a person in a desert, into their hand, into a single cell, resolving on a glowing rotating DNA strand. A person in a desert. Epic scale transition, seamless continuous push in, macro-to-cosmic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_061255_580ca408-e4de-42bd-949e-b96062874119.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-impossible-galaxy-to-dna-transition-5",
+      "r2_key": "tag-impossible-galaxy-to-dna-transition-5-v1.mp4",
+      "job_id": "96eb530b-b338-418c-8829-67b5b8f9b726",
+      "title": "The Code",
+      "impossible": "Galaxy-to-DNA Transition",
+      "shotType": "Wide Shot",
+      "cameraMove": "Push In",
+      "prompt": "Cinematic VFX, one continuous impossible push-in. Opens on a luminous galaxy, then dives inward in a single impossible shot: through star fields, down to a planet, into a city street, onto a person, into their skin, through cells and molecules, ending on a brightly glowing DNA double helix. A person on a street. Epic scale transition, seamless continuous push in, macro-to-cosmic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_061305_96eb530b-b338-418c-8829-67b5b8f9b726.mp4"
+    }
+  ]
+}

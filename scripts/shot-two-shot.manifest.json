@@ -1,0 +1,77 @@
+{
+  "collection": "shotType / Two-Shot",
+  "id_prefix": "tag-shottype-two-shot",
+  "visible_limit": 6,
+  "limit_key": "Two-Shot",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "shot_type": "Two-Shot",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-shottype-two-shot-0",
+      "r2_key": "tag-shottype-two-shot-0-v1.mp4",
+      "job_id": "66ebc7ad-94dc-4c7d-86f5-67d92d326439",
+      "title": "The Catch-Up",
+      "shotType": "Two-Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, warm grade. A cozy sunlit cafe, coffee cups on a small table, soft bokeh of the room behind. A two-shot framing two people together seated across the little table, mid-conversation, one gesturing as the other listens and smiles. People in casual smart-casual clothes. Warm window light, soft bokeh, 40mm, two-shot. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_145437_66ebc7ad-94dc-4c7d-86f5-67d92d326439.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-shottype-two-shot-1",
+      "r2_key": "tag-shottype-two-shot-1-v1.mp4",
+      "job_id": "0d88cc59-d7bb-4902-90e5-e4fde37f3b15",
+      "title": "The Talk",
+      "shotType": "Two-Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, golden grade. A park bench at sunset, trees and warm sky behind. A two-shot framing two people together sitting on the bench, turned slightly toward each other in quiet conversation. People in light autumn coats. Warm golden light, soft glow, 40mm, two-shot. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_145444_0d88cc59-d7bb-4902-90e5-e4fde37f3b15.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-shottype-two-shot-2",
+      "r2_key": "tag-shottype-two-shot-2-v1.mp4",
+      "job_id": "a2fcba55-c714-4fff-8e74-415037082530",
+      "title": "Dinner",
+      "shotType": "Two-Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, warm kitchen grade. A cozy home kitchen in the evening, warm pendant light, ingredients on the counter. A two-shot framing two people together at the counter cooking side by side, one chopping as the other stirs a pot, easy rapport. People in casual home clothes and aprons. Warm kitchen light, soft steam, 40mm, two-shot. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_145456_a2fcba55-c714-4fff-8e74-415037082530.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-shottype-two-shot-3",
+      "r2_key": "tag-shottype-two-shot-3-v1.mp4",
+      "job_id": "d4c2768a-8db8-48e7-b4f1-86d109fe6a37",
+      "title": "The Toast",
+      "shotType": "Two-Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, moody grade. A stylish bar in the evening, warm glowing bottles behind. A two-shot framing two people together at the bar raising glasses in a toast, clinking, smiling. People in smart evening attire. Warm bar light, bottle bokeh, 40mm, two-shot. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_145501_d4c2768a-8db8-48e7-b4f1-86d109fe6a37.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-shottype-two-shot-4",
+      "r2_key": "tag-shottype-two-shot-4-v1.mp4",
+      "job_id": "777f6288-6c05-4a97-ade6-15f84d5efe84",
+      "title": "The Walk",
+      "shotType": "Two-Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, serene grade. A wide beach at low tide, soft surf and pale sky behind. A two-shot framing two people together walking side by side barefoot along the waterline, talking. People in rolled-up light clothes. Soft warm light, sea haze, 40mm, two-shot. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_145509_777f6288-6c05-4a97-ade6-15f84d5efe84.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-shottype-two-shot-5",
+      "r2_key": "tag-shottype-two-shot-5-v1.mp4",
+      "job_id": "643592a2-86a0-49b9-8df0-5f0542e2465f",
+      "title": "The Standoff",
+      "shotType": "Two-Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, tense grade. A rain-slicked alley at night, a single overhead light, wet brick. A two-shot framing two people together facing each other a few feet apart, tension between them, still and squared off. People in dark rugged jackets. Cool wet light, deep shadow, 40mm, two-shot. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_145517_643592a2-86a0-49b9-8df0-5f0542e2465f.mp4"
+    }
+  ]
+}

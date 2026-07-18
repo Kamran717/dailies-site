@@ -1,0 +1,77 @@
+{
+  "collection": "shotType / Wide Shot",
+  "id_prefix": "tag-shottype-wide-shot",
+  "visible_limit": 6,
+  "limit_key": "Wide Shot",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "shot_type": "Wide Shot",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-shottype-wide-shot-0",
+      "r2_key": "tag-shottype-wide-shot-0-v1.mp4",
+      "job_id": "277c51a8-5a3e-443e-8aed-7ad16623868d",
+      "title": "The Crossing",
+      "shotType": "Wide Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, epic grade. A vast rippling sand desert under a huge sky, dunes stretching to the horizon, heat shimmer. Midday, harsh sun. A wide shot with a lone figure small in the frame, walking across the dunes, dwarfed by the landscape. A person in a dust-wrapped traveler's cloak. Hard warm light, immense scale, 24mm, wide shot. Deep focus, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_145257_277c51a8-5a3e-443e-8aed-7ad16623868d.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-shottype-wide-shot-1",
+      "r2_key": "tag-shottype-wide-shot-1-v1.mp4",
+      "job_id": "ed7699dc-1643-4623-9954-473cf71d46c8",
+      "title": "The Nave",
+      "shotType": "Wide Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, grand grade. The vast interior of a gothic cathedral, soaring columns and arches, colored light from stained glass, a long stone floor. Day, hushed. A wide shot with a single person standing small in the center of the nave, looking up. A person in a long coat. Cool stone with warm light shafts, immense scale, 24mm, wide shot. Deep focus, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_145304_ed7699dc-1643-4623-9954-473cf71d46c8.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-shottype-wide-shot-2",
+      "r2_key": "tag-shottype-wide-shot-2-v1.mp4",
+      "job_id": "e14ddd78-c455-4c72-a072-910205120f3c",
+      "title": "The Edge",
+      "shotType": "Wide Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, sweeping grade. A dramatic sea cliff at golden hour, waves crashing far below, endless ocean and sky. Evening, warm. A wide shot with a person small in the frame standing near the cliff edge, coat billowing, facing the sea. A person in a long windswept coat. Warm golden light, vast horizon, 24mm, wide shot. Deep focus, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_145316_e14ddd78-c455-4c72-a072-910205120f3c.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-shottype-wide-shot-3",
+      "r2_key": "tag-shottype-wide-shot-3-v1.mp4",
+      "job_id": "a8459c39-8728-4967-9c52-b345a213d93f",
+      "title": "First Light",
+      "shotType": "Wide Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, cinematic grade. An empty city street at dawn, long shadows, shuttered shops, mist on the asphalt. Early morning, soft. A wide shot with a person small in the frame walking down the middle of the deserted street. A person in a casual jacket. Cool dawn light, long perspective, 28mm, wide shot. Deep focus, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_145321_a8459c39-8728-4967-9c52-b345a213d93f.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-shottype-wide-shot-4",
+      "r2_key": "tag-shottype-wide-shot-4-v1.mp4",
+      "job_id": "53f9ea43-efbf-4512-b1f5-6bca95f9fff4",
+      "title": "The Atrium",
+      "shotType": "Wide Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, sleek grade. A huge modern glass atrium, soaring open space, staircases and light, polished floor. Day, bright. A wide shot with a person small in the frame standing in the vast lobby, looking around. A person in smart business attire. Bright even light, immense clean space, 24mm, wide shot. Deep focus, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_145333_53f9ea43-efbf-4512-b1f5-6bca95f9fff4.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-shottype-wide-shot-5",
+      "r2_key": "tag-shottype-wide-shot-5-v1.mp4",
+      "job_id": "6f0b2802-6fe2-40c0-a381-3acefcb09446",
+      "title": "The Woods",
+      "shotType": "Wide Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, serene winter grade. A quiet snowy pine forest, tall trees laden with snow, soft falling flakes, untouched white ground. Overcast day, soft. A wide shot with a person small in the frame standing among the towering trees. A person in a warm winter coat. Soft cool light, hushed scale, 24mm, wide shot. Deep focus, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_145340_6f0b2802-6fe2-40c0-a381-3acefcb09446.mp4"
+    }
+  ]
+}

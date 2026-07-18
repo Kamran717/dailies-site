@@ -1,0 +1,83 @@
+{
+  "collection": "impossible / Infinite Hallway Loop",
+  "id_prefix": "tag-impossible-infinite-hallway-loop",
+  "visible_limit": 6,
+  "limit_key": "Infinite Hallway Loop",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "impossible": "Infinite Hallway Loop",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-impossible-infinite-hallway-loop-0",
+      "r2_key": "tag-impossible-infinite-hallway-loop-0-v1.mp4",
+      "job_id": "003e4f5a-f054-4404-baf8-1eeff501ec5f",
+      "title": "The Hotel",
+      "impossible": "Infinite Hallway Loop",
+      "shotType": "Wide Shot",
+      "cameraMove": "Dolly In",
+      "prompt": "Cinematic VFX, impossible infinite loop. A person walks steadily down an ornate hotel corridor with patterned carpet and endless identical doors, but the hallway never ends — it loops impossibly back on itself, the same stretch repeating forever as the camera glides with them. A person in a coat. Endless recursive hallway, seamless impossible loop, uncanny, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_070632_003e4f5a-f054-4404-baf8-1eeff501ec5f.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-impossible-infinite-hallway-loop-1",
+      "r2_key": "tag-impossible-infinite-hallway-loop-1-v1.mp4",
+      "job_id": "25d27e5d-834e-4284-afc7-4c312b68c4e6",
+      "title": "The Mirrors",
+      "impossible": "Infinite Hallway Loop",
+      "shotType": "Wide Shot",
+      "cameraMove": "Dolly In",
+      "prompt": "Cinematic VFX, impossible infinite loop. A person walks down a corridor lined with mirrors on both sides, their reflections repeating into infinity, the hallway looping impossibly with no end as the camera glides forward with them. A person in stylish clothes. Endless recursive mirrored hallway, seamless impossible loop, uncanny, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_070646_25d27e5d-834e-4284-afc7-4c312b68c4e6.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-impossible-infinite-hallway-loop-2",
+      "r2_key": "tag-impossible-infinite-hallway-loop-2-v1.mp4",
+      "job_id": "46ce8a63-7254-4121-9f64-f074e71666cc",
+      "title": "The Office",
+      "impossible": "Infinite Hallway Loop",
+      "shotType": "Wide Shot",
+      "cameraMove": "Dolly In",
+      "prompt": "Cinematic VFX, impossible infinite loop. A person walks down a fluorescent-lit office corridor with identical glass doors, the hallway repeating impossibly and looping back on itself endlessly as the camera tracks with them. A person in business attire. Endless recursive hallway, seamless impossible loop, uncanny, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_070656_46ce8a63-7254-4121-9f64-f074e71666cc.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-impossible-infinite-hallway-loop-3",
+      "r2_key": "tag-impossible-infinite-hallway-loop-3-v1.mp4",
+      "job_id": "c0de205f-fe06-4f7a-81e3-8858d0f34924",
+      "title": "The Liminal",
+      "impossible": "Infinite Hallway Loop",
+      "shotType": "Wide Shot",
+      "cameraMove": "Dolly In",
+      "prompt": "Cinematic VFX, impossible infinite loop. A person walks through a pale liminal corridor of blank walls and humming lights, the empty hallway stretching and looping impossibly forever with no exit, the camera gliding with them. A person in plain clothes. Endless recursive liminal hallway, seamless impossible loop, uncanny, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_070713_c0de205f-fe06-4f7a-81e3-8858d0f34924.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-impossible-infinite-hallway-loop-4",
+      "r2_key": "tag-impossible-infinite-hallway-loop-4-v1.mp4",
+      "job_id": "0dfed039-8644-4e42-ab82-e5cd3fef35cc",
+      "title": "The Neon",
+      "impossible": "Infinite Hallway Loop",
+      "shotType": "Wide Shot",
+      "cameraMove": "Dolly In",
+      "prompt": "Cinematic VFX, impossible infinite loop. A person walks down a corridor lined with glowing neon strip lights, the passage repeating and looping impossibly into infinity as the camera glides forward with them. A person in a modern jacket. Endless recursive neon hallway, seamless impossible loop, uncanny, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_070723_0dfed039-8644-4e42-ab82-e5cd3fef35cc.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-impossible-infinite-hallway-loop-5",
+      "r2_key": "tag-impossible-infinite-hallway-loop-5-v1.mp4",
+      "job_id": "8f1bdecb-92cb-466b-bd46-7070d2ef1299",
+      "title": "The Palace",
+      "impossible": "Infinite Hallway Loop",
+      "shotType": "Wide Shot",
+      "cameraMove": "Dolly In",
+      "prompt": "Cinematic VFX, impossible infinite loop. A person walks down a grand palace gallery with gilded arches and chandeliers, the opulent hallway looping impossibly back on itself endlessly as the camera glides with them. A person in formal attire. Endless recursive palace hallway, seamless impossible loop, uncanny, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_070728_8f1bdecb-92cb-466b-bd46-7070d2ef1299.mp4"
+    }
+  ]
+}

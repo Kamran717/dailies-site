@@ -1,0 +1,77 @@
+{
+  "collection": "cameraMove / Drone Fly-Through",
+  "id_prefix": "tag-cameramove-drone-fly-through",
+  "visible_limit": 6,
+  "limit_key": "Drone Fly-Through",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "camera_move": "Drone Fly-Through",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-cameramove-drone-fly-through-0",
+      "r2_key": "tag-cameramove-drone-fly-through-0-v1.mp4",
+      "job_id": "609652cb-1b13-45c1-9d50-c2c9017808d7",
+      "title": "The Clearing",
+      "shotType": "Wide Shot",
+      "cameraMove": "Drone Fly-Through",
+      "prompt": "Live-action photoreal, present day, dynamic FPV grade. A dense green forest with a sunlit clearing beyond, trees and shafts of light. Morning, warm. A person in outdoor gear stands in the clearing looking up. A fast FPV drone flies swiftly through the trees, weaving between trunks and rushing out into the clearing toward them. Warm dappled light, motion blur, FPV drone fly-through. Crisp detail, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_084430_609652cb-1b13-45c1-9d50-c2c9017808d7.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-cameramove-drone-fly-through-1",
+      "r2_key": "tag-cameramove-drone-fly-through-1-v1.mp4",
+      "job_id": "d9e76f4d-49d9-4536-b52c-b190c5e1b24b",
+      "title": "The Warehouse",
+      "shotType": "Wide Shot",
+      "cameraMove": "Drone Fly-Through",
+      "prompt": "Live-action photoreal, present day, gritty FPV grade. A vast empty warehouse, steel columns, shafts of light from high windows, dust in the air. Day. A person in a jacket stands in a pool of light in the center. A fast FPV drone flies swiftly through the warehouse, weaving between columns and rushing toward them. Hard shafts of light, floating dust, FPV drone fly-through. Crisp detail, motion blur, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_084444_d9e76f4d-49d9-4536-b52c-b190c5e1b24b.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-cameramove-drone-fly-through-2",
+      "r2_key": "tag-cameramove-drone-fly-through-2-v1.mp4",
+      "job_id": "2227adcc-a82c-4260-bf59-b5f8a2b9ce0b",
+      "title": "The Stadium",
+      "shotType": "Wide Shot",
+      "cameraMove": "Drone Fly-Through",
+      "prompt": "Live-action photoreal, present day, epic FPV grade. A packed sports stadium, roaring crowd, bright floodlights, a green pitch. Night, electric. A person in athletic kit stands alone at the center of the pitch. A fast FPV drone flies swiftly over the crowd and swoops down across the field toward them. Bright floodlights, crowd bokeh, FPV drone fly-through. Crisp detail, motion blur, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_084451_2227adcc-a82c-4260-bf59-b5f8a2b9ce0b.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-cameramove-drone-fly-through-3",
+      "r2_key": "tag-cameramove-drone-fly-through-3-v1.mp4",
+      "job_id": "ec8e70b9-07ed-43b0-91cf-daa28a42b770",
+      "title": "The Gorge",
+      "shotType": "Wide Shot",
+      "cameraMove": "Drone Fly-Through",
+      "prompt": "Live-action photoreal, present day, thrilling FPV grade. A dramatic river gorge, sheer rock walls, rushing water below, mist. Day, dynamic. A person in adventure gear stands on a ledge above the river. A fast FPV drone flies swiftly through the gorge, skimming the water and rushing up toward them on the ledge. Cool gorge light, drifting mist, FPV drone fly-through. Crisp detail, motion blur, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_084457_ec8e70b9-07ed-43b0-91cf-daa28a42b770.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-cameramove-drone-fly-through-4",
+      "r2_key": "tag-cameramove-drone-fly-through-4-v1.mp4",
+      "job_id": "cb9395a0-f065-49af-b7d9-5cfbb4a9111b",
+      "title": "The Streets",
+      "shotType": "Wide Shot",
+      "cameraMove": "Drone Fly-Through",
+      "prompt": "Live-action photoreal, present day, kinetic FPV grade. A bustling narrow city street, signs and awnings, pedestrians and traffic. Day, lively. A person in street style stands on a corner amid the bustle. A fast FPV drone flies swiftly down the street, weaving past signs and traffic toward them. Bright urban light, motion blur, FPV drone fly-through. Crisp detail, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_084503_cb9395a0-f065-49af-b7d9-5cfbb4a9111b.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-cameramove-drone-fly-through-5",
+      "r2_key": "tag-cameramove-drone-fly-through-5-v1.mp4",
+      "job_id": "54f82911-c912-424e-a4c8-f723e1db6838",
+      "title": "The Cave",
+      "shotType": "Wide Shot",
+      "cameraMove": "Drone Fly-Through",
+      "prompt": "Live-action photoreal, present day, atmospheric FPV grade. A vast cavern with a bright opening ahead, stalactites, a still underground pool. Day, cool. A person with a headlamp stands near the glowing cave mouth. A fast FPV drone flies swiftly through the cavern, skimming the pool and rushing toward the light and them. Cool cave shadow, bright opening, FPV drone fly-through. Crisp detail, motion blur, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_084508_54f82911-c912-424e-a4c8-f723e1db6838.mp4"
+    }
+  ]
+}

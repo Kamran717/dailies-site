@@ -1,0 +1,77 @@
+{
+  "collection": "lighting / Soft Window Light",
+  "id_prefix": "tag-lighting-soft-window-light",
+  "visible_limit": 6,
+  "limit_key": "Soft Window Light",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "lighting": "Soft Window Light",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-lighting-soft-window-light-0",
+      "r2_key": "tag-lighting-soft-window-light-0-v1.mp4",
+      "job_id": "cd4e2d51-b2b8-48a1-88a4-6d57929b9146",
+      "title": "The Reader",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A quiet room beside a large window with sheer curtains. The scene is lit by soft diffused window light, gentle directional daylight wrapping the person's face, soft shadows, airy and calm. A person in a knit sweater sits reading by the window. Soft diffused window light, gentle wrap, airy shadow, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_043700_cd4e2d51-b2b8-48a1-88a4-6d57929b9146.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-lighting-soft-window-light-1",
+      "r2_key": "tag-lighting-soft-window-light-1-v1.mp4",
+      "job_id": "a6f3fe17-a317-4fec-9777-6390eb94ddaf",
+      "title": "Morning Coffee",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A bright kitchen table by a window in the morning. The scene is lit by soft diffused window light, gentle daylight glowing across the person and a coffee mug, soft natural shadows. A person in loungewear sits with coffee. Soft diffused window light, gentle morning glow, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_043712_a6f3fe17-a317-4fec-9777-6390eb94ddaf.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-lighting-soft-window-light-2",
+      "r2_key": "tag-lighting-soft-window-light-2-v1.mp4",
+      "job_id": "a2976e85-d994-41a3-8ed8-070cce494e22",
+      "title": "The Rain",
+      "shotType": "Close-Up",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A window streaked with rain, soft grey daylight outside. The scene is lit by soft diffused window light, cool gentle daylight on the person's face, soft shadows, moody and calm. A person in a sweater gazes out at the rain. Soft diffused window light, cool gentle wrap, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_043717_a2976e85-d994-41a3-8ed8-070cce494e22.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-lighting-soft-window-light-3",
+      "r2_key": "tag-lighting-soft-window-light-3-v1.mp4",
+      "job_id": "d3977517-406f-4f98-97a8-358bddcb09d8",
+      "title": "The Studio",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. An artist's studio with tall north-facing windows. The scene is lit by soft diffused window light, even gentle daylight filling the room and wrapping the person, soft shadows. A person in a smock stands at an easel. Soft diffused window light, even gentle fill, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_043723_d3977517-406f-4f98-97a8-358bddcb09d8.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-lighting-soft-window-light-4",
+      "r2_key": "tag-lighting-soft-window-light-4-v1.mp4",
+      "job_id": "fc7a306d-9624-4389-92e7-5518486ddb37",
+      "title": "The Stretch",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A serene room with a big window and a yoga mat. The scene is lit by soft diffused window light, gentle daylight glowing across the person, soft calm shadows. A person in athletic wear holds a gentle yoga pose by the window. Soft diffused window light, gentle glow, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_043728_fc7a306d-9624-4389-92e7-5518486ddb37.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-lighting-soft-window-light-5",
+      "r2_key": "tag-lighting-soft-window-light-5-v1.mp4",
+      "job_id": "637dee21-0194-4274-9ff7-b7049032fa82",
+      "title": "The Cafe",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A cozy cafe window seat, soft daylight outside. The scene is lit by soft diffused window light, gentle daylight wrapping the person at the table, soft shadows, warm and calm. A person in casual clothes sits by the cafe window. Soft diffused window light, gentle wrap, warm calm, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_043734_637dee21-0194-4274-9ff7-b7049032fa82.mp4"
+    }
+  ]
+}

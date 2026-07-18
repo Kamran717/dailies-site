@@ -1,0 +1,175 @@
+{
+  "collection": "emotion / Happy",
+  "id_prefix": "tag-emotion-happy",
+  "visible_limit": 15,
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "limit_key": "Happy",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-emotion-happy-0",
+      "r2_key": "tag-emotion-happy-0-v1.mp4",
+      "job_id": "77b05fb3-ad06-4838-ad14-fc9243b44b26",
+      "title": "Into the Surf",
+      "shotType": "Wide Shot",
+      "cameraMove": "Tracking Side",
+      "prompt": "Cinematic photoreal, warm summer color grade. Golden-hour beach, glittering surf, soft sand. A person in rolled-up linen and a light shirt sprints toward the water with arms flung wide, head back, laughing with pure joy, spray kicking up. Distant beach umbrellas, gulls, warm rim light. Tracking side, shallow depth of field, subtle film grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_073300_77b05fb3-ad06-4838-ad14-fc9243b44b26.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-emotion-happy-1",
+      "r2_key": "tag-emotion-happy-1-v1.mp4",
+      "job_id": "7324e367-1a70-4550-b81d-9df68252acf9",
+      "title": "Blossom Spin",
+      "shotType": "Medium Shot",
+      "cameraMove": "Crane Rise",
+      "prompt": "Anime aesthetic, soft cel shading, luminous spring palette. A cherry-blossom festival, petals drifting on the breeze, paper lanterns strung overhead. A person in a light yukata spins with arms open, face lifted, beaming as petals swirl around them. Warm afternoon light, gentle bloom. Crane rise, buttery motion, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_073308_7324e367-1a70-4550-b81d-9df68252acf9.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-emotion-happy-2",
+      "r2_key": "tag-emotion-happy-2-v1.mp4",
+      "job_id": "e0bfba64-8ecb-463d-975d-d34107eabf9c",
+      "title": "Confetti Street",
+      "shotType": "Wide Shot",
+      "cameraMove": "Low Angle Tilt Up",
+      "prompt": "Comic-book illustrated style, bold ink lines, saturated pop palette. A daytime street parade, confetti raining down, streamers and balloons everywhere. A person in bright festive clothes leaps with both fists in the air, grinning ear to ear, mid-celebration. Cheering crowd, flags, sunny sky. Low angle tilt up, dynamic energy, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_073323_e0bfba64-8ecb-463d-975d-d34107eabf9c.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-emotion-happy-3",
+      "r2_key": "tag-emotion-happy-3-v1.mp4",
+      "job_id": "b4eebc9d-56a2-4cc7-810b-6d19bd237d39",
+      "title": "Hilltop Wind",
+      "shotType": "Wide Shot",
+      "cameraMove": "Orbit Left",
+      "prompt": "Ghibli-inspired hand-painted style, lush greens, big soft clouds. A grassy hilltop under a vast sky, wildflowers bending in the wind. A person in a flowing dress twirls with arms outstretched, laughing freely, hair and fabric streaming. Warm daylight, painterly bloom. Orbit left, gentle sway, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_073333_b4eebc9d-56a2-4cc7-810b-6d19bd237d39.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-emotion-happy-4",
+      "r2_key": "tag-emotion-happy-4-v1.mp4",
+      "job_id": "b893dbde-f600-434a-83ee-c7657fd3ad68",
+      "title": "Birthday Kitchen",
+      "shotType": "Medium Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Cinematic photoreal, warm domestic palette. A cozy kitchen glowing with string lights, a candlelit cake on the counter. A person in a casual sweater claps and laughs with delight as candles flicker, friends blurred and cheering around them. Balloons, streamers, warm tungsten glow. Handheld push, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_073342_b893dbde-f600-434a-83ee-c7657fd3ad68.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-emotion-happy-5",
+      "r2_key": "tag-emotion-happy-5-v1.mp4",
+      "job_id": "39da4575-3ac8-4c3e-8d48-a8a96869ca07",
+      "title": "Arcade Win",
+      "shotType": "Medium Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Cyberpunk style, neon magenta-and-cyan wash, glossy reflections. A retro-futuristic arcade, glowing cabinets and screens. A person in a bomber jacket throws both arms up in triumph at a machine, whooping with joy, tickets spilling out. Neon haze, lens flares, wet-look floor. Handheld push, energetic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_073349_39da4575-3ac8-4c3e-8d48-a8a96869ca07.mp4"
+    },
+    {
+      "index": 6,
+      "id": "tag-emotion-happy-6",
+      "r2_key": "tag-emotion-happy-6-v1.mp4",
+      "job_id": "6fe9fd25-d1aa-44f1-b5e2-1dffba16906e",
+      "title": "Fetch at Golden Hour",
+      "shotType": "Wide Shot",
+      "cameraMove": "Tracking Side",
+      "prompt": "Cinematic photoreal, golden-hour warmth. A green park at sunset, long shadows, dust in the light. A person in athletic casuals laughs mid-throw as a dog bounds after a ball, pure delight on their face. Backlit trees, floating pollen, lens bloom. Tracking side, shallow depth of field, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_073359_6fe9fd25-d1aa-44f1-b5e2-1dffba16906e.mp4"
+    },
+    {
+      "index": 7,
+      "id": "tag-emotion-happy-7",
+      "r2_key": "tag-emotion-happy-7-v1.mp4",
+      "job_id": "3cd762a2-69f0-4145-92c7-71ab3d6fe02e",
+      "title": "Market Morning",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static Wide",
+      "prompt": "Watercolor illustration style, soft washes, airy pastel palette. A sunny farmers market, crates of fruit, flower buckets, striped awnings. A person in a linen apron holds up a bright bouquet, beaming, chatting warmly with a vendor. Dappled morning light, loose painterly edges. Static wide, gentle, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_073407_3cd762a2-69f0-4145-92c7-71ab3d6fe02e.mp4"
+    },
+    {
+      "index": 8,
+      "id": "tag-emotion-happy-8",
+      "r2_key": "tag-emotion-happy-8-v1.mp4",
+      "job_id": "e4cd5af6-ffe3-49b9-85ae-bb0606641a99",
+      "title": "Rooftop Toast",
+      "shotType": "Medium Shot",
+      "cameraMove": "Orbit Left",
+      "prompt": "Cinematic photoreal, warm sunset grade. A city rooftop at golden hour, string lights and skyline behind. A person in smart-casual clothes raises a glass in a joyful toast, laughing with friends, heads thrown back. Warm bokeh, lens flare, breeze. Orbit left, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_073413_e4cd5af6-ffe3-49b9-85ae-bb0606641a99.mp4"
+    },
+    {
+      "index": 9,
+      "id": "tag-emotion-happy-9",
+      "r2_key": "tag-emotion-happy-9-v1.mp4",
+      "job_id": "7f3f51fb-7d27-4580-b932-228bfba8ef4a",
+      "title": "Bubble Yard",
+      "shotType": "Close-Up",
+      "cameraMove": "Rack Focus",
+      "prompt": "3D animated feature style, Pixar-like soft rendering, cheerful palette. A sunny backyard, blooming garden, soap bubbles drifting everywhere. A person in a bright summer outfit blows a stream of bubbles, eyes crinkled with delight, giggling. Warm bounce light, glossy bubbles catching rainbows. Rack focus, playful, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_073420_7f3f51fb-7d27-4580-b932-228bfba8ef4a.mp4"
+    },
+    {
+      "index": 10,
+      "id": "tag-emotion-happy-10",
+      "r2_key": "tag-emotion-happy-10-v1.mp4",
+      "job_id": "4f91dc17-7122-45ed-8e6a-99363c78db2d",
+      "title": "String-Light Dance",
+      "shotType": "Wide Shot",
+      "cameraMove": "Crane Rise",
+      "prompt": "Cinematic photoreal, warm festival grade. An outdoor evening celebration under a canopy of string lights, wooden dance floor. A person in a flowy outfit dances with abandon, arms up, spinning and laughing, crowd blurred and joyful. Warm bokeh, glints, dusk sky. Crane rise, shallow depth of field, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_073427_4f91dc17-7122-45ed-8e6a-99363c78db2d.mp4"
+    },
+    {
+      "index": 11,
+      "id": "tag-emotion-happy-11",
+      "r2_key": "tag-emotion-happy-11-v1.mp4",
+      "job_id": "0882bc19-a8f2-403e-bd25-e174df061d97",
+      "title": "Fireworks Gasp",
+      "shotType": "Close-Up",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Anime aesthetic, vivid night palette, glowing highlights. A summer festival at night, fireworks blooming overhead reflected in wide eyes. A person in a yukata gasps and grins with wonder and joy, colored light washing over their face. Lanterns, sparkling bokeh, warm night air. Slow dolly in, luminous, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_073436_0882bc19-a8f2-403e-bd25-e174df061d97.mp4"
+    },
+    {
+      "index": 12,
+      "id": "tag-emotion-happy-12",
+      "r2_key": "tag-emotion-happy-12-v1.mp4",
+      "job_id": "fdc90010-b2c2-49a5-ad0e-ba7c2cd3b74a",
+      "title": "Grandma's Garden",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static Wide",
+      "prompt": "Cinematic photoreal, soft nostalgic warmth. A lush cottage garden in late morning, roses and hydrangeas, a wooden fence. A person in a sundress kneels picking flowers into a basket, smiling contentedly, humming. Dappled sun, floating pollen, soft focus background. Static wide, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_073443_fdc90010-b2c2-49a5-ad0e-ba7c2cd3b74a.mp4"
+    },
+    {
+      "index": 13,
+      "id": "tag-emotion-happy-13",
+      "r2_key": "tag-emotion-happy-13-v1.mp4",
+      "job_id": "431e16b6-4d60-4cf0-8b9d-7364d744fc72",
+      "title": "Finish Line",
+      "shotType": "Medium Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Comic-book illustrated style, dynamic ink, bright palette. A sunny race finish line, banner overhead, crowd blurred. A person in athletic gear crosses with arms raised in jubilant victory, mouth open in a joyful shout, confetti bursting. Motion lines, bold light. Handheld push, high energy, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_073450_431e16b6-4d60-4cf0-8b9d-7364d744fc72.mp4"
+    },
+    {
+      "index": 14,
+      "id": "tag-emotion-happy-14",
+      "r2_key": "tag-emotion-happy-14-v1.mp4",
+      "job_id": "530f7e27-af91-4d4c-b5dd-61a026672764",
+      "title": "Cafe Reunion",
+      "shotType": "Medium Shot",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Cinematic photoreal, warm afternoon grade. A cozy sunlit cafe, plants and warm wood, big windows. A person in a knit sweater lights up and rushes into a joyful hug with a friend, laughing with delight. Steam from cups, soft window bloom, warm bokeh. Slow dolly in, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_073457_530f7e27-af91-4d4c-b5dd-61a026672764.mp4"
+    }
+  ]
+}

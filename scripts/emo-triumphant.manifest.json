@@ -1,0 +1,175 @@
+{
+  "collection": "emotion / Triumphant",
+  "id_prefix": "tag-emotion-triumphant",
+  "visible_limit": 15,
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "limit_key": "Triumphant",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-emotion-triumphant-0",
+      "r2_key": "tag-emotion-triumphant-0-v1.mp4",
+      "job_id": "fd1e1531-c090-4803-868a-ffa5cf6fd163",
+      "title": "The Summit",
+      "shotType": "Wide Shot",
+      "cameraMove": "Low Angle Tilt Up",
+      "prompt": "Cinematic photoreal, epic golden grade. A rugged mountain summit above a sea of clouds at sunrise, snow and rock. A person in mountaineering gear throws both arms wide in triumph, head back, exultant, wind whipping. Sweeping vista, lens flare, drifting mist. Low angle tilt up, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_081846_fd1e1531-c090-4803-868a-ffa5cf6fd163.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-emotion-triumphant-1",
+      "r2_key": "tag-emotion-triumphant-1-v1.mp4",
+      "job_id": "bde99143-6ef1-4dcd-a963-42f231eea0a6",
+      "title": "Champion",
+      "shotType": "Medium Shot",
+      "cameraMove": "Crane Rise",
+      "prompt": "Anime aesthetic, bold dynamic palette, glowing highlights. A packed tournament arena, spotlights and banners. A person in athletic garb hoists a trophy overhead in victory, roaring with joy, confetti raining. Cheering crowd, light beams, sparkles. Crane rise, exhilarating, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_081855_bde99143-6ef1-4dcd-a963-42f231eea0a6.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-emotion-triumphant-2",
+      "r2_key": "tag-emotion-triumphant-2-v1.mp4",
+      "job_id": "75b70444-be30-4284-b26f-5d6b883c982b",
+      "title": "The Landing",
+      "shotType": "Wide Shot",
+      "cameraMove": "Low Angle Tilt Up",
+      "prompt": "Comic-book illustrated style, bold ink, dramatic palette. A dramatic city plaza, dust and debris settling. A person in a heroic outfit rises from a powerful three-point landing into a triumphant stance, chin up, victorious. Impact cracks, motion lines, god rays. Low angle tilt up, powerful, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_081904_75b70444-be30-4284-b26f-5d6b883c982b.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-emotion-triumphant-3",
+      "r2_key": "tag-emotion-triumphant-3-v1.mp4",
+      "job_id": "88c9bbca-088d-41c8-b216-33aff47b4bf2",
+      "title": "The Goal",
+      "shotType": "Wide Shot",
+      "cameraMove": "Tracking Side",
+      "prompt": "Cinematic photoreal, vivid stadium grade. A floodlit soccer stadium, roaring crowd, green pitch. A person in a jersey wheels away arms outstretched in ecstatic celebration after scoring, mouth open in a shout. Flashbulbs, streamers, bright floodlights. Tracking side, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_081910_88c9bbca-088d-41c8-b216-33aff47b4bf2.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-emotion-triumphant-4",
+      "r2_key": "tag-emotion-triumphant-4-v1.mp4",
+      "job_id": "57e83317-5f23-4aaa-9629-75b31167658e",
+      "title": "Flag on the Hill",
+      "shotType": "Wide Shot",
+      "cameraMove": "Crane Rise",
+      "prompt": "Ghibli-inspired hand-painted style, bright heroic palette. A windswept green hilltop under a vast sky, tall grass rippling. A person plants a flag and raises a fist in triumph, cloak streaming, exultant. Big soft clouds, warm sun, painterly bloom. Crane rise, uplifting, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_081917_57e83317-5f23-4aaa-9629-75b31167658e.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-emotion-triumphant-5",
+      "r2_key": "tag-emotion-triumphant-5-v1.mp4",
+      "job_id": "e09c220b-c1dd-435c-9d39-63025013ae42",
+      "title": "Graduation",
+      "shotType": "Wide Shot",
+      "cameraMove": "Low Angle Tilt Up",
+      "prompt": "Cinematic photoreal, bright celebratory grade. An outdoor graduation under blue sky, banners and crowd. A person in cap and gown flings their cap skyward in jubilant triumph, arms up, beaming, caps filling the air. Sunlight, confetti, cheering blur. Low angle tilt up, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_081926_e09c220b-c1dd-435c-9d39-63025013ae42.mp4"
+    },
+    {
+      "index": 6,
+      "id": "tag-emotion-triumphant-6",
+      "r2_key": "tag-emotion-triumphant-6-v1.mp4",
+      "job_id": "f33dc8ef-f22a-4b6f-8a69-1b28dd3c07eb",
+      "title": "Mission Complete",
+      "shotType": "Medium Shot",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Cyberpunk style, neon blue-magenta wash, glowing UI. A high-tech control den, holographic screens flashing success. A person in a sleek jacket pumps a fist in triumph as systems lock in, cool and elated. Neon glow, floating readouts, lens flares. Slow dolly in, energetic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_081937_f33dc8ef-f22a-4b6f-8a69-1b28dd3c07eb.mp4"
+    },
+    {
+      "index": 7,
+      "id": "tag-emotion-triumphant-7",
+      "r2_key": "tag-emotion-triumphant-7-v1.mp4",
+      "job_id": "43eb7aae-dfa0-4526-933f-c2619c5330f1",
+      "title": "Finish Line",
+      "shotType": "Wide Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Cinematic photoreal, bright race-day grade. A city marathon finish line, banner overhead, cheering crowd. A person in running gear crosses with arms thrown up in triumphant exhaustion and joy, tears and a grin. Confetti, sunlight, blurred spectators. Handheld push, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_081944_43eb7aae-dfa0-4526-933f-c2619c5330f1.mp4"
+    },
+    {
+      "index": 8,
+      "id": "tag-emotion-triumphant-8",
+      "r2_key": "tag-emotion-triumphant-8-v1.mp4",
+      "job_id": "7958840e-f033-418d-a649-89b3109dd5e9",
+      "title": "The Deal",
+      "shotType": "Medium Shot",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Cinematic photoreal, crisp corporate grade. A modern glass office at golden hour, skyline behind, a signed contract on the table. A person in business attire stands and raises a triumphant fist, a broad victorious grin, colleagues clapping. Warm window light, glass reflections. Slow dolly in, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_081951_7958840e-f033-418d-a649-89b3109dd5e9.mp4"
+    },
+    {
+      "index": 9,
+      "id": "tag-emotion-triumphant-9",
+      "r2_key": "tag-emotion-triumphant-9-v1.mp4",
+      "job_id": "b0ed64cc-71de-45a8-a9bd-07b8fd5be822",
+      "title": "Trophy Lift",
+      "shotType": "Medium Shot",
+      "cameraMove": "Crane Rise",
+      "prompt": "3D animated feature style, glossy rendering, bold celebratory palette. A stylized podium under bright lights, confetti cannons firing. A person in a team uniform lifts a gleaming trophy overhead in triumph, eyes shining, jubilant. Glossy highlights, streamers, sparkle. Crane rise, dynamic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_081957_b0ed64cc-71de-45a8-a9bd-07b8fd5be822.mp4"
+    },
+    {
+      "index": 10,
+      "id": "tag-emotion-triumphant-10",
+      "r2_key": "tag-emotion-triumphant-10-v1.mp4",
+      "job_id": "af6c1d8c-a2e9-46aa-88b8-68cd1a798341",
+      "title": "The Win",
+      "shotType": "Wide Shot",
+      "cameraMove": "Low Angle Tilt Up",
+      "prompt": "Cinematic photoreal, dramatic arena grade. A boxing ring under hot spotlights, haze, roaring crowd in shadow. A person in boxing gear raises both gloved arms in triumphant victory, chest heaving, exultant. Spotlight beams, drifting haze, hard rim light. Low angle tilt up, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_082005_af6c1d8c-a2e9-46aa-88b8-68cd1a798341.mp4"
+    },
+    {
+      "index": 11,
+      "id": "tag-emotion-triumphant-11",
+      "r2_key": "tag-emotion-triumphant-11-v1.mp4",
+      "job_id": "c7fa2b20-d807-4059-b202-70c4198bae9b",
+      "title": "Victory Pose",
+      "shotType": "Wide Shot",
+      "cameraMove": "Orbit Left",
+      "prompt": "Anime aesthetic, vivid dynamic palette, speed glow. A dramatic arena, energy motes settling after a decisive moment. A person in a bold outfit strikes a triumphant victory pose, arm raised, radiant with exhilaration. Glowing particles, light rays, dynamic wind. Orbit left, exciting, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_082011_c7fa2b20-d807-4059-b202-70c4198bae9b.mp4"
+    },
+    {
+      "index": 12,
+      "id": "tag-emotion-triumphant-12",
+      "r2_key": "tag-emotion-triumphant-12-v1.mp4",
+      "job_id": "eb3439a5-26c0-4075-a28c-f2b0306c3799",
+      "title": "The Podium",
+      "shotType": "Medium Shot",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Cinematic photoreal, bright ceremony grade. An award podium, a gold medal placed around the neck, flags rising behind. A person on the top step lifts their chin with proud, glowing triumph, a hand over the medal, eyes bright. Flashbulbs, confetti, bright key light. Slow dolly in, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_082017_eb3439a5-26c0-4075-a28c-f2b0306c3799.mp4"
+    },
+    {
+      "index": 13,
+      "id": "tag-emotion-triumphant-13",
+      "r2_key": "tag-emotion-triumphant-13-v1.mp4",
+      "job_id": "053d31dd-820a-4b2a-85fc-9b9e7b6c1178",
+      "title": "Liftoff",
+      "shotType": "Medium Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Cinematic photoreal, cool control-room grade. A mission control room, banks of glowing monitors, a rocket climbing on the big screen. A person in a headset leaps up with arms raised in triumphant elation as launch succeeds, team cheering. Screen glow, papers flying, jubilant blur. Handheld push, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_082024_053d31dd-820a-4b2a-85fc-9b9e7b6c1178.mp4"
+    },
+    {
+      "index": 14,
+      "id": "tag-emotion-triumphant-14",
+      "r2_key": "tag-emotion-triumphant-14-v1.mp4",
+      "job_id": "bd2f0e41-8db8-47ad-9898-4a1dca215a2e",
+      "title": "Above the Clouds",
+      "shotType": "Wide Shot",
+      "cameraMove": "Crane Rise",
+      "prompt": "Cinematic photoreal, luminous sunrise grade. A high rocky ridge breaking above a golden cloud sea at dawn. A person in climbing gear stands tall and raises both arms in serene triumph, backlit and glowing. Sweeping clouds, lens flare, cold crisp air. Crane rise, epic, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_082030_bd2f0e41-8db8-47ad-9898-4a1dca215a2e.mp4"
+    }
+  ]
+}

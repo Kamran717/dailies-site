@@ -1,0 +1,77 @@
+{
+  "collection": "lighting / Candlelight",
+  "id_prefix": "tag-lighting-candlelight",
+  "visible_limit": 6,
+  "limit_key": "Candlelight",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "lighting": "Candlelight",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-lighting-candlelight-0",
+      "r2_key": "tag-lighting-candlelight-0-v1.mp4",
+      "job_id": "222f5b58-c4c0-4554-8a99-3d5fab7185b0",
+      "title": "The Dinner",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. An intimate dinner table set with a cluster of candles, dark room beyond. The scene is lit entirely by warm flickering candlelight, soft golden glow dancing on the person's face, deep warm shadows. A person in elegant evening attire sits at the table. Warm flickering candlelight, dancing shadow, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_040314_222f5b58-c4c0-4554-8a99-3d5fab7185b0.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-lighting-candlelight-1",
+      "r2_key": "tag-lighting-candlelight-1-v1.mp4",
+      "job_id": "50a63d0c-bd7c-413d-8700-bf4783a9ae8d",
+      "title": "The Reader",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A cozy dark room, a single candle on a table beside an armchair. The scene is lit entirely by warm flickering candlelight, the glow illuminating the person and their book, everything else in warm shadow. A person in a knit sweater reads. Warm flickering candlelight, soft warm shadow, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_040453_50a63d0c-bd7c-413d-8700-bf4783a9ae8d.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-lighting-candlelight-2",
+      "r2_key": "tag-lighting-candlelight-2-v1.mp4",
+      "job_id": "1bc08ef0-a664-44fa-a0bc-caea89a0fa41",
+      "title": "Vigil",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A dim cathedral alcove filled with rows of flickering votive candles. The scene is lit entirely by the warm glow of many candles, soft golden light on the person's face, deep shadow beyond. A person in a coat stands before the candles. Warm flickering candlelight, glowing votives, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_040501_1bc08ef0-a664-44fa-a0bc-caea89a0fa41.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-lighting-candlelight-3",
+      "r2_key": "tag-lighting-candlelight-3-v1.mp4",
+      "job_id": "8fbc53a3-e522-4963-86e0-f23ab2d2afd5",
+      "title": "The Wish",
+      "shotType": "Close-Up",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A dark room, a birthday cake glowing with lit candles. The scene is lit entirely by the warm flickering candlelight of the cake, the glow on the person's face as they lean in to make a wish. A person in casual party clothes. Warm flickering candlelight, glowing cake, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_040508_8fbc53a3-e522-4963-86e0-f23ab2d2afd5.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-lighting-candlelight-4",
+      "r2_key": "tag-lighting-candlelight-4-v1.mp4",
+      "job_id": "e5b7eaa7-a7cc-4aa6-8fb5-8f5ea51b93a4",
+      "title": "The Hearth",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A dim living room by a stone fireplace with dancing flames and candles on the mantel. The scene is lit entirely by warm flickering firelight and candlelight, golden glow on the person, deep cozy shadows. A person in loungewear sits by the fire. Warm flickering firelight, dancing glow, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_040516_e5b7eaa7-a7cc-4aa6-8fb5-8f5ea51b93a4.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-lighting-candlelight-5",
+      "r2_key": "tag-lighting-candlelight-5-v1.mp4",
+      "job_id": "8465a7bd-e6a4-4336-84ae-67d559d6358c",
+      "title": "The Table",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A rustic wooden table in a dark room, several candles in holders. The scene is lit entirely by warm flickering candlelight, the glow pooling on the person and table, warm darkness around. A person in a linen shirt sits writing by candlelight. Warm flickering candlelight, pooled glow, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_040525_8465a7bd-e6a4-4336-84ae-67d559d6358c.mp4"
+    }
+  ]
+}

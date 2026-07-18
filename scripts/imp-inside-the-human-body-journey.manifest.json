@@ -1,0 +1,83 @@
+{
+  "collection": "impossible / Inside-the-Human-Body Journey",
+  "id_prefix": "tag-impossible-inside-the-human-body-journey",
+  "visible_limit": 6,
+  "limit_key": "Inside-the-Human-Body Journey",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "impossible": "Inside-the-Human-Body Journey",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-impossible-inside-the-human-body-journey-0",
+      "r2_key": "tag-impossible-inside-the-human-body-journey-0-v1.mp4",
+      "job_id": "664020d6-7ca5-4e81-a6f3-d1013a85de29",
+      "title": "The Bloodstream",
+      "impossible": "Inside-the-Human-Body Journey",
+      "shotType": "Extreme Close-Up",
+      "cameraMove": "Push In",
+      "prompt": "Cinematic VFX medical journey, one continuous impossible push-in. Begins on a person's arm, then the camera plunges impossibly through the skin and travels inside the body, flowing through a glowing red blood vessel among floating red blood cells in a single seamless move. A person, arm in frame. Seamless into-the-body transition, microscopic bloodstream, luminous, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_064328_664020d6-7ca5-4e81-a6f3-d1013a85de29.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-impossible-inside-the-human-body-journey-1",
+      "r2_key": "tag-impossible-inside-the-human-body-journey-1-v1.mp4",
+      "job_id": "ff2c77e0-66c6-49a4-a0e5-d3c0763d1836",
+      "title": "The Heart",
+      "impossible": "Inside-the-Human-Body Journey",
+      "shotType": "Extreme Close-Up",
+      "cameraMove": "Push In",
+      "prompt": "Cinematic VFX medical journey, one continuous impossible push-in. Starts on a person's chest, then the camera dives impossibly through the skin and into the body, entering the chambers of a beating heart, walls pulsing around it, in a single seamless move. A person, chest in frame. Seamless into-the-body transition, beating heart interior, luminous, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_064337_ff2c77e0-66c6-49a4-a0e5-d3c0763d1836.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-impossible-inside-the-human-body-journey-2",
+      "r2_key": "tag-impossible-inside-the-human-body-journey-2-v1.mp4",
+      "job_id": "189f43b3-46a0-4112-9da5-b356b8458578",
+      "title": "The Brain",
+      "impossible": "Inside-the-Human-Body Journey",
+      "shotType": "Extreme Close-Up",
+      "cameraMove": "Push In",
+      "prompt": "Cinematic VFX medical journey, one continuous impossible push-in. Begins on a person's temple, then the camera pushes impossibly into the head and flies through a glowing network of neural pathways, sparks of electricity firing between neurons, in one seamless move. A person, head in frame. Seamless into-the-body transition, glowing neural network, luminous, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_064344_189f43b3-46a0-4112-9da5-b356b8458578.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-impossible-inside-the-human-body-journey-3",
+      "r2_key": "tag-impossible-inside-the-human-body-journey-3-v1.mp4",
+      "job_id": "7e40de7c-5aba-4ffe-a76f-f12e90ade9a4",
+      "title": "The Breath",
+      "impossible": "Inside-the-Human-Body Journey",
+      "shotType": "Extreme Close-Up",
+      "cameraMove": "Push In",
+      "prompt": "Cinematic VFX medical journey, one continuous impossible push-in. Starts on a person breathing, then the camera travels impossibly into the chest and through the branching passages of the lungs, air moving through glowing alveoli, in a single seamless move. A person breathing. Seamless into-the-body transition, lung interior, luminous, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_064350_7e40de7c-5aba-4ffe-a76f-f12e90ade9a4.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-impossible-inside-the-human-body-journey-4",
+      "r2_key": "tag-impossible-inside-the-human-body-journey-4-v1.mp4",
+      "job_id": "301daed9-421b-4dea-9d49-76322869935b",
+      "title": "The Cells",
+      "impossible": "Inside-the-Human-Body Journey",
+      "shotType": "Extreme Close-Up",
+      "cameraMove": "Push In",
+      "prompt": "Cinematic VFX medical journey, one continuous impossible push-in. Begins on a person's hand, then the camera dives impossibly through the skin down to the microscopic level, drifting among glowing living cells and their inner structures, in one seamless move. A person, hand in frame. Seamless into-the-body transition, microscopic cells, luminous, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_064358_301daed9-421b-4dea-9d49-76322869935b.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-impossible-inside-the-human-body-journey-5",
+      "r2_key": "tag-impossible-inside-the-human-body-journey-5-v1.mp4",
+      "job_id": "139b5f49-f6e2-42e6-91c3-b23c818d1841",
+      "title": "The Eye",
+      "impossible": "Inside-the-Human-Body Journey",
+      "shotType": "Extreme Close-Up",
+      "cameraMove": "Push In",
+      "prompt": "Cinematic VFX medical journey, one continuous impossible push-in. Starts on an extreme close-up of a person's eye, then the camera pushes impossibly through the iris and pupil into the eye, traveling along the glowing optic nerve toward the brain, in a single seamless move. A person, eye in frame. Seamless into-the-body transition, eye interior, luminous, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_064404_139b5f49-f6e2-42e6-91c3-b23c818d1841.mp4"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "collection": "lighting / Chiaroscuro",
+  "id_prefix": "tag-lighting-chiaroscuro",
+  "visible_limit": 6,
+  "limit_key": "Chiaroscuro",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "lighting": "Chiaroscuro",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-lighting-chiaroscuro-0",
+      "r2_key": "tag-lighting-chiaroscuro-0-v1.mp4",
+      "job_id": "1059051e-7dbd-4cc9-9dcb-7f48c95f1859",
+      "title": "The Portrait",
+      "shotType": "Close-Up",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A dark bare room. Dramatic chiaroscuro lighting: a single hard key light rakes across the person from one side, carving half the face in bright light and dropping the other half into deep black shadow, the background nearly pure black. A person in a plain dark shirt. Hard single-source key, inky shadow, Rembrandt style, 85mm. Shallow depth of field, fine grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_034323_1059051e-7dbd-4cc9-9dcb-7f48c95f1859.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-lighting-chiaroscuro-1",
+      "r2_key": "tag-lighting-chiaroscuro-1-v1.mp4",
+      "job_id": "7d5103f7-2c40-4333-936f-55def870695e",
+      "title": "The Study",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A dim study at night. Dramatic chiaroscuro lighting: a single candle-like hard source lights the person from the side against a near-black background, deep shadows swallowing the rest of the room. A person in a waistcoat sits at a desk. Hard single-source light, inky shadow, old-master style, 50mm. Shallow depth of field, fine grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_034332_7d5103f7-2c40-4333-936f-55def870695e.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-lighting-chiaroscuro-2",
+      "r2_key": "tag-lighting-chiaroscuro-2-v1.mp4",
+      "job_id": "6103caf7-98b9-4347-94f0-2a72e3400fcd",
+      "title": "The Musician",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A black void stage. Dramatic chiaroscuro lighting: a single hard beam picks out the person and their instrument from the darkness, bright highlights against total black, the rest lost in shadow. A person in dark performance attire holds an instrument. Hard single beam, total black surround, 50mm. Shallow depth of field, fine grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_034340_6103caf7-98b9-4347-94f0-2a72e3400fcd.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-lighting-chiaroscuro-3",
+      "r2_key": "tag-lighting-chiaroscuro-3-v1.mp4",
+      "job_id": "695876e1-0826-41d4-9cf9-8d95279f4647",
+      "title": "The Interrogation",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A bare dark room. Dramatic chiaroscuro lighting: a single hard overhead lamp pools harsh light on the person, deep black shadows all around, high contrast. A person in a plain shirt sits at a metal table. Hard overhead key, deep black shadow, noir style, 40mm. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_034346_695876e1-0826-41d4-9cf9-8d95279f4647.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-lighting-chiaroscuro-4",
+      "r2_key": "tag-lighting-chiaroscuro-4-v1.mp4",
+      "job_id": "32756663-15e3-499e-b39e-1369ec28d377",
+      "title": "The Sculptor",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A dark studio. Dramatic chiaroscuro lighting: a single hard side light sculpts the person and a clay bust with bright highlights and deep falloff into black, dramatic contrast. A person in a smock works the clay. Hard side key, deep black falloff, 50mm. Shallow depth of field, fine grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_034355_32756663-15e3-499e-b39e-1369ec28d377.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-lighting-chiaroscuro-5",
+      "r2_key": "tag-lighting-chiaroscuro-5-v1.mp4",
+      "job_id": "02180eb7-e233-4416-8dee-c523fd46554c",
+      "title": "The Letter",
+      "shotType": "Close-Up",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day. A dark room. Dramatic chiaroscuro lighting: a single hard shaft of light falls across the person's face and hands holding a letter, the rest of the frame in deep black shadow, extreme contrast. A person in a dark coat reads. Hard shaft key, inky black, 85mm. Shallow depth of field, fine grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_034401_02180eb7-e233-4416-8dee-c523fd46554c.mp4"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "collection": "cameraMove / Crane Down",
+  "id_prefix": "tag-cameramove-crane-down",
+  "visible_limit": 6,
+  "limit_key": "Crane Down",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "camera_move": "Crane Down",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-cameramove-crane-down-0",
+      "r2_key": "tag-cameramove-crane-down-0-v1.mp4",
+      "job_id": "0ff12932-48d0-41e5-ac4c-91306070d57b",
+      "title": "Sanctuary",
+      "shotType": "Wide Shot",
+      "cameraMove": "Crane Down",
+      "prompt": "Live-action photoreal, present day, reverent grade. A vast cathedral interior, soaring stone vaults, shafts of colored light from stained glass, a long central aisle. Day, hushed. A person in a simple long coat kneels alone at the altar rail, head bowed. The camera cranes down slowly from high in the vaults, descending toward the kneeling figure. Warm stained-glass shafts against cool stone, 35mm, crane down. Shallow depth of field, fine grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_072316_0ff12932-48d0-41e5-ac4c-91306070d57b.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-cameramove-crane-down-1",
+      "r2_key": "tag-cameramove-crane-down-1-v1.mp4",
+      "job_id": "8f468604-1d4c-44d2-a286-18105c85fb9c",
+      "title": "Wildflowers",
+      "shotType": "Wide Shot",
+      "cameraMove": "Crane Down",
+      "prompt": "Live-action photoreal, present day, dreamy grade. A vast meadow of wildflowers under a soft blue sky, gentle breeze, distant treeline. Afternoon, warm. A person in a flowing summer dress lies back in the flowers, arms spread, looking up. The camera cranes down from high above, descending toward them through the blooms. Soft warm daylight, bokeh of petals, 35mm, crane down. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_072328_8f468604-1d4c-44d2-a286-18105c85fb9c.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-cameramove-crane-down-2",
+      "r2_key": "tag-cameramove-crane-down-2-v1.mp4",
+      "job_id": "eb74fd9c-f47d-4d30-8570-59f8b3152cf4",
+      "title": "The Pass",
+      "shotType": "Medium Shot",
+      "cameraMove": "Crane Down",
+      "prompt": "Live-action photoreal, present day, warm kitchen grade. A busy professional kitchen pass, stainless steel, ticket rail, a finished plate under the heat lamp. Evening service. A person in a white chef's jacket leans over the pass, placing a final garnish. The camera cranes down from above the pass, descending onto the plate and the chef's hands. Warm overhead work light, steam, 50mm, crane down. Shallow depth of field, fine grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_072334_eb74fd9c-f47d-4d30-8570-59f8b3152cf4.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-cameramove-crane-down-3",
+      "r2_key": "tag-cameramove-crane-down-3-v1.mp4",
+      "job_id": "da95a2a6-656e-4b6c-9c64-419d58905c85",
+      "title": "The Spiral",
+      "shotType": "Wide Shot",
+      "cameraMove": "Crane Down",
+      "prompt": "Live-action photoreal, present day, elegant grade. An ornate spiral staircase seen from directly above, curving down many floors, marble and iron rail. Day, soft light from a skylight. A person in a long coat stands at the center of the ground floor, looking up. The camera cranes straight down through the center of the spiral, descending toward them. Soft skylight glow, dramatic geometry, 35mm, crane down. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_072340_da95a2a6-656e-4b6c-9c64-419d58905c85.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-cameramove-crane-down-4",
+      "r2_key": "tag-cameramove-crane-down-4-v1.mp4",
+      "job_id": "e3526f1f-0a02-40cf-8fbb-8186de02bf32",
+      "title": "Line Up",
+      "shotType": "Wide Shot",
+      "cameraMove": "Crane Down",
+      "prompt": "Live-action photoreal, present day, bright ocean grade. A calm ocean lineup at sunrise, gentle swells, sparkling water, a distant shore. Dawn, warm. A person in a wetsuit sits astride a surfboard, waiting for a wave, looking to the horizon. The camera cranes down from high above, descending toward the lone surfer on the water. Warm dawn light on the sea, sparkling bokeh, 35mm, crane down. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_072346_e3526f1f-0a02-40cf-8fbb-8186de02bf32.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-cameramove-crane-down-5",
+      "r2_key": "tag-cameramove-crane-down-5-v1.mp4",
+      "job_id": "cd53da71-3243-4555-bd44-780a3010692b",
+      "title": "Solo",
+      "shotType": "Wide Shot",
+      "cameraMove": "Crane Down",
+      "prompt": "Live-action photoreal, present day, theatrical grade. A grand empty theater stage, red curtains, a single spotlight pooling on the boards, dark seats beyond. Night. A person in elegant performance attire stands alone in the spotlight, arms beginning to lift. The camera cranes down from high in the rafters, descending toward the lone figure in the light. One warm spotlight, deep surrounding black, 40mm, crane down. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_072352_cd53da71-3243-4555-bd44-780a3010692b.mp4"
+    }
+  ]
+}

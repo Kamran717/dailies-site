@@ -1,0 +1,77 @@
+{
+  "collection": "cameraMove / Drone Ascend",
+  "id_prefix": "tag-cameramove-drone-ascend",
+  "visible_limit": 6,
+  "limit_key": "Drone Ascend",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "camera_move": "Drone Ascend",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-cameramove-drone-ascend-0",
+      "r2_key": "tag-cameramove-drone-ascend-0-v1.mp4",
+      "job_id": "2cb882a8-34be-47c2-aca8-f97ef10b0d91",
+      "title": "The Coast",
+      "shotType": "Wide Shot",
+      "cameraMove": "Drone Ascend",
+      "prompt": "Live-action photoreal, present day, bright aerial grade. A sweeping sandy beach meeting turquoise sea, white surf, a curving coastline. Midday, brilliant. A person in beachwear stands alone at the waterline looking out. An aerial drone shot ascends straight up and away from them, rising to reveal the vast coastline and ocean from high above. Bright warm sun, sparkling sea, aerial drone ascend. Crisp detail, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_084342_2cb882a8-34be-47c2-aca8-f97ef10b0d91.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-cameramove-drone-ascend-1",
+      "r2_key": "tag-cameramove-drone-ascend-1-v1.mp4",
+      "job_id": "6fdfd821-7a90-488c-a46a-86ff354ecb62",
+      "title": "The Canyon",
+      "shotType": "Wide Shot",
+      "cameraMove": "Drone Ascend",
+      "prompt": "Live-action photoreal, present day, epic aerial grade. A vast red-rock canyon, layered mesas, a winding river far below. Golden hour, warm. A person in hiking gear stands on a rocky outcrop overlooking the canyon. An aerial drone shot ascends up and away from them, rising to reveal the immense scale of the canyon. Warm golden light, deep shadow, aerial drone ascend. Crisp detail, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_084348_6fdfd821-7a90-488c-a46a-86ff354ecb62.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-cameramove-drone-ascend-2",
+      "r2_key": "tag-cameramove-drone-ascend-2-v1.mp4",
+      "job_id": "20e5414f-3bcb-4ef1-af31-9c1d2ee841c0",
+      "title": "The City",
+      "shotType": "Wide Shot",
+      "cameraMove": "Drone Ascend",
+      "prompt": "Live-action photoreal, present day, cinematic aerial grade. A rooftop high above a dense glittering city at dusk, skyscrapers stretching to the horizon. Evening, warm lights. A person in a coat stands at the rooftop edge. An aerial drone shot ascends up and away from them, rising to reveal the sprawling city grid far below. Warm city lights, cool sky, aerial drone ascend. Crisp detail, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_084355_20e5414f-3bcb-4ef1-af31-9c1d2ee841c0.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-cameramove-drone-ascend-3",
+      "r2_key": "tag-cameramove-drone-ascend-3-v1.mp4",
+      "job_id": "aeda8e21-4383-4c3d-9648-a6df17782f45",
+      "title": "The Field",
+      "shotType": "Wide Shot",
+      "cameraMove": "Drone Ascend",
+      "prompt": "Live-action photoreal, present day, pastoral aerial grade. A vast golden wheat field under a big sky, gentle wind patterns across the grain. Late afternoon, warm. A person in rustic clothes stands alone amid the wheat. An aerial drone shot ascends straight up and away from them, rising to reveal the endless golden field and patterns around them. Warm golden light, rippling grain, aerial drone ascend. Crisp detail, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_084401_aeda8e21-4383-4c3d-9648-a6df17782f45.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-cameramove-drone-ascend-4",
+      "r2_key": "tag-cameramove-drone-ascend-4-v1.mp4",
+      "job_id": "617ba878-082b-4646-8326-30a128f62cbf",
+      "title": "Open Water",
+      "shotType": "Wide Shot",
+      "cameraMove": "Drone Ascend",
+      "prompt": "Live-action photoreal, present day, oceanic aerial grade. A small boat alone on a vast open sea, deep blue water, gentle wake. Midday, bright. A person in sailing gear stands at the bow. An aerial drone shot ascends up and away from the boat, rising to reveal the tiny vessel dwarfed by the endless ocean. Bright sun on water, sparkling, aerial drone ascend. Crisp detail, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_084408_617ba878-082b-4646-8326-30a128f62cbf.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-cameramove-drone-ascend-5",
+      "r2_key": "tag-cameramove-drone-ascend-5-v1.mp4",
+      "job_id": "2f416456-c7e4-4663-ad85-246e373a0223",
+      "title": "The Ridge",
+      "shotType": "Wide Shot",
+      "cameraMove": "Drone Ascend",
+      "prompt": "Live-action photoreal, present day, alpine aerial grade. A high mountain ridge above a sea of clouds, snow patches, dramatic peaks. Sunrise, cold and warm. A person in mountaineering gear stands on the ridgeline. An aerial drone shot ascends up and away from them, rising to reveal the ridge and the vast cloud sea below. Warm sunrise, cold peaks, aerial drone ascend. Crisp detail, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_084414_2f416456-c7e4-4663-ad85-246e373a0223.mp4"
+    }
+  ]
+}

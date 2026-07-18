@@ -1,0 +1,77 @@
+{
+  "collection": "shotType / POV",
+  "id_prefix": "tag-shottype-pov",
+  "visible_limit": 6,
+  "limit_key": "POV",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "shot_type": "POV",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-shottype-pov-0",
+      "r2_key": "tag-shottype-pov-0-v1.mp4",
+      "job_id": "5ce54d7d-c6ae-4b7d-a135-367b68aec24e",
+      "title": "The Drive",
+      "shotType": "POV",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, cinematic grade. A first-person POV shot from the driver's seat of a convertible on a coastal road at golden hour, the person's own hands on the steering wheel in frame, the ocean and cliffs rushing past the windshield ahead. Evening, warm. Hands in driving gloves. Warm golden light, motion ahead, first-person POV. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_152241_5ce54d7d-c6ae-4b7d-a135-367b68aec24e.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-shottype-pov-1",
+      "r2_key": "tag-shottype-pov-1-v1.mp4",
+      "job_id": "6bec242c-9268-4954-be39-298de15adf9c",
+      "title": "The Climb",
+      "shotType": "POV",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, thrilling grade. A first-person POV shot of a rock climber, the person's own hands reaching up and gripping the rock holds in frame, the cliff face and a dizzying drop below visible past their arms. Day, bright. Hands chalked, forearms in frame. Hard natural light, vertigo depth, first-person POV. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_152246_6bec242c-9268-4954-be39-298de15adf9c.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-shottype-pov-2",
+      "r2_key": "tag-shottype-pov-2-v1.mp4",
+      "job_id": "573d1ea5-4cdf-4bde-948f-0061e7668389",
+      "title": "The Morning",
+      "shotType": "POV",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, warm grade. A first-person POV shot on a high balcony at sunrise, the person's own hands holding a steaming coffee mug in frame, a glowing city skyline spread out ahead past the railing. Morning, warm. Hands relaxed around the mug. Warm sunrise light, city bokeh, first-person POV. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_152252_573d1ea5-4cdf-4bde-948f-0061e7668389.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-shottype-pov-3",
+      "r2_key": "tag-shottype-pov-3-v1.mp4",
+      "job_id": "31b08d67-4492-4175-982a-31f8ea7d6878",
+      "title": "The Trek",
+      "shotType": "POV",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, natural grade. A first-person POV shot hiking through a lush forest, the person's own hands in frame pushing aside green branches, a sunlit trail opening ahead. Morning, warm. Hands and forearms in frame. Warm dappled light, green depth, first-person POV. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_152258_31b08d67-4492-4175-982a-31f8ea7d6878.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-shottype-pov-4",
+      "r2_key": "tag-shottype-pov-4-v1.mp4",
+      "job_id": "e7059ffd-c7a8-47b3-bd09-d85c5e7a8427",
+      "title": "The Shot",
+      "shotType": "POV",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, crisp grade. A first-person POV shot of a photographer, the person's own hands raising a camera toward their eye in frame, a scenic overlook of mountains and valley visible ahead. Day, clear. Hands holding the camera. Bright natural light, scenic depth, first-person POV. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_152305_e7059ffd-c7a8-47b3-bd09-d85c5e7a8427.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-shottype-pov-5",
+      "r2_key": "tag-shottype-pov-5-v1.mp4",
+      "job_id": "cd9b9a6f-a174-410a-88c8-c2af0c63668d",
+      "title": "The Feast",
+      "shotType": "POV",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, warm grade. A first-person POV shot at a restaurant table, the person's own hands in frame lifting cutlery over a beautifully plated dish, the table and softly lit restaurant ahead. Evening, warm. Hands over the plate. Warm restaurant light, soft bokeh, first-person POV. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_152313_cd9b9a6f-a174-410a-88c8-c2af0c63668d.mp4"
+    }
+  ]
+}

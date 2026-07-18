@@ -1,0 +1,77 @@
+{
+  "collection": "cameraMove / Push In",
+  "id_prefix": "tag-cameramove-push-in",
+  "visible_limit": 6,
+  "limit_key": "Push In",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "camera_move": "Push In",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-cameramove-push-in-0",
+      "r2_key": "tag-cameramove-push-in-0-v1.mp4",
+      "job_id": "8abf0697-42b5-4cd8-b3a7-b27f05a8398d",
+      "title": "The Realization",
+      "shotType": "Medium Shot",
+      "cameraMove": "Push In",
+      "prompt": "Live-action photoreal, present day, warm tournament grade. A grand chess tournament hall, long tables, ticking clocks, spectators blurred behind. Afternoon, hushed tension. A person in a crisp button-down shirt sits over a chessboard, hand frozen above a piece as realization dawns, eyes widening. The camera pushes in fast and steady from a medium shot to a tight close-up, intensifying the moment. Soft window light, shallow focus, 50mm, fast push in. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_070635_8abf0697-42b5-4cd8-b3a7-b27f05a8398d.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-cameramove-push-in-1",
+      "r2_key": "tag-cameramove-push-in-1-v1.mp4",
+      "job_id": "dc5d8ae8-2690-4800-978e-efc601f41855",
+      "title": "The Decision",
+      "shotType": "Medium Shot",
+      "cameraMove": "Push In",
+      "prompt": "Live-action photoreal, present day, cold clinical grade. A bright operating theater, surgical lamps overhead, monitors and trays of instruments. A person in surgical scrubs, mask and cap, looks up sharply from the operating table, eyes locking forward with sudden resolve. The camera pushes in rapidly toward the eyes, compressing the space. Hard cool surgical light, sterile blue-white, 50mm, fast push in. Shallow depth of field, fine grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_070643_dc5d8ae8-2690-4800-978e-efc601f41855.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-cameramove-push-in-2",
+      "r2_key": "tag-cameramove-push-in-2-v1.mp4",
+      "job_id": "f45bc751-b284-47bc-bbed-fba2669702a6",
+      "title": "The Clue",
+      "shotType": "Medium Shot",
+      "cameraMove": "Push In",
+      "prompt": "Live-action photoreal, present day, moody detective grade. A dim investigation room, a corkboard of photos and red string, a desk lamp. Night. A person in a rumpled shirt and loosened tie leans toward the board, eyes narrowing as they spot a connection. The camera pushes in briskly on their focused face. Warm lamplight against deep shadow, 40mm, fast push in. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_070649_f45bc751-b284-47bc-bbed-fba2669702a6.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-cameramove-push-in-3",
+      "r2_key": "tag-cameramove-push-in-3-v1.mp4",
+      "job_id": "aea790fc-5b3c-427c-afe1-b72387b4d150",
+      "title": "The Drop",
+      "shotType": "Medium Shot",
+      "cameraMove": "Push In",
+      "prompt": "Cyberpunk style, saturated neon grade. A packed nightclub, a raised DJ booth, lasers and haze over a jumping crowd. Night, pounding energy. A person in a sleek dark jacket and headphones stands at the decks, hand raised, about to drop the beat. The camera pushes in fast toward them as the moment builds. Neon magenta and cyan, volumetric haze, 35mm, fast push in. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_070656_aea790fc-5b3c-427c-afe1-b72387b4d150.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-cameramove-push-in-4",
+      "r2_key": "tag-cameramove-push-in-4-v1.mp4",
+      "job_id": "d857d9c1-6ef1-4ed8-bf4c-6e4874933d86",
+      "title": "The Sense",
+      "shotType": "Medium Shot",
+      "cameraMove": "Push In",
+      "prompt": "Anime aesthetic, lush painterly grade. A misty bamboo forest at dawn, shafts of light, drifting leaves. A person in a traveler's cloak and fingerless gloves goes still, head turning, sensing an unseen threat. The camera pushes in sharply on their alert face. Cool dawn light with warm shafts, dramatic rim, fast push in, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_070701_d857d9c1-6ef1-4ed8-bf4c-6e4874933d86.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-cameramove-push-in-5",
+      "r2_key": "tag-cameramove-push-in-5-v1.mp4",
+      "job_id": "a4271cb5-2c95-4f90-ab9c-828744897026",
+      "title": "All In",
+      "shotType": "Medium Shot",
+      "cameraMove": "Push In",
+      "prompt": "Live-action photoreal, present day, rich casino grade. A high-stakes poker table, green felt, stacks of chips, cigar smoke drifting. Night, tense. A person in a sharp blazer sits behind their cards, sliding a tall stack of chips forward, a slow steady stare. The camera pushes in fast on their unreadable face. Warm overhead pool light, deep surround shadow, 50mm, fast push in. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_070709_a4271cb5-2c95-4f90-ab9c-828744897026.mp4"
+    }
+  ]
+}

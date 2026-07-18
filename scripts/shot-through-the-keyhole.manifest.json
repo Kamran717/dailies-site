@@ -1,0 +1,77 @@
+{
+  "collection": "shotType / Through the Keyhole",
+  "id_prefix": "tag-shottype-through-the-keyhole",
+  "visible_limit": 6,
+  "limit_key": "Through the Keyhole",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "shot_type": "Through the Keyhole",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-shottype-through-the-keyhole-0",
+      "r2_key": "tag-shottype-through-the-keyhole-0-v1.mp4",
+      "job_id": "41ad200e-4ab8-453b-92dc-22099b97eec6",
+      "title": "The Room",
+      "shotType": "Through the Keyhole",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, voyeuristic grade. The frame is masked by a keyhole-shaped vignette, black surround, peering through the keyhole into a warmly lamplit room beyond. Through the aperture, a person sits in an armchair reading. A person in a cardigan. Warm interior glow, dark keyhole mask, through-the-keyhole framing, 40mm. Subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_170030_41ad200e-4ab8-453b-92dc-22099b97eec6.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-shottype-through-the-keyhole-1",
+      "r2_key": "tag-shottype-through-the-keyhole-1-v1.mp4",
+      "job_id": "e7216c3f-9b86-4273-afa9-b13835a3a6c6",
+      "title": "The Study",
+      "shotType": "Through the Keyhole",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, mysterious grade. The frame is masked by a keyhole-shaped vignette, black surround, peering through into a dim study lit by a desk lamp. Through the aperture, a person sits at a desk writing by lamplight. A person in a waistcoat. Warm lamp glow, dark keyhole mask, through-the-keyhole framing, 40mm. Subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_170036_e7216c3f-9b86-4273-afa9-b13835a3a6c6.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-shottype-through-the-keyhole-2",
+      "r2_key": "tag-shottype-through-the-keyhole-2-v1.mp4",
+      "job_id": "1dc76be8-b457-41d8-82ce-b25214231b1c",
+      "title": "The Ballroom",
+      "shotType": "Through the Keyhole",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, elegant grade. The frame is masked by a keyhole-shaped vignette, black surround, peering through into a grand ballroom glowing with chandeliers. Through the aperture, a person in formal wear turns in a slow dance. A person in an elegant gown or suit. Warm sparkling light, dark keyhole mask, through-the-keyhole framing, 40mm. Subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_170042_1dc76be8-b457-41d8-82ce-b25214231b1c.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-shottype-through-the-keyhole-3",
+      "r2_key": "tag-shottype-through-the-keyhole-3-v1.mp4",
+      "job_id": "7bbdf560-89a0-4177-8a09-03b4d5aa2b5f",
+      "title": "The Kitchen",
+      "shotType": "Through the Keyhole",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, warm grade. The frame is masked by a keyhole-shaped vignette, black surround, peering through into a cozy kitchen with warm morning light. Through the aperture, a person stands at the counter making breakfast. A person in casual home clothes. Warm kitchen light, dark keyhole mask, through-the-keyhole framing, 40mm. Subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_170049_7bbdf560-89a0-4177-8a09-03b4d5aa2b5f.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-shottype-through-the-keyhole-4",
+      "r2_key": "tag-shottype-through-the-keyhole-4-v1.mp4",
+      "job_id": "92e532bd-7a10-4c98-8616-e6ed71dc9d6d",
+      "title": "The Painter",
+      "shotType": "Through the Keyhole",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, artistic grade. The frame is masked by a keyhole-shaped vignette, black surround, peering through into a sunlit artist's studio. Through the aperture, a person stands at an easel painting, brush raised. A person in a paint-smeared smock. Warm daylight, dark keyhole mask, through-the-keyhole framing, 40mm. Subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_170057_92e532bd-7a10-4c98-8616-e6ed71dc9d6d.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-shottype-through-the-keyhole-5",
+      "r2_key": "tag-shottype-through-the-keyhole-5-v1.mp4",
+      "job_id": "b7d807dd-595e-4e05-b043-59e97773fd66",
+      "title": "The Hall",
+      "shotType": "Through the Keyhole",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, moody grade. The frame is masked by a keyhole-shaped vignette, black surround, peering through into a dim grand hallway with a chandelier. Through the aperture, a person walks slowly down the hall away from the door. A person in a long coat. Warm dim light, dark keyhole mask, through-the-keyhole framing, 40mm. Subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_170104_b7d807dd-595e-4e05-b043-59e97773fd66.mp4"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "collection": "emotion / Tense",
+  "id_prefix": "tag-emotion-tense",
+  "visible_limit": 6,
+  "limit_key": "Tense",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "emotion": "Tense",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-emotion-tense-0",
+      "r2_key": "tag-emotion-tense-0-v1.mp4",
+      "job_id": "9f98ac24-b7ad-4a6b-adf4-7843602638ed",
+      "title": "The Bluff",
+      "emotion": "Tense",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, tense grade. A dim high-stakes poker room, a green felt table, stacks of chips, cigar haze. A person holds their cards with a tense, unreadable stare, jaw tight, eyes locked forward, sweat at the brow. A person in a sharp suit. Warm low light, smoky haze, tense expression, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_045350_9f98ac24-b7ad-4a6b-adf4-7843602638ed.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-emotion-tense-1",
+      "r2_key": "tag-emotion-tense-1-v1.mp4",
+      "job_id": "07793fb6-008f-456b-88bf-950dcc84bc12",
+      "title": "The Clock",
+      "emotion": "Tense",
+      "shotType": "Close-Up",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, suspense grade. A dim room, a digital countdown glowing red nearby. A person watches the timer with intense tension, breath held, brow furrowed, hands frozen mid-air. A person in technical work clothes. Cold light with red glow, deep shadow, tense expression, 50mm. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_045355_07793fb6-008f-456b-88bf-950dcc84bc12.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-emotion-tense-2",
+      "r2_key": "tag-emotion-tense-2-v1.mp4",
+      "job_id": "73990e7a-3587-4c90-880c-fc248764b6d8",
+      "title": "The Standoff",
+      "emotion": "Tense",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, tense grade. A dim warehouse, cold shafts of light through high windows, dust in the air. A person stands rigid in a tense standoff, muscles coiled, staring hard, hands slightly raised. A person in a rugged jacket. Cold hard light, deep shadow, tense expression, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_045402_73990e7a-3587-4c90-880c-fc248764b6d8.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-emotion-tense-3",
+      "r2_key": "tag-emotion-tense-3-v1.mp4",
+      "job_id": "97db3ddb-6d8f-42a3-98e8-9c51be7c0d0a",
+      "title": "The Wait",
+      "emotion": "Tense",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, anxious grade. A sterile hospital waiting room, cold fluorescent light, empty chairs. A person sits gripping the arms of the chair, tense and anxious, leg bouncing, staring at a door. A person in casual clothes. Cold fluorescent light, flat tones, tense expression, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_045410_97db3ddb-6d8f-42a3-98e8-9c51be7c0d0a.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-emotion-tense-4",
+      "r2_key": "tag-emotion-tense-4-v1.mp4",
+      "job_id": "1c076f84-d25b-4270-a0dc-6b079bc13236",
+      "title": "The Door",
+      "emotion": "Tense",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, suspense grade. A dim apartment, a person pressed close to a door, listening. Their face is tense with concentration and dread, ear near the wood, hand hovering over the handle. A person in home clothes. Warm dim light, hard shadow, tense expression, 50mm. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_045419_1c076f84-d25b-4270-a0dc-6b079bc13236.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-emotion-tense-5",
+      "r2_key": "tag-emotion-tense-5-v1.mp4",
+      "job_id": "47607ed7-f21d-4afd-b948-a9505a3c33cd",
+      "title": "The Alarm",
+      "emotion": "Tense",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, urgent grade. A dim control room, red warning lights flashing across banks of equipment. A person freezes mid-action, tense and alert as an alarm blares, eyes snapping to a screen. A person in a technical jumpsuit. Cold light with red flash, tense expression, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_045428_47607ed7-f21d-4afd-b948-a9505a3c33cd.mp4"
+    }
+  ]
+}

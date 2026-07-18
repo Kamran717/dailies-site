@@ -1,0 +1,175 @@
+{
+  "collection": "emotion / Intense",
+  "id_prefix": "tag-emotion-intense",
+  "visible_limit": 15,
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "limit_key": "Intense",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-emotion-intense-0",
+      "r2_key": "tag-emotion-intense-0-v1.mp4",
+      "job_id": "5344f48e-36c4-452d-a86f-0fe0a952002a",
+      "title": "The Cockpit",
+      "shotType": "Close-Up",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Cinematic photoreal, high-contrast race grade. A race car cockpit at speed, blurred track streaking past. A person in a racing suit and open-visor helmet grips the wheel with fierce, laser focus, jaw set, eyes locked ahead. Motion blur, dashboard glow, adrenaline. Slow dolly in, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_082056_5344f48e-36c4-452d-a86f-0fe0a952002a.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-emotion-intense-1",
+      "r2_key": "tag-emotion-intense-1-v1.mp4",
+      "job_id": "7e554311-7ecb-4e4b-a092-986b8311a54b",
+      "title": "The Standoff",
+      "shotType": "Close-Up",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Anime aesthetic, high-contrast dramatic palette, sharp lines. A tense dusty arena, wind and grit. A person in a battle outfit locks eyes forward in a fierce, unblinking standoff, tension crackling, muscles coiled. Blowing dust, dramatic rim light, taut air. Slow dolly in, gripping, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_082105_7e554311-7ecb-4e4b-a092-986b8311a54b.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-emotion-intense-2",
+      "r2_key": "tag-emotion-intense-2-v1.mp4",
+      "job_id": "52e1f8d2-933d-491a-af5e-4152a00b7746",
+      "title": "Walk Away",
+      "shotType": "Wide Shot",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Comic-book illustrated style, bold ink, fiery palette. A dramatic wrecked street, a wall of flame and smoke behind. A person in a rugged outfit walks calmly toward camera without looking back, jaw hard, intense and unshaken. Billowing smoke, ember sparks, hard shadows. Slow dolly in, cinematic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_082116_52e1f8d2-933d-491a-af5e-4152a00b7746.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-emotion-intense-3",
+      "r2_key": "tag-emotion-intense-3-v1.mp4",
+      "job_id": "8821ee16-9574-43e0-8c8e-4e3c7d3b201f",
+      "title": "Into the Fire",
+      "shotType": "Medium Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Cinematic photoreal, smoky orange grade. A smoke-filled burning building interior, glowing embers, beams of light through haze. A person in firefighter gear pushes forward through the smoke with fierce determination, focused and unflinching. Drifting embers, heat shimmer, hard backlight. Handheld push, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_082122_8821ee16-9574-43e0-8c8e-4e3c7d3b201f.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-emotion-intense-4",
+      "r2_key": "tag-emotion-intense-4-v1.mp4",
+      "job_id": "f4a38b8e-d8d2-4002-bd39-4e31df55922f",
+      "title": "The Chase",
+      "shotType": "Tracking Side",
+      "cameraMove": "Tracking Side",
+      "prompt": "Cyberpunk style, neon-lit night, rain and reflections. A rooftop chase across wet neon-soaked buildings. A person in a sleek jacket sprints at full tilt with fierce urgency, breath ragged, eyes blazing. Rain streaks, neon flares, motion blur. Tracking side, high energy, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_082129_f4a38b8e-d8d2-4002-bd39-4e31df55922f.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-emotion-intense-5",
+      "r2_key": "tag-emotion-intense-5-v1.mp4",
+      "job_id": "d9cd262b-5322-4292-b9a2-48a27e83ed12",
+      "title": "Steady Hands",
+      "shotType": "Close-Up",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Cinematic photoreal, cool clinical grade. A bright operating theater, sterile blue light, monitors beeping. A person in surgical scrubs and mask works with razor-sharp, unwavering focus, eyes intense above the mask, steady. Crisp highlights, shallow field, tense hush. Slow dolly in, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_082135_d9cd262b-5322-4292-b9a2-48a27e83ed12.mp4"
+    },
+    {
+      "index": 6,
+      "id": "tag-emotion-intense-6",
+      "r2_key": "tag-emotion-intense-6-v1.mp4",
+      "job_id": "7757d74e-8d60-4fe0-8c3a-5f7004aa3df8",
+      "title": "The Grind",
+      "shotType": "Medium Shot",
+      "cameraMove": "Orbit Left",
+      "prompt": "Cinematic photoreal, gritty gym grade. A dim boxing gym, shafts of hard light, a heavy bag swinging. A person in wraps and a tank hammers the bag with ferocious focus, sweat flying, teeth gritted, relentless. Dust in the light, hard shadows, raw energy. Orbit left, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_082150_7757d74e-8d60-4fe0-8c3a-5f7004aa3df8.mp4"
+    },
+    {
+      "index": 7,
+      "id": "tag-emotion-intense-7",
+      "r2_key": "tag-emotion-intense-7-v1.mp4",
+      "job_id": "687aec5f-674f-46e9-80ba-841d63136246",
+      "title": "Against the Storm",
+      "shotType": "Wide Shot",
+      "cameraMove": "Static Wide",
+      "prompt": "Ghibli-inspired hand-painted style, dramatic stormy palette. A wild clifftop in a raging storm, sea crashing far below, rain slashing. A person in a coat braces against the gale, leaning into the wind with fierce resolve, hair and fabric torn sideways. Dark rolling clouds, sea spray, lightning glow. Static wide, powerful, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_082156_687aec5f-674f-46e9-80ba-841d63136246.mp4"
+    },
+    {
+      "index": 8,
+      "id": "tag-emotion-intense-8",
+      "r2_key": "tag-emotion-intense-8-v1.mp4",
+      "job_id": "c330dc65-66cf-4ccb-b0fb-b439107bb718",
+      "title": "The Interrogation",
+      "shotType": "Medium Shot",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Film-noir style, hard single-source light, deep shadow. A bare interrogation room, one hanging lamp, a metal table. A person in a shirt and loosened tie leans across the table with a fierce, pressing stare, jaw tight, commanding. Harsh light pool, black surround, smoke. Slow dolly in, moody, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_082206_c330dc65-66cf-4ccb-b0fb-b439107bb718.mp4"
+    },
+    {
+      "index": 9,
+      "id": "tag-emotion-intense-9",
+      "r2_key": "tag-emotion-intense-9-v1.mp4",
+      "job_id": "646c2dfd-603d-4ceb-9610-e3224c5167cd",
+      "title": "The Grip",
+      "shotType": "Close-Up",
+      "cameraMove": "Rack Focus",
+      "prompt": "Cinematic photoreal, sun-baked cliff grade. A sheer rock face high above a canyon, chalky handholds. A person in climbing gear clings to a tiny hold, muscles straining, face set with fierce concentration, reaching for the next grip. Dizzying drop, harsh sun, dust. Rack focus, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_082218_646c2dfd-603d-4ceb-9610-e3224c5167cd.mp4"
+    },
+    {
+      "index": 10,
+      "id": "tag-emotion-intense-10",
+      "r2_key": "tag-emotion-intense-10-v1.mp4",
+      "job_id": "54bc69c3-9571-4376-a52a-ffa2c25bc048",
+      "title": "Drop",
+      "shotType": "Wide Shot",
+      "cameraMove": "Whip Pan",
+      "prompt": "Cinematic photoreal, electric concert grade. A packed concert, lasers and strobe over a heaving crowd. A person at the decks throws their hands up as the beat drops, fierce charged energy, head down then up. Laser beams, haze, pulsing light. Whip pan, high energy, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_082225_54bc69c3-9571-4376-a52a-ffa2c25bc048.mp4"
+    },
+    {
+      "index": 11,
+      "id": "tag-emotion-intense-11",
+      "r2_key": "tag-emotion-intense-11-v1.mp4",
+      "job_id": "663f6139-269a-4bac-b3fe-a16b183381a5",
+      "title": "Lock On",
+      "shotType": "Medium Shot",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Anime aesthetic, high-contrast sky palette, glowing HUD. A fighter-jet cockpit high above the clouds, alarms and glowing readouts. A person in a flight helmet locks focus on a target with fierce intensity, hand on the stick, unwavering. Sun glare, HUD glow, g-force tension. Slow dolly in, gripping, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_082236_663f6139-269a-4bac-b3fe-a16b183381a5.mp4"
+    },
+    {
+      "index": 12,
+      "id": "tag-emotion-intense-12",
+      "r2_key": "tag-emotion-intense-12-v1.mp4",
+      "job_id": "e6f3a43b-5daa-4965-ab54-5b344a6d4df9",
+      "title": "The Start",
+      "shotType": "Wide Shot",
+      "cameraMove": "Low Angle Tilt Up",
+      "prompt": "Cinematic photoreal, crisp track grade. A sunlit stadium track, starting blocks, taut silence before the gun. A person in a sprint kit coils in the blocks then explodes forward with ferocious power, every muscle firing. Sharp shadows, dust burst, bright light. Low angle tilt up, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_082251_e6f3a43b-5daa-4965-ab54-5b344a6d4df9.mp4"
+    },
+    {
+      "index": 13,
+      "id": "tag-emotion-intense-13",
+      "r2_key": "tag-emotion-intense-13-v1.mp4",
+      "job_id": "c9015564-c7ba-4914-9e95-767d5ba03076",
+      "title": "All In",
+      "shotType": "Medium Shot",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Film-noir style, moody green-felt glow, deep shadow. A smoky high-stakes poker table, a towering stack of chips pushed to the center. A person in a sharp suit fixes an unblinking, intense stare across the table, jaw set, all in. Low warm lamp, drifting smoke, tense hush. Slow dolly in, gripping, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_082258_c9015564-c7ba-4914-9e95-767d5ba03076.mp4"
+    },
+    {
+      "index": 14,
+      "id": "tag-emotion-intense-14",
+      "r2_key": "tag-emotion-intense-14-v1.mp4",
+      "job_id": "da08fc7c-cefe-47a9-910c-e160eb0f03ee",
+      "title": "Eye of the Storm",
+      "shotType": "Wide Shot",
+      "cameraMove": "Static Wide",
+      "prompt": "Cinematic photoreal, ominous storm grade. A flat open plain under a monstrous supercell, a distant tornado curling down. A person in rugged gear stands by a truck staring down the storm with fierce, fixated intensity, wind tearing at them. Green-black sky, flying debris, dramatic light. Static wide, shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260715_082304_da08fc7c-cefe-47a9-910c-e160eb0f03ee.mp4"
+    }
+  ]
+}

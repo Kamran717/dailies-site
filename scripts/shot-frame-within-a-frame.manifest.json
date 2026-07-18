@@ -1,0 +1,77 @@
+{
+  "collection": "shotType / Frame Within a Frame",
+  "id_prefix": "tag-shottype-frame-within-a-frame",
+  "visible_limit": 6,
+  "limit_key": "Frame Within a Frame",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "shot_type": "Frame Within a Frame",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-shottype-frame-within-a-frame-0",
+      "r2_key": "tag-shottype-frame-within-a-frame-0-v1.mp4",
+      "job_id": "d06ddf9a-7fc6-403c-8373-eee59d0b600e",
+      "title": "The Doorway",
+      "shotType": "Frame Within a Frame",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, composed grade. A dim room, an open doorway leading to a bright sunlit room beyond. A frame-within-a-frame shot: the doorway forms an inner frame around a person standing in the lit room beyond, framed by the dark door surround. A person in casual clothes. Bright inner room, dark frame, 40mm, frame within a frame. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_164503_d06ddf9a-7fc6-403c-8373-eee59d0b600e.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-shottype-frame-within-a-frame-1",
+      "r2_key": "tag-shottype-frame-within-a-frame-1-v1.mp4",
+      "job_id": "a34cd720-79f8-41f4-82d7-83d3884bd22d",
+      "title": "The Window",
+      "shotType": "Frame Within a Frame",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, warm grade. The exterior of a cozy cafe at dusk, a large window glowing warmly. A frame-within-a-frame shot: the window frames a person seated inside at a table, the window edges forming an inner frame around them. A person in a sweater. Warm interior glow, cool dusk outside, 50mm, frame within a frame. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_164510_a34cd720-79f8-41f4-82d7-83d3884bd22d.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-shottype-frame-within-a-frame-2",
+      "r2_key": "tag-shottype-frame-within-a-frame-2-v1.mp4",
+      "job_id": "f67f8122-04b6-4ff5-b0bb-f48cb58206f8",
+      "title": "The Arch",
+      "shotType": "Frame Within a Frame",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, grand grade. An old stone archway opening onto a sunlit courtyard beyond. A frame-within-a-frame shot: the stone arch forms an inner frame around a person standing in the bright courtyard, framed by the dark arch. A person in a long coat. Bright courtyard, shadowed arch, 35mm, frame within a frame. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_164521_f67f8122-04b6-4ff5-b0bb-f48cb58206f8.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-shottype-frame-within-a-frame-3",
+      "r2_key": "tag-shottype-frame-within-a-frame-3-v1.mp4",
+      "job_id": "9b2f4055-c423-49e0-80c0-8fdb0f50e048",
+      "title": "The Tunnel",
+      "shotType": "Frame Within a Frame",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, moody grade. A dark pedestrian tunnel opening onto a bright city street at the far end. A frame-within-a-frame shot: the tunnel mouth forms an inner frame around a person standing in the bright opening, silhouetted, framed by the dark tunnel. A person in a jacket. Bright opening, dark tunnel frame, 35mm, frame within a frame. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_164528_9b2f4055-c423-49e0-80c0-8fdb0f50e048.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-shottype-frame-within-a-frame-4",
+      "r2_key": "tag-shottype-frame-within-a-frame-4-v1.mp4",
+      "job_id": "f120f08a-d17f-4d16-936f-ae2f0c997b1c",
+      "title": "The Mirror Frame",
+      "shotType": "Frame Within a Frame",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, elegant grade. A dim hallway with a large ornate framed mirror on the wall. A frame-within-a-frame shot: the mirror's ornate frame forms an inner frame around a person's reflection captured within it. A person in smart attire. Warm hallway light, framed reflection, 50mm, frame within a frame. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_164540_f120f08a-d17f-4d16-936f-ae2f0c997b1c.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-shottype-frame-within-a-frame-5",
+      "r2_key": "tag-shottype-frame-within-a-frame-5-v1.mp4",
+      "job_id": "aefa92c0-e9af-40ab-a736-965c8c8b6750",
+      "title": "The Foliage",
+      "shotType": "Frame Within a Frame",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, lush grade. A garden with an opening in dense green foliage revealing a person beyond. A frame-within-a-frame shot: leafy branches in the soft-focus foreground form a natural inner frame around a person standing sharp in the clearing beyond. A person in light clothes. Warm dappled light, green natural frame, 50mm, frame within a frame. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_164553_aefa92c0-e9af-40ab-a736-965c8c8b6750.mp4"
+    }
+  ]
+}

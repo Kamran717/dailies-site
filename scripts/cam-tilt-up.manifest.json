@@ -1,0 +1,77 @@
+{
+  "collection": "cameraMove / Tilt Up",
+  "id_prefix": "tag-cameramove-tilt-up",
+  "visible_limit": 6,
+  "limit_key": "Tilt Up",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "camera_move": "Tilt Up",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-cameramove-tilt-up-0",
+      "r2_key": "tag-cameramove-tilt-up-0-v1.mp4",
+      "job_id": "faa7f158-2a34-48a1-bf6d-b56ec5e9727b",
+      "title": "Stand Tall",
+      "shotType": "Low Angle",
+      "cameraMove": "Tilt Up",
+      "prompt": "Live-action photoreal, present day, heroic grade. A rain-slicked city street at dusk, wet asphalt reflecting neon signs, steam rising from a grate. Evening, moody. A person in a long leather coat and boots stands planted on the street, feet apart, powerful. From a low angle at ground level the camera tilts up their body, rising from boots to a determined face against the sky. Cool wet reflections, warm sign glow, 28mm, low-angle tilt up. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_075243_faa7f158-2a34-48a1-bf6d-b56ec5e9727b.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-cameramove-tilt-up-1",
+      "r2_key": "tag-cameramove-tilt-up-1-v1.mp4",
+      "job_id": "7e7612e8-c416-4831-a889-ffd0785b8167",
+      "title": "The Spires",
+      "shotType": "Wide Shot",
+      "cameraMove": "Tilt Up",
+      "prompt": "Live-action photoreal, present day, grand grade. The front steps of a towering gothic cathedral, ornate carved stone, arched doors. Day, bright sky. A person in a smart coat stands at the base looking up. From low the camera tilts up the soaring facade, rising past the carvings to the spires against the sky. Cool stone with warm sky, 24mm, tilt up. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_075249_7e7612e8-c416-4831-a889-ffd0785b8167.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-cameramove-tilt-up-2",
+      "r2_key": "tag-cameramove-tilt-up-2-v1.mp4",
+      "job_id": "71a7cff8-6c36-4eee-94cd-3ade8d94d6c0",
+      "title": "The Colossus",
+      "shotType": "Wide Shot",
+      "cameraMove": "Tilt Up",
+      "prompt": "Live-action photoreal, present day, epic grade. The base of a colossal ancient stone statue in a desert plaza, weathered feet and legs towering upward. Golden hour, warm. A person in explorer's khakis stands tiny at the statue's feet, gazing up. From low the camera tilts up the immense statue, rising to its distant face against the sky. Warm golden light, long shadows, 24mm, tilt up. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_075256_71a7cff8-6c36-4eee-94cd-3ade8d94d6c0.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-cameramove-tilt-up-3",
+      "r2_key": "tag-cameramove-tilt-up-3-v1.mp4",
+      "job_id": "a1051631-7c87-4227-b7cb-075379aa570a",
+      "title": "Stargazer",
+      "shotType": "Wide Shot",
+      "cameraMove": "Tilt Up",
+      "prompt": "Live-action photoreal, present day, celestial grade. A remote desert plain at night under a brilliant star-filled sky, the Milky Way arcing overhead. Night, clear and cold. A person in a warm jacket stands looking upward. From a low angle the camera tilts up from them to the vast starfield above. Cool starlight, deep blue night, 24mm, tilt up. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_075303_a1051631-7c87-4227-b7cb-075379aa570a.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-cameramove-tilt-up-4",
+      "r2_key": "tag-cameramove-tilt-up-4-v1.mp4",
+      "job_id": "9b2d8512-6989-4e06-8fa9-e2baf2ed41bc",
+      "title": "The Cascade",
+      "shotType": "Wide Shot",
+      "cameraMove": "Tilt Up",
+      "prompt": "Live-action photoreal, present day, misty grade. The foot of a towering waterfall, churning pool, wet mossy boulders, drifting spray. Day, humid. A person in a rain shell stands on a rock at the base looking up. From low the camera tilts up the full height of the falls, rising to the crest against the sky. Bright diffused light, drifting mist, 24mm, tilt up. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_075309_9b2d8512-6989-4e06-8fa9-e2baf2ed41bc.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-cameramove-tilt-up-5",
+      "r2_key": "tag-cameramove-tilt-up-5-v1.mp4",
+      "job_id": "7661c770-e329-48c1-b5a2-d3a699f3ad05",
+      "title": "The Slot",
+      "shotType": "Wide Shot",
+      "cameraMove": "Tilt Up",
+      "prompt": "Live-action photoreal, present day, warm sandstone grade. Deep inside a narrow slot canyon, sculpted orange sandstone walls curving upward, a sliver of sky far above. Midday, glowing reflected light. A person in hiking gear stands at the canyon floor looking up. From low the camera tilts up the towering canyon walls to the bright slit of sky. Warm reflected glow, deep shadow, 24mm, tilt up. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_075316_7661c770-e329-48c1-b5a2-d3a699f3ad05.mp4"
+    }
+  ]
+}

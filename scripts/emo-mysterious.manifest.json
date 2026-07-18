@@ -1,0 +1,83 @@
+{
+  "collection": "emotion / Mysterious",
+  "id_prefix": "tag-emotion-mysterious",
+  "visible_limit": 6,
+  "limit_key": "Mysterious",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "emotion": "Mysterious",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-emotion-mysterious-0",
+      "r2_key": "tag-emotion-mysterious-0-v1.mp4",
+      "job_id": "d6906b9d-f695-411b-8312-a55b26ae71b9",
+      "title": "The Stranger",
+      "emotion": "Mysterious",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, noir grade. A foggy cobblestone alley at night, a single gas lamp, mist swirling. A hooded person stands half in shadow, mysterious and still, face partly hidden, a knowing tilt of the head. A person in a long hooded coat. Cool lamp glow, thick fog, mysterious mood, 50mm. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_045434_d6906b9d-f695-411b-8312-a55b26ae71b9.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-emotion-mysterious-1",
+      "r2_key": "tag-emotion-mysterious-1-v1.mp4",
+      "job_id": "7e157a8c-5e5a-4203-af2a-fc8ca4312676",
+      "title": "The Map",
+      "emotion": "Mysterious",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, intriguing grade. A dim study at night, an old cryptic map spread on a desk, a single candle. A person studies the map with a mysterious, secretive intensity, tracing a line, half-smiling. A person in a waistcoat. Warm candlelight, deep shadow, mysterious mood, 50mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_045443_7e157a8c-5e5a-4203-af2a-fc8ca4312676.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-emotion-mysterious-2",
+      "r2_key": "tag-emotion-mysterious-2-v1.mp4",
+      "job_id": "44154aa0-4a57-48a9-8d46-a151e9b37add",
+      "title": "The Mask",
+      "emotion": "Mysterious",
+      "shotType": "Close-Up",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, elegant grade. A dim opulent masquerade ball, candlelight and gold. A person wears an ornate masquerade mask, eyes glinting mysteriously behind it, an enigmatic gaze. A person in formal evening attire and a decorative mask. Warm candlelight, rich shadow, mysterious mood, 85mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_045449_44154aa0-4a57-48a9-8d46-a151e9b37add.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-emotion-mysterious-3",
+      "r2_key": "tag-emotion-mysterious-3-v1.mp4",
+      "job_id": "3ed17068-e62d-4162-8b24-03d2554edf7c",
+      "title": "The Vanishing",
+      "emotion": "Mysterious",
+      "shotType": "Wide Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, atmospheric grade. A misty empty street at dawn, thick fog rolling. A person walks away into the fog, mysteriously half-dissolved by the mist, silhouette fading. A person in a long coat. Cool pale light, dense fog, mysterious mood, 35mm. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_045455_3ed17068-e62d-4162-8b24-03d2554edf7c.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-emotion-mysterious-4",
+      "r2_key": "tag-emotion-mysterious-4-v1.mp4",
+      "job_id": "a5a20c3d-b525-41ea-881d-cef224d3e8bc",
+      "title": "The Key",
+      "emotion": "Mysterious",
+      "shotType": "Close-Up",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, intriguing grade. A dim corridor before an old ornate locked door. A person holds up an antique ornate key with a mysterious, secretive expression, about to unlock a secret. A person in a dark coat. Warm dim light, deep shadow, mysterious mood, 85mm. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_045500_a5a20c3d-b525-41ea-881d-cef224d3e8bc.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-emotion-mysterious-5",
+      "r2_key": "tag-emotion-mysterious-5-v1.mp4",
+      "job_id": "52715905-6645-466c-b76b-9739d9ffe3fe",
+      "title": "The Archive",
+      "emotion": "Mysterious",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, moody grade. A shadowy old library at night, towering shelves, a shaft of moonlight. A person slides a hidden book from the shelf with a mysterious, conspiratorial look, glancing over their shoulder. A person in scholarly attire. Cool moonlight, deep shadow, mysterious mood, 50mm. Shallow depth of field, grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260717_045507_52715905-6645-466c-b76b-9739d9ffe3fe.mp4"
+    }
+  ]
+}

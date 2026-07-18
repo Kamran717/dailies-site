@@ -1,0 +1,142 @@
+{
+  "collection": "cameramove / Handheld Push",
+  "id_prefix": "tag-cameramove-handheld-push",
+  "visible_limit": 12,
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "limit_key": "Handheld Push",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-cameramove-handheld-push-0",
+      "r2_key": "tag-cameramove-handheld-push-0-v4.mp4",
+      "job_id": "72fdd14f-98ae-4ef9-b285-701b5505daf0",
+      "title": "The Pass",
+      "shotType": "Medium Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Cinematic live-action realism, photoreal, filmic color grade, shallow depth of field, natural light. Present day. A frantic professional kitchen at dinner rush, stainless-steel counters, flaming burners, a row of order tickets, steam and heat haze. Night, intense. A person in a white chef's jacket plates a dish with tweezers at the pass, focused and glistening with sweat, glancing up as the camera pushes in. Copper pans, a flare of fire, rushing line cooks blurred behind. Warm practical kitchen light. Handheld push-in, organic movement. Energetic cinematic aesthetic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260714_062841_72fdd14f-98ae-4ef9-b285-701b5505daf0.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-cameramove-handheld-push-1",
+      "r2_key": "tag-cameramove-handheld-push-1-v4.mp4",
+      "job_id": "138c4e6a-97fe-4595-98b7-2452216ee639",
+      "title": "The Speech",
+      "shotType": "Medium Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Cinematic live-action realism, photoreal, filmic color grade, shallow depth of field, natural light. Present day. A worn team locker room, metal lockers, a chalkboard of plays, benches strewn with gear. Pre-game, charged. A person in a coach's jacket delivers an impassioned speech, jaw set, leaning forward as the camera pushes toward them. Hanging jerseys, a whiteboard, tense teammates out of focus. Cool overhead light with a warm side lamp. Handheld push-in, organic movement. Intense cinematic aesthetic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260714_062847_138c4e6a-97fe-4595-98b7-2452216ee639.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-cameramove-handheld-push-2",
+      "r2_key": "tag-cameramove-handheld-push-2-v4.mp4",
+      "job_id": "c14265aa-e6f7-4e65-ac3a-4c61193e5e99",
+      "title": "The Result",
+      "shotType": "Medium Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Cinematic live-action realism, photoreal, filmic color grade, shallow depth of field, natural light. Present day. A cluttered research lab, racks of glass beakers, monitors of scrolling data, a spinning centrifuge. Late night. A person in a lab coat leans back from a microscope and looks up in dawning realization as the camera pushes in, breath held. Pipettes, glowing screens, scattered notes. Cool lab light with monitor glow. Handheld push-in, organic movement. Suspenseful cinematic aesthetic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260714_062853_c14265aa-e6f7-4e65-ac3a-4c61193e5e99.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-cameramove-handheld-push-3",
+      "r2_key": "tag-cameramove-handheld-push-3-v4.mp4",
+      "job_id": "b06687ff-d138-4db1-9460-3ef63cfa0cce",
+      "title": "The Walkout",
+      "shotType": "Wide Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Cinematic live-action realism, photoreal, filmic color grade, shallow depth of field, natural light. Present day. A dark stadium tunnel, raw concrete walls, a blaze of light and a distant roar at the far end, haze in the air. Night, adrenaline. A person in athletic warmup gear walks toward the light, hood up, fists clenching, as the camera pushes ahead of them. Flickering tunnel lights, hanging banners, a dropped water bottle. Cool tunnel dark against bright field light. Handheld push-in, organic movement. Charged cinematic aesthetic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260714_062901_b06687ff-d138-4db1-9460-3ef63cfa0cce.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-cameramove-handheld-push-4",
+      "r2_key": "tag-cameramove-handheld-push-4-v4.mp4",
+      "job_id": "0f4bcdef-dc41-4e64-a1e3-32d7b772f770",
+      "title": "Breaking Story",
+      "shotType": "Medium Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Cinematic live-action realism, photoreal, filmic color grade, shallow depth of field, natural light. Present day. A busy newsroom, rows of desks, a wall of clocks and screens, papers everywhere. Day, urgent. A person in business attire presses a phone to their ear, eyes widening at breaking news, as the camera pushes in. Ringing phones, glowing monitors, colleagues rushing behind. Cool fluorescent light with screen glow. Handheld push-in, organic movement. Urgent cinematic aesthetic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260714_062909_0f4bcdef-dc41-4e64-a1e3-32d7b772f770.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-cameramove-handheld-push-5",
+      "r2_key": "tag-cameramove-handheld-push-5-v4.mp4",
+      "job_id": "4e22267c-4275-4de1-bba6-e1d2b8a1b8dd",
+      "title": "The Vow",
+      "shotType": "Medium Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Cinematic live-action realism, photoreal, filmic color grade, shallow depth of field, natural light. Present day. A sunlit chapel, wooden pews, tall stained-glass windows casting colored light, flowers lining the aisle. Day, emotional. A person in elegant wedding attire stands at the altar, eyes glistening with joy, as the camera pushes gently in. Flickering candles, drifting petals, softly blurred guests. Warm window light, soft glow. Handheld push-in, organic movement. Tender cinematic aesthetic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260714_062915_4e22267c-4275-4de1-bba6-e1d2b8a1b8dd.mp4"
+    },
+    {
+      "index": 6,
+      "id": "tag-cameramove-handheld-push-6",
+      "r2_key": "tag-cameramove-handheld-push-6-v4.mp4",
+      "job_id": "8fbf279b-e63b-42e6-823d-533a37933780",
+      "title": "The Pit Stop",
+      "shotType": "Medium Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Cinematic live-action realism, photoreal, filmic color grade, shallow depth of field, natural light. Present day. A high-tech racing garage, a gleaming race car up on jacks, crew in team gear, stacks of tires, cables snaking the floor. Day, urgent. A person in a fireproof racing suit strides toward the car, helmet under one arm, jaw set with focus, as the camera pushes in. Sparks, pit equipment, a wall of telemetry monitors. Bright garage light. Handheld push-in, organic movement. High-octane cinematic aesthetic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260714_062923_8fbf279b-e63b-42e6-823d-533a37933780.mp4"
+    },
+    {
+      "index": 7,
+      "id": "tag-cameramove-handheld-push-7",
+      "r2_key": "tag-cameramove-handheld-push-7-v4.mp4",
+      "job_id": "5b1474ca-406a-4873-b538-ed06caeaa9c6",
+      "title": "The Mic",
+      "shotType": "Medium Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Cinematic live-action realism, photoreal, filmic color grade, shallow depth of field, dramatic stage light. Night. A dim concert stage, a single hard spotlight, a vintage microphone on a stand, haze drifting, a vast dark crowd beyond. A person in stage clothes steps to the microphone and grips it, eyes closed in a held breath, as the camera pushes in. Cables, monitor wedges, distant phone lights like stars. Spotlight against deep dark. Handheld push-in, organic movement. Dramatic cinematic aesthetic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260714_062930_5b1474ca-406a-4873-b538-ed06caeaa9c6.mp4"
+    },
+    {
+      "index": 8,
+      "id": "tag-cameramove-handheld-push-8",
+      "r2_key": "tag-cameramove-handheld-push-8-v4.mp4",
+      "job_id": "f15f26d1-218d-4b34-b546-a59755011a56",
+      "title": "The Incision",
+      "shotType": "Medium Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Cinematic live-action realism, photoreal, filmic color grade, shallow depth of field, clinical light. Present day. A sterile operating room, bright surgical lights, monitors tracking vitals, draped instrument trays, a gowned team. Tense. A person in surgical scrubs and mask leans over the table, hands steady, sharp focused eyes above the mask, as the camera pushes in. Beeping monitors, gloved hands, the glare of the overhead light. Cool clinical light. Handheld push-in, organic movement. Taut cinematic aesthetic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260714_062937_f15f26d1-218d-4b34-b546-a59755011a56.mp4"
+    },
+    {
+      "index": 9,
+      "id": "tag-cameramove-handheld-push-9",
+      "r2_key": "tag-cameramove-handheld-push-9-v4.mp4",
+      "job_id": "7f6cba5a-a276-4832-ab94-ca4e4a930af4",
+      "title": "The Bazaar",
+      "shotType": "Medium Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Cinematic live-action realism, photoreal, filmic color grade, shallow depth of field, natural light. Present day. A crowded old-world bazaar, strings of hanging lanterns, sacks of colored spice, bolts of fabric, a swirling crowd. Day, bustling. A person in a traveler's linen outfit weaves through the market glancing back over a shoulder, urgent, as the camera pushes after them. Lanterns, steam off a food stall, brushing shoulders. Warm dappled light. Handheld push-in, organic movement. Kinetic cinematic aesthetic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260714_062944_7f6cba5a-a276-4832-ab94-ca4e4a930af4.mp4"
+    },
+    {
+      "index": 10,
+      "id": "tag-cameramove-handheld-push-10",
+      "r2_key": "tag-cameramove-handheld-push-10-v4.mp4",
+      "job_id": "210c8eee-7612-4493-bd60-0c17bfbdd79e",
+      "title": "The Summit",
+      "shotType": "Medium Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Cinematic live-action realism, photoreal, filmic color grade, shallow depth of field, natural light. Present day. A wind-blasted mountain summit, snow and dark rock, a vast cloud sea far below, a fixed rope snapping in the wind. Day, triumphant. A person in mountaineering gear crests the ridge and stands upright, exhausted and elated, as the camera pushes in toward them against the open sky. An ice axe, whipping snow, a small summit flag. Bright cold light. Handheld push-in, organic movement. Soaring cinematic aesthetic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260714_062951_210c8eee-7612-4493-bd60-0c17bfbdd79e.mp4"
+    },
+    {
+      "index": 11,
+      "id": "tag-cameramove-handheld-push-11",
+      "r2_key": "tag-cameramove-handheld-push-11-v4.mp4",
+      "job_id": "9126ee51-3b9f-43e0-bc37-b2412e593d4b",
+      "title": "The Table",
+      "shotType": "Medium Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Cinematic live-action realism, photoreal, filmic color grade, shallow depth of field, low lamp light. Night. A smoky private card room, a green-felt table, tall stacks of chips, a low hanging lamp, shadowed players. Tense. A person in a sharp suit sits at the table sliding chips forward, unreadable, eyes lifting slowly, as the camera pushes in. Playing cards, a whiskey glass, curling cigar smoke. Warm pooled lamp light against the dark. Handheld push-in, organic movement. Tense cinematic aesthetic, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260714_062958_9126ee51-3b9f-43e0-bc37-b2412e593d4b.mp4"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "collection": "shotType / Medium Shot",
+  "id_prefix": "tag-shottype-medium-shot",
+  "visible_limit": 6,
+  "limit_key": "Medium Shot",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "shot_type": "Medium Shot",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-shottype-medium-shot-0",
+      "r2_key": "tag-shottype-medium-shot-0-v1.mp4",
+      "job_id": "4303b0f9-d53f-4d62-bea3-26287783567a",
+      "title": "Last Orders",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, moody bar grade. A dimly lit cocktail bar at night, bottles glowing behind, warm pools of light. A medium shot framing a person from the waist up as they shake a cocktail shaker with flair, bar visible around them. A person in a rolled-sleeve shirt and apron. Warm bar light, bottle bokeh, 50mm, medium shot. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_143024_4303b0f9-d53f-4d62-bea3-26287783567a.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-shottype-medium-shot-1",
+      "r2_key": "tag-shottype-medium-shot-1-v1.mp4",
+      "job_id": "07a674e7-3284-45b1-b0ec-954496fb664a",
+      "title": "The Case",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, detective grade. A dim investigation room, a corkboard of photos and red string behind. A medium shot framing a person from the waist up as they pin a photo to the board, studying it, room context around them. A person in a rumpled shirt and loosened tie. Warm lamplight, deep shadow, 50mm, medium shot. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_143032_07a674e7-3284-45b1-b0ec-954496fb664a.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-shottype-medium-shot-2",
+      "r2_key": "tag-shottype-medium-shot-2-v1.mp4",
+      "job_id": "ffec4857-b212-4c4b-990a-5f495eae5468",
+      "title": "Soundcheck",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, warm grade. A small music venue before the show, amps and a mic stand, warm stage light. A medium shot framing a person from the waist up seated on a stool, tuning an acoustic guitar, head bent to listen. A person in a casual band tee. Warm stage light, soft haze, 50mm, medium shot. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_143037_ffec4857-b212-4c4b-990a-5f495eae5468.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-shottype-medium-shot-3",
+      "r2_key": "tag-shottype-medium-shot-3-v1.mp4",
+      "job_id": "84cfb479-c7ca-4d43-a331-6f1e42f16316",
+      "title": "The Experiment",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, clinical grade. A modern laboratory, glassware and equipment on the bench. A medium shot framing a person from the waist up as they hold up a beaker of glowing liquid, examining it, lab context around them. A person in a white lab coat and safety glasses. Cool lab light, clean tones, 50mm, medium shot. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_143045_84cfb479-c7ca-4d43-a331-6f1e42f16316.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-shottype-medium-shot-4",
+      "r2_key": "tag-shottype-medium-shot-4-v1.mp4",
+      "job_id": "59e3af20-719f-47a4-9f98-dd0477b5a770",
+      "title": "The Market",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, vibrant grade. A bustling open-air market, colorful stalls of produce behind. A medium shot framing a person from the waist up as they hand over money at a fruit stall, market life around them. A person in a light linen jacket. Warm dappled daylight, lively bokeh, 50mm, medium shot. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_143051_59e3af20-719f-47a4-9f98-dd0477b5a770.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-shottype-medium-shot-5",
+      "r2_key": "tag-shottype-medium-shot-5-v1.mp4",
+      "job_id": "350326d7-4832-4e3f-a88f-f8b7bcb8c013",
+      "title": "The Letter",
+      "shotType": "Medium Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, contemplative grade. A cozy study by a large window, warm afternoon light, a desk and shelves. A medium shot framing a person from the waist up seated at the desk, writing a letter by hand, pausing thoughtfully. A person in a knit sweater. Warm window light, soft interior, 50mm, medium shot. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_143057_350326d7-4832-4e3f-a88f-f8b7bcb8c013.mp4"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "collection": "shotType / Cowboy Shot",
+  "id_prefix": "tag-shottype-cowboy-shot",
+  "visible_limit": 6,
+  "limit_key": "Cowboy Shot",
+  "model": "kling3_0_turbo",
+  "duration": 5,
+  "shot_type": "Cowboy Shot",
+  "clips": [
+    {
+      "index": 0,
+      "id": "tag-shottype-cowboy-shot-0",
+      "r2_key": "tag-shottype-cowboy-shot-0-v1.mp4",
+      "job_id": "d7339c06-c37a-4e1d-8724-9b74b4da5277",
+      "title": "High Noon",
+      "shotType": "Cowboy Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, western, dusty grade. A deserted frontier town main street at high noon, weathered wooden storefronts, dust drifting. Harsh midday sun. A cowboy shot framing a person from mid-thigh up, standing squared to camera, hand resting near a holstered belt, coat still. A person in western wear, hat, and a gun belt. Hard warm light, drifting dust, 40mm, cowboy shot. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_154857_d7339c06-c37a-4e1d-8724-9b74b4da5277.mp4"
+    },
+    {
+      "index": 1,
+      "id": "tag-shottype-cowboy-shot-1",
+      "r2_key": "tag-shottype-cowboy-shot-1-v1.mp4",
+      "job_id": "59367f3d-c6f3-4a08-aded-cfcf661861cb",
+      "title": "The Rancher",
+      "shotType": "Cowboy Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, western, warm grade. A ranch at golden hour, a wooden fence, rolling pasture and distant hills behind. Evening, warm. A cowboy shot framing a person from mid-thigh up, leaning one hand on the fence post, relaxed and weathered. A person in a work shirt, jeans, and a wide-brim hat. Warm golden light, long shadows, 40mm, cowboy shot. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_154902_59367f3d-c6f3-4a08-aded-cfcf661861cb.mp4"
+    },
+    {
+      "index": 2,
+      "id": "tag-shottype-cowboy-shot-2",
+      "r2_key": "tag-shottype-cowboy-shot-2-v1.mp4",
+      "job_id": "6e47beba-5878-4c4e-84a7-3f60b3279d39",
+      "title": "The Saloon",
+      "shotType": "Cowboy Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, western, moody grade. The swinging doors of an old saloon, warm lamplight spilling from inside, dusty boardwalk. Evening. A cowboy shot framing a person from mid-thigh up, standing in the saloon doorway, one hand on the door, surveying the room. A person in a duster coat, vest, and hat. Warm interior glow, cool dusk outside, 40mm, cowboy shot. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_154909_6e47beba-5878-4c4e-84a7-3f60b3279d39.mp4"
+    },
+    {
+      "index": 3,
+      "id": "tag-shottype-cowboy-shot-3",
+      "r2_key": "tag-shottype-cowboy-shot-3-v1.mp4",
+      "job_id": "8cf0be3c-576d-43a3-8b9f-75c05100fd9f",
+      "title": "The Drifter",
+      "shotType": "Cowboy Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, present day, gritty grade. A neon-lit urban alley at night, wet asphalt, a motorcycle parked behind. Night. A cowboy shot framing a person from mid-thigh up, standing squared to camera, thumbs hooked in their belt, confident. A person in a leather jacket, boots, and jeans. Cool neon spill, wet reflections, 40mm, cowboy shot. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_154915_8cf0be3c-576d-43a3-8b9f-75c05100fd9f.mp4"
+    },
+    {
+      "index": 4,
+      "id": "tag-shottype-cowboy-shot-4",
+      "r2_key": "tag-shottype-cowboy-shot-4-v1.mp4",
+      "job_id": "6ef5aaa6-f10e-4cfa-94b6-acfaa974bbe7",
+      "title": "The Canyon",
+      "shotType": "Cowboy Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, western, epic grade. A red-rock desert canyon, towering mesas and warm stone behind, scrub brush. Late afternoon, warm. A cowboy shot framing a person from mid-thigh up, standing firm against the canyon, coat stirring in the wind. A person in a poncho, hat, and gun belt. Warm golden light, dramatic rock, 40mm, cowboy shot. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_154927_6ef5aaa6-f10e-4cfa-94b6-acfaa974bbe7.mp4"
+    },
+    {
+      "index": 5,
+      "id": "tag-shottype-cowboy-shot-5",
+      "r2_key": "tag-shottype-cowboy-shot-5-v1.mp4",
+      "job_id": "ea20b352-a45b-4975-98f0-c913586c2730",
+      "title": "The Sheriff",
+      "shotType": "Cowboy Shot",
+      "cameraMove": "Static",
+      "prompt": "Live-action photoreal, western, warm grade. The porch of a frontier sheriff's office at sunset, wooden posts, a hanging lantern, the town beyond. Evening, warm. A cowboy shot framing a person from mid-thigh up, standing on the porch, hand near a badge on their vest, watchful. A person in a vest, hat, and a star badge. Warm sunset light, long shadows, 40mm, cowboy shot. Shallow depth of field, subtle grain, 24fps.",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260716_154934_ea20b352-a45b-4975-98f0-c913586c2730.mp4"
+    }
+  ]
+}
