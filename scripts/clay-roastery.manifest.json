@@ -1,0 +1,15 @@
+{
+  "limit_key": "Clay Animation",
+  "visible_limit": 13,
+  "clips": [
+    {
+      "id": "tag-style-clay-animation-12",
+      "r2_key": "tag-style-clay-animation-12-v1.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260724_190008_4941308b-9479-4ca4-8f91-8c45bf35391d.mp4",
+      "title": "The Roastery",
+      "shotType": "Wide Shot",
+      "cameraMove": "Crane Rise",
+      "prompt": "Single continuous cinematic camera move, no cuts. The camera smoothly pulls up and back out of the hillside coffee farm, rising into the sky, then glides forward across the connected miniature world and arrives above the small-batch roastery workshop, beginning to descend toward it. One connected miniature clay world, seamless flowing aerial transition. Soft matte clay diorama, tilt-shift miniature, warm light, cream #F3E9DC, terracotta #C4643C, moss #6E8B62, espresso #3B2A22, clay #D9A87C. Smooth graceful slow motion. No text, no captions."
+    }
+  ]
+}

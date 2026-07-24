@@ -1,0 +1,60 @@
+{
+  "limit_key": "Action",
+  "visible_limit": 6,
+  "clips": [
+    {
+      "id": "tag-genre-action-0",
+      "r2_key": "tag-genre-action-0-v1.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260724_172138_3e443040-06d5-49b3-972e-dfd8c1f3876b.mp4",
+      "title": "Rooftop Chase",
+      "shotType": "Wide Shot",
+      "cameraMove": "Tracking Side",
+      "prompt": "Live-action photoreal, present day, high-octane action grade. A rain-slicked rooftop at night in a dense city, glowing neon signage rising from the streets below, steam venting from rooftop ducts, a helicopter searchlight sweeping past. A person in a fitted black tactical jacket, dark cargo pants and lace-up boots sprints across the rooftop, vaults over a ventilation duct and rolls back to their feet without breaking stride, rain exploding off their shoulders. Puddles shatter underfoot, loose cables whip in the wind. Cool blue night light with hot amber neon rim. Low tracking camera racing alongside at 24mm with motion blur. Shallow depth of field, subtle film grain, 24fps."
+    },
+    {
+      "id": "tag-genre-action-1",
+      "r2_key": "tag-genre-action-1-v1.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260724_174227_23c52b1c-9833-429c-9b86-3272b9fb57e8.mp4",
+      "title": "The Getaway",
+      "shotType": "Low Angle",
+      "cameraMove": "Steadicam Follow",
+      "prompt": "Live-action photoreal, present day, gritty action grade. A narrow European old-town street at dusk, stone walls blurring past, café tables scattering, pigeons bursting into flight. A person in a scuffed brown leather jacket, dark jeans and riding boots leans hard into a corner on a matte-black café racer motorcycle, knee low, throttle open. Sparks from a clipped mirror, papers swirling in the slipstream. Warm dusk glow with cold blue shadow. Low chase camera tight behind the rear wheel, 35mm, heavy motion blur. Shallow depth of field, subtle film grain, 24fps."
+    },
+    {
+      "id": "tag-genre-action-2",
+      "r2_key": "tag-genre-action-2-v1.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260724_173253_ca1f4948-df15-43d4-9c06-b2ad8a49c2fd.mp4",
+      "title": "Hallway Takedown",
+      "shotType": "Medium Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Live-action photoreal, present day, hard-hitting action grade. A stark concrete parking-garage corridor at night, flickering fluorescent tubes, dripping pipes, a caged work light swinging. A person in a fitted charcoal suit with the tie pulled loose ducks a swinging pipe, drives a shoulder into an attacker and slams them against a support pillar, dust bursting from the impact. A dropped flashlight rolls, its beam sweeping the floor. Harsh green-white fluorescents against deep shadow. Handheld camera pushing in close, 28mm, whip-fast reframes. Shallow depth of field, subtle grain, 24fps."
+    },
+    {
+      "id": "tag-genre-action-3",
+      "r2_key": "tag-genre-action-3-v1.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260724_184050_b35e33b0-b582-4094-89b5-152150d1e71b.mp4",
+      "title": "The Breach",
+      "shotType": "Wide Shot",
+      "cameraMove": "Steadicam Follow",
+      "prompt": "Live-action photoreal, present day, tactical action grade. A dim industrial warehouse interior at night, shafts of light through skylights, stacked shipping crates, hanging chains. A person in black tactical gear with a helmet and chest rig moves fast along a crate wall, signals, then kicks through a side door as a flashbang blooms white inside. Dust and paper debris blast outward, chains sway. Cold steel-blue light with a hot white flash. Steadicam tracking laterally then pushing through the doorway, 24mm. Shallow depth of field, subtle grain, 24fps."
+    },
+    {
+      "id": "tag-genre-action-4",
+      "r2_key": "tag-genre-action-4-v1.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260724_180810_6c7a5cdc-d8fe-425f-a568-1c696fab2e11.mp4",
+      "title": "Train Roof",
+      "shotType": "Wide Shot",
+      "cameraMove": "Tracking Side",
+      "prompt": "Live-action photoreal, present day, blockbuster action grade. The roof of a speeding freight train cutting through a desert canyon at golden hour, red rock walls flashing past, dust streaming. A person in a sand-colored field jacket, fingerless gloves and desert boots runs low along the train roof, leaps the gap between two cars and lands hard on one knee, coat snapping in the wind. Power lines whip overhead, a hawk wheels away. Blazing golden backlight with long shadows. Camera tracking alongside from a chase helicopter, 50mm, slight shake. Shallow depth of field, subtle grain, 24fps."
+    },
+    {
+      "id": "tag-genre-action-5",
+      "r2_key": "tag-genre-action-5-v1.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260724_175424_ce15f4a3-7499-4965-9c6c-8571a4dd23ba.mp4",
+      "title": "Walkaway",
+      "shotType": "Medium Shot",
+      "cameraMove": "Push In",
+      "prompt": "Live-action photoreal, present day, explosive action grade. An abandoned dockside fuel depot at night, rusted tanks, cranes silhouetted against the skyline across black water. A person in a long dark overcoat, gloves and heavy boots walks steadily toward camera as a fuel tank detonates behind them, a rolling orange fireball climbing into the night, debris arcing and splashing into the harbor. Sparks rain, smoke mushrooms upward. Blinding orange fire glow against deep blue night. Slow push-in from a low angle, 35mm, subject calmly lit by the blast. Shallow depth of field, subtle grain, 24fps."
+    }
+  ]
+}

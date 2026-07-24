@@ -1,0 +1,60 @@
+{
+  "limit_key": "Horror",
+  "visible_limit": 6,
+  "clips": [
+    {
+      "id": "tag-genre-horror-0",
+      "r2_key": "tag-genre-horror-0-v1.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260724_190456_3cc323d9-c425-4beb-bb7b-c685b646c257.mp4",
+      "title": "The Basement Door",
+      "shotType": "Medium Shot",
+      "cameraMove": "Push In",
+      "prompt": "Live-action photoreal, present day, dread-soaked horror grade. A decaying farmhouse basement stairwell at night, peeling floral wallpaper, a single bare bulb swaying gently, cobwebbed shelves of dusty jars. A person in a rumpled flannel shirt and jeans descends the wooden stairs holding a lit oil lantern, each step creaking, pausing as the bulb behind them flickers out. Shadows crawl up the walls, dust drifts through the lantern glow. Sickly warm lantern light against consuming darkness. Slow push-in from behind and above, 35mm. Shallow depth of field, heavy grain, 24fps."
+    },
+    {
+      "id": "tag-genre-horror-1",
+      "r2_key": "tag-genre-horror-1-v1.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260724_191834_66b9a2a9-2e13-48f1-9667-33ba7e40a09f.mp4",
+      "title": "Hallway of Doors",
+      "shotType": "Wide Shot",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Live-action photoreal, present day, oppressive horror grade. An abandoned hospital corridor at night, gurneys overturned, papers scattered, moonlight striping through broken blinds, every door hanging open at a different angle. A person in a pale nurse's uniform and cardigan walks slowly down the center line holding a flashlight, the beam trembling, as one door at the far end drifts shut on its own. Peeling paint, a dripping ceiling stain, a wheelchair turned to face the wall. Cold moonlight with a weak yellow flashlight beam. Static locked-off wide slowly creeping forward, 28mm. Deep shadow, heavy grain, 24fps."
+    },
+    {
+      "id": "tag-genre-horror-2",
+      "r2_key": "tag-genre-horror-2-v1.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260724_192350_91c0187b-bfff-4deb-b972-48cf2b39bd6b.mp4",
+      "title": "The Mirror",
+      "shotType": "Medium Shot",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Live-action photoreal, present day, intimate horror grade. A dim vintage bathroom at night, cracked subway tile, a rust-stained clawfoot tub, a fogged mirror over a porcelain sink, a candle burning on the ledge. A person in a white nightgown wipes the fog from the mirror with one hand, leans close to look, then snaps around to check the empty room behind them. Water drips steadily, the candle flame bends as if in a draft. Warm candlelight against cold blue-black shadow. Slow dolly in over their shoulder toward the mirror, 50mm. Shallow depth of field, subtle grain, 24fps."
+    },
+    {
+      "id": "tag-genre-horror-3",
+      "r2_key": "tag-genre-horror-3-v1.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260724_193317_9056b443-a68c-4053-8b11-06aa3f65accd.mp4",
+      "title": "The Field",
+      "shotType": "Medium Shot",
+      "cameraMove": "Dolly Out",
+      "prompt": "Live-action photoreal, present day, rural nightmare grade. A moonlit cornfield at night under a low fog, stalks towering overhead, a distant farmhouse porch light barely visible. A person in a canvas work jacket and muddy boots pushes through the rows holding a kerosene lamp, stops, and slowly turns as the stalks behind them start to part in a straight line moving closer. Fog curls through the rows, moths swarm the lamp. Cold blue moonlight with a small warm lamp glow. Handheld camera backing away through the stalks, 28mm, unsteady. Deep shadow, heavy grain, 24fps."
+    },
+    {
+      "id": "tag-genre-horror-4",
+      "r2_key": "tag-genre-horror-4-v1.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260724_194430_14106ed4-a3a4-4148-a187-dc181b248016.mp4",
+      "title": "Static",
+      "shotType": "Wide Shot",
+      "cameraMove": "Push In",
+      "prompt": "Live-action photoreal, 1990s period, analog horror grade. A wood-paneled living room at 3 AM, a boxy CRT television hissing static, VHS tapes stacked on the carpet, heavy drapes drawn. A person in a bathrobe and slippers kneels close to the screen, silhouetted by the static glow, reaching toward the glass as the static begins to form a shape. A rotary phone off the hook, a toppled lamp, family photos on the mantel. Flickering blue-white TV glow against pitch dark. Slow push-in from across the room, 35mm. Scanline flicker, heavy grain, 24fps."
+    },
+    {
+      "id": "tag-genre-horror-5",
+      "r2_key": "tag-genre-horror-5-v1.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260724_193823_eb7f1558-9641-4f47-9dd3-6f61ca149940.mp4",
+      "title": "Don't Look Up",
+      "shotType": "Medium Shot",
+      "cameraMove": "Tilt Up",
+      "prompt": "Live-action photoreal, present day, escalating horror grade. A narrow victorian attic at night, steep rafters, sheet-draped furniture, a round window spilling moonlight across the floorboards. A person in a knit sweater and jeans crouches over an old steamer trunk with a flashlight between their teeth, freezes as fine dust sifts down from the rafters directly above them, and slowly begins to raise their eyes. Sheet edges stir, a hanging cord sways. Cold moonbeam with a tight flashlight pool. Slow tilt following their gaze upward into darkness, 35mm. Deep shadow, subtle grain, 24fps."
+    }
+  ]
+}
