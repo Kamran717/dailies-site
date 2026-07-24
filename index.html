@@ -112,29 +112,72 @@
     border:1px solid var(--line); padding:2px 6px; border-radius:2px; flex-shrink:0;
   }
 
-  .facet-rail{ max-width:1400px; margin:0 auto; padding:0 24px 14px; display:flex; flex-direction:column; gap:9px; }
-  .facet-row{ display:flex; align-items:stretch; gap:10px; }
-  .facet-scroll{ flex:1; min-width:0; display:flex; align-items:center; gap:10px; overflow-x:auto; scrollbar-width:none; }
-  .facet-scroll::-webkit-scrollbar{ display:none; }
-  .facet-scroll.fade-right{ -webkit-mask-image:linear-gradient(to right, black calc(100% - 40px), transparent); mask-image:linear-gradient(to right, black calc(100% - 40px), transparent); }
-  .facet-scroll.fade-left{ -webkit-mask-image:linear-gradient(to right, transparent, black 32px); mask-image:linear-gradient(to right, transparent, black 32px); }
-  .facet-scroll.fade-left.fade-right{ -webkit-mask-image:linear-gradient(to right, transparent, black 32px, black calc(100% - 40px), transparent); mask-image:linear-gradient(to right, transparent, black 32px, black calc(100% - 40px), transparent); }
-  .facet-row-wrap{ position:relative; }
-  .row-arrow{
-    position:absolute; top:50%; transform:translateY(-50%); z-index:3;
-    width:26px; height:26px; padding:0; display:none; align-items:center; justify-content:center;
-    background:var(--bg-panel, #191817); border:1px solid var(--line); border-radius:50%;
-    color:var(--ink-dim, #b7b0a4); font-size:16px; line-height:1; cursor:pointer;
+  /* ---------- category sidebar (below hero) ---------- */
+  .browse-layout{
+    max-width:1400px; margin:0 auto; padding:36px 24px 80px;
+    display:grid; grid-template-columns:240px minmax(0,1fr); gap:28px; align-items:start;
   }
-  .row-arrow.visible{ display:flex; }
-  .row-arrow:hover{ border-color:var(--amber); color:var(--amber); }
-  .row-arrow-left{ left:88px; }
-  .row-arrow-right{ right:-6px; }
-  .facet-label{
-    font-family:var(--ff-mono); font-size:10px; letter-spacing:.1em; color:var(--amber);
-    width:78px; flex-shrink:0; text-transform:uppercase;
-    display:flex; align-items:center;
+  .browse-layout main{ max-width:none; margin:0; padding:0; min-width:0; }
+  .cat-sidebar{
+    position:sticky; top:76px; max-height:calc(100vh - 96px); overflow-y:auto;
+    overscroll-behavior:contain; scrollbar-width:thin;
+    border:1px solid var(--line); background:var(--bg-panel);
   }
+  .cat-side-head{
+    display:flex; align-items:center; justify-content:space-between; gap:8px;
+    padding:12px 14px; border-bottom:1px solid var(--line);
+    position:sticky; top:0; background:var(--bg-panel); z-index:2;
+  }
+  .cat-side-title{ font-family:var(--ff-mono); font-size:10px; letter-spacing:.12em; text-transform:uppercase; color:var(--amber); }
+  .cat-group{ border-bottom:1px solid var(--line); }
+  .cat-group:last-child{ border-bottom:none; }
+  .cat-head{
+    width:100%; display:flex; align-items:center; gap:8px;
+    background:none; border:none; padding:13px 14px; cursor:pointer;
+    color:var(--ink); font-family:var(--ff-mono); font-size:12px;
+    letter-spacing:.06em; text-transform:uppercase; transition:color .15s;
+  }
+  .cat-head:hover{ color:var(--amber); }
+  .cat-head .cat-count{ margin-left:auto; font-size:10px; color:var(--ink-faint); }
+  .cat-head .cat-caret{ flex-shrink:0; transition:transform .2s ease, color .15s; color:var(--ink-faint); }
+  .cat-group.open .cat-head{ color:var(--amber); }
+  .cat-group.open .cat-caret{ transform:rotate(90deg); color:var(--amber); }
+  .cat-list{ display:grid; grid-template-rows:0fr; transition:grid-template-rows .25s ease; }
+  .cat-list-inner{ overflow:hidden; min-height:0; }
+  .cat-group.open .cat-list{ grid-template-rows:1fr; }
+  .cat-group.open .cat-list-inner{
+    padding-bottom:8px;
+    max-height:min(340px, 50vh);
+    overflow-y:auto;
+    scrollbar-width:thin;
+    scrollbar-color:var(--amber) var(--bg-raised);
+  }
+  .cat-list-inner::-webkit-scrollbar{ width:8px; }
+  .cat-list-inner::-webkit-scrollbar-track{ background:var(--bg-raised); }
+  .cat-list-inner::-webkit-scrollbar-thumb{ background:var(--amber); border-radius:4px; }
+  .cat-list-inner::-webkit-scrollbar-thumb:hover{ background:#f5b657; }
+  .cat-sub{
+    display:block; width:100%; text-align:left;
+    background:none; border:none; border-left:2px solid transparent;
+    padding:8px 14px 8px 22px; cursor:pointer;
+    font-family:var(--ff-mono); font-size:12px; color:var(--ink-dim);
+    transition:color .15s, border-color .15s, background .15s;
+  }
+  .cat-sub:hover{ color:var(--ink); border-left-color:var(--ink-faint); }
+  .cat-sub.active{ color:#1a1408; background:var(--amber); border-left-color:var(--amber); font-weight:600; }
+
+  /* ---------- back to top ---------- */
+  .back-to-top{
+    position:fixed; right:22px; bottom:22px; z-index:150;
+    width:42px; height:42px; border-radius:50%;
+    background:var(--bg-panel); border:1px solid var(--amber); color:var(--amber);
+    font-size:18px; line-height:1; cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+    opacity:0; pointer-events:none; transform:translateY(8px);
+    transition:opacity .2s ease, transform .2s ease;
+  }
+  .back-to-top.visible{ opacity:1; pointer-events:auto; transform:translateY(0); }
+  .back-to-top:hover{ background:var(--amber); color:#1a1408; }
   .chip{
     flex-shrink:0; font-family:var(--ff-mono); font-size:12px; color:var(--ink-dim);
     background:transparent; border:1px solid var(--line); padding:5px 11px; border-radius:20px;
@@ -311,7 +354,11 @@
 
   footer{ max-width:1400px; margin:0 auto; padding:26px 24px 40px; font-family:var(--ff-mono); font-size:11px; color:var(--ink-faint); border-top:1px solid var(--line); }
 
-  @media (max-width:860px){ .facet-label{ width:auto; } }
+  @media (max-width:900px){
+    .browse-layout{ display:block; }
+    .cat-sidebar{ position:static; max-height:none; margin-bottom:24px; }
+    .cat-side-head{ position:static; }
+  }
   @media (max-width:720px){
     .hero-prompt-card, .hero-timecode{ display:none; }
     .hero-full{ height:76vh; min-height:460px; }
@@ -349,18 +396,6 @@
     </div>
     <span class="brand-counter" id="brandCounter">0000 CLIPS LOGGED</span>
   </div>
-  <div class="facet-rail">
-    <div class="facet-row" data-facet="style"><span class="facet-label">Styles</span></div>
-    <div class="facet-row" data-facet="cameraMove"><span class="facet-label">Camera</span></div>
-    <div class="facet-row" data-facet="shotType"><span class="facet-label">Shot</span></div>
-    <div class="facet-row" data-facet="emotion"><span class="facet-label">Emotion</span></div>
-    <div class="facet-row" data-facet="lighting"><span class="facet-label">Light</span></div>
-    <div class="facet-row" data-facet="impossible"><span class="facet-label">Impossible</span></div>
-    <div class="facet-row" data-facet="format">
-      <span class="facet-label">Format</span>
-      <button class="clear-btn" id="clearAll">back to library</button>
-    </div>
-  </div>
 </header>
 
 <section class="hero-full" id="heroFull">
@@ -391,15 +426,26 @@
   </div>
 </section>
 
-<main>
-  <section class="sheet">
-    <div class="sheet-head">
-      <h2 id="sheetTitle">Contact Sheet — All Dailies</h2>
-      <span class="sheet-count" id="sheetCount"></span>
+<div class="browse-layout">
+  <aside class="cat-sidebar" id="catSidebar" aria-label="Browse categories">
+    <div class="cat-side-head">
+      <span class="cat-side-title">Browse</span>
+      <button class="clear-btn" id="clearAll">back to library</button>
     </div>
-    <div class="grid" id="grid"></div>
-  </section>
-</main>
+    <nav class="cat-nav" id="catNav"></nav>
+  </aside>
+  <main>
+    <section class="sheet">
+      <div class="sheet-head">
+        <h2 id="sheetTitle">Contact Sheet — All Dailies</h2>
+        <span class="sheet-count" id="sheetCount"></span>
+      </div>
+      <div class="grid" id="grid"></div>
+    </section>
+  </main>
+</div>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">&#8593;</button>
 
 <footer>
   <div class="footer-links"><button type="button" class="footer-link" onclick="AIDM_openContact()">Contact</button> <a class="footer-link" href="/shots/">Shot index</a> <a class="footer-link" href="/privacy.html">Privacy</a> <a class="footer-link" href="/terms.html">Terms</a></div>
@@ -3911,24 +3957,70 @@
     "Memory Walkthrough","Dream-to-Reality Seamless Transition"
   ];
 
-  function buildFacetRow(facetKey){
-    var row = document.querySelector('.facet-row[data-facet="' + facetKey + '"]');
-    var scroll = row.querySelector('.facet-scroll');
-    if(!scroll){ scroll = document.createElement('div'); scroll.className = 'facet-scroll'; row.appendChild(scroll); }
+  // Left sidebar: main categories as an accordion. Clicking a category
+  // reveals its subcategories; clicking a subcategory opens that collection
+  // via the same openTagCollection path the old chip rail used.
+  var FACET_LABELS = {
+    style: 'Styles', cameraMove: 'Camera', shotType: 'Shot Type',
+    emotion: 'Emotion', lighting: 'Light', impossible: 'Impossible', format: 'Format'
+  };
+
+  function facetValues(facetKey){
     var values = (facetKey === 'style') ? STYLE_CHIPS.slice() : (facetKey === 'emotion') ? EMOTION_CHIPS.slice() : (facetKey === 'impossible') ? IMPOSSIBLE_CHIPS.slice() : unique(facetKey);
     if (facetKey === 'shotType'){ values = values.concat(EXTRA_SHOT_CHIPS); }
     if (facetKey === 'cameraMove'){ values = values.concat(EXTRA_CAMERA_CHIPS); }
     if (facetKey === 'lighting'){ values = values.concat(EXTRA_LIGHTING_CHIPS); }
     values = values.filter(function(v,i){ return values.indexOf(v) === i; });
     values = values.filter(function(v){ try { return generateTagCollection(facetKey, v).length > 0; } catch(e){ return true; } });
-    values.forEach(function(val){
-      var btn = document.createElement('button');
-      btn.className = 'chip'; btn.type = 'button'; btn.textContent = val;
-      btn.addEventListener('click', function(){ openTagCollection(facetKey, val, btn); });
-      scroll.appendChild(btn);
+    return values;
+  }
+
+  function buildSidebarNav(){
+    var nav = document.getElementById('catNav');
+    if (!nav) return;
+    ['style','cameraMove','shotType','emotion','lighting','impossible','format'].forEach(function(facetKey){
+      var values = facetValues(facetKey);
+      if (!values.length) return;
+
+      var group = document.createElement('div');
+      group.className = 'cat-group';
+
+      var head = document.createElement('button');
+      head.className = 'cat-head'; head.type = 'button';
+      head.setAttribute('aria-expanded', 'false');
+      head.innerHTML =
+        '<svg class="cat-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M9 6l6 6-6 6"/></svg>' +
+        '<span>' + FACET_LABELS[facetKey] + '</span>' +
+        '<span class="cat-count">' + values.length + '</span>';
+
+      var list = document.createElement('div');
+      list.className = 'cat-list';
+      var inner = document.createElement('div');
+      inner.className = 'cat-list-inner';
+      list.appendChild(inner);
+
+      values.forEach(function(val){
+        var btn = document.createElement('button');
+        btn.className = 'cat-sub'; btn.type = 'button'; btn.textContent = val;
+        btn.addEventListener('click', function(){ openTagCollection(facetKey, val, btn); });
+        inner.appendChild(btn);
+      });
+
+      head.addEventListener('click', function(){
+        var isOpen = group.classList.contains('open');
+        Array.prototype.forEach.call(nav.querySelectorAll('.cat-group.open'), function(g){
+          g.classList.remove('open');
+          var h = g.querySelector('.cat-head'); if (h) h.setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen){ group.classList.add('open'); head.setAttribute('aria-expanded', 'true'); }
+      });
+
+      group.appendChild(head);
+      group.appendChild(list);
+      nav.appendChild(group);
     });
   }
-  ['style','cameraMove','shotType','emotion','lighting','impossible','format'].forEach(buildFacetRow);
+  buildSidebarNav();
 
   function matches(clip){
     var facets = ['cameraMove','shotType','emotion','lighting','format'];
@@ -4160,7 +4252,7 @@
     ['cameraMove','shotType','emotion','lighting','format'].forEach(function(k){ state[k].clear(); });
     document.getElementById('searchInput').value = '';
     state.search = '';
-    Array.prototype.forEach.call(document.querySelectorAll('.chip.active'), function(c){ c.classList.remove('active'); });
+    Array.prototype.forEach.call(document.querySelectorAll('.chip.active, .cat-sub.active'), function(c){ c.classList.remove('active'); });
     if (viewMode === 'liked') renderGrid();
     else if (viewMode !== 'library') backToLibrary();
     else renderGrid();
@@ -4334,41 +4426,15 @@
   tickCounter();
   tickTimecode();
 
-  // Chip rows: arrow buttons page through hidden chips; edge fades hint at more
-  Array.prototype.forEach.call(document.querySelectorAll('.facet-row'), function(row){
-    var wrap = document.createElement('div');
-    wrap.className = 'facet-row-wrap';
-    row.parentNode.insertBefore(wrap, row);
-    wrap.appendChild(row);
-
-    var sc = row.querySelector('.facet-scroll') || row;
-
-    var btnL = document.createElement('button');
-    btnL.className = 'row-arrow row-arrow-left';
-    btnL.setAttribute('aria-label', 'Scroll left');
-    btnL.innerHTML = '&#8249;';
-    var btnR = document.createElement('button');
-    btnR.className = 'row-arrow row-arrow-right';
-    btnR.setAttribute('aria-label', 'Scroll right');
-    btnR.innerHTML = '&#8250;';
-    wrap.appendChild(btnL);
-    wrap.appendChild(btnR);
-
-    function update(){
-      var max = sc.scrollWidth - sc.clientWidth;
-      var canL = sc.scrollLeft > 4;
-      var canR = sc.scrollLeft < max - 4;
-      sc.classList.toggle('fade-left', canL);
-      sc.classList.toggle('fade-right', canR);
-      btnL.classList.toggle('visible', canL);
-      btnR.classList.toggle('visible', canR);
-    }
-    btnL.addEventListener('click', function(){ sc.scrollBy({ left: -sc.clientWidth * 0.7, behavior: 'smooth' }); });
-    btnR.addEventListener('click', function(){ sc.scrollBy({ left: sc.clientWidth * 0.7, behavior: 'smooth' }); });
-    sc.addEventListener('scroll', update, { passive: true });
-    window.addEventListener('resize', update);
+  // Back-to-top: quick scroll button appears after the user scrolls past the hero
+  (function(){
+    var btt = document.getElementById('backToTop');
+    if (!btt) return;
+    function update(){ btt.classList.toggle('visible', window.scrollY > 600); }
+    window.addEventListener('scroll', update, { passive: true });
+    btt.addEventListener('click', function(){ window.scrollTo({ top: 0, behavior: 'smooth' }); });
     update();
-  });
+  })();
   generateHeroVideo();
 })();
 </script>
