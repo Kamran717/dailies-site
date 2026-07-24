@@ -1127,6 +1127,12 @@
   var PRODUCED_MOVES = ["Slow Dolly In","Handheld Push","Crane Rise","Whip Pan","Static Wide","Orbit Left","Rack Focus","Low Angle Tilt Up","Overhead Drop","Tracking Side"];
 
   var REAL_TAG_META = {
+  "tag-genre-action-0": {"title": "Rooftop Chase", "shotType": "Wide Shot", "cameraMove": "Tracking Side", "prompt": "Live-action photoreal, present day, high-octane action grade. A rain-slicked rooftop at night in a dense city, glowing neon signage rising from the streets below, steam venting from rooftop ducts, a helicopter searchlight sweeping past. A person in a fitted black tactical jacket, dark cargo pants and lace-up boots sprints across the rooftop, vaults over a ventilation duct and rolls back to their feet without breaking stride, rain exploding off their shoulders. Puddles shatter underfoot, loose cables whip in the wind. Cool blue night light with hot amber neon rim. Low tracking camera racing alongside at 24mm with motion blur. Shallow depth of field, subtle film grain, 24fps."},
+  "tag-genre-action-1": {"title": "The Getaway", "shotType": "Low Angle", "cameraMove": "Steadicam Follow", "prompt": "Live-action photoreal, present day, gritty action grade. A narrow European old-town street at dusk, stone walls blurring past, café tables scattering, pigeons bursting into flight. A person in a scuffed brown leather jacket, dark jeans and riding boots leans hard into a corner on a matte-black café racer motorcycle, knee low, throttle open. Sparks from a clipped mirror, papers swirling in the slipstream. Warm dusk glow with cold blue shadow. Low chase camera tight behind the rear wheel, 35mm, heavy motion blur. Shallow depth of field, subtle film grain, 24fps."},
+  "tag-genre-action-2": {"title": "Hallway Takedown", "shotType": "Medium Shot", "cameraMove": "Handheld Push", "prompt": "Live-action photoreal, present day, hard-hitting action grade. A stark concrete parking-garage corridor at night, flickering fluorescent tubes, dripping pipes, a caged work light swinging. A person in a fitted charcoal suit with the tie pulled loose ducks a swinging pipe, drives a shoulder into an attacker and slams them against a support pillar, dust bursting from the impact. A dropped flashlight rolls, its beam sweeping the floor. Harsh green-white fluorescents against deep shadow. Handheld camera pushing in close, 28mm, whip-fast reframes. Shallow depth of field, subtle grain, 24fps."},
+  "tag-genre-action-3": {"title": "The Breach", "shotType": "Wide Shot", "cameraMove": "Steadicam Follow", "prompt": "Live-action photoreal, present day, tactical action grade. A dim industrial warehouse interior at night, shafts of light through skylights, stacked shipping crates, hanging chains. A person in black tactical gear with a helmet and chest rig moves fast along a crate wall, signals, then kicks through a side door as a flashbang blooms white inside. Dust and paper debris blast outward, chains sway. Cold steel-blue light with a hot white flash. Steadicam tracking laterally then pushing through the doorway, 24mm. Shallow depth of field, subtle grain, 24fps."},
+  "tag-genre-action-4": {"title": "Train Roof", "shotType": "Wide Shot", "cameraMove": "Tracking Side", "prompt": "Live-action photoreal, present day, blockbuster action grade. The roof of a speeding freight train cutting through a desert canyon at golden hour, red rock walls flashing past, dust streaming. A person in a sand-colored field jacket, fingerless gloves and desert boots runs low along the train roof, leaps the gap between two cars and lands hard on one knee, coat snapping in the wind. Power lines whip overhead, a hawk wheels away. Blazing golden backlight with long shadows. Camera tracking alongside from a chase helicopter, 50mm, slight shake. Shallow depth of field, subtle grain, 24fps."},
+  "tag-genre-action-5": {"title": "Walkaway", "shotType": "Medium Shot", "cameraMove": "Push In", "prompt": "Live-action photoreal, present day, explosive action grade. An abandoned dockside fuel depot at night, rusted tanks, cranes silhouetted against the skyline across black water. A person in a long dark overcoat, gloves and heavy boots walks steadily toward camera as a fuel tank detonates behind them, a rolling orange fireball climbing into the night, debris arcing and splashing into the harbor. Sparks rain, smoke mushrooms upward. Blinding orange fire glow against deep blue night. Slow push-in from a low angle, 35mm, subject calmly lit by the blast. Shallow depth of field, subtle grain, 24fps."},
   "tag-impossible-time-freeze-orbit-0": {"title":"The Crowd","shotType":"Medium Shot","cameraMove":"Orbit Right","prompt":"Cinematic VFX time freeze. Everything stops — a busy crowd is frozen mid-step around a person who alone is the still center. The camera orbits a full 360 degrees around the fixed figure through the frozen crowd, everyone suspended motionless. A person standing calmly. Frozen time, 360 orbit, suspended crowd, 24fps."},
   "tag-impossible-time-freeze-orbit-1": {"title":"The Club","shotType":"Medium Shot","cameraMove":"Orbit Right","prompt":"Cinematic VFX time freeze. A packed dance floor freezes completely, dancers caught mid-motion, confetti suspended in the air, while the camera orbits a full circle around a person standing calm and still at the center. A person in stylish clothes. Frozen time, 360 orbit, suspended dancers and confetti, 24fps."},
   "tag-impossible-time-freeze-orbit-2": {"title":"The Intersection","shotType":"Wide Shot","cameraMove":"Orbit Right","prompt":"Cinematic VFX time freeze. A busy city intersection freezes — cars, cyclists and pedestrians all suspended mid-motion — while the camera orbits a full 360 degrees around a person standing still at the center of it all. A person in a coat. Frozen time, 360 orbit, suspended traffic, 24fps."},
@@ -2291,7 +2297,7 @@
     // hidden until their videos are produced. IDs remain stable, so raising
     // a limit later simply reveals the next clips with correct numbering.
     results.forEach(function(r){ var m = REAL_TAG_META[r.id]; if(m){ for(var k in m) r[k]=m[k]; r.__meta=true; } });
-    var TAG_VISIBLE_LIMITS = { "Time Freeze Orbit": 6, "World Rotation Around Subject": 6, "Infinite Hallway Loop": 6, "Inside-the-Human-Body Journey": 6, "Through-the-Mirror Portal": 6, "Through-the-Wall Chase": 6, "Bullet-Time Flythrough": 6, "Galaxy-to-DNA Transition": 6, "Eye-to-Universe Zoom": 6, "Heartbroken": 6, "Nostalgic": 6, "Peaceful": 6, "Magical": 6, "Dreamlike": 6, "Eerie": 6, "Mysterious": 6, "Tense": 6, "Fearful": 6, "Firelight": 6, "Spotlight": 6, "Soft Window Light": 6, "Hard Sun": 6, "Teal & Orange": 6, "Moonlight": 6, "Candlelight": 6, "Chiaroscuro": 6, "Golden Hour": 6, "POV": 6, "Establishing Shot": 6, "Two-Shot": 6, "Over-the-Shoulder": 6, "Wide Shot": 6, "Medium Shot": 6, "Close-Up": 6, "Extreme Close-Up": 6, "Static Locked-off": 6, "Zoom Out": 6, "Zoom In": 6, "Drone Fly-Through": 6, "Drone Ascend": 6, "Steadicam Follow": 6, "Orbit Right": 6, "Orbit Left": 6, "Dutch Roll": 6, "Tilt Down": 6, "Tilt Up": 6, "Slow Pan": 6, "Overhead Drop": 6, "Pedestal Up": 6, "Tracking Side": 6, "Crane Down": 6, "Dolly Zoom": 6, "Push In": 6, "Dolly Out": 6, "Angry": 15, "Happy": 15, "Sad": 15, "Romantic": 15, "Confident": 15, "Intense": 15, "Triumphant": 15, "Documentary": 12, "Minimalist": 12, "Luxury Commercial": 12, "Pixel Art": 12, "Clay Animation": 12, "Sketch": 12, "Watercolor": 12, "Digital Painting": 12, "Comic Book": 12, "Ghibli-inspired": 12, "Fantasy": 12, "Cyberpunk": 12, "Sci-Fi": 12, "3D CGI": 12, "Pixar-style": 12, "Cartoon": 12, "Anime": 12, "Hyperrealistic": 12, "Realistic": 12, "Cinematic": 12, "Aching Nostalgia": 12, "Slow Dolly In": 100, "Handheld Push": 27, "Crane Rise": 30, "Whip Pan": 30, "Golden Hour Rim": 12, "Neon Wash": 6, "35mm Anamorphic Film": 30, "Spherical 50mm Digital Cinema": 30, "16mm Grainy Film": 30, "Super 8 Home Movie": 30, "Vintage VHS Camcorder": 50, "Selfie Vlogger Front Camera": 30, "Snorricam": 6, "Dutch Angle": 6, "Bird's-Eye View": 6, "Worm's-Eye View": 6, "Cowboy Shot": 6, "Silhouette Shot": 6, "Reflection Shot": 6, "Frame Within a Frame": 6, "Split Diopter": 6, "Through the Keyhole": 6 };
+    var TAG_VISIBLE_LIMITS = { "Action": 6, "Time Freeze Orbit": 6, "World Rotation Around Subject": 6, "Infinite Hallway Loop": 6, "Inside-the-Human-Body Journey": 6, "Through-the-Mirror Portal": 6, "Through-the-Wall Chase": 6, "Bullet-Time Flythrough": 6, "Galaxy-to-DNA Transition": 6, "Eye-to-Universe Zoom": 6, "Heartbroken": 6, "Nostalgic": 6, "Peaceful": 6, "Magical": 6, "Dreamlike": 6, "Eerie": 6, "Mysterious": 6, "Tense": 6, "Fearful": 6, "Firelight": 6, "Spotlight": 6, "Soft Window Light": 6, "Hard Sun": 6, "Teal & Orange": 6, "Moonlight": 6, "Candlelight": 6, "Chiaroscuro": 6, "Golden Hour": 6, "POV": 6, "Establishing Shot": 6, "Two-Shot": 6, "Over-the-Shoulder": 6, "Wide Shot": 6, "Medium Shot": 6, "Close-Up": 6, "Extreme Close-Up": 6, "Static Locked-off": 6, "Zoom Out": 6, "Zoom In": 6, "Drone Fly-Through": 6, "Drone Ascend": 6, "Steadicam Follow": 6, "Orbit Right": 6, "Orbit Left": 6, "Dutch Roll": 6, "Tilt Down": 6, "Tilt Up": 6, "Slow Pan": 6, "Overhead Drop": 6, "Pedestal Up": 6, "Tracking Side": 6, "Crane Down": 6, "Dolly Zoom": 6, "Push In": 6, "Dolly Out": 6, "Angry": 15, "Happy": 15, "Sad": 15, "Romantic": 15, "Confident": 15, "Intense": 15, "Triumphant": 15, "Documentary": 12, "Minimalist": 12, "Luxury Commercial": 12, "Pixel Art": 12, "Clay Animation": 12, "Sketch": 12, "Watercolor": 12, "Digital Painting": 12, "Comic Book": 12, "Ghibli-inspired": 12, "Fantasy": 12, "Cyberpunk": 12, "Sci-Fi": 12, "3D CGI": 12, "Pixar-style": 12, "Cartoon": 12, "Anime": 12, "Hyperrealistic": 12, "Realistic": 12, "Cinematic": 12, "Aching Nostalgia": 12, "Slow Dolly In": 100, "Handheld Push": 27, "Crane Rise": 30, "Whip Pan": 30, "Golden Hour Rim": 12, "Neon Wash": 6, "35mm Anamorphic Film": 30, "Spherical 50mm Digital Cinema": 30, "16mm Grainy Film": 30, "Super 8 Home Movie": 30, "Vintage VHS Camcorder": 50, "Selfie Vlogger Front Camera": 30, "Snorricam": 6, "Dutch Angle": 6, "Bird's-Eye View": 6, "Worm's-Eye View": 6, "Cowboy Shot": 6, "Silhouette Shot": 6, "Reflection Shot": 6, "Frame Within a Frame": 6, "Split Diopter": 6, "Through the Keyhole": 6 };
     var visibleLimit = TAG_VISIBLE_LIMITS[tagValue] || 10;
     results = results.filter(function(r){ return r.__meta; });
     return results.slice(0, visibleLimit);
@@ -2337,6 +2343,12 @@
   var LIBRARY_ORDER;  /* curated library built after REAL_VIDEOS (see below) */
 
   var REAL_VIDEOS = {
+  "tag-genre-action-0": "https://videos.aidirectorme.com/tag-genre-action-0-v1.mp4",
+  "tag-genre-action-1": "https://videos.aidirectorme.com/tag-genre-action-1-v1.mp4",
+  "tag-genre-action-2": "https://videos.aidirectorme.com/tag-genre-action-2-v1.mp4",
+  "tag-genre-action-3": "https://videos.aidirectorme.com/tag-genre-action-3-v1.mp4",
+  "tag-genre-action-4": "https://videos.aidirectorme.com/tag-genre-action-4-v1.mp4",
+  "tag-genre-action-5": "https://videos.aidirectorme.com/tag-genre-action-5-v1.mp4",
   "tag-impossible-time-freeze-orbit-0": "https://videos.aidirectorme.com/tag-impossible-time-freeze-orbit-0-v1.mp4",
   "tag-impossible-time-freeze-orbit-1": "https://videos.aidirectorme.com/tag-impossible-time-freeze-orbit-1-v1.mp4",
   "tag-impossible-time-freeze-orbit-2": "https://videos.aidirectorme.com/tag-impossible-time-freeze-orbit-2-v1.mp4",
@@ -3957,16 +3969,32 @@
     "Memory Walkthrough","Dream-to-Reality Seamless Transition"
   ];
 
+  // Genre: full storytelling-genre lineup. Like every facet, a genre only
+  // surfaces in the sidebar once it has real bound clips (__meta filter),
+  // so this whole list can ship now and roll out collection by collection.
+  var GENRE_CHIPS = [
+    "Action","Adventure","Comedy","Romantic Comedy","Drama","Romance",
+    "Thriller","Psychological Thriller",
+    "Horror","Psychological Horror","Supernatural Horror","Gothic Horror","Haunted House",
+    "Cosmic Horror","Folk Horror","Analog Horror","Found Footage Horror","Horror Comedy",
+    "Slasher","Home Invasion","Possession","Occult","Vampire","Werewolf","Zombie","Monster","Kaiju",
+    "Mystery","Crime","Gangster","Film Noir","Heist","Spy","Western","War",
+    "Historical Epic","Period Drama","Musical","Sports","Superhero","Martial Arts","Samurai",
+    "Disaster","Survival","Post-Apocalyptic","Dystopian","Space Opera","Alien Invasion","Time Travel",
+    "Fairy Tale","Mythology","Sword & Sorcery","Coming-of-Age","Road Trip","Buddy Cop",
+    "Courtroom","Mockumentary","Family Adventure","Teen"
+  ];
+
   // Left sidebar: main categories as an accordion. Clicking a category
   // reveals its subcategories; clicking a subcategory opens that collection
   // via the same openTagCollection path the old chip rail used.
   var FACET_LABELS = {
-    style: 'Styles', cameraMove: 'Camera', shotType: 'Shot Type',
+    style: 'Styles', genre: 'Genre', cameraMove: 'Camera', shotType: 'Shot Type',
     emotion: 'Emotion', lighting: 'Light', impossible: 'Impossible', format: 'Format'
   };
 
   function facetValues(facetKey){
-    var values = (facetKey === 'style') ? STYLE_CHIPS.slice() : (facetKey === 'emotion') ? EMOTION_CHIPS.slice() : (facetKey === 'impossible') ? IMPOSSIBLE_CHIPS.slice() : unique(facetKey);
+    var values = (facetKey === 'style') ? STYLE_CHIPS.slice() : (facetKey === 'genre') ? GENRE_CHIPS.slice() : (facetKey === 'emotion') ? EMOTION_CHIPS.slice() : (facetKey === 'impossible') ? IMPOSSIBLE_CHIPS.slice() : unique(facetKey);
     if (facetKey === 'shotType'){ values = values.concat(EXTRA_SHOT_CHIPS); }
     if (facetKey === 'cameraMove'){ values = values.concat(EXTRA_CAMERA_CHIPS); }
     if (facetKey === 'lighting'){ values = values.concat(EXTRA_LIGHTING_CHIPS); }
@@ -3978,7 +4006,7 @@
   function buildSidebarNav(){
     var nav = document.getElementById('catNav');
     if (!nav) return;
-    ['style','cameraMove','shotType','emotion','lighting','impossible','format'].forEach(function(facetKey){
+    ['style','genre','cameraMove','shotType','emotion','lighting','impossible','format'].forEach(function(facetKey){
       var values = facetValues(facetKey);
       if (!values.length) return;
 
