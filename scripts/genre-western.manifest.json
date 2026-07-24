@@ -1,0 +1,60 @@
+{
+  "limit_key": "Western",
+  "visible_limit": 6,
+  "clips": [
+    {
+      "id": "tag-genre-western-0",
+      "r2_key": "tag-genre-western-0-v1.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260724_202810_65d7c0a2-9755-49d0-a1b0-97191e2fc23f.mp4",
+      "title": "High Noon",
+      "shotType": "Wide Shot",
+      "cameraMove": "Push In",
+      "prompt": "Live-action photoreal, 1880s American frontier, sun-bleached western grade. A dusty main street of a wooden frontier town at high noon, false-front saloons, a creaking hanging sign, tumbleweed drifting past a water trough. A person in a long duster coat, wide-brimmed hat and leather boots stands alone in the center of the street, coat edge lifting in the hot wind, hand hovering steady at their side. Heat shimmer rises off the dirt, horses stir at a hitching rail, a church bell tower stands against the glare. Blinding overhead sun with hard short shadows. Slow push-in at boot level rising to a full figure, 35mm. Shallow depth of field, dusty haze, subtle grain, 24fps."
+    },
+    {
+      "id": "tag-genre-western-1",
+      "r2_key": "tag-genre-western-1-v1.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260724_203624_ab485b32-89e8-4b67-9980-c927b0ab8905.mp4",
+      "title": "The Saloon",
+      "shotType": "Medium Shot",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Live-action photoreal, 1880s American frontier, amber lamplight western grade. The interior of a crowded saloon at night, a long polished bar, shelves of bottles, an upright piano in the corner, oil lamps hanging from beams, cigar smoke layering the air. A person in a worn leather vest, rolled shirtsleeves and a low-brimmed hat pushes through the batwing doors and stops, scanning the room as conversations die and card players turn. Whiskey glasses freeze mid-pour, a wall clock ticks, sawdust on the floorboards. Warm lamplight pooling against deep brown shadow. Slow dolly in from behind the doors, 35mm. Shallow depth of field, smoky haze, subtle grain, 24fps."
+    },
+    {
+      "id": "tag-genre-western-2",
+      "r2_key": "tag-genre-western-2-v1.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260724_204307_0cc68f06-bcaa-473b-bdbb-4e3fe1a781f4.mp4",
+      "title": "Canyon Ride",
+      "shotType": "Wide Shot",
+      "cameraMove": "Tracking Side",
+      "prompt": "Live-action photoreal, 1880s American frontier, golden epic western grade. A vast red-rock canyon at golden hour, towering mesas, a winding dry riverbed, dust hanging in the light. A person in a fringed riding jacket, gloves and a weathered hat gallops a dark horse along the canyon floor, leaning low over the mane, duster tails flying, hooves throwing dust. A hawk circles high, sagebrush blurs past, long shadows rake the canyon wall. Blazing low sun with deep orange rim light. Sweeping side-tracking camera keeping pace, 50mm, slight shake. Shallow depth of field, subtle grain, 24fps."
+    },
+    {
+      "id": "tag-genre-western-3",
+      "r2_key": "tag-genre-western-3-v1.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260724_204829_5f5d9d09-668a-4725-9d96-6200413e0a47.mp4",
+      "title": "The Card Game",
+      "shotType": "Medium Shot",
+      "cameraMove": "Push In",
+      "prompt": "Live-action photoreal, 1880s American frontier, lamplit tension western grade. A back room of a saloon at night, a round felt-topped table under a single oil lamp, stacked coins and paper bills, a bottle of whiskey, smoke curling through the lamp glow. A person in a black frock coat, brocade vest and string tie slowly lays down their cards and lifts their eyes across the table, jaw set, fingers resting flat on the felt. Other hands hover at the table edge, a chair creaks back, shadows lean on the walls. Warm single-lamp pool against near darkness. Slow push-in across the table to their face, 50mm. Shallow depth of field, heavy smoke haze, subtle grain, 24fps."
+    },
+    {
+      "id": "tag-genre-western-4",
+      "r2_key": "tag-genre-western-4-v1.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260724_205530_f963df31-c8a0-4abd-907f-9f18cfc5f37b.mp4",
+      "title": "Iron Horse",
+      "shotType": "Wide Shot",
+      "cameraMove": "Tracking Side",
+      "prompt": "Live-action photoreal, 1880s American frontier, steam-and-dust western grade. A steam locomotive thundering across a wooden trestle bridge over a dry gorge at late afternoon, black smoke rolling back over the cars, sparks from the stack. A person in a canvas duster and gloves runs along the roof of a passenger car toward the engine, hat pressed to their head, coat snapping in the slipstream. The gorge yawns below, telegraph poles flick past, the whistle's steam bursts white. Warm late sun cutting through smoke. Camera tracking alongside from above the gorge, 35mm, slight shake. Shallow depth of field, subtle grain, 24fps."
+    },
+    {
+      "id": "tag-genre-western-5",
+      "r2_key": "tag-genre-western-5-v1.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260724_210054_8b0f2827-4da2-430e-88e7-0f9ab911c854.mp4",
+      "title": "Homestead Dusk",
+      "shotType": "Wide Shot",
+      "cameraMove": "Push In",
+      "prompt": "Live-action photoreal, 1880s American frontier, quiet elegiac western grade. A lone homestead on an open prairie at dusk, a timber cabin with a glowing window, a windmill turning slowly, laundry on a line, an endless violet sky with the first stars. A person in a wool coat and hat rides slowly toward the cabin on a tired horse, silhouetted against the last band of orange on the horizon, shoulders low after a long journey. Tall grass sways, a dog rises from the porch, smoke drifts from the chimney. Deep dusk blue with a warm window glow. Static wide slowly pushing in, 28mm. Shallow depth of field, subtle grain, 24fps."
+    }
+  ]
+}
