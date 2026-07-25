@@ -1,0 +1,33 @@
+{
+  "limit_key": "Space Opera",
+  "visible_limit": 3,
+  "clips": [
+    {
+      "id": "tag-genre-space-opera-0",
+      "r2_key": "tag-genre-space-opera-0-v1.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260725_053033_b29eddf6-4f2e-4705-8718-c05b90e5c1fa.mp4",
+      "title": "The Bridge",
+      "shotType": "Medium Shot",
+      "cameraMove": "Push In",
+      "prompt": "Live-action photoreal, far-future setting, sweeping space opera grade. The command bridge of a massive starship, a panoramic viewport filled with a swirling violet nebula, holographic star charts floating over consoles, uniformed crew silhouettes at glowing stations. A person in a high-collared command uniform with silver insignia walks slowly to the viewport and clasps their hands behind their back, gazing into the nebula as warning lights begin to pulse across the consoles. Reflections slide across the glass, a hologram rotates, engines thrum visibly through hull vibration. Cool console glow with violet nebula key light. Slow push-in from behind toward the viewport, 35mm anamorphic. Lens flare, shallow depth of field, 24fps."
+    },
+    {
+      "id": "tag-genre-space-opera-1",
+      "r2_key": "tag-genre-space-opera-1-v1.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260725_054201_263b98f2-4232-4162-9290-9d6943595942.mp4",
+      "title": "Fleet Arrival",
+      "shotType": "Wide Shot",
+      "cameraMove": "Tracking Side",
+      "prompt": "Live-action photoreal, far-future setting, epic space opera grade. Open space above a ringed gas giant, a fleet of colossal capital ships emerging from hyperspace one by one in flashes of blue light, escort fighters streaming between them like fireflies. The camera drifts past a battleship's hull, kilometer-long ridges of armor, glowing engine trenches and blinking signal towers, as the planet's rings catch golden starlight below. Debris glitters, a docking bay yawns open spilling light. Hard starlight with blue hyperspace flashes. Slow majestic lateral drift, 50mm anamorphic. Deep space blacks, lens flare, 24fps."
+    },
+    {
+      "id": "tag-genre-space-opera-2",
+      "r2_key": "tag-genre-space-opera-2-v1.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260725_061205_3fdcd355-d68e-4624-a4b7-513a6b84332c.mp4",
+      "title": "Throne of Stars",
+      "shotType": "Wide Shot",
+      "cameraMove": "Steadicam Follow",
+      "prompt": "Live-action photoreal, far-future setting, regal space opera grade. A vast imperial throne hall aboard a space station, obsidian floors reflecting starlight from a domed transparent ceiling, twin rows of banner-hung columns, guards in gleaming armor at attention. A person in a floor-length embroidered ceremonial robe with a high jeweled collar ascends wide steps toward the throne, train sweeping the polished floor, as the dome above reveals a slowly wheeling galaxy. Braziers of cold blue flame, drifting incense, a herald's staff striking the floor. Cold starlight from above with warm brazier accents. Low tracking shot following the robe up the steps, 35mm anamorphic. Shallow depth of field, 24fps."
+    }
+  ]
+}

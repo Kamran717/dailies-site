@@ -1,0 +1,60 @@
+{
+  "limit_key": "Film Noir",
+  "visible_limit": 6,
+  "clips": [
+    {
+      "id": "tag-genre-film-noir-0",
+      "r2_key": "tag-genre-film-noir-0-v1.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260725_042517_9ad6b3e9-b7e1-4e96-90c6-6575534e1d27.mp4",
+      "title": "The Office",
+      "shotType": "Medium Shot",
+      "cameraMove": "Push In",
+      "prompt": "Live-action photoreal, 1940s period, high-contrast black-and-white noir grade. A cramped private detective's office at night, venetian blind shadows slicing across a cluttered desk, a ceiling fan turning slowly, a frosted-glass door reading backwards lettering. A person in a rumpled suit with a loosened tie leans back in a wooden chair, strikes a match, and lifts it toward their face as the flame flares in the dark. Rain streaks the window, a desk lamp glows through cigarette haze, a revolver rests on a case file. Hard slatted key light through the blinds against deep black. Slow push-in past the desk lamp, 40mm. Deep shadow, silver-halide grain, 24fps."
+    },
+    {
+      "id": "tag-genre-film-noir-1",
+      "r2_key": "tag-genre-film-noir-1-v1.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260725_044645_b84bbdf1-3226-44b5-ab58-d49c212e23ab.mp4",
+      "title": "Wet Streets",
+      "shotType": "Wide Shot",
+      "cameraMove": "Dolly Out",
+      "prompt": "Live-action photoreal, 1940s period, high-contrast black-and-white noir grade. A rain-soaked downtown street at 2 AM, neon signs reflected in black puddles, a lone streetlamp haloed in mist, shuttered storefronts, a parked sedan gleaming with rain. A person in a belted trench coat and fedora walks slowly toward camera along the curb, hands deep in pockets, hat brim low, pausing under the streetlamp as their shadow stretches long across the wet pavement. Steam rises from a grate, a distant traffic light swings. Hard lamp key with glistening reflections against ink-black night. Low static camera, slow creep backward as they advance, 35mm. Deep shadow, heavy grain, 24fps."
+    },
+    {
+      "id": "tag-genre-film-noir-2",
+      "r2_key": "tag-genre-film-noir-2-v1.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260725_045610_f8a4edcd-fff4-4615-b9ba-723fdcd0acc3.mp4",
+      "title": "The Singer",
+      "shotType": "Medium Shot",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Live-action photoreal, 1940s period, smoky nightclub noir grade in black-and-white. A dim jazz club at midnight, a small stage with a chrome microphone, round tables with candle lamps, cigarette smoke drifting through a single spotlight, a double bass leaning in shadow. A person in a floor-length satin gown with long gloves steps into the spotlight at the microphone, closes their eyes and tilts their head back as the smoke swirls through the beam. Silhouetted patrons, a bartender polishing a glass, brass rails gleaming. One hard white spotlight against total darkness. Slow dolly in from between the tables, 50mm. Deep shadow, silver grain, 24fps."
+    },
+    {
+      "id": "tag-genre-film-noir-3",
+      "r2_key": "tag-genre-film-noir-3-v1.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260725_051026_960d4570-f4aa-4394-8dca-b33e8a080f55.mp4",
+      "title": "Stairwell",
+      "shotType": "Overhead",
+      "cameraMove": "Crane Rise",
+      "prompt": "Live-action photoreal, 1940s period, paranoid black-and-white noir grade. A spiral fire-escape stairwell inside an old apartment block at night, a caged bulb on each landing, peeling paint, shadows of railings wheeling across the walls. A person in a dark overcoat and gloves hurries down the stairs, glancing over their shoulder, their shadow multiplying across the curved wall as they descend. A door slams somewhere above, dust drifts through the bulb light. Bare-bulb key with wheeling railing shadows against blackness. Overhead camera looking straight down the stairwell spiral as they descend, 28mm. Deep shadow, heavy grain, 24fps."
+    },
+    {
+      "id": "tag-genre-film-noir-4",
+      "r2_key": "tag-genre-film-noir-4-v1.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260725_051636_e7ad03e4-fc82-4fcf-af15-09598b13e6a5.mp4",
+      "title": "The Drop",
+      "shotType": "Wide Shot",
+      "cameraMove": "Push In",
+      "prompt": "Live-action photoreal, 1940s period, tense black-and-white noir grade. A deserted train-station waiting hall at 3 AM, long wooden benches, a giant clock face glowing above marble floors, shafts of light from high windows cutting through haze. A person in a tailored suit and homburg hat sits alone on a bench, sets a leather briefcase down beside them, slides it away with one gloved hand, and stands without looking at it. Departure board letters, a janitor's mop bucket far in the background, pigeons in the rafters. Cathedral shafts of hard light against dark marble. Wide static frame, slow push toward the abandoned briefcase, 35mm. Deep shadow, fine grain, 24fps."
+    },
+    {
+      "id": "tag-genre-film-noir-5",
+      "r2_key": "tag-genre-film-noir-5-v1.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260725_052424_18fdce33-cf6c-4b5b-b3bc-abaf9ca96fa8.mp4",
+      "title": "Interrogation",
+      "shotType": "Medium Shot",
+      "cameraMove": "Arc Around",
+      "prompt": "Live-action photoreal, 1940s period, hard-boiled black-and-white noir grade. A bare interrogation room at night, a single low-hanging bulb over a metal table, two chairs, a mirror of one-way glass, smoke layering under the light. A person in shirtsleeves and suspenders plants both fists on the table and leans slowly into the cone of light, face emerging from darkness, staring across the table. An ashtray overflows, a confession sheet and pen sit untouched, the bulb sways faintly. Single hard bulb key from above against black walls. Slow arc around the table at seated height, 40mm. Deep shadow, heavy grain, 24fps."
+    }
+  ]
+}
