@@ -1,0 +1,60 @@
+{
+  "limit_key": "Heist",
+  "visible_limit": 6,
+  "clips": [
+    {
+      "id": "tag-genre-heist-0",
+      "r2_key": "tag-genre-heist-0-v1.mp4",
+      "cloudfront_url": "https://videos.aidirectorme.com/staging/c83b0666-3b28-4ed6-bca5-b7396475206f.mp4",
+      "title": "The Vault",
+      "shotType": "Wide Shot",
+      "cameraMove": "Tracking Side",
+      "prompt": "Live-action photoreal, present day, sleek precision heist grade. A bank vault antechamber at night, a massive circular steel door with polished spokes, marble floors, red laser tripwires crisscrossing the corridor, security camera housings in the corners. A person in a fitted black turtleneck, gloves and a climbing harness slides under the lowest laser, arches over the next, and rises inches from the vault door, reaching for its dial. Dust drifts through the beams, a wall clock ticks toward the hour, an alarm panel blinks green. Cold blue security lighting with red laser accents. Low tracking camera gliding through the lasers with them, 35mm. Shallow depth of field, subtle grain, 24fps."
+    },
+    {
+      "id": "tag-genre-heist-1",
+      "r2_key": "tag-genre-heist-1-v1.mp4",
+      "cloudfront_url": "https://videos.aidirectorme.com/staging/f0c491a8-6dc3-4a79-ae61-dbd464747ad5.mp4",
+      "title": "The Plan",
+      "shotType": "Medium Shot",
+      "cameraMove": "Push In",
+      "prompt": "Live-action photoreal, present day, stylish heist grade. A dim loft workspace at night, a wall covered in blueprints, photographs and red string, a scale model of a museum on a table, city lights through industrial windows. A person in a sharp charcoal three-piece suit stands before the wall, taps one photograph, and drags a red string across to the museum's rooftop as the crew's silhouettes lean in around the table. Coffee cups, a stopwatch, floor plans curling at the edges. Warm desk-lamp pools against cool window light. Slow push-in over the shoulders toward the wall, 35mm. Shallow depth of field, subtle grain, 24fps."
+    },
+    {
+      "id": "tag-genre-heist-2",
+      "r2_key": "tag-genre-heist-2-v1.mp4",
+      "cloudfront_url": "https://videos.aidirectorme.com/staging/e374778b-872b-4cfd-ad79-c961df4985f4.mp4",
+      "title": "Rooftop Descent",
+      "shotType": "Wide Shot",
+      "cameraMove": "Crane Rise",
+      "prompt": "Live-action photoreal, present day, high-wire heist grade. A museum skylight at night, rain-flecked glass panels, the marble atrium glowing far below with a jeweled exhibit case at its center, city towers rising behind. A person in a matte-black tactical suit and harness descends head-first on a cable through the opened skylight, arms extended, dropping silently toward the exhibit as the cable pays out above. Rain beads slide off the glass, a guard's flashlight sweeps a distant corridor, the gem refracts light. Cool moonlight through glass with warm gallery accents below. Camera craning down through the skylight following the descent, 28mm. Shallow depth of field, subtle grain, 24fps."
+    },
+    {
+      "id": "tag-genre-heist-3",
+      "r2_key": "tag-genre-heist-3-v1.mp4",
+      "cloudfront_url": "https://videos.aidirectorme.com/staging/e028cc6d-155f-4621-a5fb-8aadf34d49e5.mp4",
+      "title": "The Switch",
+      "shotType": "Medium Shot",
+      "cameraMove": "Push In",
+      "prompt": "Live-action photoreal, present day, sleight-of-hand heist grade. A glittering casino floor at night, chandeliers, velvet ropes, a high-stakes cage window with brass bars, patrons in evening wear blurred in the background. A person in a tailored midnight-blue tuxedo sets a silver briefcase on the cage counter, spins it to face the teller, and in the same motion slides an identical case from beside their leg while collecting the first. Chips clatter, a champagne tray floats past, surveillance domes gleam overhead. Warm chandelier glow with cool cage fluorescents. Locked-off medium framing the counter, subtle slow zoom, 50mm. Shallow depth of field, subtle grain, 24fps."
+    },
+    {
+      "id": "tag-genre-heist-4",
+      "r2_key": "tag-genre-heist-4-v1.mp4",
+      "cloudfront_url": "https://videos.aidirectorme.com/staging/dbf5b24f-00a5-44ba-8c7c-f3908713693e.mp4",
+      "title": "Getaway Drivers",
+      "shotType": "Medium Shot",
+      "cameraMove": "Handheld Push",
+      "prompt": "Live-action photoreal, present day, adrenaline heist grade. A narrow underground parking exit at night, concrete pillars strobing past, a boom barrier ahead beginning to lower, sodium lights streaking. A person in a bomber jacket and driving gloves at the wheel of a matte-grey coupe slams the shifter and accelerates, the car ducking under the dropping barrier with inches to spare as sparks fly from the roof grazing it. Duffel bags shift in the back seat, tires smoke, a security guard spins in the mirror. Orange sodium streaks with cold headlight glare. Camera mounted low on the hood facing the driver, shaking with the launch, 28mm. Motion blur, subtle grain, 24fps."
+    },
+    {
+      "id": "tag-genre-heist-5",
+      "r2_key": "tag-genre-heist-5-v1.mp4",
+      "cloudfront_url": "https://videos.aidirectorme.com/staging/807cdda9-9bd5-41b8-8dd6-321ae30dba7a.mp4",
+      "title": "Counting the Take",
+      "shotType": "Medium Shot",
+      "cameraMove": "Tilt Up",
+      "prompt": "Live-action photoreal, present day, afterglow heist grade. A shuttered laundromat backroom at dawn, one high window letting in a gold shaft of morning light, folding tables pushed together, washing machines silent in rows. A person in a rolled-sleeve shirt and unbuttoned vest tips a duffel bag over the table and stacks of banded cash tumble out into the light, dust rising through the sunbeam as they fan one stack with a thumb. A police scanner crackles on a shelf, coffee steams, a getaway map lies creased. Single warm dawn shaft against cool shadow. Slow overhead tilt down onto the table, 40mm. Shallow depth of field, subtle grain, 24fps."
+    }
+  ]
+}

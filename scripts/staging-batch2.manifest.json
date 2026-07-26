@@ -1,0 +1,222 @@
+{
+  "limit_key": "__staging__",
+  "visible_limit": 0,
+  "clips": [
+    {
+      "id": "staging-29f51dac",
+      "r2_key": "staging/29f51dac-0f13-432e-b0d0-c22e2b111ee6.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260725_091953_29f51dac-0f13-432e-b0d0-c22e2b111ee6.mp4",
+      "title": "staging",
+      "shotType": "",
+      "cameraMove": "",
+      "prompt": "staging - pending assignment"
+    },
+    {
+      "id": "staging-3b2a6f6d",
+      "r2_key": "staging/3b2a6f6d-7971-4805-a133-126a84e96a79.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260725_092643_3b2a6f6d-7971-4805-a133-126a84e96a79.mp4",
+      "title": "staging",
+      "shotType": "",
+      "cameraMove": "",
+      "prompt": "staging - pending assignment"
+    },
+    {
+      "id": "staging-98a8f197",
+      "r2_key": "staging/98a8f197-54cc-4d3a-b0b1-d88f8731f394.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260725_094751_98a8f197-54cc-4d3a-b0b1-d88f8731f394.mp4",
+      "title": "staging",
+      "shotType": "",
+      "cameraMove": "",
+      "prompt": "staging - pending assignment"
+    },
+    {
+      "id": "staging-a3d1aafd",
+      "r2_key": "staging/a3d1aafd-e7a0-4bea-9cb2-6b17837df78e.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260725_095752_a3d1aafd-e7a0-4bea-9cb2-6b17837df78e.mp4",
+      "title": "staging",
+      "shotType": "",
+      "cameraMove": "",
+      "prompt": "staging - pending assignment"
+    },
+    {
+      "id": "staging-176d132f",
+      "r2_key": "staging/176d132f-4d73-46e2-90cd-3d548d2260b8.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260725_101522_176d132f-4d73-46e2-90cd-3d548d2260b8.mp4",
+      "title": "staging",
+      "shotType": "",
+      "cameraMove": "",
+      "prompt": "staging - pending assignment"
+    },
+    {
+      "id": "staging-9da8fda0",
+      "r2_key": "staging/9da8fda0-7796-42b6-ad5e-694a2a83f1a6.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260725_102548_9da8fda0-7796-42b6-ad5e-694a2a83f1a6.mp4",
+      "title": "staging",
+      "shotType": "",
+      "cameraMove": "",
+      "prompt": "staging - pending assignment"
+    },
+    {
+      "id": "staging-68f0b554",
+      "r2_key": "staging/68f0b554-fae2-415d-a605-f052b32afa02.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260725_103828_68f0b554-fae2-415d-a605-f052b32afa02.mp4",
+      "title": "staging",
+      "shotType": "",
+      "cameraMove": "",
+      "prompt": "staging - pending assignment"
+    },
+    {
+      "id": "staging-874236bd",
+      "r2_key": "staging/874236bd-f54c-42f0-b5bf-2ea43bacd6be.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260725_104831_874236bd-f54c-42f0-b5bf-2ea43bacd6be.mp4",
+      "title": "staging",
+      "shotType": "",
+      "cameraMove": "",
+      "prompt": "staging - pending assignment"
+    },
+    {
+      "id": "staging-0bf1f162",
+      "r2_key": "staging/0bf1f162-ca17-41f5-8930-4cf73e1c3714.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260725_105923_0bf1f162-ca17-41f5-8930-4cf73e1c3714.mp4",
+      "title": "staging",
+      "shotType": "",
+      "cameraMove": "",
+      "prompt": "staging - pending assignment"
+    },
+    {
+      "id": "staging-c1573d8d",
+      "r2_key": "staging/c1573d8d-b8f0-4eb9-bccf-3d758e616a30.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260725_110952_c1573d8d-b8f0-4eb9-bccf-3d758e616a30.mp4",
+      "title": "staging",
+      "shotType": "",
+      "cameraMove": "",
+      "prompt": "staging - pending assignment"
+    },
+    {
+      "id": "staging-09669b2a",
+      "r2_key": "staging/09669b2a-a2f1-4bc5-a04e-cd99a00b5ca9.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260725_111836_09669b2a-a2f1-4bc5-a04e-cd99a00b5ca9.mp4",
+      "title": "staging",
+      "shotType": "",
+      "cameraMove": "",
+      "prompt": "staging - pending assignment"
+    },
+    {
+      "id": "staging-7e40d295",
+      "r2_key": "staging/7e40d295-b349-4a6e-99ef-61cf106f31aa.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260725_112935_7e40d295-b349-4a6e-99ef-61cf106f31aa.mp4",
+      "title": "staging",
+      "shotType": "",
+      "cameraMove": "",
+      "prompt": "staging - pending assignment"
+    },
+    {
+      "id": "staging-07083621",
+      "r2_key": "staging/07083621-a48a-43fe-8bac-f781a50c8ddd.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260725_114353_07083621-a48a-43fe-8bac-f781a50c8ddd.mp4",
+      "title": "staging",
+      "shotType": "",
+      "cameraMove": "",
+      "prompt": "staging - pending assignment"
+    },
+    {
+      "id": "staging-c83b0666",
+      "r2_key": "staging/c83b0666-3b28-4ed6-bca5-b7396475206f.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260725_164434_c83b0666-3b28-4ed6-bca5-b7396475206f.mp4",
+      "title": "staging",
+      "shotType": "",
+      "cameraMove": "",
+      "prompt": "staging - pending assignment"
+    },
+    {
+      "id": "staging-f0c491a8",
+      "r2_key": "staging/f0c491a8-6dc3-4a79-ae61-dbd464747ad5.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260725_165441_f0c491a8-6dc3-4a79-ae61-dbd464747ad5.mp4",
+      "title": "staging",
+      "shotType": "",
+      "cameraMove": "",
+      "prompt": "staging - pending assignment"
+    },
+    {
+      "id": "staging-e374778b",
+      "r2_key": "staging/e374778b-872b-4cfd-ad79-c961df4985f4.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260725_171138_e374778b-872b-4cfd-ad79-c961df4985f4.mp4",
+      "title": "staging",
+      "shotType": "",
+      "cameraMove": "",
+      "prompt": "staging - pending assignment"
+    },
+    {
+      "id": "staging-e028cc6d",
+      "r2_key": "staging/e028cc6d-155f-4621-a5fb-8aadf34d49e5.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260725_172110_e028cc6d-155f-4621-a5fb-8aadf34d49e5.mp4",
+      "title": "staging",
+      "shotType": "",
+      "cameraMove": "",
+      "prompt": "staging - pending assignment"
+    },
+    {
+      "id": "staging-dbf5b24f",
+      "r2_key": "staging/dbf5b24f-00a5-44ba-8c7c-f3908713693e.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260725_173046_dbf5b24f-00a5-44ba-8c7c-f3908713693e.mp4",
+      "title": "staging",
+      "shotType": "",
+      "cameraMove": "",
+      "prompt": "staging - pending assignment"
+    },
+    {
+      "id": "staging-807cdda9",
+      "r2_key": "staging/807cdda9-9bd5-41b8-8dd6-321ae30dba7a.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260725_173915_807cdda9-9bd5-41b8-8dd6-321ae30dba7a.mp4",
+      "title": "staging",
+      "shotType": "",
+      "cameraMove": "",
+      "prompt": "staging - pending assignment"
+    },
+    {
+      "id": "staging-b2992f45",
+      "r2_key": "staging/b2992f45-0625-4121-9e16-58fd1f7dacef.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260725_181458_b2992f45-0625-4121-9e16-58fd1f7dacef.mp4",
+      "title": "staging",
+      "shotType": "",
+      "cameraMove": "",
+      "prompt": "staging - pending assignment"
+    },
+    {
+      "id": "staging-69f1a316",
+      "r2_key": "staging/69f1a316-2dcc-444f-8226-bc3fb3195171.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260725_182458_69f1a316-2dcc-444f-8226-bc3fb3195171.mp4",
+      "title": "staging",
+      "shotType": "",
+      "cameraMove": "",
+      "prompt": "staging - pending assignment"
+    },
+    {
+      "id": "staging-a27a13e1",
+      "r2_key": "staging/a27a13e1-d309-4923-884f-f3d6ee9cdbaf.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260725_183814_a27a13e1-d309-4923-884f-f3d6ee9cdbaf.mp4",
+      "title": "staging",
+      "shotType": "",
+      "cameraMove": "",
+      "prompt": "staging - pending assignment"
+    },
+    {
+      "id": "staging-fd5023db",
+      "r2_key": "staging/fd5023db-1689-41d1-9259-97e12df9b82d.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260725_185509_fd5023db-1689-41d1-9259-97e12df9b82d.mp4",
+      "title": "staging",
+      "shotType": "",
+      "cameraMove": "",
+      "prompt": "staging - pending assignment"
+    },
+    {
+      "id": "staging-ee6979cc",
+      "r2_key": "staging/ee6979cc-9cdd-486c-8951-f79d1ddfe1ed.mp4",
+      "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260725_192403_ee6979cc-9cdd-486c-8951-f79d1ddfe1ed.mp4",
+      "title": "staging",
+      "shotType": "",
+      "cameraMove": "",
+      "prompt": "staging - pending assignment"
+    }
+  ]
+}
