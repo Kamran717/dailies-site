@@ -1,0 +1,60 @@
+{
+  "limit_key": "Paper Style",
+  "visible_limit": 6,
+  "clips": [
+    {
+      "id": "tag-style-paper-style-0",
+      "r2_key": "tag-style-paper-style-0-v1.mp4",
+      "cloudfront_url": "https://videos.aidirectorme.com/staging/807cdda9-9bd5-41b8-8dd6-321ae30dba7a.mp4",
+      "title": "Dubai Skyline",
+      "shotType": "Wide Shot",
+      "cameraMove": "Tracking Side",
+      "prompt": "Breathtaking paper-cut diorama of Dubai. Every element handcrafted from layered colored cardstock with crisp folded edges, intricate cut-out details, and realistic paper textures: the Burj Khalifa rising in stacked paper tiers, sail-shaped towers, palm fronds and marina boats below. Warm sunlight casts soft paper shadows that slowly sweep across the layers as paper clouds drift between the towers and tiny paper cars glide along a curved road. Ultra detailed papercraft, vibrant colors, cinematic composition, museum-quality paper sculpture, highly intricate layered cardstock art, clean precision cuts, depth-rich 3D paper scene. Slow lateral dolly across the skyline with gentle parallax between paper layers, shallow depth of field, ultra high resolution, 24fps."
+    },
+    {
+      "id": "tag-style-paper-style-1",
+      "r2_key": "tag-style-paper-style-1-v1.mp4",
+      "cloudfront_url": "https://videos.aidirectorme.com/staging/b2992f45-0625-4121-9e16-58fd1f7dacef.mp4",
+      "title": "Desert Caravan",
+      "shotType": "Wide Shot",
+      "cameraMove": "Push In",
+      "prompt": "Breathtaking paper-cut diorama of an Arabian desert at golden hour. Every element handcrafted from layered colored cardstock with crisp folded edges and realistic paper textures: rolling dunes in overlapping amber layers, a caravan of paper camels crossing the ridge, a distant oasis of folded palm trees. Warm sunlight casts long soft paper shadows as the camels glide slowly along the dune crest and a paper falcon circles overhead on a hidden wire. Ultra detailed papercraft, vibrant colors, cinematic composition, museum-quality paper sculpture, clean precision cuts, depth-rich 3D paper scene. Slow push-in through foreground dune layers with rich parallax, shallow depth of field, ultra high resolution, 24fps."
+    },
+    {
+      "id": "tag-style-paper-style-2",
+      "r2_key": "tag-style-paper-style-2-v1.mp4",
+      "cloudfront_url": "https://videos.aidirectorme.com/staging/69f1a316-2dcc-444f-8226-bc3fb3195171.mp4",
+      "title": "Old Souk",
+      "shotType": "Medium Shot",
+      "cameraMove": "Slow Dolly In",
+      "prompt": "Breathtaking paper-cut diorama of a traditional Dubai souk at dusk. Every element handcrafted from layered colored cardstock with crisp folded edges and intricate cut-out details: arched alleyways, hanging paper lanterns glowing through cut patterns, market stalls stacked with folded spice cones and rolled paper carpets, a wind tower rising behind. Warm lantern light casts patterned paper shadows across the alley as lanterns sway gently and shadow lattices slide over the stalls. Ultra detailed papercraft, vibrant colors, cinematic composition, museum-quality paper sculpture, clean precision cuts, depth-rich 3D paper scene. Slow dolly forward down the alley between stall layers, shallow depth of field, ultra high resolution, 24fps."
+    },
+    {
+      "id": "tag-style-paper-style-3",
+      "r2_key": "tag-style-paper-style-3-v1.mp4",
+      "cloudfront_url": "https://videos.aidirectorme.com/staging/a27a13e1-d309-4923-884f-f3d6ee9cdbaf.mp4",
+      "title": "Paper Reef",
+      "shotType": "Medium Shot",
+      "cameraMove": "Tracking Side",
+      "prompt": "Breathtaking paper-cut diorama of a coral reef beneath layered paper waves. Every element handcrafted from colored cardstock with crisp folded edges and realistic paper textures: fan corals in fringed layers, a sea turtle with folded shell plates, schools of tiny origami fish, light rays cut as translucent paper cones from the surface. Soft aquatic light casts gentle paper shadows as the turtle glides between coral layers and the fish school turns in unison. Ultra detailed papercraft, vibrant colors, cinematic composition, museum-quality paper sculpture, clean precision cuts, depth-rich 3D paper scene. Slow drifting camera following the turtle with layered parallax, shallow depth of field, ultra high resolution, 24fps."
+    },
+    {
+      "id": "tag-style-paper-style-4",
+      "r2_key": "tag-style-paper-style-4-v1.mp4",
+      "cloudfront_url": "https://videos.aidirectorme.com/staging/fd5023db-1689-41d1-9259-97e12df9b82d.mp4",
+      "title": "Falcon Flight",
+      "shotType": "Wide Shot",
+      "cameraMove": "Tracking Side",
+      "prompt": "Breathtaking paper-cut diorama of a falcon soaring over Dubai's coastline. Every element handcrafted from layered colored cardstock with crisp folded edges: the falcon's wings in fanned feather layers, a curling paper sea with whitecap cut-outs, the Palm island in concentric cardstock rings, towers on the horizon. Warm sunlight casts soft moving paper shadows as the falcon banks slowly and layered clouds slide beneath its wings. Ultra detailed papercraft, vibrant colors, cinematic composition, museum-quality paper sculpture, highly intricate layered cardstock art, clean precision cuts, depth-rich 3D paper scene. Camera tracking alongside the gliding falcon with deep multi-layer parallax, shallow depth of field, ultra high resolution, 24fps."
+    },
+    {
+      "id": "tag-style-paper-style-5",
+      "r2_key": "tag-style-paper-style-5-v1.mp4",
+      "cloudfront_url": "https://videos.aidirectorme.com/staging/ee6979cc-9cdd-486c-8951-f79d1ddfe1ed.mp4",
+      "title": "City at Night",
+      "shotType": "Wide Shot",
+      "cameraMove": "Crane Rise",
+      "prompt": "Breathtaking paper-cut diorama of Dubai at night. Every element handcrafted from layered dark-blue and violet cardstock with crisp folded edges: towers with hundreds of tiny cut-out windows glowing from warm light hidden between the layers, a crescent moon of white paper, folded fountain jets mid-burst below. Warm window glow casts intricate lattice shadows across the paper streets as the fountain layers rise and fall gently and a paper ferris wheel turns slowly on the waterfront. Ultra detailed papercraft, vibrant colors, cinematic composition, museum-quality paper sculpture, clean precision cuts, depth-rich 3D paper scene. Slow crane rise up the glowing towers toward the paper moon, shallow depth of field, ultra high resolution, 24fps."
+    }
+  ]
+}

@@ -1,11 +1,11 @@
 {
   "limit_key": "Miniature Build",
-  "visible_limit": 2,
+  "visible_limit": 3,
   "clips": [
     {
       "id": "tag-style-miniature-build-0",
-      "r2_key": "tag-style-miniature-build-0-v1.mp4",
-      "cloudfront_url": "https://videos.aidirectorme.com/staging/fd5023db-1689-41d1-9259-97e12df9b82d.mp4",
+      "r2_key": "tag-style-miniature-build-0-v2.mp4",
+      "cloudfront_url": "https://videos.aidirectorme.com/staging/e374778b-872b-4cfd-ad79-c961df4985f4.mp4",
       "title": "Foundation",
       "shotType": "Close-Up",
       "cameraMove": "Tracking Side",
@@ -13,12 +13,21 @@
     },
     {
       "id": "tag-style-miniature-build-1",
-      "r2_key": "tag-style-miniature-build-1-v1.mp4",
-      "cloudfront_url": "https://videos.aidirectorme.com/staging/ee6979cc-9cdd-486c-8951-f79d1ddfe1ed.mp4",
+      "r2_key": "tag-style-miniature-build-1-v2.mp4",
+      "cloudfront_url": "https://videos.aidirectorme.com/staging/e028cc6d-155f-4621-a5fb-8aadf34d49e5.mp4",
       "title": "Framing",
       "shotType": "Close-Up",
       "cameraMove": "Arc Around",
       "prompt": "Hyper-realistic macro miniature construction, satisfying DIY timelapse energy. The same round diorama base, its stone foundation ring now set and dry, on the same workbench in soft window light. A pair of hands lifts a delicate basswood timber frame wall and lowers it precisely onto the foundation, tiny beams and door opening visible, a drop of wood glue glistening at each joint as tweezers press the corners square. Wood shavings curl on the bench, a miniature spirit level rests nearby. Warm daylight with soft shadow. Slow macro orbit around the rising frame, 100mm macro, shallow focus. Crisp detail, gentle motion, 24fps."
+    },
+    {
+      "id": "tag-style-miniature-build-2",
+      "r2_key": "tag-style-miniature-build-2-v1.mp4",
+      "cloudfront_url": "https://videos.aidirectorme.com/staging/dbf5b24f-00a5-44ba-8c7c-f3908713693e.mp4",
+      "title": "Stone Walls",
+      "shotType": "Close-Up",
+      "cameraMove": "Push In",
+      "prompt": "Hyper-realistic macro miniature construction, satisfying DIY timelapse energy. The same diorama, timber frame standing on its stone foundation, workbench in soft window light. Tweezers place tiny individual stones into the wall between the timber beams, each pressed into mortar with a satisfying sink, rows climbing steadily, a fingertip smoothing a mortar line. A saucer of gray mortar, a small brush, the blueprint corner curling. Warm daylight with soft shadow. Locked-off macro framing one wall section as the rows fill upward, subtle push-in, 100mm macro. Crisp detail, gentle motion, 24fps."
     }
   ]
 }
