@@ -1,0 +1,15 @@
+{
+  "limit_key": "Heist",
+  "visible_limit": 3,
+  "clips": [
+    {
+      "id": "tag-genre-heist-0",
+      "r2_key": "tag-genre-heist-0-v2.mp4",
+      "cloudfront_url": "https://videos.aidirectorme.com/staging/b00a556f-8fc6-4c38-91b9-dd8f968941db.mp4",
+      "title": "The Vault",
+      "shotType": "Wide Shot",
+      "cameraMove": "Tracking Side",
+      "prompt": "Live-action photoreal, present day, sleek precision heist grade. A bank vault antechamber at night, a massive circular steel door with polished spokes, marble floors, red laser tripwires crisscrossing the corridor, security camera housings in the corners. A person in a fitted black turtleneck, gloves and a climbing harness slides under the lowest laser, arches over the next, and rises inches from the vault door, reaching for its dial. Dust drifts through the beams, a wall clock ticks toward the hour, an alarm panel blinks green. Cold blue security lighting with red laser accents. Low tracking camera gliding through the lasers with them, 35mm. Shallow depth of field, subtle grain, 24fps."
+    }
+  ]
+}

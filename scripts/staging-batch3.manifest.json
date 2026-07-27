@@ -1,0 +1,12 @@
+{
+  "limit_key": "__staging__",
+  "visible_limit": 0,
+  "clips": [
+    { "id": "staging-b00a556f", "r2_key": "staging/b00a556f-8fc6-4c38-91b9-dd8f968941db.mp4", "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260726_053139_b00a556f-8fc6-4c38-91b9-dd8f968941db.mp4", "title": "staging", "shotType": "", "cameraMove": "", "prompt": "staging - pending assignment" },
+    { "id": "staging-4925c459", "r2_key": "staging/4925c459-76b0-4525-a528-6cbd5a09e38f.mp4", "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260726_055518_4925c459-76b0-4525-a528-6cbd5a09e38f.mp4", "title": "staging", "shotType": "", "cameraMove": "", "prompt": "staging - pending assignment" },
+    { "id": "staging-a0f581cb", "r2_key": "staging/a0f581cb-a694-48a8-ba38-8bc09d2b85b2.mp4", "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260726_063225_a0f581cb-a694-48a8-ba38-8bc09d2b85b2.mp4", "title": "staging", "shotType": "", "cameraMove": "", "prompt": "staging - pending assignment" },
+    { "id": "staging-bcafa10a", "r2_key": "staging/bcafa10a-8149-457c-89aa-ce4fd3dc4b60.mp4", "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260726_070129_bcafa10a-8149-457c-89aa-ce4fd3dc4b60.mp4", "title": "staging", "shotType": "", "cameraMove": "", "prompt": "staging - pending assignment" },
+    { "id": "staging-17f6ba7f", "r2_key": "staging/17f6ba7f-06b1-4a33-b346-08a72338dc91.mp4", "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260726_072411_17f6ba7f-06b1-4a33-b346-08a72338dc91.mp4", "title": "staging", "shotType": "", "cameraMove": "", "prompt": "staging - pending assignment" },
+    { "id": "staging-7f713ff8", "r2_key": "staging/7f713ff8-146a-49a5-bfa2-560e1b25efd0.mp4", "cloudfront_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fi0mawVzkRKcfqnwpYPNoNGMg8/hf_20260726_073908_7f713ff8-146a-49a5-bfa2-560e1b25efd0.mp4", "title": "staging", "shotType": "", "cameraMove": "", "prompt": "staging - pending assignment" }
+  ]
+}
