@@ -8,6 +8,48 @@
 <link rel="canonical" href="https://aidirectorme.com/">
 <link rel="icon" type="image/png" href="/logo.png">
 <meta name="theme-color" content="#121212">
+<!-- Analytics: GA4 + GTM. If GTM_ID is set, GTM loads (GA4 config tag lives in GTM); otherwise gtag.js loads GA4 directly. Never both. -->
+<script>
+(function(){
+  var GA4_ID = 'G-TFZ5X09KTG';
+  var GTM_ID = '';            // e.g. 'GTM-XXXXXXX' - fill in once the container exists
+  window.AIDM_GTM_ID = GTM_ID;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  window.gtag = gtag;
+  // Consent Mode v2: denied by default in EEA/UK/CH, granted elsewhere.
+  var EU = ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE','IS','LI','NO','GB','CH'];
+  gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',region:EU});
+  gtag('consent','default',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});
+  var s = document.createElement('script'); s.async = true;
+  if (GTM_ID){
+    dataLayer.push({'gtm.start': Date.now(), event: 'gtm.js'});
+    s.src = 'https://www.googletagmanager.com/gtm.js?id=' + GTM_ID;
+  } else {
+    gtag('js', new Date());
+    gtag('config', GA4_ID);
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA4_ID;
+  }
+  document.head.appendChild(s);
+
+  // Map our own events onto GA4 recommended events where one exists.
+  var MAP = { signup:'sign_up', signin:'login', share_cast:'share', membership_interest:'generate_lead' };
+  var DROP = { prompt:1, message:1 };   // never send free-text prompts/errors to analytics
+  window.AIDM_dl = function(name, props){
+    try{
+      var out = {}, k;
+      for (k in (props||{})) if (!DROP[k]) out[k] = props[k];
+      if (name === 'search'){ out.search_term = out.query; delete out.query; }
+      if (name === 'share_cast'){ out.method = out.via; out.content_type = 'cast'; }
+      if (name === 'signup' || name === 'signin'){ out.method = out.from || 'email'; }
+      var ev = MAP[name] || name;
+      if (name === 'page_view') ev = 'aidm_page_view';   // GA4 already auto-sends page_view
+      if (GTM_ID){ out.event = ev; dataLayer.push(out); }
+      else { gtag('event', ev, out); }
+    }catch(e){}
+  };
+})();
+</script>
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://aidirectorme.com/">
 <meta property="og:site_name" content="AiDirectorMe">
@@ -5403,6 +5445,7 @@
   }
 
   window.AIDM_track = function(eventType, props){
+    if (window.AIDM_dl) window.AIDM_dl(eventType, props);
     try{
       var body = JSON.stringify({
         user_id: currentUserId(),
